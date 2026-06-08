@@ -1,0 +1,36 @@
+<article class="entry{{LEAD_CLASS}}">
+      <div class="rank" aria-label="Rank {{RANK}}">{{RANK}}</div>
+      <div class="titleblock">
+        <h2 class="repo-title">
+          <a href="{{URL}}" target="_blank" rel="noopener noreferrer">
+            <span class="owner">{{OWNER}}</span><span class="slash">/</span>{{REPO}}
+          </a>
+        </h2>
+        <div class="meta-row">
+          <span class="lang">
+            <span class="dot" style="background:{{LANG_COLOR}}" aria-hidden="true"></span>{{LANG}}
+          </span>
+          <span class="stars" title="Total stars">
+            <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"/></svg>
+            {{STARS}} <span class="lbl">stars</span>
+          </span>
+        </div>
+      </div>
+      <div class="momentum">
+        <span class="gain-figure" title="Stars gained this week">
+          <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8.22 2.97a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1-1.06 1.06L9 5.81v6.44a.75.75 0 0 1-1.5 0V5.81L4.03 8.28a.75.75 0 0 1-1.06-1.06l4.25-4.25Z"/></svg>
+          {{GAIN}}
+        </span>
+        <span class="gain-label">stars this week</span>
+      </div>
+      <div class="entry-body">
+        <p class="desc">{{DESCRIPTION}}</p>
+        <p class="analysis">{{ANALYSIS}}</p>
+        <div class="cta-row">
+          <a class="cta" href="{{URL}}" target="_blank" rel="noopener noreferrer">
+            View on GitHub <span class="arrow" aria-hidden="true">→</span>
+          </a>
+          <span class="handle">github.com/{{OWNER}}/{{REPO}}</span>
+        </div>
+      </div>
+    </article>
