@@ -1,0 +1,39 @@
+{
+  "date": "2026-06-14",
+  "title": "GitHub Weekly Top 3",
+  "repos": [
+    {
+      "rank": 1,
+      "owner": "mvanhorn",
+      "repo": "last30days-skill",
+      "url": "https://github.com/mvanhorn/last30days-skill",
+      "language": "Python",
+      "stars": 41945,
+      "gained_this_week": 12602,
+      "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+      "analysis": "Last30Days is an AI agent skill that fans out in parallel across Reddit, X, YouTube, TikTok, Hacker News, Polymarket, and the open web—surfacing what real communities are saying about any topic and synthesizing findings into cited, engagement-ranked HTML reports. It solves the staleness problem of standard web search by reaching directly into forums and social platforms where fresh sentiment lives, days before it appears in search indexes. Now ranking #1 this week (up from #3 last week), it is riding a compounding wave of organic adoption as developers embed it into Claude Code and Cursor agentic workflows. Developers, content creators, and research teams who need current community intelligence before a launch or decision will find it immediately useful."
+    },
+    {
+      "rank": 2,
+      "owner": "apple",
+      "repo": "container",
+      "url": "https://github.com/apple/container",
+      "language": "Swift",
+      "stars": 36935,
+      "gained_this_week": 9173,
+      "description": "A tool for creating and running Linux containers using lightweight virtual machines on a Mac. It is written in Swift, and optimized for Apple silicon.",
+      "analysis": "Apple's `container` is a Swift-native CLI that runs Linux containers as lightweight virtual machines on Apple silicon Macs, pulling OCI-compatible images from any standard registry. It fills the gap left by Docker Desktop on macOS—offering a first-party, silicon-optimized alternative that keeps Linux container workflows native rather than cross-compiled. Trending sharply this week following Apple's WWDC announcements and its requirement for macOS 26, which generated broad developer excitement around Apple's vision for containerized developer tooling. Mac developers on M1/M2/M3 chips who work with Linux services, CI pipelines, or container-based dev environments are the primary audience."
+    },
+    {
+      "rank": 3,
+      "owner": "phuryn",
+      "repo": "pm-skills",
+      "url": "https://github.com/phuryn/pm-skills",
+      "language": null,
+      "stars": 18015,
+      "gained_this_week": 5408,
+      "description": "PM Skills Marketplace: 100+ agentic skills, commands, and plugins — from discovery to strategy, execution, launch, and growth.",
+      "analysis": "PM Skills Marketplace is a structured plugin system that encodes 100+ proven product management frameworks—prioritization, discovery, PRDs, OKRs, GTM strategy—into reusable AI skills and slash commands for assistants like Claude Code. It addresses the gap between generic AI outputs and domain-specific rigour, giving product managers methodologies from leaders like Teresa Torres and Marty Cagan rather than improvised advice. Trending on organic interest as the PM community experiments with AI-assisted workflows and seeks structured alternatives to freeform prompting. Product managers, founders, and product-adjacent engineers using Claude Code or Cursor who want AI that follows PM best practices will benefit most."
+    }
+  ]
+}
