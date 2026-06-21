@@ -1,0 +1,61 @@
+{
+  "date": "2026-06-21",
+  "title": "GitHub Weekly Top 5",
+  "repos": [
+    {
+      "rank": 1,
+      "owner": "chopratejas",
+      "repo": "headroom",
+      "url": "https://github.com/chopratejas/headroom",
+      "language": "Python",
+      "stars": 44116,
+      "gained_this_week": 14982,
+      "description": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM",
+      "analysis": "Headroom is a Python library that compresses tool outputs, log files, and RAG document chunks before they are passed to an LLM, reducing token consumption without discarding critical information. It targets one of the most painful bottlenecks in agentic AI systems: intermediate outputs from tool calls and search pipelines routinely balloon context windows, driving up cost and hitting limits. Trending sharply this week as multi-step agentic workflows become mainstream, exposing the token-budget problem at scale. Developers building RAG pipelines, Claude Code tool integrations, or any LLM-orchestrated system that ingests large data sources will find it immediately practical."
+    },
+    {
+      "rank": 2,
+      "owner": "Panniantong",
+      "repo": "Agent-Reach",
+      "url": "https://github.com/Panniantong/Agent-Reach",
+      "language": "Python",
+      "stars": 36782,
+      "gained_this_week": 8483,
+      "description": "Give your AI agent eyes to see the entire internet. Read & search multiple platforms",
+      "analysis": "Agent-Reach is a Python toolkit that gives AI agents the ability to read and search across multiple internet platforms simultaneously — functioning as a unified web intelligence layer for autonomous agents. It addresses the gap between agents that can reason and agents that can gather: most LLM agents are blind to real-time information unless explicitly wired to search tools, and Agent-Reach provides those wires for a wide surface of sources at once. Trending on organic interest as developers push AI agents beyond single-tool retrieval toward multi-platform intelligence gathering. Engineers building research agents, competitive monitoring bots, or autonomous workflows needing broad internet awareness are the primary audience."
+    },
+    {
+      "rank": 3,
+      "owner": "DeusData",
+      "repo": "codebase-memory-mcp",
+      "url": "https://github.com/DeusData/codebase-memory-mcp",
+      "language": "C",
+      "stars": 10179,
+      "gained_this_week": 5419,
+      "description": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph",
+      "analysis": "Codebase-Memory-MCP is a high-performance Model Context Protocol server written in C that indexes an entire codebase into a persistent knowledge graph, letting AI coding assistants understand project structure, symbol relationships, and history without re-reading files on every query. It solves the stale-context problem that plagues large-repo AI workflows: standard RAG over source files misses cross-file dependencies and architectural patterns that a graph captures naturally. Trending this week as MCP adoption accelerates and developers seek deeper code intelligence beyond file-level retrieval. Claude Code, Cursor, and other MCP-compatible AI dev tools are the target environment; it fits any team working on large, multi-module codebases."
+    },
+    {
+      "rank": 4,
+      "owner": "iptv-org",
+      "repo": "iptv",
+      "url": "https://github.com/iptv-org/iptv",
+      "language": "TypeScript",
+      "stars": 127092,
+      "gained_this_week": 7856,
+      "description": "Collection of publicly available IPTV channels from all over the world",
+      "analysis": "iptv-org/iptv is a continuously updated, community-maintained collection of publicly available IPTV stream URLs covering thousands of channels from countries worldwide, organized by language, category, and region. It is the de-facto starting point for anyone building a self-hosted media setup using tools like Jellyfin, Plex, Kodi, or VLC who wants live television without a cable subscription. Trending on organic interest driven by ongoing cord-cutting momentum and periodic viral discovery by new audiences. Power users, homelabbers, and developers building custom media center applications are the primary beneficiaries — no special stack is required beyond an M3U-compatible player."
+    },
+    {
+      "rank": 5,
+      "owner": "n0-computer",
+      "repo": "iroh",
+      "url": "https://github.com/n0-computer/iroh",
+      "language": "Rust",
+      "stars": 10438,
+      "gained_this_week": 1621,
+      "description": "IP addresses break, dial keys instead. Modular networking stack in Rust",
+      "analysis": "Iroh is a modular Rust networking stack that routes connections by cryptographic public key rather than IP address, enabling stable peer-to-peer connections that survive NAT changes, roaming, and IP address churn without a central relay. It solves the fundamental brittleness of IP-based addressing for distributed and peer-to-peer applications, providing built-in hole-punching, relay fallback, and QUIC transport under a clean async Rust API. Trending on organic interest as the Rust ecosystem grows and decentralized application developers seek a production-ready p2p foundation. Rust developers building distributed systems, offline-first apps, device mesh networks, or any software needing resilient direct connections will find it a solid foundation."
+    }
+  ]
+}
