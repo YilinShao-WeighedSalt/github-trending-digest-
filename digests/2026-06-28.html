@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GitHub Weekly Top 5 — Week of June 28, 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#fbfaf7;
+    --ink:#1c1a17;
+    --ink-soft:#4a463f;
+    --ink-faint:#8b8478;
+    --rule:#e3ded3;
+    --rule-strong:#cfc8ba;
+    --accent:#9a3324;        /* deep editorial vermilion */
+    --accent-soft:#b9492f;
+    --gain:#1f6f43;          /* calm forest green for momentum */
+    --gain-bg:#1f6f4312;
+    --card:#ffffff;
+    --shadow:0 1px 2px rgba(28,26,23,.04), 0 6px 22px rgba(28,26,23,.05);
+    --container-shadow:0 1px 0 rgba(28,26,23,.04), 0 18px 50px -28px rgba(28,26,23,.18);
+    --focus:#9a3324;
+    --max:760px;
+  }
+
+  *{box-sizing:border-box;}
+
+  html{ -webkit-text-size-adjust:100%; }
+
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size:17px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+    /* subtle paper texture via layered gradients, no external assets */
+    background-image:
+      radial-gradient(circle at 18% 12%, rgba(154,51,36,.045), transparent 40%),
+      radial-gradient(circle at 88% 2%, rgba(31,111,67,.04), transparent 34%),
+      radial-gradient(circle at 50% 120%, rgba(154,51,36,.03), transparent 46%);
+    background-attachment:fixed;
+  }
+
+  a{ color:inherit; }
+
+  /* thin vermilion accent bar at the very top — the 'masthead edge' */
+  .topbar{
+    height:4px;
+    background:var(--accent);
+    width:100%;
+  }
+
+  .sheet{
+    max-width:calc(var(--max) + 44px);
+    margin:0 auto;
+    background:var(--card);
+    box-shadow:var(--container-shadow);
+  }
+
+  .wrap{
+    max-width:var(--max);
+    margin:0 auto;
+    padding:0 22px 64px;
+    position:relative;
+  }
+
+  /* ───────── Masthead ───────── */
+  .masthead{
+    padding:46px 0 26px;
+    border-bottom:2px solid var(--ink);
+  }
+  .kicker{
+    font-family:"JetBrains Mono", monospace;
+    font-size:11.5px;
+    font-weight:500;
+    letter-spacing:.22em;
+    text-transform:uppercase;
+    color:var(--accent);
+    margin:0 0 16px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+  .kicker::after{
+    content:"";
+    flex:1;
+    height:1px;
+    background:var(--rule-strong);
+  }
+  .masthead h1{
+    font-family:"Fraunces", Georgia, serif;
+    font-optical-sizing:auto;
+    font-weight:600;
+    font-size:clamp(2rem, 7vw, 3.6rem);
+    line-height:1.02;
+    letter-spacing:-.018em;
+    margin:0 0 .35em;
+    color:var(--ink);
+  }
+  .masthead h1 em{
+    font-style:italic;
+    font-weight:400;
+    color:var(--accent);
+  }
+  .dateline{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:baseline;
+    gap:8px 16px;
+    font-size:14.5px;
+    color:var(--ink-soft);
+  }
+  .dateline .week{
+    font-weight:600;
+    color:var(--ink);
+  }
+  .dateline .meta{
+    font-family:"JetBrains Mono", monospace;
+    font-size:12px;
+    letter-spacing:.04em;
+    color:var(--ink-soft);
+    font-variant-numeric:tabular-nums;
+  }
+
+  .lede{
+    font-family:"Fraunces", Georgia, serif;
+    font-size:clamp(1.05rem, 2.5vw, 1.22rem);
+    line-height:1.55;
+    color:var(--ink-soft);
+    font-weight:400;
+    margin:30px 0 0;
+    max-width:60ch;
+  }
+  .lede strong{ color:var(--ink); font-weight:600; }
+
+  /* ───────── Article / repo entries ───────── */
+  .digest{
+    margin-top:8px;
+  }
+
+  /* ONE shared grid definition for head + body.
+     [rank] minmax(2.6ch,auto)  [content] 1fr  [stat] auto
+     — guarantees prose aligns under the title regardless of rank
+     width or whether Fraunces has loaded; no margin hack, no shift. */
+  .entry{
+    position:relative;
+    padding:44px 0 40px;
+    border-bottom:1px solid var(--rule);
+    display:grid;
+    grid-template-columns:[rank] minmax(2.6ch,auto) [content] 1fr [stat] auto;
+    column-gap:20px;
+    row-gap:0;
+    align-items:start;
+  }
+  .entry:last-child{ border-bottom:none; }
+
+  .rank{
+    grid-column:rank;
+    grid-row:1;
+    font-family:"Fraunces", Georgia, serif;
+    font-weight:600;
+    font-size:2.9rem;
+    line-height:.86;
+    letter-spacing:-.03em;
+    color:var(--accent);
+    font-variant-numeric:lining-nums tabular-nums;
+    padding-top:.06em;
+    white-space:nowrap;
+  }
+  .rank::before{
+    content:"No.";
+    display:block;
+    font-family:"JetBrains Mono", monospace;
+    font-size:9.5px;
+    font-weight:500;
+    letter-spacing:.18em;
+    text-transform:uppercase;
+    color:var(--ink-soft);
+    margin-bottom:4px;
+  }
+
+  .titleblock{
+    grid-column:content;
+    grid-row:1;
+    min-width:0;
+  }
+
+  /* hero momentum stat — its own grid cell, right-aligned next to title */
+  .momentum{
+    grid-column:stat;
+    grid-row:1;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-end;
+    text-align:right;
+    padding-top:.18em;
+    white-space:nowrap;
+  }
+  .momentum .gain-figure{
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    font-family:"JetBrains Mono", monospace;
+    font-weight:600;
+    font-size:19px;
+    line-height:1;
+    color:var(--gain);
+    font-variant-numeric:tabular-nums;
+  }
+  .momentum .gain-figure svg{ width:13px; height:13px; flex:none; }
+  .momentum .gain-label{
+    font-family:"Inter", sans-serif;
+    font-size:11px;
+    font-weight:500;
+    letter-spacing:.02em;
+    color:var(--ink-soft);
+    margin-top:5px;
+  }
+
+  /* body sits in the content column, row 2 — aligned under the title */
+  .entry-body{
+    grid-column:content;
+    grid-row:2;
+    min-width:0;
+  }
+
+  .repo-title{
+    font-family:"Fraunces", Georgia, serif;
+    font-weight:600;
+    font-size:clamp(1.5rem, 4.6vw, 2rem);
+    line-height:1.08;
+    letter-spacing:-.01em;
+    margin:0 0 12px;
+    word-break:break-word;
+    overflow-wrap:anywhere;
+  }
+  .repo-title a{
+    text-decoration:none;
+    color:var(--ink);
+    background-image:linear-gradient(var(--accent), var(--accent));
+    background-size:0% 2px;
+    background-position:0 100%;
+    background-repeat:no-repeat;
+    transition:background-size .28s ease;
+  }
+  .repo-title a:hover,
+  .repo-title a:focus-visible{
+    background-size:100% 2px;
+    color:var(--accent);
+  }
+  .repo-title .owner{ color:var(--ink-soft); font-weight:500; }
+  .repo-title .slash{ color:var(--rule-strong); font-weight:400; padding:0 .04em; }
+
+  /* metadata row */
+  .meta-row{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    gap:8px 18px;
+    margin-bottom:18px;
+    font-size:13.5px;
+  }
+  .lang{
+    display:inline-flex;
+    align-items:center;
+    gap:7px;
+    color:var(--ink-soft);
+    font-weight:500;
+  }
+  .dot{
+    width:11px;height:11px;
+    border-radius:50%;
+    box-shadow:0 0 0 1px rgba(0,0,0,.06) inset;
+    flex:none;
+  }
+  .stars{
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    font-family:"JetBrains Mono", monospace;
+    font-size:13px;
+    font-weight:500;
+    color:var(--ink);
+    font-variant-numeric:tabular-nums;
+  }
+  /* pixel-accurate GitHub star path, shared by every star glyph */
+  .stars svg{ width:13px;height:13px; flex:none; color:#c8951f; }
+  .stars .lbl{ color:var(--ink-soft); font-family:"Inter",sans-serif; font-size:12.5px; font-weight:500; }
+
+  .desc{
+    font-size:16.5px;
+    color:var(--ink);
+    margin:0 0 18px;
+    font-weight:500;
+    line-height:1.5;
+    max-width:62ch;
+  }
+
+  .analysis{
+    font-size:16.5px;
+    line-height:1.62;
+    color:var(--ink-soft);
+    margin:0 0 22px;
+    max-width:66ch;
+    /* hanging accent rule on the left */
+    padding-left:18px;
+    border-left:2px solid var(--rule);
+  }
+
+  .cta-row{
+    display:flex;
+    flex-direction:column;
+    gap:9px;
+    align-items:flex-start;
+  }
+  .cta{
+    display:inline-flex;
+    align-items:center;
+    gap:9px;
+    font-family:"Inter",sans-serif;
+    font-size:14px;
+    font-weight:600;
+    letter-spacing:.01em;
+    text-decoration:none;
+    color:var(--ink);
+    background:var(--card);
+    border:1px solid var(--rule-strong);
+    padding:10px 18px;
+    border-radius:8px;
+    box-shadow:var(--shadow);
+    transition:border-color .2s ease, color .2s ease, transform .15s ease, box-shadow .2s ease;
+  }
+  .cta .arrow{ transition:transform .22s ease; color:var(--accent); }
+  .cta:hover, .cta:focus-visible{
+    border-color:var(--accent);
+    color:var(--accent);
+    transform:translateY(-1px);
+    box-shadow:0 2px 4px rgba(28,26,23,.06), 0 10px 26px rgba(154,51,36,.10);
+  }
+  .cta:hover .arrow, .cta:focus-visible .arrow{ transform:translateX(4px); }
+
+  /* quiet monospace destination handle — legible before hover */
+  .handle{
+    font-family:"JetBrains Mono", monospace;
+    font-size:12px;
+    color:var(--ink-faint);
+    letter-spacing:.01em;
+    word-break:break-all;
+  }
+
+  /* ───────── Rank-1 emphasis (calm, no card) ───────── */
+  .entry.lead .rank{ font-size:3.3rem; }
+  .entry.lead::before{
+    content:"";
+    position:absolute;
+    top:0; left:0;
+    width:46px;
+    height:3px;
+    background:var(--accent);
+  }
+
+  /* ───────── Footer ───────── */
+  footer{
+    margin-top:8px;
+    padding-top:30px;
+    border-top:2px solid var(--ink);
+    font-size:13px;
+    color:var(--ink-soft);
+    line-height:1.7;
+  }
+  footer .robot{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    font-family:"JetBrains Mono", monospace;
+    font-size:11px;
+    letter-spacing:.16em;
+    text-transform:uppercase;
+    color:var(--accent);
+    margin-bottom:10px;
+  }
+  footer .gen{
+    font-family:"JetBrains Mono", monospace;
+    font-size:11.5px;
+    color:var(--ink-soft);
+    margin-top:6px;
+    font-variant-numeric:tabular-nums;
+  }
+  footer a{ color:var(--accent); text-decoration:none; border-bottom:1px solid var(--rule-strong); }
+
+  :focus-visible{ outline:2px solid var(--focus); outline-offset:3px; border-radius:3px; }
+
+  /* ───────── Desktop refinements ───────── */
+  @media (min-width:680px){
+    .wrap{ padding:0 40px 80px; }
+    .entry{ column-gap:28px; }
+    .rank{ font-size:3.4rem; }
+    .entry.lead .rank{ font-size:3.9rem; }
+    .momentum .gain-figure{ font-size:20px; }
+  }
+
+  /* ───────── Mobile reflow: stat drops below the meta row ───────── */
+  @media (max-width:560px){
+    .entry{
+      /* collapse the stat column to rank + content */
+      grid-template-columns:[rank] minmax(2.6ch,auto) [content] 1fr;
+    }
+    .momentum{
+      grid-column:content;
+      grid-row:2;
+      order:2;
+      flex-direction:row;
+      align-items:baseline;
+      gap:8px;
+      width:100%;
+      text-align:left;
+      padding-top:0;
+      margin:0 0 16px;
+    }
+    .momentum .gain-figure{ font-size:18px; }
+    .momentum .gain-label{ margin-top:0; }
+    /* push the body down to make room for the wrapped stat */
+    .entry-body{ grid-row:3; }
+  }
+
+  @media (max-width:480px){
+    body{ font-size:16.5px; }
+    .entry{ padding:32px 0 30px; column-gap:16px; }
+    .rank{ font-size:2.5rem; }
+    .entry.lead .rank{ font-size:2.9rem; }
+    .analysis{ padding-left:14px; }
+    .desc, .analysis{ font-size:16px; }
+  }
+
+  /* ───────── Reduced motion ───────── */
+  @media (prefers-reduced-motion:reduce){
+    .repo-title a{ transition:none; }
+    .repo-title a:hover,
+    .repo-title a:focus-visible{
+      background-size:0 0;
+      text-decoration:underline;
+      text-underline-offset:3px;
+      text-decoration-color:var(--accent);
+    }
+    .cta{ transition:border-color .2s ease, color .2s ease; }
+    .cta:hover, .cta:focus-visible{ transform:none; }
+    .cta .arrow{ transition:none; }
+    .cta:hover .arrow, .cta:focus-visible .arrow{ transform:none; }
+  }
+
+  @media (prefers-color-scheme:dark){
+    :root{
+      --paper:#16140f;
+      --ink:#f3efe6;
+      --ink-soft:#b8b1a3;
+      --ink-faint:#8b8576;
+      --rule:#2e2a22;
+      --rule-strong:#423d33;
+      --accent:#e08a6f;
+      --accent-soft:#e89c82;
+      --gain:#5fcf94;
+      --gain-bg:#5fcf941a;
+      --card:#1e1b15;
+      --shadow:0 1px 2px rgba(0,0,0,.3), 0 6px 22px rgba(0,0,0,.35);
+      --container-shadow:0 18px 50px -28px rgba(0,0,0,.6);
+      --focus:#f4b79f;
+    }
+    .masthead, footer{ border-color:var(--rule-strong); }
+    .masthead h1{ color:var(--ink); }
+    .repo-title a{ color:var(--ink); }
+    .stars svg{ color:#e0b75a; }
+    .dot{ box-shadow:0 0 0 1px rgba(255,255,255,.12) inset; }
+    body{
+      background-image:
+        radial-gradient(circle at 18% 12%, rgba(224,138,111,.08), transparent 42%),
+        radial-gradient(circle at 88% 2%, rgba(95,207,148,.06), transparent 34%),
+        radial-gradient(circle at 50% 120%, rgba(224,138,111,.05), transparent 46%);
+    }
+  }
+</style>
+</head>
+<body>
+<div class="topbar" aria-hidden="true"></div>
+<div class="sheet">
+<div class="wrap">
+
+  <header class="masthead">
+    <p class="kicker">GitHub Trending · Weekly Briefing</p>
+    <h1>The Week's <em>Top&nbsp;Three</em></h1>
+    <div class="dateline">
+      <span class="week">Week of June 28, 2026</span>
+      <span aria-hidden="true">·</span>
+      <span class="meta">3 repositories ranked by weekly star gain</span>
+    </div>
+    <p class="lede">
+      A short, opinionated read on the three repositories that <strong>climbed fastest on GitHub this week</strong> — what each one does, why it caught fire, and where it actually fits.
+    </p>
+  </header>
+
+  <main class="digest">
+
+    <article class="entry lead">
+      <div class="rank" aria-label="Rank 1">1</div>
+      <div class="titleblock">
+        <h2 class="repo-title">
+          <a href="https://github.com/calesthio/OpenMontage" target="_blank" rel="noopener noreferrer">
+            <span class="owner">calesthio</span><span class="slash">/</span>OpenMontage
+          </a>
+        </h2>
+        <div class="meta-row">
+          <span class="lang">
+            <span class="dot" style="background:#3572A5" aria-hidden="true"></span>Python
+          </span>
+          <span class="stars" title="Total stars">
+            <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"/></svg>
+            26,851 <span class="lbl">stars</span>
+          </span>
+        </div>
+      </div>
+      <div class="momentum">
+        <span class="gain-figure" title="Stars gained this week">
+          <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8.22 2.97a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1-1.06 1.06L9 5.81v6.44a.75.75 0 0 1-1.5 0V5.81L4.03 8.28a.75.75 0 0 1-1.06-1.06l4.25-4.25Z"/></svg>
+          +18,000
+        </span>
+        <span class="gain-label">stars this week</span>
+      </div>
+      <div class="entry-body">
+        <p class="desc">World's first open-source, agentic video production system. 12 pipelines, 52 tools, 500+ agent skills.</p>
+        <p class="analysis">OpenMontage is an open-source agentic video production platform that orchestrates 12 pipelines and 500+ agent skills to automate complex video creation end-to-end—from scripting to rendering—without manual editing. It exploded to 18k stars in a single week, likely because it directly challenges closed AI video tools like Sora and Runway with a fully hackable, self-hostable alternative. The extensive tooling surface means teams can plug in their own models or extend existing pipelines. It fits Python developers, content studios, and anyone building automated media workflows who wants full control over the production stack.</p>
+        <div class="cta-row">
+          <a class="cta" href="https://github.com/calesthio/OpenMontage" target="_blank" rel="noopener noreferrer">
+            View on GitHub <span class="arrow" aria-hidden="true">→</span>
+          </a>
+          <span class="handle">github.com/calesthio/OpenMontage</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="entry">
+      <div class="rank" aria-label="Rank 2">2</div>
+      <div class="titleblock">
+        <h2 class="repo-title">
+          <a href="https://github.com/DeusData/codebase-memory-mcp" target="_blank" rel="noopener noreferrer">
+            <span class="owner">DeusData</span><span class="slash">/</span>codebase-memory-mcp
+          </a>
+        </h2>
+        <div class="meta-row">
+          <span class="lang">
+            <span class="dot" style="background:#555555" aria-hidden="true"></span>C
+          </span>
+          <span class="stars" title="Total stars">
+            <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"/></svg>
+            19,530 <span class="lbl">stars</span>
+          </span>
+        </div>
+      </div>
+      <div class="momentum">
+        <span class="gain-figure" title="Stars gained this week">
+          <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8.22 2.97a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1-1.06 1.06L9 5.81v6.44a.75.75 0 0 1-1.5 0V5.81L4.03 8.28a.75.75 0 0 1-1.06-1.06l4.25-4.25Z"/></svg>
+          +7,674
+        </span>
+        <span class="gain-label">stars this week</span>
+      </div>
+      <div class="entry-body">
+        <p class="desc">High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph.</p>
+        <p class="analysis">codebase-memory-mcp is a C-implemented Model Context Protocol server that ingests an entire codebase and stores it as a persistent knowledge graph, giving AI coding assistants deep, session-spanning memory about large projects. MCP has become the dominant integration layer for AI tools, and persistent codebase context is one of the top developer pain points—explaining the strong organic traction this week. The C implementation makes it fast enough to index very large mono-repos without slowing down the assistant round-trip. It targets developers using Claude Code, Cursor, or any MCP-compatible agent who routinely work across complex, multi-file codebases.</p>
+        <div class="cta-row">
+          <a class="cta" href="https://github.com/DeusData/codebase-memory-mcp" target="_blank" rel="noopener noreferrer">
+            View on GitHub <span class="arrow" aria-hidden="true">→</span>
+          </a>
+          <span class="handle">github.com/DeusData/codebase-memory-mcp</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="entry">
+      <div class="rank" aria-label="Rank 3">3</div>
+      <div class="titleblock">
+        <h2 class="repo-title">
+          <a href="https://github.com/google-labs-code/design.md" target="_blank" rel="noopener noreferrer">
+            <span class="owner">google-labs-code</span><span class="slash">/</span>design.md
+          </a>
+        </h2>
+        <div class="meta-row">
+          <span class="lang">
+            <span class="dot" style="background:#3178c6" aria-hidden="true"></span>TypeScript
+          </span>
+          <span class="stars" title="Total stars">
+            <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"/></svg>
+            22,814 <span class="lbl">stars</span>
+          </span>
+        </div>
+      </div>
+      <div class="momentum">
+        <span class="gain-figure" title="Stars gained this week">
+          <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8.22 2.97a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1-1.06 1.06L9 5.81v6.44a.75.75 0 0 1-1.5 0V5.81L4.03 8.28a.75.75 0 0 1-1.06-1.06l4.25-4.25Z"/></svg>
+          +6,014
+        </span>
+        <span class="gain-label">stars this week</span>
+      </div>
+      <div class="entry-body">
+        <p class="desc">A format specification for describing visual identity to coding agents with persistent design system understanding.</p>
+        <p class="analysis">design.md is a Google Labs specification that encodes a project's visual identity—color tokens, typography scales, spacing rules, component conventions—into a structured Markdown-adjacent format that AI coding agents can reliably parse and respect across generated UI code. It gained traction this week because inconsistent styling is one of the most complained-about artifacts of AI-generated front-ends, and a Google-backed standard carries ecosystem weight. The TypeScript tooling validates and converts existing design tokens into the format, lowering adoption friction. Front-end engineers, design system leads, and product teams deploying AI code generation at scale are the primary audience.</p>
+        <div class="cta-row">
+          <a class="cta" href="https://github.com/google-labs-code/design.md" target="_blank" rel="noopener noreferrer">
+            View on GitHub <span class="arrow" aria-hidden="true">→</span>
+          </a>
+          <span class="handle">github.com/google-labs-code/design.md</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="entry">
+      <div class="rank" aria-label="Rank 4">4</div>
+      <div class="titleblock">
+        <h2 class="repo-title">
+          <a href="https://github.com/JCodesMore/ai-website-cloner-template" target="_blank" rel="noopener noreferrer">
+            <span class="owner">JCodesMore</span><span class="slash">/</span>ai-website-cloner-template
+          </a>
+        </h2>
+        <div class="meta-row">
+          <span class="lang">
+            <span class="dot" style="background:#3178c6" aria-hidden="true"></span>TypeScript
+          </span>
+          <span class="stars" title="Total stars">
+            <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"/></svg>
+            22,776 <span class="lbl">stars</span>
+          </span>
+        </div>
+      </div>
+      <div class="momentum">
+        <span class="gain-figure" title="Stars gained this week">
+          <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8.22 2.97a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1-1.06 1.06L9 5.81v6.44a.75.75 0 0 1-1.5 0V5.81L4.03 8.28a.75.75 0 0 1-1.06-1.06l4.25-4.25Z"/></svg>
+          +4,565
+        </span>
+        <span class="gain-label">stars this week</span>
+      </div>
+      <div class="entry-body">
+        <p class="desc">Clone any website with one command using AI coding agents.</p>
+        <p class="analysis">ai-website-cloner-template is a TypeScript starter that feeds a target URL to AI coding agents, which then reproduce the visual design and structure as production-ready front-end code in a single command. Website cloning is a perennially viral topic, and wrapping it in a one-command AI workflow tapped into the indie-hacker and freelancer communities this week. The template approach means developers can adapt it to different agent backends or output frameworks without rewriting the scaffolding. It's best suited for rapid prototyping, competitive design research, and freelancers who need to deliver landing pages quickly without starting from scratch.</p>
+        <div class="cta-row">
+          <a class="cta" href="https://github.com/JCodesMore/ai-website-cloner-template" target="_blank" rel="noopener noreferrer">
+            View on GitHub <span class="arrow" aria-hidden="true">→</span>
+          </a>
+          <span class="handle">github.com/JCodesMore/ai-website-cloner-template</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="entry">
+      <div class="rank" aria-label="Rank 5">5</div>
+      <div class="titleblock">
+        <h2 class="repo-title">
+          <a href="https://github.com/palmier-io/palmier-pro" target="_blank" rel="noopener noreferrer">
+            <span class="owner">palmier-io</span><span class="slash">/</span>palmier-pro
+          </a>
+        </h2>
+        <div class="meta-row">
+          <span class="lang">
+            <span class="dot" style="background:#F05138" aria-hidden="true"></span>Swift
+          </span>
+          <span class="stars" title="Total stars">
+            <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"/></svg>
+            9,298 <span class="lbl">stars</span>
+          </span>
+        </div>
+      </div>
+      <div class="momentum">
+        <span class="gain-figure" title="Stars gained this week">
+          <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8.22 2.97a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1-1.06 1.06L9 5.81v6.44a.75.75 0 0 1-1.5 0V5.81L4.03 8.28a.75.75 0 0 1-1.06-1.06l4.25-4.25Z"/></svg>
+          +6,126
+        </span>
+        <span class="gain-label">stars this week</span>
+      </div>
+      <div class="entry-body">
+        <p class="desc">macOS video editor built for AI.</p>
+        <p class="analysis">palmier-pro is a native Swift macOS video editor designed around AI-assisted workflows, integrating features like AI transcription, intelligent scene detection, and content-aware trimming into a Final Cut Pro-style interface. It gained 6k stars this week on organic interest from Mac creators and developers who want AI editing features without relying on cloud-based or Electron-wrapped alternatives. The Swift-native implementation means it integrates cleanly with macOS media APIs for low-latency preview and hardware-accelerated encoding. It targets indie filmmakers, podcast video editors, and macOS developers building on top of the open-source core.</p>
+        <div class="cta-row">
+          <a class="cta" href="https://github.com/palmier-io/palmier-pro" target="_blank" rel="noopener noreferrer">
+            View on GitHub <span class="arrow" aria-hidden="true">→</span>
+          </a>
+          <span class="handle">github.com/palmier-io/palmier-pro</span>
+        </div>
+      </div>
+    </article>
+
+  
+
+  </main>
+
+  <footer>
+    <div class="robot">Automated Weekly Routine</div>
+    <div>
+      Delivered automatically every week by the GitHub Trending Digest routine — no humans were asked to rank anything. Repositories are selected by their net star gain over the trailing seven days.
+    </div>
+    <div class="gen">Generated June 28, 2026</div>
+  </footer>
+
+</div>
+</div>
+</body>
+</html>

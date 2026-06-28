@@ -1,0 +1,61 @@
+{
+  "date": "2026-06-28",
+  "title": "GitHub Weekly Top 5",
+  "repos": [
+    {
+      "rank": 1,
+      "owner": "calesthio",
+      "repo": "OpenMontage",
+      "url": "https://github.com/calesthio/OpenMontage",
+      "language": "Python",
+      "stars": 26851,
+      "gained_this_week": 18000,
+      "description": "World's first open-source, agentic video production system. 12 pipelines, 52 tools, 500+ agent skills.",
+      "analysis": "OpenMontage is an open-source agentic video production platform that orchestrates 12 pipelines and 500+ agent skills to automate complex video creation end-to-end—from scripting to rendering—without manual editing. It exploded to 18k stars in a single week, likely because it directly challenges closed AI video tools like Sora and Runway with a fully hackable, self-hostable alternative. The extensive tooling surface means teams can plug in their own models or extend existing pipelines. It fits Python developers, content studios, and anyone building automated media workflows who wants full control over the production stack."
+    },
+    {
+      "rank": 2,
+      "owner": "DeusData",
+      "repo": "codebase-memory-mcp",
+      "url": "https://github.com/DeusData/codebase-memory-mcp",
+      "language": "C",
+      "stars": 19530,
+      "gained_this_week": 7674,
+      "description": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph.",
+      "analysis": "codebase-memory-mcp is a C-implemented Model Context Protocol server that ingests an entire codebase and stores it as a persistent knowledge graph, giving AI coding assistants deep, session-spanning memory about large projects. MCP has become the dominant integration layer for AI tools, and persistent codebase context is one of the top developer pain points—explaining the strong organic traction this week. The C implementation makes it fast enough to index very large mono-repos without slowing down the assistant round-trip. It targets developers using Claude Code, Cursor, or any MCP-compatible agent who routinely work across complex, multi-file codebases."
+    },
+    {
+      "rank": 3,
+      "owner": "google-labs-code",
+      "repo": "design.md",
+      "url": "https://github.com/google-labs-code/design.md",
+      "language": "TypeScript",
+      "stars": 22814,
+      "gained_this_week": 6014,
+      "description": "A format specification for describing visual identity to coding agents with persistent design system understanding.",
+      "analysis": "design.md is a Google Labs specification that encodes a project's visual identity—color tokens, typography scales, spacing rules, component conventions—into a structured Markdown-adjacent format that AI coding agents can reliably parse and respect across generated UI code. It gained traction this week because inconsistent styling is one of the most complained-about artifacts of AI-generated front-ends, and a Google-backed standard carries ecosystem weight. The TypeScript tooling validates and converts existing design tokens into the format, lowering adoption friction. Front-end engineers, design system leads, and product teams deploying AI code generation at scale are the primary audience."
+    },
+    {
+      "rank": 4,
+      "owner": "JCodesMore",
+      "repo": "ai-website-cloner-template",
+      "url": "https://github.com/JCodesMore/ai-website-cloner-template",
+      "language": "TypeScript",
+      "stars": 22776,
+      "gained_this_week": 4565,
+      "description": "Clone any website with one command using AI coding agents.",
+      "analysis": "ai-website-cloner-template is a TypeScript starter that feeds a target URL to AI coding agents, which then reproduce the visual design and structure as production-ready front-end code in a single command. Website cloning is a perennially viral topic, and wrapping it in a one-command AI workflow tapped into the indie-hacker and freelancer communities this week. The template approach means developers can adapt it to different agent backends or output frameworks without rewriting the scaffolding. It's best suited for rapid prototyping, competitive design research, and freelancers who need to deliver landing pages quickly without starting from scratch."
+    },
+    {
+      "rank": 5,
+      "owner": "palmier-io",
+      "repo": "palmier-pro",
+      "url": "https://github.com/palmier-io/palmier-pro",
+      "language": "Swift",
+      "stars": 9298,
+      "gained_this_week": 6126,
+      "description": "macOS video editor built for AI.",
+      "analysis": "palmier-pro is a native Swift macOS video editor designed around AI-assisted workflows, integrating features like AI transcription, intelligent scene detection, and content-aware trimming into a Final Cut Pro-style interface. It gained 6k stars this week on organic interest from Mac creators and developers who want AI editing features without relying on cloud-based or Electron-wrapped alternatives. The Swift-native implementation means it integrates cleanly with macOS media APIs for low-latency preview and hardware-accelerated encoding. It targets indie filmmakers, podcast video editors, and macOS developers building on top of the open-source core."
+    }
+  ]
+}
