@@ -1,0 +1,61 @@
+{
+  "date": "2026-06-28",
+  "title": "GitHub Weekly Top 5",
+  "repos": [
+    {
+      "rank": 1,
+      "owner": "calesthio",
+      "repo": "OpenMontage",
+      "url": "https://github.com/calesthio/OpenMontage",
+      "language": "Python",
+      "stars": 26805,
+      "gained_this_week": 18000,
+      "description": "World's first open-source, agentic video production system. 12 pipelines, 52 tools, 500+ agent skills.",
+      "analysis": "OpenMontage is a fully agentic, open-source video production system that automates the entire pipeline from scripting to rendering using AI agents. It ships with 12 production pipelines and over 500 agent skills, essentially replacing a traditional video editing team for content creators. It trended explosively this week driven by viral demos and the surging interest in agentic AI workflows. Content creators, indie filmmakers, and developers building automated media pipelines are the core audience."
+    },
+    {
+      "rank": 2,
+      "owner": "DeusData",
+      "repo": "codebase-memory-mcp",
+      "url": "https://github.com/DeusData/codebase-memory-mcp",
+      "language": "C",
+      "stars": 19467,
+      "gained_this_week": 7674,
+      "description": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph.",
+      "analysis": "codebase-memory-mcp is a high-performance MCP server written in C that indexes an entire codebase into a persistent knowledge graph, giving AI coding assistants like Claude and Cursor deep, long-lived memory of project structure and relationships. Without it, AI tools rediscover context on every session; this server keeps that knowledge alive across restarts. It trended on the back of the exploding MCP ecosystem as developers seek smarter context management. It's a must-have plugin for teams using AI-assisted development on large or complex codebases."
+    },
+    {
+      "rank": 3,
+      "owner": "kunchenguid",
+      "repo": "no-mistakes",
+      "url": "https://github.com/kunchenguid/no-mistakes",
+      "language": "Go",
+      "stars": 4042,
+      "gained_this_week": 2229,
+      "description": "git push no-mistakes — AI-driven code validation and auto-fix before every push.",
+      "analysis": "no-mistakes is a Git push interceptor written in Go that runs an AI-driven validation pipeline in an isolated worktree before code reaches your remote. It automatically fixes mechanical issues, escalates judgment calls to humans, and opens a pull request only when the code passes all checks — eliminating low-quality pushes at the source. With 77 releases and active maintenance through mid-2026, it trended as agentic developer tooling becomes mainstream. It fits any developer or team using Claude, Codex, or OpenCode who wants a pre-push quality gate with minimal overhead."
+    },
+    {
+      "rank": 4,
+      "owner": "palmier-io",
+      "repo": "palmier-pro",
+      "url": "https://github.com/palmier-io/palmier-pro",
+      "language": "Swift",
+      "stars": 9294,
+      "gained_this_week": 6126,
+      "description": "macOS video editor built for AI — native Swift timeline with generative AI and MCP integration.",
+      "analysis": "Palmier Pro is a Swift-native, open-source macOS video editor that deeply integrates generative AI models (Seedance, Kling) directly into the editing timeline, and exposes an MCP server so AI agents like Claude can collaborate on edits. It's GPLv3 with optional paid AI features — the editor itself is free. A v0.4.5 release landed on June 28, 2026, which likely triggered this week's surge alongside growing interest in native Apple Silicon AI applications. It targets Mac video creators wanting AI superpowers and AI developers who need a programmable video editing back-end."
+    },
+    {
+      "rank": 5,
+      "owner": "google-labs-code",
+      "repo": "design.md",
+      "url": "https://github.com/google-labs-code/design.md",
+      "language": "TypeScript",
+      "stars": 22808,
+      "gained_this_week": 6014,
+      "description": "A format specification for describing a visual identity to coding agents.",
+      "analysis": "design.md is a TypeScript-powered open specification that standardizes how visual identities — colors, typography, spacing, and brand tokens — are communicated to AI coding agents such as Cursor and Claude Code. It closes a real gap: today's AI tools are great at writing logic but blind to design intent, leading to inconsistent UIs. Trending on organic interest from the frontend and design-systems communities, it reflects growing demand for design-aware AI tooling. Frontend developers, design-system maintainers, and teams that use AI to generate UI components are the primary audience."
+    }
+  ]
+}
