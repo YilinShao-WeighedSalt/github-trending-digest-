@@ -1,0 +1,61 @@
+{
+  "date": "2026-06-28",
+  "title": "GitHub Weekly Top 5",
+  "repos": [
+    {
+      "rank": 1,
+      "owner": "calesthio",
+      "repo": "OpenMontage",
+      "url": "https://github.com/calesthio/OpenMontage",
+      "language": "Python",
+      "stars": 26866,
+      "gained_this_week": 18000,
+      "description": "World's first open-source, agentic video production system. 12 pipelines, 52 tools, 500+ agent skills. Turn your AI coding assistant into a full video production studio.",
+      "analysis": "OpenMontage is a fully agentic, open-source video production system that transforms AI coding assistants into complete video studios — handling scripting, scene assembly, rendering, and post-production through 12 distinct pipelines and over 500 agent skills. It surged nearly 18,000 stars this week because it sits at the explosive intersection of LLM agents and creative media automation, a category that had few open-source options. Content creators, marketing teams, and AI developers who want to automate video workflows without a SaaS subscription will find the most immediate value here."
+    },
+    {
+      "rank": 2,
+      "owner": "DeusData",
+      "repo": "codebase-memory-mcp",
+      "url": "https://github.com/DeusData/codebase-memory-mcp",
+      "language": "C",
+      "stars": 19547,
+      "gained_this_week": 7674,
+      "description": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
+      "analysis": "codebase-memory-mcp is a Model Context Protocol server that indexes an entire codebase into a persistent knowledge graph, delivering sub-millisecond symbol and dependency queries to AI coding assistants while using 99% fewer tokens than naively stuffing files into context. Written in C for maximum performance, it ships as a single static binary with no runtime dependencies, covering 158 programming languages. It gained traction this week as developers running Claude Code, Cursor, and Copilot on large monorepos hit context-window limits, making an efficient, persistent memory layer the obvious missing piece."
+    },
+    {
+      "rank": 3,
+      "owner": "kunchenguid",
+      "repo": "no-mistakes",
+      "url": "https://github.com/kunchenguid/no-mistakes",
+      "language": "Go",
+      "stars": 4050,
+      "gained_this_week": 2229,
+      "description": "git push no-mistakes",
+      "analysis": "no-mistakes is a lightweight Git pre-push guard written in Go that intercepts git push and runs a configurable set of checks — linting, secret scanning, test smoke tests — before the push reaches the remote, preventing common mistakes from ever hitting origin. The project went viral this week largely on the charm of its one-liner description ('git push no-mistakes'), which resonated deeply with developers; the simple, relatable premise sparked rapid organic sharing. It fits any team workflow as a zero-config drop-in hook and is especially useful for solo developers or small teams without enforced CI on every branch."
+    },
+    {
+      "rank": 4,
+      "owner": "palmier-io",
+      "repo": "palmier-pro",
+      "url": "https://github.com/palmier-io/palmier-pro",
+      "language": "Swift",
+      "stars": 9298,
+      "gained_this_week": 6126,
+      "description": "macOS video editor built for AI",
+      "analysis": "Palmier Pro is a native macOS video editor purpose-built for AI-generated content — it understands AI clip metadata, variable frame rates, and synthetic-media artifacts that generic editors handle poorly, and provides a timeline optimized for assembling AI-generated shots into coherent sequences. It trended this week as tools like Sora, Runway, and Kling gained mainstream traction and users found themselves with no editor that natively speaks their workflow. Mac-based creators and indie filmmakers working with generative video will get the most out of its Swift-native performance and AI-aware timeline."
+    },
+    {
+      "rank": 5,
+      "owner": "google-labs-code",
+      "repo": "design.md",
+      "url": "https://github.com/google-labs-code/design.md",
+      "language": "TypeScript",
+      "stars": 22821,
+      "gained_this_week": 6014,
+      "description": "A format specification for describing a visual identity to coding agents. DESIGN.md gives agents a persistent, structured understanding of a design system.",
+      "analysis": "design.md is a Google Labs open spec — analogous to README.md or CONTRIBUTING.md — that gives a project a single machine-readable file describing its design system: color tokens, typography, spacing scales, component conventions, and brand voice. AI coding agents read DESIGN.md the same way they read README.md, enabling them to generate UI code that stays visually consistent without human correction. It trended strongly this week because frontend teams using AI agents have been frustrated by style drift across generated components, and an official Google-backed spec carries the weight needed to become an industry standard that tool vendors will quickly adopt."
+    }
+  ]
+}
