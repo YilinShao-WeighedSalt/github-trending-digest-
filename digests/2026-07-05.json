@@ -1,0 +1,61 @@
+{
+  "date": "2026-07-05",
+  "title": "GitHub Weekly Top 5",
+  "repos": [
+    {
+      "rank": 1,
+      "owner": "usestrix",
+      "repo": "strix",
+      "url": "https://github.com/usestrix/strix",
+      "language": "Python",
+      "stars": 37006,
+      "gained_this_week": 9362,
+      "description": "Open-source AI penetration testing tool to find and fix your app's vulnerabilities.",
+      "analysis": "Strix is an open-source AI-powered penetration testing tool that automatically discovers and helps remediate security vulnerabilities in web applications. It likely trended due to surging demand for automated security testing as AI-assisted development workflows expand—teams want AI to cover both shipping and security validation. DevSecOps engineers, security researchers, and startup CTOs who need continuous vulnerability assessment without dedicated red teams will find this most useful."
+    },
+    {
+      "rank": 2,
+      "owner": "xbtlin",
+      "repo": "ai-berkshire",
+      "url": "https://github.com/xbtlin/ai-berkshire",
+      "language": "Python",
+      "stars": 10260,
+      "gained_this_week": 5984,
+      "description": "AI-era investment research framework implementing methodologies from major investment authorities with multi-agent analysis.",
+      "analysis": "AI Berkshire is a multi-agent investment research framework that applies the philosophies of Warren Buffett, Charlie Munger, Duan Yongping, and Li Lu to stock analysis using AI. It likely trended because it merges two intensely discussed topics—AI agents and value investing—producing actionable price targets rather than vague AI-generated opinions. Individual investors, financial analysts, and quantitative researchers who want rigorous, philosophy-driven stock research will find this most valuable."
+    },
+    {
+      "rank": 3,
+      "owner": "diegosouzapw",
+      "repo": "OmniRoute",
+      "url": "https://github.com/diegosouzapw/OmniRoute",
+      "language": "TypeScript",
+      "stars": 11802,
+      "gained_this_week": 4133,
+      "description": "Free AI gateway supporting 231+ providers with token compression and smart fallback routing.",
+      "analysis": "OmniRoute is a free, self-hostable AI gateway that routes requests across 231+ LLM providers with token compression and intelligent fallback routing. It trended as the LLM provider landscape fragments—developers need a unified interface to swap providers without rewriting application code. Any developer or company running multiple AI models in production will benefit from its unified API, cost-optimization features, and provider redundancy."
+    },
+    {
+      "rank": 4,
+      "owner": "simplex-chat",
+      "repo": "simplex-chat",
+      "url": "https://github.com/simplex-chat/simplex-chat",
+      "language": "Haskell",
+      "stars": 17913,
+      "gained_this_week": 4630,
+      "description": "SimpleX - the first messaging network operating without user identifiers of any kind - 100% private by design!",
+      "analysis": "SimpleX Chat is a messaging platform that requires no phone number, email, or any user identifier—only temporary anonymous queue IDs are used for message routing, making surveillance structurally impossible. It likely saw renewed interest amid growing privacy concerns and regulatory pressure on mainstream messaging platforms. Privacy-focused individuals, journalists, activists, and anyone needing secure communications without identity exposure will find this most valuable."
+    },
+    {
+      "rank": 5,
+      "owner": "Robbyant",
+      "repo": "lingbot-map",
+      "url": "https://github.com/Robbyant/lingbot-map",
+      "language": "Python",
+      "stars": 9880,
+      "gained_this_week": 2065,
+      "description": "A feed-forward 3D foundation model for reconstructing scenes from streaming data.",
+      "analysis": "LingBot-Map is a feed-forward 3D foundation model that reconstructs full scenes from streaming video at approximately 20 FPS, processing sequences exceeding 10,000 frames via a Geometric Context Transformer architecture. Trending on organic interest as real-time 3D scene understanding becomes critical infrastructure for robotics, autonomous navigation, and spatial mapping. Computer vision researchers, robotics engineers, and developers building autonomous systems or spatial AI applications will find this most relevant."
+    }
+  ]
+}
