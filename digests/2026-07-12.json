@@ -1,0 +1,61 @@
+{
+  "date": "2026-07-12",
+  "title": "GitHub Weekly Top 5",
+  "repos": [
+    {
+      "rank": 1,
+      "owner": "Zackriya-Solutions",
+      "repo": "meetily",
+      "url": "https://github.com/Zackriya-Solutions/meetily",
+      "language": "Rust",
+      "stars": 23555,
+      "gained_this_week": 8579,
+      "description": "Privacy first, AI meeting assistant with 4x faster Parakeet/Whisper live transcription, speaker diarization, and Ollama summarization built on Rust.",
+      "analysis": "Meetily is a fully local, open-source AI meeting assistant built with Rust, Tauri, and Next.js that captures audio, transcribes in real time using Whisper or Parakeet models, and generates summaries via Ollama or other LLM providers — all without any data ever leaving your machine. It surged this week on growing distrust of cloud-based meeting AI tools, with users seeking privacy-compliant alternatives after several high-profile data-handling incidents in enterprise SaaS. The project is a natural fit for legal, healthcare, and finance teams who handle sensitive conversations and need reliable meeting notes without the compliance risk of cloud processing."
+    },
+    {
+      "rank": 2,
+      "owner": "openai",
+      "repo": "codex-plugin-cc",
+      "url": "https://github.com/openai/codex-plugin-cc",
+      "language": "JavaScript",
+      "stars": 28041,
+      "gained_this_week": 4030,
+      "description": "Plugin enabling Codex integration from Claude Code for code review and task delegation.",
+      "analysis": "codex-plugin-cc is a plugin that bridges OpenAI's Codex with the Claude Code CLI, letting developers delegate code review and subtasks to Codex directly from their Claude Code session in a multi-model workflow. Trending because cross-model AI orchestration is gaining serious traction as developers look to combine the strengths of different AI coding systems for complex software projects. It targets power users of Claude Code who also have Codex API access and want to assemble bespoke AI pipelines rather than being locked to a single assistant."
+    },
+    {
+      "rank": 3,
+      "owner": "TencentCloud",
+      "repo": "CubeSandbox",
+      "url": "https://github.com/TencentCloud/CubeSandbox",
+      "language": "Rust",
+      "stars": 9800,
+      "gained_this_week": 2416,
+      "description": "Instant, Concurrent, Secure & Lightweight Sandbox for AI Agents.",
+      "analysis": "CubeSandbox is a high-performance, hardware-isolated sandbox built on RustVMM and KVM that achieves sub-60 ms cold starts with under 5 MB of memory overhead per instance, designed to safely execute untrusted AI-agent-generated code at scale on a single node. It trended this week as teams deploying autonomous AI agents recognized the need for robust, economical sandboxing — container-based solutions carry escape risks, while this approach offers VM-level isolation without the traditional overhead. It is API-compatible with the E2B SDK, so existing agent infrastructure can migrate with minimal configuration changes."
+    },
+    {
+      "rank": 4,
+      "owner": "wonderwhy-er",
+      "repo": "DesktopCommanderMCP",
+      "url": "https://github.com/wonderwhy-er/DesktopCommanderMCP",
+      "language": "TypeScript",
+      "stars": 7968,
+      "gained_this_week": 1451,
+      "description": "MCP server that grants Claude terminal control, filesystem search, and diff file editing capabilities.",
+      "analysis": "DesktopCommanderMCP is a Model Context Protocol server that gives Claude direct access to a local terminal, full filesystem search, and diff-based file editing, effectively turning Claude into a capable local dev automation agent. It is riding the explosive growth of the MCP ecosystem as developers compete to build system-level integrations that extend AI assistants beyond the chat window. The tool is best suited for developers who use Claude as a coding copilot and want to automate shell tasks, search codebases, or apply targeted patches without switching context to a separate terminal."
+    },
+    {
+      "rank": 5,
+      "owner": "abseil",
+      "repo": "abseil-cpp",
+      "url": "https://github.com/abseil/abseil-cpp",
+      "language": "C++",
+      "stars": 17944,
+      "gained_this_week": 229,
+      "description": "Abseil Common Libraries (C++)",
+      "analysis": "Abseil is Google's collection of battle-tested foundational C++ libraries covering strings, containers, hash maps, time, synchronization, and more, designed to complement the C++ standard library and fill gaps it leaves in production use. Trending on organic interest — Abseil underpins widely used projects including Chromium, TensorFlow, and gRPC, and its steady weekly star gain reflects consistent discovery by C++ developers. It is the go-to choice for teams that need Google-scale, production-hardened utility code without pulling in heavy external dependencies."
+    }
+  ]
+}
