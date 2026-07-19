@@ -1,0 +1,61 @@
+{
+  "date": "2026-07-19",
+  "title": "GitHub Weekly Top 5",
+  "repos": [
+    {
+      "rank": 1,
+      "owner": "Nutlope",
+      "repo": "hallmark",
+      "url": "https://github.com/Nutlope/hallmark",
+      "language": "CSS",
+      "stars": 13313,
+      "gained_this_week": 8834,
+      "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex",
+      "analysis": "Hallmark is a design skill for AI coding assistants (Claude Code, Cursor, Codex) that generates websites engineered to look intentionally crafted rather than AI-generated. It provides 20 distinct themes and 57 anti-slop test gates that check output against common AI design anti-patterns before delivering final code. It trended sharply this week as frustration with generic, template-recycled AI UIs hit a critical mass and developers started demanding a practical fix that integrates directly into their existing AI workflows. Front-end developers and product teams who build with AI coding tools and need polished, distinctive results will benefit most."
+    },
+    {
+      "rank": 2,
+      "owner": "OpenCut-app",
+      "repo": "OpenCut",
+      "url": "https://github.com/OpenCut-app/OpenCut",
+      "language": "TypeScript",
+      "stars": 75827,
+      "gained_this_week": 13319,
+      "description": "The open-source CapCut alternative",
+      "analysis": "OpenCut is a browser-based, open-source video editor built as a free alternative to CapCut, the TikTok-owned app that dominates short-form video editing. Written in TypeScript, it runs entirely in the browser and replicates the timeline editing experience that made CapCut popular for social media content. It gained over 13,000 stars this week—the most of any repo on the list—driven by persistent concerns about TikTok-linked apps and demand for a self-hostable, privacy-respecting alternative. Content creators, social media managers, and developers building video pipelines are the primary audience."
+    },
+    {
+      "rank": 3,
+      "owner": "Shubhamsaboo",
+      "repo": "awesome-llm-apps",
+      "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+      "language": "Python",
+      "stars": 124503,
+      "gained_this_week": 6146,
+      "description": "100+ AI Agent & RAG apps you can actually run — clone, customize, ship",
+      "analysis": "Unlike a typical curated list, this repo bundles 100+ fully runnable LLM and AI agent applications—covering RAG pipelines, multi-agent systems, and voice/vision agents—built on frameworks like LangChain, CrewAI, and Agno. Every example is clone-and-run ready, dramatically lowering the bar for developers who want working code over abstract documentation. It continues to grow on organic interest as the AI ecosystem matures and teams seek practical, copy-paste starting points rather than toy demos. Python developers, ML engineers, and product teams evaluating AI integration patterns are its core audience."
+    },
+    {
+      "rank": 4,
+      "owner": "HKUDS",
+      "repo": "Vibe-Trading",
+      "url": "https://github.com/HKUDS/Vibe-Trading",
+      "language": "Python",
+      "stars": 25253,
+      "gained_this_week": 5635,
+      "description": "Vibe-Trading: Your Personal Trading Agent",
+      "analysis": "Vibe-Trading is an open-source AI agent platform for quantitative trading research that lets users run market analysis, backtest strategies across 18+ data sources (US, HK, A-shares, crypto, futures), and diagnose trading behavior through natural-language commands. Built with FastAPI, React, and multi-LLM support (including Claude via MCP), it ships a pre-built Alpha Zoo of 461 strategy factors and a Shadow Account feature that extracts trading rules from broker journals for behavioral analysis. It trended this week amid growing interest in agentic AI applied to finance, with connectors for major brokers including Robinhood, Alpaca, and Binance. Quant researchers, algorithmic traders, and developers building financial AI agents are its target users."
+    },
+    {
+      "rank": 5,
+      "owner": "HKUDS",
+      "repo": "DeepTutor",
+      "url": "https://github.com/HKUDS/DeepTutor",
+      "language": "Python",
+      "stars": 27903,
+      "gained_this_week": 2154,
+      "description": "Lifelong Personalized Tutoring platform",
+      "analysis": "DeepTutor is an agent-native learning workspace that unifies tutoring, quiz generation, research, knowledge bases, and persistent AI companions into a single educational environment where context travels with the learner across sessions. Built on Python and Next.js 16, it integrates multiple RAG engines—LlamaIndex, GraphRAG, and LightRAG—alongside multi-provider LLM support to create deeply context-aware learning sessions with three-layer memory that is visible and editable by users. It trended on organic interest as educators seek open-source alternatives to fragmented AI tutoring tools that lock learning data in siloed apps. Students, independent educators, and edtech developers building personalized learning systems will find it most compelling."
+    }
+  ]
+}
