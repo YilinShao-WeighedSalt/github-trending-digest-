@@ -1,0 +1,61 @@
+{
+  "date": "2026-08-02",
+  "title": "GitHub Weekly Top 5",
+  "repos": [
+    {
+      "rank": 1,
+      "owner": "block",
+      "repo": "buzz",
+      "url": "https://github.com/block/buzz",
+      "language": "Rust",
+      "stars": 21047,
+      "gained_this_week": 9003,
+      "description": "A hive mind communication platform",
+      "analysis": "Buzz is a unified developer workspace by Block (formerly Square) that merges chat, code review, CI/CD, and AI agents into a single Nostr-based relay. It eliminates tool fragmentation by making all events — commits, CI results, messages, and agent actions — cryptographically signed and searchable in one place. It trended because of Block's brand and its novel positioning of AI agents as first-class team members with their own keys and audit trails. Best suited for engineering teams wanting a self-hosted, transparent alternative to the Slack-plus-GitHub-plus-Linear stack with deep AI-agent integration."
+    },
+    {
+      "rank": 2,
+      "owner": "bojieli",
+      "repo": "ai-agent-book",
+      "url": "https://github.com/bojieli/ai-agent-book",
+      "language": "Python",
+      "stars": 29868,
+      "gained_this_week": 9298,
+      "description": "Open-source book on AI Agent design principles and engineering practices, available in 13 languages.",
+      "analysis": "This open-source book pairs 10 chapters of AI Agent theory with 95 runnable coding experiments, structured around the core formula 'Agent = LLM + Context + Tools.' It bridges the gap between raw LLM API usage and building production-grade agents that handle context management, tool systems, and multi-agent collaboration. Its strong weekly star gain likely reflects the global surge in agentic AI interest combined with multilingual availability across English, Chinese, Spanish, Japanese, Korean, and eight more. Ideal for engineers and researchers who want a structured, hands-on path from agent fundamentals through fine-tuning and multimodal deployment."
+    },
+    {
+      "rank": 3,
+      "owner": "ayghri",
+      "repo": "i-have-adhd",
+      "url": "https://github.com/ayghri/i-have-adhd",
+      "language": "Python",
+      "stars": 15643,
+      "gained_this_week": 5232,
+      "description": "A skill to stop your coding agent from burying the answer. ADHD-friendly output.",
+      "analysis": "This Claude Code skill reconfigures agent output so the key answer surfaces immediately rather than being buried under paragraphs of preamble. It tackles a widely felt frustration: LLMs that explain everything before saying anything, making responses hard to scan under time pressure or cognitive load. It trended because the ADHD-friendly framing made the problem relatable and the fix shareable — a rare combination in developer tooling. Any developer using Claude Code who values dense, scannable responses over verbose narration will benefit immediately."
+    },
+    {
+      "rank": 4,
+      "owner": "virgiliojr94",
+      "repo": "book-to-skill",
+      "url": "https://github.com/virgiliojr94/book-to-skill",
+      "language": "Python",
+      "stars": 15316,
+      "gained_this_week": 5105,
+      "description": "Turn any technical book PDF into a Claude Code skill — ready to study, reference, and use while you work.",
+      "analysis": "Book-to-Skill is a Python tool that ingests a technical PDF and outputs a Claude Code skill file, embedding the book's knowledge directly into the AI coding workflow without fine-tuning. It removes the context-switch between reading documentation and writing code by letting the agent answer questions from the book on demand. It trended on the growing wave of Claude Code skill adoption and the appeal of giving AI assistants domain-specific expertise for free. Best suited for developers who routinely work against technical references — language specs, design pattern books, or API guides — and want an AI pair-programmer that has actually 'read' them."
+    },
+    {
+      "rank": 5,
+      "owner": "microsoft",
+      "repo": "AI-For-Beginners",
+      "url": "https://github.com/microsoft/AI-For-Beginners",
+      "language": "Jupyter Notebook",
+      "stars": 58915,
+      "gained_this_week": 3246,
+      "description": "12 Weeks, 24 Lessons, AI for All!",
+      "analysis": "Microsoft's AI for Beginners is a free 12-week, 24-lesson open curriculum covering neural networks, NLP, computer vision, and modern LLMs using TensorFlow and PyTorch. It provides a structured, university-style path into AI/ML with hands-on Jupyter notebooks at every step, requiring only basic programming knowledge to start. Trending on organic interest, it resurfaces periodically as students and career-changers discover it at the start of new learning cycles. Ideal for anyone who wants a rigorous, self-paced AI foundation without paying for a course."
+    }
+  ]
+}
