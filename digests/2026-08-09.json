@@ -1,0 +1,61 @@
+{
+  "date": "2026-08-09",
+  "title": "GitHub Weekly Top 5",
+  "repos": [
+    {
+      "rank": 1,
+      "owner": "zhaoxuya520",
+      "repo": "reverse-skill",
+      "url": "https://github.com/zhaoxuya520/reverse-skill",
+      "language": "PowerShell",
+      "stars": 22450,
+      "gained_this_week": 9635,
+      "description": "AI-powered routing and self-evolving knowledge base for reverse engineering and security research",
+      "analysis": "reverse-skill is an AI-powered skill routing system for cybersecurity workflows, mapping tasks like APK analysis, binary disassembly, and CTF challenges to the right toolchain automatically via a 41-rule routing matrix. It eliminates guesswork about which security tools to invoke—jadx, IDA Pro, Frida—by letting AI agents select the appropriate methodology. Trending on organic interest as security professionals experiment with AI-assisted reverse engineering workflows. Best suited for red teamers, CTF competitors, and vulnerability researchers using Claude Code, Cursor, or similar AI coding agents."
+    },
+    {
+      "rank": 2,
+      "owner": "firecrawl",
+      "repo": "pdf-inspector",
+      "url": "https://github.com/firecrawl/pdf-inspector",
+      "language": "Rust",
+      "stars": 13846,
+      "gained_this_week": 8846,
+      "description": "Fast Rust library for PDF inspection, classification, and text extraction",
+      "analysis": "pdf-inspector is a Rust library that classifies PDFs as text-based or scanned in ~20ms, then extracts text locally for text-based files or routes scanned documents to OCR—saving cost since roughly 54% of PDFs don't require OCR at all. It exposes bindings for Python, Node.js, browser WebAssembly, and Rust, making it flexible across stacks. Trending on the surge in AI document pipelines and RAG applications where efficient PDF ingestion is a bottleneck. Ideal for developers building LLM context pipelines, document APIs, or any system processing large volumes of mixed PDFs."
+    },
+    {
+      "rank": 3,
+      "owner": "TencentCloud",
+      "repo": "TencentDB-Agent-Memory",
+      "url": "https://github.com/TencentCloud/TencentDB-Agent-Memory",
+      "language": "TypeScript",
+      "stars": 18722,
+      "gained_this_week": 8046,
+      "description": "Team-level memory hub for AI Agents with reusable memory assets across frameworks",
+      "analysis": "TencentDB-Agent-Memory is a team-level knowledge system that distills conversations, code, and documentation into four reusable asset types—Chat Memory, Skills, Wiki, and CodeGraph—shared across AI agents and frameworks. It solves the blank-slate problem: new agent sessions inherit accumulated team expertise rather than starting from scratch. Trending on the wave of multi-agent orchestration tooling as organizations deploy AI-assisted engineering teams at scale. Best suited for teams running specialized agents for research, development, and testing who need context to transfer automatically between sessions."
+    },
+    {
+      "rank": 4,
+      "owner": "lyogavin",
+      "repo": "airllm",
+      "url": "https://github.com/lyogavin/airllm",
+      "language": "Jupyter Notebook",
+      "stars": 30357,
+      "gained_this_week": 5711,
+      "description": "AirLLM 70B inference with single 4GB GPU",
+      "analysis": "AirLLM enables inference of 70B+ parameter language models on a single consumer 4GB GPU by streaming model weights one layer at a time instead of loading them all simultaneously—no quantization, distillation, or pruning required. Support extends up to 671B-parameter models, dramatically reducing the hardware barrier for local LLM deployment. Trending on sustained community interest in cost-effective local inference and updated compatibility with newer model releases. Essential for researchers, hobbyists, and small teams who want full-quality large model inference without multi-GPU or cloud costs."
+    },
+    {
+      "rank": 5,
+      "owner": "esengine",
+      "repo": "DeepSeek-Reasonix",
+      "url": "https://github.com/esengine/DeepSeek-Reasonix",
+      "language": "Go",
+      "stars": 33420,
+      "gained_this_week": 4704,
+      "description": "DeepSeek-native AI coding agent optimized for terminal use with prefix-cache stability",
+      "analysis": "DeepSeek-Reasonix is a terminal-first AI coding agent built around DeepSeek models, featuring per-turn checkpoints, undo functionality, and workspace sandboxing so long autonomous sessions can be safely left running. It supports multi-interface access via CLI, desktop app, browser, and editor through the ACP protocol, and can orchestrate two-model planner-plus-executor workflows with separate prefix-cache sessions. Trending on strong DeepSeek ecosystem momentum and growing appetite for coding agents that can handle extended, unsupervised tasks. Fits developers who want a capable autonomous agent with meaningful safety rails rather than a chat-only coding assistant."
+    }
+  ]
+}
