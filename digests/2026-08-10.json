@@ -1,0 +1,61 @@
+{
+  "date": "2026-08-10",
+  "title": "GitHub Trending Top 5",
+  "repos": [
+    {
+      "rank": 1,
+      "owner": "PrimeIntellect-ai",
+      "repo": "prime-agent",
+      "url": "https://github.com/PrimeIntellect-ai/prime-agent",
+      "language": "TypeScript",
+      "stars": 11094,
+      "gained_today": 2356,
+      "description": "A self-improving RLM agent for coding workflows and long-running autonomous tasks.",
+      "analysis": "prime-agent is a reinforcement-learning-based autonomous coding agent that iteratively improves its own performance on software engineering tasks. It picked up over 2,300 stars today, signaling a major community moment — likely tied to a launch announcement or viral demo in the rapidly heating agentic-AI space. Developers building autonomous coding pipelines or exploring self-improving AI systems are the core audience. It fits naturally into TypeScript-centric stacks where teams want an AI agent that can handle end-to-end, long-horizon coding work."
+    },
+    {
+      "rank": 2,
+      "owner": "vitali87",
+      "repo": "code-graph-rag",
+      "url": "https://github.com/vitali87/code-graph-rag",
+      "language": "Python",
+      "stars": 2984,
+      "gained_today": 96,
+      "description": "The ultimate RAG for your monorepo — query, understand, and edit multi-language codebases with AI and knowledge graphs.",
+      "analysis": "code-graph-rag builds a knowledge graph over a codebase and uses it as a retrieval layer for AI queries, allowing developers to ask high-level questions about large, multi-language monorepos and get grounded, accurate answers. It trended organically as developer interest in retrieval-augmented generation matures past document search into structured code understanding. The tool fits Python-centric AI/ML teams and backend engineers who work in large repos where naive vector search loses important structural context. Anyone integrating LLMs into their code-review or onboarding workflows will find it immediately applicable."
+    },
+    {
+      "rank": 3,
+      "owner": "msitarzewski",
+      "repo": "agency-agents",
+      "url": "https://github.com/msitarzewski/agency-agents",
+      "language": "Shell",
+      "stars": 140678,
+      "gained_today": 858,
+      "description": "A complete AI agency featuring specialized expert agents with distinct personalities and proven deliverables across various domains.",
+      "analysis": "agency-agents provides a turnkey multi-agent system where each agent embodies a specialized professional role — designer, copywriter, strategist, etc. — enabling teams to spin up an AI-powered virtual agency. Its extraordinary cumulative star count (140k+) reflects months of viral growth, and today's 858-star daily gain suggests continued momentum from social sharing and newsletter features. It is shell-based, making it trivially deployable without heavy language runtimes, and appeals to solopreneurs, marketing teams, and automation enthusiasts who want structured AI collaboration without writing custom orchestration code."
+    },
+    {
+      "rank": 4,
+      "owner": "pranshuparmar",
+      "repo": "witr",
+      "url": "https://github.com/pranshuparmar/witr",
+      "language": "Go",
+      "stars": 20661,
+      "gained_today": 210,
+      "description": "Why is this running? Trace any process, port, container, or file back to what started it — CLI + TUI.",
+      "analysis": "witr (\"Why Is This Running?\") is a Go CLI and TUI tool that traces any running process, open port, Docker container, or file descriptor back to its origin, making it fast to answer the eternal debugging question of who started a mystery process. Its clever name and real utility spread quickly through DevOps and SRE communities, explaining sustained traction. Go engineers, container operators, and sysadmins dealing with process sprawl in multi-service environments are the natural users. The interactive TUI makes it approachable for engineers who normally rely on a hodgepodge of ps, lsof, and netstat commands."
+    },
+    {
+      "rank": 5,
+      "owner": "google-deepmind",
+      "repo": "weathernext",
+      "url": "https://github.com/google-deepmind/weathernext",
+      "language": "Python",
+      "stars": 7088,
+      "gained_today": 86,
+      "description": "Open-source AI system for global weather and tropical cyclone forecasting by Google DeepMind.",
+      "analysis": "WeatherNext is Google DeepMind's latest generation of deep-learning weather models, capable of global atmospheric forecasting at roughly 30 km resolution along with tropical cyclone tracking. It builds on the foundation laid by GraphCast and GenCast, offering both deterministic and probabilistic forecast outputs suitable for research and operational use. Trending on organic interest among climate-AI researchers who follow DeepMind's work and meteorologists evaluating ML alternatives to numerical weather prediction. The codebase targets GPU and TPU environments, making it most accessible to research institutions and cloud-compute users rather than local desktop setups."
+    }
+  ]
+}
