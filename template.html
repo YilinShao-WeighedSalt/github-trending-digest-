@@ -116,7 +116,7 @@
     font-size:14.5px;
     color:var(--ink-soft);
   }
-  .dateline .week{
+  .dateline .issue{
     font-weight:600;
     color:var(--ink);
   }
@@ -491,15 +491,15 @@
 <div class="wrap">
 
   <header class="masthead">
-    <p class="kicker">GitHub Trending · Weekly Briefing</p>
-    <h1>The Week's <em>Top&nbsp;Three</em></h1>
+    <p class="kicker">GitHub Trending · Briefing</p>
+    <h1>Today's <em>Top&nbsp;Five</em></h1>
     <div class="dateline">
-      <span class="week">{{WEEK_LABEL}}</span>
+      <span class="issue">{{ISSUE_LABEL}}</span>
       <span aria-hidden="true">·</span>
-      <span class="meta">3 repositories ranked by weekly star gain</span>
+      <span class="meta">5 repositories ranked by today's star gain</span>
     </div>
     <p class="lede">
-      A short, opinionated read on the three repositories that <strong>climbed fastest on GitHub this week</strong> — what each one does, why it caught fire, and where it actually fits.
+      A short, opinionated read on the five repositories that <strong>climbed fastest on GitHub today</strong> — what each one does, why it caught fire, and where it actually fits.
     </p>
   </header>
 
@@ -512,9 +512,9 @@
   </main>
 
   <footer>
-    <div class="robot">Automated Weekly Routine</div>
+    <div class="robot">Automated Routine · Every Two Days</div>
     <div>
-      Delivered automatically every week by the GitHub Trending Digest routine — no humans were asked to rank anything. Repositories are selected by their net star gain over the trailing seven days.
+      Delivered automatically every two days by the GitHub Trending Digest routine — no humans were asked to rank anything. Repositories are selected by their net star gain over the trailing 24 hours.
     </div>
     <div class="gen">Generated {{GENERATED_DATE}}</div>
   </footer>

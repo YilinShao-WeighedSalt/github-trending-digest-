@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Render a weekly GitHub-trending digest from JSON to styled HTML.
+"""Render a GitHub-trending digest from JSON to styled HTML.
 
 Usage:
     python3 build_digest.py digests/<YYYY-MM-DD>.json
@@ -7,6 +7,7 @@ Usage:
 Writes digests/<YYYY-MM-DD>.html (from template.html + entry_template.html)
 and regenerates index.html from every digests/*.json.
 """
+
 import sys
 import json
 import html
@@ -18,12 +19,28 @@ DIGESTS = ROOT / "digests"
 
 # GitHub language colors — fallback when a digest JSON omits lang_color.
 LANG_COLORS = {
-    "Python": "#3572A5", "JavaScript": "#f1e05a", "TypeScript": "#3178c6",
-    "Go": "#00ADD8", "Rust": "#dea584", "C": "#555555", "C++": "#f34b7d",
-    "Java": "#b07219", "Ruby": "#701516", "PHP": "#4F5D95", "Shell": "#89e051",
-    "C#": "#178600", "Kotlin": "#A97BFF", "Swift": "#F05138", "Dart": "#00B4AB",
-    "Jupyter Notebook": "#DA5B0B", "HTML": "#e34c26", "CSS": "#563d7c",
-    "Vue": "#41b883", "Zig": "#ec915c", "Lua": "#000080", "Elixir": "#6e4a7e",
+    "Python": "#3572A5",
+    "JavaScript": "#f1e05a",
+    "TypeScript": "#3178c6",
+    "Go": "#00ADD8",
+    "Rust": "#dea584",
+    "C": "#555555",
+    "C++": "#f34b7d",
+    "Java": "#b07219",
+    "Ruby": "#701516",
+    "PHP": "#4F5D95",
+    "Shell": "#89e051",
+    "C#": "#178600",
+    "Kotlin": "#A97BFF",
+    "Swift": "#F05138",
+    "Dart": "#00B4AB",
+    "Jupyter Notebook": "#DA5B0B",
+    "HTML": "#e34c26",
+    "CSS": "#563d7c",
+    "Vue": "#41b883",
+    "Zig": "#ec915c",
+    "Lua": "#000080",
+    "Elixir": "#6e4a7e",
 }
 
 
@@ -47,7 +64,8 @@ def render_entry(repo, entry_tpl):
     lang = repo.get("language") or "—"
     color = repo.get("lang_color") or LANG_COLORS.get(lang, "#8b8478")
     rank = repo.get("rank", "")
-    gain = repo.get("gained_this_week")
+    # gained_this_week: pre-2026-08 digests, when the window was weekly.
+    gain = repo.get("gained_today", repo.get("gained_this_week"))
     gain_str = f"+{fmt(gain)}" if gain is not None else "—"
 
     subs = {
@@ -80,8 +98,8 @@ def pretty_date(iso):
 def build_one(json_path):
     data = json.loads(pathlib.Path(json_path).read_text())
     date = data["date"]
-    week_label = data.get("week_label") or f"Week of {pretty_date(date)}"
-    title = data.get("title", "GitHub Weekly Top 3")
+    issue_label = data.get("issue_label") or pretty_date(date)
+    title = data.get("title", "GitHub Trending Top 5")
 
     page_tpl = (ROOT / "template.html").read_text()
     entry_tpl = (ROOT / "entry_template.html").read_text()
@@ -89,11 +107,12 @@ def build_one(json_path):
     repos = sorted(data["repos"], key=lambda r: r.get("rank", 99))
     entries = "\n\n    ".join(render_entry(r, entry_tpl) for r in repos)
 
-    page = (page_tpl
-            .replace("{{PAGE_TITLE}}", esc(f"{title} — {week_label}"))
-            .replace("{{WEEK_LABEL}}", esc(week_label))
-            .replace("{{GENERATED_DATE}}", esc(pretty_date(date)))
-            .replace("{{ENTRIES}}", entries))
+    page = (
+        page_tpl.replace("{{PAGE_TITLE}}", esc(f"{title} — {issue_label}"))
+        .replace("{{ISSUE_LABEL}}", esc(issue_label))
+        .replace("{{GENERATED_DATE}}", esc(pretty_date(date)))
+        .replace("{{ENTRIES}}", entries)
+    )
 
     out_path = DIGESTS / f"{date}.html"
     out_path.write_text(page)
@@ -107,7 +126,9 @@ def build_index():
         d = json.loads(jp.read_text())
         date = d["date"]
         repos = sorted(d["repos"], key=lambda r: r.get("rank", 99))
-        teaser = " · ".join(f"{r.get('owner','')}/{r.get('repo','')}" for r in repos[:3])
+        teaser = " · ".join(
+            f"{r.get('owner', '')}/{r.get('repo', '')}" for r in repos[:3]
+        )
         rows.append(
             f'    <li><a href="digests/{date}.html"><span class="d">{esc(pretty_date(date))}</span>'
             f'<span class="t">{esc(teaser)}</span></a></li>'
@@ -122,7 +143,7 @@ INDEX_TEMPLATE = """<!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GitHub Trending — Weekly Digests</title>
+<title>GitHub Trending — Digest Archive</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -157,8 +178,8 @@ INDEX_TEMPLATE = """<!DOCTYPE html>
 <div class="wrap">
   <header>
     <p class="kicker">GitHub Trending · Archive</p>
-    <h1>Weekly <em>Digests</em></h1>
-    <p class="sub">The top 3 weekly-trending GitHub repositories, analyzed — one issue per week.</p>
+    <h1>Trending <em>Digests</em></h1>
+    <p class="sub">The top 5 daily-trending GitHub repositories, analyzed — a new issue every two days.</p>
   </header>
   <ul>
 {{ROWS}}
