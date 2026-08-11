@@ -1,0 +1,61 @@
+{
+  "date": "2026-08-11",
+  "title": "GitHub Trending Top 5",
+  "repos": [
+    {
+      "rank": 1,
+      "owner": "msitarzewski",
+      "repo": "agency-agents",
+      "url": "https://github.com/msitarzewski/agency-agents",
+      "language": "Shell",
+      "stars": 143064,
+      "gained_today": 971,
+      "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas...",
+      "analysis": "agency-agents is a Shell-based toolkit that assembles a fully staffed AI agency with specialized agents handling distinct roles—frontend development, community management, content creation, and more. It is trending today amid surging demand for autonomous multi-agent systems that go beyond single-chat assistants. The Shell-native design means developers can wire it into existing CI/CD pipelines or cron jobs without heavy language dependencies. Ideal for indie hackers and small teams wanting to automate end-to-end digital workflows using orchestrated AI agents."
+    },
+    {
+      "rank": 2,
+      "owner": "semantica-agi",
+      "repo": "semantica",
+      "url": "https://github.com/semantica-agi/semantica",
+      "language": "Python",
+      "stars": 4818,
+      "gained_today": 884,
+      "description": "Graph-Native Infrastructure for Context and Accountable AI Systems",
+      "analysis": "Semantica rethinks AI context management by making a property graph the first-class data structure for storing, traversing, and auditing the reasoning context of AI systems. The project gained nearly 18% of its total stars in a single day—suggesting a viral introduction via a blog post or conference talk on accountable AI. It targets AI researchers and MLOps engineers who need traceability and structured reasoning rather than opaque token windows. Python developers building RAG pipelines or multi-step agent workflows will find its graph-native context model a strong alternative to flat vector stores."
+    },
+    {
+      "rank": 3,
+      "owner": "nvm-sh",
+      "repo": "nvm",
+      "url": "https://github.com/nvm-sh/nvm",
+      "language": "Shell",
+      "stars": 94471,
+      "gained_today": 18,
+      "description": "Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions",
+      "analysis": "nvm is the de facto standard tool for switching between multiple Node.js versions on a single machine via a lightweight POSIX-compliant bash script. Trending on organic interest—no single event drives today's gain; its consistent appearance on trending reflects steady adoption as new developers set up Node.js environments daily. Any JavaScript or Node.js developer working across projects with differing engine requirements, or anyone bootstrapping a fresh machine, reaches for nvm as a first install. It integrates cleanly with zsh, bash, and most CI environments."
+    },
+    {
+      "rank": 4,
+      "owner": "addyosmani",
+      "repo": "agent-skills",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "language": "JavaScript",
+      "stars": 86189,
+      "gained_today": 571,
+      "description": "Production-grade engineering skills for AI coding agents.",
+      "analysis": "agent-skills is a curated library of production-ready skill definitions—structured prompts and tool specs—designed to give AI coding agents reliable, expert-level engineering behaviors covering code review, performance audits, accessibility checks, and more. Authored by Addy Osmani (Google Chrome DevRel), the project benefits from his large following and the explosive growth of AI pair-programming tools in 2026. Frontend engineers and teams adopting AI coding assistants like Claude Code or Copilot will find these skills immediately applicable to enforce consistent standards. It fits naturally into JavaScript and TypeScript stacks."
+    },
+    {
+      "rank": 5,
+      "owner": "ZhuLinsen",
+      "repo": "daily_stock_analysis",
+      "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
+      "language": "Python",
+      "stars": 62082,
+      "gained_today": 317,
+      "description": "LLM-driven stock analysis system with multi-source market data, real-time news, and automated notifications",
+      "analysis": "daily_stock_analysis is a Python system that fuses multi-source market data feeds, real-time financial news, and LLM-powered reasoning to generate daily stock analysis reports delivered via automated notifications. It is trending on organic interest from the rapidly growing community combining LLMs with quantitative finance and algorithmic trading. The project appeals to retail quants, data scientists, and Python developers who want a ready-made pipeline for AI-assisted market research without building the data integration layer from scratch. It pairs well with brokerage APIs and notification services like Telegram or email."
+    }
+  ]
+}
