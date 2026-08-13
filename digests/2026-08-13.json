@@ -1,0 +1,61 @@
+{
+  "date": "2026-08-13",
+  "title": "GitHub Trending Top 5",
+  "repos": [
+    {
+      "rank": 1,
+      "owner": "cathrynlavery",
+      "repo": "diagram-design",
+      "url": "https://github.com/cathrynlavery/diagram-design",
+      "language": "HTML",
+      "stars": 14232,
+      "gained_today": 4504,
+      "description": "29 editorial diagram types for Claude Code. Self-contained HTML + SVG. No shadows, no Mermaid-slop.",
+      "analysis": "A ready-to-use library of 29 editorial diagram types built specifically for Claude Code, each as a standalone HTML/SVG file with zero external dependencies. It avoids common pitfalls like drop shadows and Mermaid boilerplate, producing clean, publication-quality visuals. The repo likely exploded today because Claude Code's diagramming workflow is widely used and there was no polished, opinionated template library filling this niche. Technical writers, developers building documentation pipelines, and anyone generating AI-assisted reports with Claude Code are the primary audience."
+    },
+    {
+      "rank": 2,
+      "owner": "cactus-compute",
+      "repo": "needle",
+      "url": "https://github.com/cactus-compute/needle",
+      "language": "Python",
+      "stars": 4917,
+      "gained_today": 768,
+      "description": "14MB foundation model for tiny devices; phones, wearables, smart home, and robots.",
+      "analysis": "Needle is an ultra-compact 14 MB foundation model designed to run entirely on-device with no cloud dependency, targeting phones, wearables, smart home hubs, and robots. It fills the gap between massive cloud LLMs and the constrained memory and compute budgets of embedded hardware. The repo trended today amid the broader edge-AI wave, as developers increasingly want private, low-latency inference without API costs. Embedded systems engineers, IoT developers, and mobile app makers building offline-capable AI features are the target users."
+    },
+    {
+      "rank": 3,
+      "owner": "semantica-agi",
+      "repo": "semantica",
+      "url": "https://github.com/semantica-agi/semantica",
+      "language": "Python",
+      "stars": 6569,
+      "gained_today": 727,
+      "description": "Graph-Native Infrastructure for Context and Accountable AI Systems",
+      "analysis": "Semantica provides graph-native infrastructure for managing context and accountability in AI systems, modeling knowledge as explicit graphs rather than flat document stores. This enables traceable, auditable AI reasoning chains where every inference step can be inspected and attributed. It likely trended today as enterprise interest in AI explainability and regulatory accountability continues to grow. Teams building production AI pipelines that need to audit decisions, comply with governance requirements, or debug complex reasoning chains are the primary audience."
+    },
+    {
+      "rank": 4,
+      "owner": "anthropics",
+      "repo": "skills",
+      "url": "https://github.com/anthropics/skills",
+      "language": "Python",
+      "stars": 168981,
+      "gained_today": 383,
+      "description": "Public repository for Agent Skills",
+      "analysis": "This is Anthropic's official public repository for Claude Code Agent Skills — reusable prompt packages that extend what Claude Code agents can do, covering workflows like code review, deployment automation, data visualization, and more. Making it public opens the ecosystem to community contributions and makes the skill catalog browsable and forkable. It trended organically as the Claude Code community discovered they can now inspect, install, and contribute skills directly from the canonical source. Developers customizing AI-assisted workflows and organizations building internal Claude Code tooling are the core audience."
+    },
+    {
+      "rank": 5,
+      "owner": "altic-dev",
+      "repo": "FluidVoice",
+      "url": "https://github.com/altic-dev/FluidVoice",
+      "language": "Swift",
+      "stars": 9829,
+      "gained_today": 187,
+      "description": "Fastest and only macOS Dictation app with on-device STT and custom trained AI enhancement model.",
+      "analysis": "FluidVoice is a macOS dictation app combining fully on-device speech-to-text with a custom-trained AI model that enhances transcription quality in real time — no audio ever leaves the machine. It competes with cloud-based solutions and Apple's built-in dictation by prioritizing speed, privacy, and accuracy on Apple Silicon. The repo trended on organic interest from macOS power users seeking private, low-latency dictation following improvements in local ML performance on M-series chips. Developers, writers, and professionals who dictate frequently and care about data sovereignty are the natural audience."
+    }
+  ]
+}
