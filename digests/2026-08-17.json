@@ -1,0 +1,61 @@
+{
+  "date": "2026-08-17",
+  "title": "GitHub Trending Top 5",
+  "repos": [
+    {
+      "rank": 1,
+      "owner": "harry0703",
+      "repo": "MoneyPrinterTurbo",
+      "url": "https://github.com/harry0703/MoneyPrinterTurbo",
+      "language": "Python",
+      "stars": 105869,
+      "gained_today": 1275,
+      "description": "Generate HD short videos from a topic or keyword with an automated AI workflow",
+      "analysis": "MoneyPrinterTurbo is a fully automated AI video pipeline that takes a single keyword or topic and produces a polished, narrated short-form video complete with subtitles and background footage. It orchestrates script writing, voice synthesis, stock footage sourcing, and final video assembly end-to-end with no manual editing required. The project continues to surge in popularity due to explosive creator-economy demand for AI-generated social media content and its support for multiple LLM and TTS backends. Content marketers, YouTubers, and TikTok creators wanting to automate short-form video production at scale are its primary audience."
+    },
+    {
+      "rank": 2,
+      "owner": "usestrix",
+      "repo": "strix",
+      "url": "https://github.com/usestrix/strix",
+      "language": "Python",
+      "stars": 54071,
+      "gained_today": 656,
+      "description": "Open-source AI penetration testing tool to find and fix your app's vulnerabilities",
+      "analysis": "Strix is an open-source AI-powered penetration testing platform that autonomously discovers, exploits, and proposes fixes for vulnerabilities in web applications. It combines LLM reasoning with traditional scanning techniques to produce prioritized, actionable security reports rather than just raw findings. Trending on the wave of AI-assisted DevSecOps tooling, it appeals to teams who want continuous security coverage without a full red-team budget. Security researchers, DevSecOps engineers, and startups running self-service vulnerability assessments are its core users."
+    },
+    {
+      "rank": 3,
+      "owner": "nautechsystems",
+      "repo": "nautilus_trader",
+      "url": "https://github.com/nautechsystems/nautilus_trader",
+      "language": "Rust",
+      "stars": 25869,
+      "gained_today": 115,
+      "description": "Production-grade Rust-native trading engine with deterministic event-driven architecture",
+      "analysis": "NautilusTrader is a high-performance algorithmic trading engine written in Rust that exposes a Python API, designed to run identical code paths in both backtesting and live trading environments. Its deterministic event-driven architecture eliminates the common discrepancy between simulated and production results that plagues most quant frameworks. It is trending on organic interest as quantitative developers increasingly seek low-latency, memory-safe alternatives to pure-Python trading stacks. Quant traders, hedge funds, and proprietary trading desks building systematic strategies will find it most valuable."
+    },
+    {
+      "rank": 4,
+      "owner": "akitaonrails",
+      "repo": "ai-memory",
+      "url": "https://github.com/akitaonrails/ai-memory",
+      "language": "Rust",
+      "stars": 1985,
+      "gained_today": 207,
+      "description": "Solution for long-term memory for agent coding CLIs and facilitating handoff between different agent vendors",
+      "analysis": "ai-memory provides a persistent, structured memory layer for AI coding assistants such as Claude Code, Cursor, and Aider, enabling them to retain project context across sessions and hand off state seamlessly between different agent vendors. It stores memories as local vector embeddings over project files and conversation history, so agents can recall earlier decisions and code patterns. It's surging today because developers are frustrated with stateless coding agents losing context in long-running projects, and this repo offers a lightweight, vendor-neutral fix. Any developer regularly using LLM-based coding tools on non-trivial codebases is the target user."
+    },
+    {
+      "rank": 5,
+      "owner": "mukul975",
+      "repo": "Anthropic-Cybersecurity-Skills",
+      "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+      "language": "Python",
+      "stars": 28356,
+      "gained_today": 156,
+      "description": "817 structured cybersecurity skills for AI agents mapped to 6 frameworks",
+      "analysis": "Anthropic-Cybersecurity-Skills is a curated library of 817 structured cybersecurity skills formatted for AI agent consumption, mapped to six major frameworks including MITRE ATT&CK and OWASP. It gives security-focused AI agents a rich, standardized knowledge base for reasoning about attack techniques, defenses, and compliance requirements without requiring agents to hallucinate or improvise. The eye-catching name referencing Anthropic drives traffic, while genuine utility for AI-native security tooling sustains it. AI security engineers and red teams building LLM-driven threat analysis or automated pentest agents are its primary audience."
+    }
+  ]
+}
