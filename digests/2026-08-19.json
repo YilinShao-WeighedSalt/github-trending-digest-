@@ -1,0 +1,61 @@
+{
+  "date": "2026-08-19",
+  "title": "GitHub Trending Top 5",
+  "repos": [
+    {
+      "rank": 1,
+      "owner": "harry0703",
+      "repo": "MoneyPrinterTurbo",
+      "url": "https://github.com/harry0703/MoneyPrinterTurbo",
+      "language": "Python",
+      "stars": 110481,
+      "gained_today": 2221,
+      "description": "Generate HD short videos from a topic or keyword with an automated AI workflow",
+      "analysis": "MoneyPrinterTurbo automates the entire short-video production pipeline — script writing, AI voiceover, background footage selection, and subtitle generation — from a single keyword or topic. It targets content creators and marketers who need to publish high-volume social media content for TikTok, YouTube Shorts, or Instagram Reels without manual editing. Trending on sustained organic interest as AI-driven content automation remains a top use case for non-technical creators. Requires Python and a few API keys (LLM + TTS providers) to self-host."
+    },
+    {
+      "rank": 2,
+      "owner": "volcengine",
+      "repo": "OpenViking",
+      "url": "https://github.com/volcengine/OpenViking",
+      "language": "Python",
+      "stars": 30112,
+      "gained_today": 803,
+      "description": "Self-evolving Context Database for AI Agents. Unify Agent Memory, Knowledge RAG and Skills",
+      "analysis": "OpenViking is a context-management layer for AI agents that merges three previously separate concerns — episodic memory, knowledge retrieval (RAG), and executable skills — into a single self-evolving database. Released by ByteDance's cloud division (Volcengine), it signals that large tech companies are standardising on unified agent memory rather than bolting together disparate vector stores and skill registries. Trending on broad interest in multi-agent infrastructure as teams move from prototype to production. Best suited for AI engineers building long-running, multi-session agent systems in Python who need cross-session recall without managing separate memory and retrieval backends."
+    },
+    {
+      "rank": 3,
+      "owner": "chaitanyagiri",
+      "repo": "munder-difflin",
+      "url": "https://github.com/chaitanyagiri/munder-difflin",
+      "language": "TypeScript",
+      "stars": 2636,
+      "gained_today": 797,
+      "description": "Local multi-agent harness that coordinates multiple AI coding assistants into a self-organising team",
+      "analysis": "Munder Difflin wraps existing terminal-based AI coding agents (Claude Code, OpenAI Codex, and others) into a self-organising virtual office — complete with a Pixi.js floor-plan, a GOD-orchestrator agent that routes tasks, and semantic memory enabling instant cross-session recall. The Office-themed name and the pitch of making subscriptions you already pay for collaborate autonomously drove rapid viral sharing on developer forums. Trending on a combination of novelty, humour, and real utility in the multi-agent coordination space. Aimed at individual developers and small teams who want autonomous, locally-run agent pipelines without paying for a cloud orchestration layer."
+    },
+    {
+      "rank": 4,
+      "owner": "mukul975",
+      "repo": "Anthropic-Cybersecurity-Skills",
+      "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+      "language": "Python",
+      "stars": 29784,
+      "gained_today": 767,
+      "description": "817 structured cybersecurity skills for AI agents mapped to 6 frameworks",
+      "analysis": "This repository encodes 817 structured, step-by-step cybersecurity skill definitions across 29 security domains, mapped to six industry frameworks including MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND, NIST AI RMF, and the MITRE Fight Fraud Framework. It lets AI coding assistants (Claude Code, GitHub Copilot, Cursor) execute expert-level security analysis tasks by providing the procedural knowledge that LLMs lack by default. Trending on growing demand for structured domain expertise layered onto AI agents, particularly in security teams piloting AI-assisted red-teaming and compliance workflows. Best suited for security engineers and AI practitioners who want LLM-driven tooling to follow established security playbooks rather than improvising."
+    },
+    {
+      "rank": 5,
+      "owner": "nautechsystems",
+      "repo": "nautilus_trader",
+      "url": "https://github.com/nautechsystems/nautilus_trader",
+      "language": "Rust",
+      "stars": 26419,
+      "gained_today": 79,
+      "description": "Production-grade Rust-native trading engine with deterministic event-driven architecture",
+      "analysis": "NautilusTrader is a production-ready algorithmic trading platform built in Rust for deterministic, low-latency backtesting and live execution, with a Python API for strategy authoring. Its event-driven core eliminates the non-determinism that plagues Python-first frameworks when used in live trading, making backtest results reliably reproducible in production. Trending on organic interest from quantitative developers migrating performance-critical workloads from Python to Rust-backed engines. Best suited for quant traders, prop shops, and fintech engineers who need institutional-grade execution with microsecond latency but prefer Python for strategy logic."
+    }
+  ]
+}
