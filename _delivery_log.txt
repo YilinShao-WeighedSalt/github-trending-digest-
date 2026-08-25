@@ -15,3 +15,4 @@
 2026-08-19T22:14:38Z  date=2026-08-19  ntfy_http=200  result=OK
 2026-08-21T22:09:09Z  date=2026-08-21  ntfy_http=200  result=OK
 2026-08-23T22:09:30Z  date=2026-08-23  ntfy_http=200  result=OK
+2026-08-25T22:16:50Z  date=2026-08-25  ntfy_http=429  result=FAIL
