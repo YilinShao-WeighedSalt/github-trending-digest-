@@ -1,0 +1,61 @@
+{
+  "date": "2026-08-25",
+  "title": "GitHub Trending Top 5",
+  "repos": [
+    {
+      "rank": 1,
+      "owner": "freestylefly",
+      "repo": "awesome-gpt-image-2",
+      "url": "https://github.com/freestylefly/awesome-gpt-image-2",
+      "language": "JavaScript",
+      "stars": 17521,
+      "gained_today": 1698,
+      "description": "Prompt as Code | GPT-Image2 industrial-grade prompt engine and template library with 530+ reverse-engineered cases",
+      "analysis": "awesome-gpt-image-2 is an industrial-grade prompt engineering library for GPT-Image-2, OpenAI's next-generation image generation model, offering 530+ reverse-engineered prompt cases and 20+ production-ready templates. It treats prompts as first-class code artifacts, making repeatable, high-quality image generation accessible without deep prompt-crafting expertise. It's surging today because GPT-Image-2 is a newly available model generating intense community excitement around what prompts actually work at scale. Best suited for designers, creative developers, and AI product teams building image generation pipelines in JavaScript/Node.js environments."
+    },
+    {
+      "rank": 2,
+      "owner": "anthropics",
+      "repo": "claude-plugins-community",
+      "url": "https://github.com/anthropics/claude-plugins-community",
+      "language": "Python",
+      "stars": 1712,
+      "gained_today": 350,
+      "description": "Community plugin marketplace for Claude Cowork and Claude Code",
+      "analysis": "claude-plugins-community is the official community marketplace for plugins extending Claude Cowork and Claude Code, allowing developers to publish, discover, and install third-party integrations that enhance Claude's in-editor and collaborative capabilities. It provides a curated registry of Python-based plugins covering domains like CI automation, code review, and data tools. The repo is trending today on the back of Claude Cowork's launch and the rapid developer enthusiasm around agentic coding tools seeking an ecosystem. It's the go-to starting point for Claude Code power users wanting to extend their workflow beyond the built-in toolset."
+    },
+    {
+      "rank": 3,
+      "owner": "MadsLorentzen",
+      "repo": "ai-job-search",
+      "url": "https://github.com/MadsLorentzen/ai-job-search",
+      "language": "Python",
+      "stars": 35217,
+      "gained_today": 1266,
+      "description": "Job search framework built on Claude Code: evaluate postings, tailor CVs, write cover letters",
+      "analysis": "ai-job-search is a Python framework that automates the modern job hunt using Claude Code as its AI backbone — it evaluates job postings for fit, rewrites CVs to match specific roles, and drafts tailored cover letters at scale. The project turns what is normally an hours-long manual process into a repeatable, scriptable pipeline. It's trending sharply today, likely amplified by social media coverage and the relatable pain point of job searching, which drives viral sharing among mid-career engineers and recent graduates. It fits Python developers comfortable with CLI tools who want to apply AI leverage to career tasks without building the plumbing themselves."
+    },
+    {
+      "rank": 4,
+      "owner": "apache",
+      "repo": "maka",
+      "url": "https://github.com/apache/maka",
+      "language": "TypeScript",
+      "stars": 3295,
+      "gained_today": 538,
+      "description": "Apache Maka is a local-first AI agent workspace with append-only logging",
+      "analysis": "Apache Maka is a local-first AI agent workspace built in TypeScript that records every action in an append-only log, giving users full auditability and offline capability for agentic AI workflows. Unlike cloud-hosted agent platforms, Maka keeps all data on the user's machine, making it attractive for privacy-sensitive enterprise contexts. Its entry into the Apache Software Foundation incubator is the most likely driver of today's surge, as the ASF imprimatur signals long-term governance and enterprise readiness. The primary audience is backend and full-stack developers building internal AI tools who need durability guarantees and cannot send data to external SaaS platforms."
+    },
+    {
+      "rank": 5,
+      "owner": "TauricResearch",
+      "repo": "TradingAgents",
+      "url": "https://github.com/TauricResearch/TradingAgents",
+      "language": "Python",
+      "stars": 100171,
+      "gained_today": 191,
+      "description": "Multi-Agents LLM Financial Trading Framework",
+      "analysis": "TradingAgents is a multi-agent LLM framework for financial trading that coordinates specialist AI agents (e.g., a market analyst, a risk manager, a trader) to make collaborative buy/sell decisions using large language models. It has crossed the 100,000-star milestone, a rare achievement that itself drives renewed social interest and referral traffic. Trending today on organic momentum from the milestone and ongoing community interest in AI-driven quantitative finance. The project targets quantitative developers, fintech engineers, and researchers who want an extensible Python framework for experimenting with LLM-based trading strategies without building multi-agent coordination from scratch."
+    }
+  ]
+}
