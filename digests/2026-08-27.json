@@ -1,0 +1,61 @@
+{
+  "date": "2026-08-27",
+  "title": "GitHub Trending Top 5",
+  "repos": [
+    {
+      "rank": 1,
+      "owner": "tt-a1i",
+      "repo": "archify",
+      "url": "https://github.com/tt-a1i/archify",
+      "language": "JavaScript",
+      "stars": 22892,
+      "gained_today": 4260,
+      "description": "Self-contained HTML tool for beautiful, verifiable architecture, workflow, sequence, data-flow, and lifecycle diagrams",
+      "analysis": "Archify is a zero-dependency, single-HTML-file diagramming tool that runs entirely in the browser — no installation, no login, no server. It covers architecture, workflow, sequence, data-flow, and lifecycle diagrams and produces output that is 'verifiable,' meaning diagrams can be checked for consistency. It surged to 4,260 stars today, the highest daily gain in this list, almost certainly after going viral on Hacker News or Reddit as a lightweight, offline-ready, link-shareable alternative to Lucidchart or draw.io. Perfect for software architects, engineers who loathe SaaS diagramming tools, and teams that need quick, portable documentation."
+    },
+    {
+      "rank": 2,
+      "owner": "freestylefly",
+      "repo": "awesome-gpt-image-2",
+      "url": "https://github.com/freestylefly/awesome-gpt-image-2",
+      "language": "JavaScript",
+      "stars": 22944,
+      "gained_today": 2093,
+      "description": "Prompt-as-code engine offering 530+ reversed examples and 20+ industrial templates for GPT image generation",
+      "analysis": "Awesome-gpt-image-2 is a curated library of 530+ reverse-engineered prompts and 20+ production-ready templates for GPT's image generation API, treating prompts as reusable, versioned code rather than one-off inputs. Trending today as GPT-Image-1 and GPT-4o image generation continue to see explosive developer adoption and teams struggle with inconsistent output quality. It fills a practical gap for developers and designers who need reliable, repeatable results without guessing at prompt structure. Best suited for product designers, marketing teams, and AI application developers building image pipelines."
+    },
+    {
+      "rank": 3,
+      "owner": "bilawalsidhu",
+      "repo": "gods-eye-view",
+      "url": "https://github.com/bilawalsidhu/gods-eye-view",
+      "language": "JavaScript",
+      "stars": 7732,
+      "gained_today": 1984,
+      "description": "A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe.",
+      "analysis": "Gods-eye-view renders live, open-source spatial intelligence data on a photorealistic 3D globe in the browser — satellites, aircraft, ships, and other trackable objects pulled from public data sources — giving users the aesthetic of a spy satellite command center using fully open data. It gained 1,984 stars today, likely after a viral post in OSINT or tech communities drawn to the combination of real-time geopolitical data and slick 3D visualization. Ideal for open-source intelligence (OSINT) researchers, data visualization enthusiasts, security hobbyists, and anyone fascinated by live global tracking."
+    },
+    {
+      "rank": 4,
+      "owner": "JetBrains",
+      "repo": "go-modern-guidelines",
+      "url": "https://github.com/JetBrains/go-modern-guidelines",
+      "language": "Go",
+      "stars": 2046,
+      "gained_today": 314,
+      "description": "Help AI coding agents write modern Go",
+      "analysis": "Go-modern-guidelines is a JetBrains-published reference that documents current, idiomatic Go patterns specifically so AI coding assistants generate correct modern Go rather than outdated or non-idiomatic code. It covers standard library patterns, Go module conventions, error handling idioms, and other areas where LLMs frequently regress to older Go 1.x-style code. Trending as AI-assisted Go development matures and developers grow frustrated with Copilot or similar tools suggesting stale patterns. Essential for Go teams using JetBrains AI, GitHub Copilot, or any LLM in their workflow, and for teams building custom AI context rules for Go codebases."
+    },
+    {
+      "rank": 5,
+      "owner": "zedeus",
+      "repo": "nitter",
+      "url": "https://github.com/zedeus/nitter",
+      "language": "Nim",
+      "stars": 13835,
+      "gained_today": 63,
+      "description": "Alternative Twitter front-end",
+      "analysis": "Nitter is a privacy-respecting alternative front-end for Twitter/X, written in Nim, that strips away tracking scripts, ads, and mandatory JavaScript and lets users browse tweets and profiles in a lightweight, fast interface. It has been a long-standing privacy tool that periodically resurfaces in trending lists as X's API restrictions, paywalls, and data practices push users to seek alternatives. Trending on organic interest. Best suited for privacy-conscious users, developers scraping public tweet data, and anyone wanting a faster or more accessible Twitter browsing experience without the full X web application."
+    }
+  ]
+}
