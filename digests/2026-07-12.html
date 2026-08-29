@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GitHub Weekly Top 5 — Week of July 12, 2026</title>
+<title>GitHub Weekly Top 5 — July 12, 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -20,6 +20,9 @@
     --gain:#1f6f43;          /* calm forest green for momentum */
     --gain-bg:#1f6f4312;
     --card:#ffffff;
+    --llm-req:#9a3324;      --llm-req-line:#9a332440; --llm-req-bg:#9a33240d;
+    --llm-opt:#8a6413;      --llm-opt-line:#8a641340; --llm-opt-bg:#8a64130d;
+    --llm-no:#1f6f43;       --llm-no-line:#1f6f4340;  --llm-no-bg:#1f6f430d;
     --shadow:0 1px 2px rgba(28,26,23,.04), 0 6px 22px rgba(28,26,23,.05);
     --container-shadow:0 1px 0 rgba(28,26,23,.04), 0 18px 50px -28px rgba(28,26,23,.18);
     --focus:#9a3324;
@@ -116,7 +119,7 @@
     font-size:14.5px;
     color:var(--ink-soft);
   }
-  .dateline .week{
+  .dateline .issue{
     font-weight:600;
     color:var(--ink);
   }
@@ -293,6 +296,26 @@
   .stars svg{ width:13px;height:13px; flex:none; color:#c8951f; }
   .stars .lbl{ color:var(--ink-soft); font-family:"Inter",sans-serif; font-size:12.5px; font-weight:500; }
 
+  /* LLM-API requirement badge */
+  .llm{
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    font-family:"Inter",sans-serif;
+    font-size:11.5px;
+    font-weight:600;
+    letter-spacing:.02em;
+    line-height:1;
+    padding:5px 10px 5px 8px;
+    border-radius:999px;
+    border:1px solid;
+    white-space:nowrap;
+  }
+  .llm svg{ width:12px;height:12px; flex:none; }
+  .llm-required{ color:var(--llm-req); border-color:var(--llm-req-line); background:var(--llm-req-bg); }
+  .llm-optional{ color:var(--llm-opt); border-color:var(--llm-opt-line); background:var(--llm-opt-bg); }
+  .llm-none{ color:var(--llm-no); border-color:var(--llm-no-line); background:var(--llm-no-bg); }
+
   .desc{
     font-size:16.5px;
     color:var(--ink);
@@ -467,6 +490,9 @@
       --gain:#5fcf94;
       --gain-bg:#5fcf941a;
       --card:#1e1b15;
+      --llm-req:#e08a6f;    --llm-req-line:#e08a6f4d; --llm-req-bg:#e08a6f14;
+      --llm-opt:#d8b25e;    --llm-opt-line:#d8b25e4d; --llm-opt-bg:#d8b25e14;
+      --llm-no:#5fcf94;     --llm-no-line:#5fcf944d;  --llm-no-bg:#5fcf9414;
       --shadow:0 1px 2px rgba(0,0,0,.3), 0 6px 22px rgba(0,0,0,.35);
       --container-shadow:0 18px 50px -28px rgba(0,0,0,.6);
       --focus:#f4b79f;
@@ -491,15 +517,15 @@
 <div class="wrap">
 
   <header class="masthead">
-    <p class="kicker">GitHub Trending · Weekly Briefing</p>
-    <h1>The Week's <em>Top&nbsp;Three</em></h1>
+    <p class="kicker">GitHub Trending · Briefing</p>
+    <h1>Today's <em>Top&nbsp;Five</em></h1>
     <div class="dateline">
-      <span class="week">Week of July 12, 2026</span>
+      <span class="issue">July 12, 2026</span>
       <span aria-hidden="true">·</span>
-      <span class="meta">3 repositories ranked by weekly star gain</span>
+      <span class="meta">5 repositories ranked by today's star gain</span>
     </div>
     <p class="lede">
-      A short, opinionated read on the three repositories that <strong>climbed fastest on GitHub this week</strong> — what each one does, why it caught fire, and where it actually fits.
+      A short, opinionated read on the five repositories that <strong>climbed fastest on GitHub today</strong> — what each one does, why it caught fire, and where it actually fits.
     </p>
   </header>
 
@@ -521,14 +547,15 @@
             <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"/></svg>
             23,555 <span class="lbl">stars</span>
           </span>
+          <span class="llm llm-optional" title="Local-first (Whisper + Ollama); Claude/Groq/OpenRouter optional"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10.9" cy="5.1" r="3.3"/><path d="M8.6 7.4 2 14M4.3 11.7l1.7 1.7M2 14l1.2 1.2"/></svg>LLM API optional</span>
         </div>
       </div>
       <div class="momentum">
-        <span class="gain-figure" title="Stars gained this week">
+        <span class="gain-figure" title="Stars gained today">
           <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8.22 2.97a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1-1.06 1.06L9 5.81v6.44a.75.75 0 0 1-1.5 0V5.81L4.03 8.28a.75.75 0 0 1-1.06-1.06l4.25-4.25Z"/></svg>
           +8,579
         </span>
-        <span class="gain-label">stars this week</span>
+        <span class="gain-label">stars today</span>
       </div>
       <div class="entry-body">
         <p class="desc">Privacy first, AI meeting assistant with 4x faster Parakeet/Whisper live transcription, speaker diarization, and Ollama summarization built on Rust.</p>
@@ -558,14 +585,15 @@
             <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"/></svg>
             28,041 <span class="lbl">stars</span>
           </span>
+          <span class="llm llm-required" title="Claude Code + Codex sign-in (ChatGPT account or OpenAI key)"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10.9" cy="5.1" r="3.3"/><path d="M8.6 7.4 2 14M4.3 11.7l1.7 1.7M2 14l1.2 1.2"/></svg>LLM API required</span>
         </div>
       </div>
       <div class="momentum">
-        <span class="gain-figure" title="Stars gained this week">
+        <span class="gain-figure" title="Stars gained today">
           <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8.22 2.97a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1-1.06 1.06L9 5.81v6.44a.75.75 0 0 1-1.5 0V5.81L4.03 8.28a.75.75 0 0 1-1.06-1.06l4.25-4.25Z"/></svg>
           +4,030
         </span>
-        <span class="gain-label">stars this week</span>
+        <span class="gain-label">stars today</span>
       </div>
       <div class="entry-body">
         <p class="desc">Plugin enabling Codex integration from Claude Code for code review and task delegation.</p>
@@ -595,14 +623,15 @@
             <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"/></svg>
             9,800 <span class="lbl">stars</span>
           </span>
+          <span class="llm llm-none" title="Sandbox runtime for agents — makes no LLM calls itself"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10.9" cy="5.1" r="3.3"/><path d="M8.6 7.4 2 14M4.3 11.7l1.7 1.7"/><path d="M1.5 1.5l13 13" stroke-width="2"/></svg>No LLM API needed</span>
         </div>
       </div>
       <div class="momentum">
-        <span class="gain-figure" title="Stars gained this week">
+        <span class="gain-figure" title="Stars gained today">
           <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8.22 2.97a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1-1.06 1.06L9 5.81v6.44a.75.75 0 0 1-1.5 0V5.81L4.03 8.28a.75.75 0 0 1-1.06-1.06l4.25-4.25Z"/></svg>
           +2,416
         </span>
-        <span class="gain-label">stars this week</span>
+        <span class="gain-label">stars today</span>
       </div>
       <div class="entry-body">
         <p class="desc">Instant, Concurrent, Secure &amp; Lightweight Sandbox for AI Agents.</p>
@@ -632,14 +661,15 @@
             <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"/></svg>
             7,968 <span class="lbl">stars</span>
           </span>
+          <span class="llm llm-required" title="MCP server — pair with Claude or any MCP client"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10.9" cy="5.1" r="3.3"/><path d="M8.6 7.4 2 14M4.3 11.7l1.7 1.7M2 14l1.2 1.2"/></svg>LLM API required</span>
         </div>
       </div>
       <div class="momentum">
-        <span class="gain-figure" title="Stars gained this week">
+        <span class="gain-figure" title="Stars gained today">
           <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8.22 2.97a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1-1.06 1.06L9 5.81v6.44a.75.75 0 0 1-1.5 0V5.81L4.03 8.28a.75.75 0 0 1-1.06-1.06l4.25-4.25Z"/></svg>
           +1,451
         </span>
-        <span class="gain-label">stars this week</span>
+        <span class="gain-label">stars today</span>
       </div>
       <div class="entry-body">
         <p class="desc">MCP server that grants Claude terminal control, filesystem search, and diff file editing capabilities.</p>
@@ -669,14 +699,15 @@
             <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"/></svg>
             17,944 <span class="lbl">stars</span>
           </span>
+          <span class="llm llm-none"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10.9" cy="5.1" r="3.3"/><path d="M8.6 7.4 2 14M4.3 11.7l1.7 1.7"/><path d="M1.5 1.5l13 13" stroke-width="2"/></svg>No LLM API needed</span>
         </div>
       </div>
       <div class="momentum">
-        <span class="gain-figure" title="Stars gained this week">
+        <span class="gain-figure" title="Stars gained today">
           <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8.22 2.97a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1-1.06 1.06L9 5.81v6.44a.75.75 0 0 1-1.5 0V5.81L4.03 8.28a.75.75 0 0 1-1.06-1.06l4.25-4.25Z"/></svg>
           +229
         </span>
-        <span class="gain-label">stars this week</span>
+        <span class="gain-label">stars today</span>
       </div>
       <div class="entry-body">
         <p class="desc">Abseil Common Libraries (C++)</p>
@@ -695,9 +726,9 @@
   </main>
 
   <footer>
-    <div class="robot">Automated Weekly Routine</div>
+    <div class="robot">Automated Routine · Every Two Days</div>
     <div>
-      Delivered automatically every week by the GitHub Trending Digest routine — no humans were asked to rank anything. Repositories are selected by their net star gain over the trailing seven days.
+      Delivered automatically every two days by the GitHub Trending Digest routine — no humans were asked to rank anything. Repositories are selected by their net star gain over the trailing 24 hours.
     </div>
     <div class="gen">Generated July 12, 2026</div>
   </footer>

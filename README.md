@@ -14,19 +14,27 @@ Tapping either opens the styled HTML report for the issue.
 Every two days the routine:
 
 1. Fetches `https://github.com/trending?since=daily` and takes the top 5.
-2. Writes a short analysis of each repo.
+2. Writes a short analysis of each repo, tags it with `topics`, and classifies
+   `llm_api` — whether the repo needs an LLM API to be useful
+   (`required` / `optional` / `none`, with an optional `llm_api_note`).
 3. Saves the structured data to `digests/<YYYY-MM-DD>.json`.
-4. Runs `build_digest.py` to render `digests/<YYYY-MM-DD>.html` and refresh `index.html`.
+4. Runs `build_digest.py` to render `digests/<YYYY-MM-DD>.html` and refresh
+   `index.html`, `repos.json`, and `explore.html`.
 5. Commits & pushes here, then fires an ntfy notification whose link points at the rendered HTML
    (served through `raw.githack.com`).
 
 ## Layout
 
 ```
-digests/<date>.json   structured digest data (input)
-digests/<date>.html   rendered report (output of build_digest.py)
-index.html            landing page linking every report
-build_digest.py       JSON -> styled HTML renderer + index updater
+digests/<date>.json     structured digest data (input)
+digests/<date>.html     rendered report (output of build_digest.py)
+index.html              landing page linking every report
+repos.json              aggregated database: every repo ever featured, with
+                        appearances, topics, and llm_api classification
+explore.html            Repo Atlas — interactive knowledge graph (repos <-> topics)
+                        plus a directory browsable by topic or date
+explore_template.html   template for explore.html
+build_digest.py         JSON -> styled HTML renderer + index/db/atlas updater
 ```
 
 ## Regenerate locally

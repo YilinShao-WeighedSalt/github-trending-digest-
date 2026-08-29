@@ -11,7 +11,13 @@
       "stars": 18539,
       "gained_today": 1619,
       "description": "29 editorial diagram types for Claude Code. Self-contained HTML + SVG.",
-      "analysis": "diagram-design is a curated library of 29 editorial diagram templates — flowcharts, sequence diagrams, architecture maps, and more — each delivered as a single self-contained HTML+SVG file with no external dependencies. It trended sharply today (1,619 stars) riding the wave of Claude Code's exploding adoption, as users discovered it provides polished, copy-paste-ready visuals for AI-assisted documentation and planning. Front-end developers, technical writers, and anyone using Claude Code for architectural or system design work will find it immediately practical."
+      "analysis": "diagram-design is a curated library of 29 editorial diagram templates — flowcharts, sequence diagrams, architecture maps, and more — each delivered as a single self-contained HTML+SVG file with no external dependencies. It trended sharply today (1,619 stars) riding the wave of Claude Code's exploding adoption, as users discovered it provides polished, copy-paste-ready visuals for AI-assisted documentation and planning. Front-end developers, technical writers, and anyone using Claude Code for architectural or system design work will find it immediately practical.",
+      "llm_api": "required",
+      "llm_api_note": "Diagram skill for Claude Code",
+      "topics": [
+        "Design",
+        "Agent Skills & Plugins"
+      ]
     },
     {
       "rank": 2,
@@ -22,7 +28,12 @@
       "stars": 4023,
       "gained_today": 616,
       "description": "Meta-Framework of Spatiotemporal Composability",
-      "analysis": "Cordis is a TypeScript meta-framework for building extensible, plugin-driven applications through 'spatiotemporal composability' — a model where modules can be loaded, unloaded, and composed across different runtime contexts without restarting the host. It solves the hard problem of hot-reloadable plugin systems in long-running Node.js services. It likely trended today due to renewed interest from bot and agent framework developers looking for a disciplined plugin lifecycle. Best suited for developers building chatbots, CLI tools, or any application where extensibility and runtime plugin management are priorities."
+      "analysis": "Cordis is a TypeScript meta-framework for building extensible, plugin-driven applications through 'spatiotemporal composability' — a model where modules can be loaded, unloaded, and composed across different runtime contexts without restarting the host. It solves the hard problem of hot-reloadable plugin systems in long-running Node.js services. It likely trended today due to renewed interest from bot and agent framework developers looking for a disciplined plugin lifecycle. Best suited for developers building chatbots, CLI tools, or any application where extensibility and runtime plugin management are priorities.",
+      "llm_api": "none",
+      "topics": [
+        "Systems & Libraries",
+        "Developer Tools"
+      ]
     },
     {
       "rank": 3,
@@ -33,7 +44,13 @@
       "stars": 6034,
       "gained_today": 551,
       "description": "14MB foundation model for tiny devices; phones, wearables, smart home, and robots.",
-      "analysis": "Needle is a remarkably compact foundation language model at just 14MB, designed to run entirely on-device on phones, wearables, smart home hardware, and robotics platforms — no cloud inference required. It addresses the growing need for private, low-latency AI at the edge where internet connectivity is unreliable or undesirable. Today's trending spike likely reflects excitement around truly tiny on-device LLMs as an alternative to API-dependent solutions. Embedded systems developers, IoT engineers, and mobile app developers building privacy-first AI features will find it compelling."
+      "analysis": "Needle is a remarkably compact foundation language model at just 14MB, designed to run entirely on-device on phones, wearables, smart home hardware, and robotics platforms — no cloud inference required. It addresses the growing need for private, low-latency AI at the edge where internet connectivity is unreliable or undesirable. Today's trending spike likely reflects excitement around truly tiny on-device LLMs as an alternative to API-dependent solutions. Embedded systems developers, IoT engineers, and mobile app developers building privacy-first AI features will find it compelling.",
+      "llm_api": "optional",
+      "llm_api_note": "On-device model; OpenRouter key only for optional data synthesis",
+      "topics": [
+        "LLM Infrastructure",
+        "Science & ML"
+      ]
     },
     {
       "rank": 4,
@@ -44,7 +61,12 @@
       "stars": 72007,
       "gained_today": 435,
       "description": "Local UI to run and train LLMs and diffusion models, including various latest models.",
-      "analysis": "Unsloth provides a local web UI for running and fine-tuning large language models and diffusion models on consumer hardware, with support for the latest open-weight models. Its massive star count (72k) reflects months of sustained organic growth as a go-to tool for self-hosted AI. Today's daily gain likely reflects a new model integration or feature update landing in the community. ML practitioners, researchers, and enthusiasts who want to fine-tune or run models locally without cloud costs or privacy concerns will benefit most."
+      "analysis": "Unsloth provides a local web UI for running and fine-tuning large language models and diffusion models on consumer hardware, with support for the latest open-weight models. Its massive star count (72k) reflects months of sustained organic growth as a go-to tool for self-hosted AI. Today's daily gain likely reflects a new model integration or feature update landing in the community. ML practitioners, researchers, and enthusiasts who want to fine-tune or run models locally without cloud costs or privacy concerns will benefit most.",
+      "llm_api": "none",
+      "llm_api_note": "Runs/trains models locally — replaces the hosted API",
+      "topics": [
+        "LLM Infrastructure"
+      ]
     },
     {
       "rank": 5,
@@ -55,7 +77,13 @@
       "stars": 2939,
       "gained_today": 152,
       "description": "Cursor plugin specification and official plugins",
-      "analysis": "cursor/plugins is the official plugin specification and reference plugin collection for the Cursor AI code editor, defining how third-party developers can extend Cursor's capabilities with custom tools and integrations. It trended today as Cursor continues to gain traction among AI-assisted developers, likely following a plugin API announcement or a notable community-built plugin going viral. TypeScript developers who use Cursor as their primary IDE and want to build custom automations or integrate internal tools directly into the editor are the primary audience."
+      "analysis": "cursor/plugins is the official plugin specification and reference plugin collection for the Cursor AI code editor, defining how third-party developers can extend Cursor's capabilities with custom tools and integrations. It trended today as Cursor continues to gain traction among AI-assisted developers, likely following a plugin API announcement or a notable community-built plugin going viral. TypeScript developers who use Cursor as their primary IDE and want to build custom automations or integrate internal tools directly into the editor are the primary audience.",
+      "llm_api": "required",
+      "llm_api_note": "Plugins for the Cursor editor",
+      "topics": [
+        "Agent Skills & Plugins",
+        "Developer Tools"
+      ]
     }
   ]
 }

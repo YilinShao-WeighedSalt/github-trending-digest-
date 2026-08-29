@@ -1,0 +1,2310 @@
+{
+  "issues": [
+    "2026-06-07",
+    "2026-06-08",
+    "2026-06-14",
+    "2026-06-28",
+    "2026-07-05",
+    "2026-07-12",
+    "2026-07-19",
+    "2026-07-26",
+    "2026-08-02",
+    "2026-08-09",
+    "2026-08-10",
+    "2026-08-11",
+    "2026-08-13",
+    "2026-08-15",
+    "2026-08-17",
+    "2026-08-19",
+    "2026-08-21",
+    "2026-08-23",
+    "2026-08-25",
+    "2026-08-27",
+    "2026-08-29"
+  ],
+  "repos": [
+    {
+      "owner": "chopratejas",
+      "repo": "headroom",
+      "url": "https://github.com/chopratejas/headroom",
+      "appearances": [
+        {
+          "date": "2026-06-07",
+          "rank": 1,
+          "stars": 16849,
+          "gained": 13308
+        },
+        {
+          "date": "2026-06-08",
+          "rank": 1,
+          "stars": 18371,
+          "gained": 14272
+        }
+      ],
+      "language": "Python",
+      "lang_color": "#3572A5",
+      "description": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers.",
+      "analysis": "Headroom is a context compression tool that reduces LLM token usage by 60-95% before inputs ever reach the model, preserving answer quality while slashing API costs. It runs as a library, proxy, or MCP server and offers specialized algorithms—SmartCrusher for JSON, CodeCompressor for AST-based code, and Kompress-base for general text. It has held the top trending spot for multiple days, reflecting sustained community demand for cost-efficient agentic workflows where tool outputs and RAG chunks balloon context windows. Ideal for Python developers building coding agents, RAG pipelines, or any high-throughput LLM application where inference cost is a bottleneck.",
+      "llm_api": "optional",
+      "llm_api_note": "Compression layer for your LLM stack — no key of its own",
+      "topics": [
+        "LLM Infrastructure",
+        "Developer Tools"
+      ],
+      "first_seen": "2026-06-07",
+      "last_seen": "2026-06-08",
+      "best_rank": 1,
+      "latest_stars": 18371,
+      "max_gained": 14272
+    },
+    {
+      "owner": "microsoft",
+      "repo": "markitdown",
+      "url": "https://github.com/microsoft/markitdown",
+      "appearances": [
+        {
+          "date": "2026-06-07",
+          "rank": 2,
+          "stars": 147268,
+          "gained": 15015
+        },
+        {
+          "date": "2026-06-08",
+          "rank": 2,
+          "stars": 148241,
+          "gained": 13359
+        }
+      ],
+      "language": "Python",
+      "lang_color": "#3572A5",
+      "description": "Python tool for converting files and office documents to Markdown.",
+      "analysis": "MarkItDown is Microsoft's Python utility that converts PDFs, Word documents, PowerPoints, Excel spreadsheets, images, audio, and web pages into clean Markdown text ready for LLM ingestion. It solves the document parsing problem at the heart of enterprise RAG—structured binary formats must be translated to plain text before models can reason over them. Trending on sustained organic momentum as enterprise AI adoption accelerates and developers standardize on Markdown as the lingua franca for document pipelines. Data engineers, AI application builders, and anyone processing business documents for LLM workflows will find it immediately practical.",
+      "llm_api": "optional",
+      "llm_api_note": "Core conversion is local; optional OpenAI client for image captions",
+      "topics": [
+        "Documents & Data",
+        "Developer Tools"
+      ],
+      "first_seen": "2026-06-07",
+      "last_seen": "2026-06-08",
+      "best_rank": 2,
+      "latest_stars": 148241,
+      "max_gained": 15015
+    },
+    {
+      "owner": "harry0703",
+      "repo": "MoneyPrinterTurbo",
+      "url": "https://github.com/harry0703/MoneyPrinterTurbo",
+      "appearances": [
+        {
+          "date": "2026-06-07",
+          "rank": 3,
+          "stars": 81121,
+          "gained": 9174
+        },
+        {
+          "date": "2026-08-17",
+          "rank": 1,
+          "stars": 105869,
+          "gained": 1275
+        },
+        {
+          "date": "2026-08-19",
+          "rank": 1,
+          "stars": 110481,
+          "gained": 2221
+        },
+        {
+          "date": "2026-08-21",
+          "rank": 3,
+          "stars": 113826,
+          "gained": 1187
+        }
+      ],
+      "language": "Python",
+      "lang_color": "#3572A5",
+      "description": "AI-powered tool to generate high-definition short videos from topics or keywords using automated workflows.",
+      "analysis": "MoneyPrinterTurbo is a Python pipeline that takes a topic or keyword and fully automates the production of short-form videos — scripting, voice-over, stock footage selection, subtitles, and export — ready for TikTok or YouTube Shorts. Despite already carrying over 113K stars, it continues to gain traction as the AI-generated content economy matures and more creators look to automate production at scale. It fits content creators, social media marketers, and developers building automated media workflows who want a self-hosted alternative to subscription-based AI video tools.",
+      "llm_api": "required",
+      "llm_api_note": "Script generation needs an LLM (OpenAI/Claude/Gemini/…; Ollama works)",
+      "topics": [
+        "Video & Media"
+      ],
+      "first_seen": "2026-06-07",
+      "last_seen": "2026-08-21",
+      "best_rank": 1,
+      "latest_stars": 113826,
+      "max_gained": 9174
+    },
+    {
+      "owner": "mvanhorn",
+      "repo": "last30days-skill",
+      "url": "https://github.com/mvanhorn/last30days-skill",
+      "appearances": [
+        {
+          "date": "2026-06-08",
+          "rank": 3,
+          "stars": 33860,
+          "gained": 2718
+        },
+        {
+          "date": "2026-06-14",
+          "rank": 1,
+          "stars": 41945,
+          "gained": 12602
+        }
+      ],
+      "language": "Python",
+      "lang_color": "#3572A5",
+      "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+      "analysis": "Last30Days is an AI agent skill that fans out in parallel across Reddit, X, YouTube, TikTok, Hacker News, Polymarket, and the open web—surfacing what real communities are saying about any topic and synthesizing findings into cited, engagement-ranked HTML reports. It solves the staleness problem of standard web search by reaching directly into forums and social platforms where fresh sentiment lives, days before it appears in search indexes. Now ranking #1 this week (up from #3 last week), it is riding a compounding wave of organic adoption as developers embed it into Claude Code and Cursor agentic workflows. Developers, content creators, and research teams who need current community intelligence before a launch or decision will find it immediately useful.",
+      "llm_api": "required",
+      "llm_api_note": "Agent skill — runs inside Claude Code or other skill hosts",
+      "topics": [
+        "Agent Skills & Plugins",
+        "Productivity & Research"
+      ],
+      "first_seen": "2026-06-08",
+      "last_seen": "2026-06-14",
+      "best_rank": 1,
+      "latest_stars": 41945,
+      "max_gained": 12602
+    },
+    {
+      "owner": "apple",
+      "repo": "container",
+      "url": "https://github.com/apple/container",
+      "appearances": [
+        {
+          "date": "2026-06-14",
+          "rank": 2,
+          "stars": 36935,
+          "gained": 9173
+        }
+      ],
+      "language": "Swift",
+      "lang_color": "#F05138",
+      "description": "A tool for creating and running Linux containers using lightweight virtual machines on a Mac. It is written in Swift, and optimized for Apple silicon.",
+      "analysis": "Apple's `container` is a Swift-native CLI that runs Linux containers as lightweight virtual machines on Apple silicon Macs, pulling OCI-compatible images from any standard registry. It fills the gap left by Docker Desktop on macOS—offering a first-party, silicon-optimized alternative that keeps Linux container workflows native rather than cross-compiled. Trending sharply this week following Apple's WWDC announcements and its requirement for macOS 26, which generated broad developer excitement around Apple's vision for containerized developer tooling. Mac developers on M1/M2/M3 chips who work with Linux services, CI pipelines, or container-based dev environments are the primary audience.",
+      "llm_api": "none",
+      "topics": [
+        "Sandboxes & Runtimes",
+        "Developer Tools"
+      ],
+      "first_seen": "2026-06-14",
+      "last_seen": "2026-06-14",
+      "best_rank": 2,
+      "latest_stars": 36935,
+      "max_gained": 9173
+    },
+    {
+      "owner": "phuryn",
+      "repo": "pm-skills",
+      "url": "https://github.com/phuryn/pm-skills",
+      "appearances": [
+        {
+          "date": "2026-06-14",
+          "rank": 3,
+          "stars": 18015,
+          "gained": 5408
+        }
+      ],
+      "description": "PM Skills Marketplace: 100+ agentic skills, commands, and plugins — from discovery to strategy, execution, launch, and growth.",
+      "analysis": "PM Skills Marketplace is a structured plugin system that encodes 100+ proven product management frameworks—prioritization, discovery, PRDs, OKRs, GTM strategy—into reusable AI skills and slash commands for assistants like Claude Code. It addresses the gap between generic AI outputs and domain-specific rigour, giving product managers methodologies from leaders like Teresa Torres and Marty Cagan rather than improvised advice. Trending on organic interest as the PM community experiments with AI-assisted workflows and seeks structured alternatives to freeform prompting. Product managers, founders, and product-adjacent engineers using Claude Code or Cursor who want AI that follows PM best practices will benefit most.",
+      "llm_api": "required",
+      "llm_api_note": "Skill marketplace for Claude Code / Cowork",
+      "topics": [
+        "Agent Skills & Plugins",
+        "Productivity & Research"
+      ],
+      "first_seen": "2026-06-14",
+      "last_seen": "2026-06-14",
+      "best_rank": 3,
+      "latest_stars": 18015,
+      "max_gained": 5408
+    },
+    {
+      "owner": "calesthio",
+      "repo": "OpenMontage",
+      "url": "https://github.com/calesthio/OpenMontage",
+      "appearances": [
+        {
+          "date": "2026-06-28",
+          "rank": 1,
+          "stars": 26866,
+          "gained": 18000
+        }
+      ],
+      "language": "Python",
+      "lang_color": "#3572A5",
+      "description": "World's first open-source, agentic video production system. 12 pipelines, 52 tools, 500+ agent skills. Turn your AI coding assistant into a full video production studio.",
+      "analysis": "OpenMontage is a fully agentic, open-source video production system that transforms AI coding assistants into complete video studios — handling scripting, scene assembly, rendering, and post-production through 12 distinct pipelines and over 500 agent skills. It surged nearly 18,000 stars this week because it sits at the explosive intersection of LLM agents and creative media automation, a category that had few open-source options. Content creators, marketing teams, and AI developers who want to automate video workflows without a SaaS subscription will find the most immediate value here.",
+      "llm_api": "required",
+      "llm_api_note": "Driven by your AI coding assistant; extra media-API keys optional",
+      "topics": [
+        "Video & Media",
+        "AI Agents"
+      ],
+      "first_seen": "2026-06-28",
+      "last_seen": "2026-06-28",
+      "best_rank": 1,
+      "latest_stars": 26866,
+      "max_gained": 18000
+    },
+    {
+      "owner": "DeusData",
+      "repo": "codebase-memory-mcp",
+      "url": "https://github.com/DeusData/codebase-memory-mcp",
+      "appearances": [
+        {
+          "date": "2026-06-28",
+          "rank": 2,
+          "stars": 19547,
+          "gained": 7674
+        }
+      ],
+      "language": "C",
+      "lang_color": "#555555",
+      "description": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
+      "analysis": "codebase-memory-mcp is a Model Context Protocol server that indexes an entire codebase into a persistent knowledge graph, delivering sub-millisecond symbol and dependency queries to AI coding assistants while using 99% fewer tokens than naively stuffing files into context. Written in C for maximum performance, it ships as a single static binary with no runtime dependencies, covering 158 programming languages. It gained traction this week as developers running Claude Code, Cursor, and Copilot on large monorepos hit context-window limits, making an efficient, persistent memory layer the obvious missing piece.",
+      "llm_api": "required",
+      "llm_api_note": "MCP backend for coding agents — bring your agent, no extra key",
+      "topics": [
+        "Code Intelligence",
+        "MCP & Integrations",
+        "RAG & Memory"
+      ],
+      "first_seen": "2026-06-28",
+      "last_seen": "2026-06-28",
+      "best_rank": 2,
+      "latest_stars": 19547,
+      "max_gained": 7674
+    },
+    {
+      "owner": "kunchenguid",
+      "repo": "no-mistakes",
+      "url": "https://github.com/kunchenguid/no-mistakes",
+      "appearances": [
+        {
+          "date": "2026-06-28",
+          "rank": 3,
+          "stars": 4050,
+          "gained": 2229
+        }
+      ],
+      "language": "Go",
+      "lang_color": "#00ADD8",
+      "description": "git push no-mistakes",
+      "analysis": "no-mistakes is a lightweight Git pre-push guard written in Go that intercepts git push and runs a configurable set of checks — linting, secret scanning, test smoke tests — before the push reaches the remote, preventing common mistakes from ever hitting origin. The project went viral this week largely on the charm of its one-liner description ('git push no-mistakes'), which resonated deeply with developers; the simple, relatable premise sparked rapid organic sharing. It fits any team workflow as a zero-config drop-in hook and is especially useful for solo developers or small teams without enforced CI on every branch.",
+      "llm_api": "required",
+      "llm_api_note": "Drives your installed coding agent (Claude, Codex, …)",
+      "topics": [
+        "Developer Tools",
+        "AI Agents"
+      ],
+      "first_seen": "2026-06-28",
+      "last_seen": "2026-06-28",
+      "best_rank": 3,
+      "latest_stars": 4050,
+      "max_gained": 2229
+    },
+    {
+      "owner": "palmier-io",
+      "repo": "palmier-pro",
+      "url": "https://github.com/palmier-io/palmier-pro",
+      "appearances": [
+        {
+          "date": "2026-06-28",
+          "rank": 4,
+          "stars": 9298,
+          "gained": 6126
+        }
+      ],
+      "language": "Swift",
+      "lang_color": "#F05138",
+      "description": "macOS video editor built for AI",
+      "analysis": "Palmier Pro is a native macOS video editor purpose-built for AI-generated content — it understands AI clip metadata, variable frame rates, and synthetic-media artifacts that generic editors handle poorly, and provides a timeline optimized for assembling AI-generated shots into coherent sequences. It trended this week as tools like Sora, Runway, and Kling gained mainstream traction and users found themselves with no editor that natively speaks their workflow. Mac-based creators and indie filmmakers working with generative video will get the most out of its Swift-native performance and AI-aware timeline.",
+      "llm_api": "optional",
+      "llm_api_note": "Editing is manual; AI connects via MCP (Claude/Codex/Cursor)",
+      "topics": [
+        "Video & Media",
+        "MCP & Integrations"
+      ],
+      "first_seen": "2026-06-28",
+      "last_seen": "2026-06-28",
+      "best_rank": 4,
+      "latest_stars": 9298,
+      "max_gained": 6126
+    },
+    {
+      "owner": "google-labs-code",
+      "repo": "design.md",
+      "url": "https://github.com/google-labs-code/design.md",
+      "appearances": [
+        {
+          "date": "2026-06-28",
+          "rank": 5,
+          "stars": 22821,
+          "gained": 6014
+        }
+      ],
+      "language": "TypeScript",
+      "lang_color": "#3178c6",
+      "description": "A format specification for describing a visual identity to coding agents. DESIGN.md gives agents a persistent, structured understanding of a design system.",
+      "analysis": "design.md is a Google Labs open spec — analogous to README.md or CONTRIBUTING.md — that gives a project a single machine-readable file describing its design system: color tokens, typography, spacing scales, component conventions, and brand voice. AI coding agents read DESIGN.md the same way they read README.md, enabling them to generate UI code that stays visually consistent without human correction. It trended strongly this week because frontend teams using AI agents have been frustrated by style drift across generated components, and an official Google-backed spec carries the weight needed to become an industry standard that tool vendors will quickly adopt.",
+      "llm_api": "optional",
+      "llm_api_note": "A spec your coding agent reads — nothing to run",
+      "topics": [
+        "Design",
+        "Developer Tools"
+      ],
+      "first_seen": "2026-06-28",
+      "last_seen": "2026-06-28",
+      "best_rank": 5,
+      "latest_stars": 22821,
+      "max_gained": 6014
+    },
+    {
+      "owner": "usestrix",
+      "repo": "strix",
+      "url": "https://github.com/usestrix/strix",
+      "appearances": [
+        {
+          "date": "2026-07-05",
+          "rank": 1,
+          "stars": 37006,
+          "gained": 9362
+        },
+        {
+          "date": "2026-08-17",
+          "rank": 2,
+          "stars": 54071,
+          "gained": 656
+        }
+      ],
+      "language": "Python",
+      "lang_color": "#3572A5",
+      "description": "Open-source AI penetration testing tool to find and fix your app's vulnerabilities",
+      "analysis": "Strix is an open-source AI-powered penetration testing platform that autonomously discovers, exploits, and proposes fixes for vulnerabilities in web applications. It combines LLM reasoning with traditional scanning techniques to produce prioritized, actionable security reports rather than just raw findings. Trending on the wave of AI-assisted DevSecOps tooling, it appeals to teams who want continuous security coverage without a full red-team budget. Security researchers, DevSecOps engineers, and startups running self-service vulnerability assessments are its core users.",
+      "llm_api": "required",
+      "llm_api_note": "BYO LLM key (OpenAI/Anthropic/Google/…); local endpoints work",
+      "topics": [
+        "Security & Privacy",
+        "AI Agents"
+      ],
+      "first_seen": "2026-07-05",
+      "last_seen": "2026-08-17",
+      "best_rank": 1,
+      "latest_stars": 54071,
+      "max_gained": 9362
+    },
+    {
+      "owner": "xbtlin",
+      "repo": "ai-berkshire",
+      "url": "https://github.com/xbtlin/ai-berkshire",
+      "appearances": [
+        {
+          "date": "2026-07-05",
+          "rank": 2,
+          "stars": 10260,
+          "gained": 5984
+        }
+      ],
+      "language": "Python",
+      "lang_color": "#3572A5",
+      "description": "AI-era investment research framework implementing methodologies from major investment authorities with multi-agent analysis.",
+      "analysis": "AI Berkshire is a multi-agent investment research framework that applies the philosophies of Warren Buffett, Charlie Munger, Duan Yongping, and Li Lu to stock analysis using AI. It likely trended because it merges two intensely discussed topics—AI agents and value investing—producing actionable price targets rather than vague AI-generated opinions. Individual investors, financial analysts, and quantitative researchers who want rigorous, philosophy-driven stock research will find this most valuable.",
+      "llm_api": "required",
+      "llm_api_note": "Skill suite for Claude Code / Codex",
+      "topics": [
+        "Finance & Trading",
+        "Agent Skills & Plugins"
+      ],
+      "first_seen": "2026-07-05",
+      "last_seen": "2026-07-05",
+      "best_rank": 2,
+      "latest_stars": 10260,
+      "max_gained": 5984
+    },
+    {
+      "owner": "diegosouzapw",
+      "repo": "OmniRoute",
+      "url": "https://github.com/diegosouzapw/OmniRoute",
+      "appearances": [
+        {
+          "date": "2026-07-05",
+          "rank": 3,
+          "stars": 11802,
+          "gained": 4133
+        },
+        {
+          "date": "2026-07-26",
+          "rank": 5,
+          "stars": 30963,
+          "gained": 11147
+        }
+      ],
+      "language": "TypeScript",
+      "lang_color": "#3178c6",
+      "description": "Free MIT AI gateway supporting 290+ providers and 500+ models with auto-fallback and token optimization",
+      "analysis": "OmniRoute is a free, MIT-licensed AI gateway that routes requests across 290+ providers and 500+ models, with automatic fallback and token-cost optimization baked in. It trended as AI teams tired of vendor lock-in and unpredictable outages sought a single abstraction layer for multi-provider deployments. Backend engineers and AI application developers who need reliability, cost control, and the freedom to swap models without rewriting client code will find it immediately useful.",
+      "llm_api": "required",
+      "llm_api_note": "Gateway to 351 LLM providers — connect accounts or free tiers",
+      "topics": [
+        "LLM Infrastructure",
+        "Developer Tools"
+      ],
+      "first_seen": "2026-07-05",
+      "last_seen": "2026-07-26",
+      "best_rank": 3,
+      "latest_stars": 30963,
+      "max_gained": 11147
+    },
+    {
+      "owner": "simplex-chat",
+      "repo": "simplex-chat",
+      "url": "https://github.com/simplex-chat/simplex-chat",
+      "appearances": [
+        {
+          "date": "2026-07-05",
+          "rank": 4,
+          "stars": 17913,
+          "gained": 4630
+        }
+      ],
+      "language": "Haskell",
+      "lang_color": "#8b8478",
+      "description": "SimpleX - the first messaging network operating without user identifiers of any kind - 100% private by design!",
+      "analysis": "SimpleX Chat is a messaging platform that requires no phone number, email, or any user identifier—only temporary anonymous queue IDs are used for message routing, making surveillance structurally impossible. It likely saw renewed interest amid growing privacy concerns and regulatory pressure on mainstream messaging platforms. Privacy-focused individuals, journalists, activists, and anyone needing secure communications without identity exposure will find this most valuable.",
+      "llm_api": "none",
+      "topics": [
+        "Security & Privacy"
+      ],
+      "first_seen": "2026-07-05",
+      "last_seen": "2026-07-05",
+      "best_rank": 4,
+      "latest_stars": 17913,
+      "max_gained": 4630
+    },
+    {
+      "owner": "Robbyant",
+      "repo": "lingbot-map",
+      "url": "https://github.com/Robbyant/lingbot-map",
+      "appearances": [
+        {
+          "date": "2026-07-05",
+          "rank": 5,
+          "stars": 9880,
+          "gained": 2065
+        }
+      ],
+      "language": "Python",
+      "lang_color": "#3572A5",
+      "description": "A feed-forward 3D foundation model for reconstructing scenes from streaming data.",
+      "analysis": "LingBot-Map is a feed-forward 3D foundation model that reconstructs full scenes from streaming video at approximately 20 FPS, processing sequences exceeding 10,000 frames via a Geometric Context Transformer architecture. Trending on organic interest as real-time 3D scene understanding becomes critical infrastructure for robotics, autonomous navigation, and spatial mapping. Computer vision researchers, robotics engineers, and developers building autonomous systems or spatial AI applications will find this most relevant.",
+      "llm_api": "none",
+      "llm_api_note": "Local 3D vision model (GPU); no LLM involved",
+      "topics": [
+        "Science & ML"
+      ],
+      "first_seen": "2026-07-05",
+      "last_seen": "2026-07-05",
+      "best_rank": 5,
+      "latest_stars": 9880,
+      "max_gained": 2065
+    },
+    {
+      "owner": "Zackriya-Solutions",
+      "repo": "meetily",
+      "url": "https://github.com/Zackriya-Solutions/meetily",
+      "appearances": [
+        {
+          "date": "2026-07-12",
+          "rank": 1,
+          "stars": 23555,
+          "gained": 8579
+        }
+      ],
+      "language": "Rust",
+      "lang_color": "#dea584",
+      "description": "Privacy first, AI meeting assistant with 4x faster Parakeet/Whisper live transcription, speaker diarization, and Ollama summarization built on Rust.",
+      "analysis": "Meetily is a fully local, open-source AI meeting assistant built with Rust, Tauri, and Next.js that captures audio, transcribes in real time using Whisper or Parakeet models, and generates summaries via Ollama or other LLM providers — all without any data ever leaving your machine. It surged this week on growing distrust of cloud-based meeting AI tools, with users seeking privacy-compliant alternatives after several high-profile data-handling incidents in enterprise SaaS. The project is a natural fit for legal, healthcare, and finance teams who handle sensitive conversations and need reliable meeting notes without the compliance risk of cloud processing.",
+      "llm_api": "optional",
+      "llm_api_note": "Local-first (Whisper + Ollama); Claude/Groq/OpenRouter optional",
+      "topics": [
+        "Productivity & Research",
+        "Security & Privacy"
+      ],
+      "first_seen": "2026-07-12",
+      "last_seen": "2026-07-12",
+      "best_rank": 1,
+      "latest_stars": 23555,
+      "max_gained": 8579
+    },
+    {
+      "owner": "openai",
+      "repo": "codex-plugin-cc",
+      "url": "https://github.com/openai/codex-plugin-cc",
+      "appearances": [
+        {
+          "date": "2026-07-12",
+          "rank": 2,
+          "stars": 28041,
+          "gained": 4030
+        }
+      ],
+      "language": "JavaScript",
+      "lang_color": "#f1e05a",
+      "description": "Plugin enabling Codex integration from Claude Code for code review and task delegation.",
+      "analysis": "codex-plugin-cc is a plugin that bridges OpenAI's Codex with the Claude Code CLI, letting developers delegate code review and subtasks to Codex directly from their Claude Code session in a multi-model workflow. Trending because cross-model AI orchestration is gaining serious traction as developers look to combine the strengths of different AI coding systems for complex software projects. It targets power users of Claude Code who also have Codex API access and want to assemble bespoke AI pipelines rather than being locked to a single assistant.",
+      "llm_api": "required",
+      "llm_api_note": "Claude Code + Codex sign-in (ChatGPT account or OpenAI key)",
+      "topics": [
+        "Agent Skills & Plugins",
+        "AI Agents"
+      ],
+      "first_seen": "2026-07-12",
+      "last_seen": "2026-07-12",
+      "best_rank": 2,
+      "latest_stars": 28041,
+      "max_gained": 4030
+    },
+    {
+      "owner": "TencentCloud",
+      "repo": "CubeSandbox",
+      "url": "https://github.com/TencentCloud/CubeSandbox",
+      "appearances": [
+        {
+          "date": "2026-07-12",
+          "rank": 3,
+          "stars": 9800,
+          "gained": 2416
+        }
+      ],
+      "language": "Rust",
+      "lang_color": "#dea584",
+      "description": "Instant, Concurrent, Secure & Lightweight Sandbox for AI Agents.",
+      "analysis": "CubeSandbox is a high-performance, hardware-isolated sandbox built on RustVMM and KVM that achieves sub-60 ms cold starts with under 5 MB of memory overhead per instance, designed to safely execute untrusted AI-agent-generated code at scale on a single node. It trended this week as teams deploying autonomous AI agents recognized the need for robust, economical sandboxing — container-based solutions carry escape risks, while this approach offers VM-level isolation without the traditional overhead. It is API-compatible with the E2B SDK, so existing agent infrastructure can migrate with minimal configuration changes.",
+      "llm_api": "none",
+      "llm_api_note": "Sandbox runtime for agents — makes no LLM calls itself",
+      "topics": [
+        "Sandboxes & Runtimes",
+        "AI Agents"
+      ],
+      "first_seen": "2026-07-12",
+      "last_seen": "2026-07-12",
+      "best_rank": 3,
+      "latest_stars": 9800,
+      "max_gained": 2416
+    },
+    {
+      "owner": "wonderwhy-er",
+      "repo": "DesktopCommanderMCP",
+      "url": "https://github.com/wonderwhy-er/DesktopCommanderMCP",
+      "appearances": [
+        {
+          "date": "2026-07-12",
+          "rank": 4,
+          "stars": 7968,
+          "gained": 1451
+        }
+      ],
+      "language": "TypeScript",
+      "lang_color": "#3178c6",
+      "description": "MCP server that grants Claude terminal control, filesystem search, and diff file editing capabilities.",
+      "analysis": "DesktopCommanderMCP is a Model Context Protocol server that gives Claude direct access to a local terminal, full filesystem search, and diff-based file editing, effectively turning Claude into a capable local dev automation agent. It is riding the explosive growth of the MCP ecosystem as developers compete to build system-level integrations that extend AI assistants beyond the chat window. The tool is best suited for developers who use Claude as a coding copilot and want to automate shell tasks, search codebases, or apply targeted patches without switching context to a separate terminal.",
+      "llm_api": "required",
+      "llm_api_note": "MCP server — pair with Claude or any MCP client",
+      "topics": [
+        "MCP & Integrations",
+        "Developer Tools"
+      ],
+      "first_seen": "2026-07-12",
+      "last_seen": "2026-07-12",
+      "best_rank": 4,
+      "latest_stars": 7968,
+      "max_gained": 1451
+    },
+    {
+      "owner": "abseil",
+      "repo": "abseil-cpp",
+      "url": "https://github.com/abseil/abseil-cpp",
+      "appearances": [
+        {
+          "date": "2026-07-12",
+          "rank": 5,
+          "stars": 17944,
+          "gained": 229
+        }
+      ],
+      "language": "C++",
+      "lang_color": "#f34b7d",
+      "description": "Abseil Common Libraries (C++)",
+      "analysis": "Abseil is Google's collection of battle-tested foundational C++ libraries covering strings, containers, hash maps, time, synchronization, and more, designed to complement the C++ standard library and fill gaps it leaves in production use. Trending on organic interest — Abseil underpins widely used projects including Chromium, TensorFlow, and gRPC, and its steady weekly star gain reflects consistent discovery by C++ developers. It is the go-to choice for teams that need Google-scale, production-hardened utility code without pulling in heavy external dependencies.",
+      "llm_api": "none",
+      "topics": [
+        "Systems & Libraries",
+        "Developer Tools"
+      ],
+      "first_seen": "2026-07-12",
+      "last_seen": "2026-07-12",
+      "best_rank": 5,
+      "latest_stars": 17944,
+      "max_gained": 229
+    },
+    {
+      "owner": "Nutlope",
+      "repo": "hallmark",
+      "url": "https://github.com/Nutlope/hallmark",
+      "appearances": [
+        {
+          "date": "2026-07-19",
+          "rank": 1,
+          "stars": 13313,
+          "gained": 8834
+        }
+      ],
+      "language": "CSS",
+      "lang_color": "#563d7c",
+      "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex",
+      "analysis": "Hallmark is a design skill for AI coding assistants (Claude Code, Cursor, Codex) that generates websites engineered to look intentionally crafted rather than AI-generated. It provides 20 distinct themes and 57 anti-slop test gates that check output against common AI design anti-patterns before delivering final code. It trended sharply this week as frustration with generic, template-recycled AI UIs hit a critical mass and developers started demanding a practical fix that integrates directly into their existing AI workflows. Front-end developers and product teams who build with AI coding tools and need polished, distinctive results will benefit most.",
+      "llm_api": "required",
+      "llm_api_note": "Design skill for Claude Code / Cursor / Codex",
+      "topics": [
+        "Design",
+        "Agent Skills & Plugins"
+      ],
+      "first_seen": "2026-07-19",
+      "last_seen": "2026-07-19",
+      "best_rank": 1,
+      "latest_stars": 13313,
+      "max_gained": 8834
+    },
+    {
+      "owner": "OpenCut-app",
+      "repo": "OpenCut",
+      "url": "https://github.com/OpenCut-app/OpenCut",
+      "appearances": [
+        {
+          "date": "2026-07-19",
+          "rank": 2,
+          "stars": 75827,
+          "gained": 13319
+        }
+      ],
+      "language": "TypeScript",
+      "lang_color": "#3178c6",
+      "description": "The open-source CapCut alternative",
+      "analysis": "OpenCut is a browser-based, open-source video editor built as a free alternative to CapCut, the TikTok-owned app that dominates short-form video editing. Written in TypeScript, it runs entirely in the browser and replicates the timeline editing experience that made CapCut popular for social media content. It gained over 13,000 stars this week—the most of any repo on the list—driven by persistent concerns about TikTok-linked apps and demand for a self-hostable, privacy-respecting alternative. Content creators, social media managers, and developers building video pipelines are the primary audience.",
+      "llm_api": "none",
+      "llm_api_note": "Plain video editor today; MCP for AI agents is on the roadmap",
+      "topics": [
+        "Video & Media"
+      ],
+      "first_seen": "2026-07-19",
+      "last_seen": "2026-07-19",
+      "best_rank": 2,
+      "latest_stars": 75827,
+      "max_gained": 13319
+    },
+    {
+      "owner": "Shubhamsaboo",
+      "repo": "awesome-llm-apps",
+      "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+      "appearances": [
+        {
+          "date": "2026-07-19",
+          "rank": 3,
+          "stars": 124503,
+          "gained": 6146
+        }
+      ],
+      "language": "Python",
+      "lang_color": "#3572A5",
+      "description": "100+ AI Agent & RAG apps you can actually run — clone, customize, ship",
+      "analysis": "Unlike a typical curated list, this repo bundles 100+ fully runnable LLM and AI agent applications—covering RAG pipelines, multi-agent systems, and voice/vision agents—built on frameworks like LangChain, CrewAI, and Agno. Every example is clone-and-run ready, dramatically lowering the bar for developers who want working code over abstract documentation. It continues to grow on organic interest as the AI ecosystem matures and teams seek practical, copy-paste starting points rather than toy demos. Python developers, ML engineers, and product teams evaluating AI integration patterns are its core audience.",
+      "llm_api": "required",
+      "llm_api_note": "Most apps BYO key (GPT/Claude/Gemini); some fully-local demos",
+      "topics": [
+        "AI Agents",
+        "RAG & Memory",
+        "Education"
+      ],
+      "first_seen": "2026-07-19",
+      "last_seen": "2026-07-19",
+      "best_rank": 3,
+      "latest_stars": 124503,
+      "max_gained": 6146
+    },
+    {
+      "owner": "HKUDS",
+      "repo": "Vibe-Trading",
+      "url": "https://github.com/HKUDS/Vibe-Trading",
+      "appearances": [
+        {
+          "date": "2026-07-19",
+          "rank": 4,
+          "stars": 25253,
+          "gained": 5635
+        }
+      ],
+      "language": "Python",
+      "lang_color": "#3572A5",
+      "description": "Vibe-Trading: Your Personal Trading Agent",
+      "analysis": "Vibe-Trading is an open-source AI agent platform for quantitative trading research that lets users run market analysis, backtest strategies across 18+ data sources (US, HK, A-shares, crypto, futures), and diagnose trading behavior through natural-language commands. Built with FastAPI, React, and multi-LLM support (including Claude via MCP), it ships a pre-built Alpha Zoo of 461 strategy factors and a Shadow Account feature that extracts trading rules from broker journals for behavioral analysis. It trended this week amid growing interest in agentic AI applied to finance, with connectors for major brokers including Robinhood, Alpaca, and Binance. Quant researchers, algorithmic traders, and developers building financial AI agents are its target users.",
+      "llm_api": "required",
+      "llm_api_note": "BYO LLM provider key for the trading agent",
+      "topics": [
+        "Finance & Trading",
+        "AI Agents"
+      ],
+      "first_seen": "2026-07-19",
+      "last_seen": "2026-07-19",
+      "best_rank": 4,
+      "latest_stars": 25253,
+      "max_gained": 5635
+    },
+    {
+      "owner": "HKUDS",
+      "repo": "DeepTutor",
+      "url": "https://github.com/HKUDS/DeepTutor",
+      "appearances": [
+        {
+          "date": "2026-07-19",
+          "rank": 5,
+          "stars": 27903,
+          "gained": 2154
+        }
+      ],
+      "language": "Python",
+      "lang_color": "#3572A5",
+      "description": "Lifelong Personalized Tutoring platform",
+      "analysis": "DeepTutor is an agent-native learning workspace that unifies tutoring, quiz generation, research, knowledge bases, and persistent AI companions into a single educational environment where context travels with the learner across sessions. Built on Python and Next.js 16, it integrates multiple RAG engines—LlamaIndex, GraphRAG, and LightRAG—alongside multi-provider LLM support to create deeply context-aware learning sessions with three-layer memory that is visible and editable by users. It trended on organic interest as educators seek open-source alternatives to fragmented AI tutoring tools that lock learning data in siloed apps. Students, independent educators, and edtech developers building personalized learning systems will find it most compelling.",
+      "llm_api": "required",
+      "llm_api_note": "Connect an LLM provider (key or OAuth); local Ollama etc. supported",
+      "topics": [
+        "Education",
+        "AI Agents"
+      ],
+      "first_seen": "2026-07-19",
+      "last_seen": "2026-07-19",
+      "best_rank": 5,
+      "latest_stars": 27903,
+      "max_gained": 2154
+    },
+    {
+      "owner": "bojieli",
+      "repo": "ai-agent-book",
+      "url": "https://github.com/bojieli/ai-agent-book",
+      "appearances": [
+        {
+          "date": "2026-07-26",
+          "rank": 1,
+          "stars": 20727,
+          "gained": 16579
+        },
+        {
+          "date": "2026-08-02",
+          "rank": 2,
+          "stars": 29868,
+          "gained": 9298
+        }
+      ],
+      "language": "Python",
+      "lang_color": "#3572A5",
+      "description": "Open-source book on AI Agent design principles and engineering practices, available in 13 languages.",
+      "analysis": "This open-source book pairs 10 chapters of AI Agent theory with 95 runnable coding experiments, structured around the core formula 'Agent = LLM + Context + Tools.' It bridges the gap between raw LLM API usage and building production-grade agents that handle context management, tool systems, and multi-agent collaboration. Its strong weekly star gain likely reflects the global surge in agentic AI interest combined with multilingual availability across English, Chinese, Spanish, Japanese, Korean, and eight more. Ideal for engineers and researchers who want a structured, hands-on path from agent fundamentals through fine-tuning and multimodal deployment.",
+      "llm_api": "optional",
+      "llm_api_note": "Reading is free; hands-on labs call LLM APIs (or Ollama where listed)",
+      "topics": [
+        "Education",
+        "AI Agents"
+      ],
+      "first_seen": "2026-07-26",
+      "last_seen": "2026-08-02",
+      "best_rank": 1,
+      "latest_stars": 29868,
+      "max_gained": 16579
+    },
+    {
+      "owner": "koala73",
+      "repo": "worldmonitor",
+      "url": "https://github.com/koala73/worldmonitor",
+      "appearances": [
+        {
+          "date": "2026-07-26",
+          "rank": 2,
+          "stars": 74706,
+          "gained": 12085
+        }
+      ],
+      "language": "TypeScript",
+      "lang_color": "#3178c6",
+      "description": "Real-time global intelligence dashboard aggregating AI-curated news and geopolitical monitoring",
+      "analysis": "WorldMonitor is a TypeScript dashboard that aggregates global news via AI, tracking geopolitical developments and infrastructure status in real time. It likely trended amid heightened global interest in rapid geopolitical shifts, offering a single-pane view that journalists, analysts, and policy researchers find hard to replicate with raw feeds. Teams and individuals who need structured situational awareness—newsrooms, think tanks, or ops-heavy organizations—are its natural audience.",
+      "llm_api": "optional",
+      "llm_api_note": "Runs fully with local Ollama; Groq/OpenRouter optional",
+      "topics": [
+        "Productivity & Research"
+      ],
+      "first_seen": "2026-07-26",
+      "last_seen": "2026-07-26",
+      "best_rank": 2,
+      "latest_stars": 74706,
+      "max_gained": 12085
+    },
+    {
+      "owner": "tirth8205",
+      "repo": "code-review-graph",
+      "url": "https://github.com/tirth8205/code-review-graph",
+      "appearances": [
+        {
+          "date": "2026-07-26",
+          "rank": 3,
+          "stars": 26586,
+          "gained": 6423
+        }
+      ],
+      "language": "Python",
+      "lang_color": "#3572A5",
+      "description": "Local-first code intelligence system that builds a persistent codebase map for AI coding tools",
+      "analysis": "Code-Review-Graph builds a persistent, local knowledge graph of your codebase so AI coding assistants receive condensed, relevant context rather than raw file dumps. It trended on organic interest as developers using tools like Claude Code, Copilot, or Cursor hit context-window limits on large repositories. Python developers and teams with sprawling codebases who want to squeeze more accuracy from AI assistants without paying for larger context windows will get the most value here.",
+      "llm_api": "optional",
+      "llm_api_note": "Local-first maps; optional embeddings/LLM extras (BYO key)",
+      "topics": [
+        "Code Intelligence",
+        "Developer Tools"
+      ],
+      "first_seen": "2026-07-26",
+      "last_seen": "2026-07-26",
+      "best_rank": 3,
+      "latest_stars": 26586,
+      "max_gained": 6423
+    },
+    {
+      "owner": "1jehuang",
+      "repo": "jcode",
+      "url": "https://github.com/1jehuang/jcode",
+      "appearances": [
+        {
+          "date": "2026-07-26",
+          "rank": 4,
+          "stars": 11649,
+          "gained": 2914
+        }
+      ],
+      "language": "Rust",
+      "lang_color": "#dea584",
+      "description": "High-performance AI agent harness for code, built in Rust",
+      "analysis": "jcode is a Rust-based agent harness designed to orchestrate AI-powered coding workflows with low latency and high throughput. It trended as the ecosystem of AI coding agents matures and developers look for production-grade runtimes that can run multiple model calls concurrently without Python's GIL overhead. Systems engineers, Rust developers, and teams running self-hosted coding agents in performance-critical pipelines are its primary audience.",
+      "llm_api": "required",
+      "llm_api_note": "BYO provider (Anthropic/OpenAI/OpenRouter/…); local models too",
+      "topics": [
+        "AI Agents",
+        "Developer Tools"
+      ],
+      "first_seen": "2026-07-26",
+      "last_seen": "2026-07-26",
+      "best_rank": 4,
+      "latest_stars": 11649,
+      "max_gained": 2914
+    },
+    {
+      "owner": "block",
+      "repo": "buzz",
+      "url": "https://github.com/block/buzz",
+      "appearances": [
+        {
+          "date": "2026-08-02",
+          "rank": 1,
+          "stars": 21047,
+          "gained": 9003
+        }
+      ],
+      "language": "Rust",
+      "lang_color": "#dea584",
+      "description": "A hive mind communication platform",
+      "analysis": "Buzz is a unified developer workspace by Block (formerly Square) that merges chat, code review, CI/CD, and AI agents into a single Nostr-based relay. It eliminates tool fragmentation by making all events — commits, CI results, messages, and agent actions — cryptographically signed and searchable in one place. It trended because of Block's brand and its novel positioning of AI agents as first-class team members with their own keys and audit trails. Best suited for engineering teams wanting a self-hosted, transparent alternative to the Slack-plus-GitHub-plus-Linear stack with deep AI-agent integration.",
+      "llm_api": "optional",
+      "llm_api_note": "Workspace needs no LLM; agents join with their own models",
+      "topics": [
+        "Productivity & Research",
+        "AI Agents"
+      ],
+      "first_seen": "2026-08-02",
+      "last_seen": "2026-08-02",
+      "best_rank": 1,
+      "latest_stars": 21047,
+      "max_gained": 9003
+    },
+    {
+      "owner": "ayghri",
+      "repo": "i-have-adhd",
+      "url": "https://github.com/ayghri/i-have-adhd",
+      "appearances": [
+        {
+          "date": "2026-08-02",
+          "rank": 3,
+          "stars": 15643,
+          "gained": 5232
+        }
+      ],
+      "language": "Python",
+      "lang_color": "#3572A5",
+      "description": "A skill to stop your coding agent from burying the answer. ADHD-friendly output.",
+      "analysis": "This Claude Code skill reconfigures agent output so the key answer surfaces immediately rather than being buried under paragraphs of preamble. It tackles a widely felt frustration: LLMs that explain everything before saying anything, making responses hard to scan under time pressure or cognitive load. It trended because the ADHD-friendly framing made the problem relatable and the fix shareable — a rare combination in developer tooling. Any developer using Claude Code who values dense, scannable responses over verbose narration will benefit immediately.",
+      "llm_api": "required",
+      "llm_api_note": "Claude Code plugin",
+      "topics": [
+        "Agent Skills & Plugins",
+        "Developer Tools"
+      ],
+      "first_seen": "2026-08-02",
+      "last_seen": "2026-08-02",
+      "best_rank": 3,
+      "latest_stars": 15643,
+      "max_gained": 5232
+    },
+    {
+      "owner": "virgiliojr94",
+      "repo": "book-to-skill",
+      "url": "https://github.com/virgiliojr94/book-to-skill",
+      "appearances": [
+        {
+          "date": "2026-08-02",
+          "rank": 4,
+          "stars": 15316,
+          "gained": 5105
+        }
+      ],
+      "language": "Python",
+      "lang_color": "#3572A5",
+      "description": "Turn any technical book PDF into a Claude Code skill — ready to study, reference, and use while you work.",
+      "analysis": "Book-to-Skill is a Python tool that ingests a technical PDF and outputs a Claude Code skill file, embedding the book's knowledge directly into the AI coding workflow without fine-tuning. It removes the context-switch between reading documentation and writing code by letting the agent answer questions from the book on demand. It trended on the growing wave of Claude Code skill adoption and the appeal of giving AI assistants domain-specific expertise for free. Best suited for developers who routinely work against technical references — language specs, design pattern books, or API guides — and want an AI pair-programmer that has actually 'read' them.",
+      "llm_api": "required",
+      "llm_api_note": "Runs inside Claude Code / Copilot CLI / Amp",
+      "topics": [
+        "Agent Skills & Plugins",
+        "Education",
+        "Documents & Data"
+      ],
+      "first_seen": "2026-08-02",
+      "last_seen": "2026-08-02",
+      "best_rank": 4,
+      "latest_stars": 15316,
+      "max_gained": 5105
+    },
+    {
+      "owner": "microsoft",
+      "repo": "AI-For-Beginners",
+      "url": "https://github.com/microsoft/AI-For-Beginners",
+      "appearances": [
+        {
+          "date": "2026-08-02",
+          "rank": 5,
+          "stars": 58915,
+          "gained": 3246
+        }
+      ],
+      "language": "Jupyter Notebook",
+      "lang_color": "#DA5B0B",
+      "description": "12 Weeks, 24 Lessons, AI for All!",
+      "analysis": "Microsoft's AI for Beginners is a free 12-week, 24-lesson open curriculum covering neural networks, NLP, computer vision, and modern LLMs using TensorFlow and PyTorch. It provides a structured, university-style path into AI/ML with hands-on Jupyter notebooks at every step, requiring only basic programming knowledge to start. Trending on organic interest, it resurfaces periodically as students and career-changers discover it at the start of new learning cycles. Ideal for anyone who wants a rigorous, self-paced AI foundation without paying for a course.",
+      "llm_api": "optional",
+      "llm_api_note": "Curriculum runs locally; a few lessons use Azure AI services",
+      "topics": [
+        "Education"
+      ],
+      "first_seen": "2026-08-02",
+      "last_seen": "2026-08-02",
+      "best_rank": 5,
+      "latest_stars": 58915,
+      "max_gained": 3246
+    },
+    {
+      "owner": "zhaoxuya520",
+      "repo": "reverse-skill",
+      "url": "https://github.com/zhaoxuya520/reverse-skill",
+      "appearances": [
+        {
+          "date": "2026-08-09",
+          "rank": 1,
+          "stars": 22450,
+          "gained": 9635
+        }
+      ],
+      "language": "PowerShell",
+      "lang_color": "#8b8478",
+      "description": "AI-powered routing and self-evolving knowledge base for reverse engineering and security research",
+      "analysis": "reverse-skill is an AI-powered skill routing system for cybersecurity workflows, mapping tasks like APK analysis, binary disassembly, and CTF challenges to the right toolchain automatically via a 41-rule routing matrix. It eliminates guesswork about which security tools to invoke—jadx, IDA Pro, Frida—by letting AI agents select the appropriate methodology. Trending on organic interest as security professionals experiment with AI-assisted reverse engineering workflows. Best suited for red teamers, CTF competitors, and vulnerability researchers using Claude Code, Cursor, or similar AI coding agents.",
+      "llm_api": "required",
+      "llm_api_note": "Needs an AI code client (Claude Code, Codex, Cursor, …)",
+      "topics": [
+        "Security & Privacy",
+        "Agent Skills & Plugins"
+      ],
+      "first_seen": "2026-08-09",
+      "last_seen": "2026-08-09",
+      "best_rank": 1,
+      "latest_stars": 22450,
+      "max_gained": 9635
+    },
+    {
+      "owner": "firecrawl",
+      "repo": "pdf-inspector",
+      "url": "https://github.com/firecrawl/pdf-inspector",
+      "appearances": [
+        {
+          "date": "2026-08-09",
+          "rank": 2,
+          "stars": 13846,
+          "gained": 8846
+        }
+      ],
+      "language": "Rust",
+      "lang_color": "#dea584",
+      "description": "Fast Rust library for PDF inspection, classification, and text extraction",
+      "analysis": "pdf-inspector is a Rust library that classifies PDFs as text-based or scanned in ~20ms, then extracts text locally for text-based files or routes scanned documents to OCR—saving cost since roughly 54% of PDFs don't require OCR at all. It exposes bindings for Python, Node.js, browser WebAssembly, and Rust, making it flexible across stacks. Trending on the surge in AI document pipelines and RAG applications where efficient PDF ingestion is a bottleneck. Ideal for developers building LLM context pipelines, document APIs, or any system processing large volumes of mixed PDFs.",
+      "llm_api": "none",
+      "topics": [
+        "Documents & Data",
+        "Systems & Libraries"
+      ],
+      "first_seen": "2026-08-09",
+      "last_seen": "2026-08-09",
+      "best_rank": 2,
+      "latest_stars": 13846,
+      "max_gained": 8846
+    },
+    {
+      "owner": "TencentCloud",
+      "repo": "TencentDB-Agent-Memory",
+      "url": "https://github.com/TencentCloud/TencentDB-Agent-Memory",
+      "appearances": [
+        {
+          "date": "2026-08-09",
+          "rank": 3,
+          "stars": 18722,
+          "gained": 8046
+        }
+      ],
+      "language": "TypeScript",
+      "lang_color": "#3178c6",
+      "description": "Team-level memory hub for AI Agents with reusable memory assets across frameworks",
+      "analysis": "TencentDB-Agent-Memory is a team-level knowledge system that distills conversations, code, and documentation into four reusable asset types—Chat Memory, Skills, Wiki, and CodeGraph—shared across AI agents and frameworks. It solves the blank-slate problem: new agent sessions inherit accumulated team expertise rather than starting from scratch. Trending on the wave of multi-agent orchestration tooling as organizations deploy AI-assisted engineering teams at scale. Best suited for teams running specialized agents for research, development, and testing who need context to transfer automatically between sessions.",
+      "llm_api": "required",
+      "llm_api_note": "Memory layer for coding agents (proxy in front of Claude/Codex)",
+      "topics": [
+        "RAG & Memory",
+        "AI Agents"
+      ],
+      "first_seen": "2026-08-09",
+      "last_seen": "2026-08-09",
+      "best_rank": 3,
+      "latest_stars": 18722,
+      "max_gained": 8046
+    },
+    {
+      "owner": "lyogavin",
+      "repo": "airllm",
+      "url": "https://github.com/lyogavin/airllm",
+      "appearances": [
+        {
+          "date": "2026-08-09",
+          "rank": 4,
+          "stars": 30357,
+          "gained": 5711
+        }
+      ],
+      "language": "Jupyter Notebook",
+      "lang_color": "#DA5B0B",
+      "description": "AirLLM 70B inference with single 4GB GPU",
+      "analysis": "AirLLM enables inference of 70B+ parameter language models on a single consumer 4GB GPU by streaming model weights one layer at a time instead of loading them all simultaneously—no quantization, distillation, or pruning required. Support extends up to 671B-parameter models, dramatically reducing the hardware barrier for local LLM deployment. Trending on sustained community interest in cost-effective local inference and updated compatibility with newer model releases. Essential for researchers, hobbyists, and small teams who want full-quality large model inference without multi-GPU or cloud costs.",
+      "llm_api": "none",
+      "llm_api_note": "Runs big LLMs locally on your GPU — no hosted API",
+      "topics": [
+        "LLM Infrastructure"
+      ],
+      "first_seen": "2026-08-09",
+      "last_seen": "2026-08-09",
+      "best_rank": 4,
+      "latest_stars": 30357,
+      "max_gained": 5711
+    },
+    {
+      "owner": "esengine",
+      "repo": "DeepSeek-Reasonix",
+      "url": "https://github.com/esengine/DeepSeek-Reasonix",
+      "appearances": [
+        {
+          "date": "2026-08-09",
+          "rank": 5,
+          "stars": 33420,
+          "gained": 4704
+        }
+      ],
+      "language": "Go",
+      "lang_color": "#00ADD8",
+      "description": "DeepSeek-native AI coding agent optimized for terminal use with prefix-cache stability",
+      "analysis": "DeepSeek-Reasonix is a terminal-first AI coding agent built around DeepSeek models, featuring per-turn checkpoints, undo functionality, and workspace sandboxing so long autonomous sessions can be safely left running. It supports multi-interface access via CLI, desktop app, browser, and editor through the ACP protocol, and can orchestrate two-model planner-plus-executor workflows with separate prefix-cache sessions. Trending on strong DeepSeek ecosystem momentum and growing appetite for coding agents that can handle extended, unsupervised tasks. Fits developers who want a capable autonomous agent with meaningful safety rails rather than a chat-only coding assistant.",
+      "llm_api": "required",
+      "llm_api_note": "Configure a model provider (DeepSeek-native)",
+      "topics": [
+        "AI Agents",
+        "Developer Tools"
+      ],
+      "first_seen": "2026-08-09",
+      "last_seen": "2026-08-09",
+      "best_rank": 5,
+      "latest_stars": 33420,
+      "max_gained": 4704
+    },
+    {
+      "owner": "PrimeIntellect-ai",
+      "repo": "prime-agent",
+      "url": "https://github.com/PrimeIntellect-ai/prime-agent",
+      "appearances": [
+        {
+          "date": "2026-08-10",
+          "rank": 1,
+          "stars": 11094,
+          "gained": 2356
+        }
+      ],
+      "language": "TypeScript",
+      "lang_color": "#3178c6",
+      "description": "A self-improving RLM agent for coding workflows and long-running autonomous tasks.",
+      "analysis": "prime-agent is a reinforcement-learning-based autonomous coding agent that iteratively improves its own performance on software engineering tasks. It picked up over 2,300 stars today, signaling a major community moment — likely tied to a launch announcement or viral demo in the rapidly heating agentic-AI space. Developers building autonomous coding pipelines or exploring self-improving AI systems are the core audience. It fits naturally into TypeScript-centric stacks where teams want an AI agent that can handle end-to-end, long-horizon coding work.",
+      "llm_api": "required",
+      "llm_api_note": "Sign in with an LLM subscription or provider API key",
+      "topics": [
+        "AI Agents",
+        "Developer Tools"
+      ],
+      "first_seen": "2026-08-10",
+      "last_seen": "2026-08-10",
+      "best_rank": 1,
+      "latest_stars": 11094,
+      "max_gained": 2356
+    },
+    {
+      "owner": "vitali87",
+      "repo": "code-graph-rag",
+      "url": "https://github.com/vitali87/code-graph-rag",
+      "appearances": [
+        {
+          "date": "2026-08-10",
+          "rank": 2,
+          "stars": 2984,
+          "gained": 96
+        }
+      ],
+      "language": "Python",
+      "lang_color": "#3572A5",
+      "description": "The ultimate RAG for your monorepo — query, understand, and edit multi-language codebases with AI and knowledge graphs.",
+      "analysis": "code-graph-rag builds a knowledge graph over a codebase and uses it as a retrieval layer for AI queries, allowing developers to ask high-level questions about large, multi-language monorepos and get grounded, accurate answers. It trended organically as developer interest in retrieval-augmented generation matures past document search into structured code understanding. The tool fits Python-centric AI/ML teams and backend engineers who work in large repos where naive vector search loses important structural context. Anyone integrating LLMs into their code-review or onboarding workflows will find it immediately applicable.",
+      "llm_api": "required",
+      "llm_api_note": "NL querying needs a model — via MCP client or your provider",
+      "topics": [
+        "Code Intelligence",
+        "RAG & Memory",
+        "MCP & Integrations"
+      ],
+      "first_seen": "2026-08-10",
+      "last_seen": "2026-08-10",
+      "best_rank": 2,
+      "latest_stars": 2984,
+      "max_gained": 96
+    },
+    {
+      "owner": "msitarzewski",
+      "repo": "agency-agents",
+      "url": "https://github.com/msitarzewski/agency-agents",
+      "appearances": [
+        {
+          "date": "2026-08-10",
+          "rank": 3,
+          "stars": 140678,
+          "gained": 858
+        },
+        {
+          "date": "2026-08-11",
+          "rank": 1,
+          "stars": 143064,
+          "gained": 971
+        }
+      ],
+      "language": "Shell",
+      "lang_color": "#89e051",
+      "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas...",
+      "analysis": "agency-agents is a Shell-based toolkit that assembles a fully staffed AI agency with specialized agents handling distinct roles—frontend development, community management, content creation, and more. It is trending today amid surging demand for autonomous multi-agent systems that go beyond single-chat assistants. The Shell-native design means developers can wire it into existing CI/CD pipelines or cron jobs without heavy language dependencies. Ideal for indie hackers and small teams wanting to automate end-to-end digital workflows using orchestrated AI agents.",
+      "llm_api": "required",
+      "llm_api_note": "Agent roster for Claude Code (+ Cursor, Copilot, …)",
+      "topics": [
+        "AI Agents",
+        "Agent Skills & Plugins"
+      ],
+      "first_seen": "2026-08-10",
+      "last_seen": "2026-08-11",
+      "best_rank": 1,
+      "latest_stars": 143064,
+      "max_gained": 971
+    },
+    {
+      "owner": "pranshuparmar",
+      "repo": "witr",
+      "url": "https://github.com/pranshuparmar/witr",
+      "appearances": [
+        {
+          "date": "2026-08-10",
+          "rank": 4,
+          "stars": 20661,
+          "gained": 210
+        }
+      ],
+      "language": "Go",
+      "lang_color": "#00ADD8",
+      "description": "Why is this running? Trace any process, port, container, or file back to what started it — CLI + TUI.",
+      "analysis": "witr (\"Why Is This Running?\") is a Go CLI and TUI tool that traces any running process, open port, Docker container, or file descriptor back to its origin, making it fast to answer the eternal debugging question of who started a mystery process. Its clever name and real utility spread quickly through DevOps and SRE communities, explaining sustained traction. Go engineers, container operators, and sysadmins dealing with process sprawl in multi-service environments are the natural users. The interactive TUI makes it approachable for engineers who normally rely on a hodgepodge of ps, lsof, and netstat commands.",
+      "llm_api": "none",
+      "topics": [
+        "Developer Tools",
+        "Systems & Libraries"
+      ],
+      "first_seen": "2026-08-10",
+      "last_seen": "2026-08-10",
+      "best_rank": 4,
+      "latest_stars": 20661,
+      "max_gained": 210
+    },
+    {
+      "owner": "google-deepmind",
+      "repo": "weathernext",
+      "url": "https://github.com/google-deepmind/weathernext",
+      "appearances": [
+        {
+          "date": "2026-08-10",
+          "rank": 5,
+          "stars": 7088,
+          "gained": 86
+        }
+      ],
+      "language": "Python",
+      "lang_color": "#3572A5",
+      "description": "Open-source AI system for global weather and tropical cyclone forecasting by Google DeepMind.",
+      "analysis": "WeatherNext is Google DeepMind's latest generation of deep-learning weather models, capable of global atmospheric forecasting at roughly 30 km resolution along with tropical cyclone tracking. It builds on the foundation laid by GraphCast and GenCast, offering both deterministic and probabilistic forecast outputs suitable for research and operational use. Trending on organic interest among climate-AI researchers who follow DeepMind's work and meteorologists evaluating ML alternatives to numerical weather prediction. The codebase targets GPU and TPU environments, making it most accessible to research institutions and cloud-compute users rather than local desktop setups.",
+      "llm_api": "none",
+      "llm_api_note": "Runs its own weather models on GPU/TPU; no LLM",
+      "topics": [
+        "Science & ML"
+      ],
+      "first_seen": "2026-08-10",
+      "last_seen": "2026-08-10",
+      "best_rank": 5,
+      "latest_stars": 7088,
+      "max_gained": 86
+    },
+    {
+      "owner": "semantica-agi",
+      "repo": "semantica",
+      "url": "https://github.com/semantica-agi/semantica",
+      "appearances": [
+        {
+          "date": "2026-08-11",
+          "rank": 2,
+          "stars": 4818,
+          "gained": 884
+        },
+        {
+          "date": "2026-08-13",
+          "rank": 3,
+          "stars": 6569,
+          "gained": 727
+        }
+      ],
+      "language": "Python",
+      "lang_color": "#3572A5",
+      "description": "Graph-Native Infrastructure for Context and Accountable AI Systems",
+      "analysis": "Semantica provides graph-native infrastructure for managing context and accountability in AI systems, modeling knowledge as explicit graphs rather than flat document stores. This enables traceable, auditable AI reasoning chains where every inference step can be inspected and attributed. It likely trended today as enterprise interest in AI explainability and regulatory accountability continues to grow. Teams building production AI pipelines that need to audit decisions, comply with governance requirements, or debug complex reasoning chains are the primary audience.",
+      "llm_api": "optional",
+      "llm_api_note": "Deterministic KG core — no LLM required; integrates with all providers",
+      "topics": [
+        "RAG & Memory",
+        "LLM Infrastructure"
+      ],
+      "first_seen": "2026-08-11",
+      "last_seen": "2026-08-13",
+      "best_rank": 2,
+      "latest_stars": 6569,
+      "max_gained": 884
+    },
+    {
+      "owner": "nvm-sh",
+      "repo": "nvm",
+      "url": "https://github.com/nvm-sh/nvm",
+      "appearances": [
+        {
+          "date": "2026-08-11",
+          "rank": 3,
+          "stars": 94471,
+          "gained": 18
+        }
+      ],
+      "language": "Shell",
+      "lang_color": "#89e051",
+      "description": "Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions",
+      "analysis": "nvm is the de facto standard tool for switching between multiple Node.js versions on a single machine via a lightweight POSIX-compliant bash script. Trending on organic interest—no single event drives today's gain; its consistent appearance on trending reflects steady adoption as new developers set up Node.js environments daily. Any JavaScript or Node.js developer working across projects with differing engine requirements, or anyone bootstrapping a fresh machine, reaches for nvm as a first install. It integrates cleanly with zsh, bash, and most CI environments.",
+      "llm_api": "none",
+      "topics": [
+        "Developer Tools",
+        "Systems & Libraries"
+      ],
+      "first_seen": "2026-08-11",
+      "last_seen": "2026-08-11",
+      "best_rank": 3,
+      "latest_stars": 94471,
+      "max_gained": 18
+    },
+    {
+      "owner": "addyosmani",
+      "repo": "agent-skills",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "appearances": [
+        {
+          "date": "2026-08-11",
+          "rank": 4,
+          "stars": 86189,
+          "gained": 571
+        }
+      ],
+      "language": "JavaScript",
+      "lang_color": "#f1e05a",
+      "description": "Production-grade engineering skills for AI coding agents.",
+      "analysis": "agent-skills is a curated library of production-ready skill definitions—structured prompts and tool specs—designed to give AI coding agents reliable, expert-level engineering behaviors covering code review, performance audits, accessibility checks, and more. Authored by Addy Osmani (Google Chrome DevRel), the project benefits from his large following and the explosive growth of AI pair-programming tools in 2026. Frontend engineers and teams adopting AI coding assistants like Claude Code or Copilot will find these skills immediately applicable to enforce consistent standards. It fits naturally into JavaScript and TypeScript stacks.",
+      "llm_api": "required",
+      "llm_api_note": "Skills for AI coding agents (Claude Code, Cursor, …)",
+      "topics": [
+        "Agent Skills & Plugins",
+        "Developer Tools"
+      ],
+      "first_seen": "2026-08-11",
+      "last_seen": "2026-08-11",
+      "best_rank": 4,
+      "latest_stars": 86189,
+      "max_gained": 571
+    },
+    {
+      "owner": "ZhuLinsen",
+      "repo": "daily_stock_analysis",
+      "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
+      "appearances": [
+        {
+          "date": "2026-08-11",
+          "rank": 5,
+          "stars": 62082,
+          "gained": 317
+        }
+      ],
+      "language": "Python",
+      "lang_color": "#3572A5",
+      "description": "LLM-driven stock analysis system with multi-source market data, real-time news, and automated notifications",
+      "analysis": "daily_stock_analysis is a Python system that fuses multi-source market data feeds, real-time financial news, and LLM-powered reasoning to generate daily stock analysis reports delivered via automated notifications. It is trending on organic interest from the rapidly growing community combining LLMs with quantitative finance and algorithmic trading. The project appeals to retail quants, data scientists, and Python developers who want a ready-made pipeline for AI-assisted market research without building the data integration layer from scratch. It pairs well with brokerage APIs and notification services like Telegram or email.",
+      "llm_api": "required",
+      "llm_api_note": "Pick an LLM provider key (Gemini/Claude/…); Ollama for local runs",
+      "topics": [
+        "Finance & Trading",
+        "AI Agents"
+      ],
+      "first_seen": "2026-08-11",
+      "last_seen": "2026-08-11",
+      "best_rank": 5,
+      "latest_stars": 62082,
+      "max_gained": 317
+    },
+    {
+      "owner": "cathrynlavery",
+      "repo": "diagram-design",
+      "url": "https://github.com/cathrynlavery/diagram-design",
+      "appearances": [
+        {
+          "date": "2026-08-13",
+          "rank": 1,
+          "stars": 14232,
+          "gained": 4504
+        },
+        {
+          "date": "2026-08-15",
+          "rank": 1,
+          "stars": 18539,
+          "gained": 1619
+        }
+      ],
+      "language": "HTML",
+      "lang_color": "#e34c26",
+      "description": "29 editorial diagram types for Claude Code. Self-contained HTML + SVG.",
+      "analysis": "diagram-design is a curated library of 29 editorial diagram templates — flowcharts, sequence diagrams, architecture maps, and more — each delivered as a single self-contained HTML+SVG file with no external dependencies. It trended sharply today (1,619 stars) riding the wave of Claude Code's exploding adoption, as users discovered it provides polished, copy-paste-ready visuals for AI-assisted documentation and planning. Front-end developers, technical writers, and anyone using Claude Code for architectural or system design work will find it immediately practical.",
+      "llm_api": "required",
+      "llm_api_note": "Diagram skill for Claude Code",
+      "topics": [
+        "Design",
+        "Agent Skills & Plugins"
+      ],
+      "first_seen": "2026-08-13",
+      "last_seen": "2026-08-15",
+      "best_rank": 1,
+      "latest_stars": 18539,
+      "max_gained": 4504
+    },
+    {
+      "owner": "cactus-compute",
+      "repo": "needle",
+      "url": "https://github.com/cactus-compute/needle",
+      "appearances": [
+        {
+          "date": "2026-08-13",
+          "rank": 2,
+          "stars": 4917,
+          "gained": 768
+        },
+        {
+          "date": "2026-08-15",
+          "rank": 3,
+          "stars": 6034,
+          "gained": 551
+        }
+      ],
+      "language": "Python",
+      "lang_color": "#3572A5",
+      "description": "14MB foundation model for tiny devices; phones, wearables, smart home, and robots.",
+      "analysis": "Needle is a remarkably compact foundation language model at just 14MB, designed to run entirely on-device on phones, wearables, smart home hardware, and robotics platforms — no cloud inference required. It addresses the growing need for private, low-latency AI at the edge where internet connectivity is unreliable or undesirable. Today's trending spike likely reflects excitement around truly tiny on-device LLMs as an alternative to API-dependent solutions. Embedded systems developers, IoT engineers, and mobile app developers building privacy-first AI features will find it compelling.",
+      "llm_api": "optional",
+      "llm_api_note": "On-device model; OpenRouter key only for optional data synthesis",
+      "topics": [
+        "LLM Infrastructure",
+        "Science & ML"
+      ],
+      "first_seen": "2026-08-13",
+      "last_seen": "2026-08-15",
+      "best_rank": 2,
+      "latest_stars": 6034,
+      "max_gained": 768
+    },
+    {
+      "owner": "anthropics",
+      "repo": "skills",
+      "url": "https://github.com/anthropics/skills",
+      "appearances": [
+        {
+          "date": "2026-08-13",
+          "rank": 4,
+          "stars": 168981,
+          "gained": 383
+        }
+      ],
+      "language": "Python",
+      "lang_color": "#3572A5",
+      "description": "Public repository for Agent Skills",
+      "analysis": "This is Anthropic's official public repository for Claude Code Agent Skills — reusable prompt packages that extend what Claude Code agents can do, covering workflows like code review, deployment automation, data visualization, and more. Making it public opens the ecosystem to community contributions and makes the skill catalog browsable and forkable. It trended organically as the Claude Code community discovered they can now inspect, install, and contribute skills directly from the canonical source. Developers customizing AI-assisted workflows and organizations building internal Claude Code tooling are the core audience.",
+      "llm_api": "required",
+      "llm_api_note": "Agent Skills — run inside Claude Code & compatible hosts",
+      "topics": [
+        "Agent Skills & Plugins"
+      ],
+      "first_seen": "2026-08-13",
+      "last_seen": "2026-08-13",
+      "best_rank": 4,
+      "latest_stars": 168981,
+      "max_gained": 383
+    },
+    {
+      "owner": "altic-dev",
+      "repo": "FluidVoice",
+      "url": "https://github.com/altic-dev/FluidVoice",
+      "appearances": [
+        {
+          "date": "2026-08-13",
+          "rank": 5,
+          "stars": 9829,
+          "gained": 187
+        }
+      ],
+      "language": "Swift",
+      "lang_color": "#F05138",
+      "description": "Fastest and only macOS Dictation app with on-device STT and custom trained AI enhancement model.",
+      "analysis": "FluidVoice is a macOS dictation app combining fully on-device speech-to-text with a custom-trained AI model that enhances transcription quality in real time — no audio ever leaves the machine. It competes with cloud-based solutions and Apple's built-in dictation by prioritizing speed, privacy, and accuracy on Apple Silicon. The repo trended on organic interest from macOS power users seeking private, low-latency dictation following improvements in local ML performance on M-series chips. Developers, writers, and professionals who dictate frequently and care about data sovereignty are the natural audience.",
+      "llm_api": "optional",
+      "llm_api_note": "On-device STT + local enhancement; cloud AI keys optional",
+      "topics": [
+        "Productivity & Research"
+      ],
+      "first_seen": "2026-08-13",
+      "last_seen": "2026-08-13",
+      "best_rank": 5,
+      "latest_stars": 9829,
+      "max_gained": 187
+    },
+    {
+      "owner": "cordiverse",
+      "repo": "cordis",
+      "url": "https://github.com/cordiverse/cordis",
+      "appearances": [
+        {
+          "date": "2026-08-15",
+          "rank": 2,
+          "stars": 4023,
+          "gained": 616
+        }
+      ],
+      "language": "TypeScript",
+      "lang_color": "#3178c6",
+      "description": "Meta-Framework of Spatiotemporal Composability",
+      "analysis": "Cordis is a TypeScript meta-framework for building extensible, plugin-driven applications through 'spatiotemporal composability' — a model where modules can be loaded, unloaded, and composed across different runtime contexts without restarting the host. It solves the hard problem of hot-reloadable plugin systems in long-running Node.js services. It likely trended today due to renewed interest from bot and agent framework developers looking for a disciplined plugin lifecycle. Best suited for developers building chatbots, CLI tools, or any application where extensibility and runtime plugin management are priorities.",
+      "llm_api": "none",
+      "topics": [
+        "Systems & Libraries",
+        "Developer Tools"
+      ],
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "best_rank": 2,
+      "latest_stars": 4023,
+      "max_gained": 616
+    },
+    {
+      "owner": "unslothai",
+      "repo": "unsloth",
+      "url": "https://github.com/unslothai/unsloth",
+      "appearances": [
+        {
+          "date": "2026-08-15",
+          "rank": 4,
+          "stars": 72007,
+          "gained": 435
+        }
+      ],
+      "language": "Python",
+      "lang_color": "#3572A5",
+      "description": "Local UI to run and train LLMs and diffusion models, including various latest models.",
+      "analysis": "Unsloth provides a local web UI for running and fine-tuning large language models and diffusion models on consumer hardware, with support for the latest open-weight models. Its massive star count (72k) reflects months of sustained organic growth as a go-to tool for self-hosted AI. Today's daily gain likely reflects a new model integration or feature update landing in the community. ML practitioners, researchers, and enthusiasts who want to fine-tune or run models locally without cloud costs or privacy concerns will benefit most.",
+      "llm_api": "none",
+      "llm_api_note": "Runs/trains models locally — replaces the hosted API",
+      "topics": [
+        "LLM Infrastructure"
+      ],
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "best_rank": 4,
+      "latest_stars": 72007,
+      "max_gained": 435
+    },
+    {
+      "owner": "cursor",
+      "repo": "plugins",
+      "url": "https://github.com/cursor/plugins",
+      "appearances": [
+        {
+          "date": "2026-08-15",
+          "rank": 5,
+          "stars": 2939,
+          "gained": 152
+        }
+      ],
+      "language": "TypeScript",
+      "lang_color": "#3178c6",
+      "description": "Cursor plugin specification and official plugins",
+      "analysis": "cursor/plugins is the official plugin specification and reference plugin collection for the Cursor AI code editor, defining how third-party developers can extend Cursor's capabilities with custom tools and integrations. It trended today as Cursor continues to gain traction among AI-assisted developers, likely following a plugin API announcement or a notable community-built plugin going viral. TypeScript developers who use Cursor as their primary IDE and want to build custom automations or integrate internal tools directly into the editor are the primary audience.",
+      "llm_api": "required",
+      "llm_api_note": "Plugins for the Cursor editor",
+      "topics": [
+        "Agent Skills & Plugins",
+        "Developer Tools"
+      ],
+      "first_seen": "2026-08-15",
+      "last_seen": "2026-08-15",
+      "best_rank": 5,
+      "latest_stars": 2939,
+      "max_gained": 152
+    },
+    {
+      "owner": "nautechsystems",
+      "repo": "nautilus_trader",
+      "url": "https://github.com/nautechsystems/nautilus_trader",
+      "appearances": [
+        {
+          "date": "2026-08-17",
+          "rank": 3,
+          "stars": 25869,
+          "gained": 115
+        },
+        {
+          "date": "2026-08-19",
+          "rank": 5,
+          "stars": 26419,
+          "gained": 79
+        }
+      ],
+      "language": "Rust",
+      "lang_color": "#dea584",
+      "description": "Production-grade Rust-native trading engine with deterministic event-driven architecture",
+      "analysis": "NautilusTrader is a production-ready algorithmic trading platform built in Rust for deterministic, low-latency backtesting and live execution, with a Python API for strategy authoring. Its event-driven core eliminates the non-determinism that plagues Python-first frameworks when used in live trading, making backtest results reliably reproducible in production. Trending on organic interest from quantitative developers migrating performance-critical workloads from Python to Rust-backed engines. Best suited for quant traders, prop shops, and fintech engineers who need institutional-grade execution with microsecond latency but prefer Python for strategy logic.",
+      "llm_api": "none",
+      "topics": [
+        "Finance & Trading",
+        "Systems & Libraries"
+      ],
+      "first_seen": "2026-08-17",
+      "last_seen": "2026-08-19",
+      "best_rank": 3,
+      "latest_stars": 26419,
+      "max_gained": 115
+    },
+    {
+      "owner": "akitaonrails",
+      "repo": "ai-memory",
+      "url": "https://github.com/akitaonrails/ai-memory",
+      "appearances": [
+        {
+          "date": "2026-08-17",
+          "rank": 4,
+          "stars": 1985,
+          "gained": 207
+        }
+      ],
+      "language": "Rust",
+      "lang_color": "#dea584",
+      "description": "Solution for long-term memory for agent coding CLIs and facilitating handoff between different agent vendors",
+      "analysis": "ai-memory provides a persistent, structured memory layer for AI coding assistants such as Claude Code, Cursor, and Aider, enabling them to retain project context across sessions and hand off state seamlessly between different agent vendors. It stores memories as local vector embeddings over project files and conversation history, so agents can recall earlier decisions and code patterns. It's surging today because developers are frustrated with stateless coding agents losing context in long-running projects, and this repo offers a lightweight, vendor-neutral fix. Any developer regularly using LLM-based coding tools on non-trivial codebases is the target user.",
+      "llm_api": "required",
+      "llm_api_note": "Pairs with your coding agent; subscription OAuth, keys, or local endpoints",
+      "topics": [
+        "RAG & Memory",
+        "AI Agents"
+      ],
+      "first_seen": "2026-08-17",
+      "last_seen": "2026-08-17",
+      "best_rank": 4,
+      "latest_stars": 1985,
+      "max_gained": 207
+    },
+    {
+      "owner": "mukul975",
+      "repo": "Anthropic-Cybersecurity-Skills",
+      "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+      "appearances": [
+        {
+          "date": "2026-08-17",
+          "rank": 5,
+          "stars": 28356,
+          "gained": 156
+        },
+        {
+          "date": "2026-08-19",
+          "rank": 4,
+          "stars": 29784,
+          "gained": 767
+        }
+      ],
+      "language": "Python",
+      "lang_color": "#3572A5",
+      "description": "817 structured cybersecurity skills for AI agents mapped to 6 frameworks",
+      "analysis": "This repository encodes 817 structured, step-by-step cybersecurity skill definitions across 29 security domains, mapped to six industry frameworks including MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND, NIST AI RMF, and the MITRE Fight Fraud Framework. It lets AI coding assistants (Claude Code, GitHub Copilot, Cursor) execute expert-level security analysis tasks by providing the procedural knowledge that LLMs lack by default. Trending on growing demand for structured domain expertise layered onto AI agents, particularly in security teams piloting AI-assisted red-teaming and compliance workflows. Best suited for security engineers and AI practitioners who want LLM-driven tooling to follow established security playbooks rather than improvising.",
+      "llm_api": "required",
+      "llm_api_note": "Skill pack for AI agents",
+      "topics": [
+        "Security & Privacy",
+        "Agent Skills & Plugins"
+      ],
+      "first_seen": "2026-08-17",
+      "last_seen": "2026-08-19",
+      "best_rank": 4,
+      "latest_stars": 29784,
+      "max_gained": 767
+    },
+    {
+      "owner": "volcengine",
+      "repo": "OpenViking",
+      "url": "https://github.com/volcengine/OpenViking",
+      "appearances": [
+        {
+          "date": "2026-08-19",
+          "rank": 2,
+          "stars": 30112,
+          "gained": 803
+        }
+      ],
+      "language": "Python",
+      "lang_color": "#3572A5",
+      "description": "Self-evolving Context Database for AI Agents. Unify Agent Memory, Knowledge RAG and Skills",
+      "analysis": "OpenViking is a context-management layer for AI agents that merges three previously separate concerns — episodic memory, knowledge retrieval (RAG), and executable skills — into a single self-evolving database. Released by ByteDance's cloud division (Volcengine), it signals that large tech companies are standardising on unified agent memory rather than bolting together disparate vector stores and skill registries. Trending on broad interest in multi-agent infrastructure as teams move from prototype to production. Best suited for AI engineers building long-running, multi-session agent systems in Python who need cross-session recall without managing separate memory and retrieval backends.",
+      "llm_api": "required",
+      "llm_api_note": "Context store for your AI agents",
+      "topics": [
+        "RAG & Memory",
+        "AI Agents"
+      ],
+      "first_seen": "2026-08-19",
+      "last_seen": "2026-08-19",
+      "best_rank": 2,
+      "latest_stars": 30112,
+      "max_gained": 803
+    },
+    {
+      "owner": "chaitanyagiri",
+      "repo": "munder-difflin",
+      "url": "https://github.com/chaitanyagiri/munder-difflin",
+      "appearances": [
+        {
+          "date": "2026-08-19",
+          "rank": 3,
+          "stars": 2636,
+          "gained": 797
+        }
+      ],
+      "language": "TypeScript",
+      "lang_color": "#3178c6",
+      "description": "Local multi-agent harness that coordinates multiple AI coding assistants into a self-organising team",
+      "analysis": "Munder Difflin wraps existing terminal-based AI coding agents (Claude Code, OpenAI Codex, and others) into a self-organising virtual office — complete with a Pixi.js floor-plan, a GOD-orchestrator agent that routes tasks, and semantic memory enabling instant cross-session recall. The Office-themed name and the pitch of making subscriptions you already pay for collaborate autonomously drove rapid viral sharing on developer forums. Trending on a combination of novelty, humour, and real utility in the multi-agent coordination space. Aimed at individual developers and small teams who want autonomous, locally-run agent pipelines without paying for a cloud orchestration layer.",
+      "llm_api": "required",
+      "llm_api_note": "Coordinates your installed agent CLIs (Claude, Codex, …); BYOK/local",
+      "topics": [
+        "AI Agents",
+        "Developer Tools"
+      ],
+      "first_seen": "2026-08-19",
+      "last_seen": "2026-08-19",
+      "best_rank": 3,
+      "latest_stars": 2636,
+      "max_gained": 797
+    },
+    {
+      "owner": "mattpocock",
+      "repo": "skills",
+      "url": "https://github.com/mattpocock/skills",
+      "appearances": [
+        {
+          "date": "2026-08-21",
+          "rank": 1,
+          "stars": 229299,
+          "gained": 3368
+        },
+        {
+          "date": "2026-08-23",
+          "rank": 3,
+          "stars": 233748,
+          "gained": 2448
+        }
+      ],
+      "language": "Shell",
+      "lang_color": "#89e051",
+      "description": "Skills for Real Engineers. Straight from my .agents directory",
+      "analysis": "A collection of agent skills and shell scripts curated by Matt Pocock (known for his TypeScript and developer-education work), sourced directly from his personal AI-agents configuration. It provides drop-in skills that augment AI coding agents with engineering-specific workflows. The repo is trending on the strength of Pocock's large following and the exploding interest in custom agent tooling as developers build out their own .agents directories. It targets software engineers who want battle-tested agent skills without starting from scratch.",
+      "llm_api": "required",
+      "llm_api_note": "Skills for your coding agent",
+      "topics": [
+        "Agent Skills & Plugins",
+        "Developer Tools"
+      ],
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-23",
+      "best_rank": 1,
+      "latest_stars": 233748,
+      "max_gained": 3368
+    },
+    {
+      "owner": "mahlernim",
+      "repo": "google-timeline-visualizer",
+      "url": "https://github.com/mahlernim/google-timeline-visualizer",
+      "appearances": [
+        {
+          "date": "2026-08-21",
+          "rank": 2,
+          "stars": 2185,
+          "gained": 1040
+        }
+      ],
+      "language": "Kotlin",
+      "lang_color": "#A97BFF",
+      "description": "Visualize your year in travel using your Google Location History (Timeline) data",
+      "analysis": "This Kotlin app ingests a Google Timeline JSON export and renders a rich visual summary of travel history — countries visited, routes taken, and time spent in each place. It trended because Google's ongoing changes to how Location History is stored (shifting to on-device-only) have driven users to export and archive their data, creating immediate demand for tools that make that data meaningful. It targets Android developers and privacy-conscious users who have exported their Google Timeline and want a self-hosted, no-cloud-upload way to explore years of personal movement data.",
+      "llm_api": "none",
+      "topics": [
+        "Documents & Data"
+      ],
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "best_rank": 2,
+      "latest_stars": 2185,
+      "max_gained": 1040
+    },
+    {
+      "owner": "AprilNEA",
+      "repo": "OpenLogi",
+      "url": "https://github.com/AprilNEA/OpenLogi",
+      "appearances": [
+        {
+          "date": "2026-08-21",
+          "rank": 4,
+          "stars": 12818,
+          "gained": 1372
+        },
+        {
+          "date": "2026-08-23",
+          "rank": 5,
+          "stars": 14861,
+          "gained": 1008
+        }
+      ],
+      "language": "Rust",
+      "lang_color": "#dea584",
+      "description": "Local-first alternative to Logitech Options+ enabling button remapping, DPI configuration, and SmartShift management without telemetry",
+      "analysis": "OpenLogi is an open-source, local-first replacement for Logitech's Options+ software, letting users remap buttons, set DPI profiles, and configure SmartShift entirely offline without mandatory cloud sign-in or telemetry. Written in Rust for performance and safety, it is trending as Logitech's official software has drawn criticism for its privacy practices and frequent sign-in requirements. It is ideal for Linux and macOS users with Logitech MX-series mice and keyboards who prioritize privacy and hate vendor bloatware.",
+      "llm_api": "none",
+      "topics": [
+        "Systems & Libraries"
+      ],
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-23",
+      "best_rank": 4,
+      "latest_stars": 14861,
+      "max_gained": 1372
+    },
+    {
+      "owner": "PostHog",
+      "repo": "posthog",
+      "url": "https://github.com/PostHog/posthog",
+      "appearances": [
+        {
+          "date": "2026-08-21",
+          "rank": 5,
+          "stars": 38263,
+          "gained": 334
+        }
+      ],
+      "language": "Python",
+      "lang_color": "#3572A5",
+      "description": "Open-source product analytics platform with AI observability, session replay, feature flags, A/B testing, and error tracking.",
+      "analysis": "PostHog is a fully open-source, self-hostable product analytics suite combining session replays, feature flags, A/B experiments, error tracking, and — increasingly — AI observability for LLM-powered products, all under one roof. It trended on sustained organic interest as engineering teams seek privacy-respecting, self-hosted alternatives to Mixpanel and Amplitude, with the new AI observability layer adding a timely reason to revisit it. It fits product and engineering teams at startups and scale-ups who want full data ownership and a single platform covering the complete product telemetry stack.",
+      "llm_api": "optional",
+      "llm_api_note": "Analytics core needs no LLM; AI features are built-in extras",
+      "topics": [
+        "Developer Tools",
+        "Productivity & Research"
+      ],
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
+      "best_rank": 5,
+      "latest_stars": 38263,
+      "max_gained": 334
+    },
+    {
+      "owner": "openai",
+      "repo": "codex",
+      "url": "https://github.com/openai/codex",
+      "appearances": [
+        {
+          "date": "2026-08-23",
+          "rank": 1,
+          "stars": 115088,
+          "gained": 2729
+        }
+      ],
+      "language": "Rust",
+      "lang_color": "#dea584",
+      "description": "Lightweight coding agent that runs in your terminal",
+      "analysis": "OpenAI Codex CLI is a terminal-based AI coding agent that reads your codebase, writes code, runs shell commands, and iterates on feedback without leaving the command line. It is trending amid fierce competition in the agentic coding space (Claude Code, Cursor, Gemini CLI), with developers benchmarking it against alternatives. Its Rust implementation appeals to performance-focused engineers who want a fast, low-overhead agent. Best suited for polyglot developers comfortable in the terminal who want OpenAI models driving their dev loop.",
+      "llm_api": "required",
+      "llm_api_note": "ChatGPT sign-in or OpenAI API key",
+      "topics": [
+        "AI Agents",
+        "Developer Tools"
+      ],
+      "first_seen": "2026-08-23",
+      "last_seen": "2026-08-23",
+      "best_rank": 1,
+      "latest_stars": 115088,
+      "max_gained": 2729
+    },
+    {
+      "owner": "freestylefly",
+      "repo": "awesome-gpt-image-2",
+      "url": "https://github.com/freestylefly/awesome-gpt-image-2",
+      "appearances": [
+        {
+          "date": "2026-08-23",
+          "rank": 2,
+          "stars": 12653,
+          "gained": 440
+        },
+        {
+          "date": "2026-08-25",
+          "rank": 1,
+          "stars": 17521,
+          "gained": 1698
+        },
+        {
+          "date": "2026-08-27",
+          "rank": 2,
+          "stars": 22944,
+          "gained": 2093
+        }
+      ],
+      "language": "JavaScript",
+      "lang_color": "#f1e05a",
+      "description": "Prompt-as-code engine offering 530+ reversed examples and 20+ industrial templates for GPT image generation",
+      "analysis": "Awesome-gpt-image-2 is a curated library of 530+ reverse-engineered prompts and 20+ production-ready templates for GPT's image generation API, treating prompts as reusable, versioned code rather than one-off inputs. Trending today as GPT-Image-1 and GPT-4o image generation continue to see explosive developer adoption and teams struggle with inconsistent output quality. It fills a practical gap for developers and designers who need reliable, repeatable results without guessing at prompt structure. Best suited for product designers, marketing teams, and AI application developers building image pipelines.",
+      "llm_api": "required",
+      "llm_api_note": "Prompts target GPT Image 2 (API or ChatGPT)",
+      "topics": [
+        "Design",
+        "Video & Media"
+      ],
+      "first_seen": "2026-08-23",
+      "last_seen": "2026-08-27",
+      "best_rank": 1,
+      "latest_stars": 22944,
+      "max_gained": 2093
+    },
+    {
+      "owner": "basecamp",
+      "repo": "omarchy",
+      "url": "https://github.com/basecamp/omarchy",
+      "appearances": [
+        {
+          "date": "2026-08-23",
+          "rank": 4,
+          "stars": 29050,
+          "gained": 814
+        }
+      ],
+      "language": "Shell",
+      "lang_color": "#89e051",
+      "description": "Beautiful, Modern & Opinionated Linux desktop environment",
+      "analysis": "Omarchy is Basecamp's opinionated Linux desktop setup — a curated stack of window manager, fonts, themes, and dotfiles that turns a stock Linux install into a polished, productive workstation. It is trending on Basecamp/DHH's influence and the perennial developer interest in aesthetically refined Linux desktops. The project lowers the barrier for developers who want the power of a tiling window manager without spending weeks tuning configs. It targets Rails developers and makers in the Basecamp/Hey ecosystem who are ready to leave macOS.",
+      "llm_api": "none",
+      "topics": [
+        "Systems & Libraries"
+      ],
+      "first_seen": "2026-08-23",
+      "last_seen": "2026-08-23",
+      "best_rank": 4,
+      "latest_stars": 29050,
+      "max_gained": 814
+    },
+    {
+      "owner": "anthropics",
+      "repo": "claude-plugins-community",
+      "url": "https://github.com/anthropics/claude-plugins-community",
+      "appearances": [
+        {
+          "date": "2026-08-25",
+          "rank": 2,
+          "stars": 1712,
+          "gained": 350
+        }
+      ],
+      "language": "Python",
+      "lang_color": "#3572A5",
+      "description": "Community plugin marketplace for Claude Cowork and Claude Code",
+      "analysis": "claude-plugins-community is the official community marketplace for plugins extending Claude Cowork and Claude Code, allowing developers to publish, discover, and install third-party integrations that enhance Claude's in-editor and collaborative capabilities. It provides a curated registry of Python-based plugins covering domains like CI automation, code review, and data tools. The repo is trending today on the back of Claude Cowork's launch and the rapid developer enthusiasm around agentic coding tools seeking an ecosystem. It's the go-to starting point for Claude Code power users wanting to extend their workflow beyond the built-in toolset.",
+      "llm_api": "required",
+      "llm_api_note": "Plugins for Claude Code / Cowork",
+      "topics": [
+        "Agent Skills & Plugins"
+      ],
+      "first_seen": "2026-08-25",
+      "last_seen": "2026-08-25",
+      "best_rank": 2,
+      "latest_stars": 1712,
+      "max_gained": 350
+    },
+    {
+      "owner": "MadsLorentzen",
+      "repo": "ai-job-search",
+      "url": "https://github.com/MadsLorentzen/ai-job-search",
+      "appearances": [
+        {
+          "date": "2026-08-25",
+          "rank": 3,
+          "stars": 35217,
+          "gained": 1266
+        }
+      ],
+      "language": "Python",
+      "lang_color": "#3572A5",
+      "description": "Job search framework built on Claude Code: evaluate postings, tailor CVs, write cover letters",
+      "analysis": "ai-job-search is a Python framework that automates the modern job hunt using Claude Code as its AI backbone — it evaluates job postings for fit, rewrites CVs to match specific roles, and drafts tailored cover letters at scale. The project turns what is normally an hours-long manual process into a repeatable, scriptable pipeline. It's trending sharply today, likely amplified by social media coverage and the relatable pain point of job searching, which drives viral sharing among mid-career engineers and recent graduates. It fits Python developers comfortable with CLI tools who want to apply AI leverage to career tasks without building the plumbing themselves.",
+      "llm_api": "required",
+      "llm_api_note": "Built on Claude Code",
+      "topics": [
+        "Productivity & Research",
+        "Agent Skills & Plugins"
+      ],
+      "first_seen": "2026-08-25",
+      "last_seen": "2026-08-25",
+      "best_rank": 3,
+      "latest_stars": 35217,
+      "max_gained": 1266
+    },
+    {
+      "owner": "apache",
+      "repo": "maka",
+      "url": "https://github.com/apache/maka",
+      "appearances": [
+        {
+          "date": "2026-08-25",
+          "rank": 4,
+          "stars": 3295,
+          "gained": 538
+        }
+      ],
+      "language": "TypeScript",
+      "lang_color": "#3178c6",
+      "description": "Apache Maka is a local-first AI agent workspace with append-only logging",
+      "analysis": "Apache Maka is a local-first AI agent workspace built in TypeScript that records every action in an append-only log, giving users full auditability and offline capability for agentic AI workflows. Unlike cloud-hosted agent platforms, Maka keeps all data on the user's machine, making it attractive for privacy-sensitive enterprise contexts. Its entry into the Apache Software Foundation incubator is the most likely driver of today's surge, as the ASF imprimatur signals long-term governance and enterprise readiness. The primary audience is backend and full-stack developers building internal AI tools who need durability guarantees and cannot send data to external SaaS platforms.",
+      "llm_api": "required",
+      "llm_api_note": "BYO model (cloud key or local endpoint)",
+      "topics": [
+        "AI Agents",
+        "Productivity & Research"
+      ],
+      "first_seen": "2026-08-25",
+      "last_seen": "2026-08-25",
+      "best_rank": 4,
+      "latest_stars": 3295,
+      "max_gained": 538
+    },
+    {
+      "owner": "TauricResearch",
+      "repo": "TradingAgents",
+      "url": "https://github.com/TauricResearch/TradingAgents",
+      "appearances": [
+        {
+          "date": "2026-08-25",
+          "rank": 5,
+          "stars": 100171,
+          "gained": 191
+        }
+      ],
+      "language": "Python",
+      "lang_color": "#3572A5",
+      "description": "Multi-Agents LLM Financial Trading Framework",
+      "analysis": "TradingAgents is a multi-agent LLM framework for financial trading that coordinates specialist AI agents (e.g., a market analyst, a risk manager, a trader) to make collaborative buy/sell decisions using large language models. It has crossed the 100,000-star milestone, a rare achievement that itself drives renewed social interest and referral traffic. Trending today on organic momentum from the milestone and ongoing community interest in AI-driven quantitative finance. The project targets quantitative developers, fintech engineers, and researchers who want an extensible Python framework for experimenting with LLM-based trading strategies without building multi-agent coordination from scratch.",
+      "llm_api": "required",
+      "llm_api_note": "BYO LLM keys (OpenAI/…) for the agent crew",
+      "topics": [
+        "Finance & Trading",
+        "AI Agents"
+      ],
+      "first_seen": "2026-08-25",
+      "last_seen": "2026-08-25",
+      "best_rank": 5,
+      "latest_stars": 100171,
+      "max_gained": 191
+    },
+    {
+      "owner": "tt-a1i",
+      "repo": "archify",
+      "url": "https://github.com/tt-a1i/archify",
+      "appearances": [
+        {
+          "date": "2026-08-27",
+          "rank": 1,
+          "stars": 22892,
+          "gained": 4260
+        },
+        {
+          "date": "2026-08-29",
+          "rank": 1,
+          "stars": 30842,
+          "gained": 3927
+        }
+      ],
+      "language": "JavaScript",
+      "lang_color": "#f1e05a",
+      "description": "Agent skill for beautiful, verifiable architecture, workflow, sequence, data-flow, and lifecycle diagrams—self-contained HTML with motion and crisp export.",
+      "analysis": "archify is a JavaScript agent skill that generates stunning, verifiable software architecture and workflow diagrams—sequence, data-flow, and lifecycle—as self-contained HTML files with smooth animations and crisp export. It likely exploded today because the AI-agent tooling ecosystem is maturing and diagram generation fills a highly visible gap: developers want documentation that keeps pace with fast-moving codebases. Architects, tech leads, and anyone building AI-assisted development pipelines will find it especially useful, particularly in JavaScript or TypeScript-heavy shops that already run agent workflows.",
+      "llm_api": "optional",
+      "llm_api_note": "Renderer runs standalone; built to pair with your coding agent",
+      "topics": [
+        "Design",
+        "Developer Tools"
+      ],
+      "first_seen": "2026-08-27",
+      "last_seen": "2026-08-29",
+      "best_rank": 1,
+      "latest_stars": 30842,
+      "max_gained": 4260
+    },
+    {
+      "owner": "bilawalsidhu",
+      "repo": "gods-eye-view",
+      "url": "https://github.com/bilawalsidhu/gods-eye-view",
+      "appearances": [
+        {
+          "date": "2026-08-27",
+          "rank": 3,
+          "stars": 7732,
+          "gained": 1984
+        },
+        {
+          "date": "2026-08-29",
+          "rank": 2,
+          "stars": 12523,
+          "gained": 1870
+        }
+      ],
+      "language": "JavaScript",
+      "lang_color": "#f1e05a",
+      "description": "A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe.",
+      "analysis": "gods-eye-view is a browser-based, photorealistic 3D globe that streams real open-source spatial intelligence data—think live satellite tracking, vessel positions, and flight paths—without any install required. Its tagline 'the data is real' is the hook: it turns OSINT into a cinematic experience that demos extraordinarily well, which is why it is viral today. Security researchers, journalists covering geopolitics, GIS professionals, and curious developers building geospatial applications will all find genuine value here.",
+      "llm_api": "optional",
+      "llm_api_note": "Runs without LLM; OpenAI key unlocks voice/agent mode",
+      "topics": [
+        "Science & ML",
+        "Productivity & Research"
+      ],
+      "first_seen": "2026-08-27",
+      "last_seen": "2026-08-29",
+      "best_rank": 2,
+      "latest_stars": 12523,
+      "max_gained": 1984
+    },
+    {
+      "owner": "JetBrains",
+      "repo": "go-modern-guidelines",
+      "url": "https://github.com/JetBrains/go-modern-guidelines",
+      "appearances": [
+        {
+          "date": "2026-08-27",
+          "rank": 4,
+          "stars": 2046,
+          "gained": 314
+        }
+      ],
+      "language": "Go",
+      "lang_color": "#00ADD8",
+      "description": "Help AI coding agents write modern Go",
+      "analysis": "Go-modern-guidelines is a JetBrains-published reference that documents current, idiomatic Go patterns specifically so AI coding assistants generate correct modern Go rather than outdated or non-idiomatic code. It covers standard library patterns, Go module conventions, error handling idioms, and other areas where LLMs frequently regress to older Go 1.x-style code. Trending as AI-assisted Go development matures and developers grow frustrated with Copilot or similar tools suggesting stale patterns. Essential for Go teams using JetBrains AI, GitHub Copilot, or any LLM in their workflow, and for teams building custom AI context rules for Go codebases.",
+      "llm_api": "optional",
+      "llm_api_note": "Guidelines your coding agent reads — pair with an agent",
+      "topics": [
+        "Developer Tools",
+        "Education"
+      ],
+      "first_seen": "2026-08-27",
+      "last_seen": "2026-08-27",
+      "best_rank": 4,
+      "latest_stars": 2046,
+      "max_gained": 314
+    },
+    {
+      "owner": "zedeus",
+      "repo": "nitter",
+      "url": "https://github.com/zedeus/nitter",
+      "appearances": [
+        {
+          "date": "2026-08-27",
+          "rank": 5,
+          "stars": 13835,
+          "gained": 63
+        }
+      ],
+      "language": "Nim",
+      "lang_color": "#8b8478",
+      "description": "Alternative Twitter front-end",
+      "analysis": "Nitter is a privacy-respecting alternative front-end for Twitter/X, written in Nim, that strips away tracking scripts, ads, and mandatory JavaScript and lets users browse tweets and profiles in a lightweight, fast interface. It has been a long-standing privacy tool that periodically resurfaces in trending lists as X's API restrictions, paywalls, and data practices push users to seek alternatives. Trending on organic interest. Best suited for privacy-conscious users, developers scraping public tweet data, and anyone wanting a faster or more accessible Twitter browsing experience without the full X web application.",
+      "llm_api": "none",
+      "topics": [
+        "Security & Privacy"
+      ],
+      "first_seen": "2026-08-27",
+      "last_seen": "2026-08-27",
+      "best_rank": 5,
+      "latest_stars": 13835,
+      "max_gained": 63
+    },
+    {
+      "owner": "K-Dense-AI",
+      "repo": "scientific-agent-skills",
+      "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+      "appearances": [
+        {
+          "date": "2026-08-29",
+          "rank": 3,
+          "stars": 37885,
+          "gained": 1604
+        }
+      ],
+      "language": "Python",
+      "lang_color": "#3572A5",
+      "description": "AI scientist toolkit offering 165+ validated skills and 100+ scientific databases for biology, chemistry, medicine, and drug discovery research.",
+      "analysis": "scientific-agent-skills is a curated Python library of 165+ validated agent skills wired to 100+ scientific databases spanning biology, chemistry, medicine, and drug discovery—essentially a pre-built reasoning layer for an AI scientist. It trends on the wave of AI-for-science momentum: labs want to automate literature review, hypothesis generation, and data retrieval without building bespoke pipelines. Bioinformaticians, computational chemists, pharma researchers, and AI engineers building domain-specific science agents are the clear audience.",
+      "llm_api": "required",
+      "llm_api_note": "Skills for AI research agents",
+      "topics": [
+        "Science & ML",
+        "Agent Skills & Plugins"
+      ],
+      "first_seen": "2026-08-29",
+      "last_seen": "2026-08-29",
+      "best_rank": 3,
+      "latest_stars": 37885,
+      "max_gained": 1604
+    },
+    {
+      "owner": "tailscale",
+      "repo": "tailcat",
+      "url": "https://github.com/tailscale/tailcat",
+      "appearances": [
+        {
+          "date": "2026-08-29",
+          "rank": 4,
+          "stars": 3441,
+          "gained": 790
+        }
+      ],
+      "language": "Go",
+      "lang_color": "#00ADD8",
+      "description": "like netcat, but over Tailscale's data plane, without Tailscale's control plane",
+      "analysis": "tailcat is a slim Go utility from the Tailscale team that brings classic netcat-style raw TCP/UDP piping over Tailscale's encrypted mesh data plane—no control plane dependency required. It trended because Tailscale has a highly engaged developer community and a tool that combines networking primitives with zero-trust encryption resonates immediately. DevOps engineers, homelab operators, and security-conscious developers who already run Tailscale will add this to their toolkit for secure cross-node scripting and debugging without exposing ports.",
+      "llm_api": "none",
+      "topics": [
+        "Developer Tools",
+        "Systems & Libraries"
+      ],
+      "first_seen": "2026-08-29",
+      "last_seen": "2026-08-29",
+      "best_rank": 4,
+      "latest_stars": 3441,
+      "max_gained": 790
+    },
+    {
+      "owner": "THU-MAIC",
+      "repo": "OpenMAIC",
+      "url": "https://github.com/THU-MAIC/OpenMAIC",
+      "appearances": [
+        {
+          "date": "2026-08-29",
+          "rank": 5,
+          "stars": 22118,
+          "gained": 907
+        }
+      ],
+      "language": "TypeScript",
+      "lang_color": "#3178c6",
+      "description": "Open Multi-Agent Interactive Classroom — Get an immersive, multi-agent learning experience in just one click",
+      "analysis": "OpenMAIC, from Tsinghua University's MAIC lab, is a one-click TypeScript platform that orchestrates multiple specialized AI agents into an interactive classroom—students get immersive, Socratic dialogue rather than static lectures. It is trending on the intersection of two hot themes: multi-agent systems and AI in education, and a university pedigree lends it instant credibility in the research community. EdTech developers, educators experimenting with AI tutors, and researchers studying multi-agent pedagogy are the natural audience.",
+      "llm_api": "required",
+      "llm_api_note": "Configure at least one LLM provider key",
+      "topics": [
+        "Education",
+        "AI Agents"
+      ],
+      "first_seen": "2026-08-29",
+      "last_seen": "2026-08-29",
+      "best_rank": 5,
+      "latest_stars": 22118,
+      "max_gained": 907
+    }
+  ]
+}

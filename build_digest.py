@@ -5,7 +5,10 @@ Usage:
     python3 build_digest.py digests/<YYYY-MM-DD>.json
 
 Writes digests/<YYYY-MM-DD>.html (from template.html + entry_template.html)
-and regenerates index.html from every digests/*.json.
+and regenerates, from every digests/*.json:
+  - index.html    archive landing page
+  - repos.json    aggregated database of every repo ever featured
+  - explore.html  knowledge-graph + directory view (from explore_template.html)
 """
 
 import sys
@@ -44,6 +47,39 @@ LANG_COLORS = {
 }
 
 
+# LLM-API requirement badge. Key icon, slashed for "none".
+KEY_ICON = (
+    '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.7" '
+    'stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'
+    '<circle cx="10.9" cy="5.1" r="3.3"/>'
+    '<path d="M8.6 7.4 2 14M4.3 11.7l1.7 1.7M2 14l1.2 1.2"/></svg>'
+)
+KEY_ICON_SLASH = (
+    '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.7" '
+    'stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'
+    '<circle cx="10.9" cy="5.1" r="3.3"/>'
+    '<path d="M8.6 7.4 2 14M4.3 11.7l1.7 1.7"/>'
+    '<path d="M1.5 1.5l13 13" stroke-width="2"/></svg>'
+)
+
+LLM_BADGES = {
+    "required": ("llm-required", KEY_ICON, "LLM API required"),
+    "optional": ("llm-optional", KEY_ICON, "LLM API optional"),
+    "none": ("llm-none", KEY_ICON_SLASH, "No LLM API needed"),
+}
+
+
+def llm_badge(repo):
+    """Badge HTML for the repo's llm_api field; '' when absent/unknown."""
+    status = str(repo.get("llm_api") or "").strip().lower()
+    if status not in LLM_BADGES:
+        return ""
+    cls, icon, label = LLM_BADGES[status]
+    note = repo.get("llm_api_note")
+    title = f' title="{html.escape(str(note), quote=True)}"' if note else ""
+    return f'<span class="llm {cls}"{title}>{icon}{label}</span>'
+
+
 def fmt(n):
     """Thousands-separated integer, tolerant of strings/None."""
     try:
@@ -80,6 +116,7 @@ def render_entry(repo, entry_tpl):
         "{{GAIN}}": gain_str,
         "{{DESCRIPTION}}": esc(repo.get("description")),
         "{{ANALYSIS}}": esc(repo.get("analysis")),
+        "{{LLM_BADGE}}": llm_badge(repo),
     }
     out = entry_tpl
     for tok, val in subs.items():
@@ -118,6 +155,82 @@ def build_one(json_path):
     out_path.write_text(page)
     print(f"wrote {out_path.relative_to(ROOT)}")
     return date
+
+
+def build_db():
+    """Aggregate every digests/*.json into repos.json — one record per repo."""
+    by_slug = {}
+    dates = []
+    for jp in sorted(DIGESTS.glob("*.json")):
+        d = json.loads(jp.read_text())
+        dates.append(d["date"])
+        for r in d["repos"]:
+            slug = f"{r.get('owner', '')}/{r.get('repo', '')}"
+            rec = by_slug.setdefault(
+                slug,
+                {
+                    "owner": r.get("owner", ""),
+                    "repo": r.get("repo", ""),
+                    "url": r.get("url") or f"https://github.com/{slug}",
+                    "appearances": [],
+                },
+            )
+            gain = r.get("gained_today", r.get("gained_this_week"))
+            rec["appearances"].append(
+                {
+                    "date": d["date"],
+                    "rank": r.get("rank"),
+                    "stars": r.get("stars"),
+                    "gained": gain,
+                }
+            )
+            # Latest issue wins for descriptive fields.
+            lang = r.get("language")
+            if lang:
+                rec["language"] = lang
+                rec["lang_color"] = r.get("lang_color") or LANG_COLORS.get(
+                    lang, "#8b8478"
+                )
+            for field in ("description", "analysis", "llm_api", "llm_api_note"):
+                if r.get(field):
+                    rec[field] = r[field]
+            if r.get("topics"):
+                rec["topics"] = r["topics"]
+    repos = list(by_slug.values())
+    for rec in repos:
+        apps = rec["appearances"]
+        rec["first_seen"] = apps[0]["date"]
+        rec["last_seen"] = apps[-1]["date"]
+        rec["best_rank"] = min((a["rank"] or 99) for a in apps)
+        rec["latest_stars"] = apps[-1]["stars"]
+        rec["max_gained"] = max((a["gained"] or 0) for a in apps)
+    db = {"issues": dates, "repos": repos}
+    out = ROOT / "repos.json"
+    out.write_text(json.dumps(db, indent=2, ensure_ascii=False) + "\n")
+    print(f"wrote repos.json ({len(repos)} repos, {len(dates)} issues)")
+    return db
+
+
+def build_explore(db):
+    """Render explore.html (knowledge graph + directory) with the db inlined."""
+    tpl = (ROOT / "explore_template.html").read_text()
+    # Break "</script>"-like sequences so the inlined JSON can't close the tag.
+    data_js = json.dumps(
+        db, ensure_ascii=False, separators=(",", ":")
+    ).replace("</", "<\\/")
+    dates = db["issues"]
+    page = (
+        tpl.replace("{{DATA_JSON}}", data_js)
+        .replace("{{REPO_COUNT}}", str(len(db["repos"])))
+        .replace("{{ISSUE_COUNT}}", str(len(dates)))
+        .replace(
+            "{{DATE_RANGE}}",
+            f"{pretty_date(dates[0])} — {pretty_date(dates[-1])}",
+        )
+        .replace("{{GENERATED_DATE}}", esc(pretty_date(dates[-1])))
+    )
+    (ROOT / "explore.html").write_text(page)
+    print("wrote explore.html")
 
 
 def build_index():
@@ -166,6 +279,12 @@ INDEX_TEMPLATE = """<!DOCTYPE html>
   li a:hover{padding-left:8px;color:var(--accent);}
   .d{font-family:"Fraunces",Georgia,serif;font-weight:600;font-size:1.2rem;}
   .t{font-family:"JetBrains Mono",monospace;font-size:12.5px;color:var(--ink-soft);}
+  .atlas{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 16px;justify-content:space-between;
+    margin-top:26px;padding:18px 20px;border:1px solid var(--rule-strong);border-radius:10px;
+    text-decoration:none;color:inherit;transition:border-color .18s ease,color .18s ease;}
+  .atlas:hover{border-color:var(--accent);color:var(--accent);}
+  .atlas .d{font-size:1.15rem;}
+  .atlas .d em{font-style:italic;font-weight:400;color:var(--accent);}
   @media (prefers-color-scheme:dark){
     :root{--paper:#16140f;--ink:#f3efe6;--ink-soft:#b8b1a3;--rule:#2e2a22;--accent:#e08a6f;--card:#1e1b15;}
     header{border-color:#423d33;}
@@ -181,6 +300,10 @@ INDEX_TEMPLATE = """<!DOCTYPE html>
     <h1>Trending <em>Digests</em></h1>
     <p class="sub">The top 5 daily-trending GitHub repositories, analyzed — a new issue every two days.</p>
   </header>
+  <a class="atlas" href="explore.html">
+    <span class="d">Repo <em>Atlas</em></span>
+    <span class="t">every featured repo · knowledge graph · by topic &amp; date →</span>
+  </a>
   <ul>
 {{ROWS}}
   </ul>
@@ -198,6 +321,7 @@ def main():
     for json_path in sys.argv[1:]:
         build_one(json_path)
     build_index()
+    build_explore(build_db())
 
 
 if __name__ == "__main__":

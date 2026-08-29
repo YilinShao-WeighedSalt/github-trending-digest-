@@ -26,6 +26,12 @@
   li a:hover{padding-left:8px;color:var(--accent);}
   .d{font-family:"Fraunces",Georgia,serif;font-weight:600;font-size:1.2rem;}
   .t{font-family:"JetBrains Mono",monospace;font-size:12.5px;color:var(--ink-soft);}
+  .atlas{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 16px;justify-content:space-between;
+    margin-top:26px;padding:18px 20px;border:1px solid var(--rule-strong);border-radius:10px;
+    text-decoration:none;color:inherit;transition:border-color .18s ease,color .18s ease;}
+  .atlas:hover{border-color:var(--accent);color:var(--accent);}
+  .atlas .d{font-size:1.15rem;}
+  .atlas .d em{font-style:italic;font-weight:400;color:var(--accent);}
   @media (prefers-color-scheme:dark){
     :root{--paper:#16140f;--ink:#f3efe6;--ink-soft:#b8b1a3;--rule:#2e2a22;--accent:#e08a6f;--card:#1e1b15;}
     header{border-color:#423d33;}
@@ -41,6 +47,10 @@
     <h1>Trending <em>Digests</em></h1>
     <p class="sub">The top 5 daily-trending GitHub repositories, analyzed — a new issue every two days.</p>
   </header>
+  <a class="atlas" href="explore.html">
+    <span class="d">Repo <em>Atlas</em></span>
+    <span class="t">every featured repo · knowledge graph · by topic &amp; date →</span>
+  </a>
   <ul>
     <li><a href="digests/2026-08-29.html"><span class="d">August 29, 2026</span><span class="t">tt-a1i/archify · bilawalsidhu/gods-eye-view · K-Dense-AI/scientific-agent-skills</span></a></li>
     <li><a href="digests/2026-08-27.html"><span class="d">August 27, 2026</span><span class="t">tt-a1i/archify · freestylefly/awesome-gpt-image-2 · bilawalsidhu/gods-eye-view</span></a></li>

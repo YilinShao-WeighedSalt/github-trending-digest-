@@ -12,7 +12,13 @@
       "stars": 16849,
       "gained_this_week": 13308,
       "description": "Compress tool outputs, logs, files, and RAG chunks before they reach an LLM.",
-      "analysis": "Headroom compresses tool outputs, logs, files, and RAG chunks before they are sent to an LLM, achieving 60-95% token reduction without degrading answer quality. It tackles context window bloat — a growing pain point as AI agents grow more complex and tool outputs balloon in size. It likely trended this week due to surging developer interest in cost-efficient agentic workflows, where token spend directly impacts API bills. It fits best into Python-based LLM apps, agent frameworks, and RAG pipelines where tool output verbosity is a bottleneck."
+      "analysis": "Headroom compresses tool outputs, logs, files, and RAG chunks before they are sent to an LLM, achieving 60-95% token reduction without degrading answer quality. It tackles context window bloat — a growing pain point as AI agents grow more complex and tool outputs balloon in size. It likely trended this week due to surging developer interest in cost-efficient agentic workflows, where token spend directly impacts API bills. It fits best into Python-based LLM apps, agent frameworks, and RAG pipelines where tool output verbosity is a bottleneck.",
+      "llm_api": "optional",
+      "llm_api_note": "Compression layer for your LLM stack — no key of its own",
+      "topics": [
+        "LLM Infrastructure",
+        "Developer Tools"
+      ]
     },
     {
       "rank": 2,
@@ -23,7 +29,13 @@
       "stars": 147268,
       "gained_this_week": 15015,
       "description": "Convert PDFs, Office documents, and many other formats into clean Markdown for LLMs.",
-      "analysis": "MarkItDown is a Microsoft-backed Python library that converts PDFs, Word documents, PowerPoints, Excel spreadsheets, and many other formats into clean Markdown text. It solves the document ingestion problem for LLMs, which work best with plain text rather than binary file formats. Its continued momentum this week reflects sustained demand for reliable, multi-format document parsers in enterprise RAG and agentic pipelines. Developers building knowledge bases, document Q&A systems, or any LLM workflow that must ingest business files will find it immediately practical."
+      "analysis": "MarkItDown is a Microsoft-backed Python library that converts PDFs, Word documents, PowerPoints, Excel spreadsheets, and many other formats into clean Markdown text. It solves the document ingestion problem for LLMs, which work best with plain text rather than binary file formats. Its continued momentum this week reflects sustained demand for reliable, multi-format document parsers in enterprise RAG and agentic pipelines. Developers building knowledge bases, document Q&A systems, or any LLM workflow that must ingest business files will find it immediately practical.",
+      "llm_api": "optional",
+      "llm_api_note": "Core conversion is local; optional OpenAI client for image captions",
+      "topics": [
+        "Documents & Data",
+        "Developer Tools"
+      ]
     },
     {
       "rank": 3,
@@ -34,7 +46,12 @@
       "stars": 81121,
       "gained_this_week": 9174,
       "description": "Automate short-form video creation with AI: footage, voiceover, subtitles in one click.",
-      "analysis": "MoneyPrinterTurbo automates short-form video creation using AI: given a topic or script it sources background footage, generates voiceover via TTS, and assembles a finished video with subtitles in one click. It addresses the time-consuming manual process of producing content for TikTok, YouTube Shorts, and Instagram Reels. Trending on organic interest, driven by a growing wave of solo creators and small agencies seeking self-hosted alternatives to paid AI video tools. It suits Python developers and content marketers who want a customizable, locally-run video automation pipeline."
+      "analysis": "MoneyPrinterTurbo automates short-form video creation using AI: given a topic or script it sources background footage, generates voiceover via TTS, and assembles a finished video with subtitles in one click. It addresses the time-consuming manual process of producing content for TikTok, YouTube Shorts, and Instagram Reels. Trending on organic interest, driven by a growing wave of solo creators and small agencies seeking self-hosted alternatives to paid AI video tools. It suits Python developers and content marketers who want a customizable, locally-run video automation pipeline.",
+      "llm_api": "required",
+      "llm_api_note": "Script generation needs an LLM (OpenAI/Claude/Gemini/…; Ollama works)",
+      "topics": [
+        "Video & Media"
+      ]
     }
   ]
 }

@@ -11,7 +11,13 @@
       "stars": 115088,
       "gained_today": 2729,
       "description": "Lightweight coding agent that runs in your terminal",
-      "analysis": "OpenAI Codex CLI is a terminal-based AI coding agent that reads your codebase, writes code, runs shell commands, and iterates on feedback without leaving the command line. It is trending amid fierce competition in the agentic coding space (Claude Code, Cursor, Gemini CLI), with developers benchmarking it against alternatives. Its Rust implementation appeals to performance-focused engineers who want a fast, low-overhead agent. Best suited for polyglot developers comfortable in the terminal who want OpenAI models driving their dev loop."
+      "analysis": "OpenAI Codex CLI is a terminal-based AI coding agent that reads your codebase, writes code, runs shell commands, and iterates on feedback without leaving the command line. It is trending amid fierce competition in the agentic coding space (Claude Code, Cursor, Gemini CLI), with developers benchmarking it against alternatives. Its Rust implementation appeals to performance-focused engineers who want a fast, low-overhead agent. Best suited for polyglot developers comfortable in the terminal who want OpenAI models driving their dev loop.",
+      "llm_api": "required",
+      "llm_api_note": "ChatGPT sign-in or OpenAI API key",
+      "topics": [
+        "AI Agents",
+        "Developer Tools"
+      ]
     },
     {
       "rank": 2,
@@ -22,7 +28,13 @@
       "stars": 12653,
       "gained_today": 440,
       "description": "Prompt engineering framework featuring 470+ examples and 20+ industrial templates with continuous updates",
-      "analysis": "A curated library of 470+ prompts and 20+ ready-to-use templates built around OpenAI's GPT-image-2 model, organized into industry verticals like e-commerce, marketing, and product photography. It is trending because GPT-image-2 is a recently released model and developers are hunting for prompt patterns that unlock its full capabilities. The repo functions as a living cheat-sheet that flattens the prompt-engineering learning curve. It fits designers, marketers, and product teams integrating AI image generation into workflows via the OpenAI API."
+      "analysis": "A curated library of 470+ prompts and 20+ ready-to-use templates built around OpenAI's GPT-image-2 model, organized into industry verticals like e-commerce, marketing, and product photography. It is trending because GPT-image-2 is a recently released model and developers are hunting for prompt patterns that unlock its full capabilities. The repo functions as a living cheat-sheet that flattens the prompt-engineering learning curve. It fits designers, marketers, and product teams integrating AI image generation into workflows via the OpenAI API.",
+      "llm_api": "required",
+      "llm_api_note": "Prompts target GPT Image 2 (API or ChatGPT)",
+      "topics": [
+        "Design",
+        "Video & Media"
+      ]
     },
     {
       "rank": 3,
@@ -33,7 +45,13 @@
       "stars": 233748,
       "gained_today": 2448,
       "description": "Skills for Real Engineers. Straight from my .agents directory",
-      "analysis": "A collection of agent skills and shell scripts curated by Matt Pocock (known for his TypeScript and developer-education work), sourced directly from his personal AI-agents configuration. It provides drop-in skills that augment AI coding agents with engineering-specific workflows. The repo is trending on the strength of Pocock's large following and the exploding interest in custom agent tooling as developers build out their own .agents directories. It targets software engineers who want battle-tested agent skills without starting from scratch."
+      "analysis": "A collection of agent skills and shell scripts curated by Matt Pocock (known for his TypeScript and developer-education work), sourced directly from his personal AI-agents configuration. It provides drop-in skills that augment AI coding agents with engineering-specific workflows. The repo is trending on the strength of Pocock's large following and the exploding interest in custom agent tooling as developers build out their own .agents directories. It targets software engineers who want battle-tested agent skills without starting from scratch.",
+      "llm_api": "required",
+      "llm_api_note": "Skills for your coding agent",
+      "topics": [
+        "Agent Skills & Plugins",
+        "Developer Tools"
+      ]
     },
     {
       "rank": 4,
@@ -44,7 +62,11 @@
       "stars": 29050,
       "gained_today": 814,
       "description": "Beautiful, Modern & Opinionated Linux desktop environment",
-      "analysis": "Omarchy is Basecamp's opinionated Linux desktop setup — a curated stack of window manager, fonts, themes, and dotfiles that turns a stock Linux install into a polished, productive workstation. It is trending on Basecamp/DHH's influence and the perennial developer interest in aesthetically refined Linux desktops. The project lowers the barrier for developers who want the power of a tiling window manager without spending weeks tuning configs. It targets Rails developers and makers in the Basecamp/Hey ecosystem who are ready to leave macOS."
+      "analysis": "Omarchy is Basecamp's opinionated Linux desktop setup — a curated stack of window manager, fonts, themes, and dotfiles that turns a stock Linux install into a polished, productive workstation. It is trending on Basecamp/DHH's influence and the perennial developer interest in aesthetically refined Linux desktops. The project lowers the barrier for developers who want the power of a tiling window manager without spending weeks tuning configs. It targets Rails developers and makers in the Basecamp/Hey ecosystem who are ready to leave macOS.",
+      "llm_api": "none",
+      "topics": [
+        "Systems & Libraries"
+      ]
     },
     {
       "rank": 5,
@@ -55,7 +77,11 @@
       "stars": 14861,
       "gained_today": 1008,
       "description": "Local-first alternative to Logitech Options+ enabling button remapping, DPI configuration, and SmartShift management without telemetry",
-      "analysis": "OpenLogi is an open-source, local-first replacement for Logitech's Options+ software, letting users remap buttons, set DPI profiles, and configure SmartShift entirely offline without mandatory cloud sign-in or telemetry. Written in Rust for performance and safety, it is trending as Logitech's official software has drawn criticism for its privacy practices and frequent sign-in requirements. It is ideal for Linux and macOS users with Logitech MX-series mice and keyboards who prioritize privacy and hate vendor bloatware."
+      "analysis": "OpenLogi is an open-source, local-first replacement for Logitech's Options+ software, letting users remap buttons, set DPI profiles, and configure SmartShift entirely offline without mandatory cloud sign-in or telemetry. Written in Rust for performance and safety, it is trending as Logitech's official software has drawn criticism for its privacy practices and frequent sign-in requirements. It is ideal for Linux and macOS users with Logitech MX-series mice and keyboards who prioritize privacy and hate vendor bloatware.",
+      "llm_api": "none",
+      "topics": [
+        "Systems & Libraries"
+      ]
     }
   ]
 }

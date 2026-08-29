@@ -11,7 +11,13 @@
       "stars": 229299,
       "gained_today": 3368,
       "description": "Skills for Real Engineers. Straight from my .agents directory.",
-      "analysis": "This repo is TypeScript educator Matt Pocock's personal .agents directory, open-sourced as a collection of shell-based skills for AI coding agents and real-world engineering workflows. It trended explosively because Pocock has a massive following in the TypeScript/JavaScript community and the AI-agents tooling space is intensely hot — developers immediately flocked to see what an expert's personal setup looks like. It fits software engineers using AI pair-programming tools (Cursor, Claude Code, etc.) who want production-grade agent skills they can drop directly into their own workflows."
+      "analysis": "This repo is TypeScript educator Matt Pocock's personal .agents directory, open-sourced as a collection of shell-based skills for AI coding agents and real-world engineering workflows. It trended explosively because Pocock has a massive following in the TypeScript/JavaScript community and the AI-agents tooling space is intensely hot — developers immediately flocked to see what an expert's personal setup looks like. It fits software engineers using AI pair-programming tools (Cursor, Claude Code, etc.) who want production-grade agent skills they can drop directly into their own workflows.",
+      "llm_api": "required",
+      "llm_api_note": "Skills for your coding agent",
+      "topics": [
+        "Agent Skills & Plugins",
+        "Developer Tools"
+      ]
     },
     {
       "rank": 2,
@@ -22,7 +28,11 @@
       "stars": 2185,
       "gained_today": 1040,
       "description": "Visualize your year in travel using your Google Location History (Timeline) data",
-      "analysis": "This Kotlin app ingests a Google Timeline JSON export and renders a rich visual summary of travel history — countries visited, routes taken, and time spent in each place. It trended because Google's ongoing changes to how Location History is stored (shifting to on-device-only) have driven users to export and archive their data, creating immediate demand for tools that make that data meaningful. It targets Android developers and privacy-conscious users who have exported their Google Timeline and want a self-hosted, no-cloud-upload way to explore years of personal movement data."
+      "analysis": "This Kotlin app ingests a Google Timeline JSON export and renders a rich visual summary of travel history — countries visited, routes taken, and time spent in each place. It trended because Google's ongoing changes to how Location History is stored (shifting to on-device-only) have driven users to export and archive their data, creating immediate demand for tools that make that data meaningful. It targets Android developers and privacy-conscious users who have exported their Google Timeline and want a self-hosted, no-cloud-upload way to explore years of personal movement data.",
+      "llm_api": "none",
+      "topics": [
+        "Documents & Data"
+      ]
     },
     {
       "rank": 3,
@@ -33,7 +43,12 @@
       "stars": 113826,
       "gained_today": 1187,
       "description": "AI-powered tool to generate high-definition short videos from topics or keywords using automated workflows.",
-      "analysis": "MoneyPrinterTurbo is a Python pipeline that takes a topic or keyword and fully automates the production of short-form videos — scripting, voice-over, stock footage selection, subtitles, and export — ready for TikTok or YouTube Shorts. Despite already carrying over 113K stars, it continues to gain traction as the AI-generated content economy matures and more creators look to automate production at scale. It fits content creators, social media marketers, and developers building automated media workflows who want a self-hosted alternative to subscription-based AI video tools."
+      "analysis": "MoneyPrinterTurbo is a Python pipeline that takes a topic or keyword and fully automates the production of short-form videos — scripting, voice-over, stock footage selection, subtitles, and export — ready for TikTok or YouTube Shorts. Despite already carrying over 113K stars, it continues to gain traction as the AI-generated content economy matures and more creators look to automate production at scale. It fits content creators, social media marketers, and developers building automated media workflows who want a self-hosted alternative to subscription-based AI video tools.",
+      "llm_api": "required",
+      "llm_api_note": "Script generation needs an LLM (OpenAI/Claude/Gemini/…; Ollama works)",
+      "topics": [
+        "Video & Media"
+      ]
     },
     {
       "rank": 4,
@@ -44,7 +59,11 @@
       "stars": 12818,
       "gained_today": 1372,
       "description": "A native, local-first alternative to Logitech Options+, written in Rust — remap buttons, DPI, and SmartShift over HID++.",
-      "analysis": "OpenLogi is a Rust-native macOS application that talks directly to Logitech mice over the HID++ protocol, providing full button remapping, DPI adjustment, and SmartShift configuration without installing Logitech's bloated, network-connected Options+ software. It likely trended due to developer frustration with vendor software that requires cloud accounts for local hardware settings, amplified by word-of-mouth in developer communities where Logitech mice are ubiquitous. It is ideal for macOS power users and developers who own Logitech mice and want precise hardware control through a lightweight, open, fully local tool."
+      "analysis": "OpenLogi is a Rust-native macOS application that talks directly to Logitech mice over the HID++ protocol, providing full button remapping, DPI adjustment, and SmartShift configuration without installing Logitech's bloated, network-connected Options+ software. It likely trended due to developer frustration with vendor software that requires cloud accounts for local hardware settings, amplified by word-of-mouth in developer communities where Logitech mice are ubiquitous. It is ideal for macOS power users and developers who own Logitech mice and want precise hardware control through a lightweight, open, fully local tool.",
+      "llm_api": "none",
+      "topics": [
+        "Systems & Libraries"
+      ]
     },
     {
       "rank": 5,
@@ -55,7 +74,13 @@
       "stars": 38263,
       "gained_today": 334,
       "description": "Open-source product analytics platform with AI observability, session replay, feature flags, A/B testing, and error tracking.",
-      "analysis": "PostHog is a fully open-source, self-hostable product analytics suite combining session replays, feature flags, A/B experiments, error tracking, and — increasingly — AI observability for LLM-powered products, all under one roof. It trended on sustained organic interest as engineering teams seek privacy-respecting, self-hosted alternatives to Mixpanel and Amplitude, with the new AI observability layer adding a timely reason to revisit it. It fits product and engineering teams at startups and scale-ups who want full data ownership and a single platform covering the complete product telemetry stack."
+      "analysis": "PostHog is a fully open-source, self-hostable product analytics suite combining session replays, feature flags, A/B experiments, error tracking, and — increasingly — AI observability for LLM-powered products, all under one roof. It trended on sustained organic interest as engineering teams seek privacy-respecting, self-hosted alternatives to Mixpanel and Amplitude, with the new AI observability layer adding a timely reason to revisit it. It fits product and engineering teams at startups and scale-ups who want full data ownership and a single platform covering the complete product telemetry stack.",
+      "llm_api": "optional",
+      "llm_api_note": "Analytics core needs no LLM; AI features are built-in extras",
+      "topics": [
+        "Developer Tools",
+        "Productivity & Research"
+      ]
     }
   ]
 }

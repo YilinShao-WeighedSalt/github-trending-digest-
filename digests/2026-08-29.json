@@ -11,7 +11,13 @@
       "stars": 30842,
       "gained_today": 3927,
       "description": "Agent skill for beautiful, verifiable architecture, workflow, sequence, data-flow, and lifecycle diagrams—self-contained HTML with motion and crisp export.",
-      "analysis": "archify is a JavaScript agent skill that generates stunning, verifiable software architecture and workflow diagrams—sequence, data-flow, and lifecycle—as self-contained HTML files with smooth animations and crisp export. It likely exploded today because the AI-agent tooling ecosystem is maturing and diagram generation fills a highly visible gap: developers want documentation that keeps pace with fast-moving codebases. Architects, tech leads, and anyone building AI-assisted development pipelines will find it especially useful, particularly in JavaScript or TypeScript-heavy shops that already run agent workflows."
+      "analysis": "archify is a JavaScript agent skill that generates stunning, verifiable software architecture and workflow diagrams—sequence, data-flow, and lifecycle—as self-contained HTML files with smooth animations and crisp export. It likely exploded today because the AI-agent tooling ecosystem is maturing and diagram generation fills a highly visible gap: developers want documentation that keeps pace with fast-moving codebases. Architects, tech leads, and anyone building AI-assisted development pipelines will find it especially useful, particularly in JavaScript or TypeScript-heavy shops that already run agent workflows.",
+      "llm_api": "optional",
+      "llm_api_note": "Renderer runs standalone; built to pair with your coding agent",
+      "topics": [
+        "Design",
+        "Developer Tools"
+      ]
     },
     {
       "rank": 2,
@@ -22,7 +28,13 @@
       "stars": 12523,
       "gained_today": 1870,
       "description": "A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe.",
-      "analysis": "gods-eye-view is a browser-based, photorealistic 3D globe that streams real open-source spatial intelligence data—think live satellite tracking, vessel positions, and flight paths—without any install required. Its tagline 'the data is real' is the hook: it turns OSINT into a cinematic experience that demos extraordinarily well, which is why it is viral today. Security researchers, journalists covering geopolitics, GIS professionals, and curious developers building geospatial applications will all find genuine value here."
+      "analysis": "gods-eye-view is a browser-based, photorealistic 3D globe that streams real open-source spatial intelligence data—think live satellite tracking, vessel positions, and flight paths—without any install required. Its tagline 'the data is real' is the hook: it turns OSINT into a cinematic experience that demos extraordinarily well, which is why it is viral today. Security researchers, journalists covering geopolitics, GIS professionals, and curious developers building geospatial applications will all find genuine value here.",
+      "llm_api": "optional",
+      "llm_api_note": "Runs without LLM; OpenAI key unlocks voice/agent mode",
+      "topics": [
+        "Science & ML",
+        "Productivity & Research"
+      ]
     },
     {
       "rank": 3,
@@ -33,7 +45,13 @@
       "stars": 37885,
       "gained_today": 1604,
       "description": "AI scientist toolkit offering 165+ validated skills and 100+ scientific databases for biology, chemistry, medicine, and drug discovery research.",
-      "analysis": "scientific-agent-skills is a curated Python library of 165+ validated agent skills wired to 100+ scientific databases spanning biology, chemistry, medicine, and drug discovery—essentially a pre-built reasoning layer for an AI scientist. It trends on the wave of AI-for-science momentum: labs want to automate literature review, hypothesis generation, and data retrieval without building bespoke pipelines. Bioinformaticians, computational chemists, pharma researchers, and AI engineers building domain-specific science agents are the clear audience."
+      "analysis": "scientific-agent-skills is a curated Python library of 165+ validated agent skills wired to 100+ scientific databases spanning biology, chemistry, medicine, and drug discovery—essentially a pre-built reasoning layer for an AI scientist. It trends on the wave of AI-for-science momentum: labs want to automate literature review, hypothesis generation, and data retrieval without building bespoke pipelines. Bioinformaticians, computational chemists, pharma researchers, and AI engineers building domain-specific science agents are the clear audience.",
+      "llm_api": "required",
+      "llm_api_note": "Skills for AI research agents",
+      "topics": [
+        "Science & ML",
+        "Agent Skills & Plugins"
+      ]
     },
     {
       "rank": 4,
@@ -44,7 +62,12 @@
       "stars": 3441,
       "gained_today": 790,
       "description": "like netcat, but over Tailscale's data plane, without Tailscale's control plane",
-      "analysis": "tailcat is a slim Go utility from the Tailscale team that brings classic netcat-style raw TCP/UDP piping over Tailscale's encrypted mesh data plane—no control plane dependency required. It trended because Tailscale has a highly engaged developer community and a tool that combines networking primitives with zero-trust encryption resonates immediately. DevOps engineers, homelab operators, and security-conscious developers who already run Tailscale will add this to their toolkit for secure cross-node scripting and debugging without exposing ports."
+      "analysis": "tailcat is a slim Go utility from the Tailscale team that brings classic netcat-style raw TCP/UDP piping over Tailscale's encrypted mesh data plane—no control plane dependency required. It trended because Tailscale has a highly engaged developer community and a tool that combines networking primitives with zero-trust encryption resonates immediately. DevOps engineers, homelab operators, and security-conscious developers who already run Tailscale will add this to their toolkit for secure cross-node scripting and debugging without exposing ports.",
+      "llm_api": "none",
+      "topics": [
+        "Developer Tools",
+        "Systems & Libraries"
+      ]
     },
     {
       "rank": 5,
@@ -55,7 +78,13 @@
       "stars": 22118,
       "gained_today": 907,
       "description": "Open Multi-Agent Interactive Classroom — Get an immersive, multi-agent learning experience in just one click",
-      "analysis": "OpenMAIC, from Tsinghua University's MAIC lab, is a one-click TypeScript platform that orchestrates multiple specialized AI agents into an interactive classroom—students get immersive, Socratic dialogue rather than static lectures. It is trending on the intersection of two hot themes: multi-agent systems and AI in education, and a university pedigree lends it instant credibility in the research community. EdTech developers, educators experimenting with AI tutors, and researchers studying multi-agent pedagogy are the natural audience."
+      "analysis": "OpenMAIC, from Tsinghua University's MAIC lab, is a one-click TypeScript platform that orchestrates multiple specialized AI agents into an interactive classroom—students get immersive, Socratic dialogue rather than static lectures. It is trending on the intersection of two hot themes: multi-agent systems and AI in education, and a university pedigree lends it instant credibility in the research community. EdTech developers, educators experimenting with AI tutors, and researchers studying multi-agent pedagogy are the natural audience.",
+      "llm_api": "required",
+      "llm_api_note": "Configure at least one LLM provider key",
+      "topics": [
+        "Education",
+        "AI Agents"
+      ]
     }
   ]
 }

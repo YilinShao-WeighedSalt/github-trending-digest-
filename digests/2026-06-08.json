@@ -11,7 +11,13 @@
       "stars": 18371,
       "gained_this_week": 14272,
       "description": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers.",
-      "analysis": "Headroom is a context compression tool that reduces LLM token usage by 60-95% before inputs ever reach the model, preserving answer quality while slashing API costs. It runs as a library, proxy, or MCP server and offers specialized algorithms—SmartCrusher for JSON, CodeCompressor for AST-based code, and Kompress-base for general text. It has held the top trending spot for multiple days, reflecting sustained community demand for cost-efficient agentic workflows where tool outputs and RAG chunks balloon context windows. Ideal for Python developers building coding agents, RAG pipelines, or any high-throughput LLM application where inference cost is a bottleneck."
+      "analysis": "Headroom is a context compression tool that reduces LLM token usage by 60-95% before inputs ever reach the model, preserving answer quality while slashing API costs. It runs as a library, proxy, or MCP server and offers specialized algorithms—SmartCrusher for JSON, CodeCompressor for AST-based code, and Kompress-base for general text. It has held the top trending spot for multiple days, reflecting sustained community demand for cost-efficient agentic workflows where tool outputs and RAG chunks balloon context windows. Ideal for Python developers building coding agents, RAG pipelines, or any high-throughput LLM application where inference cost is a bottleneck.",
+      "llm_api": "optional",
+      "llm_api_note": "Compression layer for your LLM stack — no key of its own",
+      "topics": [
+        "LLM Infrastructure",
+        "Developer Tools"
+      ]
     },
     {
       "rank": 2,
@@ -22,7 +28,13 @@
       "stars": 148241,
       "gained_this_week": 13359,
       "description": "Python tool for converting files and office documents to Markdown.",
-      "analysis": "MarkItDown is Microsoft's Python utility that converts PDFs, Word documents, PowerPoints, Excel spreadsheets, images, audio, and web pages into clean Markdown text ready for LLM ingestion. It solves the document parsing problem at the heart of enterprise RAG—structured binary formats must be translated to plain text before models can reason over them. Trending on sustained organic momentum as enterprise AI adoption accelerates and developers standardize on Markdown as the lingua franca for document pipelines. Data engineers, AI application builders, and anyone processing business documents for LLM workflows will find it immediately practical."
+      "analysis": "MarkItDown is Microsoft's Python utility that converts PDFs, Word documents, PowerPoints, Excel spreadsheets, images, audio, and web pages into clean Markdown text ready for LLM ingestion. It solves the document parsing problem at the heart of enterprise RAG—structured binary formats must be translated to plain text before models can reason over them. Trending on sustained organic momentum as enterprise AI adoption accelerates and developers standardize on Markdown as the lingua franca for document pipelines. Data engineers, AI application builders, and anyone processing business documents for LLM workflows will find it immediately practical.",
+      "llm_api": "optional",
+      "llm_api_note": "Core conversion is local; optional OpenAI client for image captions",
+      "topics": [
+        "Documents & Data",
+        "Developer Tools"
+      ]
     },
     {
       "rank": 3,
@@ -33,7 +45,13 @@
       "stars": 33860,
       "gained_this_week": 2718,
       "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
-      "analysis": "Last30Days-Skill is an AI agent research tool that simultaneously searches Reddit, X, YouTube, TikTok, Hacker News, Polymarket, and the open web to surface what communities are actively discussing about any topic, synthesizing findings into cited summaries ranked by real engagement metrics. It addresses the staleness problem of standard web search—Google returns indexed content days or weeks old, while fresh community sentiment lives in forums and social platforms. Trending on organic interest, driven by growing demand for grounded social-listening capabilities inside agentic AI workflows. Content creators, product teams, and researchers who need current, community-sourced topic intelligence before launches or decisions will find it most useful."
+      "analysis": "Last30Days-Skill is an AI agent research tool that simultaneously searches Reddit, X, YouTube, TikTok, Hacker News, Polymarket, and the open web to surface what communities are actively discussing about any topic, synthesizing findings into cited summaries ranked by real engagement metrics. It addresses the staleness problem of standard web search—Google returns indexed content days or weeks old, while fresh community sentiment lives in forums and social platforms. Trending on organic interest, driven by growing demand for grounded social-listening capabilities inside agentic AI workflows. Content creators, product teams, and researchers who need current, community-sourced topic intelligence before launches or decisions will find it most useful.",
+      "llm_api": "required",
+      "llm_api_note": "Agent skill — runs inside Claude Code or other skill hosts",
+      "topics": [
+        "Agent Skills & Plugins",
+        "Productivity & Research"
+      ]
     }
   ]
 }

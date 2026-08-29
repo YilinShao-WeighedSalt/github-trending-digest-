@@ -11,7 +11,13 @@
       "stars": 20727,
       "gained_this_week": 16579,
       "description": "Open-source book on AI agent design principles and engineering practices (Chinese)",
-      "analysis": "This open-source Chinese-language book covers AI agent design principles and engineering practices end-to-end, from architecture patterns to production deployment. It trended explosively this week because comprehensive, freely available resources on agentic AI remain scarce—especially in Chinese, where a large developer community is hungry for structured guidance. Developers, researchers, and AI practitioners building or studying agentic systems will find it a foundational reference."
+      "analysis": "This open-source Chinese-language book covers AI agent design principles and engineering practices end-to-end, from architecture patterns to production deployment. It trended explosively this week because comprehensive, freely available resources on agentic AI remain scarce—especially in Chinese, where a large developer community is hungry for structured guidance. Developers, researchers, and AI practitioners building or studying agentic systems will find it a foundational reference.",
+      "llm_api": "optional",
+      "llm_api_note": "Reading is free; hands-on labs call LLM APIs (or Ollama where listed)",
+      "topics": [
+        "Education",
+        "AI Agents"
+      ]
     },
     {
       "rank": 2,
@@ -22,7 +28,12 @@
       "stars": 74706,
       "gained_this_week": 12085,
       "description": "Real-time global intelligence dashboard aggregating AI-curated news and geopolitical monitoring",
-      "analysis": "WorldMonitor is a TypeScript dashboard that aggregates global news via AI, tracking geopolitical developments and infrastructure status in real time. It likely trended amid heightened global interest in rapid geopolitical shifts, offering a single-pane view that journalists, analysts, and policy researchers find hard to replicate with raw feeds. Teams and individuals who need structured situational awareness—newsrooms, think tanks, or ops-heavy organizations—are its natural audience."
+      "analysis": "WorldMonitor is a TypeScript dashboard that aggregates global news via AI, tracking geopolitical developments and infrastructure status in real time. It likely trended amid heightened global interest in rapid geopolitical shifts, offering a single-pane view that journalists, analysts, and policy researchers find hard to replicate with raw feeds. Teams and individuals who need structured situational awareness—newsrooms, think tanks, or ops-heavy organizations—are its natural audience.",
+      "llm_api": "optional",
+      "llm_api_note": "Runs fully with local Ollama; Groq/OpenRouter optional",
+      "topics": [
+        "Productivity & Research"
+      ]
     },
     {
       "rank": 3,
@@ -33,7 +44,13 @@
       "stars": 26586,
       "gained_this_week": 6423,
       "description": "Local-first code intelligence system that builds a persistent codebase map for AI coding tools",
-      "analysis": "Code-Review-Graph builds a persistent, local knowledge graph of your codebase so AI coding assistants receive condensed, relevant context rather than raw file dumps. It trended on organic interest as developers using tools like Claude Code, Copilot, or Cursor hit context-window limits on large repositories. Python developers and teams with sprawling codebases who want to squeeze more accuracy from AI assistants without paying for larger context windows will get the most value here."
+      "analysis": "Code-Review-Graph builds a persistent, local knowledge graph of your codebase so AI coding assistants receive condensed, relevant context rather than raw file dumps. It trended on organic interest as developers using tools like Claude Code, Copilot, or Cursor hit context-window limits on large repositories. Python developers and teams with sprawling codebases who want to squeeze more accuracy from AI assistants without paying for larger context windows will get the most value here.",
+      "llm_api": "optional",
+      "llm_api_note": "Local-first maps; optional embeddings/LLM extras (BYO key)",
+      "topics": [
+        "Code Intelligence",
+        "Developer Tools"
+      ]
     },
     {
       "rank": 4,
@@ -44,7 +61,13 @@
       "stars": 11649,
       "gained_this_week": 2914,
       "description": "High-performance AI agent harness for code, built in Rust",
-      "analysis": "jcode is a Rust-based agent harness designed to orchestrate AI-powered coding workflows with low latency and high throughput. It trended as the ecosystem of AI coding agents matures and developers look for production-grade runtimes that can run multiple model calls concurrently without Python's GIL overhead. Systems engineers, Rust developers, and teams running self-hosted coding agents in performance-critical pipelines are its primary audience."
+      "analysis": "jcode is a Rust-based agent harness designed to orchestrate AI-powered coding workflows with low latency and high throughput. It trended as the ecosystem of AI coding agents matures and developers look for production-grade runtimes that can run multiple model calls concurrently without Python's GIL overhead. Systems engineers, Rust developers, and teams running self-hosted coding agents in performance-critical pipelines are its primary audience.",
+      "llm_api": "required",
+      "llm_api_note": "BYO provider (Anthropic/OpenAI/OpenRouter/…); local models too",
+      "topics": [
+        "AI Agents",
+        "Developer Tools"
+      ]
     },
     {
       "rank": 5,
@@ -55,7 +78,13 @@
       "stars": 30963,
       "gained_this_week": 11147,
       "description": "Free MIT AI gateway supporting 290+ providers and 500+ models with auto-fallback and token optimization",
-      "analysis": "OmniRoute is a free, MIT-licensed AI gateway that routes requests across 290+ providers and 500+ models, with automatic fallback and token-cost optimization baked in. It trended as AI teams tired of vendor lock-in and unpredictable outages sought a single abstraction layer for multi-provider deployments. Backend engineers and AI application developers who need reliability, cost control, and the freedom to swap models without rewriting client code will find it immediately useful."
+      "analysis": "OmniRoute is a free, MIT-licensed AI gateway that routes requests across 290+ providers and 500+ models, with automatic fallback and token-cost optimization baked in. It trended as AI teams tired of vendor lock-in and unpredictable outages sought a single abstraction layer for multi-provider deployments. Backend engineers and AI application developers who need reliability, cost control, and the freedom to swap models without rewriting client code will find it immediately useful.",
+      "llm_api": "required",
+      "llm_api_note": "Gateway to 351 LLM providers — connect accounts or free tiers",
+      "topics": [
+        "LLM Infrastructure",
+        "Developer Tools"
+      ]
     }
   ]
 }
