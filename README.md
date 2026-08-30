@@ -32,10 +32,22 @@ index.html              landing page linking every report
 repos.json              aggregated database: every repo ever featured, with
                         appearances, topics, and llm_api classification
 explore.html            Repo Atlas — interactive knowledge graph (repos <-> topics)
-                        plus a directory browsable by topic or date
+                        plus a directory browsable by topic or date, with an
+                        "Ask Claude" handoff per repo (see below)
 explore_template.html   template for explore.html
 build_digest.py         JSON -> styled HTML renderer + index/db/atlas updater
 ```
+
+## Ask Claude
+
+Every repo — on each issue page and in the Atlas detail panel — has an
+"Ask Claude" button. It opens claude.ai in a new tab with a prefilled prompt
+carrying the digest's context (description, topics, LLM-API classification,
+analysis) and asks Claude to fetch the repo's README before answering. The
+conversation runs on your Claude subscription; the pages themselves make no
+API calls and store nothing. In the Atlas panel you can type a custom question
+that gets folded into the prefill. `explore.html#repo=<owner>/<repo>` deep-links
+to a repo's panel.
 
 ## Regenerate locally
 

@@ -342,6 +342,9 @@
     gap:9px;
     align-items:flex-start;
   }
+  .cta-pair{ display:flex; flex-wrap:wrap; gap:10px; }
+  .cta.ask{ color:var(--accent); border-color:var(--llm-req-line); background:var(--llm-req-bg); }
+  .cta.ask:hover, .cta.ask:focus-visible{ border-color:var(--accent); }
   .cta{
     display:inline-flex;
     align-items:center;
@@ -561,9 +564,14 @@
         <p class="desc">Privacy first, AI meeting assistant with 4x faster Parakeet/Whisper live transcription, speaker diarization, and Ollama summarization built on Rust.</p>
         <p class="analysis">Meetily is a fully local, open-source AI meeting assistant built with Rust, Tauri, and Next.js that captures audio, transcribes in real time using Whisper or Parakeet models, and generates summaries via Ollama or other LLM providers — all without any data ever leaving your machine. It surged this week on growing distrust of cloud-based meeting AI tools, with users seeking privacy-compliant alternatives after several high-profile data-handling incidents in enterprise SaaS. The project is a natural fit for legal, healthcare, and finance teams who handle sensitive conversations and need reliable meeting notes without the compliance risk of cloud processing.</p>
         <div class="cta-row">
-          <a class="cta" href="https://github.com/Zackriya-Solutions/meetily" target="_blank" rel="noopener noreferrer">
-            View on GitHub <span class="arrow" aria-hidden="true">→</span>
-          </a>
+          <div class="cta-pair">
+            <a class="cta" href="https://github.com/Zackriya-Solutions/meetily" target="_blank" rel="noopener noreferrer">
+              View on GitHub <span class="arrow" aria-hidden="true">→</span>
+            </a>
+            <a class="cta ask" href="https://claude.ai/new?q=Explain%20the%20GitHub%20repository%20Zackriya-Solutions/meetily%20%E2%80%94%20what%20it%20actually%20does%2C%20how%20I%20would%20use%20it%2C%20and%20any%20gotchas%20%28cost%2C%20keys%2C%20hardware%29.%0A%0AContext%20from%20my%20GitHub-trending%20digest%20%28issue%202026-07-12%29%3A%20Privacy%20first%2C%20AI%20meeting%20assistant%20with%204x%20faster%20Parakeet/Whisper%20live%20transcription%2C%20speaker%20diarization%2C%20and%20Ollama%20summarization%20built%20on%20Rust.%20Language%3A%20Rust.%20Topics%3A%20Productivity%20%26%20Research%2C%20Security%20%26%20Privacy.%20Needs%20an%20LLM%20API%3A%20optional%20%28Local-first%20%28Whisper%20%2B%20Ollama%29%3B%20Claude/Groq/OpenRouter%20optional%29.%20Digest%20analysis%3A%20Meetily%20is%20a%20fully%20local%2C%20open-source%20AI%20meeting%20assistant%20built%20with%20Rust%2C%20Tauri%2C%20and%20Next.js%20that%20captures%20audio%2C%20transcribes%20in%20real%20time%20using%20Whisper%20or%20Parakeet%20models%2C%20and%20generates%20summaries%20via%20Ollama%20or%20other%20LLM%20providers%20%E2%80%94%20all%20without%20any%20data%20ever%20leaving%20your%20machine.%20It%20surged%20this%20week%20on%20growing%20distrust%20of%20cloud-based%20meeting%20AI%20tools%2C%20with%20users%20seeking%20privacy-compliant%20alternatives%20after%20several%20high-profile%20data-handling%20incidents%20in%20enterprise%20SaaS.%20The%20project%20is%20a%20natural%20fit%20for%20legal%2C%20healthcare%2C%20and%20finance%20teams%20who%20handle%20sensitive%20conversations%20and%20need%20reliable%20meeting%20notes%20without%20the%20compliance%20risk%20of%20cloud%20processing.%0A%0AFetch%20https%3A//github.com/Zackriya-Solutions/meetily%20and%20its%20README%20for%20current%20details%20before%20answering." target="_blank" rel="noopener noreferrer">
+              <span class="arrow" aria-hidden="true">✦</span> Ask Claude about this repo
+            </a>
+          </div>
           <span class="handle">github.com/Zackriya-Solutions/meetily</span>
         </div>
       </div>
@@ -599,9 +607,14 @@
         <p class="desc">Plugin enabling Codex integration from Claude Code for code review and task delegation.</p>
         <p class="analysis">codex-plugin-cc is a plugin that bridges OpenAI's Codex with the Claude Code CLI, letting developers delegate code review and subtasks to Codex directly from their Claude Code session in a multi-model workflow. Trending because cross-model AI orchestration is gaining serious traction as developers look to combine the strengths of different AI coding systems for complex software projects. It targets power users of Claude Code who also have Codex API access and want to assemble bespoke AI pipelines rather than being locked to a single assistant.</p>
         <div class="cta-row">
-          <a class="cta" href="https://github.com/openai/codex-plugin-cc" target="_blank" rel="noopener noreferrer">
-            View on GitHub <span class="arrow" aria-hidden="true">→</span>
-          </a>
+          <div class="cta-pair">
+            <a class="cta" href="https://github.com/openai/codex-plugin-cc" target="_blank" rel="noopener noreferrer">
+              View on GitHub <span class="arrow" aria-hidden="true">→</span>
+            </a>
+            <a class="cta ask" href="https://claude.ai/new?q=Explain%20the%20GitHub%20repository%20openai/codex-plugin-cc%20%E2%80%94%20what%20it%20actually%20does%2C%20how%20I%20would%20use%20it%2C%20and%20any%20gotchas%20%28cost%2C%20keys%2C%20hardware%29.%0A%0AContext%20from%20my%20GitHub-trending%20digest%20%28issue%202026-07-12%29%3A%20Plugin%20enabling%20Codex%20integration%20from%20Claude%20Code%20for%20code%20review%20and%20task%20delegation.%20Language%3A%20JavaScript.%20Topics%3A%20Agent%20Skills%20%26%20Plugins%2C%20AI%20Agents.%20Needs%20an%20LLM%20API%3A%20required%20%28Claude%20Code%20%2B%20Codex%20sign-in%20%28ChatGPT%20account%20or%20OpenAI%20key%29%29.%20Digest%20analysis%3A%20codex-plugin-cc%20is%20a%20plugin%20that%20bridges%20OpenAI%27s%20Codex%20with%20the%20Claude%20Code%20CLI%2C%20letting%20developers%20delegate%20code%20review%20and%20subtasks%20to%20Codex%20directly%20from%20their%20Claude%20Code%20session%20in%20a%20multi-model%20workflow.%20Trending%20because%20cross-model%20AI%20orchestration%20is%20gaining%20serious%20traction%20as%20developers%20look%20to%20combine%20the%20strengths%20of%20different%20AI%20coding%20systems%20for%20complex%20software%20projects.%20It%20targets%20power%20users%20of%20Claude%20Code%20who%20also%20have%20Codex%20API%20access%20and%20want%20to%20assemble%20bespoke%20AI%20pipelines%20rather%20than%20being%20locked%20to%20a%20single%20assistant.%0A%0AFetch%20https%3A//github.com/openai/codex-plugin-cc%20and%20its%20README%20for%20current%20details%20before%20answering." target="_blank" rel="noopener noreferrer">
+              <span class="arrow" aria-hidden="true">✦</span> Ask Claude about this repo
+            </a>
+          </div>
           <span class="handle">github.com/openai/codex-plugin-cc</span>
         </div>
       </div>
@@ -637,9 +650,14 @@
         <p class="desc">Instant, Concurrent, Secure &amp; Lightweight Sandbox for AI Agents.</p>
         <p class="analysis">CubeSandbox is a high-performance, hardware-isolated sandbox built on RustVMM and KVM that achieves sub-60 ms cold starts with under 5 MB of memory overhead per instance, designed to safely execute untrusted AI-agent-generated code at scale on a single node. It trended this week as teams deploying autonomous AI agents recognized the need for robust, economical sandboxing — container-based solutions carry escape risks, while this approach offers VM-level isolation without the traditional overhead. It is API-compatible with the E2B SDK, so existing agent infrastructure can migrate with minimal configuration changes.</p>
         <div class="cta-row">
-          <a class="cta" href="https://github.com/TencentCloud/CubeSandbox" target="_blank" rel="noopener noreferrer">
-            View on GitHub <span class="arrow" aria-hidden="true">→</span>
-          </a>
+          <div class="cta-pair">
+            <a class="cta" href="https://github.com/TencentCloud/CubeSandbox" target="_blank" rel="noopener noreferrer">
+              View on GitHub <span class="arrow" aria-hidden="true">→</span>
+            </a>
+            <a class="cta ask" href="https://claude.ai/new?q=Explain%20the%20GitHub%20repository%20TencentCloud/CubeSandbox%20%E2%80%94%20what%20it%20actually%20does%2C%20how%20I%20would%20use%20it%2C%20and%20any%20gotchas%20%28cost%2C%20keys%2C%20hardware%29.%0A%0AContext%20from%20my%20GitHub-trending%20digest%20%28issue%202026-07-12%29%3A%20Instant%2C%20Concurrent%2C%20Secure%20%26%20Lightweight%20Sandbox%20for%20AI%20Agents.%20Language%3A%20Rust.%20Topics%3A%20Sandboxes%20%26%20Runtimes%2C%20AI%20Agents.%20Needs%20an%20LLM%20API%3A%20none%20%28Sandbox%20runtime%20for%20agents%20%E2%80%94%20makes%20no%20LLM%20calls%20itself%29.%20Digest%20analysis%3A%20CubeSandbox%20is%20a%20high-performance%2C%20hardware-isolated%20sandbox%20built%20on%20RustVMM%20and%20KVM%20that%20achieves%20sub-60%20ms%20cold%20starts%20with%20under%205%20MB%20of%20memory%20overhead%20per%20instance%2C%20designed%20to%20safely%20execute%20untrusted%20AI-agent-generated%20code%20at%20scale%20on%20a%20single%20node.%20It%20trended%20this%20week%20as%20teams%20deploying%20autonomous%20AI%20agents%20recognized%20the%20need%20for%20robust%2C%20economical%20sandboxing%20%E2%80%94%20container-based%20solutions%20carry%20escape%20risks%2C%20while%20this%20approach%20offers%20VM-level%20isolation%20without%20the%20traditional%20overhead.%20It%20is%20API-compatible%20with%20the%20E2B%20SDK%2C%20so%20existing%20agent%20infrastructure%20can%20migrate%20with%20minimal%20configuration%20changes.%0A%0AFetch%20https%3A//github.com/TencentCloud/CubeSandbox%20and%20its%20README%20for%20current%20details%20before%20answering." target="_blank" rel="noopener noreferrer">
+              <span class="arrow" aria-hidden="true">✦</span> Ask Claude about this repo
+            </a>
+          </div>
           <span class="handle">github.com/TencentCloud/CubeSandbox</span>
         </div>
       </div>
@@ -675,9 +693,14 @@
         <p class="desc">MCP server that grants Claude terminal control, filesystem search, and diff file editing capabilities.</p>
         <p class="analysis">DesktopCommanderMCP is a Model Context Protocol server that gives Claude direct access to a local terminal, full filesystem search, and diff-based file editing, effectively turning Claude into a capable local dev automation agent. It is riding the explosive growth of the MCP ecosystem as developers compete to build system-level integrations that extend AI assistants beyond the chat window. The tool is best suited for developers who use Claude as a coding copilot and want to automate shell tasks, search codebases, or apply targeted patches without switching context to a separate terminal.</p>
         <div class="cta-row">
-          <a class="cta" href="https://github.com/wonderwhy-er/DesktopCommanderMCP" target="_blank" rel="noopener noreferrer">
-            View on GitHub <span class="arrow" aria-hidden="true">→</span>
-          </a>
+          <div class="cta-pair">
+            <a class="cta" href="https://github.com/wonderwhy-er/DesktopCommanderMCP" target="_blank" rel="noopener noreferrer">
+              View on GitHub <span class="arrow" aria-hidden="true">→</span>
+            </a>
+            <a class="cta ask" href="https://claude.ai/new?q=Explain%20the%20GitHub%20repository%20wonderwhy-er/DesktopCommanderMCP%20%E2%80%94%20what%20it%20actually%20does%2C%20how%20I%20would%20use%20it%2C%20and%20any%20gotchas%20%28cost%2C%20keys%2C%20hardware%29.%0A%0AContext%20from%20my%20GitHub-trending%20digest%20%28issue%202026-07-12%29%3A%20MCP%20server%20that%20grants%20Claude%20terminal%20control%2C%20filesystem%20search%2C%20and%20diff%20file%20editing%20capabilities.%20Language%3A%20TypeScript.%20Topics%3A%20MCP%20%26%20Integrations%2C%20Developer%20Tools.%20Needs%20an%20LLM%20API%3A%20required%20%28MCP%20server%20%E2%80%94%20pair%20with%20Claude%20or%20any%20MCP%20client%29.%20Digest%20analysis%3A%20DesktopCommanderMCP%20is%20a%20Model%20Context%20Protocol%20server%20that%20gives%20Claude%20direct%20access%20to%20a%20local%20terminal%2C%20full%20filesystem%20search%2C%20and%20diff-based%20file%20editing%2C%20effectively%20turning%20Claude%20into%20a%20capable%20local%20dev%20automation%20agent.%20It%20is%20riding%20the%20explosive%20growth%20of%20the%20MCP%20ecosystem%20as%20developers%20compete%20to%20build%20system-level%20integrations%20that%20extend%20AI%20assistants%20beyond%20the%20chat%20window.%20The%20tool%20is%20best%20suited%20for%20developers%20who%20use%20Claude%20as%20a%20coding%20copilot%20and%20want%20to%20automate%20shell%20tasks%2C%20search%20codebases%2C%20or%20apply%20targeted%20patches%20without%20switching%20context%20to%20a%20separate%20terminal.%0A%0AFetch%20https%3A//github.com/wonderwhy-er/DesktopCommanderMCP%20and%20its%20README%20for%20current%20details%20before%20answering." target="_blank" rel="noopener noreferrer">
+              <span class="arrow" aria-hidden="true">✦</span> Ask Claude about this repo
+            </a>
+          </div>
           <span class="handle">github.com/wonderwhy-er/DesktopCommanderMCP</span>
         </div>
       </div>
@@ -713,9 +736,14 @@
         <p class="desc">Abseil Common Libraries (C++)</p>
         <p class="analysis">Abseil is Google's collection of battle-tested foundational C++ libraries covering strings, containers, hash maps, time, synchronization, and more, designed to complement the C++ standard library and fill gaps it leaves in production use. Trending on organic interest — Abseil underpins widely used projects including Chromium, TensorFlow, and gRPC, and its steady weekly star gain reflects consistent discovery by C++ developers. It is the go-to choice for teams that need Google-scale, production-hardened utility code without pulling in heavy external dependencies.</p>
         <div class="cta-row">
-          <a class="cta" href="https://github.com/abseil/abseil-cpp" target="_blank" rel="noopener noreferrer">
-            View on GitHub <span class="arrow" aria-hidden="true">→</span>
-          </a>
+          <div class="cta-pair">
+            <a class="cta" href="https://github.com/abseil/abseil-cpp" target="_blank" rel="noopener noreferrer">
+              View on GitHub <span class="arrow" aria-hidden="true">→</span>
+            </a>
+            <a class="cta ask" href="https://claude.ai/new?q=Explain%20the%20GitHub%20repository%20abseil/abseil-cpp%20%E2%80%94%20what%20it%20actually%20does%2C%20how%20I%20would%20use%20it%2C%20and%20any%20gotchas%20%28cost%2C%20keys%2C%20hardware%29.%0A%0AContext%20from%20my%20GitHub-trending%20digest%20%28issue%202026-07-12%29%3A%20Abseil%20Common%20Libraries%20%28C%2B%2B%29%20Language%3A%20C%2B%2B.%20Topics%3A%20Systems%20%26%20Libraries%2C%20Developer%20Tools.%20Needs%20an%20LLM%20API%3A%20none.%20Digest%20analysis%3A%20Abseil%20is%20Google%27s%20collection%20of%20battle-tested%20foundational%20C%2B%2B%20libraries%20covering%20strings%2C%20containers%2C%20hash%20maps%2C%20time%2C%20synchronization%2C%20and%20more%2C%20designed%20to%20complement%20the%20C%2B%2B%20standard%20library%20and%20fill%20gaps%20it%20leaves%20in%20production%20use.%20Trending%20on%20organic%20interest%20%E2%80%94%20Abseil%20underpins%20widely%20used%20projects%20including%20Chromium%2C%20TensorFlow%2C%20and%20gRPC%2C%20and%20its%20steady%20weekly%20star%20gain%20reflects%20consistent%20discovery%20by%20C%2B%2B%20developers.%20It%20is%20the%20go-to%20choice%20for%20teams%20that%20need%20Google-scale%2C%20production-hardened%20utility%20code%20without%20pulling%20in%20heavy%20external%20dependencies.%0A%0AFetch%20https%3A//github.com/abseil/abseil-cpp%20and%20its%20README%20for%20current%20details%20before%20answering." target="_blank" rel="noopener noreferrer">
+              <span class="arrow" aria-hidden="true">✦</span> Ask Claude about this repo
+            </a>
+          </div>
           <span class="handle">github.com/abseil/abseil-cpp</span>
         </div>
       </div>

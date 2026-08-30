@@ -342,6 +342,9 @@
     gap:9px;
     align-items:flex-start;
   }
+  .cta-pair{ display:flex; flex-wrap:wrap; gap:10px; }
+  .cta.ask{ color:var(--accent); border-color:var(--llm-req-line); background:var(--llm-req-bg); }
+  .cta.ask:hover, .cta.ask:focus-visible{ border-color:var(--accent); }
   .cta{
     display:inline-flex;
     align-items:center;
@@ -561,9 +564,14 @@
         <p class="desc">A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas...</p>
         <p class="analysis">agency-agents is a Shell-based toolkit that assembles a fully staffed AI agency with specialized agents handling distinct roles—frontend development, community management, content creation, and more. It is trending today amid surging demand for autonomous multi-agent systems that go beyond single-chat assistants. The Shell-native design means developers can wire it into existing CI/CD pipelines or cron jobs without heavy language dependencies. Ideal for indie hackers and small teams wanting to automate end-to-end digital workflows using orchestrated AI agents.</p>
         <div class="cta-row">
-          <a class="cta" href="https://github.com/msitarzewski/agency-agents" target="_blank" rel="noopener noreferrer">
-            View on GitHub <span class="arrow" aria-hidden="true">→</span>
-          </a>
+          <div class="cta-pair">
+            <a class="cta" href="https://github.com/msitarzewski/agency-agents" target="_blank" rel="noopener noreferrer">
+              View on GitHub <span class="arrow" aria-hidden="true">→</span>
+            </a>
+            <a class="cta ask" href="https://claude.ai/new?q=Explain%20the%20GitHub%20repository%20msitarzewski/agency-agents%20%E2%80%94%20what%20it%20actually%20does%2C%20how%20I%20would%20use%20it%2C%20and%20any%20gotchas%20%28cost%2C%20keys%2C%20hardware%29.%0A%0AContext%20from%20my%20GitHub-trending%20digest%20%28issue%202026-08-11%29%3A%20A%20complete%20AI%20agency%20at%20your%20fingertips%20-%20From%20frontend%20wizards%20to%20Reddit%20community%20ninjas...%20Language%3A%20Shell.%20Topics%3A%20AI%20Agents%2C%20Agent%20Skills%20%26%20Plugins.%20Needs%20an%20LLM%20API%3A%20required%20%28Agent%20roster%20for%20Claude%20Code%20%28%2B%20Cursor%2C%20Copilot%2C%20%E2%80%A6%29%29.%20Digest%20analysis%3A%20agency-agents%20is%20a%20Shell-based%20toolkit%20that%20assembles%20a%20fully%20staffed%20AI%20agency%20with%20specialized%20agents%20handling%20distinct%20roles%E2%80%94frontend%20development%2C%20community%20management%2C%20content%20creation%2C%20and%20more.%20It%20is%20trending%20today%20amid%20surging%20demand%20for%20autonomous%20multi-agent%20systems%20that%20go%20beyond%20single-chat%20assistants.%20The%20Shell-native%20design%20means%20developers%20can%20wire%20it%20into%20existing%20CI/CD%20pipelines%20or%20cron%20jobs%20without%20heavy%20language%20dependencies.%20Ideal%20for%20indie%20hackers%20and%20small%20teams%20wanting%20to%20automate%20end-to-end%20digital%20workflows%20using%20orchestrated%20AI%20agents.%0A%0AFetch%20https%3A//github.com/msitarzewski/agency-agents%20and%20its%20README%20for%20current%20details%20before%20answering." target="_blank" rel="noopener noreferrer">
+              <span class="arrow" aria-hidden="true">✦</span> Ask Claude about this repo
+            </a>
+          </div>
           <span class="handle">github.com/msitarzewski/agency-agents</span>
         </div>
       </div>
@@ -599,9 +607,14 @@
         <p class="desc">Graph-Native Infrastructure for Context and Accountable AI Systems</p>
         <p class="analysis">Semantica rethinks AI context management by making a property graph the first-class data structure for storing, traversing, and auditing the reasoning context of AI systems. The project gained nearly 18% of its total stars in a single day—suggesting a viral introduction via a blog post or conference talk on accountable AI. It targets AI researchers and MLOps engineers who need traceability and structured reasoning rather than opaque token windows. Python developers building RAG pipelines or multi-step agent workflows will find its graph-native context model a strong alternative to flat vector stores.</p>
         <div class="cta-row">
-          <a class="cta" href="https://github.com/semantica-agi/semantica" target="_blank" rel="noopener noreferrer">
-            View on GitHub <span class="arrow" aria-hidden="true">→</span>
-          </a>
+          <div class="cta-pair">
+            <a class="cta" href="https://github.com/semantica-agi/semantica" target="_blank" rel="noopener noreferrer">
+              View on GitHub <span class="arrow" aria-hidden="true">→</span>
+            </a>
+            <a class="cta ask" href="https://claude.ai/new?q=Explain%20the%20GitHub%20repository%20semantica-agi/semantica%20%E2%80%94%20what%20it%20actually%20does%2C%20how%20I%20would%20use%20it%2C%20and%20any%20gotchas%20%28cost%2C%20keys%2C%20hardware%29.%0A%0AContext%20from%20my%20GitHub-trending%20digest%20%28issue%202026-08-11%29%3A%20Graph-Native%20Infrastructure%20for%20Context%20and%20Accountable%20AI%20Systems%20Language%3A%20Python.%20Topics%3A%20RAG%20%26%20Memory%2C%20LLM%20Infrastructure.%20Needs%20an%20LLM%20API%3A%20optional%20%28Deterministic%20KG%20core%20%E2%80%94%20no%20LLM%20required%3B%20integrates%20with%20all%20providers%29.%20Digest%20analysis%3A%20Semantica%20rethinks%20AI%20context%20management%20by%20making%20a%20property%20graph%20the%20first-class%20data%20structure%20for%20storing%2C%20traversing%2C%20and%20auditing%20the%20reasoning%20context%20of%20AI%20systems.%20The%20project%20gained%20nearly%2018%25%20of%20its%20total%20stars%20in%20a%20single%20day%E2%80%94suggesting%20a%20viral%20introduction%20via%20a%20blog%20post%20or%20conference%20talk%20on%20accountable%20AI.%20It%20targets%20AI%20researchers%20and%20MLOps%20engineers%20who%20need%20traceability%20and%20structured%20reasoning%20rather%20than%20opaque%20token%20windows.%20Python%20developers%20building%20RAG%20pipelines%20or%20multi-step%20agent%20workflows%20will%20find%20its%20graph-native%20context%20model%20a%20strong%20alternative%20to%20flat%20vector%20stores.%0A%0AFetch%20https%3A//github.com/semantica-agi/semantica%20and%20its%20README%20for%20current%20details%20before%20answering." target="_blank" rel="noopener noreferrer">
+              <span class="arrow" aria-hidden="true">✦</span> Ask Claude about this repo
+            </a>
+          </div>
           <span class="handle">github.com/semantica-agi/semantica</span>
         </div>
       </div>
@@ -637,9 +650,14 @@
         <p class="desc">Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions</p>
         <p class="analysis">nvm is the de facto standard tool for switching between multiple Node.js versions on a single machine via a lightweight POSIX-compliant bash script. Trending on organic interest—no single event drives today's gain; its consistent appearance on trending reflects steady adoption as new developers set up Node.js environments daily. Any JavaScript or Node.js developer working across projects with differing engine requirements, or anyone bootstrapping a fresh machine, reaches for nvm as a first install. It integrates cleanly with zsh, bash, and most CI environments.</p>
         <div class="cta-row">
-          <a class="cta" href="https://github.com/nvm-sh/nvm" target="_blank" rel="noopener noreferrer">
-            View on GitHub <span class="arrow" aria-hidden="true">→</span>
-          </a>
+          <div class="cta-pair">
+            <a class="cta" href="https://github.com/nvm-sh/nvm" target="_blank" rel="noopener noreferrer">
+              View on GitHub <span class="arrow" aria-hidden="true">→</span>
+            </a>
+            <a class="cta ask" href="https://claude.ai/new?q=Explain%20the%20GitHub%20repository%20nvm-sh/nvm%20%E2%80%94%20what%20it%20actually%20does%2C%20how%20I%20would%20use%20it%2C%20and%20any%20gotchas%20%28cost%2C%20keys%2C%20hardware%29.%0A%0AContext%20from%20my%20GitHub-trending%20digest%20%28issue%202026-08-11%29%3A%20Node%20Version%20Manager%20-%20POSIX-compliant%20bash%20script%20to%20manage%20multiple%20active%20node.js%20versions%20Language%3A%20Shell.%20Topics%3A%20Developer%20Tools%2C%20Systems%20%26%20Libraries.%20Needs%20an%20LLM%20API%3A%20none.%20Digest%20analysis%3A%20nvm%20is%20the%20de%20facto%20standard%20tool%20for%20switching%20between%20multiple%20Node.js%20versions%20on%20a%20single%20machine%20via%20a%20lightweight%20POSIX-compliant%20bash%20script.%20Trending%20on%20organic%20interest%E2%80%94no%20single%20event%20drives%20today%27s%20gain%3B%20its%20consistent%20appearance%20on%20trending%20reflects%20steady%20adoption%20as%20new%20developers%20set%20up%20Node.js%20environments%20daily.%20Any%20JavaScript%20or%20Node.js%20developer%20working%20across%20projects%20with%20differing%20engine%20requirements%2C%20or%20anyone%20bootstrapping%20a%20fresh%20machine%2C%20reaches%20for%20nvm%20as%20a%20first%20install.%20It%20integrates%20cleanly%20with%20zsh%2C%20bash%2C%20and%20most%20CI%20environments.%0A%0AFetch%20https%3A//github.com/nvm-sh/nvm%20and%20its%20README%20for%20current%20details%20before%20answering." target="_blank" rel="noopener noreferrer">
+              <span class="arrow" aria-hidden="true">✦</span> Ask Claude about this repo
+            </a>
+          </div>
           <span class="handle">github.com/nvm-sh/nvm</span>
         </div>
       </div>
@@ -675,9 +693,14 @@
         <p class="desc">Production-grade engineering skills for AI coding agents.</p>
         <p class="analysis">agent-skills is a curated library of production-ready skill definitions—structured prompts and tool specs—designed to give AI coding agents reliable, expert-level engineering behaviors covering code review, performance audits, accessibility checks, and more. Authored by Addy Osmani (Google Chrome DevRel), the project benefits from his large following and the explosive growth of AI pair-programming tools in 2026. Frontend engineers and teams adopting AI coding assistants like Claude Code or Copilot will find these skills immediately applicable to enforce consistent standards. It fits naturally into JavaScript and TypeScript stacks.</p>
         <div class="cta-row">
-          <a class="cta" href="https://github.com/addyosmani/agent-skills" target="_blank" rel="noopener noreferrer">
-            View on GitHub <span class="arrow" aria-hidden="true">→</span>
-          </a>
+          <div class="cta-pair">
+            <a class="cta" href="https://github.com/addyosmani/agent-skills" target="_blank" rel="noopener noreferrer">
+              View on GitHub <span class="arrow" aria-hidden="true">→</span>
+            </a>
+            <a class="cta ask" href="https://claude.ai/new?q=Explain%20the%20GitHub%20repository%20addyosmani/agent-skills%20%E2%80%94%20what%20it%20actually%20does%2C%20how%20I%20would%20use%20it%2C%20and%20any%20gotchas%20%28cost%2C%20keys%2C%20hardware%29.%0A%0AContext%20from%20my%20GitHub-trending%20digest%20%28issue%202026-08-11%29%3A%20Production-grade%20engineering%20skills%20for%20AI%20coding%20agents.%20Language%3A%20JavaScript.%20Topics%3A%20Agent%20Skills%20%26%20Plugins%2C%20Developer%20Tools.%20Needs%20an%20LLM%20API%3A%20required%20%28Skills%20for%20AI%20coding%20agents%20%28Claude%20Code%2C%20Cursor%2C%20%E2%80%A6%29%29.%20Digest%20analysis%3A%20agent-skills%20is%20a%20curated%20library%20of%20production-ready%20skill%20definitions%E2%80%94structured%20prompts%20and%20tool%20specs%E2%80%94designed%20to%20give%20AI%20coding%20agents%20reliable%2C%20expert-level%20engineering%20behaviors%20covering%20code%20review%2C%20performance%20audits%2C%20accessibility%20checks%2C%20and%20more.%20Authored%20by%20Addy%20Osmani%20%28Google%20Chrome%20DevRel%29%2C%20the%20project%20benefits%20from%20his%20large%20following%20and%20the%20explosive%20growth%20of%20AI%20pair-programming%20tools%20in%202026.%20Frontend%20engineers%20and%20teams%20adopting%20AI%20coding%20assistants%20like%20Claude%20Code%20or%20Copilot%20will%20find%20these%20skills%20immediately%20applicable%20to%20enforce%20consistent%20standards.%20It%20fits%20naturally%20into%20JavaScript%20and%20TypeScript%20stacks.%0A%0AFetch%20https%3A//github.com/addyosmani/agent-skills%20and%20its%20README%20for%20current%20details%20before%20answering." target="_blank" rel="noopener noreferrer">
+              <span class="arrow" aria-hidden="true">✦</span> Ask Claude about this repo
+            </a>
+          </div>
           <span class="handle">github.com/addyosmani/agent-skills</span>
         </div>
       </div>
@@ -713,9 +736,14 @@
         <p class="desc">LLM-driven stock analysis system with multi-source market data, real-time news, and automated notifications</p>
         <p class="analysis">daily_stock_analysis is a Python system that fuses multi-source market data feeds, real-time financial news, and LLM-powered reasoning to generate daily stock analysis reports delivered via automated notifications. It is trending on organic interest from the rapidly growing community combining LLMs with quantitative finance and algorithmic trading. The project appeals to retail quants, data scientists, and Python developers who want a ready-made pipeline for AI-assisted market research without building the data integration layer from scratch. It pairs well with brokerage APIs and notification services like Telegram or email.</p>
         <div class="cta-row">
-          <a class="cta" href="https://github.com/ZhuLinsen/daily_stock_analysis" target="_blank" rel="noopener noreferrer">
-            View on GitHub <span class="arrow" aria-hidden="true">→</span>
-          </a>
+          <div class="cta-pair">
+            <a class="cta" href="https://github.com/ZhuLinsen/daily_stock_analysis" target="_blank" rel="noopener noreferrer">
+              View on GitHub <span class="arrow" aria-hidden="true">→</span>
+            </a>
+            <a class="cta ask" href="https://claude.ai/new?q=Explain%20the%20GitHub%20repository%20ZhuLinsen/daily_stock_analysis%20%E2%80%94%20what%20it%20actually%20does%2C%20how%20I%20would%20use%20it%2C%20and%20any%20gotchas%20%28cost%2C%20keys%2C%20hardware%29.%0A%0AContext%20from%20my%20GitHub-trending%20digest%20%28issue%202026-08-11%29%3A%20LLM-driven%20stock%20analysis%20system%20with%20multi-source%20market%20data%2C%20real-time%20news%2C%20and%20automated%20notifications%20Language%3A%20Python.%20Topics%3A%20Finance%20%26%20Trading%2C%20AI%20Agents.%20Needs%20an%20LLM%20API%3A%20required%20%28Pick%20an%20LLM%20provider%20key%20%28Gemini/Claude/%E2%80%A6%29%3B%20Ollama%20for%20local%20runs%29.%20Digest%20analysis%3A%20daily_stock_analysis%20is%20a%20Python%20system%20that%20fuses%20multi-source%20market%20data%20feeds%2C%20real-time%20financial%20news%2C%20and%20LLM-powered%20reasoning%20to%20generate%20daily%20stock%20analysis%20reports%20delivered%20via%20automated%20notifications.%20It%20is%20trending%20on%20organic%20interest%20from%20the%20rapidly%20growing%20community%20combining%20LLMs%20with%20quantitative%20finance%20and%20algorithmic%20trading.%20The%20project%20appeals%20to%20retail%20quants%2C%20data%20scientists%2C%20and%20Python%20developers%20who%20want%20a%20ready-made%20pipeline%20for%20AI-assisted%20market%20research%20without%20building%20the%20data%20integration%20layer%20from%20scratch.%20It%20pairs%20well%20with%20brokerage%20APIs%20and%20notification%20services%20like%20Telegram%20or%20email.%0A%0AFetch%20https%3A//github.com/ZhuLinsen/daily_stock_analysis%20and%20its%20README%20for%20current%20details%20before%20answering." target="_blank" rel="noopener noreferrer">
+              <span class="arrow" aria-hidden="true">✦</span> Ask Claude about this repo
+            </a>
+          </div>
           <span class="handle">github.com/ZhuLinsen/daily_stock_analysis</span>
         </div>
       </div>

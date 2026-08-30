@@ -342,6 +342,9 @@
     gap:9px;
     align-items:flex-start;
   }
+  .cta-pair{ display:flex; flex-wrap:wrap; gap:10px; }
+  .cta.ask{ color:var(--accent); border-color:var(--llm-req-line); background:var(--llm-req-bg); }
+  .cta.ask:hover, .cta.ask:focus-visible{ border-color:var(--accent); }
   .cta{
     display:inline-flex;
     align-items:center;
@@ -561,9 +564,14 @@
         <p class="desc">Lightweight coding agent that runs in your terminal</p>
         <p class="analysis">OpenAI Codex CLI is a terminal-based AI coding agent that reads your codebase, writes code, runs shell commands, and iterates on feedback without leaving the command line. It is trending amid fierce competition in the agentic coding space (Claude Code, Cursor, Gemini CLI), with developers benchmarking it against alternatives. Its Rust implementation appeals to performance-focused engineers who want a fast, low-overhead agent. Best suited for polyglot developers comfortable in the terminal who want OpenAI models driving their dev loop.</p>
         <div class="cta-row">
-          <a class="cta" href="https://github.com/openai/codex" target="_blank" rel="noopener noreferrer">
-            View on GitHub <span class="arrow" aria-hidden="true">→</span>
-          </a>
+          <div class="cta-pair">
+            <a class="cta" href="https://github.com/openai/codex" target="_blank" rel="noopener noreferrer">
+              View on GitHub <span class="arrow" aria-hidden="true">→</span>
+            </a>
+            <a class="cta ask" href="https://claude.ai/new?q=Explain%20the%20GitHub%20repository%20openai/codex%20%E2%80%94%20what%20it%20actually%20does%2C%20how%20I%20would%20use%20it%2C%20and%20any%20gotchas%20%28cost%2C%20keys%2C%20hardware%29.%0A%0AContext%20from%20my%20GitHub-trending%20digest%20%28issue%202026-08-23%29%3A%20Lightweight%20coding%20agent%20that%20runs%20in%20your%20terminal%20Language%3A%20Rust.%20Topics%3A%20AI%20Agents%2C%20Developer%20Tools.%20Needs%20an%20LLM%20API%3A%20required%20%28ChatGPT%20sign-in%20or%20OpenAI%20API%20key%29.%20Digest%20analysis%3A%20OpenAI%20Codex%20CLI%20is%20a%20terminal-based%20AI%20coding%20agent%20that%20reads%20your%20codebase%2C%20writes%20code%2C%20runs%20shell%20commands%2C%20and%20iterates%20on%20feedback%20without%20leaving%20the%20command%20line.%20It%20is%20trending%20amid%20fierce%20competition%20in%20the%20agentic%20coding%20space%20%28Claude%20Code%2C%20Cursor%2C%20Gemini%20CLI%29%2C%20with%20developers%20benchmarking%20it%20against%20alternatives.%20Its%20Rust%20implementation%20appeals%20to%20performance-focused%20engineers%20who%20want%20a%20fast%2C%20low-overhead%20agent.%20Best%20suited%20for%20polyglot%20developers%20comfortable%20in%20the%20terminal%20who%20want%20OpenAI%20models%20driving%20their%20dev%20loop.%0A%0AFetch%20https%3A//github.com/openai/codex%20and%20its%20README%20for%20current%20details%20before%20answering." target="_blank" rel="noopener noreferrer">
+              <span class="arrow" aria-hidden="true">✦</span> Ask Claude about this repo
+            </a>
+          </div>
           <span class="handle">github.com/openai/codex</span>
         </div>
       </div>
@@ -599,9 +607,14 @@
         <p class="desc">Prompt engineering framework featuring 470+ examples and 20+ industrial templates with continuous updates</p>
         <p class="analysis">A curated library of 470+ prompts and 20+ ready-to-use templates built around OpenAI's GPT-image-2 model, organized into industry verticals like e-commerce, marketing, and product photography. It is trending because GPT-image-2 is a recently released model and developers are hunting for prompt patterns that unlock its full capabilities. The repo functions as a living cheat-sheet that flattens the prompt-engineering learning curve. It fits designers, marketers, and product teams integrating AI image generation into workflows via the OpenAI API.</p>
         <div class="cta-row">
-          <a class="cta" href="https://github.com/freestylefly/awesome-gpt-image-2" target="_blank" rel="noopener noreferrer">
-            View on GitHub <span class="arrow" aria-hidden="true">→</span>
-          </a>
+          <div class="cta-pair">
+            <a class="cta" href="https://github.com/freestylefly/awesome-gpt-image-2" target="_blank" rel="noopener noreferrer">
+              View on GitHub <span class="arrow" aria-hidden="true">→</span>
+            </a>
+            <a class="cta ask" href="https://claude.ai/new?q=Explain%20the%20GitHub%20repository%20freestylefly/awesome-gpt-image-2%20%E2%80%94%20what%20it%20actually%20does%2C%20how%20I%20would%20use%20it%2C%20and%20any%20gotchas%20%28cost%2C%20keys%2C%20hardware%29.%0A%0AContext%20from%20my%20GitHub-trending%20digest%20%28issue%202026-08-23%29%3A%20Prompt%20engineering%20framework%20featuring%20470%2B%20examples%20and%2020%2B%20industrial%20templates%20with%20continuous%20updates%20Language%3A%20JavaScript.%20Topics%3A%20Design%2C%20Video%20%26%20Media.%20Needs%20an%20LLM%20API%3A%20required%20%28Prompts%20target%20GPT%20Image%202%20%28API%20or%20ChatGPT%29%29.%20Digest%20analysis%3A%20A%20curated%20library%20of%20470%2B%20prompts%20and%2020%2B%20ready-to-use%20templates%20built%20around%20OpenAI%27s%20GPT-image-2%20model%2C%20organized%20into%20industry%20verticals%20like%20e-commerce%2C%20marketing%2C%20and%20product%20photography.%20It%20is%20trending%20because%20GPT-image-2%20is%20a%20recently%20released%20model%20and%20developers%20are%20hunting%20for%20prompt%20patterns%20that%20unlock%20its%20full%20capabilities.%20The%20repo%20functions%20as%20a%20living%20cheat-sheet%20that%20flattens%20the%20prompt-engineering%20learning%20curve.%20It%20fits%20designers%2C%20marketers%2C%20and%20product%20teams%20integrating%20AI%20image%20generation%20into%20workflows%20via%20the%20OpenAI%20API.%0A%0AFetch%20https%3A//github.com/freestylefly/awesome-gpt-image-2%20and%20its%20README%20for%20current%20details%20before%20answering." target="_blank" rel="noopener noreferrer">
+              <span class="arrow" aria-hidden="true">✦</span> Ask Claude about this repo
+            </a>
+          </div>
           <span class="handle">github.com/freestylefly/awesome-gpt-image-2</span>
         </div>
       </div>
@@ -637,9 +650,14 @@
         <p class="desc">Skills for Real Engineers. Straight from my .agents directory</p>
         <p class="analysis">A collection of agent skills and shell scripts curated by Matt Pocock (known for his TypeScript and developer-education work), sourced directly from his personal AI-agents configuration. It provides drop-in skills that augment AI coding agents with engineering-specific workflows. The repo is trending on the strength of Pocock's large following and the exploding interest in custom agent tooling as developers build out their own .agents directories. It targets software engineers who want battle-tested agent skills without starting from scratch.</p>
         <div class="cta-row">
-          <a class="cta" href="https://github.com/mattpocock/skills" target="_blank" rel="noopener noreferrer">
-            View on GitHub <span class="arrow" aria-hidden="true">→</span>
-          </a>
+          <div class="cta-pair">
+            <a class="cta" href="https://github.com/mattpocock/skills" target="_blank" rel="noopener noreferrer">
+              View on GitHub <span class="arrow" aria-hidden="true">→</span>
+            </a>
+            <a class="cta ask" href="https://claude.ai/new?q=Explain%20the%20GitHub%20repository%20mattpocock/skills%20%E2%80%94%20what%20it%20actually%20does%2C%20how%20I%20would%20use%20it%2C%20and%20any%20gotchas%20%28cost%2C%20keys%2C%20hardware%29.%0A%0AContext%20from%20my%20GitHub-trending%20digest%20%28issue%202026-08-23%29%3A%20Skills%20for%20Real%20Engineers.%20Straight%20from%20my%20.agents%20directory%20Language%3A%20Shell.%20Topics%3A%20Agent%20Skills%20%26%20Plugins%2C%20Developer%20Tools.%20Needs%20an%20LLM%20API%3A%20required%20%28Skills%20for%20your%20coding%20agent%29.%20Digest%20analysis%3A%20A%20collection%20of%20agent%20skills%20and%20shell%20scripts%20curated%20by%20Matt%20Pocock%20%28known%20for%20his%20TypeScript%20and%20developer-education%20work%29%2C%20sourced%20directly%20from%20his%20personal%20AI-agents%20configuration.%20It%20provides%20drop-in%20skills%20that%20augment%20AI%20coding%20agents%20with%20engineering-specific%20workflows.%20The%20repo%20is%20trending%20on%20the%20strength%20of%20Pocock%27s%20large%20following%20and%20the%20exploding%20interest%20in%20custom%20agent%20tooling%20as%20developers%20build%20out%20their%20own%20.agents%20directories.%20It%20targets%20software%20engineers%20who%20want%20battle-tested%20agent%20skills%20without%20starting%20from%20scratch.%0A%0AFetch%20https%3A//github.com/mattpocock/skills%20and%20its%20README%20for%20current%20details%20before%20answering." target="_blank" rel="noopener noreferrer">
+              <span class="arrow" aria-hidden="true">✦</span> Ask Claude about this repo
+            </a>
+          </div>
           <span class="handle">github.com/mattpocock/skills</span>
         </div>
       </div>
@@ -675,9 +693,14 @@
         <p class="desc">Beautiful, Modern &amp; Opinionated Linux desktop environment</p>
         <p class="analysis">Omarchy is Basecamp's opinionated Linux desktop setup — a curated stack of window manager, fonts, themes, and dotfiles that turns a stock Linux install into a polished, productive workstation. It is trending on Basecamp/DHH's influence and the perennial developer interest in aesthetically refined Linux desktops. The project lowers the barrier for developers who want the power of a tiling window manager without spending weeks tuning configs. It targets Rails developers and makers in the Basecamp/Hey ecosystem who are ready to leave macOS.</p>
         <div class="cta-row">
-          <a class="cta" href="https://github.com/basecamp/omarchy" target="_blank" rel="noopener noreferrer">
-            View on GitHub <span class="arrow" aria-hidden="true">→</span>
-          </a>
+          <div class="cta-pair">
+            <a class="cta" href="https://github.com/basecamp/omarchy" target="_blank" rel="noopener noreferrer">
+              View on GitHub <span class="arrow" aria-hidden="true">→</span>
+            </a>
+            <a class="cta ask" href="https://claude.ai/new?q=Explain%20the%20GitHub%20repository%20basecamp/omarchy%20%E2%80%94%20what%20it%20actually%20does%2C%20how%20I%20would%20use%20it%2C%20and%20any%20gotchas%20%28cost%2C%20keys%2C%20hardware%29.%0A%0AContext%20from%20my%20GitHub-trending%20digest%20%28issue%202026-08-23%29%3A%20Beautiful%2C%20Modern%20%26%20Opinionated%20Linux%20desktop%20environment%20Language%3A%20Shell.%20Topics%3A%20Systems%20%26%20Libraries.%20Needs%20an%20LLM%20API%3A%20none.%20Digest%20analysis%3A%20Omarchy%20is%20Basecamp%27s%20opinionated%20Linux%20desktop%20setup%20%E2%80%94%20a%20curated%20stack%20of%20window%20manager%2C%20fonts%2C%20themes%2C%20and%20dotfiles%20that%20turns%20a%20stock%20Linux%20install%20into%20a%20polished%2C%20productive%20workstation.%20It%20is%20trending%20on%20Basecamp/DHH%27s%20influence%20and%20the%20perennial%20developer%20interest%20in%20aesthetically%20refined%20Linux%20desktops.%20The%20project%20lowers%20the%20barrier%20for%20developers%20who%20want%20the%20power%20of%20a%20tiling%20window%20manager%20without%20spending%20weeks%20tuning%20configs.%20It%20targets%20Rails%20developers%20and%20makers%20in%20the%20Basecamp/Hey%20ecosystem%20who%20are%20ready%20to%20leave%20macOS.%0A%0AFetch%20https%3A//github.com/basecamp/omarchy%20and%20its%20README%20for%20current%20details%20before%20answering." target="_blank" rel="noopener noreferrer">
+              <span class="arrow" aria-hidden="true">✦</span> Ask Claude about this repo
+            </a>
+          </div>
           <span class="handle">github.com/basecamp/omarchy</span>
         </div>
       </div>
@@ -713,9 +736,14 @@
         <p class="desc">Local-first alternative to Logitech Options+ enabling button remapping, DPI configuration, and SmartShift management without telemetry</p>
         <p class="analysis">OpenLogi is an open-source, local-first replacement for Logitech's Options+ software, letting users remap buttons, set DPI profiles, and configure SmartShift entirely offline without mandatory cloud sign-in or telemetry. Written in Rust for performance and safety, it is trending as Logitech's official software has drawn criticism for its privacy practices and frequent sign-in requirements. It is ideal for Linux and macOS users with Logitech MX-series mice and keyboards who prioritize privacy and hate vendor bloatware.</p>
         <div class="cta-row">
-          <a class="cta" href="https://github.com/AprilNEA/OpenLogi" target="_blank" rel="noopener noreferrer">
-            View on GitHub <span class="arrow" aria-hidden="true">→</span>
-          </a>
+          <div class="cta-pair">
+            <a class="cta" href="https://github.com/AprilNEA/OpenLogi" target="_blank" rel="noopener noreferrer">
+              View on GitHub <span class="arrow" aria-hidden="true">→</span>
+            </a>
+            <a class="cta ask" href="https://claude.ai/new?q=Explain%20the%20GitHub%20repository%20AprilNEA/OpenLogi%20%E2%80%94%20what%20it%20actually%20does%2C%20how%20I%20would%20use%20it%2C%20and%20any%20gotchas%20%28cost%2C%20keys%2C%20hardware%29.%0A%0AContext%20from%20my%20GitHub-trending%20digest%20%28issue%202026-08-23%29%3A%20Local-first%20alternative%20to%20Logitech%20Options%2B%20enabling%20button%20remapping%2C%20DPI%20configuration%2C%20and%20SmartShift%20management%20without%20telemetry%20Language%3A%20Rust.%20Topics%3A%20Systems%20%26%20Libraries.%20Needs%20an%20LLM%20API%3A%20none.%20Digest%20analysis%3A%20OpenLogi%20is%20an%20open-source%2C%20local-first%20replacement%20for%20Logitech%27s%20Options%2B%20software%2C%20letting%20users%20remap%20buttons%2C%20set%20DPI%20profiles%2C%20and%20configure%20SmartShift%20entirely%20offline%20without%20mandatory%20cloud%20sign-in%20or%20telemetry.%20Written%20in%20Rust%20for%20performance%20and%20safety%2C%20it%20is%20trending%20as%20Logitech%27s%20official%20software%20has%20drawn%20criticism%20for%20its%20privacy%20practices%20and%20frequent%20sign-in%20requirements.%20It%20is%20ideal%20for%20Linux%20and%20macOS%20users%20with%20Logitech%20MX-series%20mice%20and%20keyboards%20who%20prioritize%20privacy%20and%20hate%20vendor%20bloatware.%0A%0AFetch%20https%3A//github.com/AprilNEA/OpenLogi%20and%20its%20README%20for%20current%20details%20before%20answering." target="_blank" rel="noopener noreferrer">
+              <span class="arrow" aria-hidden="true">✦</span> Ask Claude about this repo
+            </a>
+          </div>
           <span class="handle">github.com/AprilNEA/OpenLogi</span>
         </div>
       </div>

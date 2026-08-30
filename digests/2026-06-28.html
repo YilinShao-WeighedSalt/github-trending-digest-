@@ -342,6 +342,9 @@
     gap:9px;
     align-items:flex-start;
   }
+  .cta-pair{ display:flex; flex-wrap:wrap; gap:10px; }
+  .cta.ask{ color:var(--accent); border-color:var(--llm-req-line); background:var(--llm-req-bg); }
+  .cta.ask:hover, .cta.ask:focus-visible{ border-color:var(--accent); }
   .cta{
     display:inline-flex;
     align-items:center;
@@ -561,9 +564,14 @@
         <p class="desc">World's first open-source, agentic video production system. 12 pipelines, 52 tools, 500+ agent skills. Turn your AI coding assistant into a full video production studio.</p>
         <p class="analysis">OpenMontage is a fully agentic, open-source video production system that transforms AI coding assistants into complete video studios — handling scripting, scene assembly, rendering, and post-production through 12 distinct pipelines and over 500 agent skills. It surged nearly 18,000 stars this week because it sits at the explosive intersection of LLM agents and creative media automation, a category that had few open-source options. Content creators, marketing teams, and AI developers who want to automate video workflows without a SaaS subscription will find the most immediate value here.</p>
         <div class="cta-row">
-          <a class="cta" href="https://github.com/calesthio/OpenMontage" target="_blank" rel="noopener noreferrer">
-            View on GitHub <span class="arrow" aria-hidden="true">→</span>
-          </a>
+          <div class="cta-pair">
+            <a class="cta" href="https://github.com/calesthio/OpenMontage" target="_blank" rel="noopener noreferrer">
+              View on GitHub <span class="arrow" aria-hidden="true">→</span>
+            </a>
+            <a class="cta ask" href="https://claude.ai/new?q=Explain%20the%20GitHub%20repository%20calesthio/OpenMontage%20%E2%80%94%20what%20it%20actually%20does%2C%20how%20I%20would%20use%20it%2C%20and%20any%20gotchas%20%28cost%2C%20keys%2C%20hardware%29.%0A%0AContext%20from%20my%20GitHub-trending%20digest%20%28issue%202026-06-28%29%3A%20World%27s%20first%20open-source%2C%20agentic%20video%20production%20system.%2012%20pipelines%2C%2052%20tools%2C%20500%2B%20agent%20skills.%20Turn%20your%20AI%20coding%20assistant%20into%20a%20full%20video%20production%20studio.%20Language%3A%20Python.%20Topics%3A%20Video%20%26%20Media%2C%20AI%20Agents.%20Needs%20an%20LLM%20API%3A%20required%20%28Driven%20by%20your%20AI%20coding%20assistant%3B%20extra%20media-API%20keys%20optional%29.%20Digest%20analysis%3A%20OpenMontage%20is%20a%20fully%20agentic%2C%20open-source%20video%20production%20system%20that%20transforms%20AI%20coding%20assistants%20into%20complete%20video%20studios%20%E2%80%94%20handling%20scripting%2C%20scene%20assembly%2C%20rendering%2C%20and%20post-production%20through%2012%20distinct%20pipelines%20and%20over%20500%20agent%20skills.%20It%20surged%20nearly%2018%2C000%20stars%20this%20week%20because%20it%20sits%20at%20the%20explosive%20intersection%20of%20LLM%20agents%20and%20creative%20media%20automation%2C%20a%20category%20that%20had%20few%20open-source%20options.%20Content%20creators%2C%20marketing%20teams%2C%20and%20AI%20developers%20who%20want%20to%20automate%20video%20workflows%20without%20a%20SaaS%20subscription%20will%20find%20the%20most%20immediate%20value%20here.%0A%0AFetch%20https%3A//github.com/calesthio/OpenMontage%20and%20its%20README%20for%20current%20details%20before%20answering." target="_blank" rel="noopener noreferrer">
+              <span class="arrow" aria-hidden="true">✦</span> Ask Claude about this repo
+            </a>
+          </div>
           <span class="handle">github.com/calesthio/OpenMontage</span>
         </div>
       </div>
@@ -599,9 +607,14 @@
         <p class="desc">High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.</p>
         <p class="analysis">codebase-memory-mcp is a Model Context Protocol server that indexes an entire codebase into a persistent knowledge graph, delivering sub-millisecond symbol and dependency queries to AI coding assistants while using 99% fewer tokens than naively stuffing files into context. Written in C for maximum performance, it ships as a single static binary with no runtime dependencies, covering 158 programming languages. It gained traction this week as developers running Claude Code, Cursor, and Copilot on large monorepos hit context-window limits, making an efficient, persistent memory layer the obvious missing piece.</p>
         <div class="cta-row">
-          <a class="cta" href="https://github.com/DeusData/codebase-memory-mcp" target="_blank" rel="noopener noreferrer">
-            View on GitHub <span class="arrow" aria-hidden="true">→</span>
-          </a>
+          <div class="cta-pair">
+            <a class="cta" href="https://github.com/DeusData/codebase-memory-mcp" target="_blank" rel="noopener noreferrer">
+              View on GitHub <span class="arrow" aria-hidden="true">→</span>
+            </a>
+            <a class="cta ask" href="https://claude.ai/new?q=Explain%20the%20GitHub%20repository%20DeusData/codebase-memory-mcp%20%E2%80%94%20what%20it%20actually%20does%2C%20how%20I%20would%20use%20it%2C%20and%20any%20gotchas%20%28cost%2C%20keys%2C%20hardware%29.%0A%0AContext%20from%20my%20GitHub-trending%20digest%20%28issue%202026-06-28%29%3A%20High-performance%20code%20intelligence%20MCP%20server.%20Indexes%20codebases%20into%20a%20persistent%20knowledge%20graph%20%E2%80%94%20average%20repo%20in%20milliseconds.%20158%20languages%2C%20sub-ms%20queries%2C%2099%25%20fewer%20tokens.%20Single%20static%20binary%2C%20zero%20dependencies.%20Language%3A%20C.%20Topics%3A%20Code%20Intelligence%2C%20MCP%20%26%20Integrations%2C%20RAG%20%26%20Memory.%20Needs%20an%20LLM%20API%3A%20required%20%28MCP%20backend%20for%20coding%20agents%20%E2%80%94%20bring%20your%20agent%2C%20no%20extra%20key%29.%20Digest%20analysis%3A%20codebase-memory-mcp%20is%20a%20Model%20Context%20Protocol%20server%20that%20indexes%20an%20entire%20codebase%20into%20a%20persistent%20knowledge%20graph%2C%20delivering%20sub-millisecond%20symbol%20and%20dependency%20queries%20to%20AI%20coding%20assistants%20while%20using%2099%25%20fewer%20tokens%20than%20naively%20stuffing%20files%20into%20context.%20Written%20in%20C%20for%20maximum%20performance%2C%20it%20ships%20as%20a%20single%20static%20binary%20with%20no%20runtime%20dependencies%2C%20covering%20158%20programming%20languages.%20It%20gained%20traction%20this%20week%20as%20developers%20running%20Claude%20Code%2C%20Cursor%2C%20and%20Copilot%20on%20large%20monorepos%20hit%20context-window%20limits%2C%20making%20an%20efficient%2C%20persistent%20memory%20layer%20the%20obvious%20missing%20piece.%0A%0AFetch%20https%3A//github.com/DeusData/codebase-memory-mcp%20and%20its%20README%20for%20current%20details%20before%20answering." target="_blank" rel="noopener noreferrer">
+              <span class="arrow" aria-hidden="true">✦</span> Ask Claude about this repo
+            </a>
+          </div>
           <span class="handle">github.com/DeusData/codebase-memory-mcp</span>
         </div>
       </div>
@@ -637,9 +650,14 @@
         <p class="desc">git push no-mistakes</p>
         <p class="analysis">no-mistakes is a lightweight Git pre-push guard written in Go that intercepts git push and runs a configurable set of checks — linting, secret scanning, test smoke tests — before the push reaches the remote, preventing common mistakes from ever hitting origin. The project went viral this week largely on the charm of its one-liner description ('git push no-mistakes'), which resonated deeply with developers; the simple, relatable premise sparked rapid organic sharing. It fits any team workflow as a zero-config drop-in hook and is especially useful for solo developers or small teams without enforced CI on every branch.</p>
         <div class="cta-row">
-          <a class="cta" href="https://github.com/kunchenguid/no-mistakes" target="_blank" rel="noopener noreferrer">
-            View on GitHub <span class="arrow" aria-hidden="true">→</span>
-          </a>
+          <div class="cta-pair">
+            <a class="cta" href="https://github.com/kunchenguid/no-mistakes" target="_blank" rel="noopener noreferrer">
+              View on GitHub <span class="arrow" aria-hidden="true">→</span>
+            </a>
+            <a class="cta ask" href="https://claude.ai/new?q=Explain%20the%20GitHub%20repository%20kunchenguid/no-mistakes%20%E2%80%94%20what%20it%20actually%20does%2C%20how%20I%20would%20use%20it%2C%20and%20any%20gotchas%20%28cost%2C%20keys%2C%20hardware%29.%0A%0AContext%20from%20my%20GitHub-trending%20digest%20%28issue%202026-06-28%29%3A%20git%20push%20no-mistakes%20Language%3A%20Go.%20Topics%3A%20Developer%20Tools%2C%20AI%20Agents.%20Needs%20an%20LLM%20API%3A%20required%20%28Drives%20your%20installed%20coding%20agent%20%28Claude%2C%20Codex%2C%20%E2%80%A6%29%29.%20Digest%20analysis%3A%20no-mistakes%20is%20a%20lightweight%20Git%20pre-push%20guard%20written%20in%20Go%20that%20intercepts%20git%20push%20and%20runs%20a%20configurable%20set%20of%20checks%20%E2%80%94%20linting%2C%20secret%20scanning%2C%20test%20smoke%20tests%20%E2%80%94%20before%20the%20push%20reaches%20the%20remote%2C%20preventing%20common%20mistakes%20from%20ever%20hitting%20origin.%20The%20project%20went%20viral%20this%20week%20largely%20on%20the%20charm%20of%20its%20one-liner%20description%20%28%27git%20push%20no-mistakes%27%29%2C%20which%20resonated%20deeply%20with%20developers%3B%20the%20simple%2C%20relatable%20premise%20sparked%20rapid%20organic%20sharing.%20It%20fits%20any%20team%20workflow%20as%20a%20zero-config%20drop-in%20hook%20and%20is%20especially%20useful%20for%20solo%20developers%20or%20small%20teams%20without%20enforced%20CI%20on%20every%20branch.%0A%0AFetch%20https%3A//github.com/kunchenguid/no-mistakes%20and%20its%20README%20for%20current%20details%20before%20answering." target="_blank" rel="noopener noreferrer">
+              <span class="arrow" aria-hidden="true">✦</span> Ask Claude about this repo
+            </a>
+          </div>
           <span class="handle">github.com/kunchenguid/no-mistakes</span>
         </div>
       </div>
@@ -675,9 +693,14 @@
         <p class="desc">macOS video editor built for AI</p>
         <p class="analysis">Palmier Pro is a native macOS video editor purpose-built for AI-generated content — it understands AI clip metadata, variable frame rates, and synthetic-media artifacts that generic editors handle poorly, and provides a timeline optimized for assembling AI-generated shots into coherent sequences. It trended this week as tools like Sora, Runway, and Kling gained mainstream traction and users found themselves with no editor that natively speaks their workflow. Mac-based creators and indie filmmakers working with generative video will get the most out of its Swift-native performance and AI-aware timeline.</p>
         <div class="cta-row">
-          <a class="cta" href="https://github.com/palmier-io/palmier-pro" target="_blank" rel="noopener noreferrer">
-            View on GitHub <span class="arrow" aria-hidden="true">→</span>
-          </a>
+          <div class="cta-pair">
+            <a class="cta" href="https://github.com/palmier-io/palmier-pro" target="_blank" rel="noopener noreferrer">
+              View on GitHub <span class="arrow" aria-hidden="true">→</span>
+            </a>
+            <a class="cta ask" href="https://claude.ai/new?q=Explain%20the%20GitHub%20repository%20palmier-io/palmier-pro%20%E2%80%94%20what%20it%20actually%20does%2C%20how%20I%20would%20use%20it%2C%20and%20any%20gotchas%20%28cost%2C%20keys%2C%20hardware%29.%0A%0AContext%20from%20my%20GitHub-trending%20digest%20%28issue%202026-06-28%29%3A%20macOS%20video%20editor%20built%20for%20AI%20Language%3A%20Swift.%20Topics%3A%20Video%20%26%20Media%2C%20MCP%20%26%20Integrations.%20Needs%20an%20LLM%20API%3A%20optional%20%28Editing%20is%20manual%3B%20AI%20connects%20via%20MCP%20%28Claude/Codex/Cursor%29%29.%20Digest%20analysis%3A%20Palmier%20Pro%20is%20a%20native%20macOS%20video%20editor%20purpose-built%20for%20AI-generated%20content%20%E2%80%94%20it%20understands%20AI%20clip%20metadata%2C%20variable%20frame%20rates%2C%20and%20synthetic-media%20artifacts%20that%20generic%20editors%20handle%20poorly%2C%20and%20provides%20a%20timeline%20optimized%20for%20assembling%20AI-generated%20shots%20into%20coherent%20sequences.%20It%20trended%20this%20week%20as%20tools%20like%20Sora%2C%20Runway%2C%20and%20Kling%20gained%20mainstream%20traction%20and%20users%20found%20themselves%20with%20no%20editor%20that%20natively%20speaks%20their%20workflow.%20Mac-based%20creators%20and%20indie%20filmmakers%20working%20with%20generative%20video%20will%20get%20the%20most%20out%20of%20its%20Swift-native%20performance%20and%20AI-aware%20timeline.%0A%0AFetch%20https%3A//github.com/palmier-io/palmier-pro%20and%20its%20README%20for%20current%20details%20before%20answering." target="_blank" rel="noopener noreferrer">
+              <span class="arrow" aria-hidden="true">✦</span> Ask Claude about this repo
+            </a>
+          </div>
           <span class="handle">github.com/palmier-io/palmier-pro</span>
         </div>
       </div>
@@ -713,9 +736,14 @@
         <p class="desc">A format specification for describing a visual identity to coding agents. DESIGN.md gives agents a persistent, structured understanding of a design system.</p>
         <p class="analysis">design.md is a Google Labs open spec — analogous to README.md or CONTRIBUTING.md — that gives a project a single machine-readable file describing its design system: color tokens, typography, spacing scales, component conventions, and brand voice. AI coding agents read DESIGN.md the same way they read README.md, enabling them to generate UI code that stays visually consistent without human correction. It trended strongly this week because frontend teams using AI agents have been frustrated by style drift across generated components, and an official Google-backed spec carries the weight needed to become an industry standard that tool vendors will quickly adopt.</p>
         <div class="cta-row">
-          <a class="cta" href="https://github.com/google-labs-code/design.md" target="_blank" rel="noopener noreferrer">
-            View on GitHub <span class="arrow" aria-hidden="true">→</span>
-          </a>
+          <div class="cta-pair">
+            <a class="cta" href="https://github.com/google-labs-code/design.md" target="_blank" rel="noopener noreferrer">
+              View on GitHub <span class="arrow" aria-hidden="true">→</span>
+            </a>
+            <a class="cta ask" href="https://claude.ai/new?q=Explain%20the%20GitHub%20repository%20google-labs-code/design.md%20%E2%80%94%20what%20it%20actually%20does%2C%20how%20I%20would%20use%20it%2C%20and%20any%20gotchas%20%28cost%2C%20keys%2C%20hardware%29.%0A%0AContext%20from%20my%20GitHub-trending%20digest%20%28issue%202026-06-28%29%3A%20A%20format%20specification%20for%20describing%20a%20visual%20identity%20to%20coding%20agents.%20DESIGN.md%20gives%20agents%20a%20persistent%2C%20structured%20understanding%20of%20a%20design%20system.%20Language%3A%20TypeScript.%20Topics%3A%20Design%2C%20Developer%20Tools.%20Needs%20an%20LLM%20API%3A%20optional%20%28A%20spec%20your%20coding%20agent%20reads%20%E2%80%94%20nothing%20to%20run%29.%20Digest%20analysis%3A%20design.md%20is%20a%20Google%20Labs%20open%20spec%20%E2%80%94%20analogous%20to%20README.md%20or%20CONTRIBUTING.md%20%E2%80%94%20that%20gives%20a%20project%20a%20single%20machine-readable%20file%20describing%20its%20design%20system%3A%20color%20tokens%2C%20typography%2C%20spacing%20scales%2C%20component%20conventions%2C%20and%20brand%20voice.%20AI%20coding%20agents%20read%20DESIGN.md%20the%20same%20way%20they%20read%20README.md%2C%20enabling%20them%20to%20generate%20UI%20code%20that%20stays%20visually%20consistent%20without%20human%20correction.%20It%20trended%20strongly%20this%20week%20because%20frontend%20teams%20using%20AI%20agents%20have%20been%20frustrated%20by%20style%20drift%20across%20generated%20components%2C%20and%20an%20official%20Google-backed%20spec%20carries%20the%20weight%20needed%20to%20become%20an%20industry%20standard%20that%20tool%20vendors%20will%20quickly%20adopt.%0A%0AFetch%20https%3A//github.com/google-labs-code/design.md%20and%20its%20README%20for%20current%20details%20before%20answering." target="_blank" rel="noopener noreferrer">
+              <span class="arrow" aria-hidden="true">✦</span> Ask Claude about this repo
+            </a>
+          </div>
           <span class="handle">github.com/google-labs-code/design.md</span>
         </div>
       </div>

@@ -342,6 +342,9 @@
     gap:9px;
     align-items:flex-start;
   }
+  .cta-pair{ display:flex; flex-wrap:wrap; gap:10px; }
+  .cta.ask{ color:var(--accent); border-color:var(--llm-req-line); background:var(--llm-req-bg); }
+  .cta.ask:hover, .cta.ask:focus-visible{ border-color:var(--accent); }
   .cta{
     display:inline-flex;
     align-items:center;
@@ -561,9 +564,14 @@
         <p class="desc">Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers.</p>
         <p class="analysis">Headroom is a context compression tool that reduces LLM token usage by 60-95% before inputs ever reach the model, preserving answer quality while slashing API costs. It runs as a library, proxy, or MCP server and offers specialized algorithms—SmartCrusher for JSON, CodeCompressor for AST-based code, and Kompress-base for general text. It has held the top trending spot for multiple days, reflecting sustained community demand for cost-efficient agentic workflows where tool outputs and RAG chunks balloon context windows. Ideal for Python developers building coding agents, RAG pipelines, or any high-throughput LLM application where inference cost is a bottleneck.</p>
         <div class="cta-row">
-          <a class="cta" href="https://github.com/chopratejas/headroom" target="_blank" rel="noopener noreferrer">
-            View on GitHub <span class="arrow" aria-hidden="true">→</span>
-          </a>
+          <div class="cta-pair">
+            <a class="cta" href="https://github.com/chopratejas/headroom" target="_blank" rel="noopener noreferrer">
+              View on GitHub <span class="arrow" aria-hidden="true">→</span>
+            </a>
+            <a class="cta ask" href="https://claude.ai/new?q=Explain%20the%20GitHub%20repository%20chopratejas/headroom%20%E2%80%94%20what%20it%20actually%20does%2C%20how%20I%20would%20use%20it%2C%20and%20any%20gotchas%20%28cost%2C%20keys%2C%20hardware%29.%0A%0AContext%20from%20my%20GitHub-trending%20digest%20%28issue%202026-06-08%29%3A%20Compress%20tool%20outputs%2C%20logs%2C%20files%2C%20and%20RAG%20chunks%20before%20they%20reach%20the%20LLM.%2060-95%25%20fewer%20tokens%2C%20same%20answers.%20Language%3A%20Python.%20Topics%3A%20LLM%20Infrastructure%2C%20Developer%20Tools.%20Needs%20an%20LLM%20API%3A%20optional%20%28Compression%20layer%20for%20your%20LLM%20stack%20%E2%80%94%20no%20key%20of%20its%20own%29.%20Digest%20analysis%3A%20Headroom%20is%20a%20context%20compression%20tool%20that%20reduces%20LLM%20token%20usage%20by%2060-95%25%20before%20inputs%20ever%20reach%20the%20model%2C%20preserving%20answer%20quality%20while%20slashing%20API%20costs.%20It%20runs%20as%20a%20library%2C%20proxy%2C%20or%20MCP%20server%20and%20offers%20specialized%20algorithms%E2%80%94SmartCrusher%20for%20JSON%2C%20CodeCompressor%20for%20AST-based%20code%2C%20and%20Kompress-base%20for%20general%20text.%20It%20has%20held%20the%20top%20trending%20spot%20for%20multiple%20days%2C%20reflecting%20sustained%20community%20demand%20for%20cost-efficient%20agentic%20workflows%20where%20tool%20outputs%20and%20RAG%20chunks%20balloon%20context%20windows.%20Ideal%20for%20Python%20developers%20building%20coding%20agents%2C%20RAG%20pipelines%2C%20or%20any%20high-throughput%20LLM%20application%20where%20inference%20cost%20is%20a%20bottleneck.%0A%0AFetch%20https%3A//github.com/chopratejas/headroom%20and%20its%20README%20for%20current%20details%20before%20answering." target="_blank" rel="noopener noreferrer">
+              <span class="arrow" aria-hidden="true">✦</span> Ask Claude about this repo
+            </a>
+          </div>
           <span class="handle">github.com/chopratejas/headroom</span>
         </div>
       </div>
@@ -599,9 +607,14 @@
         <p class="desc">Python tool for converting files and office documents to Markdown.</p>
         <p class="analysis">MarkItDown is Microsoft's Python utility that converts PDFs, Word documents, PowerPoints, Excel spreadsheets, images, audio, and web pages into clean Markdown text ready for LLM ingestion. It solves the document parsing problem at the heart of enterprise RAG—structured binary formats must be translated to plain text before models can reason over them. Trending on sustained organic momentum as enterprise AI adoption accelerates and developers standardize on Markdown as the lingua franca for document pipelines. Data engineers, AI application builders, and anyone processing business documents for LLM workflows will find it immediately practical.</p>
         <div class="cta-row">
-          <a class="cta" href="https://github.com/microsoft/markitdown" target="_blank" rel="noopener noreferrer">
-            View on GitHub <span class="arrow" aria-hidden="true">→</span>
-          </a>
+          <div class="cta-pair">
+            <a class="cta" href="https://github.com/microsoft/markitdown" target="_blank" rel="noopener noreferrer">
+              View on GitHub <span class="arrow" aria-hidden="true">→</span>
+            </a>
+            <a class="cta ask" href="https://claude.ai/new?q=Explain%20the%20GitHub%20repository%20microsoft/markitdown%20%E2%80%94%20what%20it%20actually%20does%2C%20how%20I%20would%20use%20it%2C%20and%20any%20gotchas%20%28cost%2C%20keys%2C%20hardware%29.%0A%0AContext%20from%20my%20GitHub-trending%20digest%20%28issue%202026-06-08%29%3A%20Python%20tool%20for%20converting%20files%20and%20office%20documents%20to%20Markdown.%20Language%3A%20Python.%20Topics%3A%20Documents%20%26%20Data%2C%20Developer%20Tools.%20Needs%20an%20LLM%20API%3A%20optional%20%28Core%20conversion%20is%20local%3B%20optional%20OpenAI%20client%20for%20image%20captions%29.%20Digest%20analysis%3A%20MarkItDown%20is%20Microsoft%27s%20Python%20utility%20that%20converts%20PDFs%2C%20Word%20documents%2C%20PowerPoints%2C%20Excel%20spreadsheets%2C%20images%2C%20audio%2C%20and%20web%20pages%20into%20clean%20Markdown%20text%20ready%20for%20LLM%20ingestion.%20It%20solves%20the%20document%20parsing%20problem%20at%20the%20heart%20of%20enterprise%20RAG%E2%80%94structured%20binary%20formats%20must%20be%20translated%20to%20plain%20text%20before%20models%20can%20reason%20over%20them.%20Trending%20on%20sustained%20organic%20momentum%20as%20enterprise%20AI%20adoption%20accelerates%20and%20developers%20standardize%20on%20Markdown%20as%20the%20lingua%20franca%20for%20document%20pipelines.%20Data%20engineers%2C%20AI%20application%20builders%2C%20and%20anyone%20processing%20business%20documents%20for%20LLM%20workflows%20will%20find%20it%20immediately%20practical.%0A%0AFetch%20https%3A//github.com/microsoft/markitdown%20and%20its%20README%20for%20current%20details%20before%20answering." target="_blank" rel="noopener noreferrer">
+              <span class="arrow" aria-hidden="true">✦</span> Ask Claude about this repo
+            </a>
+          </div>
           <span class="handle">github.com/microsoft/markitdown</span>
         </div>
       </div>
@@ -637,9 +650,14 @@
         <p class="desc">AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary</p>
         <p class="analysis">Last30Days-Skill is an AI agent research tool that simultaneously searches Reddit, X, YouTube, TikTok, Hacker News, Polymarket, and the open web to surface what communities are actively discussing about any topic, synthesizing findings into cited summaries ranked by real engagement metrics. It addresses the staleness problem of standard web search—Google returns indexed content days or weeks old, while fresh community sentiment lives in forums and social platforms. Trending on organic interest, driven by growing demand for grounded social-listening capabilities inside agentic AI workflows. Content creators, product teams, and researchers who need current, community-sourced topic intelligence before launches or decisions will find it most useful.</p>
         <div class="cta-row">
-          <a class="cta" href="https://github.com/mvanhorn/last30days-skill" target="_blank" rel="noopener noreferrer">
-            View on GitHub <span class="arrow" aria-hidden="true">→</span>
-          </a>
+          <div class="cta-pair">
+            <a class="cta" href="https://github.com/mvanhorn/last30days-skill" target="_blank" rel="noopener noreferrer">
+              View on GitHub <span class="arrow" aria-hidden="true">→</span>
+            </a>
+            <a class="cta ask" href="https://claude.ai/new?q=Explain%20the%20GitHub%20repository%20mvanhorn/last30days-skill%20%E2%80%94%20what%20it%20actually%20does%2C%20how%20I%20would%20use%20it%2C%20and%20any%20gotchas%20%28cost%2C%20keys%2C%20hardware%29.%0A%0AContext%20from%20my%20GitHub-trending%20digest%20%28issue%202026-06-08%29%3A%20AI%20agent%20skill%20that%20researches%20any%20topic%20across%20Reddit%2C%20X%2C%20YouTube%2C%20HN%2C%20Polymarket%2C%20and%20the%20web%20-%20then%20synthesizes%20a%20grounded%20summary%20Language%3A%20Python.%20Topics%3A%20Agent%20Skills%20%26%20Plugins%2C%20Productivity%20%26%20Research.%20Needs%20an%20LLM%20API%3A%20required%20%28Agent%20skill%20%E2%80%94%20runs%20inside%20Claude%20Code%20or%20other%20skill%20hosts%29.%20Digest%20analysis%3A%20Last30Days-Skill%20is%20an%20AI%20agent%20research%20tool%20that%20simultaneously%20searches%20Reddit%2C%20X%2C%20YouTube%2C%20TikTok%2C%20Hacker%20News%2C%20Polymarket%2C%20and%20the%20open%20web%20to%20surface%20what%20communities%20are%20actively%20discussing%20about%20any%20topic%2C%20synthesizing%20findings%20into%20cited%20summaries%20ranked%20by%20real%20engagement%20metrics.%20It%20addresses%20the%20staleness%20problem%20of%20standard%20web%20search%E2%80%94Google%20returns%20indexed%20content%20days%20or%20weeks%20old%2C%20while%20fresh%20community%20sentiment%20lives%20in%20forums%20and%20social%20platforms.%20Trending%20on%20organic%20interest%2C%20driven%20by%20growing%20demand%20for%20grounded%20social-listening%20capabilities%20inside%20agentic%20AI%20workflows.%20Content%20creators%2C%20product%20teams%2C%20and%20researchers%20who%20need%20current%2C%20community-sourced%20topic%20intelligence%20before%20launches%20or%20decisions%20will%20find%20it%20most%20useful.%0A%0AFetch%20https%3A//github.com/mvanhorn/last30days-skill%20and%20its%20README%20for%20current%20details%20before%20answering." target="_blank" rel="noopener noreferrer">
+              <span class="arrow" aria-hidden="true">✦</span> Ask Claude about this repo
+            </a>
+          </div>
           <span class="handle">github.com/mvanhorn/last30days-skill</span>
         </div>
       </div>

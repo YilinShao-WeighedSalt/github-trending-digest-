@@ -15,6 +15,7 @@ import sys
 import json
 import html
 import pathlib
+import urllib.parse
 from datetime import datetime
 
 ROOT = pathlib.Path(__file__).resolve().parent
@@ -93,7 +94,26 @@ def esc(text):
     return html.escape(str(text or ""), quote=False)
 
 
-def render_entry(repo, entry_tpl):
+def ask_claude_url(repo, date):
+    """claude.ai handoff link with the digest context prefilled (subscription-billed)."""
+    owner = repo.get("owner", "")
+    name = repo.get("repo", "")
+    url = repo.get("url") or f"https://github.com/{owner}/{name}"
+    note = f" ({repo['llm_api_note']})" if repo.get("llm_api_note") else ""
+    prompt = (
+        f"Explain the GitHub repository {owner}/{name} — what it actually does, "
+        "how I would use it, and any gotchas (cost, keys, hardware).\n\n"
+        f"Context from my GitHub-trending digest (issue {date}): {repo.get('description', '')} "
+        f"Language: {repo.get('language') or 'n/a'}. "
+        f"Topics: {', '.join(repo.get('topics', [])) or 'n/a'}. "
+        f"Needs an LLM API: {repo.get('llm_api', 'unknown')}{note}. "
+        f"Digest analysis: {repo.get('analysis', 'n/a')}\n\n"
+        f"Fetch {url} and its README for current details before answering."
+    )
+    return "https://claude.ai/new?q=" + urllib.parse.quote(prompt)
+
+
+def render_entry(repo, entry_tpl, date):
     owner = repo.get("owner", "")
     name = repo.get("repo", "")
     url = repo.get("url") or f"https://github.com/{owner}/{name}"
@@ -117,6 +137,7 @@ def render_entry(repo, entry_tpl):
         "{{DESCRIPTION}}": esc(repo.get("description")),
         "{{ANALYSIS}}": esc(repo.get("analysis")),
         "{{LLM_BADGE}}": llm_badge(repo),
+        "{{ASK_URL}}": html.escape(ask_claude_url(repo, date), quote=True),
     }
     out = entry_tpl
     for tok, val in subs.items():
@@ -142,7 +163,7 @@ def build_one(json_path):
     entry_tpl = (ROOT / "entry_template.html").read_text()
 
     repos = sorted(data["repos"], key=lambda r: r.get("rank", 99))
-    entries = "\n\n    ".join(render_entry(r, entry_tpl) for r in repos)
+    entries = "\n\n    ".join(render_entry(r, entry_tpl, date) for r in repos)
 
     page = (
         page_tpl.replace("{{PAGE_TITLE}}", esc(f"{title} — {issue_label}"))

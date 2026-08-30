@@ -342,6 +342,9 @@
     gap:9px;
     align-items:flex-start;
   }
+  .cta-pair{ display:flex; flex-wrap:wrap; gap:10px; }
+  .cta.ask{ color:var(--accent); border-color:var(--llm-req-line); background:var(--llm-req-bg); }
+  .cta.ask:hover, .cta.ask:focus-visible{ border-color:var(--accent); }
   .cta{
     display:inline-flex;
     align-items:center;
@@ -561,9 +564,14 @@
         <p class="desc">Compress tool outputs, logs, files, and RAG chunks before they reach an LLM.</p>
         <p class="analysis">Headroom compresses tool outputs, logs, files, and RAG chunks before they are sent to an LLM, achieving 60-95% token reduction without degrading answer quality. It tackles context window bloat — a growing pain point as AI agents grow more complex and tool outputs balloon in size. It likely trended this week due to surging developer interest in cost-efficient agentic workflows, where token spend directly impacts API bills. It fits best into Python-based LLM apps, agent frameworks, and RAG pipelines where tool output verbosity is a bottleneck.</p>
         <div class="cta-row">
-          <a class="cta" href="https://github.com/chopratejas/headroom" target="_blank" rel="noopener noreferrer">
-            View on GitHub <span class="arrow" aria-hidden="true">→</span>
-          </a>
+          <div class="cta-pair">
+            <a class="cta" href="https://github.com/chopratejas/headroom" target="_blank" rel="noopener noreferrer">
+              View on GitHub <span class="arrow" aria-hidden="true">→</span>
+            </a>
+            <a class="cta ask" href="https://claude.ai/new?q=Explain%20the%20GitHub%20repository%20chopratejas/headroom%20%E2%80%94%20what%20it%20actually%20does%2C%20how%20I%20would%20use%20it%2C%20and%20any%20gotchas%20%28cost%2C%20keys%2C%20hardware%29.%0A%0AContext%20from%20my%20GitHub-trending%20digest%20%28issue%202026-06-07%29%3A%20Compress%20tool%20outputs%2C%20logs%2C%20files%2C%20and%20RAG%20chunks%20before%20they%20reach%20an%20LLM.%20Language%3A%20Python.%20Topics%3A%20LLM%20Infrastructure%2C%20Developer%20Tools.%20Needs%20an%20LLM%20API%3A%20optional%20%28Compression%20layer%20for%20your%20LLM%20stack%20%E2%80%94%20no%20key%20of%20its%20own%29.%20Digest%20analysis%3A%20Headroom%20compresses%20tool%20outputs%2C%20logs%2C%20files%2C%20and%20RAG%20chunks%20before%20they%20are%20sent%20to%20an%20LLM%2C%20achieving%2060-95%25%20token%20reduction%20without%20degrading%20answer%20quality.%20It%20tackles%20context%20window%20bloat%20%E2%80%94%20a%20growing%20pain%20point%20as%20AI%20agents%20grow%20more%20complex%20and%20tool%20outputs%20balloon%20in%20size.%20It%20likely%20trended%20this%20week%20due%20to%20surging%20developer%20interest%20in%20cost-efficient%20agentic%20workflows%2C%20where%20token%20spend%20directly%20impacts%20API%20bills.%20It%20fits%20best%20into%20Python-based%20LLM%20apps%2C%20agent%20frameworks%2C%20and%20RAG%20pipelines%20where%20tool%20output%20verbosity%20is%20a%20bottleneck.%0A%0AFetch%20https%3A//github.com/chopratejas/headroom%20and%20its%20README%20for%20current%20details%20before%20answering." target="_blank" rel="noopener noreferrer">
+              <span class="arrow" aria-hidden="true">✦</span> Ask Claude about this repo
+            </a>
+          </div>
           <span class="handle">github.com/chopratejas/headroom</span>
         </div>
       </div>
@@ -599,9 +607,14 @@
         <p class="desc">Convert PDFs, Office documents, and many other formats into clean Markdown for LLMs.</p>
         <p class="analysis">MarkItDown is a Microsoft-backed Python library that converts PDFs, Word documents, PowerPoints, Excel spreadsheets, and many other formats into clean Markdown text. It solves the document ingestion problem for LLMs, which work best with plain text rather than binary file formats. Its continued momentum this week reflects sustained demand for reliable, multi-format document parsers in enterprise RAG and agentic pipelines. Developers building knowledge bases, document Q&amp;A systems, or any LLM workflow that must ingest business files will find it immediately practical.</p>
         <div class="cta-row">
-          <a class="cta" href="https://github.com/microsoft/markitdown" target="_blank" rel="noopener noreferrer">
-            View on GitHub <span class="arrow" aria-hidden="true">→</span>
-          </a>
+          <div class="cta-pair">
+            <a class="cta" href="https://github.com/microsoft/markitdown" target="_blank" rel="noopener noreferrer">
+              View on GitHub <span class="arrow" aria-hidden="true">→</span>
+            </a>
+            <a class="cta ask" href="https://claude.ai/new?q=Explain%20the%20GitHub%20repository%20microsoft/markitdown%20%E2%80%94%20what%20it%20actually%20does%2C%20how%20I%20would%20use%20it%2C%20and%20any%20gotchas%20%28cost%2C%20keys%2C%20hardware%29.%0A%0AContext%20from%20my%20GitHub-trending%20digest%20%28issue%202026-06-07%29%3A%20Convert%20PDFs%2C%20Office%20documents%2C%20and%20many%20other%20formats%20into%20clean%20Markdown%20for%20LLMs.%20Language%3A%20Python.%20Topics%3A%20Documents%20%26%20Data%2C%20Developer%20Tools.%20Needs%20an%20LLM%20API%3A%20optional%20%28Core%20conversion%20is%20local%3B%20optional%20OpenAI%20client%20for%20image%20captions%29.%20Digest%20analysis%3A%20MarkItDown%20is%20a%20Microsoft-backed%20Python%20library%20that%20converts%20PDFs%2C%20Word%20documents%2C%20PowerPoints%2C%20Excel%20spreadsheets%2C%20and%20many%20other%20formats%20into%20clean%20Markdown%20text.%20It%20solves%20the%20document%20ingestion%20problem%20for%20LLMs%2C%20which%20work%20best%20with%20plain%20text%20rather%20than%20binary%20file%20formats.%20Its%20continued%20momentum%20this%20week%20reflects%20sustained%20demand%20for%20reliable%2C%20multi-format%20document%20parsers%20in%20enterprise%20RAG%20and%20agentic%20pipelines.%20Developers%20building%20knowledge%20bases%2C%20document%20Q%26A%20systems%2C%20or%20any%20LLM%20workflow%20that%20must%20ingest%20business%20files%20will%20find%20it%20immediately%20practical.%0A%0AFetch%20https%3A//github.com/microsoft/markitdown%20and%20its%20README%20for%20current%20details%20before%20answering." target="_blank" rel="noopener noreferrer">
+              <span class="arrow" aria-hidden="true">✦</span> Ask Claude about this repo
+            </a>
+          </div>
           <span class="handle">github.com/microsoft/markitdown</span>
         </div>
       </div>
@@ -637,9 +650,14 @@
         <p class="desc">Automate short-form video creation with AI: footage, voiceover, subtitles in one click.</p>
         <p class="analysis">MoneyPrinterTurbo automates short-form video creation using AI: given a topic or script it sources background footage, generates voiceover via TTS, and assembles a finished video with subtitles in one click. It addresses the time-consuming manual process of producing content for TikTok, YouTube Shorts, and Instagram Reels. Trending on organic interest, driven by a growing wave of solo creators and small agencies seeking self-hosted alternatives to paid AI video tools. It suits Python developers and content marketers who want a customizable, locally-run video automation pipeline.</p>
         <div class="cta-row">
-          <a class="cta" href="https://github.com/harry0703/MoneyPrinterTurbo" target="_blank" rel="noopener noreferrer">
-            View on GitHub <span class="arrow" aria-hidden="true">→</span>
-          </a>
+          <div class="cta-pair">
+            <a class="cta" href="https://github.com/harry0703/MoneyPrinterTurbo" target="_blank" rel="noopener noreferrer">
+              View on GitHub <span class="arrow" aria-hidden="true">→</span>
+            </a>
+            <a class="cta ask" href="https://claude.ai/new?q=Explain%20the%20GitHub%20repository%20harry0703/MoneyPrinterTurbo%20%E2%80%94%20what%20it%20actually%20does%2C%20how%20I%20would%20use%20it%2C%20and%20any%20gotchas%20%28cost%2C%20keys%2C%20hardware%29.%0A%0AContext%20from%20my%20GitHub-trending%20digest%20%28issue%202026-06-07%29%3A%20Automate%20short-form%20video%20creation%20with%20AI%3A%20footage%2C%20voiceover%2C%20subtitles%20in%20one%20click.%20Language%3A%20Python.%20Topics%3A%20Video%20%26%20Media.%20Needs%20an%20LLM%20API%3A%20required%20%28Script%20generation%20needs%20an%20LLM%20%28OpenAI/Claude/Gemini/%E2%80%A6%3B%20Ollama%20works%29%29.%20Digest%20analysis%3A%20MoneyPrinterTurbo%20automates%20short-form%20video%20creation%20using%20AI%3A%20given%20a%20topic%20or%20script%20it%20sources%20background%20footage%2C%20generates%20voiceover%20via%20TTS%2C%20and%20assembles%20a%20finished%20video%20with%20subtitles%20in%20one%20click.%20It%20addresses%20the%20time-consuming%20manual%20process%20of%20producing%20content%20for%20TikTok%2C%20YouTube%20Shorts%2C%20and%20Instagram%20Reels.%20Trending%20on%20organic%20interest%2C%20driven%20by%20a%20growing%20wave%20of%20solo%20creators%20and%20small%20agencies%20seeking%20self-hosted%20alternatives%20to%20paid%20AI%20video%20tools.%20It%20suits%20Python%20developers%20and%20content%20marketers%20who%20want%20a%20customizable%2C%20locally-run%20video%20automation%20pipeline.%0A%0AFetch%20https%3A//github.com/harry0703/MoneyPrinterTurbo%20and%20its%20README%20for%20current%20details%20before%20answering." target="_blank" rel="noopener noreferrer">
+              <span class="arrow" aria-hidden="true">✦</span> Ask Claude about this repo
+            </a>
+          </div>
           <span class="handle">github.com/harry0703/MoneyPrinterTurbo</span>
         </div>
       </div>

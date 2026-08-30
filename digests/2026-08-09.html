@@ -342,6 +342,9 @@
     gap:9px;
     align-items:flex-start;
   }
+  .cta-pair{ display:flex; flex-wrap:wrap; gap:10px; }
+  .cta.ask{ color:var(--accent); border-color:var(--llm-req-line); background:var(--llm-req-bg); }
+  .cta.ask:hover, .cta.ask:focus-visible{ border-color:var(--accent); }
   .cta{
     display:inline-flex;
     align-items:center;
@@ -561,9 +564,14 @@
         <p class="desc">AI-powered routing and self-evolving knowledge base for reverse engineering and security research</p>
         <p class="analysis">reverse-skill is an AI-powered skill routing system for cybersecurity workflows, mapping tasks like APK analysis, binary disassembly, and CTF challenges to the right toolchain automatically via a 41-rule routing matrix. It eliminates guesswork about which security tools to invoke—jadx, IDA Pro, Frida—by letting AI agents select the appropriate methodology. Trending on organic interest as security professionals experiment with AI-assisted reverse engineering workflows. Best suited for red teamers, CTF competitors, and vulnerability researchers using Claude Code, Cursor, or similar AI coding agents.</p>
         <div class="cta-row">
-          <a class="cta" href="https://github.com/zhaoxuya520/reverse-skill" target="_blank" rel="noopener noreferrer">
-            View on GitHub <span class="arrow" aria-hidden="true">→</span>
-          </a>
+          <div class="cta-pair">
+            <a class="cta" href="https://github.com/zhaoxuya520/reverse-skill" target="_blank" rel="noopener noreferrer">
+              View on GitHub <span class="arrow" aria-hidden="true">→</span>
+            </a>
+            <a class="cta ask" href="https://claude.ai/new?q=Explain%20the%20GitHub%20repository%20zhaoxuya520/reverse-skill%20%E2%80%94%20what%20it%20actually%20does%2C%20how%20I%20would%20use%20it%2C%20and%20any%20gotchas%20%28cost%2C%20keys%2C%20hardware%29.%0A%0AContext%20from%20my%20GitHub-trending%20digest%20%28issue%202026-08-09%29%3A%20AI-powered%20routing%20and%20self-evolving%20knowledge%20base%20for%20reverse%20engineering%20and%20security%20research%20Language%3A%20PowerShell.%20Topics%3A%20Security%20%26%20Privacy%2C%20Agent%20Skills%20%26%20Plugins.%20Needs%20an%20LLM%20API%3A%20required%20%28Needs%20an%20AI%20code%20client%20%28Claude%20Code%2C%20Codex%2C%20Cursor%2C%20%E2%80%A6%29%29.%20Digest%20analysis%3A%20reverse-skill%20is%20an%20AI-powered%20skill%20routing%20system%20for%20cybersecurity%20workflows%2C%20mapping%20tasks%20like%20APK%20analysis%2C%20binary%20disassembly%2C%20and%20CTF%20challenges%20to%20the%20right%20toolchain%20automatically%20via%20a%2041-rule%20routing%20matrix.%20It%20eliminates%20guesswork%20about%20which%20security%20tools%20to%20invoke%E2%80%94jadx%2C%20IDA%20Pro%2C%20Frida%E2%80%94by%20letting%20AI%20agents%20select%20the%20appropriate%20methodology.%20Trending%20on%20organic%20interest%20as%20security%20professionals%20experiment%20with%20AI-assisted%20reverse%20engineering%20workflows.%20Best%20suited%20for%20red%20teamers%2C%20CTF%20competitors%2C%20and%20vulnerability%20researchers%20using%20Claude%20Code%2C%20Cursor%2C%20or%20similar%20AI%20coding%20agents.%0A%0AFetch%20https%3A//github.com/zhaoxuya520/reverse-skill%20and%20its%20README%20for%20current%20details%20before%20answering." target="_blank" rel="noopener noreferrer">
+              <span class="arrow" aria-hidden="true">✦</span> Ask Claude about this repo
+            </a>
+          </div>
           <span class="handle">github.com/zhaoxuya520/reverse-skill</span>
         </div>
       </div>
@@ -599,9 +607,14 @@
         <p class="desc">Fast Rust library for PDF inspection, classification, and text extraction</p>
         <p class="analysis">pdf-inspector is a Rust library that classifies PDFs as text-based or scanned in ~20ms, then extracts text locally for text-based files or routes scanned documents to OCR—saving cost since roughly 54% of PDFs don't require OCR at all. It exposes bindings for Python, Node.js, browser WebAssembly, and Rust, making it flexible across stacks. Trending on the surge in AI document pipelines and RAG applications where efficient PDF ingestion is a bottleneck. Ideal for developers building LLM context pipelines, document APIs, or any system processing large volumes of mixed PDFs.</p>
         <div class="cta-row">
-          <a class="cta" href="https://github.com/firecrawl/pdf-inspector" target="_blank" rel="noopener noreferrer">
-            View on GitHub <span class="arrow" aria-hidden="true">→</span>
-          </a>
+          <div class="cta-pair">
+            <a class="cta" href="https://github.com/firecrawl/pdf-inspector" target="_blank" rel="noopener noreferrer">
+              View on GitHub <span class="arrow" aria-hidden="true">→</span>
+            </a>
+            <a class="cta ask" href="https://claude.ai/new?q=Explain%20the%20GitHub%20repository%20firecrawl/pdf-inspector%20%E2%80%94%20what%20it%20actually%20does%2C%20how%20I%20would%20use%20it%2C%20and%20any%20gotchas%20%28cost%2C%20keys%2C%20hardware%29.%0A%0AContext%20from%20my%20GitHub-trending%20digest%20%28issue%202026-08-09%29%3A%20Fast%20Rust%20library%20for%20PDF%20inspection%2C%20classification%2C%20and%20text%20extraction%20Language%3A%20Rust.%20Topics%3A%20Documents%20%26%20Data%2C%20Systems%20%26%20Libraries.%20Needs%20an%20LLM%20API%3A%20none.%20Digest%20analysis%3A%20pdf-inspector%20is%20a%20Rust%20library%20that%20classifies%20PDFs%20as%20text-based%20or%20scanned%20in%20~20ms%2C%20then%20extracts%20text%20locally%20for%20text-based%20files%20or%20routes%20scanned%20documents%20to%20OCR%E2%80%94saving%20cost%20since%20roughly%2054%25%20of%20PDFs%20don%27t%20require%20OCR%20at%20all.%20It%20exposes%20bindings%20for%20Python%2C%20Node.js%2C%20browser%20WebAssembly%2C%20and%20Rust%2C%20making%20it%20flexible%20across%20stacks.%20Trending%20on%20the%20surge%20in%20AI%20document%20pipelines%20and%20RAG%20applications%20where%20efficient%20PDF%20ingestion%20is%20a%20bottleneck.%20Ideal%20for%20developers%20building%20LLM%20context%20pipelines%2C%20document%20APIs%2C%20or%20any%20system%20processing%20large%20volumes%20of%20mixed%20PDFs.%0A%0AFetch%20https%3A//github.com/firecrawl/pdf-inspector%20and%20its%20README%20for%20current%20details%20before%20answering." target="_blank" rel="noopener noreferrer">
+              <span class="arrow" aria-hidden="true">✦</span> Ask Claude about this repo
+            </a>
+          </div>
           <span class="handle">github.com/firecrawl/pdf-inspector</span>
         </div>
       </div>
@@ -637,9 +650,14 @@
         <p class="desc">Team-level memory hub for AI Agents with reusable memory assets across frameworks</p>
         <p class="analysis">TencentDB-Agent-Memory is a team-level knowledge system that distills conversations, code, and documentation into four reusable asset types—Chat Memory, Skills, Wiki, and CodeGraph—shared across AI agents and frameworks. It solves the blank-slate problem: new agent sessions inherit accumulated team expertise rather than starting from scratch. Trending on the wave of multi-agent orchestration tooling as organizations deploy AI-assisted engineering teams at scale. Best suited for teams running specialized agents for research, development, and testing who need context to transfer automatically between sessions.</p>
         <div class="cta-row">
-          <a class="cta" href="https://github.com/TencentCloud/TencentDB-Agent-Memory" target="_blank" rel="noopener noreferrer">
-            View on GitHub <span class="arrow" aria-hidden="true">→</span>
-          </a>
+          <div class="cta-pair">
+            <a class="cta" href="https://github.com/TencentCloud/TencentDB-Agent-Memory" target="_blank" rel="noopener noreferrer">
+              View on GitHub <span class="arrow" aria-hidden="true">→</span>
+            </a>
+            <a class="cta ask" href="https://claude.ai/new?q=Explain%20the%20GitHub%20repository%20TencentCloud/TencentDB-Agent-Memory%20%E2%80%94%20what%20it%20actually%20does%2C%20how%20I%20would%20use%20it%2C%20and%20any%20gotchas%20%28cost%2C%20keys%2C%20hardware%29.%0A%0AContext%20from%20my%20GitHub-trending%20digest%20%28issue%202026-08-09%29%3A%20Team-level%20memory%20hub%20for%20AI%20Agents%20with%20reusable%20memory%20assets%20across%20frameworks%20Language%3A%20TypeScript.%20Topics%3A%20RAG%20%26%20Memory%2C%20AI%20Agents.%20Needs%20an%20LLM%20API%3A%20required%20%28Memory%20layer%20for%20coding%20agents%20%28proxy%20in%20front%20of%20Claude/Codex%29%29.%20Digest%20analysis%3A%20TencentDB-Agent-Memory%20is%20a%20team-level%20knowledge%20system%20that%20distills%20conversations%2C%20code%2C%20and%20documentation%20into%20four%20reusable%20asset%20types%E2%80%94Chat%20Memory%2C%20Skills%2C%20Wiki%2C%20and%20CodeGraph%E2%80%94shared%20across%20AI%20agents%20and%20frameworks.%20It%20solves%20the%20blank-slate%20problem%3A%20new%20agent%20sessions%20inherit%20accumulated%20team%20expertise%20rather%20than%20starting%20from%20scratch.%20Trending%20on%20the%20wave%20of%20multi-agent%20orchestration%20tooling%20as%20organizations%20deploy%20AI-assisted%20engineering%20teams%20at%20scale.%20Best%20suited%20for%20teams%20running%20specialized%20agents%20for%20research%2C%20development%2C%20and%20testing%20who%20need%20context%20to%20transfer%20automatically%20between%20sessions.%0A%0AFetch%20https%3A//github.com/TencentCloud/TencentDB-Agent-Memory%20and%20its%20README%20for%20current%20details%20before%20answering." target="_blank" rel="noopener noreferrer">
+              <span class="arrow" aria-hidden="true">✦</span> Ask Claude about this repo
+            </a>
+          </div>
           <span class="handle">github.com/TencentCloud/TencentDB-Agent-Memory</span>
         </div>
       </div>
@@ -675,9 +693,14 @@
         <p class="desc">AirLLM 70B inference with single 4GB GPU</p>
         <p class="analysis">AirLLM enables inference of 70B+ parameter language models on a single consumer 4GB GPU by streaming model weights one layer at a time instead of loading them all simultaneously—no quantization, distillation, or pruning required. Support extends up to 671B-parameter models, dramatically reducing the hardware barrier for local LLM deployment. Trending on sustained community interest in cost-effective local inference and updated compatibility with newer model releases. Essential for researchers, hobbyists, and small teams who want full-quality large model inference without multi-GPU or cloud costs.</p>
         <div class="cta-row">
-          <a class="cta" href="https://github.com/lyogavin/airllm" target="_blank" rel="noopener noreferrer">
-            View on GitHub <span class="arrow" aria-hidden="true">→</span>
-          </a>
+          <div class="cta-pair">
+            <a class="cta" href="https://github.com/lyogavin/airllm" target="_blank" rel="noopener noreferrer">
+              View on GitHub <span class="arrow" aria-hidden="true">→</span>
+            </a>
+            <a class="cta ask" href="https://claude.ai/new?q=Explain%20the%20GitHub%20repository%20lyogavin/airllm%20%E2%80%94%20what%20it%20actually%20does%2C%20how%20I%20would%20use%20it%2C%20and%20any%20gotchas%20%28cost%2C%20keys%2C%20hardware%29.%0A%0AContext%20from%20my%20GitHub-trending%20digest%20%28issue%202026-08-09%29%3A%20AirLLM%2070B%20inference%20with%20single%204GB%20GPU%20Language%3A%20Jupyter%20Notebook.%20Topics%3A%20LLM%20Infrastructure.%20Needs%20an%20LLM%20API%3A%20none%20%28Runs%20big%20LLMs%20locally%20on%20your%20GPU%20%E2%80%94%20no%20hosted%20API%29.%20Digest%20analysis%3A%20AirLLM%20enables%20inference%20of%2070B%2B%20parameter%20language%20models%20on%20a%20single%20consumer%204GB%20GPU%20by%20streaming%20model%20weights%20one%20layer%20at%20a%20time%20instead%20of%20loading%20them%20all%20simultaneously%E2%80%94no%20quantization%2C%20distillation%2C%20or%20pruning%20required.%20Support%20extends%20up%20to%20671B-parameter%20models%2C%20dramatically%20reducing%20the%20hardware%20barrier%20for%20local%20LLM%20deployment.%20Trending%20on%20sustained%20community%20interest%20in%20cost-effective%20local%20inference%20and%20updated%20compatibility%20with%20newer%20model%20releases.%20Essential%20for%20researchers%2C%20hobbyists%2C%20and%20small%20teams%20who%20want%20full-quality%20large%20model%20inference%20without%20multi-GPU%20or%20cloud%20costs.%0A%0AFetch%20https%3A//github.com/lyogavin/airllm%20and%20its%20README%20for%20current%20details%20before%20answering." target="_blank" rel="noopener noreferrer">
+              <span class="arrow" aria-hidden="true">✦</span> Ask Claude about this repo
+            </a>
+          </div>
           <span class="handle">github.com/lyogavin/airllm</span>
         </div>
       </div>
@@ -713,9 +736,14 @@
         <p class="desc">DeepSeek-native AI coding agent optimized for terminal use with prefix-cache stability</p>
         <p class="analysis">DeepSeek-Reasonix is a terminal-first AI coding agent built around DeepSeek models, featuring per-turn checkpoints, undo functionality, and workspace sandboxing so long autonomous sessions can be safely left running. It supports multi-interface access via CLI, desktop app, browser, and editor through the ACP protocol, and can orchestrate two-model planner-plus-executor workflows with separate prefix-cache sessions. Trending on strong DeepSeek ecosystem momentum and growing appetite for coding agents that can handle extended, unsupervised tasks. Fits developers who want a capable autonomous agent with meaningful safety rails rather than a chat-only coding assistant.</p>
         <div class="cta-row">
-          <a class="cta" href="https://github.com/esengine/DeepSeek-Reasonix" target="_blank" rel="noopener noreferrer">
-            View on GitHub <span class="arrow" aria-hidden="true">→</span>
-          </a>
+          <div class="cta-pair">
+            <a class="cta" href="https://github.com/esengine/DeepSeek-Reasonix" target="_blank" rel="noopener noreferrer">
+              View on GitHub <span class="arrow" aria-hidden="true">→</span>
+            </a>
+            <a class="cta ask" href="https://claude.ai/new?q=Explain%20the%20GitHub%20repository%20esengine/DeepSeek-Reasonix%20%E2%80%94%20what%20it%20actually%20does%2C%20how%20I%20would%20use%20it%2C%20and%20any%20gotchas%20%28cost%2C%20keys%2C%20hardware%29.%0A%0AContext%20from%20my%20GitHub-trending%20digest%20%28issue%202026-08-09%29%3A%20DeepSeek-native%20AI%20coding%20agent%20optimized%20for%20terminal%20use%20with%20prefix-cache%20stability%20Language%3A%20Go.%20Topics%3A%20AI%20Agents%2C%20Developer%20Tools.%20Needs%20an%20LLM%20API%3A%20required%20%28Configure%20a%20model%20provider%20%28DeepSeek-native%29%29.%20Digest%20analysis%3A%20DeepSeek-Reasonix%20is%20a%20terminal-first%20AI%20coding%20agent%20built%20around%20DeepSeek%20models%2C%20featuring%20per-turn%20checkpoints%2C%20undo%20functionality%2C%20and%20workspace%20sandboxing%20so%20long%20autonomous%20sessions%20can%20be%20safely%20left%20running.%20It%20supports%20multi-interface%20access%20via%20CLI%2C%20desktop%20app%2C%20browser%2C%20and%20editor%20through%20the%20ACP%20protocol%2C%20and%20can%20orchestrate%20two-model%20planner-plus-executor%20workflows%20with%20separate%20prefix-cache%20sessions.%20Trending%20on%20strong%20DeepSeek%20ecosystem%20momentum%20and%20growing%20appetite%20for%20coding%20agents%20that%20can%20handle%20extended%2C%20unsupervised%20tasks.%20Fits%20developers%20who%20want%20a%20capable%20autonomous%20agent%20with%20meaningful%20safety%20rails%20rather%20than%20a%20chat-only%20coding%20assistant.%0A%0AFetch%20https%3A//github.com/esengine/DeepSeek-Reasonix%20and%20its%20README%20for%20current%20details%20before%20answering." target="_blank" rel="noopener noreferrer">
+              <span class="arrow" aria-hidden="true">✦</span> Ask Claude about this repo
+            </a>
+          </div>
           <span class="handle">github.com/esengine/DeepSeek-Reasonix</span>
         </div>
       </div>

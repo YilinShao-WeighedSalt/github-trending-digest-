@@ -116,6 +116,16 @@
   #panel .chip{font-size:12px;border:1px solid var(--rule-strong);border-radius:999px;padding:3px 10px;background:none;cursor:pointer;color:var(--ink-soft);font-family:"Inter",sans-serif;}
   #panel .chip:hover{border-color:var(--accent);color:var(--accent);}
   #panel .dirjump{display:inline-block;margin-top:12px;font-size:12.5px;font-weight:600;color:var(--accent);text-decoration:none;border:none;background:none;cursor:pointer;padding:0;font-family:"Inter",sans-serif;}
+  /* ── Ask Claude ── */
+  .askc{margin-top:14px;border-top:1px solid var(--rule);padding-top:12px;}
+  .askc .sect{margin-top:0;}
+  .askc textarea{width:100%;resize:none;font-family:"Inter",sans-serif;font-size:13px;line-height:1.4;
+    color:var(--ink);background:var(--card);border:1px solid var(--rule-strong);border-radius:8px;padding:8px 10px;margin-bottom:8px;}
+  .askc textarea:focus{outline:none;border-color:var(--accent);}
+  .aibtn{display:inline-flex;align-items:center;gap:7px;font-family:"Inter",sans-serif;font-size:12.5px;font-weight:600;
+    color:var(--accent);background:var(--llm-req-bg);border:1px solid var(--llm-req-line);border-radius:8px;padding:7px 13px;cursor:pointer;}
+  .aibtn:hover{border-color:var(--accent);}
+  .askc .fine{font-size:11px;color:var(--ink-faint);margin:8px 0 0;line-height:1.5;}
 
   /* shared pills */
   .llm{display:inline-flex;align-items:center;gap:6px;font-family:"Inter",sans-serif;font-size:11.5px;
@@ -511,7 +521,13 @@ function openPanel(node){
     for (const a of [...r.appearances].reverse()){
       html += `<li><a href="digests/${esc(a.date)}.html">${fmtShort(a.date)}</a><span>#${esc(a.rank)}</span><span class="g">+${fmtNum(a.gained)}</span><span>★ ${fmtNum(a.stars)}</span></li>`;
     }
-    html += `</ul>`;
+    html += `</ul>
+      <div class="askc">
+        <div class="sect">Ask Claude</div>
+        <textarea id="aiq" rows="2" placeholder="Optional question — leave empty and Claude explains the repo"></textarea>
+        <button class="aibtn" id="aigo">✦ Ask Claude about this repo ↗</button>
+        <p class="fine">Opens claude.ai with this repo's digest context prefilled — runs on your Claude subscription, no API key, nothing stored on this page.</p>
+      </div>`;
   } else {
     const members = repos.filter(r => (r.topics || []).includes(node.label));
     html += `<h3>${esc(node.label)}</h3>`;
@@ -522,6 +538,11 @@ function openPanel(node){
   }
   panel.innerHTML = html;
   panel.classList.add("open");
+  if (node.type === "repo"){
+    panel.querySelector("#aigo").addEventListener("click", () =>
+      window.open(askClaudeUrl(node.repo, panel.querySelector("#aiq").value.trim()),
+        "_blank", "noopener,noreferrer"));
+  }
 }
 function closePanel(){
   panel.classList.remove("open");
@@ -549,6 +570,35 @@ panel.addEventListener("click", ev => {
     if (el) el.scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth" });
   }
 });
+
+/* ---------- Ask Claude: hand off to claude.ai with digest context prefilled ---------- */
+function askClaudeUrl(r, question){
+  const note = r.llm_api_note ? ` (${r.llm_api_note})` : "";
+  const prompt =
+    `Explain the GitHub repository ${r.owner}/${r.repo} — what it actually does, ` +
+    `how I would use it, and any gotchas (cost, keys, hardware).\n\n` +
+    `Context from my GitHub-trending digest (last featured ${r.last_seen}): ${r.description || ""} ` +
+    `Language: ${r.language || "n/a"}. Topics: ${(r.topics || []).join(", ") || "n/a"}. ` +
+    `Needs an LLM API: ${r.llm_api || "unknown"}${note}. ` +
+    `Digest analysis: ${r.analysis || "n/a"}\n\n` +
+    `Fetch ${r.url} and its README for current details before answering.` +
+    (question ? `\n\nMy question: ${question}` : "");
+  return "https://claude.ai/new?q=" + encodeURIComponent(prompt);
+}
+
+/* deep link: explore.html#repo=owner/repo opens that repo's panel */
+function handleRepoHash(){
+  const m = location.hash.match(/^#(?:repo|ask)=(.+)$/);
+  if (!m) return;
+  let slug;
+  try { slug = decodeURIComponent(m[1]); } catch { return; }
+  const node = nodeById.get("r:" + slug);
+  if (!node) return;
+  openPanel(node);
+  document.querySelector(".graphwrap")?.scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth" });
+}
+window.addEventListener("hashchange", handleRepoHash);
+handleRepoHash();
 
 /* ---------- directory ---------- */
 const slug = s => s.toLowerCase().replace(/[^a-z0-9]+/g, "-");

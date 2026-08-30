@@ -342,6 +342,9 @@
     gap:9px;
     align-items:flex-start;
   }
+  .cta-pair{ display:flex; flex-wrap:wrap; gap:10px; }
+  .cta.ask{ color:var(--accent); border-color:var(--llm-req-line); background:var(--llm-req-bg); }
+  .cta.ask:hover, .cta.ask:focus-visible{ border-color:var(--accent); }
   .cta{
     display:inline-flex;
     align-items:center;
@@ -561,9 +564,14 @@
         <p class="desc">A hive mind communication platform</p>
         <p class="analysis">Buzz is a unified developer workspace by Block (formerly Square) that merges chat, code review, CI/CD, and AI agents into a single Nostr-based relay. It eliminates tool fragmentation by making all events — commits, CI results, messages, and agent actions — cryptographically signed and searchable in one place. It trended because of Block's brand and its novel positioning of AI agents as first-class team members with their own keys and audit trails. Best suited for engineering teams wanting a self-hosted, transparent alternative to the Slack-plus-GitHub-plus-Linear stack with deep AI-agent integration.</p>
         <div class="cta-row">
-          <a class="cta" href="https://github.com/block/buzz" target="_blank" rel="noopener noreferrer">
-            View on GitHub <span class="arrow" aria-hidden="true">→</span>
-          </a>
+          <div class="cta-pair">
+            <a class="cta" href="https://github.com/block/buzz" target="_blank" rel="noopener noreferrer">
+              View on GitHub <span class="arrow" aria-hidden="true">→</span>
+            </a>
+            <a class="cta ask" href="https://claude.ai/new?q=Explain%20the%20GitHub%20repository%20block/buzz%20%E2%80%94%20what%20it%20actually%20does%2C%20how%20I%20would%20use%20it%2C%20and%20any%20gotchas%20%28cost%2C%20keys%2C%20hardware%29.%0A%0AContext%20from%20my%20GitHub-trending%20digest%20%28issue%202026-08-02%29%3A%20A%20hive%20mind%20communication%20platform%20Language%3A%20Rust.%20Topics%3A%20Productivity%20%26%20Research%2C%20AI%20Agents.%20Needs%20an%20LLM%20API%3A%20optional%20%28Workspace%20needs%20no%20LLM%3B%20agents%20join%20with%20their%20own%20models%29.%20Digest%20analysis%3A%20Buzz%20is%20a%20unified%20developer%20workspace%20by%20Block%20%28formerly%20Square%29%20that%20merges%20chat%2C%20code%20review%2C%20CI/CD%2C%20and%20AI%20agents%20into%20a%20single%20Nostr-based%20relay.%20It%20eliminates%20tool%20fragmentation%20by%20making%20all%20events%20%E2%80%94%20commits%2C%20CI%20results%2C%20messages%2C%20and%20agent%20actions%20%E2%80%94%20cryptographically%20signed%20and%20searchable%20in%20one%20place.%20It%20trended%20because%20of%20Block%27s%20brand%20and%20its%20novel%20positioning%20of%20AI%20agents%20as%20first-class%20team%20members%20with%20their%20own%20keys%20and%20audit%20trails.%20Best%20suited%20for%20engineering%20teams%20wanting%20a%20self-hosted%2C%20transparent%20alternative%20to%20the%20Slack-plus-GitHub-plus-Linear%20stack%20with%20deep%20AI-agent%20integration.%0A%0AFetch%20https%3A//github.com/block/buzz%20and%20its%20README%20for%20current%20details%20before%20answering." target="_blank" rel="noopener noreferrer">
+              <span class="arrow" aria-hidden="true">✦</span> Ask Claude about this repo
+            </a>
+          </div>
           <span class="handle">github.com/block/buzz</span>
         </div>
       </div>
@@ -599,9 +607,14 @@
         <p class="desc">Open-source book on AI Agent design principles and engineering practices, available in 13 languages.</p>
         <p class="analysis">This open-source book pairs 10 chapters of AI Agent theory with 95 runnable coding experiments, structured around the core formula 'Agent = LLM + Context + Tools.' It bridges the gap between raw LLM API usage and building production-grade agents that handle context management, tool systems, and multi-agent collaboration. Its strong weekly star gain likely reflects the global surge in agentic AI interest combined with multilingual availability across English, Chinese, Spanish, Japanese, Korean, and eight more. Ideal for engineers and researchers who want a structured, hands-on path from agent fundamentals through fine-tuning and multimodal deployment.</p>
         <div class="cta-row">
-          <a class="cta" href="https://github.com/bojieli/ai-agent-book" target="_blank" rel="noopener noreferrer">
-            View on GitHub <span class="arrow" aria-hidden="true">→</span>
-          </a>
+          <div class="cta-pair">
+            <a class="cta" href="https://github.com/bojieli/ai-agent-book" target="_blank" rel="noopener noreferrer">
+              View on GitHub <span class="arrow" aria-hidden="true">→</span>
+            </a>
+            <a class="cta ask" href="https://claude.ai/new?q=Explain%20the%20GitHub%20repository%20bojieli/ai-agent-book%20%E2%80%94%20what%20it%20actually%20does%2C%20how%20I%20would%20use%20it%2C%20and%20any%20gotchas%20%28cost%2C%20keys%2C%20hardware%29.%0A%0AContext%20from%20my%20GitHub-trending%20digest%20%28issue%202026-08-02%29%3A%20Open-source%20book%20on%20AI%20Agent%20design%20principles%20and%20engineering%20practices%2C%20available%20in%2013%20languages.%20Language%3A%20Python.%20Topics%3A%20Education%2C%20AI%20Agents.%20Needs%20an%20LLM%20API%3A%20optional%20%28Reading%20is%20free%3B%20hands-on%20labs%20call%20LLM%20APIs%20%28or%20Ollama%20where%20listed%29%29.%20Digest%20analysis%3A%20This%20open-source%20book%20pairs%2010%20chapters%20of%20AI%20Agent%20theory%20with%2095%20runnable%20coding%20experiments%2C%20structured%20around%20the%20core%20formula%20%27Agent%20%3D%20LLM%20%2B%20Context%20%2B%20Tools.%27%20It%20bridges%20the%20gap%20between%20raw%20LLM%20API%20usage%20and%20building%20production-grade%20agents%20that%20handle%20context%20management%2C%20tool%20systems%2C%20and%20multi-agent%20collaboration.%20Its%20strong%20weekly%20star%20gain%20likely%20reflects%20the%20global%20surge%20in%20agentic%20AI%20interest%20combined%20with%20multilingual%20availability%20across%20English%2C%20Chinese%2C%20Spanish%2C%20Japanese%2C%20Korean%2C%20and%20eight%20more.%20Ideal%20for%20engineers%20and%20researchers%20who%20want%20a%20structured%2C%20hands-on%20path%20from%20agent%20fundamentals%20through%20fine-tuning%20and%20multimodal%20deployment.%0A%0AFetch%20https%3A//github.com/bojieli/ai-agent-book%20and%20its%20README%20for%20current%20details%20before%20answering." target="_blank" rel="noopener noreferrer">
+              <span class="arrow" aria-hidden="true">✦</span> Ask Claude about this repo
+            </a>
+          </div>
           <span class="handle">github.com/bojieli/ai-agent-book</span>
         </div>
       </div>
@@ -637,9 +650,14 @@
         <p class="desc">A skill to stop your coding agent from burying the answer. ADHD-friendly output.</p>
         <p class="analysis">This Claude Code skill reconfigures agent output so the key answer surfaces immediately rather than being buried under paragraphs of preamble. It tackles a widely felt frustration: LLMs that explain everything before saying anything, making responses hard to scan under time pressure or cognitive load. It trended because the ADHD-friendly framing made the problem relatable and the fix shareable — a rare combination in developer tooling. Any developer using Claude Code who values dense, scannable responses over verbose narration will benefit immediately.</p>
         <div class="cta-row">
-          <a class="cta" href="https://github.com/ayghri/i-have-adhd" target="_blank" rel="noopener noreferrer">
-            View on GitHub <span class="arrow" aria-hidden="true">→</span>
-          </a>
+          <div class="cta-pair">
+            <a class="cta" href="https://github.com/ayghri/i-have-adhd" target="_blank" rel="noopener noreferrer">
+              View on GitHub <span class="arrow" aria-hidden="true">→</span>
+            </a>
+            <a class="cta ask" href="https://claude.ai/new?q=Explain%20the%20GitHub%20repository%20ayghri/i-have-adhd%20%E2%80%94%20what%20it%20actually%20does%2C%20how%20I%20would%20use%20it%2C%20and%20any%20gotchas%20%28cost%2C%20keys%2C%20hardware%29.%0A%0AContext%20from%20my%20GitHub-trending%20digest%20%28issue%202026-08-02%29%3A%20A%20skill%20to%20stop%20your%20coding%20agent%20from%20burying%20the%20answer.%20ADHD-friendly%20output.%20Language%3A%20Python.%20Topics%3A%20Agent%20Skills%20%26%20Plugins%2C%20Developer%20Tools.%20Needs%20an%20LLM%20API%3A%20required%20%28Claude%20Code%20plugin%29.%20Digest%20analysis%3A%20This%20Claude%20Code%20skill%20reconfigures%20agent%20output%20so%20the%20key%20answer%20surfaces%20immediately%20rather%20than%20being%20buried%20under%20paragraphs%20of%20preamble.%20It%20tackles%20a%20widely%20felt%20frustration%3A%20LLMs%20that%20explain%20everything%20before%20saying%20anything%2C%20making%20responses%20hard%20to%20scan%20under%20time%20pressure%20or%20cognitive%20load.%20It%20trended%20because%20the%20ADHD-friendly%20framing%20made%20the%20problem%20relatable%20and%20the%20fix%20shareable%20%E2%80%94%20a%20rare%20combination%20in%20developer%20tooling.%20Any%20developer%20using%20Claude%20Code%20who%20values%20dense%2C%20scannable%20responses%20over%20verbose%20narration%20will%20benefit%20immediately.%0A%0AFetch%20https%3A//github.com/ayghri/i-have-adhd%20and%20its%20README%20for%20current%20details%20before%20answering." target="_blank" rel="noopener noreferrer">
+              <span class="arrow" aria-hidden="true">✦</span> Ask Claude about this repo
+            </a>
+          </div>
           <span class="handle">github.com/ayghri/i-have-adhd</span>
         </div>
       </div>
@@ -675,9 +693,14 @@
         <p class="desc">Turn any technical book PDF into a Claude Code skill — ready to study, reference, and use while you work.</p>
         <p class="analysis">Book-to-Skill is a Python tool that ingests a technical PDF and outputs a Claude Code skill file, embedding the book's knowledge directly into the AI coding workflow without fine-tuning. It removes the context-switch between reading documentation and writing code by letting the agent answer questions from the book on demand. It trended on the growing wave of Claude Code skill adoption and the appeal of giving AI assistants domain-specific expertise for free. Best suited for developers who routinely work against technical references — language specs, design pattern books, or API guides — and want an AI pair-programmer that has actually 'read' them.</p>
         <div class="cta-row">
-          <a class="cta" href="https://github.com/virgiliojr94/book-to-skill" target="_blank" rel="noopener noreferrer">
-            View on GitHub <span class="arrow" aria-hidden="true">→</span>
-          </a>
+          <div class="cta-pair">
+            <a class="cta" href="https://github.com/virgiliojr94/book-to-skill" target="_blank" rel="noopener noreferrer">
+              View on GitHub <span class="arrow" aria-hidden="true">→</span>
+            </a>
+            <a class="cta ask" href="https://claude.ai/new?q=Explain%20the%20GitHub%20repository%20virgiliojr94/book-to-skill%20%E2%80%94%20what%20it%20actually%20does%2C%20how%20I%20would%20use%20it%2C%20and%20any%20gotchas%20%28cost%2C%20keys%2C%20hardware%29.%0A%0AContext%20from%20my%20GitHub-trending%20digest%20%28issue%202026-08-02%29%3A%20Turn%20any%20technical%20book%20PDF%20into%20a%20Claude%20Code%20skill%20%E2%80%94%20ready%20to%20study%2C%20reference%2C%20and%20use%20while%20you%20work.%20Language%3A%20Python.%20Topics%3A%20Agent%20Skills%20%26%20Plugins%2C%20Education%2C%20Documents%20%26%20Data.%20Needs%20an%20LLM%20API%3A%20required%20%28Runs%20inside%20Claude%20Code%20/%20Copilot%20CLI%20/%20Amp%29.%20Digest%20analysis%3A%20Book-to-Skill%20is%20a%20Python%20tool%20that%20ingests%20a%20technical%20PDF%20and%20outputs%20a%20Claude%20Code%20skill%20file%2C%20embedding%20the%20book%27s%20knowledge%20directly%20into%20the%20AI%20coding%20workflow%20without%20fine-tuning.%20It%20removes%20the%20context-switch%20between%20reading%20documentation%20and%20writing%20code%20by%20letting%20the%20agent%20answer%20questions%20from%20the%20book%20on%20demand.%20It%20trended%20on%20the%20growing%20wave%20of%20Claude%20Code%20skill%20adoption%20and%20the%20appeal%20of%20giving%20AI%20assistants%20domain-specific%20expertise%20for%20free.%20Best%20suited%20for%20developers%20who%20routinely%20work%20against%20technical%20references%20%E2%80%94%20language%20specs%2C%20design%20pattern%20books%2C%20or%20API%20guides%20%E2%80%94%20and%20want%20an%20AI%20pair-programmer%20that%20has%20actually%20%27read%27%20them.%0A%0AFetch%20https%3A//github.com/virgiliojr94/book-to-skill%20and%20its%20README%20for%20current%20details%20before%20answering." target="_blank" rel="noopener noreferrer">
+              <span class="arrow" aria-hidden="true">✦</span> Ask Claude about this repo
+            </a>
+          </div>
           <span class="handle">github.com/virgiliojr94/book-to-skill</span>
         </div>
       </div>
@@ -713,9 +736,14 @@
         <p class="desc">12 Weeks, 24 Lessons, AI for All!</p>
         <p class="analysis">Microsoft's AI for Beginners is a free 12-week, 24-lesson open curriculum covering neural networks, NLP, computer vision, and modern LLMs using TensorFlow and PyTorch. It provides a structured, university-style path into AI/ML with hands-on Jupyter notebooks at every step, requiring only basic programming knowledge to start. Trending on organic interest, it resurfaces periodically as students and career-changers discover it at the start of new learning cycles. Ideal for anyone who wants a rigorous, self-paced AI foundation without paying for a course.</p>
         <div class="cta-row">
-          <a class="cta" href="https://github.com/microsoft/AI-For-Beginners" target="_blank" rel="noopener noreferrer">
-            View on GitHub <span class="arrow" aria-hidden="true">→</span>
-          </a>
+          <div class="cta-pair">
+            <a class="cta" href="https://github.com/microsoft/AI-For-Beginners" target="_blank" rel="noopener noreferrer">
+              View on GitHub <span class="arrow" aria-hidden="true">→</span>
+            </a>
+            <a class="cta ask" href="https://claude.ai/new?q=Explain%20the%20GitHub%20repository%20microsoft/AI-For-Beginners%20%E2%80%94%20what%20it%20actually%20does%2C%20how%20I%20would%20use%20it%2C%20and%20any%20gotchas%20%28cost%2C%20keys%2C%20hardware%29.%0A%0AContext%20from%20my%20GitHub-trending%20digest%20%28issue%202026-08-02%29%3A%2012%20Weeks%2C%2024%20Lessons%2C%20AI%20for%20All%21%20Language%3A%20Jupyter%20Notebook.%20Topics%3A%20Education.%20Needs%20an%20LLM%20API%3A%20optional%20%28Curriculum%20runs%20locally%3B%20a%20few%20lessons%20use%20Azure%20AI%20services%29.%20Digest%20analysis%3A%20Microsoft%27s%20AI%20for%20Beginners%20is%20a%20free%2012-week%2C%2024-lesson%20open%20curriculum%20covering%20neural%20networks%2C%20NLP%2C%20computer%20vision%2C%20and%20modern%20LLMs%20using%20TensorFlow%20and%20PyTorch.%20It%20provides%20a%20structured%2C%20university-style%20path%20into%20AI/ML%20with%20hands-on%20Jupyter%20notebooks%20at%20every%20step%2C%20requiring%20only%20basic%20programming%20knowledge%20to%20start.%20Trending%20on%20organic%20interest%2C%20it%20resurfaces%20periodically%20as%20students%20and%20career-changers%20discover%20it%20at%20the%20start%20of%20new%20learning%20cycles.%20Ideal%20for%20anyone%20who%20wants%20a%20rigorous%2C%20self-paced%20AI%20foundation%20without%20paying%20for%20a%20course.%0A%0AFetch%20https%3A//github.com/microsoft/AI-For-Beginners%20and%20its%20README%20for%20current%20details%20before%20answering." target="_blank" rel="noopener noreferrer">
+              <span class="arrow" aria-hidden="true">✦</span> Ask Claude about this repo
+            </a>
+          </div>
           <span class="handle">github.com/microsoft/AI-For-Beginners</span>
         </div>
       </div>
