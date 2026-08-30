@@ -153,6 +153,34 @@ def pretty_date(iso):
         return iso
 
 
+def pager_html(date):
+    """Previous/next issue pager, computed from every JSON in digests/."""
+    dates = sorted(p.stem for p in DIGESTS.glob("*.json"))
+    try:
+        i = dates.index(date)
+    except ValueError:
+        return ""
+    prev_d = dates[i - 1] if i > 0 else None
+    next_d = dates[i + 1] if i + 1 < len(dates) else None
+
+    def side(d, cls, label):
+        if not d:
+            return "<span></span>"
+        return (
+            f'<a class="pnav {cls}" href="{d}.html">'
+            f'<span class="plbl">{label}</span>'
+            f'<span class="pdate">{esc(pretty_date(d))}</span></a>'
+        )
+
+    return (
+        '<nav class="pager" aria-label="Issue navigation">\n'
+        f'    {side(prev_d, "prev", "← Previous issue")}\n'
+        '    <a class="pnav allissues" href="../index.html">All issues</a>\n'
+        f'    {side(next_d, "next", "Next issue →")}\n'
+        "  </nav>"
+    )
+
+
 def build_one(json_path):
     data = json.loads(pathlib.Path(json_path).read_text())
     date = data["date"]
@@ -170,6 +198,7 @@ def build_one(json_path):
         .replace("{{ISSUE_LABEL}}", esc(issue_label))
         .replace("{{GENERATED_DATE}}", esc(pretty_date(date)))
         .replace("{{ENTRIES}}", entries)
+        .replace("{{PAGER}}", pager_html(date))
     )
 
     out_path = DIGESTS / f"{date}.html"
