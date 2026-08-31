@@ -1,0 +1,74 @@
+{
+  "date": "2026-08-31",
+  "title": "GitHub Trending Top 5",
+  "repos": [
+    {
+      "rank": 1,
+      "owner": "THU-MAIC",
+      "repo": "OpenMAIC",
+      "url": "https://github.com/THU-MAIC/OpenMAIC",
+      "language": "TypeScript",
+      "stars": 26826,
+      "gained_today": 2819,
+      "description": "Open Multi-Agent Interactive Classroom — Get an immersive, multi-agent learning experience in just one click",
+      "analysis": "OpenMAIC transforms any topic or document into a fully interactive classroom run by multiple AI agents, generating slides, quizzes, simulations, and project-based activities on the fly. It trended today on the strength of its unusually broad LLM provider support—OpenAI, Anthropic, Gemini, DeepSeek, and local Ollama—combined with the accelerating demand for AI-native education beyond simple chatbots. Educators, instructors, and self-learners who want to create rich, narrated courses from existing material in minutes will benefit most. The built-in agent workbench, whiteboard collaboration, and multi-locale support make it a complete teaching platform, not just a slide generator.",
+      "llm_api": "required",
+      "llm_api_note": "BYO key (OpenAI/Anthropic/Gemini/DeepSeek/etc.); local Ollama supported",
+      "topics": ["AI Agents", "Education"]
+    },
+    {
+      "rank": 2,
+      "owner": "tt-a1i",
+      "repo": "archify",
+      "url": "https://github.com/tt-a1i/archify",
+      "language": "JavaScript",
+      "stars": 38443,
+      "gained_today": 3993,
+      "description": "Agent skill for beautiful, verifiable architecture, workflow, sequence, data-flow, and lifecycle diagrams—self-contained HTML",
+      "analysis": "Archify is an agent skill that lets AI coding assistants compile typed JSON descriptions into animated, self-contained HTML diagrams covering architecture, workflows, sequences, and data flows—no external rendering service required. It trended as one of the clearest demonstrations yet that agent skills can produce trusted design artifacts, not just code patches; the emphasis on a typed JSON intermediate representation gives diagrams a verifiable paper trail. Software architects and developers using Claude Code, Cursor, Codex, or opencode who need PR-ready, shareable system diagrams without leaving their editor get immediate value. Built-in export and animation polish it past quick sketches into presentation-quality documentation.",
+      "llm_api": "required",
+      "llm_api_note": "Agent skill — pair with Claude Code, Cursor, Codex, or any skills-compatible agent",
+      "topics": ["Agent Skills & Plugins", "Design"]
+    },
+    {
+      "rank": 3,
+      "owner": "K-Dense-AI",
+      "repo": "scientific-agent-skills",
+      "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+      "language": "Python",
+      "stars": 40668,
+      "gained_today": 1968,
+      "description": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 190,000+ scientists worldwide.",
+      "analysis": "Scientific Agent Skills is a library of 163 plug-and-play research skills—spanning genomics, drug discovery, clinical trials, cheminformatics, and machine learning—that attach directly to AI coding agents and provide unified access to 100+ scientific databases including PubChem, UniProt, and ClinVar. It likely trended from continued word-of-mouth in the biotech and AI-research communities as the maturing agent-skills ecosystem matures and scientists look for curated toolkits that bypass months of API integration work. Bioinformaticians, computational chemists, and data scientists who already use Claude Code, Cursor, or Codex in their workflows can now invoke multi-step scientific experiments as natural-language commands. Individual database queries work without external credentials; integrations with commercial platforms like Benchling may require API keys.",
+      "llm_api": "required",
+      "llm_api_note": "Agent skill library — pair with Claude Code, Cursor, Codex; some DB skills need own API keys",
+      "topics": ["Agent Skills & Plugins", "Science & ML"]
+    },
+    {
+      "rank": 4,
+      "owner": "k1tbyte",
+      "repo": "Wand-Enhancer",
+      "url": "https://github.com/k1tbyte/Wand-Enhancer",
+      "language": "C#",
+      "stars": 23333,
+      "gained_today": 511,
+      "description": "Advanced UX and interoperability extension for Wand (WeMod) app",
+      "analysis": "Wand-Enhancer is a local, client-side patcher for the Wand (WeMod) gaming platform that adds advanced theme customization, layout control, custom JavaScript injection, and a remote web panel—all without touching external servers. It trended because the WeMod community has long wanted open, self-buildable customization tools to replace closed or potentially unsafe third-party tweaks; users build the executable from source to guarantee no malware is bundled. Gamers and power users on Windows who want granular control over the WeMod client and are comfortable with a .NET build step are the primary audience. No LLM is involved—it is purely a local UI extension.",
+      "llm_api": "none",
+      "topics": ["Developer Tools", "Systems & Libraries"]
+    },
+    {
+      "rank": 5,
+      "owner": "majd",
+      "repo": "ipatool",
+      "url": "https://github.com/majd/ipatool",
+      "language": "Go",
+      "stars": 10508,
+      "gained_today": 376,
+      "description": "Command-line tool that allows searching and downloading app packages for iOS, iPadOS, tvOS, and visionOS from the App Store.",
+      "analysis": "ipatool is a Go command-line utility for authenticating with an Apple ID, searching the App Store, and downloading IPA packages for iOS, iPadOS, tvOS, and visionOS entirely from the terminal. It is trending on organic interest from iOS developers, security researchers, and QA engineers who need reproducible, scriptable access to specific app versions for testing, archiving, or reverse-engineering workflows. It fits naturally into CI pipelines, automated version-pinning scripts, and any environment where GUI access to Xcode or the App Store is impractical. Only a valid Apple ID is required—no LLM, no paid API keys.",
+      "llm_api": "none",
+      "topics": ["Developer Tools", "Systems & Libraries"]
+    }
+  ]
+}
