@@ -1,0 +1,74 @@
+{
+  "date": "2026-09-01",
+  "title": "GitHub Trending Top 5",
+  "repos": [
+    {
+      "rank": 1,
+      "owner": "Gitlawb",
+      "repo": "openclaude",
+      "url": "https://github.com/Gitlawb/openclaude",
+      "language": "TypeScript",
+      "stars": 31228,
+      "gained_today": 37,
+      "description": "runs anywhere. uses anything",
+      "analysis": "OpenClaude is an open-source coding-agent CLI that unifies cloud APIs (OpenAI, Gemini, Anthropic) and local backends (Ollama) behind a single terminal interface, eliminating the need for per-provider tooling. It solves the fragmentation problem that emerges when developers juggle multiple AI assistants across different workflows. Trending on organic interest as the open-source Claude Code alternative market continues to expand. Ideal for developers who want a vendor-agnostic AI coding agent that works with any model without lock-in.",
+      "llm_api": "optional",
+      "llm_api_note": "BYO key (OpenAI/Gemini/Anthropic/…); local Ollama path requires no key",
+      "topics": ["Developer Tools", "LLM Infrastructure"]
+    },
+    {
+      "rank": 2,
+      "owner": "Imbad0202",
+      "repo": "academic-research-skills",
+      "url": "https://github.com/Imbad0202/academic-research-skills",
+      "language": "Python",
+      "stars": 44834,
+      "gained_today": 161,
+      "description": "Academic Research Skills for Claude Code: research → write → review → revise → finalize",
+      "analysis": "Academic Research Skills is a multi-agent suite for the full academic paper lifecycle, orchestrating up to 13 Claude Code agents across research, writing, peer review, and publication stages. It tackles the most painful AI research failure mode—citation hallucinations—through deterministic verification gates and claim-source auditing, keeping the AI firmly in the copilot seat. Trending on organic interest from researchers wanting rigorous AI assistance without sacrificing academic integrity. Best suited for doctoral students and academics who already use Claude Code and want an AI copilot that checks its own citations.",
+      "llm_api": "required",
+      "llm_api_note": "Requires ANTHROPIC_API_KEY; runs entirely through Claude Code",
+      "topics": ["Agent Skills & Plugins", "Productivity & Research"]
+    },
+    {
+      "rank": 3,
+      "owner": "THU-MAIC",
+      "repo": "OpenMAIC",
+      "url": "https://github.com/THU-MAIC/OpenMAIC",
+      "language": "TypeScript",
+      "stars": 29384,
+      "gained_today": 3122,
+      "description": "Open Multi-Agent Interactive Classroom — Get an immersive, multi-agent learning experience in just one click",
+      "analysis": "OpenMAIC turns any topic or document into an immersive classroom experience—complete with AI teachers, quizzes, simulations, and project-based activities—by orchestrating multiple specialized agents in one click. It is fully provider-neutral, supporting OpenAI, Anthropic, Gemini, and local Ollama backends. Today's massive spike strongly suggests a public launch or viral demo, likely from the Tsinghua University research group behind it. A natural fit for educators, corporate trainers, and self-learners who want to convert raw content into rich, structured courses without manual lesson planning.",
+      "llm_api": "optional",
+      "llm_api_note": "BYO LLM key (OpenAI/Anthropic/Gemini/…); local Ollama path available",
+      "topics": ["AI Agents", "Education"]
+    },
+    {
+      "rank": 4,
+      "owner": "iv-org",
+      "repo": "invidious",
+      "url": "https://github.com/iv-org/invidious",
+      "language": "Crystal",
+      "stars": 23745,
+      "gained_today": 583,
+      "description": "Invidious is an alternative front-end to YouTube",
+      "analysis": "Invidious is a self-hosted alternative YouTube frontend written in Crystal that strips tracking, ads, and behavioral surveillance while delivering the same video content through YouTube's own data. Users can watch and search YouTube via a public instance or their own server without feeding watch history to Google. Today's surge likely reflects renewed privacy sentiment or a YouTube policy change that drove users toward degoogled alternatives. Perfect for privacy-conscious individuals, self-hosters, and anyone building a media stack outside Big Tech platforms.",
+      "llm_api": "none",
+      "topics": ["Security & Privacy", "Video & Media"]
+    },
+    {
+      "rank": 5,
+      "owner": "jingyaogong",
+      "repo": "minimind",
+      "url": "https://github.com/jingyaogong/minimind",
+      "language": "Python",
+      "stars": 57001,
+      "gained_today": 1005,
+      "description": "Train a 64M-parameter LLM from scratch in just 2h!",
+      "analysis": "MiniMind walks through every stage of LLM training—tokenization, pre-training, instruction fine-tuning, and RLHF alignment—for a 64M-parameter model that runs to completion in about two hours on consumer hardware. It demystifies transformer internals without requiring cloud credits or research-scale clusters, making it a practical curriculum for learning by doing. Likely spiked on organic interest as students and ML practitioners seek affordable, end-to-end LLM training experience. Ideal for ML students, engineers new to LLM internals, and educators who want a complete, reproducible training walkthrough.",
+      "llm_api": "none",
+      "topics": ["Science & ML", "LLM Infrastructure"]
+    }
+  ]
+}
