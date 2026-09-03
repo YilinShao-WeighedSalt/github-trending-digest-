@@ -1,0 +1,75 @@
+{
+  "date": "2026-09-03",
+  "title": "GitHub Trending Top 5",
+  "repos": [
+    {
+      "rank": 1,
+      "owner": "fmtlib",
+      "repo": "fmt",
+      "url": "https://github.com/fmtlib/fmt",
+      "language": "C++",
+      "stars": 25032,
+      "gained_today": 955,
+      "description": "A modern formatting library",
+      "analysis": "fmt is the gold-standard C++ formatting library that brings Python-style string.format() ergonomics to C++, with an API that became the blueprint for std::format in C++20. It's dramatically faster and safer than printf while being more ergonomic than iostreams. Trending on organic interest as C++ developers continue migrating legacy printf codebases and fmt remains the de-facto choice for those not yet on a C++20-capable compiler. Any C or C++ shop doing systems, embedded, game, or infrastructure work will find it indispensable.",
+      "llm_api": "none",
+      "topics": ["Systems & Libraries", "Developer Tools"]
+    },
+    {
+      "rank": 2,
+      "owner": "mattpocock",
+      "repo": "skills",
+      "url": "https://github.com/mattpocock/skills",
+      "language": "Shell",
+      "stars": 247220,
+      "gained_today": 1576,
+      "description": "Skills for Real Engineers. Straight from my .agents directory.",
+      "analysis": "This is Matt Pocock's (Total TypeScript) personal agent-skills directory turned public — a curated set of slash-command workflows covering requirement clarification (/grill-me), test-driven loops (/tdd), code review (/code-review), and architecture improvement. It solves the four recurring failure modes of AI coding agents: misalignment, verbosity, buggy output, and architectural drift. Trending as Claude Code's plugin ecosystem matures and a trusted name in the TypeScript community releasing their actual daily workflow is a strong social signal. Any engineer pairing with an AI coding agent (Claude Code, Codex, Cursor) can drop these skills in directly.",
+      "llm_api": "required",
+      "llm_api_note": "Skills for Claude Code / Codex / Cursor; requires an active coding-agent subscription",
+      "topics": ["Agent Skills & Plugins", "AI Agents"]
+    },
+    {
+      "rank": 3,
+      "owner": "NousResearch",
+      "repo": "hermes-agent",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "language": "Python",
+      "stars": 240795,
+      "gained_today": 778,
+      "description": "The agent that grows with you",
+      "analysis": "Hermes Agent is Nous Research's autonomous agent framework featuring a closed learning loop — the agent creates and refines its own skills from experience, maintains persistent cross-session memory, and builds a user profile over time. It eliminates vendor lock-in by supporting any LLM provider (Nous Portal, OpenRouter, OpenAI, Anthropic, or custom endpoints) and runs everywhere from a $5 VPS to serverless GPU clusters. Trending as the agentic AI wave continues and Nous Research's open-source credibility draws the local-model community. Ideal for AI researchers generating training trajectories and developers wanting always-on background automations beyond what a laptop-bound agent can sustain.",
+      "llm_api": "required",
+      "llm_api_note": "BYO provider (Nous Portal/OpenRouter/OpenAI/Anthropic); self-hosted LLMs fully supported",
+      "topics": ["AI Agents", "LLM Infrastructure"]
+    },
+    {
+      "rank": 4,
+      "owner": "DietrichGebert",
+      "repo": "ponytail",
+      "url": "https://github.com/DietrichGebert/ponytail",
+      "language": "JavaScript",
+      "stars": 123303,
+      "gained_today": 2138,
+      "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+      "analysis": "Ponytail is a prompt-engineering skill layer that forces AI coding agents through a seven-rung 'laziness ladder' before writing a single line of code: Does it need to exist? Is it already in the codebase? Can the standard library handle it? Only on exhausting every alternative does the agent write new code. On real tasks it reduced generated code by ~54%, cut execution costs by ~20%, and lowered task time by ~27%. Trending on the highest daily gain in the list — the quantified results and sharp tagline resonate with developers burned by bloated AI output. Works with Claude Code, Codex, GitHub Copilot CLI, and 15+ other agent platforms via Node.js plugin hooks; no new API key required.",
+      "llm_api": "optional",
+      "llm_api_note": "Prompt layer over any existing coding agent; no additional API key needed",
+      "topics": ["Agent Skills & Plugins", "Developer Tools"]
+    },
+    {
+      "rank": 5,
+      "owner": "anthropics",
+      "repo": "skills",
+      "url": "https://github.com/anthropics/skills",
+      "language": "Python",
+      "stars": 173607,
+      "gained_today": 277,
+      "description": "Public repository for Agent Skills",
+      "analysis": "Anthropic's official public skills library ships example SKILL.md-based workflows across creative, technical, document-processing, and enterprise categories — covering everything from PDF/DOCX manipulation to MCP server generation and brand-voice communications. It is the canonical reference implementation for anyone building Claude skills, and the source-available examples show exactly how to structure instructions so Claude loads them dynamically via the plugin marketplace. Trending as Claude Code's skill ecosystem grows and this repo becomes the first stop for teams wanting to extend Claude with domain-specific knowledge. Useful to enterprise teams building standardized workflows, developers targeting the Claude API Skills endpoint, and Claude Code users installing from the plugin marketplace.",
+      "llm_api": "required",
+      "llm_api_note": "Claude Code (free tier), claude.ai paid plans, or Claude API with Skills endpoint",
+      "topics": ["Agent Skills & Plugins", "AI Agents"]
+    }
+  ]
+}
