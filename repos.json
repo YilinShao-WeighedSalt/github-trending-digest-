@@ -23,7 +23,8 @@
     "2026-08-29",
     "2026-08-31",
     "2026-09-01",
-    "2026-09-03"
+    "2026-09-03",
+    "2026-09-05"
   ],
   "repos": [
     {
@@ -1808,22 +1809,28 @@
           "rank": 2,
           "stars": 247220,
           "gained": 1576
+        },
+        {
+          "date": "2026-09-05",
+          "rank": 1,
+          "stars": 252444,
+          "gained": 2666
         }
       ],
       "language": "Shell",
       "lang_color": "#89e051",
       "description": "Skills for Real Engineers. Straight from my .agents directory.",
-      "analysis": "This is Matt Pocock's (Total TypeScript) personal agent-skills directory turned public — a curated set of slash-command workflows covering requirement clarification (/grill-me), test-driven loops (/tdd), code review (/code-review), and architecture improvement. It solves the four recurring failure modes of AI coding agents: misalignment, verbosity, buggy output, and architectural drift. Trending as Claude Code's plugin ecosystem matures and a trusted name in the TypeScript community releasing their actual daily workflow is a strong social signal. Any engineer pairing with an AI coding agent (Claude Code, Codex, Cursor) can drop these skills in directly.",
+      "analysis": "A curated collection of composable, real-world agent skills for AI coding assistants like Claude Code and GitHub Codex, drawn directly from the author's production workflows. The skills address four common failure modes: intent misalignment, agent verbosity, code-quality drift, and architectural degradation. It trended today as AI-assisted coding hit mainstream adoption and engineers sought opinionated, battle-tested skill packs over blank-slate prompting. Any developer using Claude Code, Cursor, or Codex who wants structured, reusable guidance rather than ad-hoc prompts will find this immediately useful.",
       "llm_api": "required",
-      "llm_api_note": "Skills for Claude Code / Codex / Cursor; requires an active coding-agent subscription",
+      "llm_api_note": "Requires an LLM coding agent (Claude Code, Codex, etc.) to run the skills",
       "topics": [
         "Agent Skills & Plugins",
-        "AI Agents"
+        "Developer Tools"
       ],
       "first_seen": "2026-08-21",
-      "last_seen": "2026-09-03",
+      "last_seen": "2026-09-05",
       "best_rank": 1,
-      "latest_stars": 247220,
+      "latest_stars": 252444,
       "max_gained": 3368
     },
     {
@@ -2520,21 +2527,27 @@
           "rank": 1,
           "stars": 25032,
           "gained": 955
+        },
+        {
+          "date": "2026-09-05",
+          "rank": 5,
+          "stars": 25562,
+          "gained": 133
         }
       ],
       "language": "C++",
       "lang_color": "#f34b7d",
-      "description": "A modern formatting library",
-      "analysis": "fmt is the gold-standard C++ formatting library that brings Python-style string.format() ergonomics to C++, with an API that became the blueprint for std::format in C++20. It's dramatically faster and safer than printf while being more ergonomic than iostreams. Trending on organic interest as C++ developers continue migrating legacy printf codebases and fmt remains the de-facto choice for those not yet on a C++20-capable compiler. Any C or C++ shop doing systems, embedded, game, or infrastructure work will find it indispensable.",
+      "description": "A modern formatting library for C++.",
+      "analysis": "fmt is the de-facto modern formatting library for C++, providing a fast and safe alternative to printf and iostreams and serving as the upstream reference implementation for C++20 std::format and C++23 std::print. It offers positional arguments for localization, fast floating-point formatting, Unicode support, and easy extensibility for user-defined types. Trending on organic interest as C++20/23 adoption accelerates and teams migrating older codebases discover fmt as the fastest path to standards-compliant formatting. Any C++ developer—from embedded systems to game engines—who wants safer, faster, and more expressive string formatting will reach for this library.",
       "llm_api": "none",
       "topics": [
         "Systems & Libraries",
         "Developer Tools"
       ],
       "first_seen": "2026-09-03",
-      "last_seen": "2026-09-03",
+      "last_seen": "2026-09-05",
       "best_rank": 1,
-      "latest_stars": 25032,
+      "latest_stars": 25562,
       "max_gained": 955
     },
     {
@@ -2547,22 +2560,28 @@
           "rank": 3,
           "stars": 240795,
           "gained": 778
+        },
+        {
+          "date": "2026-09-05",
+          "rank": 4,
+          "stars": 241965,
+          "gained": 573
         }
       ],
       "language": "Python",
       "lang_color": "#3572A5",
-      "description": "The agent that grows with you",
-      "analysis": "Hermes Agent is Nous Research's autonomous agent framework featuring a closed learning loop — the agent creates and refines its own skills from experience, maintains persistent cross-session memory, and builds a user profile over time. It eliminates vendor lock-in by supporting any LLM provider (Nous Portal, OpenRouter, OpenAI, Anthropic, or custom endpoints) and runs everywhere from a $5 VPS to serverless GPU clusters. Trending as the agentic AI wave continues and Nous Research's open-source credibility draws the local-model community. Ideal for AI researchers generating training trajectories and developers wanting always-on background automations beyond what a laptop-bound agent can sustain.",
+      "description": "The self-improving AI agent built by Nous Research with a built-in learning loop.",
+      "analysis": "Hermes Agent is a self-improving conversational AI from Nous Research that creates skills from experience, refines them during use, searches past conversations, and builds a persistent model of each user across sessions. It runs on Telegram, Discord, Slack, WhatsApp, Signal, and local CLI, and supports multiple LLM providers including local models. The Nous Research brand and the self-improvement angle—rare among deployed agents—drove today's interest. Data scientists, researchers, and power users who want a portable, multi-platform assistant that genuinely learns their preferences over time are the primary audience.",
       "llm_api": "required",
-      "llm_api_note": "BYO provider (Nous Portal/OpenRouter/OpenAI/Anthropic); self-hosted LLMs fully supported",
+      "llm_api_note": "Needs an LLM backend; local models (Ollama, etc.) supported",
       "topics": [
         "AI Agents",
-        "LLM Infrastructure"
+        "RAG & Memory"
       ],
       "first_seen": "2026-09-03",
-      "last_seen": "2026-09-03",
+      "last_seen": "2026-09-05",
       "best_rank": 3,
-      "latest_stars": 240795,
+      "latest_stars": 241965,
       "max_gained": 778
     },
     {
@@ -2575,23 +2594,57 @@
           "rank": 4,
           "stars": 123303,
           "gained": 2138
+        },
+        {
+          "date": "2026-09-05",
+          "rank": 2,
+          "stars": 127834,
+          "gained": 2813
         }
       ],
       "language": "JavaScript",
       "lang_color": "#f1e05a",
       "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
-      "analysis": "Ponytail is a prompt-engineering skill layer that forces AI coding agents through a seven-rung 'laziness ladder' before writing a single line of code: Does it need to exist? Is it already in the codebase? Can the standard library handle it? Only on exhausting every alternative does the agent write new code. On real tasks it reduced generated code by ~54%, cut execution costs by ~20%, and lowered task time by ~27%. Trending on the highest daily gain in the list — the quantified results and sharp tagline resonate with developers burned by bloated AI output. Works with Claude Code, Codex, GitHub Copilot CLI, and 15+ other agent platforms via Node.js plugin hooks; no new API key required.",
-      "llm_api": "optional",
-      "llm_api_note": "Prompt layer over any existing coding agent; no additional API key needed",
+      "analysis": "Ponytail injects a minimalist decision ladder into AI coding agents, pushing them to eliminate unnecessary code before writing any—prioritizing YAGNI, stdlib reuse, and one-liners over new implementations. The project reports 54% less generated code and 27% faster execution while keeping safety and accessibility intact. It trended because bloated AI-generated code has become a real pain point in production, and the 'laziest senior dev' framing resonated virally. Supports 20+ platforms including Claude Code, Cursor, and Windsurf via native plugin systems.",
+      "llm_api": "required",
+      "llm_api_note": "Plugin for AI coding agents; needs one of the 20+ supported platforms",
       "topics": [
-        "Agent Skills & Plugins",
+        "AI Agents",
         "Developer Tools"
       ],
       "first_seen": "2026-09-03",
-      "last_seen": "2026-09-03",
-      "best_rank": 4,
-      "latest_stars": 123303,
-      "max_gained": 2138
+      "last_seen": "2026-09-05",
+      "best_rank": 2,
+      "latest_stars": 127834,
+      "max_gained": 2813
+    },
+    {
+      "owner": "affaan-m",
+      "repo": "ECC",
+      "url": "https://github.com/affaan-m/ECC",
+      "appearances": [
+        {
+          "date": "2026-09-05",
+          "rank": 3,
+          "stars": 249782,
+          "gained": 1325
+        }
+      ],
+      "language": "JavaScript",
+      "lang_color": "#f1e05a",
+      "description": "Agent harness optimization system with skills, memory, and security features for Claude Code and similar platforms.",
+      "analysis": "ECC (Enhanced Coding Companion) is a comprehensive agent harness providing 68 specialized sub-agents, 286 reusable skills, 94 commands, persistent memory, and built-in security scanning across Claude Code, Codex, Opencode, and Cursor. Its plan→test→implement→review→verify→remember loop turns AI coding sessions into structured, auditable workflows rather than open-ended conversations. The project trended as teams began treating AI coding agents as first-class engineering infrastructure requiring the same rigor as CI/CD pipelines. Development leads and power users who want disciplined, context-efficient AI pair-programming will benefit most.",
+      "llm_api": "required",
+      "llm_api_note": "Requires Claude Code, Codex, Cursor, or compatible coding agent",
+      "topics": [
+        "AI Agents",
+        "Agent Skills & Plugins"
+      ],
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-05",
+      "best_rank": 3,
+      "latest_stars": 249782,
+      "max_gained": 1325
     }
   ]
 }

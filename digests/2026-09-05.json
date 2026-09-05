@@ -1,0 +1,75 @@
+{
+  "date": "2026-09-05",
+  "title": "GitHub Trending Top 5",
+  "repos": [
+    {
+      "rank": 1,
+      "owner": "mattpocock",
+      "repo": "skills",
+      "url": "https://github.com/mattpocock/skills",
+      "language": "Shell",
+      "stars": 252444,
+      "gained_today": 2666,
+      "description": "Skills for Real Engineers. Straight from my .agents directory.",
+      "analysis": "A curated collection of composable, real-world agent skills for AI coding assistants like Claude Code and GitHub Codex, drawn directly from the author's production workflows. The skills address four common failure modes: intent misalignment, agent verbosity, code-quality drift, and architectural degradation. It trended today as AI-assisted coding hit mainstream adoption and engineers sought opinionated, battle-tested skill packs over blank-slate prompting. Any developer using Claude Code, Cursor, or Codex who wants structured, reusable guidance rather than ad-hoc prompts will find this immediately useful.",
+      "llm_api": "required",
+      "llm_api_note": "Requires an LLM coding agent (Claude Code, Codex, etc.) to run the skills",
+      "topics": ["Agent Skills & Plugins", "Developer Tools"]
+    },
+    {
+      "rank": 2,
+      "owner": "DietrichGebert",
+      "repo": "ponytail",
+      "url": "https://github.com/DietrichGebert/ponytail",
+      "language": "JavaScript",
+      "stars": 127834,
+      "gained_today": 2813,
+      "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+      "analysis": "Ponytail injects a minimalist decision ladder into AI coding agents, pushing them to eliminate unnecessary code before writing any—prioritizing YAGNI, stdlib reuse, and one-liners over new implementations. The project reports 54% less generated code and 27% faster execution while keeping safety and accessibility intact. It trended because bloated AI-generated code has become a real pain point in production, and the 'laziest senior dev' framing resonated virally. Supports 20+ platforms including Claude Code, Cursor, and Windsurf via native plugin systems.",
+      "llm_api": "required",
+      "llm_api_note": "Plugin for AI coding agents; needs one of the 20+ supported platforms",
+      "topics": ["AI Agents", "Developer Tools"]
+    },
+    {
+      "rank": 3,
+      "owner": "affaan-m",
+      "repo": "ECC",
+      "url": "https://github.com/affaan-m/ECC",
+      "language": "JavaScript",
+      "stars": 249782,
+      "gained_today": 1325,
+      "description": "Agent harness optimization system with skills, memory, and security features for Claude Code and similar platforms.",
+      "analysis": "ECC (Enhanced Coding Companion) is a comprehensive agent harness providing 68 specialized sub-agents, 286 reusable skills, 94 commands, persistent memory, and built-in security scanning across Claude Code, Codex, Opencode, and Cursor. Its plan→test→implement→review→verify→remember loop turns AI coding sessions into structured, auditable workflows rather than open-ended conversations. The project trended as teams began treating AI coding agents as first-class engineering infrastructure requiring the same rigor as CI/CD pipelines. Development leads and power users who want disciplined, context-efficient AI pair-programming will benefit most.",
+      "llm_api": "required",
+      "llm_api_note": "Requires Claude Code, Codex, Cursor, or compatible coding agent",
+      "topics": ["AI Agents", "Agent Skills & Plugins"]
+    },
+    {
+      "rank": 4,
+      "owner": "NousResearch",
+      "repo": "hermes-agent",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "language": "Python",
+      "stars": 241965,
+      "gained_today": 573,
+      "description": "The self-improving AI agent built by Nous Research with a built-in learning loop.",
+      "analysis": "Hermes Agent is a self-improving conversational AI from Nous Research that creates skills from experience, refines them during use, searches past conversations, and builds a persistent model of each user across sessions. It runs on Telegram, Discord, Slack, WhatsApp, Signal, and local CLI, and supports multiple LLM providers including local models. The Nous Research brand and the self-improvement angle—rare among deployed agents—drove today's interest. Data scientists, researchers, and power users who want a portable, multi-platform assistant that genuinely learns their preferences over time are the primary audience.",
+      "llm_api": "required",
+      "llm_api_note": "Needs an LLM backend; local models (Ollama, etc.) supported",
+      "topics": ["AI Agents", "RAG & Memory"]
+    },
+    {
+      "rank": 5,
+      "owner": "fmtlib",
+      "repo": "fmt",
+      "url": "https://github.com/fmtlib/fmt",
+      "language": "C++",
+      "stars": 25562,
+      "gained_today": 133,
+      "description": "A modern formatting library for C++.",
+      "analysis": "fmt is the de-facto modern formatting library for C++, providing a fast and safe alternative to printf and iostreams and serving as the upstream reference implementation for C++20 std::format and C++23 std::print. It offers positional arguments for localization, fast floating-point formatting, Unicode support, and easy extensibility for user-defined types. Trending on organic interest as C++20/23 adoption accelerates and teams migrating older codebases discover fmt as the fastest path to standards-compliant formatting. Any C++ developer—from embedded systems to game engines—who wants safer, faster, and more expressive string formatting will reach for this library.",
+      "llm_api": "none",
+      "topics": ["Systems & Libraries", "Developer Tools"]
+    }
+  ]
+}
