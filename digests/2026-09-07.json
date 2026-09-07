@@ -1,0 +1,74 @@
+{
+  "date": "2026-09-07",
+  "title": "GitHub Trending Top 5",
+  "repos": [
+    {
+      "rank": 1,
+      "owner": "heygen-com",
+      "repo": "hyperframes",
+      "url": "https://github.com/heygen-com/hyperframes",
+      "language": "TypeScript",
+      "stars": 45723,
+      "gained_today": 734,
+      "description": "Write HTML. Render video. Built for agents.",
+      "analysis": "HyperFrames is an open-source CLI and framework that converts HTML and CSS compositions into deterministic MP4 videos, letting developers describe animations with data attributes rather than proprietary timelines. It ships 'agent skills' that teach AI coding tools (Claude, Cursor, Codex) the full video-production workflow, making it one of the first tools explicitly designed for agent-driven content generation. The project likely trended today due to growing interest in automating video creation with AI agents — a use case previously locked behind expensive proprietary platforms. Frontend developers, AI agent builders, and DevOps teams running video pipelines in CI/CD will find it immediately useful.",
+      "llm_api": "optional",
+      "llm_api_note": "Ships agent skills for AI coding tools; runs fully locally with no LLM key",
+      "topics": ["AI Agents", "Video & Media", "Developer Tools"]
+    },
+    {
+      "rank": 2,
+      "owner": "microsoft",
+      "repo": "markitdown",
+      "url": "https://github.com/microsoft/markitdown",
+      "language": "Python",
+      "stars": 180076,
+      "gained_today": 771,
+      "description": "Python tool for converting files and office documents to Markdown.",
+      "analysis": "MarkItDown is Microsoft's open-source Python library that converts virtually any file format — PDF, DOCX, XLSX, PPTX, images, audio, and ZIP archives — into clean Markdown suitable for LLM ingestion. It slots into the document pre-processing stage of RAG pipelines and knowledge-base workflows without requiring any LLM key to run, though optional LLM plugins can enrich image transcription. Trending on sustained organic interest as the default document-to-LLM bridge: any team building retrieval-augmented systems routinely reaches for this library first. Python developers building data pipelines, knowledge bases, or AI document assistants are the primary audience.",
+      "llm_api": "optional",
+      "llm_api_note": "Optional LLM plugins for image transcription; fully local otherwise",
+      "topics": ["Documents & Data", "LLM Infrastructure"]
+    },
+    {
+      "rank": 3,
+      "owner": "mksglu",
+      "repo": "context-mode",
+      "url": "https://github.com/mksglu/context-mode",
+      "language": "TypeScript",
+      "stars": 20776,
+      "gained_today": 147,
+      "description": "Optimizes context windows for AI coding agents, sandboxes tool output, and enforces routing across 17 platforms via MCP.",
+      "analysis": "Context Mode is an MCP server that intercepts tool outputs before they enter an AI agent's context window, compressing large blobs (a 315 KB Playwright snapshot becomes 5.4 KB) and persisting working state in SQLite across conversation compaction events. This prevents AI coding agents from losing track of active files and tasks when their context fills up — a common frustration in long development sessions. It likely trended today due to viral adoption across engineering teams at major tech companies and the acute need to manage growing agent context costs. Developers using Claude Code, Cursor, GitHub Copilot, or VS Code Copilot who run into context-length limits will benefit most.",
+      "llm_api": "required",
+      "llm_api_note": "MCP server — requires a compatible AI agent host (Claude Code, Cursor, Copilot, etc.)",
+      "topics": ["MCP & Integrations", "AI Agents", "LLM Infrastructure"]
+    },
+    {
+      "rank": 4,
+      "owner": "jo-inc",
+      "repo": "camofox-browser",
+      "url": "https://github.com/jo-inc/camofox-browser",
+      "language": "JavaScript",
+      "stars": 9617,
+      "gained_today": 285,
+      "description": "Stealth headless browser for AI agents — bypass Cloudflare, bot detection, and anti-scraping.",
+      "analysis": "Camofox is a stealth headless browser purpose-built for AI agents that need to automate sites protected by anti-bot systems like Cloudflare. Unlike JavaScript-patching approaches, it modifies browser fingerprints at the C++ level before any JavaScript executes, making detection far harder, and exposes a lightweight REST API for agent-friendly interaction with stable element references and token-efficient accessibility snapshots. It trended today as web scraping for AI agents becomes a first-class need and traditional Playwright or Puppeteer setups increasingly get blocked. Data engineers, web-scraping developers, and AI agent builders who need reliable access to bot-protected pages will find it directly useful.",
+      "llm_api": "none",
+      "topics": ["AI Agents", "Security & Privacy", "Developer Tools"]
+    },
+    {
+      "rank": 5,
+      "owner": "MoonTechLab",
+      "repo": "LunaTV",
+      "url": "https://github.com/MoonTechLab/LunaTV",
+      "language": "TypeScript",
+      "stars": 9681,
+      "gained_today": 171,
+      "description": "Cross-platform self-hosted video streaming aggregator built with Next.js 14 and TypeScript.",
+      "analysis": "LunaTV is a self-hosted, cross-platform video streaming aggregator built with Next.js 14 and TypeScript that searches multiple content sources and plays them through a unified interface powered by HLS.js and ArtPlayer. It supports favorites, watch history, cross-device sync via Redis/Upstash, PWA installation, Android TV layouts, and experimental ad-skipping. Trending on organic interest as open-source self-hosted streaming alternatives attract periodic community spikes when users seek privacy-respecting alternatives to commercial platforms. Self-hosters, privacy-conscious users, and Next.js developers looking for a full-featured real-world streaming app template are the primary audience.",
+      "llm_api": "none",
+      "topics": ["Video & Media", "Developer Tools"]
+    }
+  ]
+}
