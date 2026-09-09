@@ -1,0 +1,76 @@
+{
+  "date": "2026-09-09",
+  "title": "GitHub Trending Top 5",
+  "repos": [
+    {
+      "rank": 1,
+      "owner": "ayghri",
+      "repo": "i-have-adhd",
+      "url": "https://github.com/ayghri/i-have-adhd",
+      "language": "Python",
+      "stars": 34352,
+      "gained_today": 4624,
+      "description": "A skill to stop your coding agent from burying the answer. ADHD-friendly output.",
+      "analysis": "This is a prompt-engineering skill/plugin for AI coding assistants (Claude, Gemini, Qwen, etc.) that enforces 10 conciseness rules—leading with the action, capping lists at 5, and cutting preamble entirely. It solves the ubiquitous frustration of verbose AI answers that bury the fix in paragraphs of context. Trending on a viral, relatable name and a real pain point: developers lose time scanning AI walls of text for the one command they need. Any developer already using an LLM coding assistant benefits immediately with no configuration beyond installing the skill.",
+      "llm_api": "required",
+      "llm_api_note": "Agent skill for Claude/Gemini/Qwen; requires an existing LLM coding assistant",
+      "topics": ["Agent Skills & Plugins", "Developer Tools"]
+    },
+    {
+      "rank": 2,
+      "owner": "Tencent",
+      "repo": "teamai-cli",
+      "url": "https://github.com/Tencent/teamai-cli",
+      "language": "TypeScript",
+      "stars": 2916,
+      "gained_today": 563,
+      "description": "Make Every Team AI Native",
+      "analysis": "TeamAI-CLI is a team-wide configuration manager that syncs AI coding assistant settings—skills, rules, documentation, and hooks—from a shared Git repository to every developer's machine automatically. It targets the coordination gap as organizations scale AI adoption: without a shared source of truth, each developer accumulates incompatible personal configs. Trending as enterprise AI adoption reaches the 'team standardization' phase where individual experiments harden into enforced practices. Engineering managers and platform teams at shops using Claude Code, Cursor, Codex, or Qwen will find this immediately useful.",
+      "llm_api": "required",
+      "llm_api_note": "Infrastructure for teams using Claude Code, Cursor, Codex, etc.; LLM required by target agents",
+      "topics": ["AI Agents", "Developer Tools"]
+    },
+    {
+      "rank": 3,
+      "owner": "obra",
+      "repo": "superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "language": "Shell",
+      "stars": 283983,
+      "gained_today": 690,
+      "description": "An agentic skills framework & software development methodology that works.",
+      "analysis": "Superpowers is a composable skill framework that imposes a full software-development methodology on AI coding agents—enforcing test-driven development, structured planning, and code-review workflows before any code is written. It addresses the growing observation that raw coding agents produce working-but-unmaintainable code when given no process guardrails. Organic interest from the agentic-coding community drives continued growth on this large, established project. Teams using Claude Code, Cursor, GitHub Copilot CLI, or Devin who want disciplined, auditable agent output are the primary audience.",
+      "llm_api": "required",
+      "llm_api_note": "Skill framework for Claude Code, Cursor, Copilot CLI, Devin; host agent is required",
+      "topics": ["Agent Skills & Plugins", "Developer Tools"]
+    },
+    {
+      "rank": 4,
+      "owner": "pascalorg",
+      "repo": "editor",
+      "url": "https://github.com/pascalorg/editor",
+      "language": "TypeScript",
+      "stars": 22861,
+      "gained_today": 171,
+      "description": "Open-source 3D architectural editor with local CLI, MCP tools, and practical workflows for humans and AI agents.",
+      "analysis": "Pascal is a local-first 3D building editor built with React Three Fiber and WebGPU that runs in-browser or via CLI, supporting walls, floors, furniture placement, and hierarchical building scenes with undo/redo and persistent storage. Its distinguishing feature is an MCP server that lets AI agents manipulate architectural scenes through structured tool calls—architects can describe layouts in natural language and have an agent build them. Trending for its unique fusion of open-source CAD and agentic design workflows. Architects, designers, and developers building AI-assisted spatial tools are the core audience; the editor is fully usable without any AI integration.",
+      "llm_api": "optional",
+      "llm_api_note": "MCP server lets any agent control scenes; editor is fully usable without LLM",
+      "topics": ["MCP & Integrations", "Design"]
+    },
+    {
+      "rank": 5,
+      "owner": "earthtojake",
+      "repo": "text-to-cad",
+      "url": "https://github.com/earthtojake/text-to-cad",
+      "language": "Python",
+      "stars": 15006,
+      "gained_today": 97,
+      "description": "A library of agent skills for CAD, CAE and CAM",
+      "analysis": "text-to-cad is a library of 10+ agent skills that bridge natural-language requests and physical-world file formats: STEP and STL for CAD, URDF and SRDF for robotics simulation, DXF for 2D design, and G-code for CNC/3D-printing. It closes the last mile between an LLM coding agent and actual fabrication by generating, inspecting, slicing, and handing off geometry files. Trending as hardware-adjacent engineers adopt LLM workflows and find the 'text to physical object' loop compelling. Mechanical engineers, roboticists, and makers using Claude, Codex, or Grok Build who want to generate fabrication-ready files conversationally are the intended users.",
+      "llm_api": "required",
+      "llm_api_note": "Agent skills for Claude, Codex, Grok Build; requires an active LLM coding agent",
+      "topics": ["Agent Skills & Plugins", "Science & ML"]
+    }
+  ]
+}
