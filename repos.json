@@ -26,7 +26,8 @@
     "2026-09-03",
     "2026-09-05",
     "2026-09-07",
-    "2026-09-09"
+    "2026-09-09",
+    "2026-09-11"
   ],
   "repos": [
     {
@@ -965,22 +966,28 @@
           "rank": 1,
           "stars": 34352,
           "gained": 4624
+        },
+        {
+          "date": "2026-09-11",
+          "rank": 1,
+          "stars": 41538,
+          "gained": 3440
         }
       ],
       "language": "Python",
       "lang_color": "#3572A5",
       "description": "A skill to stop your coding agent from burying the answer. ADHD-friendly output.",
-      "analysis": "This is a prompt-engineering skill/plugin for AI coding assistants (Claude, Gemini, Qwen, etc.) that enforces 10 conciseness rules—leading with the action, capping lists at 5, and cutting preamble entirely. It solves the ubiquitous frustration of verbose AI answers that bury the fix in paragraphs of context. Trending on a viral, relatable name and a real pain point: developers lose time scanning AI walls of text for the one command they need. Any developer already using an LLM coding assistant benefits immediately with no configuration beyond installing the skill.",
+      "analysis": "A Claude Code / Cursor skill that forces AI coding assistants to lead with numbered, actionable steps instead of lengthy preambles — eliminating filler phrases and getting straight to the answer. It solves a near-universal pain point: AI tools that hide the useful instruction in walls of context-setting prose. This trended rapidly because the frustration it names resonates widely among developers who use AI assistants daily. Developers on Claude Code, Cursor, or Windsurf who want faster, focused guidance can install it in seconds.",
       "llm_api": "required",
-      "llm_api_note": "Agent skill for Claude/Gemini/Qwen; requires an existing LLM coding assistant",
+      "llm_api_note": "Claude Code / Cursor skill — useless without the host coding agent",
       "topics": [
         "Agent Skills & Plugins",
         "Developer Tools"
       ],
       "first_seen": "2026-08-02",
-      "last_seen": "2026-09-09",
+      "last_seen": "2026-09-11",
       "best_rank": 1,
-      "latest_stars": 34352,
+      "latest_stars": 41538,
       "max_gained": 5232
     },
     {
@@ -2194,23 +2201,29 @@
           "rank": 2,
           "stars": 12523,
           "gained": 1870
+        },
+        {
+          "date": "2026-09-11",
+          "rank": 2,
+          "stars": 26903,
+          "gained": 3642
         }
       ],
       "language": "JavaScript",
       "lang_color": "#f1e05a",
-      "description": "A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe.",
-      "analysis": "gods-eye-view is a browser-based, photorealistic 3D globe that streams real open-source spatial intelligence data—think live satellite tracking, vessel positions, and flight paths—without any install required. Its tagline 'the data is real' is the hook: it turns OSINT into a cinematic experience that demos extraordinarily well, which is why it is viral today. Security researchers, journalists covering geopolitics, GIS professionals, and curious developers building geospatial applications will all find genuine value here.",
+      "description": "Simulated satellite intelligence platform with real spatial data on a photorealistic globe.",
+      "analysis": "An open-source 3D globe that overlays live public data — aircraft transponders, ship AIS beacons, orbital satellites, wildfire feeds, and seismic events — on a photorealistic interactive map in the browser. It democratises OSINT by consolidating fragmented public geospatial signals into a single inspectable interface, all without proprietary datasets. The project went viral as a showcase of what transparent, open-source spatial intelligence tooling can look like. Journalists, OSINT researchers, educators, and front-end developers looking for a striking geospatial foundation will find it immediately compelling.",
       "llm_api": "optional",
-      "llm_api_note": "Runs without LLM; OpenAI key unlocks voice/agent mode",
+      "llm_api_note": "Optional OpenAI key for voice control; fully functional without it",
       "topics": [
-        "Science & ML",
-        "Productivity & Research"
+        "Productivity & Research",
+        "Security & Privacy"
       ],
       "first_seen": "2026-08-27",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-09-11",
       "best_rank": 2,
-      "latest_stars": 12523,
-      "max_gained": 1984
+      "latest_stars": 26903,
+      "max_gained": 3642
     },
     {
       "owner": "JetBrains",
@@ -2884,6 +2897,90 @@
       "best_rank": 5,
       "latest_stars": 15006,
       "max_gained": 97
+    },
+    {
+      "owner": "nab138",
+      "repo": "iloader",
+      "url": "https://github.com/nab138/iloader",
+      "appearances": [
+        {
+          "date": "2026-09-11",
+          "rank": 3,
+          "stars": 2884,
+          "gained": 36
+        }
+      ],
+      "language": "TypeScript",
+      "lang_color": "#3178c6",
+      "description": "User friendly sideloader for iOS devices.",
+      "analysis": "A Tauri/Rust desktop application that simplifies sideloading apps onto iOS devices — in particular, installing SideStore and managing the pairing files and certificates the process normally requires manual handling of. It replaces cryptic terminal commands with a guided UI and intelligent error messages. Trending on organic interest from the growing community of iOS developers and enthusiasts who test apps on personal devices outside Apple's developer programme. Developers who use SideStore or who distribute iOS apps informally outside the App Store will benefit most.",
+      "llm_api": "none",
+      "topics": [
+        "Developer Tools",
+        "Systems & Libraries"
+      ],
+      "first_seen": "2026-09-11",
+      "last_seen": "2026-09-11",
+      "best_rank": 3,
+      "latest_stars": 2884,
+      "max_gained": 36
+    },
+    {
+      "owner": "melgarafael",
+      "repo": "DeskcommCRM",
+      "url": "https://github.com/melgarafael/DeskcommCRM",
+      "appearances": [
+        {
+          "date": "2026-09-11",
+          "rank": 4,
+          "stars": 1296,
+          "gained": 126
+        }
+      ],
+      "language": "TypeScript",
+      "lang_color": "#3178c6",
+      "description": "Open-source AI sales platform with self-hosted CRM, native AI agents, and WhatsApp integration.",
+      "analysis": "A self-hosted, Docker-based CRM platform that combines WhatsApp conversation management with AI agents that handle lead qualification, follow-ups, and customer responses automatically. It targets businesses that sell primarily through chat and want to cut monthly SaaS CRM costs while retaining full data ownership. Trending as awareness grows of self-hosted alternatives to expensive hosted CRM tools with AI features baked in. E-commerce stores, clinics, real estate agencies, and service businesses operating via WhatsApp are the primary audience.",
+      "llm_api": "required",
+      "llm_api_note": "Requires OpenAI, Anthropic, or OpenRouter API key for AI agents",
+      "topics": [
+        "AI Agents",
+        "MCP & Integrations"
+      ],
+      "first_seen": "2026-09-11",
+      "last_seen": "2026-09-11",
+      "best_rank": 4,
+      "latest_stars": 1296,
+      "max_gained": 126
+    },
+    {
+      "owner": "vastsa",
+      "repo": "PI-Desktop",
+      "url": "https://github.com/vastsa/PI-Desktop",
+      "appearances": [
+        {
+          "date": "2026-09-11",
+          "rank": 5,
+          "stars": 2752,
+          "gained": 545
+        }
+      ],
+      "language": "TypeScript",
+      "lang_color": "#3178c6",
+      "description": "Local-first AI coding agent with Electron interface, Rust core, and user-installable plugins.",
+      "analysis": "A desktop workspace for AI coding agents that separates the agent runtime (Rust core) from the UI (Electron), giving developers per-session oversight, fine-grained permission gates, and full local data storage — no cloud vendor dependency. Users connect their own model provider (OpenAI, Anthropic, or local Ollama/LM Studio) and pick from Agent, Plan, or Goal execution modes with a Review panel to inspect changes. This trended as local-first AI coding workflows gain traction against hosted-only tools. Developers who want cloud-independence and explicit oversight over long-running AI sessions will find it a strong alternative to fully managed agents.",
+      "llm_api": "required",
+      "llm_api_note": "BYO key (OpenAI/Anthropic/…); local Ollama or LM Studio also works",
+      "topics": [
+        "AI Agents",
+        "Developer Tools",
+        "LLM Infrastructure"
+      ],
+      "first_seen": "2026-09-11",
+      "last_seen": "2026-09-11",
+      "best_rank": 5,
+      "latest_stars": 2752,
+      "max_gained": 545
     }
   ]
 }

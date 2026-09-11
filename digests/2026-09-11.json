@@ -1,0 +1,75 @@
+{
+  "date": "2026-09-11",
+  "title": "GitHub Trending Top 5",
+  "repos": [
+    {
+      "rank": 1,
+      "owner": "ayghri",
+      "repo": "i-have-adhd",
+      "url": "https://github.com/ayghri/i-have-adhd",
+      "language": "Python",
+      "stars": 41538,
+      "gained_today": 3440,
+      "description": "A skill to stop your coding agent from burying the answer. ADHD-friendly output.",
+      "analysis": "A Claude Code / Cursor skill that forces AI coding assistants to lead with numbered, actionable steps instead of lengthy preambles — eliminating filler phrases and getting straight to the answer. It solves a near-universal pain point: AI tools that hide the useful instruction in walls of context-setting prose. This trended rapidly because the frustration it names resonates widely among developers who use AI assistants daily. Developers on Claude Code, Cursor, or Windsurf who want faster, focused guidance can install it in seconds.",
+      "llm_api": "required",
+      "llm_api_note": "Claude Code / Cursor skill — useless without the host coding agent",
+      "topics": ["Agent Skills & Plugins", "Developer Tools"]
+    },
+    {
+      "rank": 2,
+      "owner": "bilawalsidhu",
+      "repo": "gods-eye-view",
+      "url": "https://github.com/bilawalsidhu/gods-eye-view",
+      "language": "JavaScript",
+      "stars": 26903,
+      "gained_today": 3642,
+      "description": "Simulated satellite intelligence platform with real spatial data on a photorealistic globe.",
+      "analysis": "An open-source 3D globe that overlays live public data — aircraft transponders, ship AIS beacons, orbital satellites, wildfire feeds, and seismic events — on a photorealistic interactive map in the browser. It democratises OSINT by consolidating fragmented public geospatial signals into a single inspectable interface, all without proprietary datasets. The project went viral as a showcase of what transparent, open-source spatial intelligence tooling can look like. Journalists, OSINT researchers, educators, and front-end developers looking for a striking geospatial foundation will find it immediately compelling.",
+      "llm_api": "optional",
+      "llm_api_note": "Optional OpenAI key for voice control; fully functional without it",
+      "topics": ["Productivity & Research", "Security & Privacy"]
+    },
+    {
+      "rank": 3,
+      "owner": "nab138",
+      "repo": "iloader",
+      "url": "https://github.com/nab138/iloader",
+      "language": "TypeScript",
+      "stars": 2884,
+      "gained_today": 36,
+      "description": "User friendly sideloader for iOS devices.",
+      "analysis": "A Tauri/Rust desktop application that simplifies sideloading apps onto iOS devices — in particular, installing SideStore and managing the pairing files and certificates the process normally requires manual handling of. It replaces cryptic terminal commands with a guided UI and intelligent error messages. Trending on organic interest from the growing community of iOS developers and enthusiasts who test apps on personal devices outside Apple's developer programme. Developers who use SideStore or who distribute iOS apps informally outside the App Store will benefit most.",
+      "llm_api": "none",
+      "topics": ["Developer Tools", "Systems & Libraries"]
+    },
+    {
+      "rank": 4,
+      "owner": "melgarafael",
+      "repo": "DeskcommCRM",
+      "url": "https://github.com/melgarafael/DeskcommCRM",
+      "language": "TypeScript",
+      "stars": 1296,
+      "gained_today": 126,
+      "description": "Open-source AI sales platform with self-hosted CRM, native AI agents, and WhatsApp integration.",
+      "analysis": "A self-hosted, Docker-based CRM platform that combines WhatsApp conversation management with AI agents that handle lead qualification, follow-ups, and customer responses automatically. It targets businesses that sell primarily through chat and want to cut monthly SaaS CRM costs while retaining full data ownership. Trending as awareness grows of self-hosted alternatives to expensive hosted CRM tools with AI features baked in. E-commerce stores, clinics, real estate agencies, and service businesses operating via WhatsApp are the primary audience.",
+      "llm_api": "required",
+      "llm_api_note": "Requires OpenAI, Anthropic, or OpenRouter API key for AI agents",
+      "topics": ["AI Agents", "MCP & Integrations"]
+    },
+    {
+      "rank": 5,
+      "owner": "vastsa",
+      "repo": "PI-Desktop",
+      "url": "https://github.com/vastsa/PI-Desktop",
+      "language": "TypeScript",
+      "stars": 2752,
+      "gained_today": 545,
+      "description": "Local-first AI coding agent with Electron interface, Rust core, and user-installable plugins.",
+      "analysis": "A desktop workspace for AI coding agents that separates the agent runtime (Rust core) from the UI (Electron), giving developers per-session oversight, fine-grained permission gates, and full local data storage — no cloud vendor dependency. Users connect their own model provider (OpenAI, Anthropic, or local Ollama/LM Studio) and pick from Agent, Plan, or Goal execution modes with a Review panel to inspect changes. This trended as local-first AI coding workflows gain traction against hosted-only tools. Developers who want cloud-independence and explicit oversight over long-running AI sessions will find it a strong alternative to fully managed agents.",
+      "llm_api": "required",
+      "llm_api_note": "BYO key (OpenAI/Anthropic/…); local Ollama or LM Studio also works",
+      "topics": ["AI Agents", "Developer Tools", "LLM Infrastructure"]
+    }
+  ]
+}
