@@ -27,7 +27,8 @@
     "2026-09-05",
     "2026-09-07",
     "2026-09-09",
-    "2026-09-11"
+    "2026-09-11",
+    "2026-09-13"
   ],
   "repos": [
     {
@@ -2207,22 +2208,28 @@
           "rank": 2,
           "stars": 26903,
           "gained": 3642
+        },
+        {
+          "date": "2026-09-13",
+          "rank": 3,
+          "stars": 31724,
+          "gained": 2898
         }
       ],
       "language": "JavaScript",
       "lang_color": "#f1e05a",
-      "description": "Simulated satellite intelligence platform with real spatial data on a photorealistic globe.",
-      "analysis": "An open-source 3D globe that overlays live public data — aircraft transponders, ship AIS beacons, orbital satellites, wildfire feeds, and seismic events — on a photorealistic interactive map in the browser. It democratises OSINT by consolidating fragmented public geospatial signals into a single inspectable interface, all without proprietary datasets. The project went viral as a showcase of what transparent, open-source spatial intelligence tooling can look like. Journalists, OSINT researchers, educators, and front-end developers looking for a striking geospatial foundation will find it immediately compelling.",
-      "llm_api": "optional",
+      "description": "A spy satellite simulator in your browser — live aircraft, ships, satellites, and cameras on a 3D globe",
+      "analysis": "God's Eye View renders 13 live data layers—11,000+ aircraft, maritime vessels, satellites, earthquakes, public CCTV cameras, and submarine cables—on a photorealistic 3D globe in the browser. Users can track individual flights in cockpit mode, switch sensor views (thermal, night vision), and annotate the globe with voice commands, all powered by public APIs like OpenSky and USGS. It is aimed at OSINT researchers, educators, and enthusiasts interested in real-time global situational awareness. The project reached #1 on GitHub Trending in August and continues to gain stars driven by a viral YouTube series.",
+      "llm_api": "none",
       "llm_api_note": "Optional OpenAI key for voice control; fully functional without it",
       "topics": [
-        "Productivity & Research",
-        "Security & Privacy"
+        "Security & Privacy",
+        "Developer Tools"
       ],
       "first_seen": "2026-08-27",
-      "last_seen": "2026-09-11",
+      "last_seen": "2026-09-13",
       "best_rank": 2,
-      "latest_stars": 26903,
+      "latest_stars": 31724,
       "max_gained": 3642
     },
     {
@@ -2935,23 +2942,29 @@
           "rank": 4,
           "stars": 1296,
           "gained": 126
+        },
+        {
+          "date": "2026-09-13",
+          "rank": 5,
+          "stars": 2142,
+          "gained": 444
         }
       ],
       "language": "TypeScript",
       "lang_color": "#3178c6",
-      "description": "Open-source AI sales platform with self-hosted CRM, native AI agents, and WhatsApp integration.",
-      "analysis": "A self-hosted, Docker-based CRM platform that combines WhatsApp conversation management with AI agents that handle lead qualification, follow-ups, and customer responses automatically. It targets businesses that sell primarily through chat and want to cut monthly SaaS CRM costs while retaining full data ownership. Trending as awareness grows of self-hosted alternatives to expensive hosted CRM tools with AI features baked in. E-commerce stores, clinics, real estate agencies, and service businesses operating via WhatsApp are the primary audience.",
+      "description": "Open-source AI sales OS — self-hosted CRM with native AI agents and WhatsApp integration",
+      "analysis": "DeskcommCRM is a self-hosted, open-source CRM that ships native AI sales agents alongside conventional CRM features and first-class WhatsApp integration, positioning itself as an 'AI sales OS' for lean go-to-market teams. The AI agents handle lead qualification and follow-ups autonomously, requiring an LLM API key to function. Sales teams in markets where WhatsApp is a primary business channel—Latin America, Europe, Southeast Asia—are the core audience. It is trending on growing interest in self-hosted AI business software as alternatives to expensive SaaS CRMs.",
       "llm_api": "required",
-      "llm_api_note": "Requires OpenAI, Anthropic, or OpenRouter API key for AI agents",
+      "llm_api_note": "Requires LLM API key to power native AI sales agents",
       "topics": [
         "AI Agents",
-        "MCP & Integrations"
+        "Productivity & Research"
       ],
       "first_seen": "2026-09-11",
-      "last_seen": "2026-09-11",
+      "last_seen": "2026-09-13",
       "best_rank": 4,
-      "latest_stars": 1296,
-      "max_gained": 126
+      "latest_stars": 2142,
+      "max_gained": 444
     },
     {
       "owner": "vastsa",
@@ -2981,6 +2994,88 @@
       "best_rank": 5,
       "latest_stars": 2752,
       "max_gained": 545
+    },
+    {
+      "owner": "JustVugg",
+      "repo": "colibri",
+      "url": "https://github.com/JustVugg/colibri",
+      "appearances": [
+        {
+          "date": "2026-09-13",
+          "rank": 1,
+          "stars": 29661,
+          "gained": 960
+        }
+      ],
+      "language": "C",
+      "lang_color": "#555555",
+      "description": "Run frontier MoE models on hardware you already own — pure C, zero deps",
+      "analysis": "Colibrì is a pure-C inference engine that runs massive Mixture-of-Experts language models (744B–2.8T parameters) on consumer hardware by staging weights across VRAM, RAM, and disk. Its key insight is that MoE models activate only ~40B parameters per token, so it streams experts on-demand and learns which ones to prefetch using a usage cache. Developers and ML researchers wanting frontier-model capability without cloud rental will find it compelling. It gained traction by supporting nine recent model families (DeepSeek V4.1, Kimi K3, Qwen3) with reproducible benchmarks and zero proprietary dependencies.",
+      "llm_api": "none",
+      "topics": [
+        "LLM Infrastructure",
+        "Systems & Libraries"
+      ],
+      "first_seen": "2026-09-13",
+      "last_seen": "2026-09-13",
+      "best_rank": 1,
+      "latest_stars": 29661,
+      "max_gained": 960
+    },
+    {
+      "owner": "ever-co",
+      "repo": "ever-gauzy",
+      "url": "https://github.com/ever-co/ever-gauzy",
+      "appearances": [
+        {
+          "date": "2026-09-13",
+          "rank": 2,
+          "stars": 4980,
+          "gained": 58
+        }
+      ],
+      "language": "TypeScript",
+      "lang_color": "#3178c6",
+      "description": "Open business management platform covering ERP, CRM, HRM, ATS, and PM functions",
+      "analysis": "Ever Gauzy is a self-hosted, open-source business platform that unifies ERP, CRM, HRM, applicant tracking, and project management into a single TypeScript monorepo. It targets SMBs and enterprises looking for a transparent, auditable alternative to proprietary suites like Salesforce or SAP. Trending on organic interest, likely surfaced by teams evaluating open-source ERP options. Teams already using Node/Angular stacks will find the codebase approachable.",
+      "llm_api": "none",
+      "topics": [
+        "Productivity & Research",
+        "Developer Tools"
+      ],
+      "first_seen": "2026-09-13",
+      "last_seen": "2026-09-13",
+      "best_rank": 2,
+      "latest_stars": 4980,
+      "max_gained": 58
+    },
+    {
+      "owner": "tech-leads-club",
+      "repo": "agent-skills",
+      "url": "https://github.com/tech-leads-club/agent-skills",
+      "appearances": [
+        {
+          "date": "2026-09-13",
+          "rank": 4,
+          "stars": 5599,
+          "gained": 215
+        }
+      ],
+      "language": "TypeScript",
+      "lang_color": "#3178c6",
+      "description": "Secure skill registry enabling AI coding agents with validated capabilities",
+      "analysis": "Agent Skills is a curated, security-vetted registry of skill packages that extend AI coding assistants such as Claude Code, Cursor, and GitHub Copilot with new workflows and domain knowledge. Skills are installed via an interactive CLI wizard and optionally surfaced through an MCP server so agents can browse and install them autonomously. The project addresses a real risk: the authors report that over 13% of marketplace skills contain critical vulnerabilities. It appeals to developer teams who want trustworthy, enterprise-grade extensions rather than unvetted plugins. Trending as the Claude Code and MCP ecosystem matures and demand for curated agent tooling grows.",
+      "llm_api": "required",
+      "llm_api_note": "MCP server for Claude Code, Cursor, Copilot — useless without a host AI agent",
+      "topics": [
+        "Agent Skills & Plugins",
+        "MCP & Integrations"
+      ],
+      "first_seen": "2026-09-13",
+      "last_seen": "2026-09-13",
+      "best_rank": 4,
+      "latest_stars": 5599,
+      "max_gained": 215
     }
   ]
 }
