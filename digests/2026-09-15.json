@@ -1,0 +1,74 @@
+{
+  "date": "2026-09-15",
+  "title": "GitHub Trending Top 5",
+  "repos": [
+    {
+      "rank": 1,
+      "owner": "alibaba",
+      "repo": "open-code-review",
+      "url": "https://github.com/alibaba/open-code-review",
+      "language": "Go",
+      "stars": 28338,
+      "gained_today": 2751,
+      "description": "Fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+      "analysis": "open-code-review is Alibaba's open-sourced automated code review engine that combines deterministic rule-based static analysis with an LLM agent to deliver precise, line-level comments on pull requests. It ships built-in rulesets covering NPE, thread-safety, XSS, and SQL injection across multiple languages, battle-tested at Alibaba's massive engineering scale. It likely surged today because Alibaba open-sourcing internal infrastructure tooling is a significant event — enterprises rarely release their core quality-gate tooling. Teams doing CI/CD automation in Go, Java, or TypeScript shops will find it immediately useful as a drop-in replacement for commercial code review bots.",
+      "llm_api": "required",
+      "llm_api_note": "OpenAI/Anthropic compatible; bring your own API key for the LLM agent",
+      "topics": ["Code Intelligence", "AI Agents", "Security & Privacy"]
+    },
+    {
+      "rank": 2,
+      "owner": "JustVugg",
+      "repo": "colibri",
+      "url": "https://github.com/JustVugg/colibri",
+      "language": "C",
+      "stars": 33706,
+      "gained_today": 2035,
+      "description": "Run frontier MoE models on hardware you already own — pure C, zero deps, experts streamed from disk. Tiny engine, immense model.",
+      "analysis": "colibri is a pure-C, zero-dependency inference engine that makes frontier Mixture-of-Experts (MoE) models runnable on ordinary consumer hardware by streaming expert weights from disk on demand, rather than requiring all parameters to fit in RAM simultaneously. This solves a critical pain point: models like DeepSeek-V3 and Mixtral are architecturally MoE but still impractical on machines with limited VRAM or system RAM. It likely trended from the LLM-on-consumer-hardware community discovering a genuinely novel disk-streaming approach in readable C code. Local AI enthusiasts, researchers, and developers who want to run the most capable open-weight models on laptops or workstations without cloud costs are the primary audience.",
+      "llm_api": "optional",
+      "llm_api_note": "Runs MoE models locally on your own hardware; no hosted API or key needed",
+      "topics": ["LLM Infrastructure", "Systems & Libraries"]
+    },
+    {
+      "rank": 3,
+      "owner": "ever-co",
+      "repo": "ever-gauzy",
+      "url": "https://github.com/ever-co/ever-gauzy",
+      "language": "TypeScript",
+      "stars": 6557,
+      "gained_today": 632,
+      "description": "Ever® Gauzy™ - Open Business Management Platform (ERP/CRM/HRM/ATS/PM)",
+      "analysis": "ever-gauzy is a comprehensive open-source business management platform that unifies ERP, CRM, human resource management (HRM), applicant tracking (ATS), and project management (PM) into a single self-hostable TypeScript application. It targets organisations that want to consolidate commercial tools like Salesforce, BambooHR, and Jira without vendor lock-in or per-seat subscription costs. Trending on organic interest, likely amplified by consistent community contributions and organisations seeking cost-control alternatives to SaaS business software stacks. Best suited for SMBs, startups, and NGOs running Node.js-friendly infrastructure who want full data ownership.",
+      "llm_api": "none",
+      "topics": ["Productivity & Research", "Developer Tools"]
+    },
+    {
+      "rank": 4,
+      "owner": "debpalash",
+      "repo": "VoiceStudio",
+      "url": "https://github.com/debpalash/VoiceStudio",
+      "language": "Python",
+      "stars": 30828,
+      "gained_today": 2081,
+      "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
+      "analysis": "VoiceStudio is a fully local, open-source Python application that replicates the core feature set of ElevenLabs — voice cloning, voice design, video dubbing, dictation, transcription, and audiobook generation — across 646 languages, with everything running on the user's own hardware and no cloud API keys required. It likely trended because privacy-aware creators and developers have been searching for a self-hosted alternative to ElevenLabs' paid tiers, and the 646-language breadth is a remarkable differentiator. Content creators, podcasters, game developers, and accessibility-tool builders who need high-quality voice synthesis without recurring API costs or data leaving their machine are the natural users.",
+      "llm_api": "optional",
+      "llm_api_note": "Fully local voice AI; all models run on your own hardware, no API key needed",
+      "topics": ["Video & Media", "AI Agents"]
+    },
+    {
+      "rank": 5,
+      "owner": "Homebrew",
+      "repo": "BrewUI",
+      "url": "https://github.com/Homebrew/BrewUI",
+      "language": "Swift",
+      "stars": 1295,
+      "gained_today": 356,
+      "description": "Homebrew's official macOS GUI",
+      "analysis": "BrewUI is the official macOS graphical interface for Homebrew, the de-facto package manager for macOS, built in Swift and maintained under the Homebrew organisation itself. It gives users a native macOS GUI to browse, install, update, and remove packages without touching the terminal, directly addressing the long-standing gap that pushed users toward unofficial third-party GUIs. The 'official' status is the clear trending catalyst — Homebrew's endorsement immediately makes it the canonical choice over existing alternatives. macOS developers who use Homebrew daily as well as less CLI-comfortable users who rely on it for tools like ffmpeg or imagemagick are the primary beneficiaries.",
+      "llm_api": "none",
+      "topics": ["Developer Tools", "Systems & Libraries"]
+    }
+  ]
+}
