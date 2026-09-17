@@ -29,7 +29,8 @@
     "2026-09-09",
     "2026-09-11",
     "2026-09-13",
-    "2026-09-15"
+    "2026-09-15",
+    "2026-09-17"
   ],
   "repos": [
     {
@@ -1402,23 +1403,29 @@
           "rank": 4,
           "stars": 86189,
           "gained": 571
+        },
+        {
+          "date": "2026-09-17",
+          "rank": 3,
+          "stars": 95795,
+          "gained": 680
         }
       ],
       "language": "JavaScript",
       "lang_color": "#f1e05a",
-      "description": "Production-grade engineering skills for AI coding agents.",
-      "analysis": "agent-skills is a curated library of production-ready skill definitions—structured prompts and tool specs—designed to give AI coding agents reliable, expert-level engineering behaviors covering code review, performance audits, accessibility checks, and more. Authored by Addy Osmani (Google Chrome DevRel), the project benefits from his large following and the explosive growth of AI pair-programming tools in 2026. Frontend engineers and teams adopting AI coding assistants like Claude Code or Copilot will find these skills immediately applicable to enforce consistent standards. It fits naturally into JavaScript and TypeScript stacks.",
-      "llm_api": "required",
-      "llm_api_note": "Skills for AI coding agents (Claude Code, Cursor, …)",
+      "description": "Production-grade engineering skills for AI coding agents",
+      "analysis": "agent-skills packages 25 Markdown-based engineering skills covering the full development lifecycle—spec, plan, build, verify, review, ship—along with four specialist personas (code reviewer, test engineer, security auditor, web performance auditor) and seven reference checklists. It is likely trending due to ongoing organic growth from addyosmani's large developer audience and the expanding universe of agent-compatible tools. Developers using Claude Code, Cursor, Copilot, or Cline who want consistent, opinionated quality gates across AI-assisted workflows will find it immediately applicable. Skills install via `npx skills add` and work with any agent that accepts instruction files, making them model- and vendor-agnostic.",
+      "llm_api": "optional",
+      "llm_api_note": "Works with any agent supporting instruction files; BYO agent and model",
       "topics": [
         "Agent Skills & Plugins",
         "Developer Tools"
       ],
       "first_seen": "2026-08-11",
-      "last_seen": "2026-08-11",
-      "best_rank": 4,
-      "latest_stars": 86189,
-      "max_gained": 571
+      "last_seen": "2026-09-17",
+      "best_rank": 3,
+      "latest_stars": 95795,
+      "max_gained": 680
     },
     {
       "owner": "ZhuLinsen",
@@ -3101,24 +3108,30 @@
           "rank": 1,
           "stars": 28338,
           "gained": 2751
+        },
+        {
+          "date": "2026-09-17",
+          "rank": 1,
+          "stars": 34572,
+          "gained": 3290
         }
       ],
       "language": "Go",
       "lang_color": "#00ADD8",
-      "description": "Fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
-      "analysis": "open-code-review is Alibaba's open-sourced automated code review engine that combines deterministic rule-based static analysis with an LLM agent to deliver precise, line-level comments on pull requests. It ships built-in rulesets covering NPE, thread-safety, XSS, and SQL injection across multiple languages, battle-tested at Alibaba's massive engineering scale. It likely surged today because Alibaba open-sourcing internal infrastructure tooling is a significant event — enterprises rarely release their core quality-gate tooling. Teams doing CI/CD automation in Go, Java, or TypeScript shops will find it immediately useful as a drop-in replacement for commercial code review bots.",
+      "description": "Fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent",
+      "analysis": "open-code-review is an automated code analysis platform that examines Git diffs using a hybrid architecture: deterministic engineering pipelines handle file selection and rule matching while an LLM agent handles dynamic reasoning about actual defects like null pointer exceptions, thread-safety issues, and XSS vulnerabilities. It likely trended due to its impressive benchmark claims—higher precision than general-purpose agents at one-ninth the token cost—resonating with cost-conscious AI coding teams. Platform engineers, DevOps leads, and teams managing large enterprise codebases will find it compelling. It supports direct LLM endpoints (OpenAI/Anthropic-compatible) or a delegation mode where Claude Code, Cursor, or Kimi Code serve as the reviewing agent.",
       "llm_api": "required",
-      "llm_api_note": "OpenAI/Anthropic compatible; bring your own API key for the LLM agent",
+      "llm_api_note": "BYO LLM endpoint (OpenAI/Anthropic-compatible); or delegate to Claude Code/Cursor",
       "topics": [
         "Code Intelligence",
         "AI Agents",
-        "Security & Privacy"
+        "Developer Tools"
       ],
       "first_seen": "2026-09-15",
-      "last_seen": "2026-09-15",
+      "last_seen": "2026-09-17",
       "best_rank": 1,
-      "latest_stars": 28338,
-      "max_gained": 2751
+      "latest_stars": 34572,
+      "max_gained": 3290
     },
     {
       "owner": "debpalash",
@@ -3174,6 +3187,92 @@
       "best_rank": 5,
       "latest_stars": 1295,
       "max_gained": 356
+    },
+    {
+      "owner": "cloudflare",
+      "repo": "security-audit-skill",
+      "url": "https://github.com/cloudflare/security-audit-skill",
+      "appearances": [
+        {
+          "date": "2026-09-17",
+          "rank": 2,
+          "stars": 10424,
+          "gained": 3606
+        }
+      ],
+      "language": "JavaScript",
+      "lang_color": "#f1e05a",
+      "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
+      "analysis": "security-audit-skill is a structured agent skill that runs a six-phase security audit pipeline—reconnaissance, coverage-led hunting, candidate validation, structured output, independent verification, and neutral reporting—orchestrating multiple isolated sub-agents so findings are adversarially cross-checked. Cloudflare's brand plus the rapid growth of the agent-skills ecosystem likely drove today's surge. Security engineers and DevSecOps teams running AI-assisted code review pipelines are the core audience; it slots into any coding agent that supports tool use and parallel sub-agents. Findings are machine-readable JSON with three verdict states (confirmed, needs_validation, rejected), making downstream automation straightforward.",
+      "llm_api": "required",
+      "llm_api_note": "Coding agent skill — requires an MCP/agent host that supports tool use and sub-agents",
+      "topics": [
+        "Security & Privacy",
+        "Agent Skills & Plugins"
+      ],
+      "first_seen": "2026-09-17",
+      "last_seen": "2026-09-17",
+      "best_rank": 2,
+      "latest_stars": 10424,
+      "max_gained": 3606
+    },
+    {
+      "owner": "Tencent",
+      "repo": "BrowserSkill",
+      "url": "https://github.com/Tencent/BrowserSkill",
+      "appearances": [
+        {
+          "date": "2026-09-17",
+          "rank": 4,
+          "stars": 4055,
+          "gained": 1350
+        }
+      ],
+      "language": "TypeScript",
+      "lang_color": "#3178c6",
+      "description": "Let AI agents use your real, logged-in browser without interrupting your work. CLI + extension for browser automation",
+      "analysis": "BrowserSkill bridges AI agents and real browser sessions: a CLI daemon plus browser extension routes agent commands into an isolated Agent Window, letting agents reuse existing logins and cookies without touching the user's own tabs. It trended today likely because authenticated browser automation is a critical missing piece for AI agents doing real-world web tasks, and Tencent's release drew attention from the broader agent-tools community. Frontend developers and automation engineers pairing agents with sites that require real user sessions (internal dashboards, SaaS tools) are the primary audience. The architecture is agent-agnostic—any tool that can invoke a shell command works—and supports Chrome and Edge on macOS, Linux, and Windows.",
+      "llm_api": "optional",
+      "llm_api_note": "Agent-agnostic browser infrastructure; BYO any agent harness",
+      "topics": [
+        "AI Agents",
+        "MCP & Integrations",
+        "Developer Tools"
+      ],
+      "first_seen": "2026-09-17",
+      "last_seen": "2026-09-17",
+      "best_rank": 4,
+      "latest_stars": 4055,
+      "max_gained": 1350
+    },
+    {
+      "owner": "alphaXiv",
+      "repo": "OpenResearch",
+      "url": "https://github.com/alphaXiv/OpenResearch",
+      "appearances": [
+        {
+          "date": "2026-09-17",
+          "rank": 5,
+          "stars": 4902,
+          "gained": 940
+        }
+      ],
+      "language": "Rust",
+      "lang_color": "#dea584",
+      "description": "Turn your coding agents into research agents",
+      "analysis": "OpenResearch is a local-first workspace that transforms coding agents into autonomous research agents capable of reviewing literature, forming hypotheses, running experiments in isolated git worktrees, and producing reproducible artifacts. It trended on organic interest from researchers and data scientists eager to apply AI agent workflows to computational science without cloud lock-in. The platform suits computational researchers, ML practitioners, and academics using Claude, Codex, or local models (Ollama, LM Studio) who want experiment tracking with git-native reproducibility. Its local-first default, optional telemetry, and Slurm/Kubernetes deployment support make it appealing to privacy-conscious academic and enterprise research environments.",
+      "llm_api": "optional",
+      "llm_api_note": "Local-first (Ollama/LM Studio recommended); cloud APIs (Claude, Codex) also supported",
+      "topics": [
+        "AI Agents",
+        "Productivity & Research",
+        "Science & ML"
+      ],
+      "first_seen": "2026-09-17",
+      "last_seen": "2026-09-17",
+      "best_rank": 5,
+      "latest_stars": 4902,
+      "max_gained": 940
     }
   ]
 }
