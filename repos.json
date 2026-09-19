@@ -30,7 +30,8 @@
     "2026-09-11",
     "2026-09-13",
     "2026-09-15",
-    "2026-09-17"
+    "2026-09-17",
+    "2026-09-19"
   ],
   "repos": [
     {
@@ -1409,22 +1410,28 @@
           "rank": 3,
           "stars": 95795,
           "gained": 680
+        },
+        {
+          "date": "2026-09-19",
+          "rank": 3,
+          "stars": 96973,
+          "gained": 547
         }
       ],
       "language": "JavaScript",
       "lang_color": "#f1e05a",
       "description": "Production-grade engineering skills for AI coding agents",
-      "analysis": "agent-skills packages 25 Markdown-based engineering skills covering the full development lifecycle—spec, plan, build, verify, review, ship—along with four specialist personas (code reviewer, test engineer, security auditor, web performance auditor) and seven reference checklists. It is likely trending due to ongoing organic growth from addyosmani's large developer audience and the expanding universe of agent-compatible tools. Developers using Claude Code, Cursor, Copilot, or Cline who want consistent, opinionated quality gates across AI-assisted workflows will find it immediately applicable. Skills install via `npx skills add` and work with any agent that accepts instruction files, making them model- and vendor-agnostic.",
-      "llm_api": "optional",
-      "llm_api_note": "Works with any agent supporting instruction files; BYO agent and model",
+      "analysis": "Agent-skills is a curated library of production-ready prompts, workflows, and conventions designed as installable skills for AI coding agents such as Claude Code, Cursor, and Copilot, covering code review, testing, refactoring, documentation, and more. Authored by Addy Osmani (Google Chrome engineering lead), the repo's quality and pedigree keep it consistently trending as the agent-skills ecosystem standardizes. It addresses a real pain point: raw LLM coding agents need structured guidance to behave consistently on complex, multi-step engineering tasks. Developers using any major AI coding agent who want to bootstrap reliable, expert-level behaviors without writing prompts from scratch will find this directly applicable.",
+      "llm_api": "required",
+      "llm_api_note": "Skills for LLM coding agents — useless without Claude Code, Cursor, or equivalent",
       "topics": [
         "Agent Skills & Plugins",
         "Developer Tools"
       ],
       "first_seen": "2026-08-11",
-      "last_seen": "2026-09-17",
+      "last_seen": "2026-09-19",
       "best_rank": 3,
-      "latest_stars": 95795,
+      "latest_stars": 96973,
       "max_gained": 680
     },
     {
@@ -3198,22 +3205,28 @@
           "rank": 2,
           "stars": 10424,
           "gained": 3606
+        },
+        {
+          "date": "2026-09-19",
+          "rank": 1,
+          "stars": 16147,
+          "gained": 3162
         }
       ],
       "language": "JavaScript",
       "lang_color": "#f1e05a",
       "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
-      "analysis": "security-audit-skill is a structured agent skill that runs a six-phase security audit pipeline—reconnaissance, coverage-led hunting, candidate validation, structured output, independent verification, and neutral reporting—orchestrating multiple isolated sub-agents so findings are adversarially cross-checked. Cloudflare's brand plus the rapid growth of the agent-skills ecosystem likely drove today's surge. Security engineers and DevSecOps teams running AI-assisted code review pipelines are the core audience; it slots into any coding agent that supports tool use and parallel sub-agents. Findings are machine-readable JSON with three verdict states (confirmed, needs_validation, rejected), making downstream automation straightforward.",
+      "analysis": "Cloudflare's security-audit-skill is a plug-in for AI coding agents that orchestrates structured, multi-phase security audits of codebases, producing machine-readable findings with independent verification steps built in. It rocketed to the top of trending following Cloudflare's official release, benefiting from intense interest in agent-native security tooling as development teams look to automate vulnerability discovery at scale. The independently verified findings format is a notable design choice, reducing false positives that plague simpler AI audits. Security engineers and DevSecOps teams running Claude Code, Cursor, or similar coding agents will find this integrates directly into existing CI/security workflows.",
       "llm_api": "required",
-      "llm_api_note": "Coding agent skill — requires an MCP/agent host that supports tool use and sub-agents",
+      "llm_api_note": "Agent skill — requires Claude Code, Cursor, or a compatible LLM coding agent",
       "topics": [
         "Security & Privacy",
         "Agent Skills & Plugins"
       ],
       "first_seen": "2026-09-17",
-      "last_seen": "2026-09-17",
-      "best_rank": 2,
-      "latest_stars": 10424,
+      "last_seen": "2026-09-19",
+      "best_rank": 1,
+      "latest_stars": 16147,
       "max_gained": 3606
     },
     {
@@ -3273,6 +3286,89 @@
       "best_rank": 5,
       "latest_stars": 4902,
       "max_gained": 940
+    },
+    {
+      "owner": "trycua",
+      "repo": "cua",
+      "url": "https://github.com/trycua/cua",
+      "appearances": [
+        {
+          "date": "2026-09-19",
+          "rank": 2,
+          "stars": 24321,
+          "gained": 1124
+        }
+      ],
+      "language": "HTML",
+      "lang_color": "#e34c26",
+      "description": "Scale computer-use 2.0 with open-source drivers, cross-OS fleets, and benchmarks for training, evaluation, and data generation",
+      "analysis": "CUA (Computer-Use Agents) is an open-source framework for deploying and managing fleets of AI agents that directly operate desktop and web interfaces across macOS, Windows, and Linux, with built-in benchmarks for training and evaluation. It surged in stars as the computer-use space matures beyond prototype demos into a need for production-grade open infrastructure — particularly for teams building their own agents or fine-tuning models on interaction data. The cross-OS fleet management and data-generation pipeline differentiate it from single-machine solutions. ML researchers, AI product teams, and automation engineers who need reproducible, scalable environments for computer-use model development are the primary audience.",
+      "llm_api": "optional",
+      "llm_api_note": "Framework is local-first; LLM/computer-use model integration is bring-your-own",
+      "topics": [
+        "AI Agents",
+        "Sandboxes & Runtimes"
+      ],
+      "first_seen": "2026-09-19",
+      "last_seen": "2026-09-19",
+      "best_rank": 2,
+      "latest_stars": 24321,
+      "max_gained": 1124
+    },
+    {
+      "owner": "coder",
+      "repo": "coder",
+      "url": "https://github.com/coder/coder",
+      "appearances": [
+        {
+          "date": "2026-09-19",
+          "rank": 4,
+          "stars": 15588,
+          "gained": 406
+        }
+      ],
+      "language": "Go",
+      "lang_color": "#00ADD8",
+      "description": "Secure environments for developers and their agents",
+      "analysis": "Coder is an open-source platform for provisioning and centrally managing self-hosted cloud development environments (CDEs) — standardized, container-based workspaces that give developers and AI agents a consistent, secure compute environment accessible from any IDE. Its renewed trending momentum reflects the enterprise shift toward agent-ready infrastructure: as AI coding agents proliferate, teams need sandboxed environments that both humans and autonomous agents can reliably operate in without security risk. Platform and infrastructure engineers at medium-to-large organizations, particularly those running regulated or security-sensitive workloads, are the primary users.",
+      "llm_api": "none",
+      "topics": [
+        "Developer Tools",
+        "Sandboxes & Runtimes"
+      ],
+      "first_seen": "2026-09-19",
+      "last_seen": "2026-09-19",
+      "best_rank": 4,
+      "latest_stars": 15588,
+      "max_gained": 406
+    },
+    {
+      "owner": "anthropics",
+      "repo": "claude-code",
+      "url": "https://github.com/anthropics/claude-code",
+      "appearances": [
+        {
+          "date": "2026-09-19",
+          "rank": 5,
+          "stars": 146678,
+          "gained": 482
+        }
+      ],
+      "language": "TypeScript",
+      "lang_color": "#3178c6",
+      "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster",
+      "analysis": "Claude Code is Anthropic's official CLI and SDK for an agentic coding assistant that deeply reads entire codebases, autonomously writes and refactors code, runs tests, manages git workflows, and can be extended via skills and MCP integrations. It continues to attract steady daily star gains thanks to frequent feature releases, a rapidly expanding skills/plugin ecosystem (including today's trending repos), and strong word-of-mouth among engineers who use it as a primary development tool. The SDK layer also draws contributors building agent infrastructure on top of it. Software engineers, DevOps practitioners, and teams building agent-based tooling who want a deeply integrated terminal-native AI pair programmer will find it the most capable option in its class.",
+      "llm_api": "required",
+      "llm_api_note": "Requires Anthropic API key or Claude Pro/Teams subscription; no local-model path",
+      "topics": [
+        "Developer Tools",
+        "AI Agents"
+      ],
+      "first_seen": "2026-09-19",
+      "last_seen": "2026-09-19",
+      "best_rank": 5,
+      "latest_stars": 146678,
+      "max_gained": 482
     }
   ]
 }

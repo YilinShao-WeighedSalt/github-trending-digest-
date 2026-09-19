@@ -1,0 +1,75 @@
+{
+  "date": "2026-09-19",
+  "title": "GitHub Trending Top 5",
+  "repos": [
+    {
+      "rank": 1,
+      "owner": "cloudflare",
+      "repo": "security-audit-skill",
+      "url": "https://github.com/cloudflare/security-audit-skill",
+      "language": "JavaScript",
+      "stars": 16147,
+      "gained_today": 3162,
+      "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
+      "analysis": "Cloudflare's security-audit-skill is a plug-in for AI coding agents that orchestrates structured, multi-phase security audits of codebases, producing machine-readable findings with independent verification steps built in. It rocketed to the top of trending following Cloudflare's official release, benefiting from intense interest in agent-native security tooling as development teams look to automate vulnerability discovery at scale. The independently verified findings format is a notable design choice, reducing false positives that plague simpler AI audits. Security engineers and DevSecOps teams running Claude Code, Cursor, or similar coding agents will find this integrates directly into existing CI/security workflows.",
+      "llm_api": "required",
+      "llm_api_note": "Agent skill — requires Claude Code, Cursor, or a compatible LLM coding agent",
+      "topics": ["Security & Privacy", "Agent Skills & Plugins"]
+    },
+    {
+      "rank": 2,
+      "owner": "trycua",
+      "repo": "cua",
+      "url": "https://github.com/trycua/cua",
+      "language": "HTML",
+      "stars": 24321,
+      "gained_today": 1124,
+      "description": "Scale computer-use 2.0 with open-source drivers, cross-OS fleets, and benchmarks for training, evaluation, and data generation",
+      "analysis": "CUA (Computer-Use Agents) is an open-source framework for deploying and managing fleets of AI agents that directly operate desktop and web interfaces across macOS, Windows, and Linux, with built-in benchmarks for training and evaluation. It surged in stars as the computer-use space matures beyond prototype demos into a need for production-grade open infrastructure — particularly for teams building their own agents or fine-tuning models on interaction data. The cross-OS fleet management and data-generation pipeline differentiate it from single-machine solutions. ML researchers, AI product teams, and automation engineers who need reproducible, scalable environments for computer-use model development are the primary audience.",
+      "llm_api": "optional",
+      "llm_api_note": "Framework is local-first; LLM/computer-use model integration is bring-your-own",
+      "topics": ["AI Agents", "Sandboxes & Runtimes"]
+    },
+    {
+      "rank": 3,
+      "owner": "addyosmani",
+      "repo": "agent-skills",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "language": "JavaScript",
+      "stars": 96973,
+      "gained_today": 547,
+      "description": "Production-grade engineering skills for AI coding agents",
+      "analysis": "Agent-skills is a curated library of production-ready prompts, workflows, and conventions designed as installable skills for AI coding agents such as Claude Code, Cursor, and Copilot, covering code review, testing, refactoring, documentation, and more. Authored by Addy Osmani (Google Chrome engineering lead), the repo's quality and pedigree keep it consistently trending as the agent-skills ecosystem standardizes. It addresses a real pain point: raw LLM coding agents need structured guidance to behave consistently on complex, multi-step engineering tasks. Developers using any major AI coding agent who want to bootstrap reliable, expert-level behaviors without writing prompts from scratch will find this directly applicable.",
+      "llm_api": "required",
+      "llm_api_note": "Skills for LLM coding agents — useless without Claude Code, Cursor, or equivalent",
+      "topics": ["Agent Skills & Plugins", "Developer Tools"]
+    },
+    {
+      "rank": 4,
+      "owner": "coder",
+      "repo": "coder",
+      "url": "https://github.com/coder/coder",
+      "language": "Go",
+      "stars": 15588,
+      "gained_today": 406,
+      "description": "Secure environments for developers and their agents",
+      "analysis": "Coder is an open-source platform for provisioning and centrally managing self-hosted cloud development environments (CDEs) — standardized, container-based workspaces that give developers and AI agents a consistent, secure compute environment accessible from any IDE. Its renewed trending momentum reflects the enterprise shift toward agent-ready infrastructure: as AI coding agents proliferate, teams need sandboxed environments that both humans and autonomous agents can reliably operate in without security risk. Platform and infrastructure engineers at medium-to-large organizations, particularly those running regulated or security-sensitive workloads, are the primary users.",
+      "llm_api": "none",
+      "topics": ["Developer Tools", "Sandboxes & Runtimes"]
+    },
+    {
+      "rank": 5,
+      "owner": "anthropics",
+      "repo": "claude-code",
+      "url": "https://github.com/anthropics/claude-code",
+      "language": "TypeScript",
+      "stars": 146678,
+      "gained_today": 482,
+      "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster",
+      "analysis": "Claude Code is Anthropic's official CLI and SDK for an agentic coding assistant that deeply reads entire codebases, autonomously writes and refactors code, runs tests, manages git workflows, and can be extended via skills and MCP integrations. It continues to attract steady daily star gains thanks to frequent feature releases, a rapidly expanding skills/plugin ecosystem (including today's trending repos), and strong word-of-mouth among engineers who use it as a primary development tool. The SDK layer also draws contributors building agent infrastructure on top of it. Software engineers, DevOps practitioners, and teams building agent-based tooling who want a deeply integrated terminal-native AI pair programmer will find it the most capable option in its class.",
+      "llm_api": "required",
+      "llm_api_note": "Requires Anthropic API key or Claude Pro/Teams subscription; no local-model path",
+      "topics": ["Developer Tools", "AI Agents"]
+    }
+  ]
+}
