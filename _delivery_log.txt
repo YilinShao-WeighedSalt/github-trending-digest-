@@ -29,3 +29,4 @@
 2026-09-15T22:08:45Z  date=2026-09-15  ntfy_http=200  result=OK
 2026-09-17T22:10:11Z  date=2026-09-17  ntfy_http=200  result=OK
 2026-09-19T22:08:21Z  date=2026-09-19  ntfy_http=200  result=OK
+2026-09-21T22:09:04Z  date=2026-09-21  ntfy_http=429  result=FAIL
