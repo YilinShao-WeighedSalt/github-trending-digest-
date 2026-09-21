@@ -31,7 +31,8 @@
     "2026-09-13",
     "2026-09-15",
     "2026-09-17",
-    "2026-09-19"
+    "2026-09-19",
+    "2026-09-21"
   ],
   "repos": [
     {
@@ -1716,23 +1717,29 @@
           "rank": 4,
           "stars": 1985,
           "gained": 207
+        },
+        {
+          "date": "2026-09-21",
+          "rank": 4,
+          "stars": 7630,
+          "gained": 217
         }
       ],
       "language": "Rust",
       "lang_color": "#dea584",
-      "description": "Solution for long-term memory for agent coding CLIs and facilitating handoff between different agent vendors",
-      "analysis": "ai-memory provides a persistent, structured memory layer for AI coding assistants such as Claude Code, Cursor, and Aider, enabling them to retain project context across sessions and hand off state seamlessly between different agent vendors. It stores memories as local vector embeddings over project files and conversation history, so agents can recall earlier decisions and code patterns. It's surging today because developers are frustrated with stateless coding agents losing context in long-running projects, and this repo offers a lightweight, vendor-neutral fix. Any developer regularly using LLM-based coding tools on non-trivial codebases is the target user.",
-      "llm_api": "required",
-      "llm_api_note": "Pairs with your coding agent; subscription OAuth, keys, or local endpoints",
+      "description": "Solution for long term memory for agent coding CLIs and vendor handoff",
+      "analysis": "ai-memory is a lightweight Rust binary that gives AI coding agents (Claude Code, Codex, Cursor, etc.) persistent, cross-session, cross-machine memory stored in a git-backed markdown wiki with SQLite FTS5 search—all with zero LLM calls by default. It trended because the pain of losing context when switching agents or machines is universal among AI-assisted developers. LLM providers are optional add-ons for semantic search and summarization. Perfect for developers juggling multiple AI coding tools who need seamless handoffs without re-explaining their codebase state each session.",
+      "llm_api": "optional",
+      "llm_api_note": "Zero LLM calls by default; local/cloud LLM add-ons for enhanced search",
       "topics": [
         "RAG & Memory",
         "AI Agents"
       ],
       "first_seen": "2026-08-17",
-      "last_seen": "2026-08-17",
+      "last_seen": "2026-09-21",
       "best_rank": 4,
-      "latest_stars": 1985,
-      "max_gained": 207
+      "latest_stars": 7630,
+      "max_gained": 217
     },
     {
       "owner": "mukul975",
@@ -3297,22 +3304,28 @@
           "rank": 2,
           "stars": 24321,
           "gained": 1124
+        },
+        {
+          "date": "2026-09-21",
+          "rank": 2,
+          "stars": 25659,
+          "gained": 609
         }
       ],
-      "language": "HTML",
-      "lang_color": "#e34c26",
-      "description": "Scale computer-use 2.0 with open-source drivers, cross-OS fleets, and benchmarks for training, evaluation, and data generation",
-      "analysis": "CUA (Computer-Use Agents) is an open-source framework for deploying and managing fleets of AI agents that directly operate desktop and web interfaces across macOS, Windows, and Linux, with built-in benchmarks for training and evaluation. It surged in stars as the computer-use space matures beyond prototype demos into a need for production-grade open infrastructure — particularly for teams building their own agents or fine-tuning models on interaction data. The cross-OS fleet management and data-generation pipeline differentiate it from single-machine solutions. ML researchers, AI product teams, and automation engineers who need reproducible, scalable environments for computer-use model development are the primary audience.",
+      "language": "Python",
+      "lang_color": "#3572A5",
+      "description": "Scale computer-use 2.0 with open-source drivers, cross-OS fleets, and benchmarks for training",
+      "analysis": "Cua provides an end-to-end open-source stack for building AI agents that operate graphical desktops—cloud VM fleets, a native app automation driver, local macOS VMs via Virtualization.Framework, and task benchmarks for model evaluation. It trended as \"Computer-Use 2.0\" momentum grows and teams want open infrastructure rather than proprietary solutions from cloud vendors. The platform is model-agnostic: bring your own LLM; Cua manages the environment layer. Researchers training desktop-interaction models, AI agent developers, and teams building GUI automation workflows are the primary audience.",
       "llm_api": "optional",
-      "llm_api_note": "Framework is local-first; LLM/computer-use model integration is bring-your-own",
+      "llm_api_note": "Bring your own agent and model; platform itself needs no API key",
       "topics": [
         "AI Agents",
         "Sandboxes & Runtimes"
       ],
       "first_seen": "2026-09-19",
-      "last_seen": "2026-09-19",
+      "last_seen": "2026-09-21",
       "best_rank": 2,
-      "latest_stars": 24321,
+      "latest_stars": 25659,
       "max_gained": 1124
     },
     {
@@ -3325,22 +3338,29 @@
           "rank": 4,
           "stars": 15588,
           "gained": 406
+        },
+        {
+          "date": "2026-09-21",
+          "rank": 5,
+          "stars": 16391,
+          "gained": 461
         }
       ],
       "language": "Go",
       "lang_color": "#00ADD8",
       "description": "Secure environments for developers and their agents",
-      "analysis": "Coder is an open-source platform for provisioning and centrally managing self-hosted cloud development environments (CDEs) — standardized, container-based workspaces that give developers and AI agents a consistent, secure compute environment accessible from any IDE. Its renewed trending momentum reflects the enterprise shift toward agent-ready infrastructure: as AI coding agents proliferate, teams need sandboxed environments that both humans and autonomous agents can reliably operate in without security risk. Platform and infrastructure engineers at medium-to-large organizations, particularly those running regulated or security-sensitive workloads, are the primary users.",
-      "llm_api": "none",
+      "analysis": "Coder is a self-hosted platform for provisioning and managing cloud development environments defined as Terraform templates, now with first-class AI agent orchestration: teams can run Claude, GPT, Gemini, or self-hosted models centrally without distributing API keys to every developer workspace. It trended today as enterprise interest in governed AI coding environments grows—organizations want audit logs, cost tracking, and access controls over AI agent use. The Go/TypeScript stack deploys on Kubernetes, Docker, or major cloud providers. Best suited for platform engineering teams that need standardized, secure dev environments with scalable AI agent workflows.",
+      "llm_api": "optional",
       "topics": [
         "Developer Tools",
         "Sandboxes & Runtimes"
       ],
+      "llm_api_note": "Supports any model via centralized credentials; no key needed per workspace",
       "first_seen": "2026-09-19",
-      "last_seen": "2026-09-19",
+      "last_seen": "2026-09-21",
       "best_rank": 4,
-      "latest_stars": 15588,
-      "max_gained": 406
+      "latest_stars": 16391,
+      "max_gained": 461
     },
     {
       "owner": "anthropics",
@@ -3369,6 +3389,62 @@
       "best_rank": 5,
       "latest_stars": 146678,
       "max_gained": 482
+    },
+    {
+      "owner": "Open-Dev-Society",
+      "repo": "OpenStock",
+      "url": "https://github.com/Open-Dev-Society/OpenStock",
+      "appearances": [
+        {
+          "date": "2026-09-21",
+          "rank": 1,
+          "stars": 17637,
+          "gained": 843
+        }
+      ],
+      "language": "TypeScript",
+      "lang_color": "#3178c6",
+      "description": "Open-source alternative to expensive market platforms with real-time prices and company insights",
+      "analysis": "OpenStock is a free, self-hostable stock market dashboard built with Next.js 15 and TypeScript that offers real-time prices, watchlists, personalized alerts, and company insights—replacing paid platforms like Bloomberg Terminal for everyday investors. It trended today as retail investors and developers look for affordable, transparent alternatives to subscription-based market data tools. The project runs without an LLM but optionally integrates Google Gemini for AI-personalized features. Ideal for self-hosted finance enthusiasts, dev students, and anyone wanting a production-quality market tracker under AGPL-3.0.",
+      "llm_api": "optional",
+      "llm_api_note": "Google Gemini optional for AI emails; fully functional without any LLM",
+      "topics": [
+        "Finance & Trading",
+        "Developer Tools"
+      ],
+      "first_seen": "2026-09-21",
+      "last_seen": "2026-09-21",
+      "best_rank": 1,
+      "latest_stars": 17637,
+      "max_gained": 843
+    },
+    {
+      "owner": "BuilderIO",
+      "repo": "agent-native",
+      "url": "https://github.com/BuilderIO/agent-native",
+      "appearances": [
+        {
+          "date": "2026-09-21",
+          "rank": 3,
+          "stars": 5842,
+          "gained": 607
+        }
+      ],
+      "language": "TypeScript",
+      "lang_color": "#3178c6",
+      "description": "A framework for building agentic apps",
+      "analysis": "Agent-Native is an open-source TypeScript framework from Builder.io that unifies autonomous agent logic and user-facing UI through a shared \"actions\" layer—so the same capabilities exposed to a React component are available to an agent tool, HTTP endpoint, and webhook without duplication. It trended because developers are actively seeking patterns for \"agent-native\" app architecture rather than bolting agents onto existing UIs. The framework ships with built-in auth, memory, multi-agent teams, and PostgreSQL support. Aimed at TypeScript/React developers building apps where humans and AI agents collaborate on the same workflows.",
+      "llm_api": "optional",
+      "llm_api_note": "BYO LLM; framework is model-agnostic with no required API key",
+      "topics": [
+        "AI Agents",
+        "Developer Tools"
+      ],
+      "first_seen": "2026-09-21",
+      "last_seen": "2026-09-21",
+      "best_rank": 3,
+      "latest_stars": 5842,
+      "max_gained": 607
     }
   ]
 }

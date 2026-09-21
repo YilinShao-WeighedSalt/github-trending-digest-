@@ -1,0 +1,76 @@
+{
+  "date": "2026-09-21",
+  "title": "GitHub Trending Top 5",
+  "repos": [
+    {
+      "rank": 1,
+      "owner": "Open-Dev-Society",
+      "repo": "OpenStock",
+      "url": "https://github.com/Open-Dev-Society/OpenStock",
+      "language": "TypeScript",
+      "stars": 17637,
+      "gained_today": 843,
+      "description": "Open-source alternative to expensive market platforms with real-time prices and company insights",
+      "analysis": "OpenStock is a free, self-hostable stock market dashboard built with Next.js 15 and TypeScript that offers real-time prices, watchlists, personalized alerts, and company insights—replacing paid platforms like Bloomberg Terminal for everyday investors. It trended today as retail investors and developers look for affordable, transparent alternatives to subscription-based market data tools. The project runs without an LLM but optionally integrates Google Gemini for AI-personalized features. Ideal for self-hosted finance enthusiasts, dev students, and anyone wanting a production-quality market tracker under AGPL-3.0.",
+      "llm_api": "optional",
+      "llm_api_note": "Google Gemini optional for AI emails; fully functional without any LLM",
+      "topics": ["Finance & Trading", "Developer Tools"]
+    },
+    {
+      "rank": 2,
+      "owner": "trycua",
+      "repo": "cua",
+      "url": "https://github.com/trycua/cua",
+      "language": "Python",
+      "stars": 25659,
+      "gained_today": 609,
+      "description": "Scale computer-use 2.0 with open-source drivers, cross-OS fleets, and benchmarks for training",
+      "analysis": "Cua provides an end-to-end open-source stack for building AI agents that operate graphical desktops—cloud VM fleets, a native app automation driver, local macOS VMs via Virtualization.Framework, and task benchmarks for model evaluation. It trended as \"Computer-Use 2.0\" momentum grows and teams want open infrastructure rather than proprietary solutions from cloud vendors. The platform is model-agnostic: bring your own LLM; Cua manages the environment layer. Researchers training desktop-interaction models, AI agent developers, and teams building GUI automation workflows are the primary audience.",
+      "llm_api": "optional",
+      "llm_api_note": "Bring your own agent and model; platform itself needs no API key",
+      "topics": ["AI Agents", "Sandboxes & Runtimes"]
+    },
+    {
+      "rank": 3,
+      "owner": "BuilderIO",
+      "repo": "agent-native",
+      "url": "https://github.com/BuilderIO/agent-native",
+      "language": "TypeScript",
+      "stars": 5842,
+      "gained_today": 607,
+      "description": "A framework for building agentic apps",
+      "analysis": "Agent-Native is an open-source TypeScript framework from Builder.io that unifies autonomous agent logic and user-facing UI through a shared \"actions\" layer—so the same capabilities exposed to a React component are available to an agent tool, HTTP endpoint, and webhook without duplication. It trended because developers are actively seeking patterns for \"agent-native\" app architecture rather than bolting agents onto existing UIs. The framework ships with built-in auth, memory, multi-agent teams, and PostgreSQL support. Aimed at TypeScript/React developers building apps where humans and AI agents collaborate on the same workflows.",
+      "llm_api": "optional",
+      "llm_api_note": "BYO LLM; framework is model-agnostic with no required API key",
+      "topics": ["AI Agents", "Developer Tools"]
+    },
+    {
+      "rank": 4,
+      "owner": "akitaonrails",
+      "repo": "ai-memory",
+      "url": "https://github.com/akitaonrails/ai-memory",
+      "language": "Rust",
+      "stars": 7630,
+      "gained_today": 217,
+      "description": "Solution for long term memory for agent coding CLIs and vendor handoff",
+      "analysis": "ai-memory is a lightweight Rust binary that gives AI coding agents (Claude Code, Codex, Cursor, etc.) persistent, cross-session, cross-machine memory stored in a git-backed markdown wiki with SQLite FTS5 search—all with zero LLM calls by default. It trended because the pain of losing context when switching agents or machines is universal among AI-assisted developers. LLM providers are optional add-ons for semantic search and summarization. Perfect for developers juggling multiple AI coding tools who need seamless handoffs without re-explaining their codebase state each session.",
+      "llm_api": "optional",
+      "llm_api_note": "Zero LLM calls by default; local/cloud LLM add-ons for enhanced search",
+      "topics": ["RAG & Memory", "AI Agents"]
+    },
+    {
+      "rank": 5,
+      "owner": "coder",
+      "repo": "coder",
+      "url": "https://github.com/coder/coder",
+      "language": "Go",
+      "stars": 16391,
+      "gained_today": 461,
+      "description": "Secure environments for developers and their agents",
+      "analysis": "Coder is a self-hosted platform for provisioning and managing cloud development environments defined as Terraform templates, now with first-class AI agent orchestration: teams can run Claude, GPT, Gemini, or self-hosted models centrally without distributing API keys to every developer workspace. It trended today as enterprise interest in governed AI coding environments grows—organizations want audit logs, cost tracking, and access controls over AI agent use. The Go/TypeScript stack deploys on Kubernetes, Docker, or major cloud providers. Best suited for platform engineering teams that need standardized, secure dev environments with scalable AI agent workflows.",
+      "llm_api": "optional",
+      "llm_api_note": "Supports any model via centralized credentials; no key needed per workspace",
+      "topics": ["Developer Tools", "Sandboxes & Runtimes"]
+    }
+  ]
+}
