@@ -1,0 +1,76 @@
+{
+  "date": "2026-09-23",
+  "title": "GitHub Trending Top 5",
+  "repos": [
+    {
+      "rank": 1,
+      "owner": "anthropics",
+      "repo": "financial-services",
+      "url": "https://github.com/anthropics/financial-services",
+      "language": "Python",
+      "stars": 36897,
+      "gained_today": 665,
+      "description": "Reference agents, skills, and data connectors built on Claude for financial services workflows",
+      "analysis": "Anthropic's official open-source toolkit brings production-ready AI agents to investment banking, equity research, private equity, and fund administration. It ships named workflow agents (Pitch Agent, GL Reconciler, KYC Screener) alongside 11 MCP data connectors for Bloomberg, FactSet, PitchBook, and similar platforms. Trending on the strength of Anthropic's brand and the financial industry's intensifying AI adoption cycle. Finance teams and FSI developers building Claude-powered workflows are the primary audience.",
+      "llm_api": "required",
+      "llm_api_note": "Anthropic API required; deploy as Claude Cowork plugin or via Managed Agents API",
+      "topics": ["Finance & Trading", "Agent Skills & Plugins"]
+    },
+    {
+      "rank": 2,
+      "owner": "google",
+      "repo": "ax",
+      "url": "https://github.com/google/ax",
+      "language": "Go",
+      "stars": 8956,
+      "gained_today": 1542,
+      "description": "Google's open agentic orchestration runtime",
+      "analysis": "AX is Google's open-source runtime for running autonomous agent workloads at scale, offering four core primitives: Task (sandboxed execution), Workspace (pre-configured repos and MCP servers), Gateway (outbound network allowlisting), and Model (LLM credential management). It supports Kubernetes-style YAML manifests, checkpoint-resume, and live SSH debugging into sandboxes. Today's explosive star gain reflects excitement over Google entering the agent infrastructure space with a production-grade, isolation-first alternative. Platform engineers and teams deploying untrusted or high-volume agent workloads are its natural fit.",
+      "llm_api": "optional",
+      "llm_api_note": "LLM credentials configured per task; runtime itself is model-agnostic",
+      "topics": ["AI Agents", "Sandboxes & Runtimes"]
+    },
+    {
+      "rank": 3,
+      "owner": "davila7",
+      "repo": "claude-code-templates",
+      "url": "https://github.com/davila7/claude-code-templates",
+      "language": "Python",
+      "stars": 31463,
+      "gained_today": 393,
+      "description": "CLI tool for configuring and monitoring Claude Code with 100+ community templates",
+      "analysis": "A community-curated marketplace of 100+ ready-made configurations for Claude Code, covering specialized AI agents, MCP server integrations (GitHub, PostgreSQL, AWS), custom slash commands, automation hooks, and analytics dashboards. Users browse and install components through an interactive web UI at aitmpl.com, lowering the barrier to extending Claude Code significantly. Trending on organic interest from the fast-growing Claude Code ecosystem. Developers on Claude Code who want to supercharge their setup without starting from scratch will find this immediately useful.",
+      "llm_api": "required",
+      "llm_api_note": "Claude Code required; templates extend Claude Code agents and MCP integrations",
+      "topics": ["Agent Skills & Plugins", "Developer Tools"]
+    },
+    {
+      "rank": 4,
+      "owner": "BuilderIO",
+      "repo": "agent-native",
+      "url": "https://github.com/BuilderIO/agent-native",
+      "language": "TypeScript",
+      "stars": 6502,
+      "gained_today": 135,
+      "description": "A framework for building agentic apps where agents and UIs share the same action layer",
+      "analysis": "Agent-Native is a TypeScript framework that unifies the action layer between AI agents and human-facing UIs — a single code definition that simultaneously serves as an agent tool, UI handler, HTTP endpoint, MCP server, and CLI command. It bundles agent chat, skills, memory, automations, agent teams, and a PostgreSQL backend into a cohesive application framework. Trending on organic interest as developers look for structured patterns to build agent-first products. Full-stack TypeScript developers building knowledge-work apps where humans and agents collaborate are its sweet spot.",
+      "llm_api": "optional",
+      "llm_api_note": "Bring-your-own LLM for agent capabilities; UI and action layer work independently",
+      "topics": ["AI Agents", "Developer Tools"]
+    },
+    {
+      "rank": 5,
+      "owner": "obra",
+      "repo": "superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "language": "Shell",
+      "stars": 290650,
+      "gained_today": 485,
+      "description": "An agentic skills framework and software development methodology for coding agents",
+      "analysis": "Superpowers is a structured software development methodology packaged as a composable skill library for AI coding agents across Claude Code, Cursor, GitHub Copilot, Devin, and others. It enforces professional engineering practices — requirements refinement, detailed planning, test-driven development with RED-GREEN-REFACTOR cycles, systematic debugging, and code review — rather than letting agents jump straight to code generation. Trending on strong organic interest with 290K stars, reflecting widespread appetite for quality-focused agent workflows. Developers who want their coding agents to behave like senior engineers rather than autocomplete on steroids will find it transformative.",
+      "llm_api": "required",
+      "llm_api_note": "Agent skills framework — requires Claude Code, Cursor, or a compatible coding agent",
+      "topics": ["Agent Skills & Plugins", "Developer Tools"]
+    }
+  ]
+}
