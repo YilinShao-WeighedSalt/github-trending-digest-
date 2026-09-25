@@ -33,7 +33,8 @@
     "2026-09-17",
     "2026-09-19",
     "2026-09-21",
-    "2026-09-23"
+    "2026-09-23",
+    "2026-09-25"
   ],
   "repos": [
     {
@@ -1860,22 +1861,28 @@
           "rank": 1,
           "stars": 252444,
           "gained": 2666
+        },
+        {
+          "date": "2026-09-25",
+          "rank": 5,
+          "stars": 269688,
+          "gained": 588
         }
       ],
       "language": "Shell",
       "lang_color": "#89e051",
-      "description": "Skills for Real Engineers. Straight from my .agents directory.",
-      "analysis": "A curated collection of composable, real-world agent skills for AI coding assistants like Claude Code and GitHub Codex, drawn directly from the author's production workflows. The skills address four common failure modes: intent misalignment, agent verbosity, code-quality drift, and architectural degradation. It trended today as AI-assisted coding hit mainstream adoption and engineers sought opinionated, battle-tested skill packs over blank-slate prompting. Any developer using Claude Code, Cursor, or Codex who wants structured, reusable guidance rather than ad-hoc prompts will find this immediately useful.",
-      "llm_api": "required",
-      "llm_api_note": "Requires an LLM coding agent (Claude Code, Codex, etc.) to run the skills",
+      "description": "Skills for Real Engineers. Straight from my .agents directory",
+      "analysis": "Matt Pocock's personal collection of reusable agent skills and prompts for AI coding assistants, addressing four core failure modes: misalignment between developer intent and agent output, excessive verbosity, unreliable code generation, and architectural drift. The skills are language-agnostic, composable, and built around grilling sessions, domain modeling, TDD, and architectural reviews for use with Claude Code, Codex, or any coding agent. Trending due to Matt Pocock's large following in the TypeScript and frontend community who trust his engineering taste. Software engineers who want structured, expert-curated AI workflows rather than freestyle prompt-and-pray assistance are the target users.",
+      "llm_api": "optional",
+      "llm_api_note": "Skills for Claude Code/Codex — no direct API calls; used within an existing agent",
       "topics": [
         "Agent Skills & Plugins",
         "Developer Tools"
       ],
       "first_seen": "2026-08-21",
-      "last_seen": "2026-09-05",
+      "last_seen": "2026-09-25",
       "best_rank": 1,
-      "latest_stars": 252444,
+      "latest_stars": 269688,
       "max_gained": 3368
     },
     {
@@ -2860,22 +2867,28 @@
           "rank": 5,
           "stars": 290650,
           "gained": 485
+        },
+        {
+          "date": "2026-09-25",
+          "rank": 4,
+          "stars": 291629,
+          "gained": 465
         }
       ],
       "language": "Shell",
       "lang_color": "#89e051",
-      "description": "An agentic skills framework and software development methodology for coding agents",
-      "analysis": "Superpowers is a structured software development methodology packaged as a composable skill library for AI coding agents across Claude Code, Cursor, GitHub Copilot, Devin, and others. It enforces professional engineering practices — requirements refinement, detailed planning, test-driven development with RED-GREEN-REFACTOR cycles, systematic debugging, and code review — rather than letting agents jump straight to code generation. Trending on strong organic interest with 290K stars, reflecting widespread appetite for quality-focused agent workflows. Developers who want their coding agents to behave like senior engineers rather than autocomplete on steroids will find it transformative.",
-      "llm_api": "required",
-      "llm_api_note": "Agent skills framework — requires Claude Code, Cursor, or a compatible coding agent",
+      "description": "An agentic skills framework & software development methodology that works",
+      "analysis": "Superpowers is a structured software development methodology and composable skills framework that prevents AI coding agents from jumping straight to implementation, instead enforcing a disciplined workflow of clarify-design-plan-execute with TDD and mandatory code review phases. It works as a plugin across Claude Code, Cursor, GitHub Copilot CLI, Gemini, and Devin without requiring any direct LLM API keys itself. Trending on organic interest from developers frustrated by agentic 'vibe coding' and looking for rigorous, repeatable engineering practices. Developers who want their coding agents to behave like disciplined engineers rather than autocomplete on steroids will find this a strong fit.",
+      "llm_api": "optional",
+      "llm_api_note": "Works atop any coding agent — no direct API calls; agents handle their own credentials",
       "topics": [
         "Agent Skills & Plugins",
         "Developer Tools"
       ],
       "first_seen": "2026-09-09",
-      "last_seen": "2026-09-23",
+      "last_seen": "2026-09-25",
       "best_rank": 3,
-      "latest_stars": 290650,
+      "latest_stars": 291629,
       "max_gained": 690
     },
     {
@@ -3542,6 +3555,90 @@
       "best_rank": 3,
       "latest_stars": 31463,
       "max_gained": 393
+    },
+    {
+      "owner": "paperclipai",
+      "repo": "paperclip",
+      "url": "https://github.com/paperclipai/paperclip",
+      "appearances": [
+        {
+          "date": "2026-09-25",
+          "rank": 1,
+          "stars": 84727,
+          "gained": 1853
+        }
+      ],
+      "language": "TypeScript",
+      "lang_color": "#3178c6",
+      "description": "The open-source app everyone uses to manage agents at work",
+      "analysis": "Paperclip is an open-source orchestration platform for running teams of AI agents, solving coordination challenges like lost context, cost overruns, and lack of governance when deploying multiple autonomous agents. It provides persistent state management, budget enforcement, approval workflows, and hierarchical org structures across providers like Claude, Codex, and Cursor. Trending today on the back of a viral wave around autonomous business workflows and agentic automation. Ideal for teams building multi-agent pipelines who need an operational control plane rather than a single-agent wrapper.",
+      "llm_api": "required",
+      "llm_api_note": "Agents need provider API keys (Anthropic, OpenAI, etc.); local adapters available",
+      "topics": [
+        "AI Agents",
+        "Developer Tools"
+      ],
+      "first_seen": "2026-09-25",
+      "last_seen": "2026-09-25",
+      "best_rank": 1,
+      "latest_stars": 84727,
+      "max_gained": 1853
+    },
+    {
+      "owner": "anthropics",
+      "repo": "claude-plugins-official",
+      "url": "https://github.com/anthropics/claude-plugins-official",
+      "appearances": [
+        {
+          "date": "2026-09-25",
+          "rank": 2,
+          "stars": 36892,
+          "gained": 62
+        }
+      ],
+      "language": "Python",
+      "lang_color": "#3572A5",
+      "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins",
+      "analysis": "This is Anthropic's official curated marketplace of high-quality plugins for Claude Code, providing a centralized, vetted source for MCP servers, slash commands, skills, and agent extensions. It solves the trust and discoverability problem for Claude Code users who previously had to hunt across disparate sources for reliable integrations. Trending organically as Claude Code's plugin ecosystem matures and Anthropic formalizes the plugin infrastructure. Claude Code users and teams needing certified, well-maintained extensions for their AI development workflow are the primary audience.",
+      "llm_api": "required",
+      "llm_api_note": "Plugins for Claude Code — requires an active Claude subscription or API key",
+      "topics": [
+        "Agent Skills & Plugins",
+        "MCP & Integrations"
+      ],
+      "first_seen": "2026-09-25",
+      "last_seen": "2026-09-25",
+      "best_rank": 2,
+      "latest_stars": 36892,
+      "max_gained": 62
+    },
+    {
+      "owner": "vectorize-io",
+      "repo": "hindsight",
+      "url": "https://github.com/vectorize-io/hindsight",
+      "appearances": [
+        {
+          "date": "2026-09-25",
+          "rank": 3,
+          "stars": 29732,
+          "gained": 1652
+        }
+      ],
+      "language": "Python",
+      "lang_color": "#3572A5",
+      "description": "Hindsight: Agent Memory That Learns",
+      "analysis": "Hindsight is an agent memory system that makes AI agents genuinely learn from experience rather than simply recalling past conversations, using biomimetic data structures (world facts, experiences, mental models) and retain/recall/reflect operations. It outperforms RAG and knowledge graphs on long-term memory benchmarks across 25+ LLM providers. Likely trending today due to fresh benchmark results or a major release sparking interest in durable agent memory. Teams building personalized conversational agents or autonomous task agents on LangGraph, CrewAI, n8n, or Claude Code integrations are the core users.",
+      "llm_api": "required",
+      "llm_api_note": "BYO key (OpenAI/Anthropic/Groq/etc.); local Ollama supported",
+      "topics": [
+        "RAG & Memory",
+        "AI Agents"
+      ],
+      "first_seen": "2026-09-25",
+      "last_seen": "2026-09-25",
+      "best_rank": 3,
+      "latest_stars": 29732,
+      "max_gained": 1652
     }
   ]
 }
