@@ -34,7 +34,8 @@
     "2026-09-19",
     "2026-09-21",
     "2026-09-23",
-    "2026-09-25"
+    "2026-09-25",
+    "2026-09-27"
   ],
   "repos": [
     {
@@ -3177,23 +3178,29 @@
           "rank": 4,
           "stars": 30828,
           "gained": 2081
+        },
+        {
+          "date": "2026-09-27",
+          "rank": 3,
+          "stars": 39898,
+          "gained": 3060
         }
       ],
       "language": "Python",
       "lang_color": "#3572A5",
-      "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
-      "analysis": "VoiceStudio is a fully local, open-source Python application that replicates the core feature set of ElevenLabs — voice cloning, voice design, video dubbing, dictation, transcription, and audiobook generation — across 646 languages, with everything running on the user's own hardware and no cloud API keys required. It likely trended because privacy-aware creators and developers have been searching for a self-hosted alternative to ElevenLabs' paid tiers, and the 646-language breadth is a remarkable differentiator. Content creators, podcasters, game developers, and accessibility-tool builders who need high-quality voice synthesis without recurring API costs or data leaving their machine are the natural users.",
-      "llm_api": "optional",
+      "description": "Open-source voice cloning and processing platform supporting 646 languages",
+      "analysis": "VoiceStudio is a self-hosted Electron/Python desktop app for voice cloning, video dubbing, transcription, and audiobook production — covering 646 languages via the k2-fsa OmniVoice engine. It trended as an open-source alternative to ElevenLabs at a time when paid tier prices are climbing and creators want offline, privacy-first tooling. Perfect for podcasters, localization teams, and content creators who need high-quality TTS without a cloud subscription.",
+      "llm_api": "none",
       "llm_api_note": "Fully local voice AI; all models run on your own hardware, no API key needed",
       "topics": [
         "Video & Media",
-        "AI Agents"
+        "Developer Tools"
       ],
       "first_seen": "2026-09-15",
-      "last_seen": "2026-09-15",
-      "best_rank": 4,
-      "latest_stars": 30828,
-      "max_gained": 2081
+      "last_seen": "2026-09-27",
+      "best_rank": 3,
+      "latest_stars": 39898,
+      "max_gained": 3060
     },
     {
       "owner": "Homebrew",
@@ -3566,23 +3573,29 @@
           "rank": 1,
           "stars": 84727,
           "gained": 1853
+        },
+        {
+          "date": "2026-09-27",
+          "rank": 1,
+          "stars": 89657,
+          "gained": 2527
         }
       ],
       "language": "TypeScript",
       "lang_color": "#3178c6",
       "description": "The open-source app everyone uses to manage agents at work",
-      "analysis": "Paperclip is an open-source orchestration platform for running teams of AI agents, solving coordination challenges like lost context, cost overruns, and lack of governance when deploying multiple autonomous agents. It provides persistent state management, budget enforcement, approval workflows, and hierarchical org structures across providers like Claude, Codex, and Cursor. Trending today on the back of a viral wave around autonomous business workflows and agentic automation. Ideal for teams building multi-agent pipelines who need an operational control plane rather than a single-agent wrapper.",
+      "analysis": "Paperclip is a Node.js/React orchestration platform that runs a team of AI agents as an autonomous business workforce — handling org charts, cost budgets, approvals, and audit trails. It likely trended as the agentic-AI hype cycle shifts from toy demos to production governance: teams want structure around their growing fleets of Codex and Claude agents. Primarily suited to engineering and ops teams at startups building on top of multiple AI providers simultaneously.",
       "llm_api": "required",
-      "llm_api_note": "Agents need provider API keys (Anthropic, OpenAI, etc.); local adapters available",
+      "llm_api_note": "BYO key (Anthropic/OpenAI); agents won't execute without one",
       "topics": [
         "AI Agents",
-        "Developer Tools"
+        "Productivity & Research"
       ],
       "first_seen": "2026-09-25",
-      "last_seen": "2026-09-25",
+      "last_seen": "2026-09-27",
       "best_rank": 1,
-      "latest_stars": 84727,
-      "max_gained": 1853
+      "latest_stars": 89657,
+      "max_gained": 2527
     },
     {
       "owner": "anthropics",
@@ -3622,23 +3635,84 @@
           "rank": 3,
           "stars": 29732,
           "gained": 1652
+        },
+        {
+          "date": "2026-09-27",
+          "rank": 2,
+          "stars": 37136,
+          "gained": 4463
         }
       ],
       "language": "Python",
       "lang_color": "#3572A5",
       "description": "Hindsight: Agent Memory That Learns",
-      "analysis": "Hindsight is an agent memory system that makes AI agents genuinely learn from experience rather than simply recalling past conversations, using biomimetic data structures (world facts, experiences, mental models) and retain/recall/reflect operations. It outperforms RAG and knowledge graphs on long-term memory benchmarks across 25+ LLM providers. Likely trending today due to fresh benchmark results or a major release sparking interest in durable agent memory. Teams building personalized conversational agents or autonomous task agents on LangGraph, CrewAI, n8n, or Claude Code integrations are the core users.",
+      "analysis": "Hindsight gives AI agents biomimetic long-term memory — organizing world facts, experiences, and mental models via pgvector so agents genuinely improve across sessions rather than starting fresh every time. It topped the daily gain chart (4 k+ stars) likely on the back of a high-profile benchmark release showing it outperforms naive RAG on memory recall tasks. A drop-in layer for any Python, TypeScript, or Go agent that targets OpenAI-compatible endpoints across 25+ providers.",
       "llm_api": "required",
-      "llm_api_note": "BYO key (OpenAI/Anthropic/Groq/etc.); local Ollama supported",
+      "llm_api_note": "BYO key (OpenAI-compatible or Claude Pro); 25+ providers supported",
       "topics": [
         "RAG & Memory",
         "AI Agents"
       ],
       "first_seen": "2026-09-25",
-      "last_seen": "2026-09-25",
-      "best_rank": 3,
-      "latest_stars": 29732,
-      "max_gained": 1652
+      "last_seen": "2026-09-27",
+      "best_rank": 2,
+      "latest_stars": 37136,
+      "max_gained": 4463
+    },
+    {
+      "owner": "rohitg00",
+      "repo": "ai-engineering-from-scratch",
+      "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+      "appearances": [
+        {
+          "date": "2026-09-27",
+          "rank": 4,
+          "stars": 59198,
+          "gained": 848
+        }
+      ],
+      "language": "Python",
+      "lang_color": "#3572A5",
+      "description": "Learn it. Build it. Ship it for others.",
+      "analysis": "This 523-lesson open curriculum takes developers from linear-algebra fundamentals through agent engineering and production deployment in Python, TypeScript, Rust, and Julia. Trending on sustained organic interest as more developers realize that calling an API is not the same as understanding AI — the course produces real portfolio artifacts (MCP servers, agents, prompts) at each phase. Optional AI-learning skills integrate with Claude Code, Codex, or Cursor for interactive coaching, but all materials read fine standalone.",
+      "llm_api": "optional",
+      "llm_api_note": "Optional: learning skills pair with Claude Code, Codex, or Cursor",
+      "topics": [
+        "Education",
+        "AI Agents"
+      ],
+      "first_seen": "2026-09-27",
+      "last_seen": "2026-09-27",
+      "best_rank": 4,
+      "latest_stars": 59198,
+      "max_gained": 848
+    },
+    {
+      "owner": "InfinityLoop1308",
+      "repo": "PipePipe",
+      "url": "https://github.com/InfinityLoop1308/PipePipe",
+      "appearances": [
+        {
+          "date": "2026-09-27",
+          "rank": 5,
+          "stars": 6540,
+          "gained": 139
+        }
+      ],
+      "language": "Java",
+      "lang_color": "#b07219",
+      "description": "An open-source Android app to let you browse YouTube and other services freely",
+      "analysis": "PipePipe is a feature-rich Android fork of NewPipe that strips out tracking from YouTube, Bilibili, NicoNico and similar platforms, adding SponsorBlock, ReturnYouTubeDislike, danmaku live chat, and granular content filters. Trending on organic interest among privacy-conscious users as YouTube's crackdown on third-party clients continues to push enthusiasts toward self-maintained alternatives. Fits any Android user who wants ad-free, account-free video consumption without relying on the official apps.",
+      "llm_api": "none",
+      "topics": [
+        "Video & Media",
+        "Security & Privacy"
+      ],
+      "first_seen": "2026-09-27",
+      "last_seen": "2026-09-27",
+      "best_rank": 5,
+      "latest_stars": 6540,
+      "max_gained": 139
     }
   ]
 }

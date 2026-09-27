@@ -1,0 +1,74 @@
+{
+  "date": "2026-09-27",
+  "title": "GitHub Trending Top 5",
+  "repos": [
+    {
+      "rank": 1,
+      "owner": "paperclipai",
+      "repo": "paperclip",
+      "url": "https://github.com/paperclipai/paperclip",
+      "language": "TypeScript",
+      "stars": 89657,
+      "gained_today": 2527,
+      "description": "The open-source app everyone uses to manage agents at work",
+      "analysis": "Paperclip is a Node.js/React orchestration platform that runs a team of AI agents as an autonomous business workforce — handling org charts, cost budgets, approvals, and audit trails. It likely trended as the agentic-AI hype cycle shifts from toy demos to production governance: teams want structure around their growing fleets of Codex and Claude agents. Primarily suited to engineering and ops teams at startups building on top of multiple AI providers simultaneously.",
+      "llm_api": "required",
+      "llm_api_note": "BYO key (Anthropic/OpenAI); agents won't execute without one",
+      "topics": ["AI Agents", "Productivity & Research"]
+    },
+    {
+      "rank": 2,
+      "owner": "vectorize-io",
+      "repo": "hindsight",
+      "url": "https://github.com/vectorize-io/hindsight",
+      "language": "Python",
+      "stars": 37136,
+      "gained_today": 4463,
+      "description": "Hindsight: Agent Memory That Learns",
+      "analysis": "Hindsight gives AI agents biomimetic long-term memory — organizing world facts, experiences, and mental models via pgvector so agents genuinely improve across sessions rather than starting fresh every time. It topped the daily gain chart (4 k+ stars) likely on the back of a high-profile benchmark release showing it outperforms naive RAG on memory recall tasks. A drop-in layer for any Python, TypeScript, or Go agent that targets OpenAI-compatible endpoints across 25+ providers.",
+      "llm_api": "required",
+      "llm_api_note": "BYO key (OpenAI-compatible or Claude Pro); 25+ providers supported",
+      "topics": ["RAG & Memory", "AI Agents"]
+    },
+    {
+      "rank": 3,
+      "owner": "debpalash",
+      "repo": "VoiceStudio",
+      "url": "https://github.com/debpalash/VoiceStudio",
+      "language": "Python",
+      "stars": 39898,
+      "gained_today": 3060,
+      "description": "Open-source voice cloning and processing platform supporting 646 languages",
+      "analysis": "VoiceStudio is a self-hosted Electron/Python desktop app for voice cloning, video dubbing, transcription, and audiobook production — covering 646 languages via the k2-fsa OmniVoice engine. It trended as an open-source alternative to ElevenLabs at a time when paid tier prices are climbing and creators want offline, privacy-first tooling. Perfect for podcasters, localization teams, and content creators who need high-quality TTS without a cloud subscription.",
+      "llm_api": "none",
+      "topics": ["Video & Media", "Developer Tools"]
+    },
+    {
+      "rank": 4,
+      "owner": "rohitg00",
+      "repo": "ai-engineering-from-scratch",
+      "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+      "language": "Python",
+      "stars": 59198,
+      "gained_today": 848,
+      "description": "Learn it. Build it. Ship it for others.",
+      "analysis": "This 523-lesson open curriculum takes developers from linear-algebra fundamentals through agent engineering and production deployment in Python, TypeScript, Rust, and Julia. Trending on sustained organic interest as more developers realize that calling an API is not the same as understanding AI — the course produces real portfolio artifacts (MCP servers, agents, prompts) at each phase. Optional AI-learning skills integrate with Claude Code, Codex, or Cursor for interactive coaching, but all materials read fine standalone.",
+      "llm_api": "optional",
+      "llm_api_note": "Optional: learning skills pair with Claude Code, Codex, or Cursor",
+      "topics": ["Education", "AI Agents"]
+    },
+    {
+      "rank": 5,
+      "owner": "InfinityLoop1308",
+      "repo": "PipePipe",
+      "url": "https://github.com/InfinityLoop1308/PipePipe",
+      "language": "Java",
+      "stars": 6540,
+      "gained_today": 139,
+      "description": "An open-source Android app to let you browse YouTube and other services freely",
+      "analysis": "PipePipe is a feature-rich Android fork of NewPipe that strips out tracking from YouTube, Bilibili, NicoNico and similar platforms, adding SponsorBlock, ReturnYouTubeDislike, danmaku live chat, and granular content filters. Trending on organic interest among privacy-conscious users as YouTube's crackdown on third-party clients continues to push enthusiasts toward self-maintained alternatives. Fits any Android user who wants ad-free, account-free video consumption without relying on the official apps.",
+      "llm_api": "none",
+      "topics": ["Video & Media", "Security & Privacy"]
+    }
+  ]
+}
