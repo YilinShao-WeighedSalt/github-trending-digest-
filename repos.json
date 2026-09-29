@@ -35,7 +35,8 @@
     "2026-09-21",
     "2026-09-23",
     "2026-09-25",
-    "2026-09-27"
+    "2026-09-27",
+    "2026-09-29"
   ],
   "repos": [
     {
@@ -3184,23 +3185,29 @@
           "rank": 3,
           "stars": 39898,
           "gained": 3060
+        },
+        {
+          "date": "2026-09-29",
+          "rank": 1,
+          "stars": 47903,
+          "gained": 4712
         }
       ],
       "language": "Python",
       "lang_color": "#3572A5",
-      "description": "Open-source voice cloning and processing platform supporting 646 languages",
-      "analysis": "VoiceStudio is a self-hosted Electron/Python desktop app for voice cloning, video dubbing, transcription, and audiobook production — covering 646 languages via the k2-fsa OmniVoice engine. It trended as an open-source alternative to ElevenLabs at a time when paid tier prices are climbing and creators want offline, privacy-first tooling. Perfect for podcasters, localization teams, and content creators who need high-quality TTS without a cloud subscription.",
-      "llm_api": "none",
-      "llm_api_note": "Fully local voice AI; all models run on your own hardware, no API key needed",
+      "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
+      "analysis": "VoiceStudio is a fully-local desktop app that replicates commercial voice AI services—voice cloning, video dubbing, transcription, and audiobook creation—across 646 languages, all running on-device. It shot to #1 trending as demand for private, local alternatives to ElevenLabs grew amid pricing and privacy concerns. Built on the OmniVoice speech engine, it exposes a local API and MCP server for developer integrations and ships an Electron desktop app for non-technical users. Content creators, podcasters, and developers who need voice features without cloud dependency are its core users.",
+      "llm_api": "optional",
+      "llm_api_note": "Fully local by default; optional remote worker support, no cloud API key required",
       "topics": [
         "Video & Media",
         "Developer Tools"
       ],
       "first_seen": "2026-09-15",
-      "last_seen": "2026-09-27",
-      "best_rank": 3,
-      "latest_stars": 39898,
-      "max_gained": 3060
+      "last_seen": "2026-09-29",
+      "best_rank": 1,
+      "latest_stars": 47903,
+      "max_gained": 4712
     },
     {
       "owner": "Homebrew",
@@ -3579,22 +3586,28 @@
           "rank": 1,
           "stars": 89657,
           "gained": 2527
+        },
+        {
+          "date": "2026-09-29",
+          "rank": 4,
+          "stars": 94371,
+          "gained": 2412
         }
       ],
       "language": "TypeScript",
       "lang_color": "#3178c6",
       "description": "The open-source app everyone uses to manage agents at work",
-      "analysis": "Paperclip is a Node.js/React orchestration platform that runs a team of AI agents as an autonomous business workforce — handling org charts, cost budgets, approvals, and audit trails. It likely trended as the agentic-AI hype cycle shifts from toy demos to production governance: teams want structure around their growing fleets of Codex and Claude agents. Primarily suited to engineering and ops teams at startups building on top of multiple AI providers simultaneously.",
+      "analysis": "Paperclip is an open-source Node.js/React platform that treats AI agents like employees—org charts, roles, budget caps, and delegation rules—coordinating multi-agent workflows toward shared business goals. Its viral branding and a surge in enterprise multi-agent adoption drove it to trend today. Agents maintain persistent context across sessions and are automatically stopped when monthly cost limits are hit. Solo operators and teams orchestrating Claude Code, Codex, or OpenRouter agents through a unified governance layer are its primary users.",
       "llm_api": "required",
-      "llm_api_note": "BYO key (Anthropic/OpenAI); agents won't execute without one",
+      "llm_api_note": "Orchestration layer; plug in Anthropic, OpenAI, or OpenRouter credentials for the agents",
       "topics": [
         "AI Agents",
         "Productivity & Research"
       ],
       "first_seen": "2026-09-25",
-      "last_seen": "2026-09-27",
+      "last_seen": "2026-09-29",
       "best_rank": 1,
-      "latest_stars": 89657,
+      "latest_stars": 94371,
       "max_gained": 2527
     },
     {
@@ -3641,22 +3654,29 @@
           "rank": 2,
           "stars": 37136,
           "gained": 4463
+        },
+        {
+          "date": "2026-09-29",
+          "rank": 3,
+          "stars": 42764,
+          "gained": 2541
         }
       ],
       "language": "Python",
       "lang_color": "#3572A5",
       "description": "Hindsight: Agent Memory That Learns",
-      "analysis": "Hindsight gives AI agents biomimetic long-term memory — organizing world facts, experiences, and mental models via pgvector so agents genuinely improve across sessions rather than starting fresh every time. It topped the daily gain chart (4 k+ stars) likely on the back of a high-profile benchmark release showing it outperforms naive RAG on memory recall tasks. A drop-in layer for any Python, TypeScript, or Go agent that targets OpenAI-compatible endpoints across 25+ providers.",
+      "analysis": "Hindsight is an agent memory platform that stores experiences, observations, and world facts using biomimetic data structures—going well beyond session history to let AI agents genuinely learn over time. It trended after claiming state-of-the-art on the LongMemEval benchmark, outperforming RAG and knowledge-graph approaches. Enterprises building AI employees that must handle open-ended tasks and adapt to user feedback are its primary customers. The system integrates with 60+ platforms and 25+ LLM providers, making it broadly framework-agnostic.",
       "llm_api": "required",
-      "llm_api_note": "BYO key (OpenAI-compatible or Claude Pro); 25+ providers supported",
+      "llm_api_note": "Requires LLM key (OpenAI, Anthropic, or 25+ others); Hindsight Cloud managed option available",
       "topics": [
         "RAG & Memory",
-        "AI Agents"
+        "AI Agents",
+        "LLM Infrastructure"
       ],
       "first_seen": "2026-09-25",
-      "last_seen": "2026-09-27",
+      "last_seen": "2026-09-29",
       "best_rank": 2,
-      "latest_stars": 37136,
+      "latest_stars": 42764,
       "max_gained": 4463
     },
     {
@@ -3713,6 +3733,63 @@
       "best_rank": 5,
       "latest_stars": 6540,
       "max_gained": 139
+    },
+    {
+      "owner": "NVIDIA",
+      "repo": "OpenShell",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "appearances": [
+        {
+          "date": "2026-09-29",
+          "rank": 2,
+          "stars": 10499,
+          "gained": 978
+        }
+      ],
+      "language": "Rust",
+      "lang_color": "#dea584",
+      "description": "OpenShell is the safe, private runtime for autonomous AI agents.",
+      "analysis": "OpenShell is a kernel-level sandboxed runtime from NVIDIA that lets autonomous AI agents safely access files, call APIs, and install packages while enforcing strict policies on every operation. NVIDIA's backing and growing urgency around agentic security drove it to trend today—organizations deploying agents at scale need verifiable containment. It uses formal verification to flag risky policy changes before approval, distinguishing it from simpler containerization. DevSecOps teams and organizations running fleets of AI agents in production are the target audience.",
+      "llm_api": "optional",
+      "llm_api_note": "Runtime is LLM-agnostic; agents running inside typically bring their own model credentials",
+      "topics": [
+        "AI Agents",
+        "Sandboxes & Runtimes",
+        "Security & Privacy"
+      ],
+      "first_seen": "2026-09-29",
+      "last_seen": "2026-09-29",
+      "best_rank": 2,
+      "latest_stars": 10499,
+      "max_gained": 978
+    },
+    {
+      "owner": "t8y2",
+      "repo": "dbx",
+      "url": "https://github.com/t8y2/dbx",
+      "appearances": [
+        {
+          "date": "2026-09-29",
+          "rank": 5,
+          "stars": 21923,
+          "gained": 349
+        }
+      ],
+      "language": "Rust",
+      "lang_color": "#dea584",
+      "description": "Lightweight cross-platform database client supporting 100+ databases with built-in AI and MCP Server capabilities.",
+      "analysis": "DBX is a 25 MB cross-platform database client that runs as a standalone binary—no Java, Python, or Chromium needed—supporting 100+ databases from PostgreSQL and MySQL to MongoDB, Redis, and DuckDB. It trended today largely for its MCP server mode, which lets AI coding agents like Claude Code and Cursor query databases through configured connections, directly bridging AI and data workflows. An optional AI SQL assistant (Claude, OpenAI, or local Ollama) lets users describe queries in plain language. Database developers and DevOps engineers seeking a lightweight DBeaver alternative with native AI integration are the target users.",
+      "llm_api": "optional",
+      "llm_api_note": "AI SQL assistant optional (Claude/OpenAI/Ollama); core DB client works fully standalone",
+      "topics": [
+        "Developer Tools",
+        "MCP & Integrations"
+      ],
+      "first_seen": "2026-09-29",
+      "last_seen": "2026-09-29",
+      "best_rank": 5,
+      "latest_stars": 21923,
+      "max_gained": 349
     }
   ]
 }
