@@ -36,7 +36,8 @@
     "2026-09-23",
     "2026-09-25",
     "2026-09-27",
-    "2026-09-29"
+    "2026-09-29",
+    "2026-10-01"
   ],
   "repos": [
     {
@@ -1869,22 +1870,29 @@
           "rank": 5,
           "stars": 269688,
           "gained": 588
+        },
+        {
+          "date": "2026-10-01",
+          "rank": 2,
+          "stars": 273826,
+          "gained": 888
         }
       ],
       "language": "Shell",
       "lang_color": "#89e051",
-      "description": "Skills for Real Engineers. Straight from my .agents directory",
-      "analysis": "Matt Pocock's personal collection of reusable agent skills and prompts for AI coding assistants, addressing four core failure modes: misalignment between developer intent and agent output, excessive verbosity, unreliable code generation, and architectural drift. The skills are language-agnostic, composable, and built around grilling sessions, domain modeling, TDD, and architectural reviews for use with Claude Code, Codex, or any coding agent. Trending due to Matt Pocock's large following in the TypeScript and frontend community who trust his engineering taste. Software engineers who want structured, expert-curated AI workflows rather than freestyle prompt-and-pray assistance are the target users.",
-      "llm_api": "optional",
-      "llm_api_note": "Skills for Claude Code/Codex — no direct API calls; used within an existing agent",
+      "description": "Skills for Real Engineers. Straight from my .agents directory.",
+      "analysis": "A curated library of reusable agent skills — structured workflows for code review, TDD, architecture analysis, and documentation — by TypeScript educator Matt Pocock, installable as files you own via a Claude Code plugin or npx. The skills are composable instruction sets (both user-invoked slash commands and model-invoked disciplines) that enforce a \"small, deliberate steps\" engineering philosophy in coding agents. It trended because Pocock is a highly respected voice in the TypeScript community and the collection addresses real pain: aligning AI agents with the habits of careful senior engineers. Fits teams using Claude Code or any agent platform who want consistent, high-quality automation.",
+      "llm_api": "required",
+      "llm_api_note": "Skills for Claude Code and other coding agents — useless without a host agent",
       "topics": [
         "Agent Skills & Plugins",
-        "Developer Tools"
+        "Developer Tools",
+        "Code Intelligence"
       ],
       "first_seen": "2026-08-21",
-      "last_seen": "2026-09-25",
+      "last_seen": "2026-10-01",
       "best_rank": 1,
-      "latest_stars": 269688,
+      "latest_stars": 273826,
       "max_gained": 3368
     },
     {
@@ -2666,22 +2674,29 @@
           "rank": 2,
           "stars": 127834,
           "gained": 2813
+        },
+        {
+          "date": "2026-10-01",
+          "rank": 1,
+          "stars": 150401,
+          "gained": 1179
         }
       ],
       "language": "JavaScript",
       "lang_color": "#f1e05a",
       "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
-      "analysis": "Ponytail injects a minimalist decision ladder into AI coding agents, pushing them to eliminate unnecessary code before writing any—prioritizing YAGNI, stdlib reuse, and one-liners over new implementations. The project reports 54% less generated code and 27% faster execution while keeping safety and accessibility intact. It trended because bloated AI-generated code has become a real pain point in production, and the 'laziest senior dev' framing resonated virally. Supports 20+ platforms including Claude Code, Cursor, and Windsurf via native plugin systems.",
+      "analysis": "Ponytail is a cross-platform plugin for AI coding agents (Claude Code, Cursor, Codex, Cline, GitHub Copilot) that enforces a \"laziness hierarchy\": agents must exhaust simpler options — reuse, stdlib, existing deps, one-liners — before writing any new code, with benchmarks showing 54% less generated code. It trended because developer frustration with verbose, over-engineered AI output has reached a tipping point, and Ponytail's sharp tagline and broad platform support made it go viral. Ideal for any developer using AI-assisted coding who values minimal, clean output over bloated solutions.",
       "llm_api": "required",
-      "llm_api_note": "Plugin for AI coding agents; needs one of the 20+ supported platforms",
+      "llm_api_note": "Plugin for Claude Code, Cursor, Codex, Cline, Copilot — requires a host agent",
       "topics": [
+        "Agent Skills & Plugins",
         "AI Agents",
         "Developer Tools"
       ],
       "first_seen": "2026-09-03",
-      "last_seen": "2026-09-05",
-      "best_rank": 2,
-      "latest_stars": 127834,
+      "last_seen": "2026-10-01",
+      "best_rank": 1,
+      "latest_stars": 150401,
       "max_gained": 2813
     },
     {
@@ -3744,24 +3759,30 @@
           "rank": 2,
           "stars": 10499,
           "gained": 978
+        },
+        {
+          "date": "2026-10-01",
+          "rank": 3,
+          "stars": 13968,
+          "gained": 2503
         }
       ],
       "language": "Rust",
       "lang_color": "#dea584",
       "description": "OpenShell is the safe, private runtime for autonomous AI agents.",
-      "analysis": "OpenShell is a kernel-level sandboxed runtime from NVIDIA that lets autonomous AI agents safely access files, call APIs, and install packages while enforcing strict policies on every operation. NVIDIA's backing and growing urgency around agentic security drove it to trend today—organizations deploying agents at scale need verifiable containment. It uses formal verification to flag risky policy changes before approval, distinguishing it from simpler containerization. DevSecOps teams and organizations running fleets of AI agents in production are the target audience.",
+      "analysis": "OpenShell is a Rust-written, kernel-level sandbox from NVIDIA for running fleets of autonomous AI agents with policy-enforced access to files, packages, credentials, and network resources — giving agents the broad system access they need without exposing sensitive data. It is LLM-agnostic and deploys via Kubernetes/Helm, Docker, or locally on Linux/macOS/Windows, with SDKs for Python, TypeScript, Go, and Rust. It topped today's star gain, driven by NVIDIA's brand recognition and surging enterprise demand for auditable, secure agent execution environments as agentic workflows move into production. Best suited for DevOps and AI platform teams building production-grade autonomous agent infrastructure.",
       "llm_api": "optional",
-      "llm_api_note": "Runtime is LLM-agnostic; agents running inside typically bring their own model credentials",
+      "llm_api_note": "LLM-agnostic runtime; works with any agent, no API key required",
       "topics": [
-        "AI Agents",
         "Sandboxes & Runtimes",
+        "AI Agents",
         "Security & Privacy"
       ],
       "first_seen": "2026-09-29",
-      "last_seen": "2026-09-29",
+      "last_seen": "2026-10-01",
       "best_rank": 2,
-      "latest_stars": 10499,
-      "max_gained": 978
+      "latest_stars": 13968,
+      "max_gained": 2503
     },
     {
       "owner": "t8y2",
@@ -3790,6 +3811,62 @@
       "best_rank": 5,
       "latest_stars": 21923,
       "max_gained": 349
+    },
+    {
+      "owner": "firebase",
+      "repo": "firebase-ios-sdk",
+      "url": "https://github.com/firebase/firebase-ios-sdk",
+      "appearances": [
+        {
+          "date": "2026-10-01",
+          "rank": 4,
+          "stars": 6848,
+          "gained": 112
+        }
+      ],
+      "language": "C++",
+      "lang_color": "#f34b7d",
+      "description": "Firebase SDK for Apple App Development",
+      "analysis": "The official Firebase SDK for Apple platforms (iOS, macOS, tvOS, watchOS) provides Firestore, Authentication, Cloud Storage, Cloud Messaging, and other backend services through a native Swift/Objective-C interface. Trending on organic interest — likely from a new release or update that brought renewed attention to this widely-used SDK. Any iOS or macOS developer relying on Firebase for real-time data, auth, or push notifications will find it essential, and a Google/Firebase update cycle always generates traffic from the large Apple developer community.",
+      "llm_api": "none",
+      "topics": [
+        "Developer Tools",
+        "Systems & Libraries"
+      ],
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "best_rank": 4,
+      "latest_stars": 6848,
+      "max_gained": 112
+    },
+    {
+      "owner": "mvschwarz",
+      "repo": "openrig",
+      "url": "https://github.com/mvschwarz/openrig",
+      "appearances": [
+        {
+          "date": "2026-10-01",
+          "rank": 5,
+          "stars": 3655,
+          "gained": 640
+        }
+      ],
+      "language": "TypeScript",
+      "lang_color": "#3178c6",
+      "description": "Build your own network of agents from Claude Code, Codex and Pi with persistent teams, shared context and owned work.",
+      "analysis": "OpenRig is a self-hosted multi-agent orchestration framework that uses tmux to manage persistent teams of Claude Code, Codex, Pi, or other coding agents, each assigned roles in a YAML RigSpec topology that defines pods, responsibilities, and communication patterns. It handles agent lifecycle, shared context, and session recovery — turning ephemeral terminal windows into a coordinated, durable engineering team. It trended as developers seek local-first alternatives to cloud-hosted multi-agent platforms, drawn to OpenRig's provider-agnostic design that reuses existing auth rather than adding new subscriptions. Best for power users running complex, multi-step software projects who want a self-managed agent network.",
+      "llm_api": "required",
+      "llm_api_note": "Reuses Claude Code / Codex / Pi auth; no extra API key, but a subscription is needed",
+      "topics": [
+        "AI Agents",
+        "MCP & Integrations",
+        "Developer Tools"
+      ],
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "best_rank": 5,
+      "latest_stars": 3655,
+      "max_gained": 640
     }
   ]
 }

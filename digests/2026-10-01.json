@@ -1,0 +1,75 @@
+{
+  "date": "2026-10-01",
+  "title": "GitHub Trending Top 5",
+  "repos": [
+    {
+      "rank": 1,
+      "owner": "DietrichGebert",
+      "repo": "ponytail",
+      "url": "https://github.com/DietrichGebert/ponytail",
+      "language": "JavaScript",
+      "stars": 150401,
+      "gained_today": 1179,
+      "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+      "analysis": "Ponytail is a cross-platform plugin for AI coding agents (Claude Code, Cursor, Codex, Cline, GitHub Copilot) that enforces a \"laziness hierarchy\": agents must exhaust simpler options — reuse, stdlib, existing deps, one-liners — before writing any new code, with benchmarks showing 54% less generated code. It trended because developer frustration with verbose, over-engineered AI output has reached a tipping point, and Ponytail's sharp tagline and broad platform support made it go viral. Ideal for any developer using AI-assisted coding who values minimal, clean output over bloated solutions.",
+      "llm_api": "required",
+      "llm_api_note": "Plugin for Claude Code, Cursor, Codex, Cline, Copilot — requires a host agent",
+      "topics": ["Agent Skills & Plugins", "AI Agents", "Developer Tools"]
+    },
+    {
+      "rank": 2,
+      "owner": "mattpocock",
+      "repo": "skills",
+      "url": "https://github.com/mattpocock/skills",
+      "language": "Shell",
+      "stars": 273826,
+      "gained_today": 888,
+      "description": "Skills for Real Engineers. Straight from my .agents directory.",
+      "analysis": "A curated library of reusable agent skills — structured workflows for code review, TDD, architecture analysis, and documentation — by TypeScript educator Matt Pocock, installable as files you own via a Claude Code plugin or npx. The skills are composable instruction sets (both user-invoked slash commands and model-invoked disciplines) that enforce a \"small, deliberate steps\" engineering philosophy in coding agents. It trended because Pocock is a highly respected voice in the TypeScript community and the collection addresses real pain: aligning AI agents with the habits of careful senior engineers. Fits teams using Claude Code or any agent platform who want consistent, high-quality automation.",
+      "llm_api": "required",
+      "llm_api_note": "Skills for Claude Code and other coding agents — useless without a host agent",
+      "topics": ["Agent Skills & Plugins", "Developer Tools", "Code Intelligence"]
+    },
+    {
+      "rank": 3,
+      "owner": "NVIDIA",
+      "repo": "OpenShell",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "language": "Rust",
+      "stars": 13968,
+      "gained_today": 2503,
+      "description": "OpenShell is the safe, private runtime for autonomous AI agents.",
+      "analysis": "OpenShell is a Rust-written, kernel-level sandbox from NVIDIA for running fleets of autonomous AI agents with policy-enforced access to files, packages, credentials, and network resources — giving agents the broad system access they need without exposing sensitive data. It is LLM-agnostic and deploys via Kubernetes/Helm, Docker, or locally on Linux/macOS/Windows, with SDKs for Python, TypeScript, Go, and Rust. It topped today's star gain, driven by NVIDIA's brand recognition and surging enterprise demand for auditable, secure agent execution environments as agentic workflows move into production. Best suited for DevOps and AI platform teams building production-grade autonomous agent infrastructure.",
+      "llm_api": "optional",
+      "llm_api_note": "LLM-agnostic runtime; works with any agent, no API key required",
+      "topics": ["Sandboxes & Runtimes", "AI Agents", "Security & Privacy"]
+    },
+    {
+      "rank": 4,
+      "owner": "firebase",
+      "repo": "firebase-ios-sdk",
+      "url": "https://github.com/firebase/firebase-ios-sdk",
+      "language": "C++",
+      "stars": 6848,
+      "gained_today": 112,
+      "description": "Firebase SDK for Apple App Development",
+      "analysis": "The official Firebase SDK for Apple platforms (iOS, macOS, tvOS, watchOS) provides Firestore, Authentication, Cloud Storage, Cloud Messaging, and other backend services through a native Swift/Objective-C interface. Trending on organic interest — likely from a new release or update that brought renewed attention to this widely-used SDK. Any iOS or macOS developer relying on Firebase for real-time data, auth, or push notifications will find it essential, and a Google/Firebase update cycle always generates traffic from the large Apple developer community.",
+      "llm_api": "none",
+      "topics": ["Developer Tools", "Systems & Libraries"]
+    },
+    {
+      "rank": 5,
+      "owner": "mvschwarz",
+      "repo": "openrig",
+      "url": "https://github.com/mvschwarz/openrig",
+      "language": "TypeScript",
+      "stars": 3655,
+      "gained_today": 640,
+      "description": "Build your own network of agents from Claude Code, Codex and Pi with persistent teams, shared context and owned work.",
+      "analysis": "OpenRig is a self-hosted multi-agent orchestration framework that uses tmux to manage persistent teams of Claude Code, Codex, Pi, or other coding agents, each assigned roles in a YAML RigSpec topology that defines pods, responsibilities, and communication patterns. It handles agent lifecycle, shared context, and session recovery — turning ephemeral terminal windows into a coordinated, durable engineering team. It trended as developers seek local-first alternatives to cloud-hosted multi-agent platforms, drawn to OpenRig's provider-agnostic design that reuses existing auth rather than adding new subscriptions. Best for power users running complex, multi-step software projects who want a self-managed agent network.",
+      "llm_api": "required",
+      "llm_api_note": "Reuses Claude Code / Codex / Pi auth; no extra API key, but a subscription is needed",
+      "topics": ["AI Agents", "MCP & Integrations", "Developer Tools"]
+    }
+  ]
+}
