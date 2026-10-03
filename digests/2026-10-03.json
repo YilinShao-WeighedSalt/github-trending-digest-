@@ -1,0 +1,75 @@
+{
+  "date": "2026-10-03",
+  "title": "GitHub Trending Top 5",
+  "repos": [
+    {
+      "rank": 1,
+      "owner": "DietrichGebert",
+      "repo": "ponytail",
+      "url": "https://github.com/DietrichGebert/ponytail",
+      "language": "JavaScript",
+      "stars": 153272,
+      "gained_today": 1289,
+      "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+      "analysis": "Ponytail is a skill/plugin for AI coding agents that enforces a 'laziest senior dev' decision ladder — checking whether code already exists, lives in the stdlib, or is a one-liner before writing anything new. Benchmarks showing 54% less generated code, 20% lower API cost, and 27% faster execution drove rapid organic interest in a space hungry for measurable agent improvements. It targets developers using Claude Code, Cursor, or GitHub Copilot who want leaner, less over-engineered outputs without manual prompt tuning. No configuration beyond skill installation; works with any harness that accepts plugin rules.",
+      "llm_api": "required",
+      "llm_api_note": "Skill for Claude Code, Cursor, Copilot — useless without a host agent",
+      "topics": ["AI Agents", "Agent Skills & Plugins"]
+    },
+    {
+      "rank": 2,
+      "owner": "pbakaus",
+      "repo": "impeccable",
+      "url": "https://github.com/pbakaus/impeccable",
+      "language": "JavaScript",
+      "stars": 75223,
+      "gained_today": 705,
+      "description": "The design language that makes your AI harness better at design.",
+      "analysis": "Impeccable is a design intelligence layer that brings 61 deterministic rules and 24 slash-commands to AI coding agents, catching visual anti-patterns in spacing, contrast, and typography before they ship. As AI-generated UIs proliferate, design quality has become a visible weak point; a single `/impeccable` command with live-browser iteration fills that gap without requiring a dedicated designer. The CLI and browser extension run all deterministic checks with no LLM and no API key, making it freely useful standalone; LLM-backed critique commands are an optional upgrade. Frontend developers using Claude Code, Cursor, or Copilot are the primary audience.",
+      "llm_api": "optional",
+      "llm_api_note": "CLI + 61 deterministic rules need no LLM; LLM critique commands are optional",
+      "topics": ["Design", "Developer Tools", "Agent Skills & Plugins"]
+    },
+    {
+      "rank": 3,
+      "owner": "affaan-m",
+      "repo": "ECC",
+      "url": "https://github.com/affaan-m/ECC",
+      "language": "JavaScript",
+      "stars": 272182,
+      "gained_today": 954,
+      "description": "Performance optimization system for agent harnesses with skills, memory, security, and development tools.",
+      "analysis": "ECC is a comprehensive 'operating system' layer for AI coding agents, bundling 68 specialized sub-agents, 293 reusable skills, and 94 command utilities that standardize the plan→test→implement→review→remember→improve cycle across Claude Code, Codex, Cursor, and others. As developers increasingly run multiple AI harnesses, the cost of rediscovering best practices per tool is high — ECC centralizes that investment in one installable config with selectable profiles (minimal, core, full). It works through each harness's own LLM credentials, so no new API key is needed, but the harness itself is required. Power users and engineering teams seeking repeatable, high-quality AI-assisted development at scale are the target.",
+      "llm_api": "required",
+      "llm_api_note": "Works through each harness's own config (Claude Code, Codex, Cursor)",
+      "topics": ["AI Agents", "Agent Skills & Plugins", "Developer Tools"]
+    },
+    {
+      "rank": 4,
+      "owner": "Effect-TS",
+      "repo": "effect",
+      "url": "https://github.com/Effect-TS/effect",
+      "language": "TypeScript",
+      "stars": 16791,
+      "gained_today": 302,
+      "description": "Build production-ready applications in TypeScript",
+      "analysis": "Effect is a TypeScript library that unifies typed errors, dependency injection, structured concurrency, scheduling, distributed tracing, and schema validation in one cohesive API — solving problems that normally require juggling four or five separate packages. Version 4.x recently shipped with an explicit long-term support commitment and TypeScript 5.9+ compatibility, renewing attention from teams planning multi-year production deployments. It brings Haskell-style algebraic effects to the Node.js ecosystem without leaving TypeScript, which appeals to backend and full-stack engineers building complex stateful services. No LLM is involved; optional `@effect/ai-anthropic` and `@effect/ai-openai` packages exist but are entirely separate add-ons.",
+      "llm_api": "none",
+      "topics": ["Systems & Libraries", "Developer Tools"]
+    },
+    {
+      "rank": 5,
+      "owner": "JuliusBrussee",
+      "repo": "caveman",
+      "url": "https://github.com/JuliusBrussee/caveman",
+      "language": "Go",
+      "stars": 109499,
+      "gained_today": 505,
+      "description": "Token reduction tool for coding agents using simplified communication patterns.",
+      "analysis": "Caveman is a three-part token-reduction toolkit: a skill that trains the agent to communicate tersely ('why use many token when few token do trick'), a proxy that compresses logs, diffs, test output, and JSON before they reach the provider, and Go middleware for custom-agent builders — targeting roughly 65% token savings. API costs for heavy AI-coding-agent users have become a real budget line, and a tool promising measurable savings with minimal setup offers immediate ROI. The skill runs entirely locally; the proxy passes existing provider credentials through unchanged, so no new API key is needed. Claude Code, Codex, and Gemini CLI users running agents at volume are the primary beneficiaries.",
+      "llm_api": "required",
+      "llm_api_note": "Skill/proxy wraps your existing LLM provider — useless without a host agent",
+      "topics": ["AI Agents", "Developer Tools"]
+    }
+  ]
+}
