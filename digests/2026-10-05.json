@@ -1,0 +1,76 @@
+{
+  "date": "2026-10-05",
+  "title": "GitHub Trending Top 5",
+  "repos": [
+    {
+      "rank": 1,
+      "owner": "tester-army",
+      "repo": "e2e",
+      "url": "https://github.com/tester-army/e2e",
+      "language": "TypeScript",
+      "stars": 4643,
+      "gained_today": 1430,
+      "description": "Next generation e2e testing framework for web and mobile apps.",
+      "analysis": "e2e is a testing framework that lets developers write end-to-end tests as natural language goals rather than scripted steps — an AI agent drives the browser or mobile app to achieve each objective. Tests replay recorded actions on subsequent runs, avoiding redundant model calls when the app hasn't changed. It likely spiked today because the approach radically cuts boilerplate for web and mobile QA. Best suited for teams using Playwright-based web testing or iOS/Android simulators who want to shift from brittle selector scripts to intent-driven tests.",
+      "llm_api": "optional",
+      "llm_api_note": "BYO API key, subscription, or local model for AI-driven steps; non-agent tests need no LLM",
+      "topics": ["Developer Tools", "AI Agents"]
+    },
+    {
+      "rank": 2,
+      "owner": "thedotmack",
+      "repo": "claude-mem",
+      "url": "https://github.com/thedotmack/claude-mem",
+      "language": "TypeScript",
+      "stars": 96601,
+      "gained_today": 534,
+      "description": "Persistent context management for AI agents across sessions with compression and context injection.",
+      "analysis": "claude-mem solves the \"amnesia\" problem in AI coding assistants by capturing what the agent does during each session, compressing that history, and injecting the most relevant context into future sessions via SQLite and a vector database. It integrates with Claude Code, Cursor, Codex, and more via lifecycle hooks, and includes a web viewer for inspecting the live memory stream. Trending organically as multi-session AI development workflows become mainstream. Ideal for developers on long-running projects who lose context every time they close their agent.",
+      "llm_api": "required",
+      "llm_api_note": "Requires hosted plan or BYO key (OpenRouter, Gemini, or Anthropic); free trial available",
+      "topics": ["RAG & Memory", "AI Agents"]
+    },
+    {
+      "rank": 3,
+      "owner": "michael-denyer",
+      "repo": "pstack-claude",
+      "url": "https://github.com/michael-denyer/pstack-claude",
+      "language": "JavaScript",
+      "stars": 1408,
+      "gained_today": 222,
+      "description": "Claude, Codex, and other agent versions of pstack with rigorous workflow implementations.",
+      "analysis": "pstack-claude ports Lauren Tan's pstack skill framework to Claude Code, Codex, Gemini, and several other AI agents, providing opinionated workflow routing and specialized agent roles for bugs, features, refactoring, and planning. The poteto-mode dispatcher automatically routes tasks to the right role (architect, arena, swarm) without manual intervention. Trending as the multi-agent coding ecosystem matures and developers seek structured, reproducible workflows across tools. Best for engineering teams that bounce between Claude Code and Cursor and want consistent agent behavior.",
+      "llm_api": "required",
+      "llm_api_note": "Requires your existing LLM API (Claude, Gemini, etc.); no additional server needed",
+      "topics": ["Agent Skills & Plugins", "Developer Tools"]
+    },
+    {
+      "rank": 4,
+      "owner": "earthtojake",
+      "repo": "text-to-cad",
+      "url": "https://github.com/earthtojake/text-to-cad",
+      "language": "Python",
+      "stars": 17372,
+      "gained_today": 456,
+      "description": "Give your agent CAD superpowers.",
+      "analysis": "text-to-cad is a plugin/skill for AI coding agents that generates 3D CAD models — STEP, STL, 3MF, or GLB — from natural language descriptions or images, and also produces engineering drawings, DXF files, G-code for printing, and design-for-manufacturing analyses. It integrates with Claude Code, Cursor, Codex, Gemini, and Grok, and runs locally via uv with no extra API key required. Trending because it sits at the intersection of the maker community and the AI agent wave. Ideal for hardware engineers and 3D printing enthusiasts who want to fold physical design into their AI-assisted dev workflow.",
+      "llm_api": "optional",
+      "llm_api_note": "Runs locally via uv; uses your existing agent app's built-in LLM, no separate key needed",
+      "topics": ["Agent Skills & Plugins", "Design"]
+    },
+    {
+      "rank": 5,
+      "owner": "pingdotgg",
+      "repo": "t3code",
+      "url": "https://github.com/pingdotgg/t3code",
+      "language": "TypeScript",
+      "stars": 25578,
+      "gained_today": 487,
+      "description": "Open-source control surface for AI coding agents (Claude Code, Cursor, Codex, and more).",
+      "analysis": "t3code is an open-source harness that lets you monitor and control AI coding agents running locally on your machine from a mobile app, web app, or Electron desktop client. It supports Claude Code, Cursor, Codex, Grok Build, OpenCode, and Google Antigravity, offering remote access, background service mode, and source-control integration. Built by the Ping.gg team (known for the T3 stack), it resonates strongly in the TypeScript/React ecosystem and is trending as developers managing multiple agents look for a unified control surface. Best for developers who want phone-level access to agents while away from their workstations.",
+      "llm_api": "optional",
+      "llm_api_note": "t3code itself needs no key; underlying agents (Claude Code, Cursor, etc.) need their own auth",
+      "topics": ["Developer Tools", "AI Agents"]
+    }
+  ]
+}
