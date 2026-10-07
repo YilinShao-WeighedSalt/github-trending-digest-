@@ -39,7 +39,8 @@
     "2026-09-29",
     "2026-10-01",
     "2026-10-03",
-    "2026-10-05"
+    "2026-10-05",
+    "2026-10-07"
   ],
   "repos": [
     {
@@ -984,22 +985,28 @@
           "rank": 1,
           "stars": 41538,
           "gained": 3440
+        },
+        {
+          "date": "2026-10-07",
+          "rank": 4,
+          "stars": 55048,
+          "gained": 620
         }
       ],
       "language": "Python",
       "lang_color": "#3572A5",
-      "description": "A skill to stop your coding agent from burying the answer. ADHD-friendly output.",
-      "analysis": "A Claude Code / Cursor skill that forces AI coding assistants to lead with numbered, actionable steps instead of lengthy preambles — eliminating filler phrases and getting straight to the answer. It solves a near-universal pain point: AI tools that hide the useful instruction in walls of context-setting prose. This trended rapidly because the frustration it names resonates widely among developers who use AI assistants daily. Developers on Claude Code, Cursor, or Windsurf who want faster, focused guidance can install it in seconds.",
+      "description": "A skill that keeps coding agents from burying the answer, with ADHD-friendly output.",
+      "analysis": "i-have-adhd is a one-file agent skill that reconfigures any supported coding assistant to lead every response with the actionable next step, use numbered lists, and strip preamble and sign-offs entirely. The problem it targets is universal: AI assistants bury the useful part inside paragraphs of context, making them slow to scan mid-task. Trending on organic interest from developers frustrated by verbose agent responses, reinforced by a relatable name and zero-friction install. It works as a drop-in config for Claude Code, Codex, Cursor, Gemini, and several others with no additional setup beyond installation.",
       "llm_api": "required",
-      "llm_api_note": "Claude Code / Cursor skill — useless without the host coding agent",
+      "llm_api_note": "Agent skill — requires Claude Code, Codex, Cursor, or similar coding agent",
       "topics": [
         "Agent Skills & Plugins",
-        "Developer Tools"
+        "Productivity & Research"
       ],
       "first_seen": "2026-08-02",
-      "last_seen": "2026-09-11",
+      "last_seen": "2026-10-07",
       "best_rank": 1,
-      "latest_stars": 41538,
+      "latest_stars": 55048,
       "max_gained": 5232
     },
     {
@@ -1486,22 +1493,28 @@
           "rank": 1,
           "stars": 18539,
           "gained": 1619
+        },
+        {
+          "date": "2026-10-07",
+          "rank": 5,
+          "stars": 44898,
+          "gained": 828
         }
       ],
       "language": "HTML",
       "lang_color": "#e34c26",
-      "description": "29 editorial diagram types for Claude Code. Self-contained HTML + SVG.",
-      "analysis": "diagram-design is a curated library of 29 editorial diagram templates — flowcharts, sequence diagrams, architecture maps, and more — each delivered as a single self-contained HTML+SVG file with no external dependencies. It trended sharply today (1,619 stars) riding the wave of Claude Code's exploding adoption, as users discovered it provides polished, copy-paste-ready visuals for AI-assisted documentation and planning. Front-end developers, technical writers, and anyone using Claude Code for architectural or system design work will find it immediately practical.",
+      "description": "Editorial diagram design for several AI coding agents, offering 42 diagram types as self-contained HTML and SVG.",
+      "analysis": "Diagram Design is an agent skill offering 42 editorial diagram types — architecture, sequence, Gantt, org charts, and more — as standalone HTML+SVG files with no build step or network requests. On first use it reads a site's palette and typography and applies them to every diagram the agent produces, so output matches brand style instead of the default rounded-box look. It trended on growing interest in polished diagram workflows for documentation and technical writing. Writers and developers who produce diagrams for blogs, design docs, or architecture discussions using Claude Code, Codex, or GitHub Copilot will get production-ready visuals in a single agent command.",
       "llm_api": "required",
-      "llm_api_note": "Diagram skill for Claude Code",
+      "llm_api_note": "Agent skill — runs inside Claude Code, Codex, Copilot, or other supported hosts",
       "topics": [
-        "Design",
-        "Agent Skills & Plugins"
+        "Agent Skills & Plugins",
+        "Design"
       ],
       "first_seen": "2026-08-13",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-10-07",
       "best_rank": 1,
-      "latest_stars": 18539,
+      "latest_stars": 44898,
       "max_gained": 4504
     },
     {
@@ -1878,23 +1891,28 @@
           "rank": 2,
           "stars": 273826,
           "gained": 888
+        },
+        {
+          "date": "2026-10-07",
+          "rank": 2,
+          "stars": 279487,
+          "gained": 1406
         }
       ],
       "language": "Shell",
       "lang_color": "#89e051",
-      "description": "Skills for Real Engineers. Straight from my .agents directory.",
-      "analysis": "A curated library of reusable agent skills — structured workflows for code review, TDD, architecture analysis, and documentation — by TypeScript educator Matt Pocock, installable as files you own via a Claude Code plugin or npx. The skills are composable instruction sets (both user-invoked slash commands and model-invoked disciplines) that enforce a \"small, deliberate steps\" engineering philosophy in coding agents. It trended because Pocock is a highly respected voice in the TypeScript community and the collection addresses real pain: aligning AI agents with the habits of careful senior engineers. Fits teams using Claude Code or any agent platform who want consistent, high-quality automation.",
+      "description": "A collection of agent skills for engineers, taken from the author's own .agents directory.",
+      "analysis": "Skills For Real Engineers is a curated set of composable SKILL.md files for coding agents like Claude Code and Codex, covering grilling-before-building, TDD loops, debugging protocols, and codebase architecture reviews. It trended on author reputation in the TypeScript community combined with a well-articulated critique of vibe coding: each skill targets a specific failure mode agents hit on real production projects. The design is deliberately minimal — no orchestration framework, just plain instruction files you pick and combine. Teams using Claude Code or Codex on real applications, especially TypeScript projects, will get the most out of it.",
       "llm_api": "required",
-      "llm_api_note": "Skills for Claude Code and other coding agents — useless without a host agent",
+      "llm_api_note": "Agent skills — need Claude Code, Codex, or compatible agent host",
       "topics": [
         "Agent Skills & Plugins",
-        "Developer Tools",
-        "Code Intelligence"
+        "Developer Tools"
       ],
       "first_seen": "2026-08-21",
-      "last_seen": "2026-10-01",
+      "last_seen": "2026-10-07",
       "best_rank": 1,
-      "latest_stars": 273826,
+      "latest_stars": 279487,
       "max_gained": 3368
     },
     {
@@ -4083,6 +4101,62 @@
       "best_rank": 5,
       "latest_stars": 25578,
       "max_gained": 487
+    },
+    {
+      "owner": "morluto",
+      "repo": "rea",
+      "url": "https://github.com/morluto/rea",
+      "appearances": [
+        {
+          "date": "2026-10-07",
+          "rank": 1,
+          "stars": 14586,
+          "gained": 4666
+        }
+      ],
+      "language": "TypeScript",
+      "lang_color": "#3178c6",
+      "description": "Uses AI agents to reverse engineer software, from app behavior down to native binaries.",
+      "analysis": "REA (Reverse Engineer Anything) is an MCP server and CLI that lets AI agents inspect closed-source software — native binaries, Electron apps, Android APKs, .NET assemblies, and firmware — delivering decompilation, symbol maps, call graphs, and cross-references. It trended because the idea of an agent automatically peeling back an app to understand its behavior is compelling to security researchers and developers alike, and it integrates seamlessly with Claude Code, Codex, and Cursor. External engines like Ghidra, Hopper, or IDA handle the heavy lifting while REA provides the agent-facing MCP interface. Security researchers, CTF players, and developers building compatible features by studying competitor apps are the primary audience.",
+      "llm_api": "required",
+      "llm_api_note": "MCP server for coding agents; CLI mode needs no agent",
+      "topics": [
+        "Security & Privacy",
+        "MCP & Integrations",
+        "Code Intelligence"
+      ],
+      "first_seen": "2026-10-07",
+      "last_seen": "2026-10-07",
+      "best_rank": 1,
+      "latest_stars": 14586,
+      "max_gained": 4666
+    },
+    {
+      "owner": "boykopovar",
+      "repo": "AnyPS5",
+      "url": "https://github.com/boykopovar/AnyPS5",
+      "appearances": [
+        {
+          "date": "2026-10-07",
+          "rank": 3,
+          "stars": 10233,
+          "gained": 2725
+        }
+      ],
+      "language": "C++",
+      "lang_color": "#f34b7d",
+      "description": "A tool that automatically ports PS5 executables to Linux and Windows.",
+      "analysis": "AnyPS5 is a native PS5-to-PC porter: it relinks PS5 executables into Linux ELF or Windows PE binaries and ships stub implementations of PS5 PRX system libraries so the converted binary can dynamically link without a separate runtime process. It also includes a SPIR-V shader recompiler and SDL controller mapping. Trending on organic interest and the perennial appeal of game preservation milestones — producing a binary that runs natively without emulation is a technically striking achievement. Developers and preservation researchers who supply their own PS5 binaries and want to study or run them on open hardware are the intended audience.",
+      "llm_api": "none",
+      "topics": [
+        "Systems & Libraries",
+        "Developer Tools"
+      ],
+      "first_seen": "2026-10-07",
+      "last_seen": "2026-10-07",
+      "best_rank": 3,
+      "latest_stars": 10233,
+      "max_gained": 2725
     }
   ]
 }

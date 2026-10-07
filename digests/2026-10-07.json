@@ -1,0 +1,75 @@
+{
+  "date": "2026-10-07",
+  "title": "GitHub Trending Top 5",
+  "repos": [
+    {
+      "rank": 1,
+      "owner": "morluto",
+      "repo": "rea",
+      "url": "https://github.com/morluto/rea",
+      "language": "TypeScript",
+      "stars": 14586,
+      "gained_today": 4666,
+      "description": "Uses AI agents to reverse engineer software, from app behavior down to native binaries.",
+      "analysis": "REA (Reverse Engineer Anything) is an MCP server and CLI that lets AI agents inspect closed-source software — native binaries, Electron apps, Android APKs, .NET assemblies, and firmware — delivering decompilation, symbol maps, call graphs, and cross-references. It trended because the idea of an agent automatically peeling back an app to understand its behavior is compelling to security researchers and developers alike, and it integrates seamlessly with Claude Code, Codex, and Cursor. External engines like Ghidra, Hopper, or IDA handle the heavy lifting while REA provides the agent-facing MCP interface. Security researchers, CTF players, and developers building compatible features by studying competitor apps are the primary audience.",
+      "llm_api": "required",
+      "llm_api_note": "MCP server for coding agents; CLI mode needs no agent",
+      "topics": ["Security & Privacy", "MCP & Integrations", "Code Intelligence"]
+    },
+    {
+      "rank": 2,
+      "owner": "mattpocock",
+      "repo": "skills",
+      "url": "https://github.com/mattpocock/skills",
+      "language": "Shell",
+      "stars": 279487,
+      "gained_today": 1406,
+      "description": "A collection of agent skills for engineers, taken from the author's own .agents directory.",
+      "analysis": "Skills For Real Engineers is a curated set of composable SKILL.md files for coding agents like Claude Code and Codex, covering grilling-before-building, TDD loops, debugging protocols, and codebase architecture reviews. It trended on author reputation in the TypeScript community combined with a well-articulated critique of vibe coding: each skill targets a specific failure mode agents hit on real production projects. The design is deliberately minimal — no orchestration framework, just plain instruction files you pick and combine. Teams using Claude Code or Codex on real applications, especially TypeScript projects, will get the most out of it.",
+      "llm_api": "required",
+      "llm_api_note": "Agent skills — need Claude Code, Codex, or compatible agent host",
+      "topics": ["Agent Skills & Plugins", "Developer Tools"]
+    },
+    {
+      "rank": 3,
+      "owner": "boykopovar",
+      "repo": "AnyPS5",
+      "url": "https://github.com/boykopovar/AnyPS5",
+      "language": "C++",
+      "stars": 10233,
+      "gained_today": 2725,
+      "description": "A tool that automatically ports PS5 executables to Linux and Windows.",
+      "analysis": "AnyPS5 is a native PS5-to-PC porter: it relinks PS5 executables into Linux ELF or Windows PE binaries and ships stub implementations of PS5 PRX system libraries so the converted binary can dynamically link without a separate runtime process. It also includes a SPIR-V shader recompiler and SDL controller mapping. Trending on organic interest and the perennial appeal of game preservation milestones — producing a binary that runs natively without emulation is a technically striking achievement. Developers and preservation researchers who supply their own PS5 binaries and want to study or run them on open hardware are the intended audience.",
+      "llm_api": "none",
+      "topics": ["Systems & Libraries", "Developer Tools"]
+    },
+    {
+      "rank": 4,
+      "owner": "ayghri",
+      "repo": "i-have-adhd",
+      "url": "https://github.com/ayghri/i-have-adhd",
+      "language": "Python",
+      "stars": 55048,
+      "gained_today": 620,
+      "description": "A skill that keeps coding agents from burying the answer, with ADHD-friendly output.",
+      "analysis": "i-have-adhd is a one-file agent skill that reconfigures any supported coding assistant to lead every response with the actionable next step, use numbered lists, and strip preamble and sign-offs entirely. The problem it targets is universal: AI assistants bury the useful part inside paragraphs of context, making them slow to scan mid-task. Trending on organic interest from developers frustrated by verbose agent responses, reinforced by a relatable name and zero-friction install. It works as a drop-in config for Claude Code, Codex, Cursor, Gemini, and several others with no additional setup beyond installation.",
+      "llm_api": "required",
+      "llm_api_note": "Agent skill — requires Claude Code, Codex, Cursor, or similar coding agent",
+      "topics": ["Agent Skills & Plugins", "Productivity & Research"]
+    },
+    {
+      "rank": 5,
+      "owner": "cathrynlavery",
+      "repo": "diagram-design",
+      "url": "https://github.com/cathrynlavery/diagram-design",
+      "language": "HTML",
+      "stars": 44898,
+      "gained_today": 828,
+      "description": "Editorial diagram design for several AI coding agents, offering 42 diagram types as self-contained HTML and SVG.",
+      "analysis": "Diagram Design is an agent skill offering 42 editorial diagram types — architecture, sequence, Gantt, org charts, and more — as standalone HTML+SVG files with no build step or network requests. On first use it reads a site's palette and typography and applies them to every diagram the agent produces, so output matches brand style instead of the default rounded-box look. It trended on growing interest in polished diagram workflows for documentation and technical writing. Writers and developers who produce diagrams for blogs, design docs, or architecture discussions using Claude Code, Codex, or GitHub Copilot will get production-ready visuals in a single agent command.",
+      "llm_api": "required",
+      "llm_api_note": "Agent skill — runs inside Claude Code, Codex, Copilot, or other supported hosts",
+      "topics": ["Agent Skills & Plugins", "Design"]
+    }
+  ]
+}
