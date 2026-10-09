@@ -1,0 +1,75 @@
+{
+  "date": "2026-10-09",
+  "title": "GitHub Trending Top 5",
+  "repos": [
+    {
+      "rank": 1,
+      "owner": "morluto",
+      "repo": "rea",
+      "url": "https://github.com/morluto/rea",
+      "language": "TypeScript",
+      "stars": 43790,
+      "gained_today": 15335,
+      "description": "An agent-based toolkit for reverse engineering everything from app behavior to native binaries.",
+      "analysis": "REA is an MCP server that turns AI agents into reverse engineering assistants, supporting targets from native binaries and JavaScript apps to Android APKs and EVM bytecode. It exposes tools that let agents trace execution, extract pseudocode, and return structured findings with evidence — the agent drives the investigation while REA handles the heavy lifting with tools like Ghidra, JADX, and GDB. It surged today on the back of soaring interest in MCP tooling and AI-assisted security research. Reverse engineers, CTF players, and developers who want to understand closed-source features will find it most useful inside Claude Code, Codex, or any MCP-compatible workflow.",
+      "llm_api": "required",
+      "llm_api_note": "MCP server — requires an MCP-compatible agent (Claude Code, Codex, Cursor, etc.)",
+      "topics": ["Security & Privacy", "MCP & Integrations", "AI Agents"]
+    },
+    {
+      "rank": 2,
+      "owner": "boykopovar",
+      "repo": "AnyPS5",
+      "url": "https://github.com/boykopovar/AnyPS5",
+      "language": "C++",
+      "stars": 21871,
+      "gained_today": 5925,
+      "description": "Automatically ports PS5 executables to Linux and Windows with no emulation layer.",
+      "analysis": "AnyPS5 is a PS5-to-PC porting tool that uses a binary relinker to convert PS5 executables into native Linux and Windows formats, paired with reimplemented PS5 system libraries — no separate emulation process required. A built-in shader recompiler outputs Vulkan-compatible SPIR-V, and input is handled through SDL with configurable controller mappings via an INI file. It likely trended after a compatibility report circulated showing a verified game running at a stable 60 fps on a GTX 1050 Ti, a surprisingly modest GPU. System programmers, game preservation enthusiasts, and Vulkan developers interested in compatibility layers will find it most compelling.",
+      "llm_api": "none",
+      "topics": ["Systems & Libraries"]
+    },
+    {
+      "rank": 3,
+      "owner": "mattpocock",
+      "repo": "skills",
+      "url": "https://github.com/mattpocock/skills",
+      "language": "Shell",
+      "stars": 282547,
+      "gained_today": 1696,
+      "description": "Practical skills for AI coding agents, taken from the author's own daily workflow.",
+      "analysis": "mattpocock/skills is a curated library of Markdown instruction packs (called skills) for AI coding agents, designed to address the most common ways agents fail: misalignment on requirements, verbosity, broken code, and poor architecture. Skills span the full development lifecycle — from grilling sessions that force upfront clarity, through TDD and debugging loops, to PR writing and multi-agent handoffs. It gained traction because its author (Matt Pocock, a well-known TypeScript educator) just released it, and the AI coding-agent ecosystem is hungry for reusable, production-grade best practices. Any developer who uses Claude Code, GitHub Copilot, Cursor, or Codex and wants more disciplined workflows will benefit immediately.",
+      "llm_api": "required",
+      "llm_api_note": "Skills require a coding agent (Claude Code, Copilot, Cursor, Codex, etc.)",
+      "topics": ["Agent Skills & Plugins", "Developer Tools"]
+    },
+    {
+      "rank": 4,
+      "owner": "cathrynlavery",
+      "repo": "diagram-design",
+      "url": "https://github.com/cathrynlavery/diagram-design",
+      "language": "HTML",
+      "stars": 47786,
+      "gained_today": 1744,
+      "description": "Editorial-style diagram design for AI coding tools, with 42 diagram types as self-contained HTML and SVG.",
+      "analysis": "diagram-design is an agent skill that generates editorial-quality, brand-aware diagrams as self-contained HTML and SVG files, covering 42 diagram types from architecture flows to Gantt and Sankey charts. It solves the problem of agent-generated diagrams looking generic by reading a site's colors and fonts during brand onboarding, and supports importing and redrawing Mermaid, draw.io, and Excalidraw sources in the new style. It trended because polished, brand-matching diagrams have become a notable pain point in AI-generated content workflows, and the author's background as a writer added credibility in a non-developer audience. Writers, developers, and teams producing technical documentation or blog posts with coding agents will find the most value.",
+      "llm_api": "required",
+      "llm_api_note": "Agent skill — requires a coding agent (Claude Code, Copilot, Factory Droid, etc.)",
+      "topics": ["Design", "Agent Skills & Plugins"]
+    },
+    {
+      "rank": 5,
+      "owner": "alibaba",
+      "repo": "open-code-review",
+      "url": "https://github.com/alibaba/open-code-review",
+      "language": "Go",
+      "stars": 45136,
+      "gained_today": 323,
+      "description": "A code review tool combining deterministic pipelines with an LLM agent, with line-level comments and multi-language security and bug rules.",
+      "analysis": "Open Code Review is a CLI tool from Alibaba that pairs deterministic rule-based pipelines with an LLM agent to produce line-level code review comments across multiple languages, with built-in security and bug rules. Code handles the steps that must be precise — file selection, bundling related files, and positioning comments — while the agent handles dynamic context gathering like reading full files and searching the codebase, a hybrid that avoids both LLM hallucination and linter inflexibility. It trended today because Alibaba's open-source release brings enterprise-grade CI/CD integrations (GitHub Actions, GitLab, Gerrit) and coding agent plugins to the wider community. DevOps engineers and teams wanting automated code review in existing pipelines are the primary audience; a delegation mode lets your existing coding agent do the review with no separate OCR API key needed.",
+      "llm_api": "optional",
+      "llm_api_note": "Default mode requires LLM key; delegation mode uses your coding agent's LLM",
+      "topics": ["Code Intelligence", "Developer Tools"]
+    }
+  ]
+}

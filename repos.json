@@ -40,7 +40,8 @@
     "2026-10-01",
     "2026-10-03",
     "2026-10-05",
-    "2026-10-07"
+    "2026-10-07",
+    "2026-10-09"
   ],
   "repos": [
     {
@@ -1499,22 +1500,28 @@
           "rank": 5,
           "stars": 44898,
           "gained": 828
+        },
+        {
+          "date": "2026-10-09",
+          "rank": 4,
+          "stars": 47786,
+          "gained": 1744
         }
       ],
       "language": "HTML",
       "lang_color": "#e34c26",
-      "description": "Editorial diagram design for several AI coding agents, offering 42 diagram types as self-contained HTML and SVG.",
-      "analysis": "Diagram Design is an agent skill offering 42 editorial diagram types — architecture, sequence, Gantt, org charts, and more — as standalone HTML+SVG files with no build step or network requests. On first use it reads a site's palette and typography and applies them to every diagram the agent produces, so output matches brand style instead of the default rounded-box look. It trended on growing interest in polished diagram workflows for documentation and technical writing. Writers and developers who produce diagrams for blogs, design docs, or architecture discussions using Claude Code, Codex, or GitHub Copilot will get production-ready visuals in a single agent command.",
+      "description": "Editorial-style diagram design for AI coding tools, with 42 diagram types as self-contained HTML and SVG.",
+      "analysis": "diagram-design is an agent skill that generates editorial-quality, brand-aware diagrams as self-contained HTML and SVG files, covering 42 diagram types from architecture flows to Gantt and Sankey charts. It solves the problem of agent-generated diagrams looking generic by reading a site's colors and fonts during brand onboarding, and supports importing and redrawing Mermaid, draw.io, and Excalidraw sources in the new style. It trended because polished, brand-matching diagrams have become a notable pain point in AI-generated content workflows, and the author's background as a writer added credibility in a non-developer audience. Writers, developers, and teams producing technical documentation or blog posts with coding agents will find the most value.",
       "llm_api": "required",
-      "llm_api_note": "Agent skill — runs inside Claude Code, Codex, Copilot, or other supported hosts",
+      "llm_api_note": "Agent skill — requires a coding agent (Claude Code, Copilot, Factory Droid, etc.)",
       "topics": [
-        "Agent Skills & Plugins",
-        "Design"
+        "Design",
+        "Agent Skills & Plugins"
       ],
       "first_seen": "2026-08-13",
-      "last_seen": "2026-10-07",
+      "last_seen": "2026-10-09",
       "best_rank": 1,
-      "latest_stars": 44898,
+      "latest_stars": 47786,
       "max_gained": 4504
     },
     {
@@ -1897,22 +1904,28 @@
           "rank": 2,
           "stars": 279487,
           "gained": 1406
+        },
+        {
+          "date": "2026-10-09",
+          "rank": 3,
+          "stars": 282547,
+          "gained": 1696
         }
       ],
       "language": "Shell",
       "lang_color": "#89e051",
-      "description": "A collection of agent skills for engineers, taken from the author's own .agents directory.",
-      "analysis": "Skills For Real Engineers is a curated set of composable SKILL.md files for coding agents like Claude Code and Codex, covering grilling-before-building, TDD loops, debugging protocols, and codebase architecture reviews. It trended on author reputation in the TypeScript community combined with a well-articulated critique of vibe coding: each skill targets a specific failure mode agents hit on real production projects. The design is deliberately minimal — no orchestration framework, just plain instruction files you pick and combine. Teams using Claude Code or Codex on real applications, especially TypeScript projects, will get the most out of it.",
+      "description": "Practical skills for AI coding agents, taken from the author's own daily workflow.",
+      "analysis": "mattpocock/skills is a curated library of Markdown instruction packs (called skills) for AI coding agents, designed to address the most common ways agents fail: misalignment on requirements, verbosity, broken code, and poor architecture. Skills span the full development lifecycle — from grilling sessions that force upfront clarity, through TDD and debugging loops, to PR writing and multi-agent handoffs. It gained traction because its author (Matt Pocock, a well-known TypeScript educator) just released it, and the AI coding-agent ecosystem is hungry for reusable, production-grade best practices. Any developer who uses Claude Code, GitHub Copilot, Cursor, or Codex and wants more disciplined workflows will benefit immediately.",
       "llm_api": "required",
-      "llm_api_note": "Agent skills — need Claude Code, Codex, or compatible agent host",
+      "llm_api_note": "Skills require a coding agent (Claude Code, Copilot, Cursor, Codex, etc.)",
       "topics": [
         "Agent Skills & Plugins",
         "Developer Tools"
       ],
       "first_seen": "2026-08-21",
-      "last_seen": "2026-10-07",
+      "last_seen": "2026-10-09",
       "best_rank": 1,
-      "latest_stars": 279487,
+      "latest_stars": 282547,
       "max_gained": 3368
     },
     {
@@ -3203,23 +3216,28 @@
           "rank": 1,
           "stars": 34572,
           "gained": 3290
+        },
+        {
+          "date": "2026-10-09",
+          "rank": 5,
+          "stars": 45136,
+          "gained": 323
         }
       ],
       "language": "Go",
       "lang_color": "#00ADD8",
-      "description": "Fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent",
-      "analysis": "open-code-review is an automated code analysis platform that examines Git diffs using a hybrid architecture: deterministic engineering pipelines handle file selection and rule matching while an LLM agent handles dynamic reasoning about actual defects like null pointer exceptions, thread-safety issues, and XSS vulnerabilities. It likely trended due to its impressive benchmark claims—higher precision than general-purpose agents at one-ninth the token cost—resonating with cost-conscious AI coding teams. Platform engineers, DevOps leads, and teams managing large enterprise codebases will find it compelling. It supports direct LLM endpoints (OpenAI/Anthropic-compatible) or a delegation mode where Claude Code, Cursor, or Kimi Code serve as the reviewing agent.",
-      "llm_api": "required",
-      "llm_api_note": "BYO LLM endpoint (OpenAI/Anthropic-compatible); or delegate to Claude Code/Cursor",
+      "description": "A code review tool combining deterministic pipelines with an LLM agent, with line-level comments and multi-language security and bug rules.",
+      "analysis": "Open Code Review is a CLI tool from Alibaba that pairs deterministic rule-based pipelines with an LLM agent to produce line-level code review comments across multiple languages, with built-in security and bug rules. Code handles the steps that must be precise — file selection, bundling related files, and positioning comments — while the agent handles dynamic context gathering like reading full files and searching the codebase, a hybrid that avoids both LLM hallucination and linter inflexibility. It trended today because Alibaba's open-source release brings enterprise-grade CI/CD integrations (GitHub Actions, GitLab, Gerrit) and coding agent plugins to the wider community. DevOps engineers and teams wanting automated code review in existing pipelines are the primary audience; a delegation mode lets your existing coding agent do the review with no separate OCR API key needed.",
+      "llm_api": "optional",
+      "llm_api_note": "Default mode requires LLM key; delegation mode uses your coding agent's LLM",
       "topics": [
         "Code Intelligence",
-        "AI Agents",
         "Developer Tools"
       ],
       "first_seen": "2026-09-15",
-      "last_seen": "2026-09-17",
+      "last_seen": "2026-10-09",
       "best_rank": 1,
-      "latest_stars": 34572,
+      "latest_stars": 45136,
       "max_gained": 3290
     },
     {
@@ -4112,24 +4130,30 @@
           "rank": 1,
           "stars": 14586,
           "gained": 4666
+        },
+        {
+          "date": "2026-10-09",
+          "rank": 1,
+          "stars": 43790,
+          "gained": 15335
         }
       ],
       "language": "TypeScript",
       "lang_color": "#3178c6",
-      "description": "Uses AI agents to reverse engineer software, from app behavior down to native binaries.",
-      "analysis": "REA (Reverse Engineer Anything) is an MCP server and CLI that lets AI agents inspect closed-source software — native binaries, Electron apps, Android APKs, .NET assemblies, and firmware — delivering decompilation, symbol maps, call graphs, and cross-references. It trended because the idea of an agent automatically peeling back an app to understand its behavior is compelling to security researchers and developers alike, and it integrates seamlessly with Claude Code, Codex, and Cursor. External engines like Ghidra, Hopper, or IDA handle the heavy lifting while REA provides the agent-facing MCP interface. Security researchers, CTF players, and developers building compatible features by studying competitor apps are the primary audience.",
+      "description": "An agent-based toolkit for reverse engineering everything from app behavior to native binaries.",
+      "analysis": "REA is an MCP server that turns AI agents into reverse engineering assistants, supporting targets from native binaries and JavaScript apps to Android APKs and EVM bytecode. It exposes tools that let agents trace execution, extract pseudocode, and return structured findings with evidence — the agent drives the investigation while REA handles the heavy lifting with tools like Ghidra, JADX, and GDB. It surged today on the back of soaring interest in MCP tooling and AI-assisted security research. Reverse engineers, CTF players, and developers who want to understand closed-source features will find it most useful inside Claude Code, Codex, or any MCP-compatible workflow.",
       "llm_api": "required",
-      "llm_api_note": "MCP server for coding agents; CLI mode needs no agent",
+      "llm_api_note": "MCP server — requires an MCP-compatible agent (Claude Code, Codex, Cursor, etc.)",
       "topics": [
         "Security & Privacy",
         "MCP & Integrations",
-        "Code Intelligence"
+        "AI Agents"
       ],
       "first_seen": "2026-10-07",
-      "last_seen": "2026-10-07",
+      "last_seen": "2026-10-09",
       "best_rank": 1,
-      "latest_stars": 14586,
-      "max_gained": 4666
+      "latest_stars": 43790,
+      "max_gained": 15335
     },
     {
       "owner": "boykopovar",
@@ -4141,22 +4165,27 @@
           "rank": 3,
           "stars": 10233,
           "gained": 2725
+        },
+        {
+          "date": "2026-10-09",
+          "rank": 2,
+          "stars": 21871,
+          "gained": 5925
         }
       ],
       "language": "C++",
       "lang_color": "#f34b7d",
-      "description": "A tool that automatically ports PS5 executables to Linux and Windows.",
-      "analysis": "AnyPS5 is a native PS5-to-PC porter: it relinks PS5 executables into Linux ELF or Windows PE binaries and ships stub implementations of PS5 PRX system libraries so the converted binary can dynamically link without a separate runtime process. It also includes a SPIR-V shader recompiler and SDL controller mapping. Trending on organic interest and the perennial appeal of game preservation milestones — producing a binary that runs natively without emulation is a technically striking achievement. Developers and preservation researchers who supply their own PS5 binaries and want to study or run them on open hardware are the intended audience.",
+      "description": "Automatically ports PS5 executables to Linux and Windows with no emulation layer.",
+      "analysis": "AnyPS5 is a PS5-to-PC porting tool that uses a binary relinker to convert PS5 executables into native Linux and Windows formats, paired with reimplemented PS5 system libraries — no separate emulation process required. A built-in shader recompiler outputs Vulkan-compatible SPIR-V, and input is handled through SDL with configurable controller mappings via an INI file. It likely trended after a compatibility report circulated showing a verified game running at a stable 60 fps on a GTX 1050 Ti, a surprisingly modest GPU. System programmers, game preservation enthusiasts, and Vulkan developers interested in compatibility layers will find it most compelling.",
       "llm_api": "none",
       "topics": [
-        "Systems & Libraries",
-        "Developer Tools"
+        "Systems & Libraries"
       ],
       "first_seen": "2026-10-07",
-      "last_seen": "2026-10-07",
-      "best_rank": 3,
-      "latest_stars": 10233,
-      "max_gained": 2725
+      "last_seen": "2026-10-09",
+      "best_rank": 2,
+      "latest_stars": 21871,
+      "max_gained": 5925
     }
   ]
 }
