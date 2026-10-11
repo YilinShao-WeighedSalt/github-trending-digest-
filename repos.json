@@ -41,7 +41,8 @@
     "2026-10-03",
     "2026-10-05",
     "2026-10-07",
-    "2026-10-09"
+    "2026-10-09",
+    "2026-10-11"
   ],
   "repos": [
     {
@@ -1506,22 +1507,29 @@
           "rank": 4,
           "stars": 47786,
           "gained": 1744
+        },
+        {
+          "date": "2026-10-11",
+          "rank": 4,
+          "stars": 50221,
+          "gained": 1083
         }
       ],
       "language": "HTML",
       "lang_color": "#e34c26",
-      "description": "Editorial-style diagram design for AI coding tools, with 42 diagram types as self-contained HTML and SVG.",
-      "analysis": "diagram-design is an agent skill that generates editorial-quality, brand-aware diagrams as self-contained HTML and SVG files, covering 42 diagram types from architecture flows to Gantt and Sankey charts. It solves the problem of agent-generated diagrams looking generic by reading a site's colors and fonts during brand onboarding, and supports importing and redrawing Mermaid, draw.io, and Excalidraw sources in the new style. It trended because polished, brand-matching diagrams have become a notable pain point in AI-generated content workflows, and the author's background as a writer added credibility in a non-developer audience. Writers, developers, and teams producing technical documentation or blog posts with coding agents will find the most value.",
+      "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, and Pi. 44 diagram types.",
+      "analysis": "Diagram Design is an agent skill that instructs AI coding tools to produce 44 types of editorial-style diagrams as fully self-contained HTML/SVG files — no build step, no external dependencies, just one file you drop anywhere. It eliminates the copy-paste-export cycle of traditional diagramming tools: instead of wrestling with Figma or Mermaid, you describe the diagram in plain language and the agent writes it. It surged today likely because Claude Code's skill registry surfaced it to a wide audience of developer-writers. Frontend developers, technical writers, and developer-relations teams working with any MCP-compatible AI coding assistant will get immediate value.",
       "llm_api": "required",
-      "llm_api_note": "Agent skill — requires a coding agent (Claude Code, Copilot, Factory Droid, etc.)",
+      "llm_api_note": "Agent skill — requires Claude Code, Codex, Cursor, or similar AI coding agent",
       "topics": [
+        "Agent Skills & Plugins",
         "Design",
-        "Agent Skills & Plugins"
+        "Developer Tools"
       ],
       "first_seen": "2026-08-13",
-      "last_seen": "2026-10-09",
+      "last_seen": "2026-10-11",
       "best_rank": 1,
-      "latest_stars": 47786,
+      "latest_stars": 50221,
       "max_gained": 4504
     },
     {
@@ -2287,22 +2295,28 @@
           "rank": 3,
           "stars": 31724,
           "gained": 2898
+        },
+        {
+          "date": "2026-10-11",
+          "rank": 5,
+          "stars": 51519,
+          "gained": 872
         }
       ],
       "language": "JavaScript",
       "lang_color": "#f1e05a",
-      "description": "A spy satellite simulator in your browser — live aircraft, ships, satellites, and cameras on a 3D globe",
-      "analysis": "God's Eye View renders 13 live data layers—11,000+ aircraft, maritime vessels, satellites, earthquakes, public CCTV cameras, and submarine cables—on a photorealistic 3D globe in the browser. Users can track individual flights in cockpit mode, switch sensor views (thermal, night vision), and annotate the globe with voice commands, all powered by public APIs like OpenSky and USGS. It is aimed at OSINT researchers, educators, and enthusiasts interested in real-time global situational awareness. The project reached #1 on GitHub Trending in August and continues to gain stars driven by a viral YouTube series.",
+      "description": "A spy satellite simulator in your browser, except the data is real.",
+      "analysis": "Gods Eye View is a browser-based satellite tracker that renders real-time orbital positions of active satellites and space objects using live TLE (Two-Line Element) datasets from sources like CelesTrak, wrapped in a cinematic spy-satellite aesthetic. It bridges the gap between raw orbital mechanics data and a human-comprehensible, visually compelling experience — no installation required. It is trending on the appeal of combining genuine scientific satellite data with a sci-fi interface that feels straight out of a thriller film. Space enthusiasts, educators, and developers exploring real-time geospatial visualization will find it both useful and immediately shareable.",
       "llm_api": "none",
       "llm_api_note": "Optional OpenAI key for voice control; fully functional without it",
       "topics": [
-        "Security & Privacy",
+        "Science & ML",
         "Developer Tools"
       ],
       "first_seen": "2026-08-27",
-      "last_seen": "2026-09-13",
+      "last_seen": "2026-10-11",
       "best_rank": 2,
-      "latest_stars": 31724,
+      "latest_stars": 51519,
       "max_gained": 3642
     },
     {
@@ -4136,24 +4150,30 @@
           "rank": 1,
           "stars": 43790,
           "gained": 15335
+        },
+        {
+          "date": "2026-10-11",
+          "rank": 1,
+          "stars": 101266,
+          "gained": 25585
         }
       ],
       "language": "TypeScript",
       "lang_color": "#3178c6",
-      "description": "An agent-based toolkit for reverse engineering everything from app behavior to native binaries.",
-      "analysis": "REA is an MCP server that turns AI agents into reverse engineering assistants, supporting targets from native binaries and JavaScript apps to Android APKs and EVM bytecode. It exposes tools that let agents trace execution, extract pseudocode, and return structured findings with evidence — the agent drives the investigation while REA handles the heavy lifting with tools like Ghidra, JADX, and GDB. It surged today on the back of soaring interest in MCP tooling and AI-assisted security research. Reverse engineers, CTF players, and developers who want to understand closed-source features will find it most useful inside Claude Code, Codex, or any MCP-compatible workflow.",
+      "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "analysis": "REA is an open-source MCP server that equips AI coding agents with reverse-engineering superpowers — analyzing closed-source app behavior, inspecting native binaries, and mapping undocumented APIs without ever needing the original source code. Developers can study any proprietary feature and reconstruct it in their own project, all without leaving their agent environment. It exploded in stars today because it bridges a real workflow gap for competitive engineers and developers building integrations against undocumented platforms. Works out of the box with any MCP-capable agent such as Claude Code, Cursor, or Codex.",
       "llm_api": "required",
-      "llm_api_note": "MCP server — requires an MCP-compatible agent (Claude Code, Codex, Cursor, etc.)",
+      "llm_api_note": "MCP server — requires an MCP-compatible agent (Claude Code, Cursor, etc.)",
       "topics": [
-        "Security & Privacy",
         "MCP & Integrations",
-        "AI Agents"
+        "Security & Privacy",
+        "Developer Tools"
       ],
       "first_seen": "2026-10-07",
-      "last_seen": "2026-10-09",
+      "last_seen": "2026-10-11",
       "best_rank": 1,
-      "latest_stars": 43790,
-      "max_gained": 15335
+      "latest_stars": 101266,
+      "max_gained": 25585
     },
     {
       "owner": "boykopovar",
@@ -4171,21 +4191,57 @@
           "rank": 2,
           "stars": 21871,
           "gained": 5925
+        },
+        {
+          "date": "2026-10-11",
+          "rank": 2,
+          "stars": 29836,
+          "gained": 3977
         }
       ],
       "language": "C++",
       "lang_color": "#f34b7d",
-      "description": "Automatically ports PS5 executables to Linux and Windows with no emulation layer.",
-      "analysis": "AnyPS5 is a PS5-to-PC porting tool that uses a binary relinker to convert PS5 executables into native Linux and Windows formats, paired with reimplemented PS5 system libraries — no separate emulation process required. A built-in shader recompiler outputs Vulkan-compatible SPIR-V, and input is handled through SDL with configurable controller mappings via an INI file. It likely trended after a compatibility report circulated showing a verified game running at a stable 60 fps on a GTX 1050 Ti, a surprisingly modest GPU. System programmers, game preservation enthusiasts, and Vulkan developers interested in compatibility layers will find it most compelling.",
+      "description": "Tool for automatic PS5 executables porting to Linux and Windows",
+      "analysis": "AnyPS5 is a C++ compatibility tool that automatically ports PS5 game executables to run natively on Linux and Windows — analogous to what DXVK does for DirectX titles, but targeting the PS5 hardware/OS ABI. It addresses the complete absence of any official PS5 game compatibility layer on PC, making PlayStation exclusives accessible without Sony's infrastructure. It surged today on excitement from PC gaming communities who have long requested a Wine-like solution for PS5. The target audience spans PC gaming enthusiasts, homebrew developers, and OS-compatibility researchers interested in the PS5's hardware stack.",
       "llm_api": "none",
       "topics": [
-        "Systems & Libraries"
+        "Systems & Libraries",
+        "Security & Privacy"
       ],
       "first_seen": "2026-10-07",
-      "last_seen": "2026-10-09",
+      "last_seen": "2026-10-11",
       "best_rank": 2,
-      "latest_stars": 21871,
+      "latest_stars": 29836,
       "max_gained": 5925
+    },
+    {
+      "owner": "storytold",
+      "repo": "artcraft",
+      "url": "https://github.com/storytold/artcraft",
+      "appearances": [
+        {
+          "date": "2026-10-11",
+          "rank": 3,
+          "stars": 17583,
+          "gained": 2956
+        }
+      ],
+      "language": "Rust",
+      "lang_color": "#dea584",
+      "description": "ArtCraft is an intentional crafting engine for artists, designers, and filmmakers",
+      "analysis": "ArtCraft is a desktop IDE for visual creators that lets you compose shots in 2D, stage scenes in 3D with posed characters and camera control, then send those precisely composed frames to a catalog of 62 AI generative models from providers like Grok, Midjourney, and Sora. It solves the prompt-lottery problem: rather than re-rolling prompts to get a precise image, artists build the scene first and use AI to render it, making outputs repeatable and art-directed. It is trending today on the promise of bringing production-grade creative control to consumer AI generation. Filmmakers, concept artists, and game designers who need deterministic, director-quality outputs will find it immediately useful.",
+      "llm_api": "required",
+      "llm_api_note": "Requires subscriptions or API keys to third-party AI providers (Midjourney, Grok, Sora, etc.)",
+      "topics": [
+        "Design",
+        "Video & Media",
+        "AI Agents"
+      ],
+      "first_seen": "2026-10-11",
+      "last_seen": "2026-10-11",
+      "best_rank": 3,
+      "latest_stars": 17583,
+      "max_gained": 2956
     }
   ]
 }
