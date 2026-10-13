@@ -1,0 +1,75 @@
+{
+  "date": "2026-10-13",
+  "title": "GitHub Trending Top 5",
+  "repos": [
+    {
+      "rank": 1,
+      "owner": "morluto",
+      "repo": "rea",
+      "url": "https://github.com/morluto/rea",
+      "language": "TypeScript",
+      "stars": 204629,
+      "gained_today": 54706,
+      "description": "An AI agent-based tool for reverse engineering everything from app behavior to native binaries.",
+      "analysis": "REA (Reverse Engineer Anything) is an MCP server and CLI that gives AI coding agents tools to reverse-engineer software — native binaries, APKs, Electron apps, firmware, packet captures, and more — without needing source code. It bridges agents like Claude Code or Cursor to specialized tools such as Ghidra, JADX, and TShark, presenting structured findings with supporting evidence and stated limitations. Trending explosively due to the compelling intersection of the booming MCP ecosystem and AI-assisted security research. Ideal for security researchers, malware analysts, and developers doing competitive analysis who work with MCP-capable agent hosts.",
+      "llm_api": "required",
+      "llm_api_note": "MCP server — pair with Claude Code, Codex, Cursor, or any MCP agent host",
+      "topics": ["Security & Privacy", "MCP & Integrations", "Developer Tools"]
+    },
+    {
+      "rank": 2,
+      "owner": "bilawalsidhu",
+      "repo": "gods-eye-view",
+      "url": "https://github.com/bilawalsidhu/gods-eye-view",
+      "language": "JavaScript",
+      "stars": 55231,
+      "gained_today": 1961,
+      "description": "A browser-based spy satellite simulator that uses real open-source spatial data on a 3D globe.",
+      "analysis": "God's Eye View is a browser-based 3D globe (built on CesiumJS and Vite) aggregating live public data sources — flights, ships, satellites, earthquakes, fires, weather, traffic, and public cameras — into one explorable interface with cockpit tracking, sensor overlays, and shareable links. It starts with no API keys; optional keys unlock Google Photorealistic 3D Tiles, AIS ship data, and OpenAI-powered voice control. Trending due to its viral 'spy satellite' framing and genuinely stunning visuals that circulated on social media. Perfect for educators, journalists, hobbyists, and developers who want a hackable real-world data canvas.",
+      "llm_api": "optional",
+      "llm_api_note": "OpenAI key optional — only needed for voice control and AI HUD summary",
+      "topics": ["Science & ML", "Education"]
+    },
+    {
+      "rank": 3,
+      "owner": "debpalash",
+      "repo": "VoiceStudio",
+      "url": "https://github.com/debpalash/VoiceStudio",
+      "language": "Python",
+      "stars": 62992,
+      "gained_today": 2277,
+      "description": "A local, open-source voice tool covering cloning, design, video dubbing, transcription, and audiobook creation in 646 languages.",
+      "analysis": "VoiceStudio is a fully-local Electron desktop app — built on Python, PyTorch, and Hugging Face models — offering ElevenLabs-style voice work without any cloud dependency: voice cloning, voice design from text descriptions, video dubbing, dictation, transcription, and audiobook production across 646 languages. Hardware acceleration covers NVIDIA CUDA, Apple Silicon MPS, and CPU fallback. Trending as user frustration with hosted voice AI costs and privacy concerns reaches a tipping point. Content creators, indie developers, and researchers who need professional TTS or dubbing without sending audio to a third-party service are the core audience.",
+      "llm_api": "none",
+      "topics": ["Video & Media", "Developer Tools"]
+    },
+    {
+      "rank": 4,
+      "owner": "mksglu",
+      "repo": "context-mode",
+      "url": "https://github.com/mksglu/context-mode",
+      "language": "TypeScript",
+      "stars": 28153,
+      "gained_today": 978,
+      "description": "A tool that optimizes context windows for AI coding agents by sandboxing tool output and persisting session memory.",
+      "analysis": "Context Mode is an MCP server and plugin that tackles context-window exhaustion in AI coding agents: it sandboxes raw MCP tool output (claiming a 98% reduction from 315 KB to 5.4 KB per call) and logs file edits, git operations, tasks, and decisions in SQLite with BM25 full-text search, so the agent can reconstruct state after context compaction. Trending because long multi-file sessions in Claude Code and Cursor regularly hit context limits, losing task continuity — a real pain point with a practical engineering fix. Supports 17 platforms including Claude Code, Cursor, VS Code Copilot, and Codex CLI; power users running complex agentic workflows are the primary audience.",
+      "llm_api": "required",
+      "llm_api_note": "MCP server — pair with any MCP-capable agent client",
+      "topics": ["MCP & Integrations", "LLM Infrastructure"]
+    },
+    {
+      "rank": 5,
+      "owner": "cathrynlavery",
+      "repo": "diagram-design",
+      "url": "https://github.com/cathrynlavery/diagram-design",
+      "language": "HTML",
+      "stars": 53983,
+      "gained_today": 1813,
+      "description": "A diagram design toolkit for AI coding assistants offering 44 diagram types as self-contained HTML and SVG.",
+      "analysis": "Diagram Design is an agent skill delivering 44 diagram types (architecture, flowchart, ER, Sankey, Wardley map, Gantt, and more) as self-contained HTML+SVG files with a disciplined editorial design system — one accent color, hairline borders, 4px grid, no shadows — plus brand onboarding, Mermaid/draw.io import, and Playwright-powered PNG export. Each diagram has minimal-light, minimal-dark, and full-editorial variants with accessibility attributes baked in. Trending as teams grow tired of generic auto-generated diagrams that need extensive manual cleanup. Developers, technical writers, and design-conscious teams using Claude Code, Codex, Copilot, or Cursor who want AI-generated diagrams that look intentional are the target users.",
+      "llm_api": "required",
+      "llm_api_note": "Agent skill — needs Claude Code, Codex, Cursor, or Copilot to function",
+      "topics": ["Agent Skills & Plugins", "Design"]
+    }
+  ]
+}

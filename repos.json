@@ -42,7 +42,8 @@
     "2026-10-05",
     "2026-10-07",
     "2026-10-09",
-    "2026-10-11"
+    "2026-10-11",
+    "2026-10-13"
   ],
   "repos": [
     {
@@ -1513,23 +1514,28 @@
           "rank": 4,
           "stars": 50221,
           "gained": 1083
+        },
+        {
+          "date": "2026-10-13",
+          "rank": 5,
+          "stars": 53983,
+          "gained": 1813
         }
       ],
       "language": "HTML",
       "lang_color": "#e34c26",
-      "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, and Pi. 44 diagram types.",
-      "analysis": "Diagram Design is an agent skill that instructs AI coding tools to produce 44 types of editorial-style diagrams as fully self-contained HTML/SVG files — no build step, no external dependencies, just one file you drop anywhere. It eliminates the copy-paste-export cycle of traditional diagramming tools: instead of wrestling with Figma or Mermaid, you describe the diagram in plain language and the agent writes it. It surged today likely because Claude Code's skill registry surfaced it to a wide audience of developer-writers. Frontend developers, technical writers, and developer-relations teams working with any MCP-compatible AI coding assistant will get immediate value.",
+      "description": "A diagram design toolkit for AI coding assistants offering 44 diagram types as self-contained HTML and SVG.",
+      "analysis": "Diagram Design is an agent skill delivering 44 diagram types (architecture, flowchart, ER, Sankey, Wardley map, Gantt, and more) as self-contained HTML+SVG files with a disciplined editorial design system — one accent color, hairline borders, 4px grid, no shadows — plus brand onboarding, Mermaid/draw.io import, and Playwright-powered PNG export. Each diagram has minimal-light, minimal-dark, and full-editorial variants with accessibility attributes baked in. Trending as teams grow tired of generic auto-generated diagrams that need extensive manual cleanup. Developers, technical writers, and design-conscious teams using Claude Code, Codex, Copilot, or Cursor who want AI-generated diagrams that look intentional are the target users.",
       "llm_api": "required",
-      "llm_api_note": "Agent skill — requires Claude Code, Codex, Cursor, or similar AI coding agent",
+      "llm_api_note": "Agent skill — needs Claude Code, Codex, Cursor, or Copilot to function",
       "topics": [
         "Agent Skills & Plugins",
-        "Design",
-        "Developer Tools"
+        "Design"
       ],
       "first_seen": "2026-08-13",
-      "last_seen": "2026-10-11",
+      "last_seen": "2026-10-13",
       "best_rank": 1,
-      "latest_stars": 50221,
+      "latest_stars": 53983,
       "max_gained": 4504
     },
     {
@@ -2301,22 +2307,28 @@
           "rank": 5,
           "stars": 51519,
           "gained": 872
+        },
+        {
+          "date": "2026-10-13",
+          "rank": 2,
+          "stars": 55231,
+          "gained": 1961
         }
       ],
       "language": "JavaScript",
       "lang_color": "#f1e05a",
-      "description": "A spy satellite simulator in your browser, except the data is real.",
-      "analysis": "Gods Eye View is a browser-based satellite tracker that renders real-time orbital positions of active satellites and space objects using live TLE (Two-Line Element) datasets from sources like CelesTrak, wrapped in a cinematic spy-satellite aesthetic. It bridges the gap between raw orbital mechanics data and a human-comprehensible, visually compelling experience — no installation required. It is trending on the appeal of combining genuine scientific satellite data with a sci-fi interface that feels straight out of a thriller film. Space enthusiasts, educators, and developers exploring real-time geospatial visualization will find it both useful and immediately shareable.",
-      "llm_api": "none",
-      "llm_api_note": "Optional OpenAI key for voice control; fully functional without it",
+      "description": "A browser-based spy satellite simulator that uses real open-source spatial data on a 3D globe.",
+      "analysis": "God's Eye View is a browser-based 3D globe (built on CesiumJS and Vite) aggregating live public data sources — flights, ships, satellites, earthquakes, fires, weather, traffic, and public cameras — into one explorable interface with cockpit tracking, sensor overlays, and shareable links. It starts with no API keys; optional keys unlock Google Photorealistic 3D Tiles, AIS ship data, and OpenAI-powered voice control. Trending due to its viral 'spy satellite' framing and genuinely stunning visuals that circulated on social media. Perfect for educators, journalists, hobbyists, and developers who want a hackable real-world data canvas.",
+      "llm_api": "optional",
+      "llm_api_note": "OpenAI key optional — only needed for voice control and AI HUD summary",
       "topics": [
         "Science & ML",
-        "Developer Tools"
+        "Education"
       ],
       "first_seen": "2026-08-27",
-      "last_seen": "2026-10-11",
+      "last_seen": "2026-10-13",
       "best_rank": 2,
-      "latest_stars": 51519,
+      "latest_stars": 55231,
       "max_gained": 3642
     },
     {
@@ -2825,24 +2837,29 @@
           "rank": 3,
           "stars": 20776,
           "gained": 147
+        },
+        {
+          "date": "2026-10-13",
+          "rank": 4,
+          "stars": 28153,
+          "gained": 978
         }
       ],
       "language": "TypeScript",
       "lang_color": "#3178c6",
-      "description": "Optimizes context windows for AI coding agents, sandboxes tool output, and enforces routing across 17 platforms via MCP.",
-      "analysis": "Context Mode is an MCP server that intercepts tool outputs before they enter an AI agent's context window, compressing large blobs (a 315 KB Playwright snapshot becomes 5.4 KB) and persisting working state in SQLite across conversation compaction events. This prevents AI coding agents from losing track of active files and tasks when their context fills up — a common frustration in long development sessions. It likely trended today due to viral adoption across engineering teams at major tech companies and the acute need to manage growing agent context costs. Developers using Claude Code, Cursor, GitHub Copilot, or VS Code Copilot who run into context-length limits will benefit most.",
+      "description": "A tool that optimizes context windows for AI coding agents by sandboxing tool output and persisting session memory.",
+      "analysis": "Context Mode is an MCP server and plugin that tackles context-window exhaustion in AI coding agents: it sandboxes raw MCP tool output (claiming a 98% reduction from 315 KB to 5.4 KB per call) and logs file edits, git operations, tasks, and decisions in SQLite with BM25 full-text search, so the agent can reconstruct state after context compaction. Trending because long multi-file sessions in Claude Code and Cursor regularly hit context limits, losing task continuity — a real pain point with a practical engineering fix. Supports 17 platforms including Claude Code, Cursor, VS Code Copilot, and Codex CLI; power users running complex agentic workflows are the primary audience.",
       "llm_api": "required",
-      "llm_api_note": "MCP server — requires a compatible AI agent host (Claude Code, Cursor, Copilot, etc.)",
+      "llm_api_note": "MCP server — pair with any MCP-capable agent client",
       "topics": [
         "MCP & Integrations",
-        "AI Agents",
         "LLM Infrastructure"
       ],
       "first_seen": "2026-09-07",
-      "last_seen": "2026-09-07",
+      "last_seen": "2026-10-13",
       "best_rank": 3,
-      "latest_stars": 20776,
-      "max_gained": 147
+      "latest_stars": 28153,
+      "max_gained": 978
     },
     {
       "owner": "jo-inc",
@@ -3276,22 +3293,28 @@
           "rank": 1,
           "stars": 47903,
           "gained": 4712
+        },
+        {
+          "date": "2026-10-13",
+          "rank": 3,
+          "stars": 62992,
+          "gained": 2277
         }
       ],
       "language": "Python",
       "lang_color": "#3572A5",
-      "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
-      "analysis": "VoiceStudio is a fully-local desktop app that replicates commercial voice AI services—voice cloning, video dubbing, transcription, and audiobook creation—across 646 languages, all running on-device. It shot to #1 trending as demand for private, local alternatives to ElevenLabs grew amid pricing and privacy concerns. Built on the OmniVoice speech engine, it exposes a local API and MCP server for developer integrations and ships an Electron desktop app for non-technical users. Content creators, podcasters, and developers who need voice features without cloud dependency are its core users.",
-      "llm_api": "optional",
+      "description": "A local, open-source voice tool covering cloning, design, video dubbing, transcription, and audiobook creation in 646 languages.",
+      "analysis": "VoiceStudio is a fully-local Electron desktop app — built on Python, PyTorch, and Hugging Face models — offering ElevenLabs-style voice work without any cloud dependency: voice cloning, voice design from text descriptions, video dubbing, dictation, transcription, and audiobook production across 646 languages. Hardware acceleration covers NVIDIA CUDA, Apple Silicon MPS, and CPU fallback. Trending as user frustration with hosted voice AI costs and privacy concerns reaches a tipping point. Content creators, indie developers, and researchers who need professional TTS or dubbing without sending audio to a third-party service are the core audience.",
+      "llm_api": "none",
       "llm_api_note": "Fully local by default; optional remote worker support, no cloud API key required",
       "topics": [
         "Video & Media",
         "Developer Tools"
       ],
       "first_seen": "2026-09-15",
-      "last_seen": "2026-09-29",
+      "last_seen": "2026-10-13",
       "best_rank": 1,
-      "latest_stars": 47903,
+      "latest_stars": 62992,
       "max_gained": 4712
     },
     {
@@ -4156,24 +4179,30 @@
           "rank": 1,
           "stars": 101266,
           "gained": 25585
+        },
+        {
+          "date": "2026-10-13",
+          "rank": 1,
+          "stars": 204629,
+          "gained": 54706
         }
       ],
       "language": "TypeScript",
       "lang_color": "#3178c6",
-      "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
-      "analysis": "REA is an open-source MCP server that equips AI coding agents with reverse-engineering superpowers — analyzing closed-source app behavior, inspecting native binaries, and mapping undocumented APIs without ever needing the original source code. Developers can study any proprietary feature and reconstruct it in their own project, all without leaving their agent environment. It exploded in stars today because it bridges a real workflow gap for competitive engineers and developers building integrations against undocumented platforms. Works out of the box with any MCP-capable agent such as Claude Code, Cursor, or Codex.",
+      "description": "An AI agent-based tool for reverse engineering everything from app behavior to native binaries.",
+      "analysis": "REA (Reverse Engineer Anything) is an MCP server and CLI that gives AI coding agents tools to reverse-engineer software — native binaries, APKs, Electron apps, firmware, packet captures, and more — without needing source code. It bridges agents like Claude Code or Cursor to specialized tools such as Ghidra, JADX, and TShark, presenting structured findings with supporting evidence and stated limitations. Trending explosively due to the compelling intersection of the booming MCP ecosystem and AI-assisted security research. Ideal for security researchers, malware analysts, and developers doing competitive analysis who work with MCP-capable agent hosts.",
       "llm_api": "required",
-      "llm_api_note": "MCP server — requires an MCP-compatible agent (Claude Code, Cursor, etc.)",
+      "llm_api_note": "MCP server — pair with Claude Code, Codex, Cursor, or any MCP agent host",
       "topics": [
-        "MCP & Integrations",
         "Security & Privacy",
+        "MCP & Integrations",
         "Developer Tools"
       ],
       "first_seen": "2026-10-07",
-      "last_seen": "2026-10-11",
+      "last_seen": "2026-10-13",
       "best_rank": 1,
-      "latest_stars": 101266,
-      "max_gained": 25585
+      "latest_stars": 204629,
+      "max_gained": 54706
     },
     {
       "owner": "boykopovar",
