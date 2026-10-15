@@ -1,0 +1,76 @@
+{
+  "date": "2026-10-15",
+  "title": "GitHub Trending Top 5",
+  "repos": [
+    {
+      "rank": 1,
+      "owner": "morluto",
+      "repo": "rea",
+      "url": "https://github.com/morluto/rea",
+      "language": "TypeScript",
+      "stars": 268337,
+      "gained_today": 32282,
+      "description": "AI agents for reverse engineering, from app behavior down to native binaries.",
+      "analysis": "REA is an MCP server that arms AI agents with reverse-engineering capabilities — letting them inspect native binaries (via Hopper, Ghidra, or IDA), Electron apps, Android APKs, .NET assemblies, and packet captures, all locally. It likely erupted to 32 k+ stars today following a viral showcase or launch post demonstrating an agent autonomously dissecting a closed-source app feature. Security researchers, CTF players, and developers wanting to understand existing apps before building comparable features are the natural audience; it pairs with any MCP-capable host such as Claude Code, Cursor, Codex, or Gemini CLI.",
+      "llm_api": "required",
+      "llm_api_note": "MCP server — pair with Claude Code, Cursor, Codex, or Gemini CLI",
+      "topics": ["Security & Privacy", "MCP & Integrations", "AI Agents"]
+    },
+    {
+      "rank": 2,
+      "owner": "anthropics",
+      "repo": "claude-plugins-official",
+      "url": "https://github.com/anthropics/claude-plugins-official",
+      "language": "Python",
+      "stars": 38990,
+      "gained_today": 525,
+      "description": "Anthropic-managed directory of curated Claude Code plugins.",
+      "analysis": "This is Anthropic's own curated registry of Claude Code plugins — officially vetted extensions that add capabilities, UIs, and slash commands directly to Claude Code sessions. It surfaced in trending today likely off the back of an Anthropic announcement or blog post highlighting the growing plugin ecosystem. Claude Code subscribers and developers building Claude Code integrations are the primary users; the official curation distinguishes it from community-sourced plugin lists by carrying Anthropic's quality signal.",
+      "llm_api": "required",
+      "llm_api_note": "Plugins are useless without an active Claude Code session",
+      "topics": ["Agent Skills & Plugins", "MCP & Integrations", "Developer Tools"]
+    },
+    {
+      "rank": 3,
+      "owner": "K-Dense-AI",
+      "repo": "scientific-agent-skills",
+      "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+      "language": "Python",
+      "stars": 50389,
+      "gained_today": 1091,
+      "description": "A library of 177+ validated skills that turns AI agents into scientific research assistants.",
+      "analysis": "Scientific-agent-skills is a library of 177+ domain-specific SKILL.md files covering biology, chemistry, physics, medicine, earth science, and data analysis, each encoding expert workflows, package recipes, and curated database pointers for AI agents. The host agent (Claude Code, Cursor, Codex, etc.) supplies the model; the skills simply teach it domain-specific toolchains. It is trending on organic discovery as academic and industry researchers begin adopting agent-driven scientific workflows. Bioinformaticians, cheminformatics teams, materials scientists, and data analysts who already use AI coding agents will see the most immediate value.",
+      "llm_api": "required",
+      "llm_api_note": "Skills load into Claude Code, Cursor, Codex etc.; host agent supplies the model",
+      "topics": ["Agent Skills & Plugins", "Science & ML", "Productivity & Research"]
+    },
+    {
+      "rank": 4,
+      "owner": "JuliusBrussee",
+      "repo": "caveman",
+      "url": "https://github.com/JuliusBrussee/caveman",
+      "language": "Go",
+      "stars": 112471,
+      "gained_today": 530,
+      "description": "A coding-agent skill and proxy that cuts about 65% of tokens by using terse, caveman-style output.",
+      "analysis": "Caveman is a Go-based token-compression layer that teaches AI coding agents to respond tersely and compresses logs, JSON, CSV, and test output before the model reads them — claiming 33% fewer input tokens across 54 Claude Code sessions, with corroborating evaluations from Adobe Research, Elastic, and JetBrains. It trended today on organic discovery as developers under cost pressure from heavy agent usage hunt for savings. Any developer already running Claude Code, Codex, or Gemini CLI can drop it in with minimal setup; it runs on top of your existing keys and requires no separate model provider.",
+      "llm_api": "required",
+      "llm_api_note": "Runs on top of your existing agent (Claude Code, Codex, Gemini CLI) — no extra key",
+      "topics": ["Agent Skills & Plugins", "Developer Tools", "LLM Infrastructure"]
+    },
+    {
+      "rank": 5,
+      "owner": "debpalash",
+      "repo": "VoiceStudio",
+      "url": "https://github.com/debpalash/VoiceStudio",
+      "language": "Python",
+      "stars": 68904,
+      "gained_today": 3027,
+      "description": "Open-source, fully local voice cloning, dubbing, dictation, and transcription tool.",
+      "analysis": "VoiceStudio is a Python toolkit for fully local voice cloning, dubbing, dictation, and transcription — no cloud API or hosted model key required. It likely gained 3 k+ stars today following a viral demo showcasing its dubbing quality on a challenging clip. Content creators, podcasters, indie game developers, and accessibility toolbuilders who need high-quality voice synthesis without sending audio to a third party are the natural audience; its local-first design also appeals to privacy-conscious enterprises and air-gapped deployments.",
+      "llm_api": "optional",
+      "llm_api_note": "Fully local voice models; no LLM API key needed",
+      "topics": ["Video & Media", "Developer Tools"]
+    }
+  ]
+}
