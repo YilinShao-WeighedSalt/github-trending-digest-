@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GitHub Trending Top 5 — October 17, 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#fbfaf7;
+    --ink:#1c1a17;
+    --ink-soft:#4a463f;
+    --ink-faint:#8b8478;
+    --rule:#e3ded3;
+    --rule-strong:#cfc8ba;
+    --accent:#9a3324;        /* deep editorial vermilion */
+    --accent-soft:#b9492f;
+    --gain:#1f6f43;          /* calm forest green for momentum */
+    --gain-bg:#1f6f4312;
+    --card:#ffffff;
+    --llm-req:#9a3324;      --llm-req-line:#9a332440; --llm-req-bg:#9a33240d;
+    --llm-opt:#8a6413;      --llm-opt-line:#8a641340; --llm-opt-bg:#8a64130d;
+    --llm-no:#1f6f43;       --llm-no-line:#1f6f4340;  --llm-no-bg:#1f6f430d;
+    --shadow:0 1px 2px rgba(28,26,23,.04), 0 6px 22px rgba(28,26,23,.05);
+    --container-shadow:0 1px 0 rgba(28,26,23,.04), 0 18px 50px -28px rgba(28,26,23,.18);
+    --focus:#9a3324;
+    --max:760px;
+  }
+
+  *{box-sizing:border-box;}
+
+  html{ -webkit-text-size-adjust:100%; }
+
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size:17px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+    /* subtle paper texture via layered gradients, no external assets */
+    background-image:
+      radial-gradient(circle at 18% 12%, rgba(154,51,36,.045), transparent 40%),
+      radial-gradient(circle at 88% 2%, rgba(31,111,67,.04), transparent 34%),
+      radial-gradient(circle at 50% 120%, rgba(154,51,36,.03), transparent 46%);
+    background-attachment:fixed;
+  }
+
+  a{ color:inherit; }
+
+  /* thin vermilion accent bar at the very top — the 'masthead edge' */
+  .topbar{
+    height:4px;
+    background:var(--accent);
+    width:100%;
+  }
+
+  .sheet{
+    max-width:calc(var(--max) + 44px);
+    margin:0 auto;
+    background:var(--card);
+    box-shadow:var(--container-shadow);
+  }
+
+  .wrap{
+    max-width:var(--max);
+    margin:0 auto;
+    padding:0 22px 64px;
+    position:relative;
+  }
+
+  /* ───────── Top navigation ───────── */
+  .navrow{
+    padding-top:22px;
+    display:flex;
+    justify-content:space-between;
+    gap:16px;
+    flex-wrap:wrap;
+  }
+  .backlink{
+    font-family:"JetBrains Mono",monospace;
+    font-size:12px;
+    color:var(--ink-soft);
+    text-decoration:none;
+    letter-spacing:.04em;
+  }
+  .backlink:hover{ color:var(--accent); }
+
+  /* ───────── Masthead ───────── */
+  .masthead{
+    padding:24px 0 26px;
+    border-bottom:2px solid var(--ink);
+  }
+  .kicker{
+    font-family:"JetBrains Mono", monospace;
+    font-size:11.5px;
+    font-weight:500;
+    letter-spacing:.22em;
+    text-transform:uppercase;
+    color:var(--accent);
+    margin:0 0 16px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+  .kicker::after{
+    content:"";
+    flex:1;
+    height:1px;
+    background:var(--rule-strong);
+  }
+  .masthead h1{
+    font-family:"Fraunces", Georgia, serif;
+    font-optical-sizing:auto;
+    font-weight:600;
+    font-size:clamp(2rem, 7vw, 3.6rem);
+    line-height:1.02;
+    letter-spacing:-.018em;
+    margin:0 0 .35em;
+    color:var(--ink);
+  }
+  .masthead h1 em{
+    font-style:italic;
+    font-weight:400;
+    color:var(--accent);
+  }
+  .dateline{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:baseline;
+    gap:8px 16px;
+    font-size:14.5px;
+    color:var(--ink-soft);
+  }
+  .dateline .issue{
+    font-weight:600;
+    color:var(--ink);
+  }
+  .dateline .meta{
+    font-family:"JetBrains Mono", monospace;
+    font-size:12px;
+    letter-spacing:.04em;
+    color:var(--ink-soft);
+    font-variant-numeric:tabular-nums;
+  }
+
+  .lede{
+    font-family:"Fraunces", Georgia, serif;
+    font-size:clamp(1.05rem, 2.5vw, 1.22rem);
+    line-height:1.55;
+    color:var(--ink-soft);
+    font-weight:400;
+    margin:30px 0 0;
+    max-width:60ch;
+  }
+  .lede strong{ color:var(--ink); font-weight:600; }
+
+  /* ───────── Article / repo entries ───────── */
+  .digest{
+    margin-top:8px;
+  }
+
+  /* ONE shared grid definition for head + body.
+     [rank] minmax(2.6ch,auto)  [content] 1fr  [stat] auto
+     — guarantees prose aligns under the title regardless of rank
+     width or whether Fraunces has loaded; no margin hack, no shift. */
+  .entry{
+    position:relative;
+    padding:44px 0 40px;
+    border-bottom:1px solid var(--rule);
+    display:grid;
+    grid-template-columns:[rank] minmax(2.6ch,auto) [content] 1fr [stat] auto;
+    column-gap:20px;
+    row-gap:0;
+    align-items:start;
+  }
+  .entry:last-child{ border-bottom:none; }
+
+  .rank{
+    grid-column:rank;
+    grid-row:1;
+    font-family:"Fraunces", Georgia, serif;
+    font-weight:600;
+    font-size:2.9rem;
+    line-height:.86;
+    letter-spacing:-.03em;
+    color:var(--accent);
+    font-variant-numeric:lining-nums tabular-nums;
+    padding-top:.06em;
+    white-space:nowrap;
+  }
+  .rank::before{
+    content:"No.";
+    display:block;
+    font-family:"JetBrains Mono", monospace;
+    font-size:9.5px;
+    font-weight:500;
+    letter-spacing:.18em;
+    text-transform:uppercase;
+    color:var(--ink-soft);
+    margin-bottom:4px;
+  }
+
+  .titleblock{
+    grid-column:content;
+    grid-row:1;
+    min-width:0;
+  }
+
+  /* hero momentum stat — its own grid cell, right-aligned next to title */
+  .momentum{
+    grid-column:stat;
+    grid-row:1;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-end;
+    text-align:right;
+    padding-top:.18em;
+    white-space:nowrap;
+  }
+  .momentum .gain-figure{
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    font-family:"JetBrains Mono", monospace;
+    font-weight:600;
+    font-size:19px;
+    line-height:1;
+    color:var(--gain);
+    font-variant-numeric:tabular-nums;
+  }
+  .momentum .gain-figure svg{ width:13px; height:13px; flex:none; }
+  .momentum .gain-label{
+    font-family:"Inter", sans-serif;
+    font-size:11px;
+    font-weight:500;
+    letter-spacing:.02em;
+    color:var(--ink-soft);
+    margin-top:5px;
+  }
+
+  /* body sits in the content column, row 2 — aligned under the title */
+  .entry-body{
+    grid-column:content;
+    grid-row:2;
+    min-width:0;
+  }
+
+  .repo-title{
+    font-family:"Fraunces", Georgia, serif;
+    font-weight:600;
+    font-size:clamp(1.5rem, 4.6vw, 2rem);
+    line-height:1.08;
+    letter-spacing:-.01em;
+    margin:0 0 12px;
+    word-break:break-word;
+    overflow-wrap:anywhere;
+  }
+  .repo-title a{
+    text-decoration:none;
+    color:var(--ink);
+    background-image:linear-gradient(var(--accent), var(--accent));
+    background-size:0% 2px;
+    background-position:0 100%;
+    background-repeat:no-repeat;
+    transition:background-size .28s ease;
+  }
+  .repo-title a:hover,
+  .repo-title a:focus-visible{
+    background-size:100% 2px;
+    color:var(--accent);
+  }
+  .repo-title .owner{ color:var(--ink-soft); font-weight:500; }
+  .repo-title .slash{ color:var(--rule-strong); font-weight:400; padding:0 .04em; }
+
+  /* metadata row */
+  .meta-row{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    gap:8px 18px;
+    margin-bottom:18px;
+    font-size:13.5px;
+  }
+  .lang{
+    display:inline-flex;
+    align-items:center;
+    gap:7px;
+    color:var(--ink-soft);
+    font-weight:500;
+  }
+  .dot{
+    width:11px;height:11px;
+    border-radius:50%;
+    box-shadow:0 0 0 1px rgba(0,0,0,.06) inset;
+    flex:none;
+  }
+  .stars{
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    font-family:"JetBrains Mono", monospace;
+    font-size:13px;
+    font-weight:500;
+    color:var(--ink);
+    font-variant-numeric:tabular-nums;
+  }
+  /* pixel-accurate GitHub star path, shared by every star glyph */
+  .stars svg{ width:13px;height:13px; flex:none; color:#c8951f; }
+  .stars .lbl{ color:var(--ink-soft); font-family:"Inter",sans-serif; font-size:12.5px; font-weight:500; }
+
+  /* LLM-API requirement badge */
+  .llm{
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    font-family:"Inter",sans-serif;
+    font-size:11.5px;
+    font-weight:600;
+    letter-spacing:.02em;
+    line-height:1;
+    padding:5px 10px 5px 8px;
+    border-radius:999px;
+    border:1px solid;
+    white-space:nowrap;
+  }
+  .llm svg{ width:12px;height:12px; flex:none; }
+  .llm-required{ color:var(--llm-req); border-color:var(--llm-req-line); background:var(--llm-req-bg); }
+  .llm-optional{ color:var(--llm-opt); border-color:var(--llm-opt-line); background:var(--llm-opt-bg); }
+  .llm-none{ color:var(--llm-no); border-color:var(--llm-no-line); background:var(--llm-no-bg); }
+
+  .desc{
+    font-size:16.5px;
+    color:var(--ink);
+    margin:0 0 18px;
+    font-weight:500;
+    line-height:1.5;
+    max-width:62ch;
+  }
+
+  .analysis{
+    font-size:16.5px;
+    line-height:1.62;
+    color:var(--ink-soft);
+    margin:0 0 22px;
+    max-width:66ch;
+    /* hanging accent rule on the left */
+    padding-left:18px;
+    border-left:2px solid var(--rule);
+  }
+
+  .cta-row{
+    display:flex;
+    flex-direction:column;
+    gap:9px;
+    align-items:flex-start;
+  }
+  .cta-pair{ display:flex; flex-wrap:wrap; gap:10px; }
+  .cta.ask{ color:var(--accent); border-color:var(--llm-req-line); background:var(--llm-req-bg); }
+  .cta.ask:hover, .cta.ask:focus-visible{ border-color:var(--accent); }
+  .cta{
+    display:inline-flex;
+    align-items:center;
+    gap:9px;
+    font-family:"Inter",sans-serif;
+    font-size:14px;
+    font-weight:600;
+    letter-spacing:.01em;
+    text-decoration:none;
+    color:var(--ink);
+    background:var(--card);
+    border:1px solid var(--rule-strong);
+    padding:10px 18px;
+    border-radius:8px;
+    box-shadow:var(--shadow);
+    transition:border-color .2s ease, color .2s ease, transform .15s ease, box-shadow .2s ease;
+  }
+  .cta .arrow{ transition:transform .22s ease; color:var(--accent); }
+  .cta:hover, .cta:focus-visible{
+    border-color:var(--accent);
+    color:var(--accent);
+    transform:translateY(-1px);
+    box-shadow:0 2px 4px rgba(28,26,23,.06), 0 10px 26px rgba(154,51,36,.10);
+  }
+  .cta:hover .arrow, .cta:focus-visible .arrow{ transform:translateX(4px); }
+
+  /* quiet monospace destination handle — legible before hover */
+  .handle{
+    font-family:"JetBrains Mono", monospace;
+    font-size:12px;
+    color:var(--ink-faint);
+    letter-spacing:.01em;
+    word-break:break-all;
+  }
+
+  /* ───────── Rank-1 emphasis (calm, no card) ───────── */
+  .entry.lead .rank{ font-size:3.3rem; }
+  .entry.lead::before{
+    content:"";
+    position:absolute;
+    top:0; left:0;
+    width:46px;
+    height:3px;
+    background:var(--accent);
+  }
+
+  /* ───────── Prev / next issue pager ───────── */
+  .pager{
+    display:grid;
+    grid-template-columns:1fr auto 1fr;
+    align-items:center;
+    gap:12px;
+    margin-top:44px;
+    padding-top:24px;
+    border-top:1px solid var(--rule);
+  }
+  .pnav{
+    display:flex;
+    flex-direction:column;
+    gap:5px;
+    text-decoration:none;
+    color:inherit;
+  }
+  .pnav.next{ text-align:right; justify-self:end; }
+  .pnav.prev{ justify-self:start; }
+  .pnav .plbl{
+    font-family:"JetBrains Mono",monospace;
+    font-size:10.5px;
+    font-weight:500;
+    letter-spacing:.16em;
+    text-transform:uppercase;
+    color:var(--ink-faint);
+  }
+  .pnav .pdate{
+    font-family:"Fraunces",Georgia,serif;
+    font-weight:600;
+    font-size:1.1rem;
+    color:var(--ink);
+    transition:color .18s ease;
+  }
+  .pnav:hover .pdate{ color:var(--accent); }
+  .pnav.allissues{
+    font-family:"JetBrains Mono",monospace;
+    font-size:11.5px;
+    color:var(--ink-soft);
+    text-decoration:none;
+    letter-spacing:.04em;
+    justify-self:center;
+  }
+  .pnav.allissues:hover{ color:var(--accent); }
+  @media (max-width:480px){
+    .pager{ grid-template-columns:1fr 1fr; }
+    .pnav.allissues{ grid-column:1 / -1; order:3; margin-top:6px; }
+    .pnav .pdate{ font-size:1rem; }
+  }
+
+  /* ───────── Footer ───────── */
+  footer{
+    margin-top:8px;
+    padding-top:30px;
+    border-top:2px solid var(--ink);
+    font-size:13px;
+    color:var(--ink-soft);
+    line-height:1.7;
+  }
+  footer .robot{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    font-family:"JetBrains Mono", monospace;
+    font-size:11px;
+    letter-spacing:.16em;
+    text-transform:uppercase;
+    color:var(--accent);
+    margin-bottom:10px;
+  }
+  footer .gen{
+    font-family:"JetBrains Mono", monospace;
+    font-size:11.5px;
+    color:var(--ink-soft);
+    margin-top:6px;
+    font-variant-numeric:tabular-nums;
+  }
+  footer a{ color:var(--accent); text-decoration:none; border-bottom:1px solid var(--rule-strong); }
+
+  :focus-visible{ outline:2px solid var(--focus); outline-offset:3px; border-radius:3px; }
+
+  /* ───────── Desktop refinements ───────── */
+  @media (min-width:680px){
+    .wrap{ padding:0 40px 80px; }
+    .entry{ column-gap:28px; }
+    .rank{ font-size:3.4rem; }
+    .entry.lead .rank{ font-size:3.9rem; }
+    .momentum .gain-figure{ font-size:20px; }
+  }
+
+  /* ───────── Mobile reflow: stat drops below the meta row ───────── */
+  @media (max-width:560px){
+    .entry{
+      /* collapse the stat column to rank + content */
+      grid-template-columns:[rank] minmax(2.6ch,auto) [content] 1fr;
+    }
+    .momentum{
+      grid-column:content;
+      grid-row:2;
+      order:2;
+      flex-direction:row;
+      align-items:baseline;
+      gap:8px;
+      width:100%;
+      text-align:left;
+      padding-top:0;
+      margin:0 0 16px;
+    }
+    .momentum .gain-figure{ font-size:18px; }
+    .momentum .gain-label{ margin-top:0; }
+    /* push the body down to make room for the wrapped stat */
+    .entry-body{ grid-row:3; }
+  }
+
+  @media (max-width:480px){
+    body{ font-size:16.5px; }
+    .entry{ padding:32px 0 30px; column-gap:16px; }
+    .rank{ font-size:2.5rem; }
+    .entry.lead .rank{ font-size:2.9rem; }
+    .analysis{ padding-left:14px; }
+    .desc, .analysis{ font-size:16px; }
+  }
+
+  /* ───────── Reduced motion ───────── */
+  @media (prefers-reduced-motion:reduce){
+    .repo-title a{ transition:none; }
+    .repo-title a:hover,
+    .repo-title a:focus-visible{
+      background-size:0 0;
+      text-decoration:underline;
+      text-underline-offset:3px;
+      text-decoration-color:var(--accent);
+    }
+    .cta{ transition:border-color .2s ease, color .2s ease; }
+    .cta:hover, .cta:focus-visible{ transform:none; }
+    .cta .arrow{ transition:none; }
+    .cta:hover .arrow, .cta:focus-visible .arrow{ transform:none; }
+  }
+
+  @media (prefers-color-scheme:dark){
+    :root{
+      --paper:#16140f;
+      --ink:#f3efe6;
+      --ink-soft:#b8b1a3;
+      --ink-faint:#8b8576;
+      --rule:#2e2a22;
+      --rule-strong:#423d33;
+      --accent:#e08a6f;
+      --accent-soft:#e89c82;
+      --gain:#5fcf94;
+      --gain-bg:#5fcf941a;
+      --card:#1e1b15;
+      --llm-req:#e08a6f;    --llm-req-line:#e08a6f4d; --llm-req-bg:#e08a6f14;
+      --llm-opt:#d8b25e;    --llm-opt-line:#d8b25e4d; --llm-opt-bg:#d8b25e14;
+      --llm-no:#5fcf94;     --llm-no-line:#5fcf944d;  --llm-no-bg:#5fcf9414;
+      --shadow:0 1px 2px rgba(0,0,0,.3), 0 6px 22px rgba(0,0,0,.35);
+      --container-shadow:0 18px 50px -28px rgba(0,0,0,.6);
+      --focus:#f4b79f;
+    }
+    .masthead, footer{ border-color:var(--rule-strong); }
+    .masthead h1{ color:var(--ink); }
+    .repo-title a{ color:var(--ink); }
+    .stars svg{ color:#e0b75a; }
+    .dot{ box-shadow:0 0 0 1px rgba(255,255,255,.12) inset; }
+    body{
+      background-image:
+        radial-gradient(circle at 18% 12%, rgba(224,138,111,.08), transparent 42%),
+        radial-gradient(circle at 88% 2%, rgba(95,207,148,.06), transparent 34%),
+        radial-gradient(circle at 50% 120%, rgba(224,138,111,.05), transparent 46%);
+    }
+  }
+</style>
+</head>
+<body>
+<div class="topbar" aria-hidden="true"></div>
+<div class="sheet">
+<div class="wrap">
+
+  <div class="navrow">
+    <a class="backlink" href="../index.html">← All issues</a>
+    <a class="backlink" href="../explore.html">Repo Atlas ✦</a>
+  </div>
+
+  <header class="masthead">
+    <p class="kicker">GitHub Trending · Briefing</p>
+    <h1>Today's <em>Top&nbsp;Five</em></h1>
+    <div class="dateline">
+      <span class="issue">October 17, 2026</span>
+      <span aria-hidden="true">·</span>
+      <span class="meta">5 repositories ranked by today's star gain</span>
+    </div>
+    <p class="lede">
+      A short, opinionated read on the five repositories that <strong>climbed fastest on GitHub today</strong> — what each one does, why it caught fire, and where it actually fits.
+    </p>
+  </header>
+
+  <main class="digest">
+
+    <article class="entry lead">
+      <div class="rank" aria-label="Rank 1">1</div>
+      <div class="titleblock">
+        <h2 class="repo-title">
+          <a href="https://github.com/anthropics/claude-plugins-official" target="_blank" rel="noopener noreferrer">
+            <span class="owner">anthropics</span><span class="slash">/</span>claude-plugins-official
+          </a>
+        </h2>
+        <div class="meta-row">
+          <span class="lang">
+            <span class="dot" style="background:#3572A5" aria-hidden="true"></span>Python
+          </span>
+          <span class="stars" title="Total stars">
+            <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"/></svg>
+            41,653 <span class="lbl">stars</span>
+          </span>
+          <span class="llm llm-required" title="Plugin directory for Claude Code; Claude subscription or API key required"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10.9" cy="5.1" r="3.3"/><path d="M8.6 7.4 2 14M4.3 11.7l1.7 1.7M2 14l1.2 1.2"/></svg>LLM API required</span>
+        </div>
+      </div>
+      <div class="momentum">
+        <span class="gain-figure" title="Stars gained today">
+          <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8.22 2.97a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1-1.06 1.06L9 5.81v6.44a.75.75 0 0 1-1.5 0V5.81L4.03 8.28a.75.75 0 0 1-1.06-1.06l4.25-4.25Z"/></svg>
+          +1,383
+        </span>
+        <span class="gain-label">stars today</span>
+      </div>
+      <div class="entry-body">
+        <p class="desc">An Anthropic-managed, curated directory of Claude Code plugins.</p>
+        <p class="analysis">Anthropic's official plugin marketplace for Claude Code, hosting pre-built slash commands, agents, skills, and MCP server configurations in a curated, quality-reviewed registry. It trended as the authoritative hub for Claude Code extensibility — developers now have a single trusted source to discover and install community and partner plugins. Claude Code users who want to supercharge their workflow without building integrations from scratch will benefit most, and plugin authors gain a credentialed publishing platform.</p>
+        <div class="cta-row">
+          <div class="cta-pair">
+            <a class="cta" href="https://github.com/anthropics/claude-plugins-official" target="_blank" rel="noopener noreferrer">
+              View on GitHub <span class="arrow" aria-hidden="true">→</span>
+            </a>
+            <a class="cta ask" href="https://claude.ai/new?q=Explain%20the%20GitHub%20repository%20anthropics/claude-plugins-official%20%E2%80%94%20what%20it%20actually%20does%2C%20how%20I%20would%20use%20it%2C%20and%20any%20gotchas%20%28cost%2C%20keys%2C%20hardware%29.%0A%0AContext%20from%20my%20GitHub-trending%20digest%20%28issue%202026-10-17%29%3A%20An%20Anthropic-managed%2C%20curated%20directory%20of%20Claude%20Code%20plugins.%20Language%3A%20Python.%20Topics%3A%20Agent%20Skills%20%26%20Plugins%2C%20Developer%20Tools.%20Needs%20an%20LLM%20API%3A%20required%20%28Plugin%20directory%20for%20Claude%20Code%3B%20Claude%20subscription%20or%20API%20key%20required%29.%20Digest%20analysis%3A%20Anthropic%27s%20official%20plugin%20marketplace%20for%20Claude%20Code%2C%20hosting%20pre-built%20slash%20commands%2C%20agents%2C%20skills%2C%20and%20MCP%20server%20configurations%20in%20a%20curated%2C%20quality-reviewed%20registry.%20It%20trended%20as%20the%20authoritative%20hub%20for%20Claude%20Code%20extensibility%20%E2%80%94%20developers%20now%20have%20a%20single%20trusted%20source%20to%20discover%20and%20install%20community%20and%20partner%20plugins.%20Claude%20Code%20users%20who%20want%20to%20supercharge%20their%20workflow%20without%20building%20integrations%20from%20scratch%20will%20benefit%20most%2C%20and%20plugin%20authors%20gain%20a%20credentialed%20publishing%20platform.%0A%0AFetch%20https%3A//github.com/anthropics/claude-plugins-official%20and%20its%20README%20for%20current%20details%20before%20answering." target="_blank" rel="noopener noreferrer">
+              <span class="arrow" aria-hidden="true">✦</span> Ask Claude about this repo
+            </a>
+          </div>
+          <span class="handle">github.com/anthropics/claude-plugins-official</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="entry">
+      <div class="rank" aria-label="Rank 2">2</div>
+      <div class="titleblock">
+        <h2 class="repo-title">
+          <a href="https://github.com/MadsLorentzen/ai-job-search" target="_blank" rel="noopener noreferrer">
+            <span class="owner">MadsLorentzen</span><span class="slash">/</span>ai-job-search
+          </a>
+        </h2>
+        <div class="meta-row">
+          <span class="lang">
+            <span class="dot" style="background:#3572A5" aria-hidden="true"></span>Python
+          </span>
+          <span class="stars" title="Total stars">
+            <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"/></svg>
+            50,252 <span class="lbl">stars</span>
+          </span>
+          <span class="llm llm-required" title="Requires Claude Pro/Max/Team subscription or Anthropic API credits"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10.9" cy="5.1" r="3.3"/><path d="M8.6 7.4 2 14M4.3 11.7l1.7 1.7M2 14l1.2 1.2"/></svg>LLM API required</span>
+        </div>
+      </div>
+      <div class="momentum">
+        <span class="gain-figure" title="Stars gained today">
+          <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8.22 2.97a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1-1.06 1.06L9 5.81v6.44a.75.75 0 0 1-1.5 0V5.81L4.03 8.28a.75.75 0 0 1-1.06-1.06l4.25-4.25Z"/></svg>
+          +1,397
+        </span>
+        <span class="gain-label">stars today</span>
+      </div>
+      <div class="entry-body">
+        <p class="desc">A self-hosted AI job-search framework built on Claude Code for evaluating postings, tailoring CVs, drafting cover letters, and preparing for interviews.</p>
+        <p class="analysis">An open-source, self-hosted framework that automates the end-to-end job hunt: it searches portals, scores posting fit against your profile, generates tailored LaTeX CVs and cover letters, and coaches interview prep — all driven by Claude Code. It trended as a compelling real-world showcase of Claude Code as a full agentic system for a task everyone relates to. Job seekers who are comfortable with a command line and LaTeX will unlock the most value; the portal connectors currently target the Danish market but the framework is built to be adapted.</p>
+        <div class="cta-row">
+          <div class="cta-pair">
+            <a class="cta" href="https://github.com/MadsLorentzen/ai-job-search" target="_blank" rel="noopener noreferrer">
+              View on GitHub <span class="arrow" aria-hidden="true">→</span>
+            </a>
+            <a class="cta ask" href="https://claude.ai/new?q=Explain%20the%20GitHub%20repository%20MadsLorentzen/ai-job-search%20%E2%80%94%20what%20it%20actually%20does%2C%20how%20I%20would%20use%20it%2C%20and%20any%20gotchas%20%28cost%2C%20keys%2C%20hardware%29.%0A%0AContext%20from%20my%20GitHub-trending%20digest%20%28issue%202026-10-17%29%3A%20A%20self-hosted%20AI%20job-search%20framework%20built%20on%20Claude%20Code%20for%20evaluating%20postings%2C%20tailoring%20CVs%2C%20drafting%20cover%20letters%2C%20and%20preparing%20for%20interviews.%20Language%3A%20Python.%20Topics%3A%20AI%20Agents%2C%20Productivity%20%26%20Research.%20Needs%20an%20LLM%20API%3A%20required%20%28Requires%20Claude%20Pro/Max/Team%20subscription%20or%20Anthropic%20API%20credits%29.%20Digest%20analysis%3A%20An%20open-source%2C%20self-hosted%20framework%20that%20automates%20the%20end-to-end%20job%20hunt%3A%20it%20searches%20portals%2C%20scores%20posting%20fit%20against%20your%20profile%2C%20generates%20tailored%20LaTeX%20CVs%20and%20cover%20letters%2C%20and%20coaches%20interview%20prep%20%E2%80%94%20all%20driven%20by%20Claude%20Code.%20It%20trended%20as%20a%20compelling%20real-world%20showcase%20of%20Claude%20Code%20as%20a%20full%20agentic%20system%20for%20a%20task%20everyone%20relates%20to.%20Job%20seekers%20who%20are%20comfortable%20with%20a%20command%20line%20and%20LaTeX%20will%20unlock%20the%20most%20value%3B%20the%20portal%20connectors%20currently%20target%20the%20Danish%20market%20but%20the%20framework%20is%20built%20to%20be%20adapted.%0A%0AFetch%20https%3A//github.com/MadsLorentzen/ai-job-search%20and%20its%20README%20for%20current%20details%20before%20answering." target="_blank" rel="noopener noreferrer">
+              <span class="arrow" aria-hidden="true">✦</span> Ask Claude about this repo
+            </a>
+          </div>
+          <span class="handle">github.com/MadsLorentzen/ai-job-search</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="entry">
+      <div class="rank" aria-label="Rank 3">3</div>
+      <div class="titleblock">
+        <h2 class="repo-title">
+          <a href="https://github.com/affaan-m/ECC" target="_blank" rel="noopener noreferrer">
+            <span class="owner">affaan-m</span><span class="slash">/</span>ECC
+          </a>
+        </h2>
+        <div class="meta-row">
+          <span class="lang">
+            <span class="dot" style="background:#f1e05a" aria-hidden="true"></span>JavaScript
+          </span>
+          <span class="stars" title="Total stars">
+            <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"/></svg>
+            282,410 <span class="lbl">stars</span>
+          </span>
+          <span class="llm llm-required" title="Runs inside Claude Code, Codex, Cursor, or OpenCode — each needs its own access"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10.9" cy="5.1" r="3.3"/><path d="M8.6 7.4 2 14M4.3 11.7l1.7 1.7M2 14l1.2 1.2"/></svg>LLM API required</span>
+        </div>
+      </div>
+      <div class="momentum">
+        <span class="gain-figure" title="Stars gained today">
+          <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8.22 2.97a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1-1.06 1.06L9 5.81v6.44a.75.75 0 0 1-1.5 0V5.81L4.03 8.28a.75.75 0 0 1-1.06-1.06l4.25-4.25Z"/></svg>
+          +1,145
+        </span>
+        <span class="gain-label">stars today</span>
+      </div>
+      <div class="entry-body">
+        <p class="desc">A performance-optimization harness for AI coding agents, with skills, memory, security tooling, and research-first workflows across Claude Code, Codex, Cursor, and others.</p>
+        <p class="analysis">ECC is a universal harness that installs into AI coding agents — Claude Code, Codex, Cursor, OpenCode — and enriches them with ~70 agents, 311 skills, TDD loops, code-review hooks, persistent memory, and security scanning without changing the underlying agent. Its enormous star count reflects adoption across every major agent platform, and it trended again likely on a new skill pack release. Professional developers who use AI coding assistants daily and want consistent, auditable engineering workflows across projects and teams will find it immediately valuable.</p>
+        <div class="cta-row">
+          <div class="cta-pair">
+            <a class="cta" href="https://github.com/affaan-m/ECC" target="_blank" rel="noopener noreferrer">
+              View on GitHub <span class="arrow" aria-hidden="true">→</span>
+            </a>
+            <a class="cta ask" href="https://claude.ai/new?q=Explain%20the%20GitHub%20repository%20affaan-m/ECC%20%E2%80%94%20what%20it%20actually%20does%2C%20how%20I%20would%20use%20it%2C%20and%20any%20gotchas%20%28cost%2C%20keys%2C%20hardware%29.%0A%0AContext%20from%20my%20GitHub-trending%20digest%20%28issue%202026-10-17%29%3A%20A%20performance-optimization%20harness%20for%20AI%20coding%20agents%2C%20with%20skills%2C%20memory%2C%20security%20tooling%2C%20and%20research-first%20workflows%20across%20Claude%20Code%2C%20Codex%2C%20Cursor%2C%20and%20others.%20Language%3A%20JavaScript.%20Topics%3A%20Agent%20Skills%20%26%20Plugins%2C%20Developer%20Tools.%20Needs%20an%20LLM%20API%3A%20required%20%28Runs%20inside%20Claude%20Code%2C%20Codex%2C%20Cursor%2C%20or%20OpenCode%20%E2%80%94%20each%20needs%20its%20own%20access%29.%20Digest%20analysis%3A%20ECC%20is%20a%20universal%20harness%20that%20installs%20into%20AI%20coding%20agents%20%E2%80%94%20Claude%20Code%2C%20Codex%2C%20Cursor%2C%20OpenCode%20%E2%80%94%20and%20enriches%20them%20with%20~70%20agents%2C%20311%20skills%2C%20TDD%20loops%2C%20code-review%20hooks%2C%20persistent%20memory%2C%20and%20security%20scanning%20without%20changing%20the%20underlying%20agent.%20Its%20enormous%20star%20count%20reflects%20adoption%20across%20every%20major%20agent%20platform%2C%20and%20it%20trended%20again%20likely%20on%20a%20new%20skill%20pack%20release.%20Professional%20developers%20who%20use%20AI%20coding%20assistants%20daily%20and%20want%20consistent%2C%20auditable%20engineering%20workflows%20across%20projects%20and%20teams%20will%20find%20it%20immediately%20valuable.%0A%0AFetch%20https%3A//github.com/affaan-m/ECC%20and%20its%20README%20for%20current%20details%20before%20answering." target="_blank" rel="noopener noreferrer">
+              <span class="arrow" aria-hidden="true">✦</span> Ask Claude about this repo
+            </a>
+          </div>
+          <span class="handle">github.com/affaan-m/ECC</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="entry">
+      <div class="rank" aria-label="Rank 4">4</div>
+      <div class="titleblock">
+        <h2 class="repo-title">
+          <a href="https://github.com/HKUDS/CLI-Anything" target="_blank" rel="noopener noreferrer">
+            <span class="owner">HKUDS</span><span class="slash">/</span>CLI-Anything
+          </a>
+        </h2>
+        <div class="meta-row">
+          <span class="lang">
+            <span class="dot" style="background:#3572A5" aria-hidden="true"></span>Python
+          </span>
+          <span class="stars" title="Total stars">
+            <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"/></svg>
+            54,011 <span class="lbl">stars</span>
+          </span>
+          <span class="llm llm-required" title="CLI generator runs inside Claude Code, Cursor, or Codex"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10.9" cy="5.1" r="3.3"/><path d="M8.6 7.4 2 14M4.3 11.7l1.7 1.7M2 14l1.2 1.2"/></svg>LLM API required</span>
+        </div>
+      </div>
+      <div class="momentum">
+        <span class="gain-figure" title="Stars gained today">
+          <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8.22 2.97a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1-1.06 1.06L9 5.81v6.44a.75.75 0 0 1-1.5 0V5.81L4.03 8.28a.75.75 0 0 1-1.06-1.06l4.25-4.25Z"/></svg>
+          +580
+        </span>
+        <span class="gain-label">stars today</span>
+      </div>
+      <div class="entry-body">
+        <p class="desc">A project to make arbitrary software controllable by AI agents through command-line interfaces, with an accompanying CLI hub.</p>
+        <p class="analysis">CLI-Anything solves the 'tool surface' problem in agentic workflows by generating command-line interfaces for any software — from GIMP and Blender to LibreOffice — so AI agents can control them without brittle GUI automation. CLI-Hub, the companion registry, lets users browse and install community-built CLIs with a single command. It trended on growing demand for expanding what AI coding agents can actually act on; automation engineers, creative-workflow teams, and researchers who need agents to operate domain-specific desktop tools will find it a practical unlock.</p>
+        <div class="cta-row">
+          <div class="cta-pair">
+            <a class="cta" href="https://github.com/HKUDS/CLI-Anything" target="_blank" rel="noopener noreferrer">
+              View on GitHub <span class="arrow" aria-hidden="true">→</span>
+            </a>
+            <a class="cta ask" href="https://claude.ai/new?q=Explain%20the%20GitHub%20repository%20HKUDS/CLI-Anything%20%E2%80%94%20what%20it%20actually%20does%2C%20how%20I%20would%20use%20it%2C%20and%20any%20gotchas%20%28cost%2C%20keys%2C%20hardware%29.%0A%0AContext%20from%20my%20GitHub-trending%20digest%20%28issue%202026-10-17%29%3A%20A%20project%20to%20make%20arbitrary%20software%20controllable%20by%20AI%20agents%20through%20command-line%20interfaces%2C%20with%20an%20accompanying%20CLI%20hub.%20Language%3A%20Python.%20Topics%3A%20AI%20Agents%2C%20MCP%20%26%20Integrations.%20Needs%20an%20LLM%20API%3A%20required%20%28CLI%20generator%20runs%20inside%20Claude%20Code%2C%20Cursor%2C%20or%20Codex%29.%20Digest%20analysis%3A%20CLI-Anything%20solves%20the%20%27tool%20surface%27%20problem%20in%20agentic%20workflows%20by%20generating%20command-line%20interfaces%20for%20any%20software%20%E2%80%94%20from%20GIMP%20and%20Blender%20to%20LibreOffice%20%E2%80%94%20so%20AI%20agents%20can%20control%20them%20without%20brittle%20GUI%20automation.%20CLI-Hub%2C%20the%20companion%20registry%2C%20lets%20users%20browse%20and%20install%20community-built%20CLIs%20with%20a%20single%20command.%20It%20trended%20on%20growing%20demand%20for%20expanding%20what%20AI%20coding%20agents%20can%20actually%20act%20on%3B%20automation%20engineers%2C%20creative-workflow%20teams%2C%20and%20researchers%20who%20need%20agents%20to%20operate%20domain-specific%20desktop%20tools%20will%20find%20it%20a%20practical%20unlock.%0A%0AFetch%20https%3A//github.com/HKUDS/CLI-Anything%20and%20its%20README%20for%20current%20details%20before%20answering." target="_blank" rel="noopener noreferrer">
+              <span class="arrow" aria-hidden="true">✦</span> Ask Claude about this repo
+            </a>
+          </div>
+          <span class="handle">github.com/HKUDS/CLI-Anything</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="entry">
+      <div class="rank" aria-label="Rank 5">5</div>
+      <div class="titleblock">
+        <h2 class="repo-title">
+          <a href="https://github.com/K-Dense-AI/scientific-agent-skills" target="_blank" rel="noopener noreferrer">
+            <span class="owner">K-Dense-AI</span><span class="slash">/</span>scientific-agent-skills
+          </a>
+        </h2>
+        <div class="meta-row">
+          <span class="lang">
+            <span class="dot" style="background:#3572A5" aria-hidden="true"></span>Python
+          </span>
+          <span class="stars" title="Total stars">
+            <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"/></svg>
+            52,196 <span class="lbl">stars</span>
+          </span>
+          <span class="llm llm-required" title="Skills for Claude Code, Cursor, or Codex; some databases need separate API keys"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10.9" cy="5.1" r="3.3"/><path d="M8.6 7.4 2 14M4.3 11.7l1.7 1.7M2 14l1.2 1.2"/></svg>LLM API required</span>
+        </div>
+      </div>
+      <div class="momentum">
+        <span class="gain-figure" title="Stars gained today">
+          <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8.22 2.97a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1-1.06 1.06L9 5.81v6.44a.75.75 0 0 1-1.5 0V5.81L4.03 8.28a.75.75 0 0 1-1.06-1.06l4.25-4.25Z"/></svg>
+          +879
+        </span>
+        <span class="gain-label">stars today</span>
+      </div>
+      <div class="entry-body">
+        <p class="desc">A library of 177+ validated agent skills and 100+ scientific databases for research in biology, chemistry, medicine, and drug discovery.</p>
+        <p class="analysis">A curated collection of 177+ validated agent skills that give AI coding agents (Claude Code, Cursor, Codex) structured access to 100+ scientific databases — NCBI, Materials Project, Benchling, and more — across biology, chemistry, medicine, and drug discovery. Trending on growing momentum for AI-assisted scientific research, it offers ready-made, peer-reviewed integrations rather than DIY database wrappers. Computational scientists, bioinformaticians, and research teams who already use an AI coding agent will unlock significant productivity gains without having to build database connectors from scratch.</p>
+        <div class="cta-row">
+          <div class="cta-pair">
+            <a class="cta" href="https://github.com/K-Dense-AI/scientific-agent-skills" target="_blank" rel="noopener noreferrer">
+              View on GitHub <span class="arrow" aria-hidden="true">→</span>
+            </a>
+            <a class="cta ask" href="https://claude.ai/new?q=Explain%20the%20GitHub%20repository%20K-Dense-AI/scientific-agent-skills%20%E2%80%94%20what%20it%20actually%20does%2C%20how%20I%20would%20use%20it%2C%20and%20any%20gotchas%20%28cost%2C%20keys%2C%20hardware%29.%0A%0AContext%20from%20my%20GitHub-trending%20digest%20%28issue%202026-10-17%29%3A%20A%20library%20of%20177%2B%20validated%20agent%20skills%20and%20100%2B%20scientific%20databases%20for%20research%20in%20biology%2C%20chemistry%2C%20medicine%2C%20and%20drug%20discovery.%20Language%3A%20Python.%20Topics%3A%20Science%20%26%20ML%2C%20Agent%20Skills%20%26%20Plugins.%20Needs%20an%20LLM%20API%3A%20required%20%28Skills%20for%20Claude%20Code%2C%20Cursor%2C%20or%20Codex%3B%20some%20databases%20need%20separate%20API%20keys%29.%20Digest%20analysis%3A%20A%20curated%20collection%20of%20177%2B%20validated%20agent%20skills%20that%20give%20AI%20coding%20agents%20%28Claude%20Code%2C%20Cursor%2C%20Codex%29%20structured%20access%20to%20100%2B%20scientific%20databases%20%E2%80%94%20NCBI%2C%20Materials%20Project%2C%20Benchling%2C%20and%20more%20%E2%80%94%20across%20biology%2C%20chemistry%2C%20medicine%2C%20and%20drug%20discovery.%20Trending%20on%20growing%20momentum%20for%20AI-assisted%20scientific%20research%2C%20it%20offers%20ready-made%2C%20peer-reviewed%20integrations%20rather%20than%20DIY%20database%20wrappers.%20Computational%20scientists%2C%20bioinformaticians%2C%20and%20research%20teams%20who%20already%20use%20an%20AI%20coding%20agent%20will%20unlock%20significant%20productivity%20gains%20without%20having%20to%20build%20database%20connectors%20from%20scratch.%0A%0AFetch%20https%3A//github.com/K-Dense-AI/scientific-agent-skills%20and%20its%20README%20for%20current%20details%20before%20answering." target="_blank" rel="noopener noreferrer">
+              <span class="arrow" aria-hidden="true">✦</span> Ask Claude about this repo
+            </a>
+          </div>
+          <span class="handle">github.com/K-Dense-AI/scientific-agent-skills</span>
+        </div>
+      </div>
+    </article>
+
+  </main>
+
+  <nav class="pager" aria-label="Issue navigation">
+    <a class="pnav prev" href="2026-10-15.html"><span class="plbl">← Previous issue</span><span class="pdate">October 15, 2026</span></a>
+    <a class="pnav allissues" href="../index.html">All issues</a>
+    <span></span>
+  </nav>
+
+  <footer>
+    <div class="robot">Automated Routine · Every Two Days</div>
+    <div>
+      Delivered automatically every two days by the GitHub Trending Digest routine — no humans were asked to rank anything. Repositories are selected by their net star gain over the trailing 24 hours.
+    </div>
+    <div class="gen">Generated October 17, 2026</div>
+  </footer>
+
+</div>
+</div>
+</body>
+</html>

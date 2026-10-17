@@ -44,7 +44,8 @@
     "2026-10-09",
     "2026-10-11",
     "2026-10-13",
-    "2026-10-15"
+    "2026-10-15",
+    "2026-10-17"
   ],
   "repos": [
     {
@@ -2160,23 +2161,29 @@
           "rank": 3,
           "stars": 35217,
           "gained": 1266
+        },
+        {
+          "date": "2026-10-17",
+          "rank": 2,
+          "stars": 50252,
+          "gained": 1397
         }
       ],
       "language": "Python",
       "lang_color": "#3572A5",
-      "description": "Job search framework built on Claude Code: evaluate postings, tailor CVs, write cover letters",
-      "analysis": "ai-job-search is a Python framework that automates the modern job hunt using Claude Code as its AI backbone — it evaluates job postings for fit, rewrites CVs to match specific roles, and drafts tailored cover letters at scale. The project turns what is normally an hours-long manual process into a repeatable, scriptable pipeline. It's trending sharply today, likely amplified by social media coverage and the relatable pain point of job searching, which drives viral sharing among mid-career engineers and recent graduates. It fits Python developers comfortable with CLI tools who want to apply AI leverage to career tasks without building the plumbing themselves.",
+      "description": "A self-hosted AI job-search framework built on Claude Code for evaluating postings, tailoring CVs, drafting cover letters, and preparing for interviews.",
+      "analysis": "An open-source, self-hosted framework that automates the end-to-end job hunt: it searches portals, scores posting fit against your profile, generates tailored LaTeX CVs and cover letters, and coaches interview prep — all driven by Claude Code. It trended as a compelling real-world showcase of Claude Code as a full agentic system for a task everyone relates to. Job seekers who are comfortable with a command line and LaTeX will unlock the most value; the portal connectors currently target the Danish market but the framework is built to be adapted.",
       "llm_api": "required",
-      "llm_api_note": "Built on Claude Code",
+      "llm_api_note": "Requires Claude Pro/Max/Team subscription or Anthropic API credits",
       "topics": [
-        "Productivity & Research",
-        "Agent Skills & Plugins"
+        "AI Agents",
+        "Productivity & Research"
       ],
       "first_seen": "2026-08-25",
-      "last_seen": "2026-08-25",
-      "best_rank": 3,
-      "latest_stars": 35217,
-      "max_gained": 1266
+      "last_seen": "2026-10-17",
+      "best_rank": 2,
+      "latest_stars": 50252,
+      "max_gained": 1397
     },
     {
       "owner": "apache",
@@ -2408,23 +2415,28 @@
           "rank": 3,
           "stars": 50389,
           "gained": 1091
+        },
+        {
+          "date": "2026-10-17",
+          "rank": 5,
+          "stars": 52196,
+          "gained": 879
         }
       ],
       "language": "Python",
       "lang_color": "#3572A5",
-      "description": "A library of 177+ validated skills that turns AI agents into scientific research assistants.",
-      "analysis": "Scientific-agent-skills is a library of 177+ domain-specific SKILL.md files covering biology, chemistry, physics, medicine, earth science, and data analysis, each encoding expert workflows, package recipes, and curated database pointers for AI agents. The host agent (Claude Code, Cursor, Codex, etc.) supplies the model; the skills simply teach it domain-specific toolchains. It is trending on organic discovery as academic and industry researchers begin adopting agent-driven scientific workflows. Bioinformaticians, cheminformatics teams, materials scientists, and data analysts who already use AI coding agents will see the most immediate value.",
+      "description": "A library of 177+ validated agent skills and 100+ scientific databases for research in biology, chemistry, medicine, and drug discovery.",
+      "analysis": "A curated collection of 177+ validated agent skills that give AI coding agents (Claude Code, Cursor, Codex) structured access to 100+ scientific databases — NCBI, Materials Project, Benchling, and more — across biology, chemistry, medicine, and drug discovery. Trending on growing momentum for AI-assisted scientific research, it offers ready-made, peer-reviewed integrations rather than DIY database wrappers. Computational scientists, bioinformaticians, and research teams who already use an AI coding agent will unlock significant productivity gains without having to build database connectors from scratch.",
       "llm_api": "required",
-      "llm_api_note": "Skills load into Claude Code, Cursor, Codex etc.; host agent supplies the model",
+      "llm_api_note": "Skills for Claude Code, Cursor, or Codex; some databases need separate API keys",
       "topics": [
-        "Agent Skills & Plugins",
         "Science & ML",
-        "Productivity & Research"
+        "Agent Skills & Plugins"
       ],
       "first_seen": "2026-08-29",
-      "last_seen": "2026-10-15",
+      "last_seen": "2026-10-17",
       "best_rank": 3,
-      "latest_stars": 50389,
+      "latest_stars": 52196,
       "max_gained": 1968
     },
     {
@@ -2787,23 +2799,28 @@
           "rank": 3,
           "stars": 272182,
           "gained": 954
+        },
+        {
+          "date": "2026-10-17",
+          "rank": 3,
+          "stars": 282410,
+          "gained": 1145
         }
       ],
       "language": "JavaScript",
       "lang_color": "#f1e05a",
-      "description": "Performance optimization system for agent harnesses with skills, memory, security, and development tools.",
-      "analysis": "ECC is a comprehensive 'operating system' layer for AI coding agents, bundling 68 specialized sub-agents, 293 reusable skills, and 94 command utilities that standardize the plan→test→implement→review→remember→improve cycle across Claude Code, Codex, Cursor, and others. As developers increasingly run multiple AI harnesses, the cost of rediscovering best practices per tool is high — ECC centralizes that investment in one installable config with selectable profiles (minimal, core, full). It works through each harness's own LLM credentials, so no new API key is needed, but the harness itself is required. Power users and engineering teams seeking repeatable, high-quality AI-assisted development at scale are the target.",
+      "description": "A performance-optimization harness for AI coding agents, with skills, memory, security tooling, and research-first workflows across Claude Code, Codex, Cursor, and others.",
+      "analysis": "ECC is a universal harness that installs into AI coding agents — Claude Code, Codex, Cursor, OpenCode — and enriches them with ~70 agents, 311 skills, TDD loops, code-review hooks, persistent memory, and security scanning without changing the underlying agent. Its enormous star count reflects adoption across every major agent platform, and it trended again likely on a new skill pack release. Professional developers who use AI coding assistants daily and want consistent, auditable engineering workflows across projects and teams will find it immediately valuable.",
       "llm_api": "required",
-      "llm_api_note": "Works through each harness's own config (Claude Code, Codex, Cursor)",
+      "llm_api_note": "Runs inside Claude Code, Codex, Cursor, or OpenCode — each needs its own access",
       "topics": [
-        "AI Agents",
         "Agent Skills & Plugins",
         "Developer Tools"
       ],
       "first_seen": "2026-09-05",
-      "last_seen": "2026-10-03",
+      "last_seen": "2026-10-17",
       "best_rank": 3,
-      "latest_stars": 272182,
+      "latest_stars": 282410,
       "max_gained": 1325
     },
     {
@@ -3748,24 +3765,29 @@
           "rank": 2,
           "stars": 38990,
           "gained": 525
+        },
+        {
+          "date": "2026-10-17",
+          "rank": 1,
+          "stars": 41653,
+          "gained": 1383
         }
       ],
       "language": "Python",
       "lang_color": "#3572A5",
-      "description": "Anthropic-managed directory of curated Claude Code plugins.",
-      "analysis": "This is Anthropic's own curated registry of Claude Code plugins — officially vetted extensions that add capabilities, UIs, and slash commands directly to Claude Code sessions. It surfaced in trending today likely off the back of an Anthropic announcement or blog post highlighting the growing plugin ecosystem. Claude Code subscribers and developers building Claude Code integrations are the primary users; the official curation distinguishes it from community-sourced plugin lists by carrying Anthropic's quality signal.",
+      "description": "An Anthropic-managed, curated directory of Claude Code plugins.",
+      "analysis": "Anthropic's official plugin marketplace for Claude Code, hosting pre-built slash commands, agents, skills, and MCP server configurations in a curated, quality-reviewed registry. It trended as the authoritative hub for Claude Code extensibility — developers now have a single trusted source to discover and install community and partner plugins. Claude Code users who want to supercharge their workflow without building integrations from scratch will benefit most, and plugin authors gain a credentialed publishing platform.",
       "llm_api": "required",
-      "llm_api_note": "Plugins are useless without an active Claude Code session",
+      "llm_api_note": "Plugin directory for Claude Code; Claude subscription or API key required",
       "topics": [
         "Agent Skills & Plugins",
-        "MCP & Integrations",
         "Developer Tools"
       ],
       "first_seen": "2026-09-25",
-      "last_seen": "2026-10-15",
-      "best_rank": 2,
-      "latest_stars": 38990,
-      "max_gained": 525
+      "last_seen": "2026-10-17",
+      "best_rank": 1,
+      "latest_stars": 41653,
+      "max_gained": 1383
     },
     {
       "owner": "vectorize-io",
@@ -4305,6 +4327,34 @@
       "best_rank": 3,
       "latest_stars": 17583,
       "max_gained": 2956
+    },
+    {
+      "owner": "HKUDS",
+      "repo": "CLI-Anything",
+      "url": "https://github.com/HKUDS/CLI-Anything",
+      "appearances": [
+        {
+          "date": "2026-10-17",
+          "rank": 4,
+          "stars": 54011,
+          "gained": 580
+        }
+      ],
+      "language": "Python",
+      "lang_color": "#3572A5",
+      "description": "A project to make arbitrary software controllable by AI agents through command-line interfaces, with an accompanying CLI hub.",
+      "analysis": "CLI-Anything solves the 'tool surface' problem in agentic workflows by generating command-line interfaces for any software — from GIMP and Blender to LibreOffice — so AI agents can control them without brittle GUI automation. CLI-Hub, the companion registry, lets users browse and install community-built CLIs with a single command. It trended on growing demand for expanding what AI coding agents can actually act on; automation engineers, creative-workflow teams, and researchers who need agents to operate domain-specific desktop tools will find it a practical unlock.",
+      "llm_api": "required",
+      "llm_api_note": "CLI generator runs inside Claude Code, Cursor, or Codex",
+      "topics": [
+        "AI Agents",
+        "MCP & Integrations"
+      ],
+      "first_seen": "2026-10-17",
+      "last_seen": "2026-10-17",
+      "best_rank": 4,
+      "latest_stars": 54011,
+      "max_gained": 580
     }
   ]
 }
