@@ -45,7 +45,8 @@
     "2026-10-11",
     "2026-10-13",
     "2026-10-15",
-    "2026-10-17"
+    "2026-10-17",
+    "2026-10-19"
   ],
   "repos": [
     {
@@ -1766,23 +1767,29 @@
           "rank": 4,
           "stars": 7630,
           "gained": 217
+        },
+        {
+          "date": "2026-10-19",
+          "rank": 5,
+          "stars": 11265,
+          "gained": 666
         }
       ],
       "language": "Rust",
       "lang_color": "#dea584",
-      "description": "Solution for long term memory for agent coding CLIs and vendor handoff",
-      "analysis": "ai-memory is a lightweight Rust binary that gives AI coding agents (Claude Code, Codex, Cursor, etc.) persistent, cross-session, cross-machine memory stored in a git-backed markdown wiki with SQLite FTS5 search—all with zero LLM calls by default. It trended because the pain of losing context when switching agents or machines is universal among AI-assisted developers. LLM providers are optional add-ons for semantic search and summarization. Perfect for developers juggling multiple AI coding tools who need seamless handoffs without re-explaining their codebase state each session.",
+      "description": "Long-term memory for agentic coding CLIs that enables handoffs between different AI vendors.",
+      "analysis": "ai-memory is a Rust-based memory layer that gives agentic coding CLIs (Claude Code, Codex, and others) persistent long-term context — storing decisions, code rationale, and session history so that switching between AI tools or resuming a project days later doesn't mean starting from scratch. It gains traction today as developers who juggle multiple AI coding assistants feel the real pain of context loss between sessions and across vendors. Power users of coding CLIs and teams standardising on AI-assisted workflows are its primary audience, and the Rust implementation promises low overhead for an always-on background service.",
       "llm_api": "optional",
-      "llm_api_note": "Zero LLM calls by default; local/cloud LLM add-ons for enhanced search",
+      "llm_api_note": "Augments any coding CLI; no LLM needed for storage/retrieval itself",
       "topics": [
         "RAG & Memory",
-        "AI Agents"
+        "Developer Tools"
       ],
       "first_seen": "2026-08-17",
-      "last_seen": "2026-09-21",
+      "last_seen": "2026-10-19",
       "best_rank": 4,
-      "latest_stars": 7630,
-      "max_gained": 217
+      "latest_stars": 11265,
+      "max_gained": 666
     },
     {
       "owner": "mukul975",
@@ -2167,23 +2174,29 @@
           "rank": 2,
           "stars": 50252,
           "gained": 1397
+        },
+        {
+          "date": "2026-10-19",
+          "rank": 1,
+          "stars": 56949,
+          "gained": 3860
         }
       ],
       "language": "Python",
       "lang_color": "#3572A5",
-      "description": "A self-hosted AI job-search framework built on Claude Code for evaluating postings, tailoring CVs, drafting cover letters, and preparing for interviews.",
-      "analysis": "An open-source, self-hosted framework that automates the end-to-end job hunt: it searches portals, scores posting fit against your profile, generates tailored LaTeX CVs and cover letters, and coaches interview prep — all driven by Claude Code. It trended as a compelling real-world showcase of Claude Code as a full agentic system for a task everyone relates to. Job seekers who are comfortable with a command line and LaTeX will unlock the most value; the portal connectors currently target the Danish market but the framework is built to be adapted.",
+      "description": "A locally run AI job-search framework built on Claude Code that evaluates postings, tailors CVs, drafts cover letters, and preps interviews.",
+      "analysis": "ai-job-search is a locally run AI framework that automates the entire job-hunting pipeline: it fetches and scores job postings against your profile, rewrites your CV for each role, generates tailored cover letters, and simulates interview questions. It trends today likely because it rides the Claude Code wave — demonstrating a compelling real-world agentic workflow that developers can run from their own machine. The project appeals to tech workers who are job-hunting and want AI to multiply their application throughput without sending data to a third-party service.",
       "llm_api": "required",
-      "llm_api_note": "Requires Claude Pro/Max/Team subscription or Anthropic API credits",
+      "llm_api_note": "Requires Claude Code + Claude API; fully local orchestration",
       "topics": [
         "AI Agents",
         "Productivity & Research"
       ],
       "first_seen": "2026-08-25",
-      "last_seen": "2026-10-17",
-      "best_rank": 2,
-      "latest_stars": 50252,
-      "max_gained": 1397
+      "last_seen": "2026-10-19",
+      "best_rank": 1,
+      "latest_stars": 56949,
+      "max_gained": 3860
     },
     {
       "owner": "apache",
@@ -4355,6 +4368,90 @@
       "best_rank": 4,
       "latest_stars": 54011,
       "max_gained": 580
+    },
+    {
+      "owner": "anomalyco",
+      "repo": "opencode",
+      "url": "https://github.com/anomalyco/opencode",
+      "appearances": [
+        {
+          "date": "2026-10-19",
+          "rank": 2,
+          "stars": 217710,
+          "gained": 1310
+        }
+      ],
+      "language": "TypeScript",
+      "lang_color": "#3178c6",
+      "description": "An open source coding agent.",
+      "analysis": "opencode is a terminal-native, open-source coding agent that lets developers write, refactor, debug, and explain code through a conversational AI interface — a vendor-neutral alternative to proprietary agents like Claude Code or Cursor. It likely trends on sustained organic demand: developers actively seek open-source coding agents they can self-host, audit, and extend without vendor lock-in. The project fits developers who prefer transparency and control over their AI tooling, and those building products on top of coding-agent infrastructure.",
+      "llm_api": "required",
+      "llm_api_note": "BYO LLM key (OpenAI, Anthropic, or compatible backends)",
+      "topics": [
+        "AI Agents",
+        "Code Intelligence",
+        "Developer Tools"
+      ],
+      "first_seen": "2026-10-19",
+      "last_seen": "2026-10-19",
+      "best_rank": 2,
+      "latest_stars": 217710,
+      "max_gained": 1310
+    },
+    {
+      "owner": "Comfy-Org",
+      "repo": "ComfyUI",
+      "url": "https://github.com/Comfy-Org/ComfyUI",
+      "appearances": [
+        {
+          "date": "2026-10-19",
+          "rank": 3,
+          "stars": 139618,
+          "gained": 1011
+        }
+      ],
+      "language": "Python",
+      "lang_color": "#3572A5",
+      "description": "A modular, node-graph GUI, API, and backend for diffusion models with a focus on fast local inference.",
+      "analysis": "ComfyUI provides a visual node-graph interface for building and running diffusion-model pipelines locally, supporting image, video, and audio generation across Stable Diffusion, Flux, and other model families. It likely saw a spike from a new model release or a community-built workflow going viral on social media — a recurring pattern for this project. Artists, researchers, and pipeline engineers working with generative media use it as the de-facto local inference backend, appreciating its modularity and the ability to chain complex generation steps without writing code.",
+      "llm_api": "none",
+      "topics": [
+        "Science & ML",
+        "Developer Tools"
+      ],
+      "first_seen": "2026-10-19",
+      "last_seen": "2026-10-19",
+      "best_rank": 3,
+      "latest_stars": 139618,
+      "max_gained": 1011
+    },
+    {
+      "owner": "ruvnet",
+      "repo": "ruflo",
+      "url": "https://github.com/ruvnet/ruflo",
+      "appearances": [
+        {
+          "date": "2026-10-19",
+          "rank": 4,
+          "stars": 77129,
+          "gained": 564
+        }
+      ],
+      "language": "TypeScript",
+      "lang_color": "#3178c6",
+      "description": "An agent harness for multi-agent swarms and autonomous workflows that integrates with Claude Code, Codex, and other agents.",
+      "analysis": "ruflo is a TypeScript agent harness that orchestrates swarms of specialized AI agents — wiring Claude Code, Codex, and other coding agents together into autonomous multi-step workflows. It trends as multi-agent systems move from research curiosity to practical developer tooling: teams building complex CI/CD automation, code-review pipelines, or autonomous engineering assistants are actively looking for frameworks like this. It targets developers and DevOps engineers who want to compose AI agents rather than build orchestration from scratch.",
+      "llm_api": "required",
+      "llm_api_note": "Integrates with Claude Code, Codex, or any compatible agent backend",
+      "topics": [
+        "AI Agents",
+        "MCP & Integrations"
+      ],
+      "first_seen": "2026-10-19",
+      "last_seen": "2026-10-19",
+      "best_rank": 4,
+      "latest_stars": 77129,
+      "max_gained": 564
     }
   ]
 }
