@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GitHub Trending Top 5 — October 21, 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#fbfaf7;
+    --ink:#1c1a17;
+    --ink-soft:#4a463f;
+    --ink-faint:#8b8478;
+    --rule:#e3ded3;
+    --rule-strong:#cfc8ba;
+    --accent:#9a3324;        /* deep editorial vermilion */
+    --accent-soft:#b9492f;
+    --gain:#1f6f43;          /* calm forest green for momentum */
+    --gain-bg:#1f6f4312;
+    --card:#ffffff;
+    --llm-req:#9a3324;      --llm-req-line:#9a332440; --llm-req-bg:#9a33240d;
+    --llm-opt:#8a6413;      --llm-opt-line:#8a641340; --llm-opt-bg:#8a64130d;
+    --llm-no:#1f6f43;       --llm-no-line:#1f6f4340;  --llm-no-bg:#1f6f430d;
+    --shadow:0 1px 2px rgba(28,26,23,.04), 0 6px 22px rgba(28,26,23,.05);
+    --container-shadow:0 1px 0 rgba(28,26,23,.04), 0 18px 50px -28px rgba(28,26,23,.18);
+    --focus:#9a3324;
+    --max:760px;
+  }
+
+  *{box-sizing:border-box;}
+
+  html{ -webkit-text-size-adjust:100%; }
+
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size:17px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+    /* subtle paper texture via layered gradients, no external assets */
+    background-image:
+      radial-gradient(circle at 18% 12%, rgba(154,51,36,.045), transparent 40%),
+      radial-gradient(circle at 88% 2%, rgba(31,111,67,.04), transparent 34%),
+      radial-gradient(circle at 50% 120%, rgba(154,51,36,.03), transparent 46%);
+    background-attachment:fixed;
+  }
+
+  a{ color:inherit; }
+
+  /* thin vermilion accent bar at the very top — the 'masthead edge' */
+  .topbar{
+    height:4px;
+    background:var(--accent);
+    width:100%;
+  }
+
+  .sheet{
+    max-width:calc(var(--max) + 44px);
+    margin:0 auto;
+    background:var(--card);
+    box-shadow:var(--container-shadow);
+  }
+
+  .wrap{
+    max-width:var(--max);
+    margin:0 auto;
+    padding:0 22px 64px;
+    position:relative;
+  }
+
+  /* ───────── Top navigation ───────── */
+  .navrow{
+    padding-top:22px;
+    display:flex;
+    justify-content:space-between;
+    gap:16px;
+    flex-wrap:wrap;
+  }
+  .backlink{
+    font-family:"JetBrains Mono",monospace;
+    font-size:12px;
+    color:var(--ink-soft);
+    text-decoration:none;
+    letter-spacing:.04em;
+  }
+  .backlink:hover{ color:var(--accent); }
+
+  /* ───────── Masthead ───────── */
+  .masthead{
+    padding:24px 0 26px;
+    border-bottom:2px solid var(--ink);
+  }
+  .kicker{
+    font-family:"JetBrains Mono", monospace;
+    font-size:11.5px;
+    font-weight:500;
+    letter-spacing:.22em;
+    text-transform:uppercase;
+    color:var(--accent);
+    margin:0 0 16px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+  .kicker::after{
+    content:"";
+    flex:1;
+    height:1px;
+    background:var(--rule-strong);
+  }
+  .masthead h1{
+    font-family:"Fraunces", Georgia, serif;
+    font-optical-sizing:auto;
+    font-weight:600;
+    font-size:clamp(2rem, 7vw, 3.6rem);
+    line-height:1.02;
+    letter-spacing:-.018em;
+    margin:0 0 .35em;
+    color:var(--ink);
+  }
+  .masthead h1 em{
+    font-style:italic;
+    font-weight:400;
+    color:var(--accent);
+  }
+  .dateline{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:baseline;
+    gap:8px 16px;
+    font-size:14.5px;
+    color:var(--ink-soft);
+  }
+  .dateline .issue{
+    font-weight:600;
+    color:var(--ink);
+  }
+  .dateline .meta{
+    font-family:"JetBrains Mono", monospace;
+    font-size:12px;
+    letter-spacing:.04em;
+    color:var(--ink-soft);
+    font-variant-numeric:tabular-nums;
+  }
+
+  .lede{
+    font-family:"Fraunces", Georgia, serif;
+    font-size:clamp(1.05rem, 2.5vw, 1.22rem);
+    line-height:1.55;
+    color:var(--ink-soft);
+    font-weight:400;
+    margin:30px 0 0;
+    max-width:60ch;
+  }
+  .lede strong{ color:var(--ink); font-weight:600; }
+
+  /* ───────── Article / repo entries ───────── */
+  .digest{
+    margin-top:8px;
+  }
+
+  /* ONE shared grid definition for head + body.
+     [rank] minmax(2.6ch,auto)  [content] 1fr  [stat] auto
+     — guarantees prose aligns under the title regardless of rank
+     width or whether Fraunces has loaded; no margin hack, no shift. */
+  .entry{
+    position:relative;
+    padding:44px 0 40px;
+    border-bottom:1px solid var(--rule);
+    display:grid;
+    grid-template-columns:[rank] minmax(2.6ch,auto) [content] 1fr [stat] auto;
+    column-gap:20px;
+    row-gap:0;
+    align-items:start;
+  }
+  .entry:last-child{ border-bottom:none; }
+
+  .rank{
+    grid-column:rank;
+    grid-row:1;
+    font-family:"Fraunces", Georgia, serif;
+    font-weight:600;
+    font-size:2.9rem;
+    line-height:.86;
+    letter-spacing:-.03em;
+    color:var(--accent);
+    font-variant-numeric:lining-nums tabular-nums;
+    padding-top:.06em;
+    white-space:nowrap;
+  }
+  .rank::before{
+    content:"No.";
+    display:block;
+    font-family:"JetBrains Mono", monospace;
+    font-size:9.5px;
+    font-weight:500;
+    letter-spacing:.18em;
+    text-transform:uppercase;
+    color:var(--ink-soft);
+    margin-bottom:4px;
+  }
+
+  .titleblock{
+    grid-column:content;
+    grid-row:1;
+    min-width:0;
+  }
+
+  /* hero momentum stat — its own grid cell, right-aligned next to title */
+  .momentum{
+    grid-column:stat;
+    grid-row:1;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-end;
+    text-align:right;
+    padding-top:.18em;
+    white-space:nowrap;
+  }
+  .momentum .gain-figure{
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    font-family:"JetBrains Mono", monospace;
+    font-weight:600;
+    font-size:19px;
+    line-height:1;
+    color:var(--gain);
+    font-variant-numeric:tabular-nums;
+  }
+  .momentum .gain-figure svg{ width:13px; height:13px; flex:none; }
+  .momentum .gain-label{
+    font-family:"Inter", sans-serif;
+    font-size:11px;
+    font-weight:500;
+    letter-spacing:.02em;
+    color:var(--ink-soft);
+    margin-top:5px;
+  }
+
+  /* body sits in the content column, row 2 — aligned under the title */
+  .entry-body{
+    grid-column:content;
+    grid-row:2;
+    min-width:0;
+  }
+
+  .repo-title{
+    font-family:"Fraunces", Georgia, serif;
+    font-weight:600;
+    font-size:clamp(1.5rem, 4.6vw, 2rem);
+    line-height:1.08;
+    letter-spacing:-.01em;
+    margin:0 0 12px;
+    word-break:break-word;
+    overflow-wrap:anywhere;
+  }
+  .repo-title a{
+    text-decoration:none;
+    color:var(--ink);
+    background-image:linear-gradient(var(--accent), var(--accent));
+    background-size:0% 2px;
+    background-position:0 100%;
+    background-repeat:no-repeat;
+    transition:background-size .28s ease;
+  }
+  .repo-title a:hover,
+  .repo-title a:focus-visible{
+    background-size:100% 2px;
+    color:var(--accent);
+  }
+  .repo-title .owner{ color:var(--ink-soft); font-weight:500; }
+  .repo-title .slash{ color:var(--rule-strong); font-weight:400; padding:0 .04em; }
+
+  /* metadata row */
+  .meta-row{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    gap:8px 18px;
+    margin-bottom:18px;
+    font-size:13.5px;
+  }
+  .lang{
+    display:inline-flex;
+    align-items:center;
+    gap:7px;
+    color:var(--ink-soft);
+    font-weight:500;
+  }
+  .dot{
+    width:11px;height:11px;
+    border-radius:50%;
+    box-shadow:0 0 0 1px rgba(0,0,0,.06) inset;
+    flex:none;
+  }
+  .stars{
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    font-family:"JetBrains Mono", monospace;
+    font-size:13px;
+    font-weight:500;
+    color:var(--ink);
+    font-variant-numeric:tabular-nums;
+  }
+  /* pixel-accurate GitHub star path, shared by every star glyph */
+  .stars svg{ width:13px;height:13px; flex:none; color:#c8951f; }
+  .stars .lbl{ color:var(--ink-soft); font-family:"Inter",sans-serif; font-size:12.5px; font-weight:500; }
+
+  /* LLM-API requirement badge */
+  .llm{
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    font-family:"Inter",sans-serif;
+    font-size:11.5px;
+    font-weight:600;
+    letter-spacing:.02em;
+    line-height:1;
+    padding:5px 10px 5px 8px;
+    border-radius:999px;
+    border:1px solid;
+    white-space:nowrap;
+  }
+  .llm svg{ width:12px;height:12px; flex:none; }
+  .llm-required{ color:var(--llm-req); border-color:var(--llm-req-line); background:var(--llm-req-bg); }
+  .llm-optional{ color:var(--llm-opt); border-color:var(--llm-opt-line); background:var(--llm-opt-bg); }
+  .llm-none{ color:var(--llm-no); border-color:var(--llm-no-line); background:var(--llm-no-bg); }
+
+  .desc{
+    font-size:16.5px;
+    color:var(--ink);
+    margin:0 0 18px;
+    font-weight:500;
+    line-height:1.5;
+    max-width:62ch;
+  }
+
+  .analysis{
+    font-size:16.5px;
+    line-height:1.62;
+    color:var(--ink-soft);
+    margin:0 0 22px;
+    max-width:66ch;
+    /* hanging accent rule on the left */
+    padding-left:18px;
+    border-left:2px solid var(--rule);
+  }
+
+  .cta-row{
+    display:flex;
+    flex-direction:column;
+    gap:9px;
+    align-items:flex-start;
+  }
+  .cta-pair{ display:flex; flex-wrap:wrap; gap:10px; }
+  .cta.ask{ color:var(--accent); border-color:var(--llm-req-line); background:var(--llm-req-bg); }
+  .cta.ask:hover, .cta.ask:focus-visible{ border-color:var(--accent); }
+  .cta{
+    display:inline-flex;
+    align-items:center;
+    gap:9px;
+    font-family:"Inter",sans-serif;
+    font-size:14px;
+    font-weight:600;
+    letter-spacing:.01em;
+    text-decoration:none;
+    color:var(--ink);
+    background:var(--card);
+    border:1px solid var(--rule-strong);
+    padding:10px 18px;
+    border-radius:8px;
+    box-shadow:var(--shadow);
+    transition:border-color .2s ease, color .2s ease, transform .15s ease, box-shadow .2s ease;
+  }
+  .cta .arrow{ transition:transform .22s ease; color:var(--accent); }
+  .cta:hover, .cta:focus-visible{
+    border-color:var(--accent);
+    color:var(--accent);
+    transform:translateY(-1px);
+    box-shadow:0 2px 4px rgba(28,26,23,.06), 0 10px 26px rgba(154,51,36,.10);
+  }
+  .cta:hover .arrow, .cta:focus-visible .arrow{ transform:translateX(4px); }
+
+  /* quiet monospace destination handle — legible before hover */
+  .handle{
+    font-family:"JetBrains Mono", monospace;
+    font-size:12px;
+    color:var(--ink-faint);
+    letter-spacing:.01em;
+    word-break:break-all;
+  }
+
+  /* ───────── Rank-1 emphasis (calm, no card) ───────── */
+  .entry.lead .rank{ font-size:3.3rem; }
+  .entry.lead::before{
+    content:"";
+    position:absolute;
+    top:0; left:0;
+    width:46px;
+    height:3px;
+    background:var(--accent);
+  }
+
+  /* ───────── Prev / next issue pager ───────── */
+  .pager{
+    display:grid;
+    grid-template-columns:1fr auto 1fr;
+    align-items:center;
+    gap:12px;
+    margin-top:44px;
+    padding-top:24px;
+    border-top:1px solid var(--rule);
+  }
+  .pnav{
+    display:flex;
+    flex-direction:column;
+    gap:5px;
+    text-decoration:none;
+    color:inherit;
+  }
+  .pnav.next{ text-align:right; justify-self:end; }
+  .pnav.prev{ justify-self:start; }
+  .pnav .plbl{
+    font-family:"JetBrains Mono",monospace;
+    font-size:10.5px;
+    font-weight:500;
+    letter-spacing:.16em;
+    text-transform:uppercase;
+    color:var(--ink-faint);
+  }
+  .pnav .pdate{
+    font-family:"Fraunces",Georgia,serif;
+    font-weight:600;
+    font-size:1.1rem;
+    color:var(--ink);
+    transition:color .18s ease;
+  }
+  .pnav:hover .pdate{ color:var(--accent); }
+  .pnav.allissues{
+    font-family:"JetBrains Mono",monospace;
+    font-size:11.5px;
+    color:var(--ink-soft);
+    text-decoration:none;
+    letter-spacing:.04em;
+    justify-self:center;
+  }
+  .pnav.allissues:hover{ color:var(--accent); }
+  @media (max-width:480px){
+    .pager{ grid-template-columns:1fr 1fr; }
+    .pnav.allissues{ grid-column:1 / -1; order:3; margin-top:6px; }
+    .pnav .pdate{ font-size:1rem; }
+  }
+
+  /* ───────── Footer ───────── */
+  footer{
+    margin-top:8px;
+    padding-top:30px;
+    border-top:2px solid var(--ink);
+    font-size:13px;
+    color:var(--ink-soft);
+    line-height:1.7;
+  }
+  footer .robot{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    font-family:"JetBrains Mono", monospace;
+    font-size:11px;
+    letter-spacing:.16em;
+    text-transform:uppercase;
+    color:var(--accent);
+    margin-bottom:10px;
+  }
+  footer .gen{
+    font-family:"JetBrains Mono", monospace;
+    font-size:11.5px;
+    color:var(--ink-soft);
+    margin-top:6px;
+    font-variant-numeric:tabular-nums;
+  }
+  footer a{ color:var(--accent); text-decoration:none; border-bottom:1px solid var(--rule-strong); }
+
+  :focus-visible{ outline:2px solid var(--focus); outline-offset:3px; border-radius:3px; }
+
+  /* ───────── Desktop refinements ───────── */
+  @media (min-width:680px){
+    .wrap{ padding:0 40px 80px; }
+    .entry{ column-gap:28px; }
+    .rank{ font-size:3.4rem; }
+    .entry.lead .rank{ font-size:3.9rem; }
+    .momentum .gain-figure{ font-size:20px; }
+  }
+
+  /* ───────── Mobile reflow: stat drops below the meta row ───────── */
+  @media (max-width:560px){
+    .entry{
+      /* collapse the stat column to rank + content */
+      grid-template-columns:[rank] minmax(2.6ch,auto) [content] 1fr;
+    }
+    .momentum{
+      grid-column:content;
+      grid-row:2;
+      order:2;
+      flex-direction:row;
+      align-items:baseline;
+      gap:8px;
+      width:100%;
+      text-align:left;
+      padding-top:0;
+      margin:0 0 16px;
+    }
+    .momentum .gain-figure{ font-size:18px; }
+    .momentum .gain-label{ margin-top:0; }
+    /* push the body down to make room for the wrapped stat */
+    .entry-body{ grid-row:3; }
+  }
+
+  @media (max-width:480px){
+    body{ font-size:16.5px; }
+    .entry{ padding:32px 0 30px; column-gap:16px; }
+    .rank{ font-size:2.5rem; }
+    .entry.lead .rank{ font-size:2.9rem; }
+    .analysis{ padding-left:14px; }
+    .desc, .analysis{ font-size:16px; }
+  }
+
+  /* ───────── Reduced motion ───────── */
+  @media (prefers-reduced-motion:reduce){
+    .repo-title a{ transition:none; }
+    .repo-title a:hover,
+    .repo-title a:focus-visible{
+      background-size:0 0;
+      text-decoration:underline;
+      text-underline-offset:3px;
+      text-decoration-color:var(--accent);
+    }
+    .cta{ transition:border-color .2s ease, color .2s ease; }
+    .cta:hover, .cta:focus-visible{ transform:none; }
+    .cta .arrow{ transition:none; }
+    .cta:hover .arrow, .cta:focus-visible .arrow{ transform:none; }
+  }
+
+  @media (prefers-color-scheme:dark){
+    :root{
+      --paper:#16140f;
+      --ink:#f3efe6;
+      --ink-soft:#b8b1a3;
+      --ink-faint:#8b8576;
+      --rule:#2e2a22;
+      --rule-strong:#423d33;
+      --accent:#e08a6f;
+      --accent-soft:#e89c82;
+      --gain:#5fcf94;
+      --gain-bg:#5fcf941a;
+      --card:#1e1b15;
+      --llm-req:#e08a6f;    --llm-req-line:#e08a6f4d; --llm-req-bg:#e08a6f14;
+      --llm-opt:#d8b25e;    --llm-opt-line:#d8b25e4d; --llm-opt-bg:#d8b25e14;
+      --llm-no:#5fcf94;     --llm-no-line:#5fcf944d;  --llm-no-bg:#5fcf9414;
+      --shadow:0 1px 2px rgba(0,0,0,.3), 0 6px 22px rgba(0,0,0,.35);
+      --container-shadow:0 18px 50px -28px rgba(0,0,0,.6);
+      --focus:#f4b79f;
+    }
+    .masthead, footer{ border-color:var(--rule-strong); }
+    .masthead h1{ color:var(--ink); }
+    .repo-title a{ color:var(--ink); }
+    .stars svg{ color:#e0b75a; }
+    .dot{ box-shadow:0 0 0 1px rgba(255,255,255,.12) inset; }
+    body{
+      background-image:
+        radial-gradient(circle at 18% 12%, rgba(224,138,111,.08), transparent 42%),
+        radial-gradient(circle at 88% 2%, rgba(95,207,148,.06), transparent 34%),
+        radial-gradient(circle at 50% 120%, rgba(224,138,111,.05), transparent 46%);
+    }
+  }
+</style>
+</head>
+<body>
+<div class="topbar" aria-hidden="true"></div>
+<div class="sheet">
+<div class="wrap">
+
+  <div class="navrow">
+    <a class="backlink" href="../index.html">← All issues</a>
+    <a class="backlink" href="../explore.html">Repo Atlas ✦</a>
+  </div>
+
+  <header class="masthead">
+    <p class="kicker">GitHub Trending · Briefing</p>
+    <h1>Today's <em>Top&nbsp;Five</em></h1>
+    <div class="dateline">
+      <span class="issue">October 21, 2026</span>
+      <span aria-hidden="true">·</span>
+      <span class="meta">5 repositories ranked by today's star gain</span>
+    </div>
+    <p class="lede">
+      A short, opinionated read on the five repositories that <strong>climbed fastest on GitHub today</strong> — what each one does, why it caught fire, and where it actually fits.
+    </p>
+  </header>
+
+  <main class="digest">
+
+    <article class="entry lead">
+      <div class="rank" aria-label="Rank 1">1</div>
+      <div class="titleblock">
+        <h2 class="repo-title">
+          <a href="https://github.com/cloudflare/security-audit-skill" target="_blank" rel="noopener noreferrer">
+            <span class="owner">cloudflare</span><span class="slash">/</span>security-audit-skill
+          </a>
+        </h2>
+        <div class="meta-row">
+          <span class="lang">
+            <span class="dot" style="background:#f1e05a" aria-hidden="true"></span>JavaScript
+          </span>
+          <span class="stars" title="Total stars">
+            <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"/></svg>
+            36,099 <span class="lbl">stars</span>
+          </span>
+          <span class="llm llm-required" title="Requires a coding-agent host (e.g. Claude Code); no direct LLM API key needed"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10.9" cy="5.1" r="3.3"/><path d="M8.6 7.4 2 14M4.3 11.7l1.7 1.7M2 14l1.2 1.2"/></svg>LLM API required</span>
+        </div>
+      </div>
+      <div class="momentum">
+        <span class="gain-figure" title="Stars gained today">
+          <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8.22 2.97a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1-1.06 1.06L9 5.81v6.44a.75.75 0 0 1-1.5 0V5.81L4.03 8.28a.75.75 0 0 1-1.06-1.06l4.25-4.25Z"/></svg>
+          +1,997
+        </span>
+        <span class="gain-label">stars today</span>
+      </div>
+      <div class="entry-body">
+        <p class="desc">A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings</p>
+        <p class="analysis">Cloudflare's security-audit-skill turns any model-backed coding agent into a multi-phase security auditor, running recon, vulnerability hunting, independent verifier sub-agents, and structured machine-readable reporting entirely inside the agent host. It trended sharply because Cloudflare's brand carries weight in security circles and the idea of AI-automated security audits resonated widely across dev-sec communities. Security engineers and developers who already use coding agents like Claude Code and want automated, repeatable audit workflows will plug this in directly. Zero-dependency Node validators mean the non-model parts run everywhere without extra setup.</p>
+        <div class="cta-row">
+          <div class="cta-pair">
+            <a class="cta" href="https://github.com/cloudflare/security-audit-skill" target="_blank" rel="noopener noreferrer">
+              View on GitHub <span class="arrow" aria-hidden="true">→</span>
+            </a>
+            <a class="cta ask" href="https://claude.ai/new?q=Explain%20the%20GitHub%20repository%20cloudflare/security-audit-skill%20%E2%80%94%20what%20it%20actually%20does%2C%20how%20I%20would%20use%20it%2C%20and%20any%20gotchas%20%28cost%2C%20keys%2C%20hardware%29.%0A%0AContext%20from%20my%20GitHub-trending%20digest%20%28issue%202026-10-21%29%3A%20A%20coding-agent%20skill%20for%20multi-phase%20security%20audits%20with%20independently%20verified%2C%20machine-readable%20findings%20Language%3A%20JavaScript.%20Topics%3A%20Security%20%26%20Privacy%2C%20Agent%20Skills%20%26%20Plugins.%20Needs%20an%20LLM%20API%3A%20required%20%28Requires%20a%20coding-agent%20host%20%28e.g.%20Claude%20Code%29%3B%20no%20direct%20LLM%20API%20key%20needed%29.%20Digest%20analysis%3A%20Cloudflare%27s%20security-audit-skill%20turns%20any%20model-backed%20coding%20agent%20into%20a%20multi-phase%20security%20auditor%2C%20running%20recon%2C%20vulnerability%20hunting%2C%20independent%20verifier%20sub-agents%2C%20and%20structured%20machine-readable%20reporting%20entirely%20inside%20the%20agent%20host.%20It%20trended%20sharply%20because%20Cloudflare%27s%20brand%20carries%20weight%20in%20security%20circles%20and%20the%20idea%20of%20AI-automated%20security%20audits%20resonated%20widely%20across%20dev-sec%20communities.%20Security%20engineers%20and%20developers%20who%20already%20use%20coding%20agents%20like%20Claude%20Code%20and%20want%20automated%2C%20repeatable%20audit%20workflows%20will%20plug%20this%20in%20directly.%20Zero-dependency%20Node%20validators%20mean%20the%20non-model%20parts%20run%20everywhere%20without%20extra%20setup.%0A%0AFetch%20https%3A//github.com/cloudflare/security-audit-skill%20and%20its%20README%20for%20current%20details%20before%20answering." target="_blank" rel="noopener noreferrer">
+              <span class="arrow" aria-hidden="true">✦</span> Ask Claude about this repo
+            </a>
+          </div>
+          <span class="handle">github.com/cloudflare/security-audit-skill</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="entry">
+      <div class="rank" aria-label="Rank 2">2</div>
+      <div class="titleblock">
+        <h2 class="repo-title">
+          <a href="https://github.com/vllm-project/vllm" target="_blank" rel="noopener noreferrer">
+            <span class="owner">vllm-project</span><span class="slash">/</span>vllm
+          </a>
+        </h2>
+        <div class="meta-row">
+          <span class="lang">
+            <span class="dot" style="background:#3572A5" aria-hidden="true"></span>Python
+          </span>
+          <span class="stars" title="Total stars">
+            <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"/></svg>
+            94,824 <span class="lbl">stars</span>
+          </span>
+          <span class="llm llm-optional" title="Local-first LLM serving engine; no external API key required"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10.9" cy="5.1" r="3.3"/><path d="M8.6 7.4 2 14M4.3 11.7l1.7 1.7M2 14l1.2 1.2"/></svg>LLM API optional</span>
+        </div>
+      </div>
+      <div class="momentum">
+        <span class="gain-figure" title="Stars gained today">
+          <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8.22 2.97a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1-1.06 1.06L9 5.81v6.44a.75.75 0 0 1-1.5 0V5.81L4.03 8.28a.75.75 0 0 1-1.06-1.06l4.25-4.25Z"/></svg>
+          +439
+        </span>
+        <span class="gain-label">stars today</span>
+      </div>
+      <div class="entry-body">
+        <p class="desc">A high-throughput and memory-efficient inference and serving engine for LLMs</p>
+        <p class="analysis">vLLM is the leading open-source LLM serving engine, combining PagedAttention memory management with continuous batching to deliver high-throughput, low-latency inference via an OpenAI-compatible REST API on your own GPU hardware. Steady daily gains reflect its position as the default self-hosting choice whenever a new open model drops, pulling in engineers who follow LLM release cycles. ML engineers, research teams, and companies self-hosting models—Llama, Mistral, Qwen and many others—use it as their production serving layer. No external API key is required; models run entirely on local or on-premises GPUs.</p>
+        <div class="cta-row">
+          <div class="cta-pair">
+            <a class="cta" href="https://github.com/vllm-project/vllm" target="_blank" rel="noopener noreferrer">
+              View on GitHub <span class="arrow" aria-hidden="true">→</span>
+            </a>
+            <a class="cta ask" href="https://claude.ai/new?q=Explain%20the%20GitHub%20repository%20vllm-project/vllm%20%E2%80%94%20what%20it%20actually%20does%2C%20how%20I%20would%20use%20it%2C%20and%20any%20gotchas%20%28cost%2C%20keys%2C%20hardware%29.%0A%0AContext%20from%20my%20GitHub-trending%20digest%20%28issue%202026-10-21%29%3A%20A%20high-throughput%20and%20memory-efficient%20inference%20and%20serving%20engine%20for%20LLMs%20Language%3A%20Python.%20Topics%3A%20LLM%20Infrastructure%2C%20Science%20%26%20ML.%20Needs%20an%20LLM%20API%3A%20optional%20%28Local-first%20LLM%20serving%20engine%3B%20no%20external%20API%20key%20required%29.%20Digest%20analysis%3A%20vLLM%20is%20the%20leading%20open-source%20LLM%20serving%20engine%2C%20combining%20PagedAttention%20memory%20management%20with%20continuous%20batching%20to%20deliver%20high-throughput%2C%20low-latency%20inference%20via%20an%20OpenAI-compatible%20REST%20API%20on%20your%20own%20GPU%20hardware.%20Steady%20daily%20gains%20reflect%20its%20position%20as%20the%20default%20self-hosting%20choice%20whenever%20a%20new%20open%20model%20drops%2C%20pulling%20in%20engineers%20who%20follow%20LLM%20release%20cycles.%20ML%20engineers%2C%20research%20teams%2C%20and%20companies%20self-hosting%20models%E2%80%94Llama%2C%20Mistral%2C%20Qwen%20and%20many%20others%E2%80%94use%20it%20as%20their%20production%20serving%20layer.%20No%20external%20API%20key%20is%20required%3B%20models%20run%20entirely%20on%20local%20or%20on-premises%20GPUs.%0A%0AFetch%20https%3A//github.com/vllm-project/vllm%20and%20its%20README%20for%20current%20details%20before%20answering." target="_blank" rel="noopener noreferrer">
+              <span class="arrow" aria-hidden="true">✦</span> Ask Claude about this repo
+            </a>
+          </div>
+          <span class="handle">github.com/vllm-project/vllm</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="entry">
+      <div class="rank" aria-label="Rank 3">3</div>
+      <div class="titleblock">
+        <h2 class="repo-title">
+          <a href="https://github.com/stablyai/orca" target="_blank" rel="noopener noreferrer">
+            <span class="owner">stablyai</span><span class="slash">/</span>orca
+          </a>
+        </h2>
+        <div class="meta-row">
+          <span class="lang">
+            <span class="dot" style="background:#3178c6" aria-hidden="true"></span>TypeScript
+          </span>
+          <span class="stars" title="Total stars">
+            <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"/></svg>
+            101,135 <span class="lbl">stars</span>
+          </span>
+          <span class="llm llm-required" title="Requires user subscriptions to the underlying agents (Claude Code, Codex, etc.)"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10.9" cy="5.1" r="3.3"/><path d="M8.6 7.4 2 14M4.3 11.7l1.7 1.7M2 14l1.2 1.2"/></svg>LLM API required</span>
+        </div>
+      </div>
+      <div class="momentum">
+        <span class="gain-figure" title="Stars gained today">
+          <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8.22 2.97a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1-1.06 1.06L9 5.81v6.44a.75.75 0 0 1-1.5 0V5.81L4.03 8.28a.75.75 0 0 1-1.06-1.06l4.25-4.25Z"/></svg>
+          +1,543
+        </span>
+        <span class="gain-label">stars today</span>
+      </div>
+      <div class="entry-body">
+        <p class="desc">Manages a fleet of coding agents (Claude Code, Codex, etc.) across desktop, mobile, and remote runtimes</p>
+        <p class="analysis">Orca is a desktop orchestrator that runs multiple AI coding agents—Claude Code, Codex, OpenCode—side by side, each isolated in its own git worktree, with terminal splits, GitHub and Linear integration, and SSH remote-worktree support. It trended as multi-agent parallelism workflows go mainstream, with developers wanting a unified cockpit rather than juggling separate terminal windows. Power users and teams running several agents in parallel on the same codebase are the primary audience, especially those already paying for multiple agent subscriptions. The Electron/TypeScript/Vite stack means it ships as a native desktop app with a web-companion mobile view.</p>
+        <div class="cta-row">
+          <div class="cta-pair">
+            <a class="cta" href="https://github.com/stablyai/orca" target="_blank" rel="noopener noreferrer">
+              View on GitHub <span class="arrow" aria-hidden="true">→</span>
+            </a>
+            <a class="cta ask" href="https://claude.ai/new?q=Explain%20the%20GitHub%20repository%20stablyai/orca%20%E2%80%94%20what%20it%20actually%20does%2C%20how%20I%20would%20use%20it%2C%20and%20any%20gotchas%20%28cost%2C%20keys%2C%20hardware%29.%0A%0AContext%20from%20my%20GitHub-trending%20digest%20%28issue%202026-10-21%29%3A%20Manages%20a%20fleet%20of%20coding%20agents%20%28Claude%20Code%2C%20Codex%2C%20etc.%29%20across%20desktop%2C%20mobile%2C%20and%20remote%20runtimes%20Language%3A%20TypeScript.%20Topics%3A%20AI%20Agents%2C%20Developer%20Tools.%20Needs%20an%20LLM%20API%3A%20required%20%28Requires%20user%20subscriptions%20to%20the%20underlying%20agents%20%28Claude%20Code%2C%20Codex%2C%20etc.%29%29.%20Digest%20analysis%3A%20Orca%20is%20a%20desktop%20orchestrator%20that%20runs%20multiple%20AI%20coding%20agents%E2%80%94Claude%20Code%2C%20Codex%2C%20OpenCode%E2%80%94side%20by%20side%2C%20each%20isolated%20in%20its%20own%20git%20worktree%2C%20with%20terminal%20splits%2C%20GitHub%20and%20Linear%20integration%2C%20and%20SSH%20remote-worktree%20support.%20It%20trended%20as%20multi-agent%20parallelism%20workflows%20go%20mainstream%2C%20with%20developers%20wanting%20a%20unified%20cockpit%20rather%20than%20juggling%20separate%20terminal%20windows.%20Power%20users%20and%20teams%20running%20several%20agents%20in%20parallel%20on%20the%20same%20codebase%20are%20the%20primary%20audience%2C%20especially%20those%20already%20paying%20for%20multiple%20agent%20subscriptions.%20The%20Electron/TypeScript/Vite%20stack%20means%20it%20ships%20as%20a%20native%20desktop%20app%20with%20a%20web-companion%20mobile%20view.%0A%0AFetch%20https%3A//github.com/stablyai/orca%20and%20its%20README%20for%20current%20details%20before%20answering." target="_blank" rel="noopener noreferrer">
+              <span class="arrow" aria-hidden="true">✦</span> Ask Claude about this repo
+            </a>
+          </div>
+          <span class="handle">github.com/stablyai/orca</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="entry">
+      <div class="rank" aria-label="Rank 4">4</div>
+      <div class="titleblock">
+        <h2 class="repo-title">
+          <a href="https://github.com/headroomlabs-ai/headroom" target="_blank" rel="noopener noreferrer">
+            <span class="owner">headroomlabs-ai</span><span class="slash">/</span>headroom
+          </a>
+        </h2>
+        <div class="meta-row">
+          <span class="lang">
+            <span class="dot" style="background:#3572A5" aria-hidden="true"></span>Python
+          </span>
+          <span class="stars" title="Total stars">
+            <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"/></svg>
+            77,203 <span class="lbl">stars</span>
+          </span>
+          <span class="llm llm-optional" title="Compression is local; your downstream LLM app still needs its own provider API key"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10.9" cy="5.1" r="3.3"/><path d="M8.6 7.4 2 14M4.3 11.7l1.7 1.7M2 14l1.2 1.2"/></svg>LLM API optional</span>
+        </div>
+      </div>
+      <div class="momentum">
+        <span class="gain-figure" title="Stars gained today">
+          <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8.22 2.97a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1-1.06 1.06L9 5.81v6.44a.75.75 0 0 1-1.5 0V5.81L4.03 8.28a.75.75 0 0 1-1.06-1.06l4.25-4.25Z"/></svg>
+          +477
+        </span>
+        <span class="gain-label">stars today</span>
+      </div>
+      <div class="entry-body">
+        <p class="desc">Compresses tool outputs, logs, files, and RAG chunks before they reach an LLM, as a library, proxy, or MCP server</p>
+        <p class="analysis">Headroom compresses the context fed to LLMs—tool outputs, log lines, files, RAG chunks, and conversation history—using local ML compressors (including a Rust-core Kompress-v2-base model from Hugging Face) before the data leaves your machine, cutting token costs without sacrificing answer quality. It trended as rising LLM API costs push developers to hunt for any upstream savings before paying a provider. Developers building agentic LLM apps and teams running Claude Code or Cursor will drop it in as a Python/TypeScript library, a local proxy, or an MCP server. All compression runs on your machine; no content is sent to a third-party compressor service.</p>
+        <div class="cta-row">
+          <div class="cta-pair">
+            <a class="cta" href="https://github.com/headroomlabs-ai/headroom" target="_blank" rel="noopener noreferrer">
+              View on GitHub <span class="arrow" aria-hidden="true">→</span>
+            </a>
+            <a class="cta ask" href="https://claude.ai/new?q=Explain%20the%20GitHub%20repository%20headroomlabs-ai/headroom%20%E2%80%94%20what%20it%20actually%20does%2C%20how%20I%20would%20use%20it%2C%20and%20any%20gotchas%20%28cost%2C%20keys%2C%20hardware%29.%0A%0AContext%20from%20my%20GitHub-trending%20digest%20%28issue%202026-10-21%29%3A%20Compresses%20tool%20outputs%2C%20logs%2C%20files%2C%20and%20RAG%20chunks%20before%20they%20reach%20an%20LLM%2C%20as%20a%20library%2C%20proxy%2C%20or%20MCP%20server%20Language%3A%20Python.%20Topics%3A%20LLM%20Infrastructure%2C%20MCP%20%26%20Integrations.%20Needs%20an%20LLM%20API%3A%20optional%20%28Compression%20is%20local%3B%20your%20downstream%20LLM%20app%20still%20needs%20its%20own%20provider%20API%20key%29.%20Digest%20analysis%3A%20Headroom%20compresses%20the%20context%20fed%20to%20LLMs%E2%80%94tool%20outputs%2C%20log%20lines%2C%20files%2C%20RAG%20chunks%2C%20and%20conversation%20history%E2%80%94using%20local%20ML%20compressors%20%28including%20a%20Rust-core%20Kompress-v2-base%20model%20from%20Hugging%20Face%29%20before%20the%20data%20leaves%20your%20machine%2C%20cutting%20token%20costs%20without%20sacrificing%20answer%20quality.%20It%20trended%20as%20rising%20LLM%20API%20costs%20push%20developers%20to%20hunt%20for%20any%20upstream%20savings%20before%20paying%20a%20provider.%20Developers%20building%20agentic%20LLM%20apps%20and%20teams%20running%20Claude%20Code%20or%20Cursor%20will%20drop%20it%20in%20as%20a%20Python/TypeScript%20library%2C%20a%20local%20proxy%2C%20or%20an%20MCP%20server.%20All%20compression%20runs%20on%20your%20machine%3B%20no%20content%20is%20sent%20to%20a%20third-party%20compressor%20service.%0A%0AFetch%20https%3A//github.com/headroomlabs-ai/headroom%20and%20its%20README%20for%20current%20details%20before%20answering." target="_blank" rel="noopener noreferrer">
+              <span class="arrow" aria-hidden="true">✦</span> Ask Claude about this repo
+            </a>
+          </div>
+          <span class="handle">github.com/headroomlabs-ai/headroom</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="entry">
+      <div class="rank" aria-label="Rank 5">5</div>
+      <div class="titleblock">
+        <h2 class="repo-title">
+          <a href="https://github.com/DietrichGebert/ponytail" target="_blank" rel="noopener noreferrer">
+            <span class="owner">DietrichGebert</span><span class="slash">/</span>ponytail
+          </a>
+        </h2>
+        <div class="meta-row">
+          <span class="lang">
+            <span class="dot" style="background:#f1e05a" aria-hidden="true"></span>JavaScript
+          </span>
+          <span class="stars" title="Total stars">
+            <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"/></svg>
+            171,456 <span class="lbl">stars</span>
+          </span>
+          <span class="llm llm-required" title="Requires a coding-agent host (Claude Code, Codex, Cursor, etc.)"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10.9" cy="5.1" r="3.3"/><path d="M8.6 7.4 2 14M4.3 11.7l1.7 1.7M2 14l1.2 1.2"/></svg>LLM API required</span>
+        </div>
+      </div>
+      <div class="momentum">
+        <span class="gain-figure" title="Stars gained today">
+          <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8.22 2.97a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1-1.06 1.06L9 5.81v6.44a.75.75 0 0 1-1.5 0V5.81L4.03 8.28a.75.75 0 0 1-1.06-1.06l4.25-4.25Z"/></svg>
+          +2,051
+        </span>
+        <span class="gain-label">stars today</span>
+      </div>
+      <div class="entry-body">
+        <p class="desc">Pushes AI coding agents toward a minimalist approach—the best code is the code you never write</p>
+        <p class="analysis">Ponytail is a prompt-based skill that steers AI coding agents toward minimal, purposeful implementations, pushing against the tendency of LLMs to over-engineer solutions with boilerplate, redundant abstractions, and unnecessary helpers. Its viral spike reflects widespread developer frustration with verbose AI-generated code and the instantly shareable 'best code is no code' tagline that resonated across social feeds. Developers using Claude Code, Codex, or Cursor who want leaner, more maintainable AI-assisted output will install it as a plugin or rules file in minutes. No API key or extra tooling is required beyond a compatible coding-agent host.</p>
+        <div class="cta-row">
+          <div class="cta-pair">
+            <a class="cta" href="https://github.com/DietrichGebert/ponytail" target="_blank" rel="noopener noreferrer">
+              View on GitHub <span class="arrow" aria-hidden="true">→</span>
+            </a>
+            <a class="cta ask" href="https://claude.ai/new?q=Explain%20the%20GitHub%20repository%20DietrichGebert/ponytail%20%E2%80%94%20what%20it%20actually%20does%2C%20how%20I%20would%20use%20it%2C%20and%20any%20gotchas%20%28cost%2C%20keys%2C%20hardware%29.%0A%0AContext%20from%20my%20GitHub-trending%20digest%20%28issue%202026-10-21%29%3A%20Pushes%20AI%20coding%20agents%20toward%20a%20minimalist%20approach%E2%80%94the%20best%20code%20is%20the%20code%20you%20never%20write%20Language%3A%20JavaScript.%20Topics%3A%20Agent%20Skills%20%26%20Plugins%2C%20Developer%20Tools.%20Needs%20an%20LLM%20API%3A%20required%20%28Requires%20a%20coding-agent%20host%20%28Claude%20Code%2C%20Codex%2C%20Cursor%2C%20etc.%29%29.%20Digest%20analysis%3A%20Ponytail%20is%20a%20prompt-based%20skill%20that%20steers%20AI%20coding%20agents%20toward%20minimal%2C%20purposeful%20implementations%2C%20pushing%20against%20the%20tendency%20of%20LLMs%20to%20over-engineer%20solutions%20with%20boilerplate%2C%20redundant%20abstractions%2C%20and%20unnecessary%20helpers.%20Its%20viral%20spike%20reflects%20widespread%20developer%20frustration%20with%20verbose%20AI-generated%20code%20and%20the%20instantly%20shareable%20%27best%20code%20is%20no%20code%27%20tagline%20that%20resonated%20across%20social%20feeds.%20Developers%20using%20Claude%20Code%2C%20Codex%2C%20or%20Cursor%20who%20want%20leaner%2C%20more%20maintainable%20AI-assisted%20output%20will%20install%20it%20as%20a%20plugin%20or%20rules%20file%20in%20minutes.%20No%20API%20key%20or%20extra%20tooling%20is%20required%20beyond%20a%20compatible%20coding-agent%20host.%0A%0AFetch%20https%3A//github.com/DietrichGebert/ponytail%20and%20its%20README%20for%20current%20details%20before%20answering." target="_blank" rel="noopener noreferrer">
+              <span class="arrow" aria-hidden="true">✦</span> Ask Claude about this repo
+            </a>
+          </div>
+          <span class="handle">github.com/DietrichGebert/ponytail</span>
+        </div>
+      </div>
+    </article>
+
+  </main>
+
+  <nav class="pager" aria-label="Issue navigation">
+    <a class="pnav prev" href="2026-10-19.html"><span class="plbl">← Previous issue</span><span class="pdate">October 19, 2026</span></a>
+    <a class="pnav allissues" href="../index.html">All issues</a>
+    <span></span>
+  </nav>
+
+  <footer>
+    <div class="robot">Automated Routine · Every Two Days</div>
+    <div>
+      Delivered automatically every two days by the GitHub Trending Digest routine — no humans were asked to rank anything. Repositories are selected by their net star gain over the trailing 24 hours.
+    </div>
+    <div class="gen">Generated October 21, 2026</div>
+  </footer>
+
+</div>
+</div>
+</body>
+</html>

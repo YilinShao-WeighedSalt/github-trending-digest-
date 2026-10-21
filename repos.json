@@ -46,7 +46,8 @@
     "2026-10-13",
     "2026-10-15",
     "2026-10-17",
-    "2026-10-19"
+    "2026-10-19",
+    "2026-10-21"
   ],
   "repos": [
     {
@@ -2778,22 +2779,28 @@
           "rank": 1,
           "stars": 153272,
           "gained": 1289
+        },
+        {
+          "date": "2026-10-21",
+          "rank": 5,
+          "stars": 171456,
+          "gained": 2051
         }
       ],
       "language": "JavaScript",
       "lang_color": "#f1e05a",
-      "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
-      "analysis": "Ponytail is a skill/plugin for AI coding agents that enforces a 'laziest senior dev' decision ladder — checking whether code already exists, lives in the stdlib, or is a one-liner before writing anything new. Benchmarks showing 54% less generated code, 20% lower API cost, and 27% faster execution drove rapid organic interest in a space hungry for measurable agent improvements. It targets developers using Claude Code, Cursor, or GitHub Copilot who want leaner, less over-engineered outputs without manual prompt tuning. No configuration beyond skill installation; works with any harness that accepts plugin rules.",
+      "description": "Pushes AI coding agents toward a minimalist approach—the best code is the code you never write",
+      "analysis": "Ponytail is a prompt-based skill that steers AI coding agents toward minimal, purposeful implementations, pushing against the tendency of LLMs to over-engineer solutions with boilerplate, redundant abstractions, and unnecessary helpers. Its viral spike reflects widespread developer frustration with verbose AI-generated code and the instantly shareable 'best code is no code' tagline that resonated across social feeds. Developers using Claude Code, Codex, or Cursor who want leaner, more maintainable AI-assisted output will install it as a plugin or rules file in minutes. No API key or extra tooling is required beyond a compatible coding-agent host.",
       "llm_api": "required",
-      "llm_api_note": "Skill for Claude Code, Cursor, Copilot — useless without a host agent",
+      "llm_api_note": "Requires a coding-agent host (Claude Code, Codex, Cursor, etc.)",
       "topics": [
-        "AI Agents",
-        "Agent Skills & Plugins"
+        "Agent Skills & Plugins",
+        "Developer Tools"
       ],
       "first_seen": "2026-09-03",
-      "last_seen": "2026-10-03",
+      "last_seen": "2026-10-21",
       "best_rank": 1,
-      "latest_stars": 153272,
+      "latest_stars": 171456,
       "max_gained": 2813
     },
     {
@@ -3404,22 +3411,28 @@
           "rank": 1,
           "stars": 16147,
           "gained": 3162
+        },
+        {
+          "date": "2026-10-21",
+          "rank": 1,
+          "stars": 36099,
+          "gained": 1997
         }
       ],
       "language": "JavaScript",
       "lang_color": "#f1e05a",
       "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
-      "analysis": "Cloudflare's security-audit-skill is a plug-in for AI coding agents that orchestrates structured, multi-phase security audits of codebases, producing machine-readable findings with independent verification steps built in. It rocketed to the top of trending following Cloudflare's official release, benefiting from intense interest in agent-native security tooling as development teams look to automate vulnerability discovery at scale. The independently verified findings format is a notable design choice, reducing false positives that plague simpler AI audits. Security engineers and DevSecOps teams running Claude Code, Cursor, or similar coding agents will find this integrates directly into existing CI/security workflows.",
+      "analysis": "Cloudflare's security-audit-skill turns any model-backed coding agent into a multi-phase security auditor, running recon, vulnerability hunting, independent verifier sub-agents, and structured machine-readable reporting entirely inside the agent host. It trended sharply because Cloudflare's brand carries weight in security circles and the idea of AI-automated security audits resonated widely across dev-sec communities. Security engineers and developers who already use coding agents like Claude Code and want automated, repeatable audit workflows will plug this in directly. Zero-dependency Node validators mean the non-model parts run everywhere without extra setup.",
       "llm_api": "required",
-      "llm_api_note": "Agent skill — requires Claude Code, Cursor, or a compatible LLM coding agent",
+      "llm_api_note": "Requires a coding-agent host (e.g. Claude Code); no direct LLM API key needed",
       "topics": [
         "Security & Privacy",
         "Agent Skills & Plugins"
       ],
       "first_seen": "2026-09-17",
-      "last_seen": "2026-09-19",
+      "last_seen": "2026-10-21",
       "best_rank": 1,
-      "latest_stars": 16147,
+      "latest_stars": 36099,
       "max_gained": 3606
     },
     {
@@ -4452,6 +4465,90 @@
       "best_rank": 4,
       "latest_stars": 77129,
       "max_gained": 564
+    },
+    {
+      "owner": "vllm-project",
+      "repo": "vllm",
+      "url": "https://github.com/vllm-project/vllm",
+      "appearances": [
+        {
+          "date": "2026-10-21",
+          "rank": 2,
+          "stars": 94824,
+          "gained": 439
+        }
+      ],
+      "language": "Python",
+      "lang_color": "#3572A5",
+      "description": "A high-throughput and memory-efficient inference and serving engine for LLMs",
+      "analysis": "vLLM is the leading open-source LLM serving engine, combining PagedAttention memory management with continuous batching to deliver high-throughput, low-latency inference via an OpenAI-compatible REST API on your own GPU hardware. Steady daily gains reflect its position as the default self-hosting choice whenever a new open model drops, pulling in engineers who follow LLM release cycles. ML engineers, research teams, and companies self-hosting models—Llama, Mistral, Qwen and many others—use it as their production serving layer. No external API key is required; models run entirely on local or on-premises GPUs.",
+      "llm_api": "optional",
+      "llm_api_note": "Local-first LLM serving engine; no external API key required",
+      "topics": [
+        "LLM Infrastructure",
+        "Science & ML"
+      ],
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "best_rank": 2,
+      "latest_stars": 94824,
+      "max_gained": 439
+    },
+    {
+      "owner": "stablyai",
+      "repo": "orca",
+      "url": "https://github.com/stablyai/orca",
+      "appearances": [
+        {
+          "date": "2026-10-21",
+          "rank": 3,
+          "stars": 101135,
+          "gained": 1543
+        }
+      ],
+      "language": "TypeScript",
+      "lang_color": "#3178c6",
+      "description": "Manages a fleet of coding agents (Claude Code, Codex, etc.) across desktop, mobile, and remote runtimes",
+      "analysis": "Orca is a desktop orchestrator that runs multiple AI coding agents—Claude Code, Codex, OpenCode—side by side, each isolated in its own git worktree, with terminal splits, GitHub and Linear integration, and SSH remote-worktree support. It trended as multi-agent parallelism workflows go mainstream, with developers wanting a unified cockpit rather than juggling separate terminal windows. Power users and teams running several agents in parallel on the same codebase are the primary audience, especially those already paying for multiple agent subscriptions. The Electron/TypeScript/Vite stack means it ships as a native desktop app with a web-companion mobile view.",
+      "llm_api": "required",
+      "llm_api_note": "Requires user subscriptions to the underlying agents (Claude Code, Codex, etc.)",
+      "topics": [
+        "AI Agents",
+        "Developer Tools"
+      ],
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "best_rank": 3,
+      "latest_stars": 101135,
+      "max_gained": 1543
+    },
+    {
+      "owner": "headroomlabs-ai",
+      "repo": "headroom",
+      "url": "https://github.com/headroomlabs-ai/headroom",
+      "appearances": [
+        {
+          "date": "2026-10-21",
+          "rank": 4,
+          "stars": 77203,
+          "gained": 477
+        }
+      ],
+      "language": "Python",
+      "lang_color": "#3572A5",
+      "description": "Compresses tool outputs, logs, files, and RAG chunks before they reach an LLM, as a library, proxy, or MCP server",
+      "analysis": "Headroom compresses the context fed to LLMs—tool outputs, log lines, files, RAG chunks, and conversation history—using local ML compressors (including a Rust-core Kompress-v2-base model from Hugging Face) before the data leaves your machine, cutting token costs without sacrificing answer quality. It trended as rising LLM API costs push developers to hunt for any upstream savings before paying a provider. Developers building agentic LLM apps and teams running Claude Code or Cursor will drop it in as a Python/TypeScript library, a local proxy, or an MCP server. All compression runs on your machine; no content is sent to a third-party compressor service.",
+      "llm_api": "optional",
+      "llm_api_note": "Compression is local; your downstream LLM app still needs its own provider API key",
+      "topics": [
+        "LLM Infrastructure",
+        "MCP & Integrations"
+      ],
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "best_rank": 4,
+      "latest_stars": 77203,
+      "max_gained": 477
     }
   ]
 }

@@ -1,0 +1,76 @@
+{
+  "date": "2026-10-21",
+  "title": "GitHub Trending Top 5",
+  "repos": [
+    {
+      "rank": 1,
+      "owner": "cloudflare",
+      "repo": "security-audit-skill",
+      "url": "https://github.com/cloudflare/security-audit-skill",
+      "language": "JavaScript",
+      "stars": 36099,
+      "gained_today": 1997,
+      "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
+      "analysis": "Cloudflare's security-audit-skill turns any model-backed coding agent into a multi-phase security auditor, running recon, vulnerability hunting, independent verifier sub-agents, and structured machine-readable reporting entirely inside the agent host. It trended sharply because Cloudflare's brand carries weight in security circles and the idea of AI-automated security audits resonated widely across dev-sec communities. Security engineers and developers who already use coding agents like Claude Code and want automated, repeatable audit workflows will plug this in directly. Zero-dependency Node validators mean the non-model parts run everywhere without extra setup.",
+      "llm_api": "required",
+      "llm_api_note": "Requires a coding-agent host (e.g. Claude Code); no direct LLM API key needed",
+      "topics": ["Security & Privacy", "Agent Skills & Plugins"]
+    },
+    {
+      "rank": 2,
+      "owner": "vllm-project",
+      "repo": "vllm",
+      "url": "https://github.com/vllm-project/vllm",
+      "language": "Python",
+      "stars": 94824,
+      "gained_today": 439,
+      "description": "A high-throughput and memory-efficient inference and serving engine for LLMs",
+      "analysis": "vLLM is the leading open-source LLM serving engine, combining PagedAttention memory management with continuous batching to deliver high-throughput, low-latency inference via an OpenAI-compatible REST API on your own GPU hardware. Steady daily gains reflect its position as the default self-hosting choice whenever a new open model drops, pulling in engineers who follow LLM release cycles. ML engineers, research teams, and companies self-hosting models—Llama, Mistral, Qwen and many others—use it as their production serving layer. No external API key is required; models run entirely on local or on-premises GPUs.",
+      "llm_api": "optional",
+      "llm_api_note": "Local-first LLM serving engine; no external API key required",
+      "topics": ["LLM Infrastructure", "Science & ML"]
+    },
+    {
+      "rank": 3,
+      "owner": "stablyai",
+      "repo": "orca",
+      "url": "https://github.com/stablyai/orca",
+      "language": "TypeScript",
+      "stars": 101135,
+      "gained_today": 1543,
+      "description": "Manages a fleet of coding agents (Claude Code, Codex, etc.) across desktop, mobile, and remote runtimes",
+      "analysis": "Orca is a desktop orchestrator that runs multiple AI coding agents—Claude Code, Codex, OpenCode—side by side, each isolated in its own git worktree, with terminal splits, GitHub and Linear integration, and SSH remote-worktree support. It trended as multi-agent parallelism workflows go mainstream, with developers wanting a unified cockpit rather than juggling separate terminal windows. Power users and teams running several agents in parallel on the same codebase are the primary audience, especially those already paying for multiple agent subscriptions. The Electron/TypeScript/Vite stack means it ships as a native desktop app with a web-companion mobile view.",
+      "llm_api": "required",
+      "llm_api_note": "Requires user subscriptions to the underlying agents (Claude Code, Codex, etc.)",
+      "topics": ["AI Agents", "Developer Tools"]
+    },
+    {
+      "rank": 4,
+      "owner": "headroomlabs-ai",
+      "repo": "headroom",
+      "url": "https://github.com/headroomlabs-ai/headroom",
+      "language": "Python",
+      "stars": 77203,
+      "gained_today": 477,
+      "description": "Compresses tool outputs, logs, files, and RAG chunks before they reach an LLM, as a library, proxy, or MCP server",
+      "analysis": "Headroom compresses the context fed to LLMs—tool outputs, log lines, files, RAG chunks, and conversation history—using local ML compressors (including a Rust-core Kompress-v2-base model from Hugging Face) before the data leaves your machine, cutting token costs without sacrificing answer quality. It trended as rising LLM API costs push developers to hunt for any upstream savings before paying a provider. Developers building agentic LLM apps and teams running Claude Code or Cursor will drop it in as a Python/TypeScript library, a local proxy, or an MCP server. All compression runs on your machine; no content is sent to a third-party compressor service.",
+      "llm_api": "optional",
+      "llm_api_note": "Compression is local; your downstream LLM app still needs its own provider API key",
+      "topics": ["LLM Infrastructure", "MCP & Integrations"]
+    },
+    {
+      "rank": 5,
+      "owner": "DietrichGebert",
+      "repo": "ponytail",
+      "url": "https://github.com/DietrichGebert/ponytail",
+      "language": "JavaScript",
+      "stars": 171456,
+      "gained_today": 2051,
+      "description": "Pushes AI coding agents toward a minimalist approach—the best code is the code you never write",
+      "analysis": "Ponytail is a prompt-based skill that steers AI coding agents toward minimal, purposeful implementations, pushing against the tendency of LLMs to over-engineer solutions with boilerplate, redundant abstractions, and unnecessary helpers. Its viral spike reflects widespread developer frustration with verbose AI-generated code and the instantly shareable 'best code is no code' tagline that resonated across social feeds. Developers using Claude Code, Codex, or Cursor who want leaner, more maintainable AI-assisted output will install it as a plugin or rules file in minutes. No API key or extra tooling is required beyond a compatible coding-agent host.",
+      "llm_api": "required",
+      "llm_api_note": "Requires a coding-agent host (Claude Code, Codex, Cursor, etc.)",
+      "topics": ["Agent Skills & Plugins", "Developer Tools"]
+    }
+  ]
+}
