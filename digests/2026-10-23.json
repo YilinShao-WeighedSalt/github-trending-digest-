@@ -1,0 +1,74 @@
+{
+  "date": "2026-10-23",
+  "title": "GitHub Trending Top 5",
+  "repos": [
+    {
+      "rank": 1,
+      "owner": "cloudflare",
+      "repo": "security-audit-skill",
+      "url": "https://github.com/cloudflare/security-audit-skill",
+      "language": "JavaScript",
+      "stars": 41990,
+      "gained_today": 2706,
+      "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
+      "analysis": "This is a plug-in skill for coding agents that orchestrates a six-phase security audit: reconnaissance, parallel vulnerability hunting by isolated sub-agents, adversarial validation, structured output, independent record verification, and reporting. Each phase is handled by fresh agent instances to avoid confirmation bias. It likely trended because it solves a pressing DevSecOps pain point—systematic, repeatable AI-driven security reviews—at a moment when coding agents have become mainstream. Security engineers and developers using AI coding tools (Claude Code, Cursor, Copilot Workspace) can drop this in to get machine-readable, confirmed vulnerability reports with minimal manual effort.",
+      "llm_api": "required",
+      "llm_api_note": "Coding-agent skill — requires an AI agent with tool use and parallel sub-agent support",
+      "topics": ["Agent Skills & Plugins", "Security & Privacy"]
+    },
+    {
+      "rank": 2,
+      "owner": "php",
+      "repo": "php-src",
+      "url": "https://github.com/php/php-src",
+      "language": "C",
+      "stars": 41540,
+      "gained_today": 722,
+      "description": "The PHP Interpreter",
+      "analysis": "This is the official source repository for the PHP language runtime—the interpreter that powers a significant fraction of the web, including WordPress, Laravel, Symfony, and countless legacy applications. A spike of 722 stars in a single day suggests a notable release milestone or renewed community attention, consistent with PHP's pattern of trending after major version announcements. Web backend engineers, framework maintainers, and hosting providers who need to track PHP internals or contribute bug fixes will find this the definitive reference. Trending on organic interest.",
+      "llm_api": "none",
+      "topics": ["Systems & Libraries", "Developer Tools"]
+    },
+    {
+      "rank": 3,
+      "owner": "anthropics",
+      "repo": "knowledge-work-plugins",
+      "url": "https://github.com/anthropics/knowledge-work-plugins",
+      "language": "Python",
+      "stars": 32171,
+      "gained_today": 643,
+      "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
+      "analysis": "This is Anthropic's open-source library of Claude Cowork plugins targeting knowledge workers: researchers, analysts, consultants, and writers who want to extend the Cowork environment with domain-specific tools for document processing, structured research, and data tasks. Its trending reflects the rapid growth of Claude Cowork as a platform and the community appetite for shareable, auditable plugin code rather than proprietary extensions. Developers can contribute new plugins or adapt existing ones; organizations can self-host or customize them for internal workflows. Requires an active Claude Cowork subscription to run.",
+      "llm_api": "required",
+      "llm_api_note": "Claude Cowork plugins — require an active Claude Cowork subscription",
+      "topics": ["Agent Skills & Plugins", "Productivity & Research"]
+    },
+    {
+      "rank": 4,
+      "owner": "NVIDIA",
+      "repo": "OpenShell",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "language": "Rust",
+      "stars": 18726,
+      "gained_today": 1240,
+      "description": "OpenShell is the safe, private runtime for autonomous AI agents.",
+      "analysis": "OpenShell is a Rust-based sandbox runtime that runs autonomous AI agents in kernel-enforced isolation—controlling which files, syscalls, and network endpoints each agent can reach, and injecting credentials only into approved outbound requests. Formal verification flags policy changes before they take effect, giving human operators a gate before new access is granted. NVIDIA's backing gives it instant credibility in the enterprise AI agent space, which explains the strong trending. Platform engineers and DevOps teams deploying agents in regulated or multi-tenant environments will find it a production-grade alternative to ad-hoc container setups.",
+      "llm_api": "optional",
+      "llm_api_note": "LLM-agnostic runtime; bring your own model provider (local or cloud)",
+      "topics": ["AI Agents", "Sandboxes & Runtimes"]
+    },
+    {
+      "rank": 5,
+      "owner": "Renhuai123",
+      "repo": "ziwei-doushu",
+      "url": "https://github.com/Renhuai123/ziwei-doushu",
+      "language": "TypeScript",
+      "stars": 6828,
+      "gained_today": 547,
+      "description": "Open-source Zi Wei Dou Shu chart-calculation engine based on Ni Haixia's Tian Ji system, with full chart algorithms, Four Transformations, pattern knowledge base, and classical text data",
+      "analysis": "This TypeScript engine implements Zi Wei Dou Shu, a classical Chinese astrological divination system, following the rigorous Tian Ji interpretation lineage of scholar Ni Haixia. It includes full chart generation algorithms, the Four Transformations (Hua Ji, Hua Quan, Hua Lu, Hua Ke) logic, a pattern knowledge base, and annotated classical text data—making it suitable for both application development and academic research. Trending on organic interest from Chinese-language developer and cultural-heritage communities who want a modern, open-source, well-documented implementation. Developers building astrology or divination apps, as well as researchers studying computational approaches to classical Chinese texts, are the target audience.",
+      "llm_api": "none",
+      "topics": ["Education", "Systems & Libraries"]
+    }
+  ]
+}
