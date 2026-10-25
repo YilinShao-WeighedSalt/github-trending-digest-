@@ -48,7 +48,8 @@
     "2026-10-17",
     "2026-10-19",
     "2026-10-21",
-    "2026-10-23"
+    "2026-10-23",
+    "2026-10-25"
   ],
   "repos": [
     {
@@ -696,22 +697,28 @@
           "rank": 1,
           "stars": 13313,
           "gained": 8834
+        },
+        {
+          "date": "2026-10-25",
+          "rank": 2,
+          "stars": 33601,
+          "gained": 1359
         }
       ],
       "language": "CSS",
       "lang_color": "#563d7c",
-      "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex",
-      "analysis": "Hallmark is a design skill for AI coding assistants (Claude Code, Cursor, Codex) that generates websites engineered to look intentionally crafted rather than AI-generated. It provides 20 distinct themes and 57 anti-slop test gates that check output against common AI design anti-patterns before delivering final code. It trended sharply this week as frustration with generic, template-recycled AI UIs hit a critical mass and developers started demanding a practical fix that integrates directly into their existing AI workflows. Front-end developers and product teams who build with AI coding tools and need polished, distinctive results will benefit most.",
+      "description": "A design skill for Claude Code, Cursor, and Codex that avoids generic AI-generated styling.",
+      "analysis": "Hallmark is a design skill for AI coding tools—Claude Code, Cursor, Codex, OpenCode—that fights \"AI-slop\" styling by offering 48 curated themes and automated browser-based linting for common AI design anti-patterns. Install it once and invoke `/hallmark` in your coding agent to produce web pages that look intentionally designed rather than machine-generated. It trended today as frustration with bland AI-generated UIs reached a tipping point. Frontend engineers who use AI coding assistants and want polished, non-generic output are the core audience.",
       "llm_api": "required",
-      "llm_api_note": "Design skill for Claude Code / Cursor / Codex",
+      "llm_api_note": "Skill for Claude Code, Cursor, or Codex — requires a supported AI coding agent",
       "topics": [
-        "Design",
-        "Agent Skills & Plugins"
+        "Agent Skills & Plugins",
+        "Design"
       ],
       "first_seen": "2026-07-19",
-      "last_seen": "2026-07-19",
+      "last_seen": "2026-10-25",
       "best_rank": 1,
-      "latest_stars": 13313,
+      "latest_stars": 33601,
       "max_gained": 8834
     },
     {
@@ -3351,22 +3358,28 @@
           "rank": 5,
           "stars": 68904,
           "gained": 3027
+        },
+        {
+          "date": "2026-10-25",
+          "rank": 3,
+          "stars": 86625,
+          "gained": 1588
         }
       ],
       "language": "Python",
       "lang_color": "#3572A5",
-      "description": "Open-source, fully local voice cloning, dubbing, dictation, and transcription tool.",
-      "analysis": "VoiceStudio is a Python toolkit for fully local voice cloning, dubbing, dictation, and transcription — no cloud API or hosted model key required. It likely gained 3 k+ stars today following a viral demo showcasing its dubbing quality on a challenging clip. Content creators, podcasters, indie game developers, and accessibility toolbuilders who need high-quality voice synthesis without sending audio to a third party are the natural audience; its local-first design also appeals to privacy-conscious enterprises and air-gapped deployments.",
-      "llm_api": "optional",
+      "description": "A local, open-source alternative to ElevenLabs covering voice cloning, dubbing, transcription, and audiobooks in 646 languages.",
+      "analysis": "VoiceStudio is a fully local, open-source voice platform that covers voice cloning, dubbing, transcription, and audiobook generation across 646 languages—all running on your own hardware with no cloud dependency or API fees. It trended today as privacy-conscious developers and content creators sought a high-quality alternative to subscription voice services like ElevenLabs. The Python codebase and broad language coverage make it accessible to researchers, indie developers, and media professionals alike. Anyone working in multilingual voice synthesis or wanting to eliminate per-character API costs will find it immediately useful.",
+      "llm_api": "none",
       "llm_api_note": "Fully local voice models; no LLM API key needed",
       "topics": [
         "Video & Media",
-        "Developer Tools"
+        "Science & ML"
       ],
       "first_seen": "2026-09-15",
-      "last_seen": "2026-10-15",
+      "last_seen": "2026-10-25",
       "best_rank": 1,
-      "latest_stars": 68904,
+      "latest_stars": 86625,
       "max_gained": 4712
     },
     {
@@ -4052,24 +4065,29 @@
           "rank": 2,
           "stars": 75223,
           "gained": 705
+        },
+        {
+          "date": "2026-10-25",
+          "rank": 4,
+          "stars": 87577,
+          "gained": 1113
         }
       ],
-      "language": "JavaScript",
-      "lang_color": "#f1e05a",
-      "description": "The design language that makes your AI harness better at design.",
-      "analysis": "Impeccable is a design intelligence layer that brings 61 deterministic rules and 24 slash-commands to AI coding agents, catching visual anti-patterns in spacing, contrast, and typography before they ship. As AI-generated UIs proliferate, design quality has become a visible weak point; a single `/impeccable` command with live-browser iteration fills that gap without requiring a dedicated designer. The CLI and browser extension run all deterministic checks with no LLM and no API key, making it freely useful standalone; LLM-backed critique commands are an optional upgrade. Frontend developers using Claude Code, Cursor, or Copilot are the primary audience.",
+      "language": "Rust",
+      "lang_color": "#dea584",
+      "description": "A design language that improves AI coding harnesses at design tasks.",
+      "analysis": "Impeccable is a design-quality layer for AI coding tools that ships 24 slash commands (audit, polish, critique…) and 62 deterministic detector rules that catch common AI-generated frontend issues—usable without any LLM via a standalone CLI. The full suite integrates with Claude Code, Cursor, Codex, and GitHub Copilot for iterative browser-based design refinement. It likely trended alongside Hallmark as the \"AI-slop\" conversation intensified across developer communities. Developers wanting measurable, rule-based design feedback on top of their AI coding workflow, or a no-LLM frontend linter, are the target audience.",
       "llm_api": "optional",
-      "llm_api_note": "CLI + 61 deterministic rules need no LLM; LLM critique commands are optional",
+      "llm_api_note": "Standalone CLI is LLM-free; design commands need Claude Code, Cursor, or Codex",
       "topics": [
-        "Design",
-        "Developer Tools",
-        "Agent Skills & Plugins"
+        "Agent Skills & Plugins",
+        "Design"
       ],
       "first_seen": "2026-10-03",
-      "last_seen": "2026-10-03",
+      "last_seen": "2026-10-25",
       "best_rank": 2,
-      "latest_stars": 75223,
-      "max_gained": 705
+      "latest_stars": 87577,
+      "max_gained": 1113
     },
     {
       "owner": "Effect-TS",
@@ -4643,6 +4661,61 @@
       "best_rank": 5,
       "latest_stars": 6828,
       "max_gained": 547
+    },
+    {
+      "owner": "makecindy",
+      "repo": "cindy",
+      "url": "https://github.com/makecindy/cindy",
+      "appearances": [
+        {
+          "date": "2026-10-25",
+          "rank": 1,
+          "stars": 4779,
+          "gained": 677
+        }
+      ],
+      "language": "TypeScript",
+      "lang_color": "#3178c6",
+      "description": "An open-source AI agent that works out of the box.",
+      "analysis": "Cindy is an open-source desktop and mobile client that wires together AI harnesses, tools, and models to handle real work—driving browsers, managing files, and taking tasks from IM or schedules. It supports Claude Code, Codex, and local models, letting you run agents entirely on your own machine with no sign-in required. Its \"out of the box\" pitch and broad harness support likely drove today's surge as developers looked for a practical personal-agent launcher. TypeScript/Electron developers building or evaluating personal AI agents across platforms are the primary audience.",
+      "llm_api": "optional",
+      "llm_api_note": "Local models supported; BYO API key or connect a Claude Code / Codex plan",
+      "topics": [
+        "AI Agents",
+        "Developer Tools"
+      ],
+      "first_seen": "2026-10-25",
+      "last_seen": "2026-10-25",
+      "best_rank": 1,
+      "latest_stars": 4779,
+      "max_gained": 677
+    },
+    {
+      "owner": "pollen-robotics",
+      "repo": "microduck",
+      "url": "https://github.com/pollen-robotics/microduck",
+      "appearances": [
+        {
+          "date": "2026-10-25",
+          "rank": 5,
+          "stars": 11575,
+          "gained": 657
+        }
+      ],
+      "language": "Rust",
+      "lang_color": "#dea584",
+      "description": "A tiny biped duck robot.",
+      "analysis": "Microduck is an open-source project from Pollen Robotics that provides hardware designs and Rust-based firmware for a small walking bipedal duck robot. The project's charm and approachability drove organic interest today from the robotics maker community, where miniature biped locomotion is an active research area. The Rust firmware targets embedded systems engineers, while the open hardware designs invite makers and hobbyists to build their own. Anyone interested in small-scale bipedal locomotion, embedded Rust, or open robotics hardware will find it worth exploring.",
+      "llm_api": "none",
+      "topics": [
+        "Systems & Libraries",
+        "Science & ML"
+      ],
+      "first_seen": "2026-10-25",
+      "last_seen": "2026-10-25",
+      "best_rank": 5,
+      "latest_stars": 11575,
+      "max_gained": 657
     }
   ]
 }
