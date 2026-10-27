@@ -49,7 +49,8 @@
     "2026-10-19",
     "2026-10-21",
     "2026-10-23",
-    "2026-10-25"
+    "2026-10-25",
+    "2026-10-27"
   ],
   "repos": [
     {
@@ -703,22 +704,29 @@
           "rank": 2,
           "stars": 33601,
           "gained": 1359
+        },
+        {
+          "date": "2026-10-27",
+          "rank": 2,
+          "stars": 38849,
+          "gained": 2859
         }
       ],
       "language": "CSS",
       "lang_color": "#563d7c",
-      "description": "A design skill for Claude Code, Cursor, and Codex that avoids generic AI-generated styling.",
-      "analysis": "Hallmark is a design skill for AI coding tools—Claude Code, Cursor, Codex, OpenCode—that fights \"AI-slop\" styling by offering 48 curated themes and automated browser-based linting for common AI design anti-patterns. Install it once and invoke `/hallmark` in your coding agent to produce web pages that look intentionally designed rather than machine-generated. It trended today as frustration with bland AI-generated UIs reached a tipping point. Frontend engineers who use AI coding assistants and want polished, non-generic output are the core audience.",
+      "description": "Anti-AI-slop design skill for Claude Code, Cursor, Codex, and OpenCode.",
+      "analysis": "Hallmark is a design skill that installs into Claude Code, Codex CLI, Cursor, or OpenCode and steers agents away from the generic machine-made look, offering a catalog of 50 visual themes and a floor of non-negotiable quality checks. It lints the generated page in a real browser for AI design tells—repeated eyebrow labels, reflexive sign-up forms—and runs a fresh-context reviewer as a final pass. Today's surge likely reflects a growing developer backlash against homogeneous AI-generated interfaces and the desire for sites that feel intentional rather than templated. Perfect for front-end developers who want to ship finished-looking pages without the AI slop aesthetic.",
       "llm_api": "required",
-      "llm_api_note": "Skill for Claude Code, Cursor, or Codex — requires a supported AI coding agent",
+      "llm_api_note": "Design skill for AI agents — needs Claude Code, Codex, Cursor, or OpenCode.",
       "topics": [
         "Agent Skills & Plugins",
-        "Design"
+        "Design",
+        "Developer Tools"
       ],
       "first_seen": "2026-07-19",
-      "last_seen": "2026-10-25",
+      "last_seen": "2026-10-27",
       "best_rank": 1,
-      "latest_stars": 33601,
+      "latest_stars": 38849,
       "max_gained": 8834
     },
     {
@@ -3019,22 +3027,28 @@
           "rank": 4,
           "stars": 291629,
           "gained": 465
+        },
+        {
+          "date": "2026-10-27",
+          "rank": 4,
+          "stars": 306365,
+          "gained": 608
         }
       ],
       "language": "Shell",
       "lang_color": "#89e051",
-      "description": "An agentic skills framework & software development methodology that works",
-      "analysis": "Superpowers is a structured software development methodology and composable skills framework that prevents AI coding agents from jumping straight to implementation, instead enforcing a disciplined workflow of clarify-design-plan-execute with TDD and mandatory code review phases. It works as a plugin across Claude Code, Cursor, GitHub Copilot CLI, Gemini, and Devin without requiring any direct LLM API keys itself. Trending on organic interest from developers frustrated by agentic 'vibe coding' and looking for rigorous, repeatable engineering practices. Developers who want their coding agents to behave like disciplined engineers rather than autocomplete on steroids will find this a strong fit.",
-      "llm_api": "optional",
-      "llm_api_note": "Works atop any coding agent — no direct API calls; agents handle their own credentials",
+      "description": "An agentic skills framework and software development methodology that works.",
+      "analysis": "Superpowers is a composable skills and methodology framework that makes coding agents work spec-first: the agent asks what you're building, turns it into a spec, writes an implementation plan, and only then executes with review checkpoints emphasizing TDD, YAGNI, and DRY. It supports virtually every major coding agent—Claude Code, Codex, Cursor, Gemini CLI, GitHub Copilot CLI, and OpenCode. Its 306k star count reflects long-term community trust; it resurfaced today as newer agent tools added support and fresh adopters discovered it through the broader design-skills wave. Best for developers who find LLM agents too quick to code before fully understanding requirements.",
+      "llm_api": "required",
+      "llm_api_note": "Skills for AI coding agents — needs Claude Code, Codex, Cursor, Gemini CLI, etc.",
       "topics": [
         "Agent Skills & Plugins",
         "Developer Tools"
       ],
       "first_seen": "2026-09-09",
-      "last_seen": "2026-09-25",
+      "last_seen": "2026-10-27",
       "best_rank": 3,
-      "latest_stars": 291629,
+      "latest_stars": 306365,
       "max_gained": 690
     },
     {
@@ -4071,23 +4085,30 @@
           "rank": 4,
           "stars": 87577,
           "gained": 1113
+        },
+        {
+          "date": "2026-10-27",
+          "rank": 5,
+          "stars": 90403,
+          "gained": 1458
         }
       ],
       "language": "Rust",
       "lang_color": "#dea584",
-      "description": "A design language that improves AI coding harnesses at design tasks.",
-      "analysis": "Impeccable is a design-quality layer for AI coding tools that ships 24 slash commands (audit, polish, critique…) and 62 deterministic detector rules that catch common AI-generated frontend issues—usable without any LLM via a standalone CLI. The full suite integrates with Claude Code, Cursor, Codex, and GitHub Copilot for iterative browser-based design refinement. It likely trended alongside Hallmark as the \"AI-slop\" conversation intensified across developer communities. Developers wanting measurable, rule-based design feedback on top of their AI coding workflow, or a no-LLM frontend linter, are the target audience.",
+      "description": "The design language that makes your AI harness better at design.",
+      "analysis": "Impeccable is a design language and rules engine for AI coding agents, shipping as a skill with 24 design commands (critique, audit, polish, animation) and a detector with 62 deterministic rules that catch AI-generated frontend tells—Inter for everything, purple-to-blue gradients, cards nested in cards—via a CLI, browser extension, or agent hooks. The CLI and browser extension run with no LLM and no API key; the skill layer runs inside your existing agent harness. Trending today as the anti-AI-slop movement consolidates around practical, rules-based tooling alongside Hallmark. Front-end developers using Claude Code, Cursor, Codex, Gemini CLI, or Grok Build will benefit most, especially those who want to catch design regressions automatically.",
       "llm_api": "optional",
-      "llm_api_note": "Standalone CLI is LLM-free; design commands need Claude Code, Cursor, or Codex",
+      "llm_api_note": "Deterministic CLI/browser rules need no LLM; skill layer runs inside your agent harness.",
       "topics": [
-        "Agent Skills & Plugins",
-        "Design"
+        "Design",
+        "Developer Tools",
+        "Agent Skills & Plugins"
       ],
       "first_seen": "2026-10-03",
-      "last_seen": "2026-10-25",
+      "last_seen": "2026-10-27",
       "best_rank": 2,
-      "latest_stars": 87577,
-      "max_gained": 1113
+      "latest_stars": 90403,
+      "max_gained": 1458
     },
     {
       "owner": "Effect-TS",
@@ -4716,6 +4737,62 @@
       "best_rank": 5,
       "latest_stars": 11575,
       "max_gained": 657
+    },
+    {
+      "owner": "elayadesign",
+      "repo": "ai-design-skills",
+      "url": "https://github.com/elayadesign/ai-design-skills",
+      "appearances": [
+        {
+          "date": "2026-10-27",
+          "rank": 1,
+          "stars": 9161,
+          "gained": 1395
+        }
+      ],
+      "description": "A collection of design guidance skills for AI coding tools like Claude Code, Cursor, and Codex.",
+      "analysis": "AI Design Skills is a curated set of Markdown skill files that injects design methodology directly into AI coding agents. Currently shipping one skill—landing-page-design—it walks an agent through intake questions, page structure, conversion copy, and a visual system covering typography, spacing, radius, and motion. It likely trended today riding the wave of design-focused agent skills gaining traction alongside tools like Hallmark and Impeccable. Front-end developers using Claude Code, Cursor, Codex, or any harness that accepts project rules will find it a practical way to get structured design output without a dedicated designer.",
+      "llm_api": "required",
+      "llm_api_note": "Installs into AI agent harnesses; needs Claude Code, Cursor, Codex, etc.",
+      "topics": [
+        "Agent Skills & Plugins",
+        "Design",
+        "Developer Tools"
+      ],
+      "first_seen": "2026-10-27",
+      "last_seen": "2026-10-27",
+      "best_rank": 1,
+      "latest_stars": 9161,
+      "max_gained": 1395
+    },
+    {
+      "owner": "nightly-labs",
+      "repo": "openbot",
+      "url": "https://github.com/nightly-labs/openbot",
+      "appearances": [
+        {
+          "date": "2026-10-27",
+          "rank": 3,
+          "stars": 2347,
+          "gained": 794
+        }
+      ],
+      "language": "TypeScript",
+      "lang_color": "#3178c6",
+      "description": "A local-first desktop workspace for running persistent AI teammates such as Codex, Claude, and Grok.",
+      "analysis": "OpenBot is a local-first Electron desktop app that gives each AI agent—Codex, Claude, Grok, Gemini, Cursor CLI, Cline CLI—its own persistent workspace, task queue, file system, embedded browser, and agent-to-agent messaging in a unified interface. It uses each provider's existing CLI login rather than copying credentials, with optional Docker or Linux server deployments for teams. Trending today as developers managing multiple specialized agents tire of juggling browser tabs and terminal sessions. Ideal for solo developers or small teams who want to run several AI agents concurrently, share files between them, and keep context persistent across sessions.",
+      "llm_api": "required",
+      "llm_api_note": "Needs provider CLI login or API key per agent (Codex, Claude, Grok, Gemini, etc.).",
+      "topics": [
+        "AI Agents",
+        "Developer Tools",
+        "MCP & Integrations"
+      ],
+      "first_seen": "2026-10-27",
+      "last_seen": "2026-10-27",
+      "best_rank": 3,
+      "latest_stars": 2347,
+      "max_gained": 794
     }
   ]
 }
