@@ -50,7 +50,8 @@
     "2026-10-21",
     "2026-10-23",
     "2026-10-25",
-    "2026-10-27"
+    "2026-10-27",
+    "2026-10-29"
   ],
   "repos": [
     {
@@ -823,22 +824,29 @@
           "rank": 5,
           "stars": 27903,
           "gained": 2154
+        },
+        {
+          "date": "2026-10-29",
+          "rank": 1,
+          "stars": 49871,
+          "gained": 1926
         }
       ],
       "language": "Python",
       "lang_color": "#3572A5",
-      "description": "Lifelong Personalized Tutoring platform",
-      "analysis": "DeepTutor is an agent-native learning workspace that unifies tutoring, quiz generation, research, knowledge bases, and persistent AI companions into a single educational environment where context travels with the learner across sessions. Built on Python and Next.js 16, it integrates multiple RAG engines—LlamaIndex, GraphRAG, and LightRAG—alongside multi-provider LLM support to create deeply context-aware learning sessions with three-layer memory that is visible and editable by users. It trended on organic interest as educators seek open-source alternatives to fragmented AI tutoring tools that lock learning data in siloed apps. Students, independent educators, and edtech developers building personalized learning systems will find it most compelling.",
-      "llm_api": "required",
-      "llm_api_note": "Connect an LLM provider (key or OAuth); local Ollama etc. supported",
+      "description": "A lifelong, personalized AI tutoring system.",
+      "analysis": "DeepTutor is an agent-native learning workspace that unifies chat tutoring, quiz generation, video learning, research, and spaced-repetition practice in one extensible system with a three-layer memory model. It surged today on the release of v1.7.0 (2026-10-28), which added modular installation, block notebooks, narrated video lessons, and resumable embedding checkpoints. Students and self-directed learners benefit most, but developers building education tooling will also value its RAG backend options (LlamaIndex, GraphRAG, LightRAG) and MCP server integration. Local models via Ollama, LM Studio, and vLLM are fully supported as first-class provider paths.",
+      "llm_api": "optional",
+      "llm_api_note": "Needs a model provider; Ollama/LM Studio/vLLM local paths fully supported",
       "topics": [
         "Education",
-        "AI Agents"
+        "AI Agents",
+        "RAG & Memory"
       ],
       "first_seen": "2026-07-19",
-      "last_seen": "2026-07-19",
-      "best_rank": 5,
-      "latest_stars": 27903,
+      "last_seen": "2026-10-29",
+      "best_rank": 1,
+      "latest_stars": 49871,
       "max_gained": 2154
     },
     {
@@ -3033,23 +3041,29 @@
           "rank": 4,
           "stars": 306365,
           "gained": 608
+        },
+        {
+          "date": "2026-10-29",
+          "rank": 2,
+          "stars": 308452,
+          "gained": 1037
         }
       ],
       "language": "Shell",
       "lang_color": "#89e051",
-      "description": "An agentic skills framework and software development methodology that works.",
-      "analysis": "Superpowers is a composable skills and methodology framework that makes coding agents work spec-first: the agent asks what you're building, turns it into a spec, writes an implementation plan, and only then executes with review checkpoints emphasizing TDD, YAGNI, and DRY. It supports virtually every major coding agent—Claude Code, Codex, Cursor, Gemini CLI, GitHub Copilot CLI, and OpenCode. Its 306k star count reflects long-term community trust; it resurfaced today as newer agent tools added support and fresh adopters discovered it through the broader design-skills wave. Best for developers who find LLM agents too quick to code before fully understanding requirements.",
+      "description": "An agentic skills framework and methodology for software development.",
+      "analysis": "Superpowers is a composable set of agent skills that bakes a plan-first, test-driven, review-gated software development methodology directly into AI coding agents — no manual prompting required. It trended on organic interest as structured vibe-coding workflows gain traction, plus new native plugin support for Muse, Pi, Hermes, and Devin CLI expanded its reach. Developers using Claude Code, Codex, Cursor, Gemini CLI, or GitHub Copilot will find it keeps agent sessions disciplined: the agent brainstorms requirements, writes a plan, codes in a RED-GREEN-REFACTOR loop, then verifies before closing. Skills install in one command and compose freely.",
       "llm_api": "required",
-      "llm_api_note": "Skills for AI coding agents — needs Claude Code, Codex, Cursor, Gemini CLI, etc.",
+      "llm_api_note": "Agent skills framework — useless without Claude Code, Codex, Cursor, or similar",
       "topics": [
         "Agent Skills & Plugins",
         "Developer Tools"
       ],
       "first_seen": "2026-09-09",
-      "last_seen": "2026-10-27",
-      "best_rank": 3,
-      "latest_stars": 306365,
-      "max_gained": 690
+      "last_seen": "2026-10-29",
+      "best_rank": 2,
+      "latest_stars": 308452,
+      "max_gained": 1037
     },
     {
       "owner": "pascalorg",
@@ -4091,24 +4105,30 @@
           "rank": 5,
           "stars": 90403,
           "gained": 1458
+        },
+        {
+          "date": "2026-10-29",
+          "rank": 3,
+          "stars": 95158,
+          "gained": 2881
         }
       ],
       "language": "Rust",
       "lang_color": "#dea584",
-      "description": "The design language that makes your AI harness better at design.",
-      "analysis": "Impeccable is a design language and rules engine for AI coding agents, shipping as a skill with 24 design commands (critique, audit, polish, animation) and a detector with 62 deterministic rules that catch AI-generated frontend tells—Inter for everything, purple-to-blue gradients, cards nested in cards—via a CLI, browser extension, or agent hooks. The CLI and browser extension run with no LLM and no API key; the skill layer runs inside your existing agent harness. Trending today as the anti-AI-slop movement consolidates around practical, rules-based tooling alongside Hallmark. Front-end developers using Claude Code, Cursor, Codex, Gemini CLI, or Grok Build will benefit most, especially those who want to catch design regressions automatically.",
-      "llm_api": "optional",
-      "llm_api_note": "Deterministic CLI/browser rules need no LLM; skill layer runs inside your agent harness.",
+      "description": "A design vocabulary for coding agents, with tools for refining, reviewing, and auditing UI work.",
+      "analysis": "Impeccable gives AI coding agents 24 slash commands (polish, bolder, critique, audit, and more) so you can steer and review generated UI work without writing long prompts, anchored by PRODUCT.md and DESIGN.md context files that keep output consistent. It trended on organic interest as the cost of AI-generated UI reaching production rises — its deterministic 62-rule Rust detector flags generic 'AI slop' without needing any LLM or API key, running via CLI, agent hook, or a Chrome extension. Frontend developers and design-conscious teams using Claude Code, Cursor, or Copilot will find the live mode (pick an element, cycle variants, write the winner back to source) uniquely fast for iteration.",
+      "llm_api": "required",
+      "llm_api_note": "Commands need a coding agent; standalone Rust detector runs with no LLM",
       "topics": [
         "Design",
-        "Developer Tools",
-        "Agent Skills & Plugins"
+        "Agent Skills & Plugins",
+        "Developer Tools"
       ],
       "first_seen": "2026-10-03",
-      "last_seen": "2026-10-27",
+      "last_seen": "2026-10-29",
       "best_rank": 2,
-      "latest_stars": 90403,
-      "max_gained": 1458
+      "latest_stars": 95158,
+      "max_gained": 2881
     },
     {
       "owner": "Effect-TS",
@@ -4793,6 +4813,62 @@
       "best_rank": 3,
       "latest_stars": 2347,
       "max_gained": 794
+    },
+    {
+      "owner": "JetBrains",
+      "repo": "thinkrail",
+      "url": "https://github.com/JetBrains/thinkrail",
+      "appearances": [
+        {
+          "date": "2026-10-29",
+          "rank": 4,
+          "stars": 5950,
+          "gained": 1116
+        }
+      ],
+      "language": "TypeScript",
+      "lang_color": "#3178c6",
+      "description": "A lightweight IDE built for vibe coding with pi, which adapts to how you work.",
+      "analysis": "ThinkRail is a JetBrains incubator IDE where each workspace is a git worktree with its own branch, so multiple pi coding-agent sessions can work in parallel without touching your main checkout, with PR status, CI checks, and merge controls built in. It trended because JetBrains' brand amplifies any open-source release and the agentic IDE space is heating up with competing launches. Developers who want vibe coding with workspace isolation, a spec-graph of SPEC.md files maintained by the agent, and concurrent plan-sharing between sessions will find it a compelling alternative to Cursor or Codex CLI. Sign in via JetBrains AI or point it at your own provider through pi's configuration.",
+      "llm_api": "required",
+      "llm_api_note": "Needs JetBrains AI sign-in or a pi-compatible LLM provider",
+      "topics": [
+        "Developer Tools",
+        "AI Agents"
+      ],
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "best_rank": 4,
+      "latest_stars": 5950,
+      "max_gained": 1116
+    },
+    {
+      "owner": "milind-soni",
+      "repo": "OpenMausBot",
+      "url": "https://github.com/milind-soni/OpenMausBot",
+      "appearances": [
+        {
+          "date": "2026-10-29",
+          "rank": 5,
+          "stars": 7391,
+          "gained": 1190
+        }
+      ],
+      "language": "TypeScript",
+      "lang_color": "#3178c6",
+      "description": "An open-source alternative to Grok Bot that includes a virtual machine for bots to use.",
+      "analysis": "OpenMausBot is a self-hosted chat app where each bot in the sidebar is a real AI agent — Claude or Codex running under the hood — with its own personality, model, cloud or local Linux VM, and approval-gated shell access, all wired to a Composio app marketplace covering Gmail, Slack, GitHub, and hundreds more. It trended as local-first, self-hosted agent teams emerge as a credible alternative to SaaS AI products, especially for users already paying for Claude or Codex subscriptions. Power users and developers wanting webhook triggers, MCP server control from external clients (Claude Desktop, Cursor), and department-level sharing via Markdown files will find it the most feature-complete open alternative to Grok Bot today.",
+      "llm_api": "required",
+      "llm_api_note": "Needs a logged-in claude, codex, or grok CLI; OpenAI-compatible endpoints also work",
+      "topics": [
+        "AI Agents",
+        "MCP & Integrations"
+      ],
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "best_rank": 5,
+      "latest_stars": 7391,
+      "max_gained": 1190
     }
   ]
 }

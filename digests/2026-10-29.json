@@ -1,0 +1,76 @@
+{
+  "date": "2026-10-29",
+  "title": "GitHub Trending Top 5",
+  "repos": [
+    {
+      "rank": 1,
+      "owner": "HKUDS",
+      "repo": "DeepTutor",
+      "url": "https://github.com/HKUDS/DeepTutor",
+      "language": "Python",
+      "stars": 49871,
+      "gained_today": 1926,
+      "description": "A lifelong, personalized AI tutoring system.",
+      "analysis": "DeepTutor is an agent-native learning workspace that unifies chat tutoring, quiz generation, video learning, research, and spaced-repetition practice in one extensible system with a three-layer memory model. It surged today on the release of v1.7.0 (2026-10-28), which added modular installation, block notebooks, narrated video lessons, and resumable embedding checkpoints. Students and self-directed learners benefit most, but developers building education tooling will also value its RAG backend options (LlamaIndex, GraphRAG, LightRAG) and MCP server integration. Local models via Ollama, LM Studio, and vLLM are fully supported as first-class provider paths.",
+      "llm_api": "optional",
+      "llm_api_note": "Needs a model provider; Ollama/LM Studio/vLLM local paths fully supported",
+      "topics": ["Education", "AI Agents", "RAG & Memory"]
+    },
+    {
+      "rank": 2,
+      "owner": "obra",
+      "repo": "superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "language": "Shell",
+      "stars": 308452,
+      "gained_today": 1037,
+      "description": "An agentic skills framework and methodology for software development.",
+      "analysis": "Superpowers is a composable set of agent skills that bakes a plan-first, test-driven, review-gated software development methodology directly into AI coding agents — no manual prompting required. It trended on organic interest as structured vibe-coding workflows gain traction, plus new native plugin support for Muse, Pi, Hermes, and Devin CLI expanded its reach. Developers using Claude Code, Codex, Cursor, Gemini CLI, or GitHub Copilot will find it keeps agent sessions disciplined: the agent brainstorms requirements, writes a plan, codes in a RED-GREEN-REFACTOR loop, then verifies before closing. Skills install in one command and compose freely.",
+      "llm_api": "required",
+      "llm_api_note": "Agent skills framework — useless without Claude Code, Codex, Cursor, or similar",
+      "topics": ["Agent Skills & Plugins", "Developer Tools"]
+    },
+    {
+      "rank": 3,
+      "owner": "pbakaus",
+      "repo": "impeccable",
+      "url": "https://github.com/pbakaus/impeccable",
+      "language": "Rust",
+      "stars": 95158,
+      "gained_today": 2881,
+      "description": "A design vocabulary for coding agents, with tools for refining, reviewing, and auditing UI work.",
+      "analysis": "Impeccable gives AI coding agents 24 slash commands (polish, bolder, critique, audit, and more) so you can steer and review generated UI work without writing long prompts, anchored by PRODUCT.md and DESIGN.md context files that keep output consistent. It trended on organic interest as the cost of AI-generated UI reaching production rises — its deterministic 62-rule Rust detector flags generic 'AI slop' without needing any LLM or API key, running via CLI, agent hook, or a Chrome extension. Frontend developers and design-conscious teams using Claude Code, Cursor, or Copilot will find the live mode (pick an element, cycle variants, write the winner back to source) uniquely fast for iteration.",
+      "llm_api": "required",
+      "llm_api_note": "Commands need a coding agent; standalone Rust detector runs with no LLM",
+      "topics": ["Design", "Agent Skills & Plugins", "Developer Tools"]
+    },
+    {
+      "rank": 4,
+      "owner": "JetBrains",
+      "repo": "thinkrail",
+      "url": "https://github.com/JetBrains/thinkrail",
+      "language": "TypeScript",
+      "stars": 5950,
+      "gained_today": 1116,
+      "description": "A lightweight IDE built for vibe coding with pi, which adapts to how you work.",
+      "analysis": "ThinkRail is a JetBrains incubator IDE where each workspace is a git worktree with its own branch, so multiple pi coding-agent sessions can work in parallel without touching your main checkout, with PR status, CI checks, and merge controls built in. It trended because JetBrains' brand amplifies any open-source release and the agentic IDE space is heating up with competing launches. Developers who want vibe coding with workspace isolation, a spec-graph of SPEC.md files maintained by the agent, and concurrent plan-sharing between sessions will find it a compelling alternative to Cursor or Codex CLI. Sign in via JetBrains AI or point it at your own provider through pi's configuration.",
+      "llm_api": "required",
+      "llm_api_note": "Needs JetBrains AI sign-in or a pi-compatible LLM provider",
+      "topics": ["Developer Tools", "AI Agents"]
+    },
+    {
+      "rank": 5,
+      "owner": "milind-soni",
+      "repo": "OpenMausBot",
+      "url": "https://github.com/milind-soni/OpenMausBot",
+      "language": "TypeScript",
+      "stars": 7391,
+      "gained_today": 1190,
+      "description": "An open-source alternative to Grok Bot that includes a virtual machine for bots to use.",
+      "analysis": "OpenMausBot is a self-hosted chat app where each bot in the sidebar is a real AI agent — Claude or Codex running under the hood — with its own personality, model, cloud or local Linux VM, and approval-gated shell access, all wired to a Composio app marketplace covering Gmail, Slack, GitHub, and hundreds more. It trended as local-first, self-hosted agent teams emerge as a credible alternative to SaaS AI products, especially for users already paying for Claude or Codex subscriptions. Power users and developers wanting webhook triggers, MCP server control from external clients (Claude Desktop, Cursor), and department-level sharing via Markdown files will find it the most feature-complete open alternative to Grok Bot today.",
+      "llm_api": "required",
+      "llm_api_note": "Needs a logged-in claude, codex, or grok CLI; OpenAI-compatible endpoints also work",
+      "topics": ["AI Agents", "MCP & Integrations"]
+    }
+  ]
+}
