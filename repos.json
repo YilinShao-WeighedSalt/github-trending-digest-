@@ -51,7 +51,8 @@
     "2026-10-23",
     "2026-10-25",
     "2026-10-27",
-    "2026-10-29"
+    "2026-10-29",
+    "2026-10-31"
   ],
   "repos": [
     {
@@ -1958,22 +1959,28 @@
           "rank": 3,
           "stars": 282547,
           "gained": 1696
+        },
+        {
+          "date": "2026-10-31",
+          "rank": 2,
+          "stars": 308289,
+          "gained": 882
         }
       ],
       "language": "Shell",
       "lang_color": "#89e051",
-      "description": "Practical skills for AI coding agents, taken from the author's own daily workflow.",
-      "analysis": "mattpocock/skills is a curated library of Markdown instruction packs (called skills) for AI coding agents, designed to address the most common ways agents fail: misalignment on requirements, verbosity, broken code, and poor architecture. Skills span the full development lifecycle — from grilling sessions that force upfront clarity, through TDD and debugging loops, to PR writing and multi-agent handoffs. It gained traction because its author (Matt Pocock, a well-known TypeScript educator) just released it, and the AI coding-agent ecosystem is hungry for reusable, production-grade best practices. Any developer who uses Claude Code, GitHub Copilot, Cursor, or Codex and wants more disciplined workflows will benefit immediately.",
+      "description": "A collection of skills for engineers, taken from the author's own .agents directory.",
+      "analysis": "This repo is Matt Pocock's public .agents directory — a curated library of reusable skills (prompt-driven workflow templates) for AI coding agents covering engineering tasks from refactoring to documentation. It addresses the 'muscle memory' problem: giving agents reliable, expert-tuned processes for tasks that would otherwise require painstaking per-project prompting. Likely trending because the skills ecosystem around Claude Code and similar platforms is exploding, and Pocock (author of Total TypeScript) has a large reach in the TypeScript community. Engineers already using AI coding agents who want to level up their workflows with battle-tested patterns will get immediate value.",
       "llm_api": "required",
-      "llm_api_note": "Skills require a coding agent (Claude Code, Copilot, Cursor, Codex, etc.)",
+      "llm_api_note": "Skills for AI coding agents (Claude Code, Cursor, etc.) — host agent required",
       "topics": [
         "Agent Skills & Plugins",
         "Developer Tools"
       ],
       "first_seen": "2026-08-21",
-      "last_seen": "2026-10-09",
+      "last_seen": "2026-10-31",
       "best_rank": 1,
-      "latest_stars": 282547,
+      "latest_stars": 308289,
       "max_gained": 3368
     },
     {
@@ -4230,23 +4237,30 @@
           "rank": 2,
           "stars": 96601,
           "gained": 534
+        },
+        {
+          "date": "2026-10-31",
+          "rank": 1,
+          "stars": 107732,
+          "gained": 1723
         }
       ],
       "language": "TypeScript",
       "lang_color": "#3178c6",
-      "description": "Persistent context management for AI agents across sessions with compression and context injection.",
-      "analysis": "claude-mem solves the \"amnesia\" problem in AI coding assistants by capturing what the agent does during each session, compressing that history, and injecting the most relevant context into future sessions via SQLite and a vector database. It integrates with Claude Code, Cursor, Codex, and more via lifecycle hooks, and includes a web viewer for inspecting the live memory stream. Trending organically as multi-session AI development workflows become mainstream. Ideal for developers on long-running projects who lose context every time they close their agent.",
+      "description": "Captures agent session activity, compresses it with AI, and injects relevant context into future sessions across many coding agents.",
+      "analysis": "claude-mem is a persistent memory layer for AI coding agents that records session activity, compresses it intelligently using an LLM, and surfaces relevant prior context at the start of each new session. It directly solves the context-amnesia problem that plagues long-running workflows with agents like Claude Code or Cursor, where every session starts cold. Trending today on the wave of agent-native tooling investment — persistent memory is a top pain point as agentic coding workflows mature. Developers building multi-session projects with any major AI coding agent will find this the most immediately useful drop-in enhancement.",
       "llm_api": "required",
-      "llm_api_note": "Requires hosted plan or BYO key (OpenRouter, Gemini, or Anthropic); free trial available",
+      "llm_api_note": "BYO key (OpenAI/Anthropic/…) for compression; local Ollama path available",
       "topics": [
         "RAG & Memory",
-        "AI Agents"
+        "AI Agents",
+        "Developer Tools"
       ],
       "first_seen": "2026-10-05",
-      "last_seen": "2026-10-05",
-      "best_rank": 2,
-      "latest_stars": 96601,
-      "max_gained": 534
+      "last_seen": "2026-10-31",
+      "best_rank": 1,
+      "latest_stars": 107732,
+      "max_gained": 1723
     },
     {
       "owner": "michael-denyer",
@@ -4286,23 +4300,30 @@
           "rank": 5,
           "stars": 25578,
           "gained": 487
+        },
+        {
+          "date": "2026-10-31",
+          "rank": 4,
+          "stars": 35256,
+          "gained": 1148
         }
       ],
       "language": "TypeScript",
       "lang_color": "#3178c6",
-      "description": "Open-source control surface for AI coding agents (Claude Code, Cursor, Codex, and more).",
-      "analysis": "t3code is an open-source harness that lets you monitor and control AI coding agents running locally on your machine from a mobile app, web app, or Electron desktop client. It supports Claude Code, Cursor, Codex, Grok Build, OpenCode, and Google Antigravity, offering remote access, background service mode, and source-control integration. Built by the Ping.gg team (known for the T3 stack), it resonates strongly in the TypeScript/React ecosystem and is trending as developers managing multiple agents look for a unified control surface. Best for developers who want phone-level access to agents while away from their workstations.",
+      "description": "An open-source control panel for AI coding agents already installed on your computer — manage Claude Code, Codex, Cursor, and more from one interface.",
+      "analysis": "T3 Code is an open-source 'agent harness control surface' — a unified mobile, web, and desktop control panel for managing AI coding agents like Claude Code, Codex, Cursor, Grok Build, and Google Antigravity through the subscriptions you already pay for. It solves developer fatigue from juggling multiple agent tools with fragmented interfaces. Trending due to Theo (ping.gg) having massive reach in the TypeScript/web community and the project addressing a real pain point as developers accumulate multiple agent tools. Full-stack and TypeScript developers who use several AI coding agents and want a single cockpit rather than per-tool UIs are its core audience.",
       "llm_api": "optional",
-      "llm_api_note": "t3code itself needs no key; underlying agents (Claude Code, Cursor, etc.) need their own auth",
+      "llm_api_note": "Uses your existing agent subscriptions; no additional LLM key required",
       "topics": [
+        "AI Agents",
         "Developer Tools",
-        "AI Agents"
+        "MCP & Integrations"
       ],
       "first_seen": "2026-10-05",
-      "last_seen": "2026-10-05",
-      "best_rank": 5,
-      "latest_stars": 25578,
-      "max_gained": 487
+      "last_seen": "2026-10-31",
+      "best_rank": 4,
+      "latest_stars": 35256,
+      "max_gained": 1148
     },
     {
       "owner": "morluto",
@@ -4686,22 +4707,28 @@
           "rank": 5,
           "stars": 6828,
           "gained": 547
+        },
+        {
+          "date": "2026-10-31",
+          "rank": 5,
+          "stars": 12235,
+          "gained": 1093
         }
       ],
       "language": "TypeScript",
       "lang_color": "#3178c6",
-      "description": "Open-source Zi Wei Dou Shu chart-calculation engine based on Ni Haixia's Tian Ji system, with full chart algorithms, Four Transformations, pattern knowledge base, and classical text data",
-      "analysis": "This TypeScript engine implements Zi Wei Dou Shu, a classical Chinese astrological divination system, following the rigorous Tian Ji interpretation lineage of scholar Ni Haixia. It includes full chart generation algorithms, the Four Transformations (Hua Ji, Hua Quan, Hua Lu, Hua Ke) logic, a pattern knowledge base, and annotated classical text data—making it suitable for both application development and academic research. Trending on organic interest from Chinese-language developer and cultural-heritage communities who want a modern, open-source, well-documented implementation. Developers building astrology or divination apps, as well as researchers studying computational approaches to classical Chinese texts, are the target audience.",
+      "description": "An open-source Ziwei Doushu chart-casting engine based on Ni Haixia's Tianji system, with chart algorithms, the Four Transformations system, a pattern knowledge base, and classical text data.",
+      "analysis": "ziwei-doushu is a rigorous open-source engine for casting Ziwei Doushu (Purple Star Astrology) charts, faithfully implementing Ni Haixia's Tianji method with precise astronomical algorithms, the Four Transformations system, and a classical-text knowledge base. It fills a notable gap in the open-source ecosystem for high-quality, academically-grounded Chinese metaphysical computing. Trending through Chinese-language tech communities where traditional cultural topics gain traction rapidly; Ni Haixia's system has a devoted following that likely drove sharing. Developers building astrology or cultural heritage apps, hobbyists learning Ziwei Doushu, and researchers of traditional Chinese systems will find this the most complete starting point available.",
       "llm_api": "none",
       "topics": [
         "Education",
         "Systems & Libraries"
       ],
       "first_seen": "2026-10-23",
-      "last_seen": "2026-10-23",
+      "last_seen": "2026-10-31",
       "best_rank": 5,
-      "latest_stars": 6828,
-      "max_gained": 547
+      "latest_stars": 12235,
+      "max_gained": 1093
     },
     {
       "owner": "makecindy",
@@ -4869,6 +4896,35 @@
       "best_rank": 5,
       "latest_stars": 7391,
       "max_gained": 1190
+    },
+    {
+      "owner": "Donchitos",
+      "repo": "Claude-Code-Game-Studios",
+      "url": "https://github.com/Donchitos/Claude-Code-Game-Studios",
+      "appearances": [
+        {
+          "date": "2026-10-31",
+          "rank": 3,
+          "stars": 31105,
+          "gained": 724
+        }
+      ],
+      "language": "Shell",
+      "lang_color": "#89e051",
+      "description": "Turns Claude Code into a game development studio with 49 AI agents, 72 workflow skills, and a coordination system modeled on real studio hierarchies.",
+      "analysis": "Claude-Code-Game-Studios extends Claude Code into a full multi-agent game development studio, with 49 specialized AI agent personas (producer, designer, engineer, QA, etc.) and 72 workflow skills that mirror real-world game studio pipelines. It tackles the challenge of coordinating complex, multi-discipline creative projects using an LLM agent system without custom infrastructure. The project is trending because multi-agent orchestration for creative domains is a hot frontier, and the game dev community is exploring AI-assisted pipelines aggressively. Indie developers and small studios wanting to prototype or build games end-to-end with AI assistance would benefit most.",
+      "llm_api": "required",
+      "llm_api_note": "Built on Claude Code — requires an active Claude subscription",
+      "topics": [
+        "AI Agents",
+        "Agent Skills & Plugins",
+        "Developer Tools"
+      ],
+      "first_seen": "2026-10-31",
+      "last_seen": "2026-10-31",
+      "best_rank": 3,
+      "latest_stars": 31105,
+      "max_gained": 724
     }
   ]
 }

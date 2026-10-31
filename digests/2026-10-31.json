@@ -1,0 +1,75 @@
+{
+  "date": "2026-10-31",
+  "title": "GitHub Trending Top 5",
+  "repos": [
+    {
+      "rank": 1,
+      "owner": "thedotmack",
+      "repo": "claude-mem",
+      "url": "https://github.com/thedotmack/claude-mem",
+      "language": "TypeScript",
+      "stars": 107732,
+      "gained_today": 1723,
+      "description": "Captures agent session activity, compresses it with AI, and injects relevant context into future sessions across many coding agents.",
+      "analysis": "claude-mem is a persistent memory layer for AI coding agents that records session activity, compresses it intelligently using an LLM, and surfaces relevant prior context at the start of each new session. It directly solves the context-amnesia problem that plagues long-running workflows with agents like Claude Code or Cursor, where every session starts cold. Trending today on the wave of agent-native tooling investment — persistent memory is a top pain point as agentic coding workflows mature. Developers building multi-session projects with any major AI coding agent will find this the most immediately useful drop-in enhancement.",
+      "llm_api": "required",
+      "llm_api_note": "BYO key (OpenAI/Anthropic/…) for compression; local Ollama path available",
+      "topics": ["RAG & Memory", "AI Agents", "Developer Tools"]
+    },
+    {
+      "rank": 2,
+      "owner": "mattpocock",
+      "repo": "skills",
+      "url": "https://github.com/mattpocock/skills",
+      "language": "Shell",
+      "stars": 308289,
+      "gained_today": 882,
+      "description": "A collection of skills for engineers, taken from the author's own .agents directory.",
+      "analysis": "This repo is Matt Pocock's public .agents directory — a curated library of reusable skills (prompt-driven workflow templates) for AI coding agents covering engineering tasks from refactoring to documentation. It addresses the 'muscle memory' problem: giving agents reliable, expert-tuned processes for tasks that would otherwise require painstaking per-project prompting. Likely trending because the skills ecosystem around Claude Code and similar platforms is exploding, and Pocock (author of Total TypeScript) has a large reach in the TypeScript community. Engineers already using AI coding agents who want to level up their workflows with battle-tested patterns will get immediate value.",
+      "llm_api": "required",
+      "llm_api_note": "Skills for AI coding agents (Claude Code, Cursor, etc.) — host agent required",
+      "topics": ["Agent Skills & Plugins", "Developer Tools"]
+    },
+    {
+      "rank": 3,
+      "owner": "Donchitos",
+      "repo": "Claude-Code-Game-Studios",
+      "url": "https://github.com/Donchitos/Claude-Code-Game-Studios",
+      "language": "Shell",
+      "stars": 31105,
+      "gained_today": 724,
+      "description": "Turns Claude Code into a game development studio with 49 AI agents, 72 workflow skills, and a coordination system modeled on real studio hierarchies.",
+      "analysis": "Claude-Code-Game-Studios extends Claude Code into a full multi-agent game development studio, with 49 specialized AI agent personas (producer, designer, engineer, QA, etc.) and 72 workflow skills that mirror real-world game studio pipelines. It tackles the challenge of coordinating complex, multi-discipline creative projects using an LLM agent system without custom infrastructure. The project is trending because multi-agent orchestration for creative domains is a hot frontier, and the game dev community is exploring AI-assisted pipelines aggressively. Indie developers and small studios wanting to prototype or build games end-to-end with AI assistance would benefit most.",
+      "llm_api": "required",
+      "llm_api_note": "Built on Claude Code — requires an active Claude subscription",
+      "topics": ["AI Agents", "Agent Skills & Plugins", "Developer Tools"]
+    },
+    {
+      "rank": 4,
+      "owner": "pingdotgg",
+      "repo": "t3code",
+      "url": "https://github.com/pingdotgg/t3code",
+      "language": "TypeScript",
+      "stars": 35256,
+      "gained_today": 1148,
+      "description": "An open-source control panel for AI coding agents already installed on your computer — manage Claude Code, Codex, Cursor, and more from one interface.",
+      "analysis": "T3 Code is an open-source 'agent harness control surface' — a unified mobile, web, and desktop control panel for managing AI coding agents like Claude Code, Codex, Cursor, Grok Build, and Google Antigravity through the subscriptions you already pay for. It solves developer fatigue from juggling multiple agent tools with fragmented interfaces. Trending due to Theo (ping.gg) having massive reach in the TypeScript/web community and the project addressing a real pain point as developers accumulate multiple agent tools. Full-stack and TypeScript developers who use several AI coding agents and want a single cockpit rather than per-tool UIs are its core audience.",
+      "llm_api": "optional",
+      "llm_api_note": "Uses your existing agent subscriptions; no additional LLM key required",
+      "topics": ["AI Agents", "Developer Tools", "MCP & Integrations"]
+    },
+    {
+      "rank": 5,
+      "owner": "Renhuai123",
+      "repo": "ziwei-doushu",
+      "url": "https://github.com/Renhuai123/ziwei-doushu",
+      "language": "TypeScript",
+      "stars": 12235,
+      "gained_today": 1093,
+      "description": "An open-source Ziwei Doushu chart-casting engine based on Ni Haixia's Tianji system, with chart algorithms, the Four Transformations system, a pattern knowledge base, and classical text data.",
+      "analysis": "ziwei-doushu is a rigorous open-source engine for casting Ziwei Doushu (Purple Star Astrology) charts, faithfully implementing Ni Haixia's Tianji method with precise astronomical algorithms, the Four Transformations system, and a classical-text knowledge base. It fills a notable gap in the open-source ecosystem for high-quality, academically-grounded Chinese metaphysical computing. Trending through Chinese-language tech communities where traditional cultural topics gain traction rapidly; Ni Haixia's system has a devoted following that likely drove sharing. Developers building astrology or cultural heritage apps, hobbyists learning Ziwei Doushu, and researchers of traditional Chinese systems will find this the most complete starting point available.",
+      "llm_api": "none",
+      "topics": ["Education", "Systems & Libraries"]
+    }
+  ]
+}
