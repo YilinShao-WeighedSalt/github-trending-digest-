@@ -1,0 +1,75 @@
+{
+  "date": "2026-11-01",
+  "title": "GitHub Trending Top 5",
+  "repos": [
+    {
+      "rank": 1,
+      "owner": "thedotmack",
+      "repo": "claude-mem",
+      "url": "https://github.com/thedotmack/claude-mem",
+      "language": "TypeScript",
+      "stars": 109111,
+      "gained_today": 1527,
+      "description": "Persistent memory layer for AI coding agents across sessions.",
+      "analysis": "claude-mem captures session activity through lifecycle hooks, compresses it with AI into summaries, and injects relevant context into future sessions via SQLite and vector search — giving coding agents a long-term memory they normally lack. It trended because persistent context is a top pain point for heavy Claude Code and agentic coding users running multi-session projects. Developers using Claude Code, Codex, or Gemini CLI on large codebases will benefit most; it plugs into the hooks system and falls back to your Anthropic plan or an OpenRouter/Gemini key for the compression step.",
+      "llm_api": "required",
+      "llm_api_note": "Needs Anthropic/OpenRouter/Gemini key for memory compression",
+      "topics": ["RAG & Memory", "Agent Skills & Plugins", "LLM Infrastructure"]
+    },
+    {
+      "rank": 2,
+      "owner": "lightpanda-io",
+      "repo": "browser",
+      "url": "https://github.com/lightpanda-io/browser",
+      "language": "Zig",
+      "stars": 40024,
+      "gained_today": 827,
+      "description": "A from-scratch headless browser for AI and automation, built in Zig.",
+      "analysis": "Lightpanda is a headless browser written from scratch in Zig — not a Chromium fork — that runs JavaScript while using roughly 16× less memory and executing 9× faster than headless Chrome in internal benchmarks. It trended as AI agent workloads scale and teams feel the cost of running full Chrome at volume; Playwright and Puppeteer can connect to it via its CDP server with no code changes. DevOps and AI engineering teams running high-volume scraping or agent-driven browsing pipelines are its primary audience; an optional MCP server and natural-language agent mode add LLM integration for those who want it.",
+      "llm_api": "optional",
+      "llm_api_note": "Native agent mode uses NL commands; core browser works with no LLM",
+      "topics": ["AI Agents", "Systems & Libraries", "Developer Tools"]
+    },
+    {
+      "rank": 3,
+      "owner": "shiyu-coder",
+      "repo": "Kronos",
+      "url": "https://github.com/shiyu-coder/Kronos",
+      "language": "Python",
+      "stars": 45301,
+      "gained_today": 611,
+      "description": "Open-source foundation models pre-trained on financial candlestick sequences.",
+      "analysis": "Kronos is a family of decoder-only Transformer models (4M–102M parameters) pre-trained on OHLCV candlestick token sequences from 45+ exchanges, designed as a general-purpose base for quantitative forecasting tasks. It trended after acceptance at AAAI 2026, bringing academic and practitioner attention from the quant ML community seeking a financial-domain alternative to generic time series models. Quantitative researchers and algo traders can plug it in via the KronosPredictor API and fine-tune it with Qlib; the README notes the included backtest is illustrative, not production-ready.",
+      "llm_api": "none",
+      "topics": ["Finance & Trading", "Science & ML"]
+    },
+    {
+      "rank": 4,
+      "owner": "pingdotgg",
+      "repo": "t3code",
+      "url": "https://github.com/pingdotgg/t3code",
+      "language": "TypeScript",
+      "stars": 37713,
+      "gained_today": 3100,
+      "description": "Open-source remote control surface for AI coding agents on your machine.",
+      "analysis": "t3code is an MIT-licensed agent harness UI — a web app, Electron desktop app, and iOS/Android mobile app — for remotely controlling AI coding agents (Claude Code, Codex, Cursor, Grok Build, and others) running on your own machine. It trended because it addresses the gap for developers who want a fast, remote-first, vendor-neutral interface without depending on any single agent vendor's desktop client. TypeScript and Node developers who juggle multiple agent subscriptions and want to drive them from any device, including phones, will find it most useful; it requires each provider's CLI to be installed and signed in on the host machine.",
+      "llm_api": "required",
+      "llm_api_note": "Requires installed Claude Code, Codex, or other agent CLI to control",
+      "topics": ["AI Agents", "Developer Tools", "MCP & Integrations"]
+    },
+    {
+      "rank": 5,
+      "owner": "milind-soni",
+      "repo": "OpenMausBot",
+      "url": "https://github.com/milind-soni/OpenMausBot",
+      "language": "TypeScript",
+      "stars": 10446,
+      "gained_today": 919,
+      "description": "Open-source, local-first multi-agent chat app using your existing AI subscriptions.",
+      "analysis": "OpenMausBot is a self-hosted chat app where each 'bot' is a real AI agent running through your existing Claude, Codex, or Grok CLI subscription — each with its own personality, VM or local computer access, and app integrations via Composio. It trended as an open, privacy-preserving alternative to closed personal-agent products like Meta Muse and OpenAI Dots, appealing to developers who want all transcripts, keys, and events stored locally at ~/.openmausbot. Power users and developers already subscribed to multiple AI coding services who want to orchestrate them from a unified, self-hosted interface with per-action approval cards will find it most useful.",
+      "llm_api": "required",
+      "llm_api_note": "Uses your Claude, Codex, or Grok CLI subscription — BYO credentials",
+      "topics": ["AI Agents", "MCP & Integrations", "Sandboxes & Runtimes"]
+    }
+  ]
+}

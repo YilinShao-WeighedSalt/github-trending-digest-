@@ -52,7 +52,8 @@
     "2026-10-25",
     "2026-10-27",
     "2026-10-29",
-    "2026-10-31"
+    "2026-10-31",
+    "2026-11-01"
   ],
   "repos": [
     {
@@ -4243,23 +4244,29 @@
           "rank": 1,
           "stars": 107732,
           "gained": 1723
+        },
+        {
+          "date": "2026-11-01",
+          "rank": 1,
+          "stars": 109111,
+          "gained": 1527
         }
       ],
       "language": "TypeScript",
       "lang_color": "#3178c6",
-      "description": "Captures agent session activity, compresses it with AI, and injects relevant context into future sessions across many coding agents.",
-      "analysis": "claude-mem is a persistent memory layer for AI coding agents that records session activity, compresses it intelligently using an LLM, and surfaces relevant prior context at the start of each new session. It directly solves the context-amnesia problem that plagues long-running workflows with agents like Claude Code or Cursor, where every session starts cold. Trending today on the wave of agent-native tooling investment — persistent memory is a top pain point as agentic coding workflows mature. Developers building multi-session projects with any major AI coding agent will find this the most immediately useful drop-in enhancement.",
+      "description": "Persistent memory layer for AI coding agents across sessions.",
+      "analysis": "claude-mem captures session activity through lifecycle hooks, compresses it with AI into summaries, and injects relevant context into future sessions via SQLite and vector search — giving coding agents a long-term memory they normally lack. It trended because persistent context is a top pain point for heavy Claude Code and agentic coding users running multi-session projects. Developers using Claude Code, Codex, or Gemini CLI on large codebases will benefit most; it plugs into the hooks system and falls back to your Anthropic plan or an OpenRouter/Gemini key for the compression step.",
       "llm_api": "required",
-      "llm_api_note": "BYO key (OpenAI/Anthropic/…) for compression; local Ollama path available",
+      "llm_api_note": "Needs Anthropic/OpenRouter/Gemini key for memory compression",
       "topics": [
         "RAG & Memory",
-        "AI Agents",
-        "Developer Tools"
+        "Agent Skills & Plugins",
+        "LLM Infrastructure"
       ],
       "first_seen": "2026-10-05",
-      "last_seen": "2026-10-31",
+      "last_seen": "2026-11-01",
       "best_rank": 1,
-      "latest_stars": 107732,
+      "latest_stars": 109111,
       "max_gained": 1723
     },
     {
@@ -4306,24 +4313,30 @@
           "rank": 4,
           "stars": 35256,
           "gained": 1148
+        },
+        {
+          "date": "2026-11-01",
+          "rank": 4,
+          "stars": 37713,
+          "gained": 3100
         }
       ],
       "language": "TypeScript",
       "lang_color": "#3178c6",
-      "description": "An open-source control panel for AI coding agents already installed on your computer — manage Claude Code, Codex, Cursor, and more from one interface.",
-      "analysis": "T3 Code is an open-source 'agent harness control surface' — a unified mobile, web, and desktop control panel for managing AI coding agents like Claude Code, Codex, Cursor, Grok Build, and Google Antigravity through the subscriptions you already pay for. It solves developer fatigue from juggling multiple agent tools with fragmented interfaces. Trending due to Theo (ping.gg) having massive reach in the TypeScript/web community and the project addressing a real pain point as developers accumulate multiple agent tools. Full-stack and TypeScript developers who use several AI coding agents and want a single cockpit rather than per-tool UIs are its core audience.",
-      "llm_api": "optional",
-      "llm_api_note": "Uses your existing agent subscriptions; no additional LLM key required",
+      "description": "Open-source remote control surface for AI coding agents on your machine.",
+      "analysis": "t3code is an MIT-licensed agent harness UI — a web app, Electron desktop app, and iOS/Android mobile app — for remotely controlling AI coding agents (Claude Code, Codex, Cursor, Grok Build, and others) running on your own machine. It trended because it addresses the gap for developers who want a fast, remote-first, vendor-neutral interface without depending on any single agent vendor's desktop client. TypeScript and Node developers who juggle multiple agent subscriptions and want to drive them from any device, including phones, will find it most useful; it requires each provider's CLI to be installed and signed in on the host machine.",
+      "llm_api": "required",
+      "llm_api_note": "Requires installed Claude Code, Codex, or other agent CLI to control",
       "topics": [
         "AI Agents",
         "Developer Tools",
         "MCP & Integrations"
       ],
       "first_seen": "2026-10-05",
-      "last_seen": "2026-10-31",
+      "last_seen": "2026-11-01",
       "best_rank": 4,
-      "latest_stars": 35256,
-      "max_gained": 1148
+      "latest_stars": 37713,
+      "max_gained": 3100
     },
     {
       "owner": "morluto",
@@ -4879,22 +4892,29 @@
           "rank": 5,
           "stars": 7391,
           "gained": 1190
+        },
+        {
+          "date": "2026-11-01",
+          "rank": 5,
+          "stars": 10446,
+          "gained": 919
         }
       ],
       "language": "TypeScript",
       "lang_color": "#3178c6",
-      "description": "An open-source alternative to Grok Bot that includes a virtual machine for bots to use.",
-      "analysis": "OpenMausBot is a self-hosted chat app where each bot in the sidebar is a real AI agent — Claude or Codex running under the hood — with its own personality, model, cloud or local Linux VM, and approval-gated shell access, all wired to a Composio app marketplace covering Gmail, Slack, GitHub, and hundreds more. It trended as local-first, self-hosted agent teams emerge as a credible alternative to SaaS AI products, especially for users already paying for Claude or Codex subscriptions. Power users and developers wanting webhook triggers, MCP server control from external clients (Claude Desktop, Cursor), and department-level sharing via Markdown files will find it the most feature-complete open alternative to Grok Bot today.",
+      "description": "Open-source, local-first multi-agent chat app using your existing AI subscriptions.",
+      "analysis": "OpenMausBot is a self-hosted chat app where each 'bot' is a real AI agent running through your existing Claude, Codex, or Grok CLI subscription — each with its own personality, VM or local computer access, and app integrations via Composio. It trended as an open, privacy-preserving alternative to closed personal-agent products like Meta Muse and OpenAI Dots, appealing to developers who want all transcripts, keys, and events stored locally at ~/.openmausbot. Power users and developers already subscribed to multiple AI coding services who want to orchestrate them from a unified, self-hosted interface with per-action approval cards will find it most useful.",
       "llm_api": "required",
-      "llm_api_note": "Needs a logged-in claude, codex, or grok CLI; OpenAI-compatible endpoints also work",
+      "llm_api_note": "Uses your Claude, Codex, or Grok CLI subscription — BYO credentials",
       "topics": [
         "AI Agents",
-        "MCP & Integrations"
+        "MCP & Integrations",
+        "Sandboxes & Runtimes"
       ],
       "first_seen": "2026-10-29",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-11-01",
       "best_rank": 5,
-      "latest_stars": 7391,
+      "latest_stars": 10446,
       "max_gained": 1190
     },
     {
@@ -4925,6 +4945,62 @@
       "best_rank": 3,
       "latest_stars": 31105,
       "max_gained": 724
+    },
+    {
+      "owner": "lightpanda-io",
+      "repo": "browser",
+      "url": "https://github.com/lightpanda-io/browser",
+      "appearances": [
+        {
+          "date": "2026-11-01",
+          "rank": 2,
+          "stars": 40024,
+          "gained": 827
+        }
+      ],
+      "language": "Zig",
+      "lang_color": "#ec915c",
+      "description": "A from-scratch headless browser for AI and automation, built in Zig.",
+      "analysis": "Lightpanda is a headless browser written from scratch in Zig — not a Chromium fork — that runs JavaScript while using roughly 16× less memory and executing 9× faster than headless Chrome in internal benchmarks. It trended as AI agent workloads scale and teams feel the cost of running full Chrome at volume; Playwright and Puppeteer can connect to it via its CDP server with no code changes. DevOps and AI engineering teams running high-volume scraping or agent-driven browsing pipelines are its primary audience; an optional MCP server and natural-language agent mode add LLM integration for those who want it.",
+      "llm_api": "optional",
+      "llm_api_note": "Native agent mode uses NL commands; core browser works with no LLM",
+      "topics": [
+        "AI Agents",
+        "Systems & Libraries",
+        "Developer Tools"
+      ],
+      "first_seen": "2026-11-01",
+      "last_seen": "2026-11-01",
+      "best_rank": 2,
+      "latest_stars": 40024,
+      "max_gained": 827
+    },
+    {
+      "owner": "shiyu-coder",
+      "repo": "Kronos",
+      "url": "https://github.com/shiyu-coder/Kronos",
+      "appearances": [
+        {
+          "date": "2026-11-01",
+          "rank": 3,
+          "stars": 45301,
+          "gained": 611
+        }
+      ],
+      "language": "Python",
+      "lang_color": "#3572A5",
+      "description": "Open-source foundation models pre-trained on financial candlestick sequences.",
+      "analysis": "Kronos is a family of decoder-only Transformer models (4M–102M parameters) pre-trained on OHLCV candlestick token sequences from 45+ exchanges, designed as a general-purpose base for quantitative forecasting tasks. It trended after acceptance at AAAI 2026, bringing academic and practitioner attention from the quant ML community seeking a financial-domain alternative to generic time series models. Quantitative researchers and algo traders can plug it in via the KronosPredictor API and fine-tune it with Qlib; the README notes the included backtest is illustrative, not production-ready.",
+      "llm_api": "none",
+      "topics": [
+        "Finance & Trading",
+        "Science & ML"
+      ],
+      "first_seen": "2026-11-01",
+      "last_seen": "2026-11-01",
+      "best_rank": 3,
+      "latest_stars": 45301,
+      "max_gained": 611
     }
   ]
 }
