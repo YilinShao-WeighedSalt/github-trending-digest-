@@ -53,7 +53,8 @@
     "2026-10-27",
     "2026-10-29",
     "2026-10-31",
-    "2026-11-01"
+    "2026-11-01",
+    "2026-11-03"
   ],
   "repos": [
     {
@@ -1966,22 +1967,29 @@
           "rank": 2,
           "stars": 308289,
           "gained": 882
+        },
+        {
+          "date": "2026-11-03",
+          "rank": 5,
+          "stars": 311347,
+          "gained": 1164
         }
       ],
       "language": "Shell",
       "lang_color": "#89e051",
-      "description": "A collection of skills for engineers, taken from the author's own .agents directory.",
-      "analysis": "This repo is Matt Pocock's public .agents directory — a curated library of reusable skills (prompt-driven workflow templates) for AI coding agents covering engineering tasks from refactoring to documentation. It addresses the 'muscle memory' problem: giving agents reliable, expert-tuned processes for tasks that would otherwise require painstaking per-project prompting. Likely trending because the skills ecosystem around Claude Code and similar platforms is exploding, and Pocock (author of Total TypeScript) has a large reach in the TypeScript community. Engineers already using AI coding agents who want to level up their workflows with battle-tested patterns will get immediate value.",
+      "description": "A set of reusable agent skills drawn from the author's personal .agents directory.",
+      "analysis": "Matt Pocock — widely known for his TypeScript courses — published the agent skill files from his own `.agents` directory as a public, MIT-licensed collection. The skills cover the full coding-agent lifecycle: aligning on intent (`/grill-me`), TDD feedback loops (`/tdd`), parallel subagent execution (`/implement-spec`), and architecture reviews (`/improve-codebase-architecture`). They work with any host agent (Claude Code, Codex, Copilot, Gemini CLI) and install via plugin marketplaces or `npx skills`. It went viral today because a trusted educator endorsing structured workflows resonates strongly with developers frustrated by \"vibe coding\" outcomes.",
       "llm_api": "required",
-      "llm_api_note": "Skills for AI coding agents (Claude Code, Cursor, etc.) — host agent required",
+      "llm_api_note": "Plugin skills — host agent (Claude Code, Codex, etc.) provides the model",
       "topics": [
         "Agent Skills & Plugins",
+        "AI Agents",
         "Developer Tools"
       ],
       "first_seen": "2026-08-21",
-      "last_seen": "2026-10-31",
+      "last_seen": "2026-11-03",
       "best_rank": 1,
-      "latest_stars": 308289,
+      "latest_stars": 311347,
       "max_gained": 3368
     },
     {
@@ -3241,22 +3249,29 @@
           "rank": 2,
           "stars": 33706,
           "gained": 2035
+        },
+        {
+          "date": "2026-11-03",
+          "rank": 4,
+          "stars": 47201,
+          "gained": 803
         }
       ],
       "language": "C",
       "lang_color": "#555555",
-      "description": "Run frontier MoE models on hardware you already own — pure C, zero deps, experts streamed from disk. Tiny engine, immense model.",
-      "analysis": "colibri is a pure-C, zero-dependency inference engine that makes frontier Mixture-of-Experts (MoE) models runnable on ordinary consumer hardware by streaming expert weights from disk on demand, rather than requiring all parameters to fit in RAM simultaneously. This solves a critical pain point: models like DeepSeek-V3 and Mixtral are architecturally MoE but still impractical on machines with limited VRAM or system RAM. It likely trended from the LLM-on-consumer-hardware community discovering a genuinely novel disk-streaming approach in readable C code. Local AI enthusiasts, researchers, and developers who want to run the most capable open-weight models on laptops or workstations without cloud costs are the primary audience.",
-      "llm_api": "optional",
+      "description": "A tiered inference engine for large MoE models: hot experts on GPU, warm in RAM, cold on NVMe.",
+      "analysis": "colibri is a pure-C inference engine that makes frontier-scale mixture-of-experts models like DeepSeek V4 and Qwen3.6 runnable on ordinary consumer hardware by streaming expert weights from NVMe while pinning hot ones to the GPU and warm ones in RAM. The result is roughly equivalent to having far more VRAM than your machine actually has, at the cost of speed. It trended today on continued excitement around running frontier models locally without cloud API bills. ML researchers, local-AI enthusiasts, and developers who want an OpenAI-compatible local server for coding assistants are the core users.",
+      "llm_api": "none",
       "topics": [
         "LLM Infrastructure",
+        "Science & ML",
         "Systems & Libraries"
       ],
       "llm_api_note": "Runs MoE models locally on your own hardware; no hosted API or key needed",
       "first_seen": "2026-09-13",
-      "last_seen": "2026-09-15",
+      "last_seen": "2026-11-03",
       "best_rank": 1,
-      "latest_stars": 33706,
+      "latest_stars": 47201,
       "max_gained": 2035
     },
     {
@@ -4250,23 +4265,29 @@
           "rank": 1,
           "stars": 109111,
           "gained": 1527
+        },
+        {
+          "date": "2026-11-03",
+          "rank": 1,
+          "stars": 111783,
+          "gained": 1138
         }
       ],
       "language": "TypeScript",
       "lang_color": "#3178c6",
-      "description": "Persistent memory layer for AI coding agents across sessions.",
-      "analysis": "claude-mem captures session activity through lifecycle hooks, compresses it with AI into summaries, and injects relevant context into future sessions via SQLite and vector search — giving coding agents a long-term memory they normally lack. It trended because persistent context is a top pain point for heavy Claude Code and agentic coding users running multi-session projects. Developers using Claude Code, Codex, or Gemini CLI on large codebases will benefit most; it plugs into the hooks system and falls back to your Anthropic plan or an OpenRouter/Gemini key for the compression step.",
+      "description": "Persistent context across sessions for every AI agent.",
+      "analysis": "claude-mem solves one of the most frustrating limits of AI coding agents: they forget everything when a session ends. It hooks into agent lifecycle events, compresses observations with AI, and injects relevant past context back into future sessions. It trended today on the strength of multi-agent tooling momentum and its support for Claude Code, Codex, Cursor, Gemini, and Copilot in one install. Developers building long-running agent workflows or working across multiple tools will find the team-shared workspace (TeamBrain) and local web dashboard especially useful.",
       "llm_api": "required",
-      "llm_api_note": "Needs Anthropic/OpenRouter/Gemini key for memory compression",
+      "llm_api_note": "BYO key (OpenRouter/Anthropic/Gemini) or hosted cmem.ai tier",
       "topics": [
         "RAG & Memory",
-        "Agent Skills & Plugins",
-        "LLM Infrastructure"
+        "AI Agents",
+        "MCP & Integrations"
       ],
       "first_seen": "2026-10-05",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-03",
       "best_rank": 1,
-      "latest_stars": 109111,
+      "latest_stars": 111783,
       "max_gained": 1723
     },
     {
@@ -5001,6 +5022,63 @@
       "best_rank": 3,
       "latest_stars": 45301,
       "max_gained": 611
+    },
+    {
+      "owner": "vercel-labs",
+      "repo": "agent-desktop",
+      "url": "https://github.com/vercel-labs/agent-desktop",
+      "appearances": [
+        {
+          "date": "2026-11-03",
+          "rank": 2,
+          "stars": 12512,
+          "gained": 3792
+        }
+      ],
+      "language": "Rust",
+      "lang_color": "#dea584",
+      "description": "A CLI that lets AI agents observe and operate desktop apps via accessibility trees.",
+      "analysis": "agent-desktop gives AI agents a structured, reliable way to operate desktop applications — not through fragile screenshots, but via each platform's native accessibility tree (AX on macOS, UI Automation on Windows, AT-SPI on Linux). It outputs stable ref IDs agents act on, and stale refs return error codes rather than silent failures. A high-profile Vercel Labs release on computer-use tooling drove its surge to nearly 3,800 stars today. Developers building desktop automation agents or integrating AI into GUI-driven enterprise workflows are the primary audience.",
+      "llm_api": "optional",
+      "llm_api_note": "No LLM inside — supply your own agent loop",
+      "topics": [
+        "AI Agents",
+        "Developer Tools",
+        "Sandboxes & Runtimes"
+      ],
+      "first_seen": "2026-11-03",
+      "last_seen": "2026-11-03",
+      "best_rank": 2,
+      "latest_stars": 12512,
+      "max_gained": 3792
+    },
+    {
+      "owner": "max-sixty",
+      "repo": "worktrunk",
+      "url": "https://github.com/max-sixty/worktrunk",
+      "appearances": [
+        {
+          "date": "2026-11-03",
+          "rank": 3,
+          "stars": 10437,
+          "gained": 437
+        }
+      ],
+      "language": "Rust",
+      "lang_color": "#dea584",
+      "description": "A CLI for Git worktree management designed for parallel AI agent workflows.",
+      "analysis": "worktrunk wraps Git's native worktree system in a developer-friendly CLI, letting you spin up and tear down isolated branches in seconds with a single `wt switch` command. It is designed explicitly for running multiple AI coding agents in parallel — each in its own worktree — and adds shared build caches, per-worktree dev servers, and optional LLM-generated commit messages. Trending on organic interest from developers who run Claude Code or Codex concurrently and find raw `git worktree` commands cumbersome. Teams doing multi-agent parallelism on a monorepo will get the most value.",
+      "llm_api": "optional",
+      "llm_api_note": "LLM commit messages optional; core runs without any API key",
+      "topics": [
+        "AI Agents",
+        "Developer Tools"
+      ],
+      "first_seen": "2026-11-03",
+      "last_seen": "2026-11-03",
+      "best_rank": 3,
+      "latest_stars": 10437,
+      "max_gained": 437
     }
   ]
 }

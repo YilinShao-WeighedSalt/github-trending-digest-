@@ -1,0 +1,75 @@
+{
+  "date": "2026-11-03",
+  "title": "GitHub Trending Top 5",
+  "repos": [
+    {
+      "rank": 1,
+      "owner": "thedotmack",
+      "repo": "claude-mem",
+      "url": "https://github.com/thedotmack/claude-mem",
+      "language": "TypeScript",
+      "stars": 111783,
+      "gained_today": 1138,
+      "description": "Persistent context across sessions for every AI agent.",
+      "analysis": "claude-mem solves one of the most frustrating limits of AI coding agents: they forget everything when a session ends. It hooks into agent lifecycle events, compresses observations with AI, and injects relevant past context back into future sessions. It trended today on the strength of multi-agent tooling momentum and its support for Claude Code, Codex, Cursor, Gemini, and Copilot in one install. Developers building long-running agent workflows or working across multiple tools will find the team-shared workspace (TeamBrain) and local web dashboard especially useful.",
+      "llm_api": "required",
+      "llm_api_note": "BYO key (OpenRouter/Anthropic/Gemini) or hosted cmem.ai tier",
+      "topics": ["RAG & Memory", "AI Agents", "MCP & Integrations"]
+    },
+    {
+      "rank": 2,
+      "owner": "vercel-labs",
+      "repo": "agent-desktop",
+      "url": "https://github.com/vercel-labs/agent-desktop",
+      "language": "Rust",
+      "stars": 12512,
+      "gained_today": 3792,
+      "description": "A CLI that lets AI agents observe and operate desktop apps via accessibility trees.",
+      "analysis": "agent-desktop gives AI agents a structured, reliable way to operate desktop applications — not through fragile screenshots, but via each platform's native accessibility tree (AX on macOS, UI Automation on Windows, AT-SPI on Linux). It outputs stable ref IDs agents act on, and stale refs return error codes rather than silent failures. A high-profile Vercel Labs release on computer-use tooling drove its surge to nearly 3,800 stars today. Developers building desktop automation agents or integrating AI into GUI-driven enterprise workflows are the primary audience.",
+      "llm_api": "optional",
+      "llm_api_note": "No LLM inside — supply your own agent loop",
+      "topics": ["AI Agents", "Developer Tools", "Sandboxes & Runtimes"]
+    },
+    {
+      "rank": 3,
+      "owner": "max-sixty",
+      "repo": "worktrunk",
+      "url": "https://github.com/max-sixty/worktrunk",
+      "language": "Rust",
+      "stars": 10437,
+      "gained_today": 437,
+      "description": "A CLI for Git worktree management designed for parallel AI agent workflows.",
+      "analysis": "worktrunk wraps Git's native worktree system in a developer-friendly CLI, letting you spin up and tear down isolated branches in seconds with a single `wt switch` command. It is designed explicitly for running multiple AI coding agents in parallel — each in its own worktree — and adds shared build caches, per-worktree dev servers, and optional LLM-generated commit messages. Trending on organic interest from developers who run Claude Code or Codex concurrently and find raw `git worktree` commands cumbersome. Teams doing multi-agent parallelism on a monorepo will get the most value.",
+      "llm_api": "optional",
+      "llm_api_note": "LLM commit messages optional; core runs without any API key",
+      "topics": ["AI Agents", "Developer Tools"]
+    },
+    {
+      "rank": 4,
+      "owner": "JustVugg",
+      "repo": "colibri",
+      "url": "https://github.com/JustVugg/colibri",
+      "language": "C",
+      "stars": 47201,
+      "gained_today": 803,
+      "description": "A tiered inference engine for large MoE models: hot experts on GPU, warm in RAM, cold on NVMe.",
+      "analysis": "colibri is a pure-C inference engine that makes frontier-scale mixture-of-experts models like DeepSeek V4 and Qwen3.6 runnable on ordinary consumer hardware by streaming expert weights from NVMe while pinning hot ones to the GPU and warm ones in RAM. The result is roughly equivalent to having far more VRAM than your machine actually has, at the cost of speed. It trended today on continued excitement around running frontier models locally without cloud API bills. ML researchers, local-AI enthusiasts, and developers who want an OpenAI-compatible local server for coding assistants are the core users.",
+      "llm_api": "none",
+      "topics": ["LLM Infrastructure", "Science & ML", "Systems & Libraries"]
+    },
+    {
+      "rank": 5,
+      "owner": "mattpocock",
+      "repo": "skills",
+      "url": "https://github.com/mattpocock/skills",
+      "language": "Shell",
+      "stars": 311347,
+      "gained_today": 1164,
+      "description": "A set of reusable agent skills drawn from the author's personal .agents directory.",
+      "analysis": "Matt Pocock — widely known for his TypeScript courses — published the agent skill files from his own `.agents` directory as a public, MIT-licensed collection. The skills cover the full coding-agent lifecycle: aligning on intent (`/grill-me`), TDD feedback loops (`/tdd`), parallel subagent execution (`/implement-spec`), and architecture reviews (`/improve-codebase-architecture`). They work with any host agent (Claude Code, Codex, Copilot, Gemini CLI) and install via plugin marketplaces or `npx skills`. It went viral today because a trusted educator endorsing structured workflows resonates strongly with developers frustrated by \"vibe coding\" outcomes.",
+      "llm_api": "required",
+      "llm_api_note": "Plugin skills — host agent (Claude Code, Codex, etc.) provides the model",
+      "topics": ["Agent Skills & Plugins", "AI Agents", "Developer Tools"]
+    }
+  ]
+}
