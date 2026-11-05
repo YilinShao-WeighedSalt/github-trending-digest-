@@ -1,0 +1,75 @@
+{
+  "date": "2026-11-05",
+  "title": "GitHub Trending Top 5",
+  "repos": [
+    {
+      "rank": 1,
+      "owner": "NVIDIA",
+      "repo": "auto-ontology",
+      "url": "https://github.com/NVIDIA/auto-ontology",
+      "language": "Python",
+      "stars": 7180,
+      "gained_today": 2707,
+      "description": "A Python framework for building graph-based reasoning layers over data, for deterministic query generation and more explainable AI workflows.",
+      "analysis": "Auto Ontology is an NVIDIA open-source library that builds a semantic context layer over enterprise databases—translating table metadata into structured ontologies so AI agents can convert natural-language questions into accurate, traceable SQL. It exposes the ontology via MCP, a CLI, and an API, integrating cleanly into agent-based analytics workflows. It trended sharply after a high-profile NVIDIA release targeting the growing demand for deterministic, explainable agentic data access. Data engineers, enterprise ML teams, and developers building natural-language BI tools on PostgreSQL, Snowflake, or Databricks will find it most useful.",
+      "llm_api": "required",
+      "llm_api_note": "NVIDIA NIM endpoints required; any OpenAI-compatible endpoint works",
+      "topics": ["LLM Infrastructure", "AI Agents"]
+    },
+    {
+      "rank": 2,
+      "owner": "mattpocock",
+      "repo": "skills",
+      "url": "https://github.com/mattpocock/skills",
+      "language": "Shell",
+      "stars": 315074,
+      "gained_today": 2053,
+      "description": "A collection of skills for experienced engineers, taken from the author's own .agents directory.",
+      "analysis": "This repo is Matt Pocock's personal collection of reusable instruction skills for AI coding agents—concise Markdown files that instruct agents to follow test-driven development, structured debugging loops, pre-commit plan reviews, and more. Unlike heavy orchestration frameworks these skills are small, adaptable, and composable, designed to keep the developer in control rather than handing off judgment. The huge star count and daily gain likely reflect the viral reach of Pocock's large TypeScript educator audience discovering the agentic coding workflow. Any developer using Claude Code, GitHub Copilot, Cursor, or Codex CLI will find these drop-in skills for immediate workflow improvement.",
+      "llm_api": "required",
+      "llm_api_note": "Requires a coding agent (Claude Code, Codex, Cursor, etc.); model-agnostic",
+      "topics": ["Agent Skills & Plugins", "Developer Tools"]
+    },
+    {
+      "rank": 3,
+      "owner": "garrytan",
+      "repo": "gstack",
+      "url": "https://github.com/garrytan/gstack",
+      "language": "TypeScript",
+      "stars": 139900,
+      "gained_today": 608,
+      "description": "A set of 23 opinionated tools for Claude Code that play roles such as CEO, designer, engineering manager, release manager, doc engineer, and QA.",
+      "analysis": "gstack is a set of 23 slash commands for Claude Code that simulates a full virtual engineering team—CEO-level product review, engineering management, QA, security audit, design critique, and a complete ship pipeline—published by Y Combinator president Garry Tan. Each command is designed to chain into the next, guiding a solo developer from raw idea through code review, testing, and pull request. Its trending presence stems from Tan's high-profile public endorsement and amplification through the Y Combinator community. Solo founders, early-stage startup engineers, and anyone building seriously with Claude Code will get immediate value.",
+      "llm_api": "required",
+      "llm_api_note": "Claude Code required; Codex CLI, Cursor, Gemini CLI also supported",
+      "topics": ["Agent Skills & Plugins", "Developer Tools"]
+    },
+    {
+      "rank": 4,
+      "owner": "Usagi-org",
+      "repo": "ai-goofish-monitor",
+      "url": "https://github.com/Usagi-org/ai-goofish-monitor",
+      "language": "Python",
+      "stars": 17486,
+      "gained_today": 242,
+      "description": "A multi-task real-time and scheduled monitoring and AI analysis system for Xianyu (Goofish) marketplace listings.",
+      "analysis": "This tool automates monitoring of Xianyu (闲鱼), China's largest second-hand marketplace, running multiple tasks in real time and on a schedule using Playwright for browsing and a multimodal LLM to evaluate each listing against natural-language criteria the user defines. When a matching item appears it fires a push notification through ntfy.sh, WeCom, Telegram, or webhooks. Trending on organic interest among Chinese developer communities who routinely hunt specific second-hand goods. It fits developers comfortable with Python and Docker who want automated deal-hunting without manual browsing.",
+      "llm_api": "required",
+      "llm_api_note": "Requires OpenAI-compatible multimodal API key (OPENAI_API_KEY)",
+      "topics": ["AI Agents", "Productivity & Research"]
+    },
+    {
+      "rank": 5,
+      "owner": "D4Vinci",
+      "repo": "Scrapling",
+      "url": "https://github.com/D4Vinci/Scrapling",
+      "language": "Python",
+      "stars": 97864,
+      "gained_today": 1661,
+      "description": "A web scraping framework that covers everything from a single request to a full-scale crawl.",
+      "analysis": "Scrapling is a batteries-included Python scraping framework that unifies HTTP requests, stealth browser automation, JavaScript rendering, CSS/XPath parsing, proxy rotation, and Scrapy-compatible spiders into a single library. Its built-in anti-bot fingerprinting and adaptive selectors that survive site redesigns set it apart from gluing together separate tools like httpx, Playwright, and BeautifulSoup. Trending on organic interest from the Python community seeking a modern, all-in-one scraping toolkit. Backend developers, data engineers, and security researchers building web data pipelines or reconnaissance tools will find it most practical.",
+      "llm_api": "none",
+      "topics": ["Developer Tools", "Systems & Libraries"]
+    }
+  ]
+}
