@@ -55,7 +55,8 @@
     "2026-10-31",
     "2026-11-01",
     "2026-11-03",
-    "2026-11-05"
+    "2026-11-05",
+    "2026-11-07"
   ],
   "repos": [
     {
@@ -1620,23 +1621,29 @@
           "rank": 5,
           "stars": 173607,
           "gained": 277
+        },
+        {
+          "date": "2026-11-07",
+          "rank": 2,
+          "stars": 188711,
+          "gained": 386
         }
       ],
       "language": "Python",
       "lang_color": "#3572A5",
       "description": "Public repository for Agent Skills",
-      "analysis": "Anthropic's official public skills library ships example SKILL.md-based workflows across creative, technical, document-processing, and enterprise categories — covering everything from PDF/DOCX manipulation to MCP server generation and brand-voice communications. It is the canonical reference implementation for anyone building Claude skills, and the source-available examples show exactly how to structure instructions so Claude loads them dynamically via the plugin marketplace. Trending as Claude Code's skill ecosystem grows and this repo becomes the first stop for teams wanting to extend Claude with domain-specific knowledge. Useful to enterprise teams building standardized workflows, developers targeting the Claude API Skills endpoint, and Claude Code users installing from the plugin marketplace.",
+      "analysis": "Anthropic's official skills repository is the authoritative source for reusable Claude skills—each a SKILL.md file with YAML frontmatter and step-by-step instructions that Claude dynamically loads. Categories span creative design, document handling (docx, pdf, pptx, xlsx), development workflows, MCP server generation, and enterprise communications. The repo trended today likely from new skill additions and ongoing community adoption as skills become a primary way to extend Claude's capabilities. It's essential reading for any Claude Code or Claude.ai user wanting to extend or build on official patterns.",
       "llm_api": "required",
-      "llm_api_note": "Claude Code (free tier), claude.ai paid plans, or Claude API with Skills endpoint",
+      "llm_api_note": "Claude-only; works via claude.ai paid plan or Anthropic API key",
       "topics": [
         "Agent Skills & Plugins",
         "AI Agents"
       ],
       "first_seen": "2026-08-13",
-      "last_seen": "2026-09-03",
-      "best_rank": 4,
-      "latest_stars": 173607,
-      "max_gained": 383
+      "last_seen": "2026-11-07",
+      "best_rank": 2,
+      "latest_stars": 188711,
+      "max_gained": 386
     },
     {
       "owner": "altic-dev",
@@ -1980,22 +1987,28 @@
           "rank": 2,
           "stars": 315074,
           "gained": 2053
+        },
+        {
+          "date": "2026-11-07",
+          "rank": 3,
+          "stars": 317606,
+          "gained": 1111
         }
       ],
       "language": "Shell",
       "lang_color": "#89e051",
-      "description": "A collection of skills for experienced engineers, taken from the author's own .agents directory.",
-      "analysis": "This repo is Matt Pocock's personal collection of reusable instruction skills for AI coding agents—concise Markdown files that instruct agents to follow test-driven development, structured debugging loops, pre-commit plan reviews, and more. Unlike heavy orchestration frameworks these skills are small, adaptable, and composable, designed to keep the developer in control rather than handing off judgment. The huge star count and daily gain likely reflect the viral reach of Pocock's large TypeScript educator audience discovering the agentic coding workflow. Any developer using Claude Code, GitHub Copilot, Cursor, or Codex CLI will find these drop-in skills for immediate workflow improvement.",
+      "description": "Skills for Real Engineers. Straight from my .agents directory.",
+      "analysis": "Matt Pocock—known for TypeScript education—released his personal collection of coding-agent skills focused on engineering discipline rather than raw capability. Skills like /grill-me, /tdd, /diagnosing-bugs, and /improve-codebase-architecture address the four core failure modes he identifies in agents: misalignment, verbosity, broken code, and messy architecture. The repo trended strongly because Pocock has a large following and community appetite for opinionated, practitioner-tested agent workflows is high. Frontend and TypeScript developers using Claude Code, Copilot, or Gemini CLI will find the most immediate value.",
       "llm_api": "required",
-      "llm_api_note": "Requires a coding agent (Claude Code, Codex, Cursor, etc.); model-agnostic",
+      "llm_api_note": "Skill for coding agents; works with any model (Claude Code, Copilot, Gemini CLI)",
       "topics": [
         "Agent Skills & Plugins",
         "Developer Tools"
       ],
       "first_seen": "2026-08-21",
-      "last_seen": "2026-11-05",
+      "last_seen": "2026-11-07",
       "best_rank": 1,
-      "latest_stars": 315074,
+      "latest_stars": 317606,
       "max_gained": 3368
     },
     {
@@ -3494,22 +3507,28 @@
           "rank": 1,
           "stars": 41990,
           "gained": 2706
+        },
+        {
+          "date": "2026-11-07",
+          "rank": 1,
+          "stars": 65567,
+          "gained": 2088
         }
       ],
       "language": "JavaScript",
       "lang_color": "#f1e05a",
       "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
-      "analysis": "This is a plug-in skill for coding agents that orchestrates a six-phase security audit: reconnaissance, parallel vulnerability hunting by isolated sub-agents, adversarial validation, structured output, independent record verification, and reporting. Each phase is handled by fresh agent instances to avoid confirmation bias. It likely trended because it solves a pressing DevSecOps pain point—systematic, repeatable AI-driven security reviews—at a moment when coding agents have become mainstream. Security engineers and developers using AI coding tools (Claude Code, Cursor, Copilot Workspace) can drop this in to get machine-readable, confirmed vulnerability reports with minimal manual effort.",
+      "analysis": "Cloudflare's security-audit-skill turns any capable coding agent into a structured security auditor by running six phases—recon, attack-class hunting via isolated sub-agents, adversarial validation, structured output to findings.json, re-verification, and final report generation. Each finding must survive an adversarial disproof attempt before being marked confirmed, dramatically reducing false positives compared to naive LLM audits. It trended today because Cloudflare's brand carries weight in security, and the agent-driven security audit space is heating up as coding agents become mainstream. Security engineers, developers, and pen-testers working in agent environments (Claude Code, Codex, etc.) will get the most value.",
       "llm_api": "required",
-      "llm_api_note": "Coding-agent skill — requires an AI agent with tool use and parallel sub-agent support",
+      "llm_api_note": "Skill for coding agents (Claude Code, Codex, etc.); LLM access comes from the host agent",
       "topics": [
-        "Agent Skills & Plugins",
-        "Security & Privacy"
+        "Security & Privacy",
+        "Agent Skills & Plugins"
       ],
       "first_seen": "2026-09-17",
-      "last_seen": "2026-10-23",
+      "last_seen": "2026-11-07",
       "best_rank": 1,
-      "latest_stars": 41990,
+      "latest_stars": 65567,
       "max_gained": 3606
     },
     {
@@ -5196,6 +5215,62 @@
       "best_rank": 5,
       "latest_stars": 97864,
       "max_gained": 1661
+    },
+    {
+      "owner": "vercel-labs",
+      "repo": "agent-browser",
+      "url": "https://github.com/vercel-labs/agent-browser",
+      "appearances": [
+        {
+          "date": "2026-11-07",
+          "rank": 4,
+          "stars": 46758,
+          "gained": 180
+        }
+      ],
+      "language": "Rust",
+      "lang_color": "#dea584",
+      "description": "Browser automation CLI for AI agents",
+      "analysis": "agent-browser is a Rust CLI that gives AI agents a compact, text-based view of any web page—each interactive element tagged with a short reference like @e1—so an agent can click, fill, and navigate one command at a time without writing full automation scripts. A background daemon keeps Chrome open between calls to minimize latency, and it integrates with MCP clients via agent-browser mcp. It trended because Vercel is a trusted developer brand investing in agent infrastructure, and browser access is a critical capability gap for many agent workflows. Developers building AI agents that need authenticated web interaction or scraping beyond static HTML will find it immediately useful.",
+      "llm_api": "optional",
+      "llm_api_note": "No LLM inside the tool; pairs with any agent harness that provides LLM access",
+      "topics": [
+        "AI Agents",
+        "Developer Tools"
+      ],
+      "first_seen": "2026-11-07",
+      "last_seen": "2026-11-07",
+      "best_rank": 4,
+      "latest_stars": 46758,
+      "max_gained": 180
+    },
+    {
+      "owner": "google",
+      "repo": "skills",
+      "url": "https://github.com/google/skills",
+      "appearances": [
+        {
+          "date": "2026-11-07",
+          "rank": 5,
+          "stars": 23337,
+          "gained": 449
+        }
+      ],
+      "language": "Python",
+      "lang_color": "#3572A5",
+      "description": "Agent Skills for Google products and technologies",
+      "analysis": "Google's official skills repository packages task-specific guidance for GCP, GKE, BigQuery, Cloud Storage, AI/ML, security, monitoring, and Google Ads into agent-loadable skills, with bundled plugins (skill + MCP server) for Claude Code, Codex, and Antigravity CLI. This solves the problem of agents making costly or incorrect calls against Google's sprawling API surface by encoding best practices directly into the agent's context. The repo trended today because Google officially entering the agent skills ecosystem signals broad industry alignment around skills as a distribution primitive. Teams running AI agents on Google Cloud infrastructure are the primary audience.",
+      "llm_api": "required",
+      "llm_api_note": "Skill for coding agents (Claude Code, Codex, Antigravity CLI); Google Cloud credentials needed for some skills",
+      "topics": [
+        "Agent Skills & Plugins",
+        "MCP & Integrations"
+      ],
+      "first_seen": "2026-11-07",
+      "last_seen": "2026-11-07",
+      "best_rank": 5,
+      "latest_stars": 23337,
+      "max_gained": 449
     }
   ]
 }
