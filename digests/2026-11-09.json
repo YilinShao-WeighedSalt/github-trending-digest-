@@ -1,0 +1,73 @@
+{
+  "date": "2026-11-09",
+  "title": "GitHub Trending Top 5",
+  "repos": [
+    {
+      "rank": 1,
+      "owner": "anthropics",
+      "repo": "skills",
+      "url": "https://github.com/anthropics/skills",
+      "language": "Python",
+      "stars": 190840,
+      "gained_today": 1052,
+      "description": "Public repository for Agent Skills",
+      "analysis": "Anthropic's public Skills repository is a curated library of reusable instruction bundles that Claude loads on demand to perform specialized tasks — document conversion, MCP server generation, web testing, and more. Each skill is a markdown folder dropped into Claude Code or uploaded to Claude.ai, requiring no code changes. It likely spiked today because Anthropic opened the skills marketplace to community contributions, sparking developer curiosity. Teams automating repetitive knowledge-work tasks and Claude Code power users extending their workflows will get the most mileage here.",
+      "llm_api": "required",
+      "llm_api_note": "Claude-only; requires Anthropic API key or paid Claude.ai plan",
+      "topics": ["AI Agents", "Agent Skills & Plugins"]
+    },
+    {
+      "rank": 2,
+      "owner": "meta",
+      "repo": "astryx",
+      "url": "https://github.com/meta/astryx",
+      "language": "TypeScript",
+      "stars": 19761,
+      "gained_today": 3324,
+      "description": "An open source design system that's fully customizable and agent ready",
+      "analysis": "Astryx is Meta's newly open-sourced React 19 design system offering 150+ accessible, TypeScript-typed components built on StyleX, with seven ready-made themes, dark mode, and a CLI purpose-built for both humans and AI coding assistants. It solves the problem of inconsistent UI across large React projects by giving teams a composable, lockout-free foundation they can override with Tailwind, CSS modules, or plain CSS. The massive daily gain suggests Meta's launch post drove significant traffic from frontend engineers. Front-end teams standardizing on a React design system — especially those using AI coding assistants for scaffolding — are the primary audience.",
+      "llm_api": "none",
+      "topics": ["Design", "Developer Tools"]
+    },
+    {
+      "rank": 3,
+      "owner": "sherlock-project",
+      "repo": "sherlock",
+      "url": "https://github.com/sherlock-project/sherlock",
+      "language": "Python",
+      "stars": 106866,
+      "gained_today": 4294,
+      "description": "Hunt down social media accounts by username across social networks",
+      "analysis": "Sherlock is a battle-tested Python CLI that queries 400+ social networks simultaneously to find all accounts registered under a given username, saving results to text, CSV, XLSX, or JSON. It solves the OSINT problem of manually checking dozens of platforms by automating the detection in seconds. Trending on organic interest — Sherlock is a perennial favourite that periodically resurfaces in security communities, tutorials, and news cycles. Security researchers, penetration testers, journalists, and digital investigators doing open-source intelligence or digital footprint audits will find it immediately useful.",
+      "llm_api": "none",
+      "topics": ["Security & Privacy", "Developer Tools"]
+    },
+    {
+      "rank": 4,
+      "owner": "google-deepmind",
+      "repo": "mujoco",
+      "url": "https://github.com/google-deepmind/mujoco",
+      "language": "C++",
+      "stars": 16870,
+      "gained_today": 579,
+      "description": "Multi-Joint dynamics with Contact. A general purpose physics simulator.",
+      "analysis": "MuJoCo is DeepMind's high-performance open-source physics engine for simulating articulated bodies with contact, the de-facto standard simulator for training reinforcement learning locomotion and manipulation policies. It ships with Python bindings (`pip install mujoco`), JAX-accelerated MJX for large-scale rollouts, desktop and WebAssembly visualisers, and converters for OpenSim and SDFormat. Trending likely due to growing embodied AI and humanoid robotics interest, as researchers need fast, differentiable simulation to train real-world-ready policies. RL researchers, robotics engineers, and biomechanics labs running policy training or trajectory optimisation pipelines will reach for MuJoCo first.",
+      "llm_api": "none",
+      "topics": ["Science & ML", "Systems & Libraries"]
+    },
+    {
+      "rank": 5,
+      "owner": "anthropics",
+      "repo": "claude-quickstarts",
+      "url": "https://github.com/anthropics/claude-quickstarts",
+      "language": "Python",
+      "stars": 19975,
+      "gained_today": 560,
+      "description": "A collection of projects designed to help developers quickly get started with building deployable applications using the Claude API",
+      "analysis": "Claude Quickstarts is Anthropic's official reference architecture library — a set of production-ready starter projects covering customer support agents, financial data analysts, computer use, browser automation, and multi-agent patterns built on Claude Managed Agents. It addresses the cold-start problem developers face when building their first Claude-powered app, providing end-to-end patterns they can clone and adapt rather than start from scratch. Trending as Anthropic's developer ecosystem matures and more teams look for battle-tested blueprints. Any team building their first agentic application on the Claude API — especially those exploring computer use, browser automation, or Slack/GitHub integrations — will save significant ramp-up time here.",
+      "llm_api": "required",
+      "llm_api_note": "Anthropic API key required; some projects also need Slack/GitHub/Linear credentials",
+      "topics": ["AI Agents", "LLM Infrastructure"]
+    }
+  ]
+}
