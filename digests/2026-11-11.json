@@ -1,0 +1,76 @@
+{
+  "date": "2026-11-11",
+  "title": "GitHub Trending Top 5",
+  "repos": [
+    {
+      "rank": 1,
+      "owner": "meta",
+      "repo": "astryx",
+      "url": "https://github.com/meta/astryx",
+      "language": "TypeScript",
+      "stars": 24805,
+      "gained_today": 2842,
+      "description": "An open-source, customizable design system built to work with AI agents.",
+      "analysis": "Astryx is Meta's open-source React design system offering 150+ accessible components, theming, and templates built on StyleX. It was designed so human developers and AI coding assistants share the same documentation and CLI, reducing drift between human- and agent-generated UI code. The large star surge likely reflects excitement around Meta open-sourcing a production-grade design system explicitly tuned for the AI-assisted development era. Front-end developers and teams using React who want an accessible, AI-friendly component foundation will find it immediately useful.",
+      "llm_api": "optional",
+      "llm_api_note": "React component library; AI coding integration is a bonus, no API key required",
+      "topics": ["Design", "Developer Tools", "AI Agents"]
+    },
+    {
+      "rank": 2,
+      "owner": "ZhuLinsen",
+      "repo": "daily_stock_analysis",
+      "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
+      "language": "Python",
+      "stars": 70125,
+      "gained_today": 429,
+      "description": "An LLM-powered stock analysis system covering multiple markets, with market data, news, dashboards, notifications, and scheduled runs.",
+      "analysis": "daily_stock_analysis is a full-stack Python platform that pulls market data and news, feeds them through an LLM, and delivers daily analysis via dashboards and push notifications on a scheduled basis. It covers multiple global markets, making it broadly applicable rather than US-only. Trending on organic interest—the LLM-meets-retail-investing niche continues to draw consistent attention, and this repo's breadth (multi-market, news aggregation, notifications) gives it recurring boosts. Retail investors and quant-curious Python developers who want an automated morning briefing will find it a solid reference implementation.",
+      "llm_api": "required",
+      "llm_api_note": "Core analysis calls hosted LLM APIs; local Ollama path may exist",
+      "topics": ["Finance & Trading", "AI Agents", "LLM Infrastructure"]
+    },
+    {
+      "rank": 3,
+      "owner": "GoogleChrome",
+      "repo": "modern-web-guidance-src",
+      "url": "https://github.com/GoogleChrome/modern-web-guidance-src",
+      "language": "TypeScript",
+      "stars": 1679,
+      "gained_today": 133,
+      "description": "Skills that give AI coding agents up-to-date knowledge of web platform APIs, best practices, and browser compatibility.",
+      "analysis": "modern-web-guidance-src is a first-party Chrome/Google repository of agent skill files that teach AI coding tools current web platform APIs, browser compatibility data, and modern best practices, steering agents away from outdated polyfills and legacy JavaScript patterns. Its value is credibility: guidance authored by the Chrome team carries more weight than community docs for keeping AI-generated frontend code standards-compliant. Developer interest in improving the accuracy of AI-generated web code has grown sharply, explaining the trending spike. Web developers using Claude Code, Cursor, or GitHub Copilot to build frontend projects are the primary audience.",
+      "llm_api": "required",
+      "llm_api_note": "Skill files for AI coding agents; useless without a host agent (Claude Code, Cursor, etc.)",
+      "topics": ["Agent Skills & Plugins", "Developer Tools"]
+    },
+    {
+      "rank": 4,
+      "owner": "shadcn",
+      "repo": "improve",
+      "url": "https://github.com/shadcn/improve",
+      "language": null,
+      "stars": 10783,
+      "gained_today": 333,
+      "description": "Uses a top-tier model to audit a codebase and write plans that cheaper models can execute.",
+      "analysis": "improve is a CLI tool that sends your codebase to a frontier LLM for a thorough audit, then produces structured improvement plans that less expensive models can carry out—optimising the cost/quality tradeoff across the planning and execution phases. The pattern of separating high-reasoning planning from low-cost execution is gaining traction as teams look to cut LLM spend without sacrificing code-quality oversight. shadcn's large and engaged following amplifies every release. Engineering teams and indie developers already in the shadcn/ui ecosystem who want AI-driven code reviews without an all-or-nothing frontier-model price tag will get the most from it.",
+      "llm_api": "required",
+      "llm_api_note": "Requires a frontier LLM API key (OpenAI/Anthropic) for the audit step",
+      "topics": ["Code Intelligence", "AI Agents", "Developer Tools"]
+    },
+    {
+      "rank": 5,
+      "owner": "addyosmani",
+      "repo": "agent-skills",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "language": "JavaScript",
+      "stars": 115867,
+      "gained_today": 788,
+      "description": "A collection of production-grade engineering skills for AI coding agents.",
+      "analysis": "agent-skills is a curated library of production-ready skill files for AI coding agents, covering testing, security, performance, accessibility, and architectural best practices in a plug-and-play format compatible with Claude Code, Cursor, and similar tools. The repo acts as a quality guardrail layer that developers drop into any AI-assisted project to enforce standards without writing the prompts themselves. Trending on organic interest, amplified by Addy Osmani's strong reputation in the web performance community and the growing demand for structured agent guidance. Developers who want their AI coding tools to consistently follow engineering best practices across projects are the target audience.",
+      "llm_api": "required",
+      "llm_api_note": "Skill files for AI coding agents; useless without a host agent (Claude Code, Cursor, etc.)",
+      "topics": ["Agent Skills & Plugins", "Developer Tools", "AI Agents"]
+    }
+  ]
+}

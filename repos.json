@@ -57,7 +57,8 @@
     "2026-11-03",
     "2026-11-05",
     "2026-11-07",
-    "2026-11-09"
+    "2026-11-09",
+    "2026-11-11"
   ],
   "repos": [
     {
@@ -1468,23 +1469,30 @@
           "rank": 3,
           "stars": 96973,
           "gained": 547
+        },
+        {
+          "date": "2026-11-11",
+          "rank": 5,
+          "stars": 115867,
+          "gained": 788
         }
       ],
       "language": "JavaScript",
       "lang_color": "#f1e05a",
-      "description": "Production-grade engineering skills for AI coding agents",
-      "analysis": "Agent-skills is a curated library of production-ready prompts, workflows, and conventions designed as installable skills for AI coding agents such as Claude Code, Cursor, and Copilot, covering code review, testing, refactoring, documentation, and more. Authored by Addy Osmani (Google Chrome engineering lead), the repo's quality and pedigree keep it consistently trending as the agent-skills ecosystem standardizes. It addresses a real pain point: raw LLM coding agents need structured guidance to behave consistently on complex, multi-step engineering tasks. Developers using any major AI coding agent who want to bootstrap reliable, expert-level behaviors without writing prompts from scratch will find this directly applicable.",
+      "description": "A collection of production-grade engineering skills for AI coding agents.",
+      "analysis": "agent-skills is a curated library of production-ready skill files for AI coding agents, covering testing, security, performance, accessibility, and architectural best practices in a plug-and-play format compatible with Claude Code, Cursor, and similar tools. The repo acts as a quality guardrail layer that developers drop into any AI-assisted project to enforce standards without writing the prompts themselves. Trending on organic interest, amplified by Addy Osmani's strong reputation in the web performance community and the growing demand for structured agent guidance. Developers who want their AI coding tools to consistently follow engineering best practices across projects are the target audience.",
       "llm_api": "required",
-      "llm_api_note": "Skills for LLM coding agents — useless without Claude Code, Cursor, or equivalent",
+      "llm_api_note": "Skill files for AI coding agents; useless without a host agent (Claude Code, Cursor, etc.)",
       "topics": [
         "Agent Skills & Plugins",
-        "Developer Tools"
+        "Developer Tools",
+        "AI Agents"
       ],
       "first_seen": "2026-08-11",
-      "last_seen": "2026-09-19",
+      "last_seen": "2026-11-11",
       "best_rank": 3,
-      "latest_stars": 96973,
-      "max_gained": 680
+      "latest_stars": 115867,
+      "max_gained": 788
     },
     {
       "owner": "ZhuLinsen",
@@ -1496,23 +1504,30 @@
           "rank": 5,
           "stars": 62082,
           "gained": 317
+        },
+        {
+          "date": "2026-11-11",
+          "rank": 2,
+          "stars": 70125,
+          "gained": 429
         }
       ],
       "language": "Python",
       "lang_color": "#3572A5",
-      "description": "LLM-driven stock analysis system with multi-source market data, real-time news, and automated notifications",
-      "analysis": "daily_stock_analysis is a Python system that fuses multi-source market data feeds, real-time financial news, and LLM-powered reasoning to generate daily stock analysis reports delivered via automated notifications. It is trending on organic interest from the rapidly growing community combining LLMs with quantitative finance and algorithmic trading. The project appeals to retail quants, data scientists, and Python developers who want a ready-made pipeline for AI-assisted market research without building the data integration layer from scratch. It pairs well with brokerage APIs and notification services like Telegram or email.",
+      "description": "An LLM-powered stock analysis system covering multiple markets, with market data, news, dashboards, notifications, and scheduled runs.",
+      "analysis": "daily_stock_analysis is a full-stack Python platform that pulls market data and news, feeds them through an LLM, and delivers daily analysis via dashboards and push notifications on a scheduled basis. It covers multiple global markets, making it broadly applicable rather than US-only. Trending on organic interest—the LLM-meets-retail-investing niche continues to draw consistent attention, and this repo's breadth (multi-market, news aggregation, notifications) gives it recurring boosts. Retail investors and quant-curious Python developers who want an automated morning briefing will find it a solid reference implementation.",
       "llm_api": "required",
-      "llm_api_note": "Pick an LLM provider key (Gemini/Claude/…); Ollama for local runs",
+      "llm_api_note": "Core analysis calls hosted LLM APIs; local Ollama path may exist",
       "topics": [
         "Finance & Trading",
-        "AI Agents"
+        "AI Agents",
+        "LLM Infrastructure"
       ],
       "first_seen": "2026-08-11",
-      "last_seen": "2026-08-11",
-      "best_rank": 5,
-      "latest_stars": 62082,
-      "max_gained": 317
+      "last_seen": "2026-11-11",
+      "best_rank": 2,
+      "latest_stars": 70125,
+      "max_gained": 429
     },
     {
       "owner": "cathrynlavery",
@@ -5289,21 +5304,29 @@
           "rank": 2,
           "stars": 19761,
           "gained": 3324
+        },
+        {
+          "date": "2026-11-11",
+          "rank": 1,
+          "stars": 24805,
+          "gained": 2842
         }
       ],
       "language": "TypeScript",
       "lang_color": "#3178c6",
-      "description": "An open source design system that's fully customizable and agent ready",
-      "analysis": "Astryx is Meta's newly open-sourced React 19 design system offering 150+ accessible, TypeScript-typed components built on StyleX, with seven ready-made themes, dark mode, and a CLI purpose-built for both humans and AI coding assistants. It solves the problem of inconsistent UI across large React projects by giving teams a composable, lockout-free foundation they can override with Tailwind, CSS modules, or plain CSS. The massive daily gain suggests Meta's launch post drove significant traffic from frontend engineers. Front-end teams standardizing on a React design system — especially those using AI coding assistants for scaffolding — are the primary audience.",
-      "llm_api": "none",
+      "description": "An open-source, customizable design system built to work with AI agents.",
+      "analysis": "Astryx is Meta's open-source React design system offering 150+ accessible components, theming, and templates built on StyleX. It was designed so human developers and AI coding assistants share the same documentation and CLI, reducing drift between human- and agent-generated UI code. The large star surge likely reflects excitement around Meta open-sourcing a production-grade design system explicitly tuned for the AI-assisted development era. Front-end developers and teams using React who want an accessible, AI-friendly component foundation will find it immediately useful.",
+      "llm_api": "optional",
       "topics": [
         "Design",
-        "Developer Tools"
+        "Developer Tools",
+        "AI Agents"
       ],
+      "llm_api_note": "React component library; AI coding integration is a bonus, no API key required",
       "first_seen": "2026-11-09",
-      "last_seen": "2026-11-09",
-      "best_rank": 2,
-      "latest_stars": 19761,
+      "last_seen": "2026-11-11",
+      "best_rank": 1,
+      "latest_stars": 24805,
       "max_gained": 3324
     },
     {
@@ -5387,6 +5410,61 @@
       "best_rank": 5,
       "latest_stars": 19975,
       "max_gained": 560
+    },
+    {
+      "owner": "GoogleChrome",
+      "repo": "modern-web-guidance-src",
+      "url": "https://github.com/GoogleChrome/modern-web-guidance-src",
+      "appearances": [
+        {
+          "date": "2026-11-11",
+          "rank": 3,
+          "stars": 1679,
+          "gained": 133
+        }
+      ],
+      "language": "TypeScript",
+      "lang_color": "#3178c6",
+      "description": "Skills that give AI coding agents up-to-date knowledge of web platform APIs, best practices, and browser compatibility.",
+      "analysis": "modern-web-guidance-src is a first-party Chrome/Google repository of agent skill files that teach AI coding tools current web platform APIs, browser compatibility data, and modern best practices, steering agents away from outdated polyfills and legacy JavaScript patterns. Its value is credibility: guidance authored by the Chrome team carries more weight than community docs for keeping AI-generated frontend code standards-compliant. Developer interest in improving the accuracy of AI-generated web code has grown sharply, explaining the trending spike. Web developers using Claude Code, Cursor, or GitHub Copilot to build frontend projects are the primary audience.",
+      "llm_api": "required",
+      "llm_api_note": "Skill files for AI coding agents; useless without a host agent (Claude Code, Cursor, etc.)",
+      "topics": [
+        "Agent Skills & Plugins",
+        "Developer Tools"
+      ],
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "best_rank": 3,
+      "latest_stars": 1679,
+      "max_gained": 133
+    },
+    {
+      "owner": "shadcn",
+      "repo": "improve",
+      "url": "https://github.com/shadcn/improve",
+      "appearances": [
+        {
+          "date": "2026-11-11",
+          "rank": 4,
+          "stars": 10783,
+          "gained": 333
+        }
+      ],
+      "description": "Uses a top-tier model to audit a codebase and write plans that cheaper models can execute.",
+      "analysis": "improve is a CLI tool that sends your codebase to a frontier LLM for a thorough audit, then produces structured improvement plans that less expensive models can carry out—optimising the cost/quality tradeoff across the planning and execution phases. The pattern of separating high-reasoning planning from low-cost execution is gaining traction as teams look to cut LLM spend without sacrificing code-quality oversight. shadcn's large and engaged following amplifies every release. Engineering teams and indie developers already in the shadcn/ui ecosystem who want AI-driven code reviews without an all-or-nothing frontier-model price tag will get the most from it.",
+      "llm_api": "required",
+      "llm_api_note": "Requires a frontier LLM API key (OpenAI/Anthropic) for the audit step",
+      "topics": [
+        "Code Intelligence",
+        "AI Agents",
+        "Developer Tools"
+      ],
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "best_rank": 4,
+      "latest_stars": 10783,
+      "max_gained": 333
     }
   ]
 }
