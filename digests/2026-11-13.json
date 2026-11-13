@@ -1,0 +1,76 @@
+{
+  "date": "2026-11-13",
+  "title": "GitHub Trending Top 5",
+  "repos": [
+    {
+      "rank": 1,
+      "owner": "alibaba",
+      "repo": "open-code-review",
+      "url": "https://github.com/alibaba/open-code-review",
+      "language": "Go",
+      "stars": 50537,
+      "gained_today": 206,
+      "description": "A hybrid code review tool that combines deterministic pipelines with an LLM agent to leave line-level comments.",
+      "analysis": "Open Code Review is Alibaba's open-sourced AI code review CLI that reads Git diffs or whole files and generates precise line-level comments via an LLM agent. It trended as an Alibaba open-source release targeting developer workflow automation and CI/CD integration. Teams using Claude Code, Codex, Cursor, or Kimi Code can plug it in through Delegation Mode, which leverages the host agent's existing model and requires no separate API key configuration.",
+      "llm_api": "required",
+      "llm_api_note": "BYO key (OpenAI/Anthropic); Delegation Mode uses host agent's model",
+      "topics": ["Code Intelligence", "AI Agents", "Developer Tools"]
+    },
+    {
+      "rank": 2,
+      "owner": "GoogleChrome",
+      "repo": "modern-web-guidance-src",
+      "url": "https://github.com/GoogleChrome/modern-web-guidance-src",
+      "language": "TypeScript",
+      "stars": 4707,
+      "gained_today": 1875,
+      "description": "Keeps coding agents current on modern web best practices.",
+      "analysis": "Modern Web Guidance is a cross-browser initiative by Google Chrome, Microsoft Edge, and Mozilla/MDN that packages up-to-date web platform knowledge—modern CSS, browser APIs, accessibility, and performance—as agent-consumable skills. It spiked today because it represents a rare joint effort by all major browser vendors to stop AI tools from generating outdated or legacy web code. Frontend developers and teams relying on AI coding assistants will find the CLI handy for scanning codebases for legacy patterns and retrieving guidance by ID.",
+      "llm_api": "optional",
+      "llm_api_note": "Static guidance files work standalone; eval tooling may use an LLM key",
+      "topics": ["Developer Tools", "Education", "AI Agents"]
+    },
+    {
+      "rank": 3,
+      "owner": "openai",
+      "repo": "codex-security",
+      "url": "https://github.com/openai/codex-security",
+      "language": "TypeScript",
+      "stars": 13078,
+      "gained_today": 754,
+      "description": "A CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities.",
+      "analysis": "Codex Security is OpenAI's AI-powered vulnerability scanner that finds, investigates, and patches security flaws across a codebase, with output in SARIF, JSON, or CSV for existing security toolchains. It trended as an official OpenAI product targeting the growing AI-assisted security tooling space, with tight Codex integration appealing to developers already in that ecosystem. Security engineers and DevOps teams can run it interactively in Codex, from the terminal, or automated in GitHub Actions and containers.",
+      "llm_api": "required",
+      "llm_api_note": "BYO key (OpenAI/Bedrock/OpenRouter/Fireworks); no local-model option",
+      "topics": ["Security & Privacy", "Developer Tools", "AI Agents"]
+    },
+    {
+      "rank": 4,
+      "owner": "ZhuLinsen",
+      "repo": "daily_stock_analysis",
+      "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
+      "language": "Python",
+      "stars": 71530,
+      "gained_today": 272,
+      "description": "An LLM-driven stock analysis system covering multiple markets, with market data, news, a decision dashboard, notifications, and scheduled runs.",
+      "analysis": "Daily Stock Analysis is a self-hosted, LLM-powered pipeline that evaluates a personal watchlist across global markets—A-shares, US, HK, Japan, Korea, Taiwan, and ETFs—producing a scored decision dashboard pushed to Slack, Telegram, Feishu, or email. It trends on organic community interest among Chinese retail investors and quant enthusiasts seeking a free alternative to paid services. Python developers and individual investors can deploy it on GitHub Actions or Docker, with free market data sources and optional news search integrations.",
+      "llm_api": "required",
+      "llm_api_note": "BYO key (Gemini/Claude/OpenAI/DeepSeek); Ollama local models also supported",
+      "topics": ["Finance & Trading", "AI Agents", "LLM Infrastructure"]
+    },
+    {
+      "rank": 5,
+      "owner": "we-promise",
+      "repo": "sure",
+      "url": "https://github.com/we-promise/sure",
+      "language": "Ruby",
+      "stars": 14670,
+      "gained_today": 944,
+      "description": "A personal finance app.",
+      "analysis": "Sure is a community-maintained fork of the archived Maybe Finance project, delivering self-hosted personal finance management with accounts, net worth tracking, budgeting, and transaction history across browser, macOS, and mobile apps. It trended today as the fork gained visibility following Maybe Finance going dormant, rallying users who want a privacy-first, free alternative to Mint or Monarch Money. Personal finance enthusiasts and Rails developers can self-host it via Docker or one-click PaaS deploys on Render or PikaPods.",
+      "llm_api": "optional",
+      "llm_api_note": "Optional OpenAI integration; core finance app works with no LLM",
+      "topics": ["Finance & Trading", "Developer Tools", "Productivity & Research"]
+    }
+  ]
+}

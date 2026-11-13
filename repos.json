@@ -58,7 +58,8 @@
     "2026-11-05",
     "2026-11-07",
     "2026-11-09",
-    "2026-11-11"
+    "2026-11-11",
+    "2026-11-13"
   ],
   "repos": [
     {
@@ -1510,23 +1511,29 @@
           "rank": 2,
           "stars": 70125,
           "gained": 429
+        },
+        {
+          "date": "2026-11-13",
+          "rank": 4,
+          "stars": 71530,
+          "gained": 272
         }
       ],
       "language": "Python",
       "lang_color": "#3572A5",
-      "description": "An LLM-powered stock analysis system covering multiple markets, with market data, news, dashboards, notifications, and scheduled runs.",
-      "analysis": "daily_stock_analysis is a full-stack Python platform that pulls market data and news, feeds them through an LLM, and delivers daily analysis via dashboards and push notifications on a scheduled basis. It covers multiple global markets, making it broadly applicable rather than US-only. Trending on organic interest—the LLM-meets-retail-investing niche continues to draw consistent attention, and this repo's breadth (multi-market, news aggregation, notifications) gives it recurring boosts. Retail investors and quant-curious Python developers who want an automated morning briefing will find it a solid reference implementation.",
+      "description": "An LLM-driven stock analysis system covering multiple markets, with market data, news, a decision dashboard, notifications, and scheduled runs.",
+      "analysis": "Daily Stock Analysis is a self-hosted, LLM-powered pipeline that evaluates a personal watchlist across global markets—A-shares, US, HK, Japan, Korea, Taiwan, and ETFs—producing a scored decision dashboard pushed to Slack, Telegram, Feishu, or email. It trends on organic community interest among Chinese retail investors and quant enthusiasts seeking a free alternative to paid services. Python developers and individual investors can deploy it on GitHub Actions or Docker, with free market data sources and optional news search integrations.",
       "llm_api": "required",
-      "llm_api_note": "Core analysis calls hosted LLM APIs; local Ollama path may exist",
+      "llm_api_note": "BYO key (Gemini/Claude/OpenAI/DeepSeek); Ollama local models also supported",
       "topics": [
         "Finance & Trading",
         "AI Agents",
         "LLM Infrastructure"
       ],
       "first_seen": "2026-08-11",
-      "last_seen": "2026-11-11",
+      "last_seen": "2026-11-13",
       "best_rank": 2,
-      "latest_stars": 70125,
+      "latest_stars": 71530,
       "max_gained": 429
     },
     {
@@ -3398,22 +3405,29 @@
           "rank": 5,
           "stars": 45136,
           "gained": 323
+        },
+        {
+          "date": "2026-11-13",
+          "rank": 1,
+          "stars": 50537,
+          "gained": 206
         }
       ],
       "language": "Go",
       "lang_color": "#00ADD8",
-      "description": "A code review tool combining deterministic pipelines with an LLM agent, with line-level comments and multi-language security and bug rules.",
-      "analysis": "Open Code Review is a CLI tool from Alibaba that pairs deterministic rule-based pipelines with an LLM agent to produce line-level code review comments across multiple languages, with built-in security and bug rules. Code handles the steps that must be precise — file selection, bundling related files, and positioning comments — while the agent handles dynamic context gathering like reading full files and searching the codebase, a hybrid that avoids both LLM hallucination and linter inflexibility. It trended today because Alibaba's open-source release brings enterprise-grade CI/CD integrations (GitHub Actions, GitLab, Gerrit) and coding agent plugins to the wider community. DevOps engineers and teams wanting automated code review in existing pipelines are the primary audience; a delegation mode lets your existing coding agent do the review with no separate OCR API key needed.",
-      "llm_api": "optional",
-      "llm_api_note": "Default mode requires LLM key; delegation mode uses your coding agent's LLM",
+      "description": "A hybrid code review tool that combines deterministic pipelines with an LLM agent to leave line-level comments.",
+      "analysis": "Open Code Review is Alibaba's open-sourced AI code review CLI that reads Git diffs or whole files and generates precise line-level comments via an LLM agent. It trended as an Alibaba open-source release targeting developer workflow automation and CI/CD integration. Teams using Claude Code, Codex, Cursor, or Kimi Code can plug it in through Delegation Mode, which leverages the host agent's existing model and requires no separate API key configuration.",
+      "llm_api": "required",
+      "llm_api_note": "BYO key (OpenAI/Anthropic); Delegation Mode uses host agent's model",
       "topics": [
         "Code Intelligence",
+        "AI Agents",
         "Developer Tools"
       ],
       "first_seen": "2026-09-15",
-      "last_seen": "2026-10-09",
+      "last_seen": "2026-11-13",
       "best_rank": 1,
-      "latest_stars": 45136,
+      "latest_stars": 50537,
       "max_gained": 3290
     },
     {
@@ -5421,23 +5435,30 @@
           "rank": 3,
           "stars": 1679,
           "gained": 133
+        },
+        {
+          "date": "2026-11-13",
+          "rank": 2,
+          "stars": 4707,
+          "gained": 1875
         }
       ],
       "language": "TypeScript",
       "lang_color": "#3178c6",
-      "description": "Skills that give AI coding agents up-to-date knowledge of web platform APIs, best practices, and browser compatibility.",
-      "analysis": "modern-web-guidance-src is a first-party Chrome/Google repository of agent skill files that teach AI coding tools current web platform APIs, browser compatibility data, and modern best practices, steering agents away from outdated polyfills and legacy JavaScript patterns. Its value is credibility: guidance authored by the Chrome team carries more weight than community docs for keeping AI-generated frontend code standards-compliant. Developer interest in improving the accuracy of AI-generated web code has grown sharply, explaining the trending spike. Web developers using Claude Code, Cursor, or GitHub Copilot to build frontend projects are the primary audience.",
-      "llm_api": "required",
-      "llm_api_note": "Skill files for AI coding agents; useless without a host agent (Claude Code, Cursor, etc.)",
+      "description": "Keeps coding agents current on modern web best practices.",
+      "analysis": "Modern Web Guidance is a cross-browser initiative by Google Chrome, Microsoft Edge, and Mozilla/MDN that packages up-to-date web platform knowledge—modern CSS, browser APIs, accessibility, and performance—as agent-consumable skills. It spiked today because it represents a rare joint effort by all major browser vendors to stop AI tools from generating outdated or legacy web code. Frontend developers and teams relying on AI coding assistants will find the CLI handy for scanning codebases for legacy patterns and retrieving guidance by ID.",
+      "llm_api": "optional",
+      "llm_api_note": "Static guidance files work standalone; eval tooling may use an LLM key",
       "topics": [
-        "Agent Skills & Plugins",
-        "Developer Tools"
+        "Developer Tools",
+        "Education",
+        "AI Agents"
       ],
       "first_seen": "2026-11-11",
-      "last_seen": "2026-11-11",
-      "best_rank": 3,
-      "latest_stars": 1679,
-      "max_gained": 133
+      "last_seen": "2026-11-13",
+      "best_rank": 2,
+      "latest_stars": 4707,
+      "max_gained": 1875
     },
     {
       "owner": "shadcn",
@@ -5465,6 +5486,64 @@
       "best_rank": 4,
       "latest_stars": 10783,
       "max_gained": 333
+    },
+    {
+      "owner": "openai",
+      "repo": "codex-security",
+      "url": "https://github.com/openai/codex-security",
+      "appearances": [
+        {
+          "date": "2026-11-13",
+          "rank": 3,
+          "stars": 13078,
+          "gained": 754
+        }
+      ],
+      "language": "TypeScript",
+      "lang_color": "#3178c6",
+      "description": "A CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities.",
+      "analysis": "Codex Security is OpenAI's AI-powered vulnerability scanner that finds, investigates, and patches security flaws across a codebase, with output in SARIF, JSON, or CSV for existing security toolchains. It trended as an official OpenAI product targeting the growing AI-assisted security tooling space, with tight Codex integration appealing to developers already in that ecosystem. Security engineers and DevOps teams can run it interactively in Codex, from the terminal, or automated in GitHub Actions and containers.",
+      "llm_api": "required",
+      "llm_api_note": "BYO key (OpenAI/Bedrock/OpenRouter/Fireworks); no local-model option",
+      "topics": [
+        "Security & Privacy",
+        "Developer Tools",
+        "AI Agents"
+      ],
+      "first_seen": "2026-11-13",
+      "last_seen": "2026-11-13",
+      "best_rank": 3,
+      "latest_stars": 13078,
+      "max_gained": 754
+    },
+    {
+      "owner": "we-promise",
+      "repo": "sure",
+      "url": "https://github.com/we-promise/sure",
+      "appearances": [
+        {
+          "date": "2026-11-13",
+          "rank": 5,
+          "stars": 14670,
+          "gained": 944
+        }
+      ],
+      "language": "Ruby",
+      "lang_color": "#701516",
+      "description": "A personal finance app.",
+      "analysis": "Sure is a community-maintained fork of the archived Maybe Finance project, delivering self-hosted personal finance management with accounts, net worth tracking, budgeting, and transaction history across browser, macOS, and mobile apps. It trended today as the fork gained visibility following Maybe Finance going dormant, rallying users who want a privacy-first, free alternative to Mint or Monarch Money. Personal finance enthusiasts and Rails developers can self-host it via Docker or one-click PaaS deploys on Render or PikaPods.",
+      "llm_api": "optional",
+      "llm_api_note": "Optional OpenAI integration; core finance app works with no LLM",
+      "topics": [
+        "Finance & Trading",
+        "Developer Tools",
+        "Productivity & Research"
+      ],
+      "first_seen": "2026-11-13",
+      "last_seen": "2026-11-13",
+      "best_rank": 5,
+      "latest_stars": 14670,
+      "max_gained": 944
     }
   ]
 }
