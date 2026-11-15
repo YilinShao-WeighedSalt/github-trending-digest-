@@ -1,0 +1,76 @@
+{
+  "date": "2026-11-15",
+  "title": "GitHub Trending Top 5",
+  "repos": [
+    {
+      "rank": 1,
+      "owner": "dream-num",
+      "repo": "univer",
+      "url": "https://github.com/dream-num/univer",
+      "language": "TypeScript",
+      "stars": 25568,
+      "gained_today": 1041,
+      "description": "An SDK for building an AI-powered office suite that adds editing, calculation, collaboration, and file processing for both people and agents.",
+      "analysis": "Univer is an open-source Office SDK that lets developers embed fully-featured spreadsheet and document editing — including formulas, real-time collaboration, and file conversion — directly into their own applications. It also exposes the same content models and APIs to AI agents, so an agent can read, write, and calculate in the same editor a person uses. It is trending today as the \"AI-native office\" category heats up and teams look for embeddable alternatives to SaaS tools. Front-end engineers building B2B SaaS products, internal tools, or agent-driven data platforms are the primary audience.",
+      "llm_api": "optional",
+      "llm_api_note": "AI SDK add-on is optional; core editing works without an LLM",
+      "topics": ["Documents & Data", "AI Agents", "Developer Tools"]
+    },
+    {
+      "rank": 2,
+      "owner": "ag-ui-protocol",
+      "repo": "ag-ui",
+      "url": "https://github.com/ag-ui-protocol/ag-ui",
+      "language": "TypeScript",
+      "stars": 17811,
+      "gained_today": 393,
+      "description": "A protocol for Agent-User Interaction that brings AI agents into frontend applications.",
+      "analysis": "AG-UI defines a lightweight, event-based protocol for the layer between AI agents and user interfaces: agents emit typed events (streaming text, state mutations, tool calls, human-in-the-loop requests) and frontends render them in real time over SSE, WebSockets, or webhooks. It sits alongside MCP (agent-to-tool) and A2A (agent-to-agent) in the emerging \"agent connectivity\" stack. It is trending as developers standardize agent UX patterns and major frameworks — LangChain, CrewAI, Google ADK, and the Claude Agent SDK — have published native connectors. Frontend engineers and agent-platform teams building agent-powered interfaces across any stack are the target audience.",
+      "llm_api": "required",
+      "llm_api_note": "Protocol is LLM-agnostic; the agent backend that emits events requires an LLM",
+      "topics": ["AI Agents", "MCP & Integrations", "LLM Infrastructure"]
+    },
+    {
+      "rank": 3,
+      "owner": "google-labs-code",
+      "repo": "stitch-skills",
+      "url": "https://github.com/google-labs-code/stitch-skills",
+      "language": "TypeScript",
+      "stars": 9263,
+      "gained_today": 248,
+      "description": "A library of Agent Skills for the Stitch MCP server, compatible with coding agents such as Claude Code and Gemini CLI.",
+      "analysis": "Stitch Skills packages ready-made agent workflows for Google Stitch, a design tool, covering tasks like generating screens from prompts, converting React or Vue code into Stitch designs, and extracting a DESIGN.md design-system manifest that agents can reference. The skills require the Stitch MCP server installed and a compatible coding agent (Claude Code, Gemini CLI, Cursor, Codex, or OpenCode). It is trending today as Google Stitch gains visibility in the AI-native design space and developers explore design↔code agent loops. The primary audience is developers and designers who want their coding agent to participate directly in UI design workflows.",
+      "llm_api": "required",
+      "llm_api_note": "Requires Stitch MCP server + a compatible coding agent (Claude Code, Gemini CLI, etc.)",
+      "topics": ["Agent Skills & Plugins", "MCP & Integrations", "Design"]
+    },
+    {
+      "rank": 4,
+      "owner": "backnotprop",
+      "repo": "plannotator",
+      "url": "https://github.com/backnotprop/plannotator",
+      "language": "TypeScript",
+      "stars": 11800,
+      "gained_today": 860,
+      "description": "A workspace for planning, annotating, and reviewing code alongside agents, with team sharing and one-click feedback to agents.",
+      "analysis": "Plannotator inserts a human review layer between you and AI coding agents: it opens a local browser surface where agents post their plans, diffs, or markdown for annotation, and you can mark up the content and send feedback back to the agent in a single click. It supports Claude Code, Codex, Copilot CLI, Gemini CLI, and a dozen other agents, plus Git, GitHub, GitLab, and VS Code integrations. It is surging today as developers express fatigue with agents that act autonomously on half-baked plans; Plannotator's \"review before action\" model is resonating strongly. Any developer using AI coding assistants for multi-step or high-stakes tasks will find it immediately useful.",
+      "llm_api": "required",
+      "llm_api_note": "Requires a connected AI coding agent (Claude Code, Codex, Copilot, etc.) to function",
+      "topics": ["AI Agents", "Developer Tools", "Productivity & Research"]
+    },
+    {
+      "rank": 5,
+      "owner": "ChromeDevTools",
+      "repo": "chrome-devtools-mcp",
+      "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+      "language": "TypeScript",
+      "stars": 56883,
+      "gained_today": 718,
+      "description": "Gives coding agents access to Chrome DevTools.",
+      "analysis": "chrome-devtools-mcp ships as an MCP server and a CLI that gives coding agents a full-fidelity window into a live Chrome browser: performance trace analysis, network and console debugging with source-mapped stack traces, and Puppeteer-based automation that waits for real action outcomes. It is built by the official Chrome DevTools team, which lends it unusual credibility. It is trending strongly today as browser debugging with agents becomes a mainstream workflow and the official provenance sets it apart from community MCP wrappers. Web developers using Claude Code, Cursor, Copilot, or Gemini CLI for front-end debugging and performance optimization are the core audience.",
+      "llm_api": "required",
+      "llm_api_note": "MCP server — pair with any MCP-compatible coding agent",
+      "topics": ["MCP & Integrations", "Developer Tools"]
+    }
+  ]
+}
