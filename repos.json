@@ -60,7 +60,8 @@
     "2026-11-09",
     "2026-11-11",
     "2026-11-13",
-    "2026-11-15"
+    "2026-11-15",
+    "2026-11-17"
   ],
   "repos": [
     {
@@ -198,22 +199,28 @@
           "rank": 1,
           "stars": 41945,
           "gained": 12602
+        },
+        {
+          "date": "2026-11-17",
+          "rank": 2,
+          "stars": 68991,
+          "gained": 772
         }
       ],
       "language": "Python",
       "lang_color": "#3572A5",
-      "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
-      "analysis": "Last30Days is an AI agent skill that fans out in parallel across Reddit, X, YouTube, TikTok, Hacker News, Polymarket, and the open web—surfacing what real communities are saying about any topic and synthesizing findings into cited, engagement-ranked HTML reports. It solves the staleness problem of standard web search by reaching directly into forums and social platforms where fresh sentiment lives, days before it appears in search indexes. Now ranking #1 this week (up from #3 last week), it is riding a compounding wave of organic adoption as developers embed it into Claude Code and Cursor agentic workflows. Developers, content creators, and research teams who need current community intelligence before a launch or decision will find it immediately useful.",
+      "description": "An AI agent skill that researches a topic across Reddit, X, YouTube, Hacker News, Polymarket, and the web, then summarizes the findings.",
+      "analysis": "last30days is an agent skill that queries Reddit, Hacker News, Polymarket, YouTube, and other platforms in parallel, ranks results by real engagement (upvotes, prediction-market odds), and synthesizes a sourced brief on any topic from the past 30 days. It solves the stale-data problem: AI agents typically rely on training cutoffs, while this brings fresh human-curated signal from the open web. Trending as the agent-skill ecosystem grows and demand for current-event research tools rises. Analysts, researchers, and anyone tracking fast-moving topics like AI tooling or markets will get immediate value.",
       "llm_api": "required",
-      "llm_api_note": "Agent skill — runs inside Claude Code or other skill hosts",
+      "llm_api_note": "Agent skill — requires Claude Code, Codex, or similar host; reranking key optional",
       "topics": [
         "Agent Skills & Plugins",
         "Productivity & Research"
       ],
       "first_seen": "2026-06-08",
-      "last_seen": "2026-06-14",
+      "last_seen": "2026-11-17",
       "best_rank": 1,
-      "latest_stars": 41945,
+      "latest_stars": 68991,
       "max_gained": 12602
     },
     {
@@ -3412,23 +3419,28 @@
           "rank": 1,
           "stars": 50537,
           "gained": 206
+        },
+        {
+          "date": "2026-11-17",
+          "rank": 3,
+          "stars": 53694,
+          "gained": 764
         }
       ],
       "language": "Go",
       "lang_color": "#00ADD8",
-      "description": "A hybrid code review tool that combines deterministic pipelines with an LLM agent to leave line-level comments.",
-      "analysis": "Open Code Review is Alibaba's open-sourced AI code review CLI that reads Git diffs or whole files and generates precise line-level comments via an LLM agent. It trended as an Alibaba open-source release targeting developer workflow automation and CI/CD integration. Teams using Claude Code, Codex, Cursor, or Kimi Code can plug it in through Delegation Mode, which leverages the host agent's existing model and requires no separate API key configuration.",
-      "llm_api": "required",
-      "llm_api_note": "BYO key (OpenAI/Anthropic); Delegation Mode uses host agent's model",
+      "description": "A code review tool that combines deterministic pipelines with an LLM agent, providing line-level comments and multi-language rules.",
+      "analysis": "open-code-review is an AI-powered CLI from Alibaba that reads Git diffs and uses an LLM agent with tool-use to deliver line-level code review comments in multiple languages. In delegation mode it piggybacks on your existing coding agent (Claude Code, Cursor, Codex) with no additional API key. Trending because Alibaba published benchmark results claiming 2× higher precision than Claude Code's built-in review at roughly one-ninth the token cost. Developers and DevOps teams wanting structured automated PR reviews in GitHub Actions or GitLab CI will benefit most.",
+      "llm_api": "optional",
+      "llm_api_note": "Native mode needs a model endpoint; delegation mode uses host agent's existing key",
       "topics": [
         "Code Intelligence",
-        "AI Agents",
         "Developer Tools"
       ],
       "first_seen": "2026-09-15",
-      "last_seen": "2026-11-13",
+      "last_seen": "2026-11-17",
       "best_rank": 1,
-      "latest_stars": 50537,
+      "latest_stars": 53694,
       "max_gained": 3290
     },
     {
@@ -5556,24 +5568,29 @@
           "rank": 1,
           "stars": 25568,
           "gained": 1041
+        },
+        {
+          "date": "2026-11-17",
+          "rank": 5,
+          "stars": 28878,
+          "gained": 1776
         }
       ],
       "language": "TypeScript",
       "lang_color": "#3178c6",
-      "description": "An SDK for building an AI-powered office suite that adds editing, calculation, collaboration, and file processing for both people and agents.",
-      "analysis": "Univer is an open-source Office SDK that lets developers embed fully-featured spreadsheet and document editing — including formulas, real-time collaboration, and file conversion — directly into their own applications. It also exposes the same content models and APIs to AI agents, so an agent can read, write, and calculate in the same editor a person uses. It is trending today as the \"AI-native office\" category heats up and teams look for embeddable alternatives to SaaS tools. Front-end engineers building B2B SaaS products, internal tools, or agent-driven data platforms are the primary audience.",
-      "llm_api": "optional",
+      "description": "An SDK for adding AI-ready office features like editing, calculation, collaboration, and file processing to products.",
+      "analysis": "Univer is an open-source TypeScript SDK for embedding spreadsheet editing, formula calculation, collaboration, and document processing directly into web applications—like embeddable Google Sheets. It runs fully client-side under Apache-2.0 with no commercial license required, and AI agents can use the same Facade APIs to read or modify office content. Trending with 1,776 stars today, suggesting a notable release or viral developer post. Front-end developers building productivity SaaS and teams running AI workflows over office data are the primary audience.",
+      "llm_api": "none",
       "llm_api_note": "AI SDK add-on is optional; core editing works without an LLM",
       "topics": [
         "Documents & Data",
-        "AI Agents",
         "Developer Tools"
       ],
       "first_seen": "2026-11-15",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-17",
       "best_rank": 1,
-      "latest_stars": 25568,
-      "max_gained": 1041
+      "latest_stars": 28878,
+      "max_gained": 1776
     },
     {
       "owner": "ag-ui-protocol",
@@ -5689,6 +5706,62 @@
       "best_rank": 5,
       "latest_stars": 56883,
       "max_gained": 718
+    },
+    {
+      "owner": "elementalsouls",
+      "repo": "Claude-BugHunter",
+      "url": "https://github.com/elementalsouls/Claude-BugHunter",
+      "appearances": [
+        {
+          "date": "2026-11-17",
+          "rank": 1,
+          "stars": 9156,
+          "gained": 1007
+        }
+      ],
+      "language": "Python",
+      "lang_color": "#3572A5",
+      "description": "A Claude Code skill bundle for bug hunting and external red-team work, with 82 skills and 15 slash commands.",
+      "analysis": "Claude-BugHunter is a bundle of 82 skills and 15 slash commands for bug bounty hunters and red-teamers using Claude Code or similar AI coding agents. It covers web-app vulnerability classes, reconnaissance, perimeter attacks, and report writing, with built-in scope checks to keep work authorized. Trending as AI-assisted security testing gains traction and the Claude Code skill ecosystem matures. Bug bounty hunters and professional penetration testers targeting external, authorized assets will find it most useful.",
+      "llm_api": "required",
+      "llm_api_note": "Claude Code skill — requires Claude Code or compatible agent host to run",
+      "topics": [
+        "Agent Skills & Plugins",
+        "Security & Privacy"
+      ],
+      "first_seen": "2026-11-17",
+      "last_seen": "2026-11-17",
+      "best_rank": 1,
+      "latest_stars": 9156,
+      "max_gained": 1007
+    },
+    {
+      "owner": "Tencent",
+      "repo": "LoopForge",
+      "url": "https://github.com/Tencent/LoopForge",
+      "appearances": [
+        {
+          "date": "2026-11-17",
+          "rank": 4,
+          "stars": 3085,
+          "gained": 590
+        }
+      ],
+      "language": "Go",
+      "lang_color": "#00ADD8",
+      "description": "Self-hosted workflows that orchestrate coding agents such as CodeBuddy, Codex, and Claude Code, with human approval gates.",
+      "analysis": "LoopForge is a self-hosted platform that wraps AI coding CLIs (Claude Code, Codex, CodeBuddy) in Docker sandboxes, adding roles, repeatable workflow scripts called SOPs, and human approval gates for multi-agent software delivery. It solves the governance problem: teams want coding agents to open PRs and ship code, but need auditable checkpoints before merges reach main. Trending on organic interest as enterprises move from AI-coding experiments to production pipelines and demand self-hosted, auditable setups. Platform engineers and tech leads adopting coding agents will find it most applicable.",
+      "llm_api": "optional",
+      "llm_api_note": "Platform is key-free; individual agent steps (Claude Code, Codex) need their own creds",
+      "topics": [
+        "AI Agents",
+        "Developer Tools"
+      ],
+      "first_seen": "2026-11-17",
+      "last_seen": "2026-11-17",
+      "best_rank": 4,
+      "latest_stars": 3085,
+      "max_gained": 590
     }
   ]
 }
