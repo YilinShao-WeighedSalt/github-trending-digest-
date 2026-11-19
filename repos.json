@@ -61,7 +61,8 @@
     "2026-11-11",
     "2026-11-13",
     "2026-11-15",
-    "2026-11-17"
+    "2026-11-17",
+    "2026-11-19"
   ],
   "repos": [
     {
@@ -1773,23 +1774,30 @@
           "rank": 5,
           "stars": 2939,
           "gained": 152
+        },
+        {
+          "date": "2026-11-19",
+          "rank": 5,
+          "stars": 17537,
+          "gained": 383
         }
       ],
       "language": "TypeScript",
       "lang_color": "#3178c6",
-      "description": "Cursor plugin specification and official plugins",
-      "analysis": "cursor/plugins is the official plugin specification and reference plugin collection for the Cursor AI code editor, defining how third-party developers can extend Cursor's capabilities with custom tools and integrations. It trended today as Cursor continues to gain traction among AI-assisted developers, likely following a plugin API announcement or a notable community-built plugin going viral. TypeScript developers who use Cursor as their primary IDE and want to build custom automations or integrate internal tools directly into the editor are the primary audience.",
+      "description": "Cursor plugin specification and official plugins.",
+      "analysis": "The cursor/plugins repository is the official plugin marketplace and specification for Cursor, the AI-powered code editor. Each plugin bundles agent skills, editor rules, and MCP server definitions into a single installable directory, covering developer tools like code review and CI alongside third-party integrations for Gmail, Salesforce, and finance workflows. The repo trended as the Cursor ecosystem matures and developers look to build, share, and discover extensions for their AI editor. Front-end engineers, full-stack teams, and enterprise users building Cursor-centric workflows are the primary audience.",
       "llm_api": "required",
-      "llm_api_note": "Plugins for the Cursor editor",
+      "llm_api_note": "Plugins are extensions for Cursor AI editor; useless without a Cursor account",
       "topics": [
         "Agent Skills & Plugins",
-        "Developer Tools"
+        "Developer Tools",
+        "MCP & Integrations"
       ],
       "first_seen": "2026-08-15",
-      "last_seen": "2026-08-15",
+      "last_seen": "2026-11-19",
       "best_rank": 5,
-      "latest_stars": 2939,
-      "max_gained": 152
+      "latest_stars": 17537,
+      "max_gained": 383
     },
     {
       "owner": "nautechsystems",
@@ -2763,21 +2771,27 @@
           "rank": 5,
           "stars": 57001,
           "gained": 1005
+        },
+        {
+          "date": "2026-11-19",
+          "rank": 4,
+          "stars": 66827,
+          "gained": 301
         }
       ],
       "language": "Python",
       "lang_color": "#3572A5",
-      "description": "Train a 64M-parameter LLM from scratch in just 2h!",
-      "analysis": "MiniMind walks through every stage of LLM training—tokenization, pre-training, instruction fine-tuning, and RLHF alignment—for a 64M-parameter model that runs to completion in about two hours on consumer hardware. It demystifies transformer internals without requiring cloud credits or research-scale clusters, making it a practical curriculum for learning by doing. Likely spiked on organic interest as students and ML practitioners seek affordable, end-to-end LLM training experience. Ideal for ML students, engineers new to LLM internals, and educators who want a complete, reproducible training walkthrough.",
+      "description": "Trains a 64M-parameter LLM from scratch in about two hours.",
+      "analysis": "MiniMind is a from-scratch PyTorch implementation that trains a 64-million-parameter language model in roughly two hours on consumer hardware. The project walks through every layer of a modern LLM — tokenizer, attention, training loop, and RLHF alignment — making it an unusually approachable hands-on tutorial for understanding how LLMs are built from the ground up. It has accumulated over 66k stars on sustained community demand for self-build LLM curricula. ML students, researchers exploring architecture modifications, and engineers who want intuition before tuning production models are the natural audience.",
       "llm_api": "none",
       "topics": [
-        "Science & ML",
-        "LLM Infrastructure"
+        "Education",
+        "Science & ML"
       ],
       "first_seen": "2026-09-01",
-      "last_seen": "2026-09-01",
-      "best_rank": 5,
-      "latest_stars": 57001,
+      "last_seen": "2026-11-19",
+      "best_rank": 4,
+      "latest_stars": 66827,
       "max_gained": 1005
     },
     {
@@ -3119,23 +3133,29 @@
           "rank": 2,
           "stars": 308452,
           "gained": 1037
+        },
+        {
+          "date": "2026-11-19",
+          "rank": 2,
+          "stars": 322037,
+          "gained": 2029
         }
       ],
       "language": "Shell",
       "lang_color": "#89e051",
-      "description": "An agentic skills framework and methodology for software development.",
-      "analysis": "Superpowers is a composable set of agent skills that bakes a plan-first, test-driven, review-gated software development methodology directly into AI coding agents — no manual prompting required. It trended on organic interest as structured vibe-coding workflows gain traction, plus new native plugin support for Muse, Pi, Hermes, and Devin CLI expanded its reach. Developers using Claude Code, Codex, Cursor, Gemini CLI, or GitHub Copilot will find it keeps agent sessions disciplined: the agent brainstorms requirements, writes a plan, codes in a RED-GREEN-REFACTOR loop, then verifies before closing. Skills install in one command and compose freely.",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "analysis": "Superpowers installs a complete software-development methodology into coding agents like Claude Code, Cursor, Codex, and about a dozen more harnesses. Rather than letting agents dive straight into code, it enforces spec drafting, planning, TDD, and verification before declaring work done — composable skill files trigger the right workflow at each phase automatically. The framework reached the top of trending as the agentic coding ecosystem matures and developers search for structure to rein in autonomous agents. Any developer frustrated by agents that skip requirements or fail silently should evaluate it.",
       "llm_api": "required",
-      "llm_api_note": "Agent skills framework — useless without Claude Code, Codex, Cursor, or similar",
+      "llm_api_note": "Skill files are inert without a supported agent harness (Claude Code, Cursor, Codex CLI, Gemini CLI, etc.)",
       "topics": [
         "Agent Skills & Plugins",
         "Developer Tools"
       ],
       "first_seen": "2026-09-09",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-11-19",
       "best_rank": 2,
-      "latest_stars": 308452,
-      "max_gained": 1037
+      "latest_stars": 322037,
+      "max_gained": 2029
     },
     {
       "owner": "pascalorg",
@@ -4564,23 +4584,30 @@
           "rank": 4,
           "stars": 54011,
           "gained": 580
+        },
+        {
+          "date": "2026-11-19",
+          "rank": 3,
+          "stars": 60515,
+          "gained": 899
         }
       ],
       "language": "Python",
       "lang_color": "#3572A5",
-      "description": "A project to make arbitrary software controllable by AI agents through command-line interfaces, with an accompanying CLI hub.",
-      "analysis": "CLI-Anything solves the 'tool surface' problem in agentic workflows by generating command-line interfaces for any software — from GIMP and Blender to LibreOffice — so AI agents can control them without brittle GUI automation. CLI-Hub, the companion registry, lets users browse and install community-built CLIs with a single command. It trended on growing demand for expanding what AI coding agents can actually act on; automation engineers, creative-workflow teams, and researchers who need agents to operate domain-specific desktop tools will find it a practical unlock.",
-      "llm_api": "required",
-      "llm_api_note": "CLI generator runs inside Claude Code, Cursor, or Codex",
+      "description": "CLI-Anything: Making ALL Software Agent-Native.",
+      "analysis": "CLI-Anything generates structured command-line interfaces for existing GUI and desktop applications — GIMP, Blender, LibreOffice, Zotero — so AI agents can drive them without fragile screen scraping. Each generated CLI wraps the real software's backend and returns JSON output, giving agents full programmatic access to complex apps that lack REST APIs. A companion CLI-Hub registry lets teams browse and install community-contributed CLIs via pip. It's best suited to power users and automation engineers who want agents to handle desktop workflows that have never been accessible to code.",
+      "llm_api": "optional",
+      "llm_api_note": "Generated CLIs run standalone; LLM needed for initial generation or agent-driven automation",
       "topics": [
         "AI Agents",
+        "Developer Tools",
         "MCP & Integrations"
       ],
       "first_seen": "2026-10-17",
-      "last_seen": "2026-10-17",
-      "best_rank": 4,
-      "latest_stars": 54011,
-      "max_gained": 580
+      "last_seen": "2026-11-19",
+      "best_rank": 3,
+      "latest_stars": 60515,
+      "max_gained": 899
     },
     {
       "owner": "anomalyco",
@@ -5717,23 +5744,29 @@
           "rank": 1,
           "stars": 9156,
           "gained": 1007
+        },
+        {
+          "date": "2026-11-19",
+          "rank": 1,
+          "stars": 12440,
+          "gained": 1353
         }
       ],
       "language": "Python",
       "lang_color": "#3572A5",
-      "description": "A Claude Code skill bundle for bug hunting and external red-team work, with 82 skills and 15 slash commands.",
-      "analysis": "Claude-BugHunter is a bundle of 82 skills and 15 slash commands for bug bounty hunters and red-teamers using Claude Code or similar AI coding agents. It covers web-app vulnerability classes, reconnaissance, perimeter attacks, and report writing, with built-in scope checks to keep work authorized. Trending as AI-assisted security testing gains traction and the Claude Code skill ecosystem matures. Bug bounty hunters and professional penetration testers targeting external, authorized assets will find it most useful.",
+      "description": "A Claude Code skill bundle for bug hunting and external red-team work.",
+      "analysis": "Claude-BugHunter is a self-contained Claude Code skill bundle packaging 83 skills and 15 slash commands for authorized bug bounty and external red-team workflows. It draws on 681 disclosed HackerOne reports across 24 vulnerability classes to guide methodology, scope enforcement, and evidence hygiene from recon through reporting. The bundle is intentionally scoped to external attack surfaces — webapp hunting and enterprise perimeter — and excludes post-exploitation or C2 work. Bug bounty hunters and authorized pentesters using Claude Code or compatible agent harnesses will get the most value; Anthropic's cyber safeguards may require Cyber Verification Program enrollment for offensive use.",
       "llm_api": "required",
-      "llm_api_note": "Claude Code skill — requires Claude Code or compatible agent host to run",
+      "llm_api_note": "Claude Code skill bundle — requires Claude Code or compatible agent (OpenCode, Codex CLI, etc.)",
       "topics": [
-        "Agent Skills & Plugins",
-        "Security & Privacy"
+        "Security & Privacy",
+        "Agent Skills & Plugins"
       ],
       "first_seen": "2026-11-17",
-      "last_seen": "2026-11-17",
+      "last_seen": "2026-11-19",
       "best_rank": 1,
-      "latest_stars": 9156,
-      "max_gained": 1007
+      "latest_stars": 12440,
+      "max_gained": 1353
     },
     {
       "owner": "Tencent",
