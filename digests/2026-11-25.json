@@ -1,0 +1,75 @@
+{
+  "date": "2026-11-25",
+  "title": "GitHub Trending Top 5",
+  "repos": [
+    {
+      "rank": 1,
+      "owner": "elementalsouls",
+      "repo": "Claude-BugHunter",
+      "url": "https://github.com/elementalsouls/Claude-BugHunter",
+      "language": "Python",
+      "stars": 22912,
+      "gained_today": 1644,
+      "description": "A bundle of Claude Code skills for bug hunting and external red-team work.",
+      "analysis": "Claude-BugHunter packages 84 skills and 15 slash commands for Claude Code, targeting authorized bug bounty hunting and external red-team engagements. It draws on 681 disclosed HackerOne reports to supply per-vulnerability-class detection patterns, chain templates, and enterprise platform attack paths (Microsoft 365/Entra, Okta, VPN appliances). It trended sharply as AI-assisted security tooling becomes mainstream and demand for structured offensive-skill bundles outpaces ad-hoc prompting. Bug bounty hunters, penetration testers, and external red-team operators working on sanctioned targets will get the most value here.",
+      "llm_api": "required",
+      "llm_api_note": "Skills run inside Claude Code (Claude subscription required); Codex CLI, Hermes, AntiGravity also supported.",
+      "topics": ["Security & Privacy", "Agent Skills & Plugins"]
+    },
+    {
+      "rank": 2,
+      "owner": "obra",
+      "repo": "superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "language": "Shell",
+      "stars": 326571,
+      "gained_today": 902,
+      "description": "An agentic skills framework and software development methodology.",
+      "analysis": "Superpowers is a composable set of skills and methodology for coding agents — Claude Code, Codex, Cursor, Gemini CLI, GitHub Copilot CLI, and more — that enforces structured workflows: brainstorm, plan, implement with TDD, review, then finish the branch. It stops agents from jumping straight into code and keeps long autonomous runs on-track without departing from an approved plan. Its support for virtually every major agent harness gives it unusually broad reach and explains its sustained star velocity. Developers who use AI coding agents and want repeatable, reviewable software practices will find it immediately applicable.",
+      "llm_api": "required",
+      "llm_api_note": "Runs inside coding-agent harnesses (Claude Code, Codex, Cursor, etc.); no separate key needed.",
+      "topics": ["Agent Skills & Plugins", "Developer Tools"]
+    },
+    {
+      "rank": 3,
+      "owner": "HKUDS",
+      "repo": "CLI-Anything",
+      "url": "https://github.com/HKUDS/CLI-Anything",
+      "language": "Python",
+      "stars": 65638,
+      "gained_today": 1094,
+      "description": "A project aimed at making any software usable by AI agents through a CLI.",
+      "analysis": "CLI-Anything generates command-line interfaces for existing applications — GIMP, Blender, LibreOffice, Zotero, Obsidian, and dozens more — so AI agents can interact with them reliably instead of wrestling with fragile UI automation. A 7-phase pipeline (driven from an agent harness) produces each CLI, and the CLI-Hub community registry lets users install pre-built wrappers via pip. It trended because it attacks a well-known weak spot: agents reason well but handle GUIs poorly, and CLI wrapping is a scalable, harness-agnostic solution. Teams building agent workflows around real tools, and users of Claude Code, Cursor, or Codex, are the natural audience; the included Ollama harness supports local inference.",
+      "llm_api": "optional",
+      "llm_api_note": "CLI-Hub pre-built CLIs work standalone; the generator needs an agent harness. Ollama local supported.",
+      "topics": ["AI Agents", "MCP & Integrations", "Developer Tools"]
+    },
+    {
+      "rank": 4,
+      "owner": "jingyaogong",
+      "repo": "minimind",
+      "url": "https://github.com/jingyaogong/minimind",
+      "language": "Python",
+      "stars": 70907,
+      "gained_today": 828,
+      "description": "A project for training a 64M-parameter LLM from scratch in about two hours.",
+      "analysis": "MiniMind walks through building a 64M-parameter language model from scratch in native PyTorch, covering the full pipeline: tokenizer training, pretraining, SFT, LoRA, DPO, PPO, GRPO, and distillation — all reproducible on a single RTX 3090 in roughly two hours for about three yuan of GPU rental. The project fills a real gap: most practitioners only fine-tune existing models with high-level libraries that hide the internals. It draws continued organic interest from students and researchers who want a readable, end-to-end reference. ML educators, LLM researchers, and hobbyists exploring small-model experiments or private-domain adaptation are its core audience; inference is fully local and also works with llama.cpp, Ollama, vLLM, and SGLang.",
+      "llm_api": "none",
+      "topics": ["Education", "Science & ML", "LLM Infrastructure"]
+    },
+    {
+      "rank": 5,
+      "owner": "cursor",
+      "repo": "plugins",
+      "url": "https://github.com/cursor/plugins",
+      "language": "TypeScript",
+      "stars": 19518,
+      "gained_today": 408,
+      "description": "The Cursor plugin specification along with official plugins.",
+      "analysis": "This is the official plugin marketplace for Cursor, the AI code editor, housing the plugin specification plus a growing catalog of agent skills, Cursor rules, and MCP server definitions. Connectors span developer tools (GitHub, CI, PR review) through business systems — Google Workspace, Salesforce, HubSpot, banking, and payroll. As the Cursor ecosystem matures and teams adopt AI-driven workflows at scale, the official plugin repo becomes a hub for sharing and discovering reusable capabilities. Cursor users across engineering, sales, marketing, and finance who want pre-built, battle-tested integrations rather than building from scratch will find the most value here.",
+      "llm_api": "required",
+      "llm_api_note": "Plugins run inside Cursor — requires an active Cursor subscription with model access.",
+      "topics": ["Agent Skills & Plugins", "MCP & Integrations", "Developer Tools"]
+    }
+  ]
+}
