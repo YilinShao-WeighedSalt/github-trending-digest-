@@ -1,0 +1,75 @@
+{
+  "date": "2026-11-27",
+  "title": "GitHub Trending Top 5",
+  "repos": [
+    {
+      "rank": 1,
+      "owner": "elementalsouls",
+      "repo": "Claude-BugHunter",
+      "url": "https://github.com/elementalsouls/Claude-BugHunter",
+      "language": "Python",
+      "stars": 26013,
+      "gained_today": 1615,
+      "description": "A Claude Code skill bundle for bug hunting and external red-team work, with 85 skills and 16 slash commands.",
+      "analysis": "Claude-BugHunter packages 85 skills and 16 slash commands for Claude Code (and compatible agents) built from 681 disclosed HackerOne reports across 24 vulnerability classes. It guides authorized pentesters through a six-phase workflow—recon, mapping, hunting, validation, reporting—with scope-enforcement gates that check authorization before every step. Its rapid rise today reflects the booming intersection of AI coding agents and security tooling: bug bounty hunters can now direct an LLM-native agent at web targets without leaving the terminal. It fits external red-teamers on authorized engagements who already use Claude Code, OpenCode, Codex CLI, or similar agent harnesses.",
+      "llm_api": "required",
+      "llm_api_note": "Requires Claude Code or compatible agent harness (OpenCode, Codex CLI, Hermes, etc.)",
+      "topics": ["Security & Privacy", "Agent Skills & Plugins"]
+    },
+    {
+      "rank": 2,
+      "owner": "obra",
+      "repo": "superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "language": "Shell",
+      "stars": 328274,
+      "gained_today": 916,
+      "description": "An agentic skills framework & software development methodology that works.",
+      "analysis": "Superpowers is a composable skills framework that wraps AI coding agents in a disciplined design-first, test-driven workflow. Instead of accepting an agent that immediately starts writing code, it enforces clarifying questions, a spec review, task decomposition with exact file paths, failing-test-first execution, and a checklist before merging—all triggered automatically without manual skill invocation. With 328k stars it has been around a while, and today's gain likely reflects ongoing word-of-mouth as developers discover that structured methodology beats raw LLM prompting for long-running sessions. It suits any developer using Claude Code, Cursor, Codex, GitHub Copilot CLI, Gemini CLI, or several other supported harnesses who wants autonomous, plan-driven sessions that run for hours without going off the rails.",
+      "llm_api": "required",
+      "llm_api_note": "Requires Claude Code, Cursor, Codex, Copilot CLI, or other supported coding agent",
+      "topics": ["Agent Skills & Plugins", "Developer Tools"]
+    },
+    {
+      "rank": 3,
+      "owner": "HKUDS",
+      "repo": "CLI-Anything",
+      "url": "https://github.com/HKUDS/CLI-Anything",
+      "language": "Python",
+      "stars": 66969,
+      "gained_today": 668,
+      "description": "CLI-Anything: Making ALL Software Agent-Native",
+      "analysis": "CLI-Anything uses a seven-phase AI-driven pipeline to generate Click-based CLIs for any existing application—from GIMP and Blender to LibreOffice and OBS—so agents can operate them programmatically without brittle screen scraping. Each generated CLI ships with a JSON output flag, a SKILL.md for agent discovery, and a full test suite; a CLI-Hub registry lets agents find and install the right wrapper on demand. It is trending as the agent ecosystem matures and developers realize that exposing real tools to agents requires structured interfaces, not just raw terminal access. The project targets agent builders and power users on Claude Code, Cursor, Codex, or similar platforms who want to automate creative, productivity, or engineering desktop software.",
+      "llm_api": "required",
+      "llm_api_note": "AI coding agent (Claude Code, Cursor, Codex, etc.) required to run the generation pipeline",
+      "topics": ["AI Agents", "Developer Tools", "MCP & Integrations"]
+    },
+    {
+      "rank": 4,
+      "owner": "jingyaogong",
+      "repo": "minimind",
+      "url": "https://github.com/jingyaogong/minimind",
+      "language": "Python",
+      "stars": 72194,
+      "gained_today": 667,
+      "description": "Trains a 64M-parameter LLM from scratch in about two hours.",
+      "analysis": "MiniMind is a hands-on tutorial that walks through training a 64 M-parameter language model from scratch on a single consumer GPU in roughly two hours, covering data preparation, pre-training, supervised fine-tuning, RLHF, and multimodal extensions. By keeping the model tiny and the code dependency-light, it makes the full LLM training pipeline approachable without expensive cloud compute or opaque framework magic. Trending on organic interest as a perennial favourite for anyone who wants to understand how modern LLMs actually work rather than just call their APIs. It fits students, ML engineers, and researchers who want an end-to-end reference implementation they can run, modify, and learn from locally.",
+      "llm_api": "none",
+      "topics": ["Science & ML", "Education"]
+    },
+    {
+      "rank": 5,
+      "owner": "cursor",
+      "repo": "plugins",
+      "url": "https://github.com/cursor/plugins",
+      "language": "TypeScript",
+      "stars": 20002,
+      "gained_today": 242,
+      "description": "Cursor plugin specification and official plugins.",
+      "analysis": "cursor/plugins is the official plugin marketplace for the Cursor editor, combining a formal plugin spec with over 100 community and official plugins spanning coding workflows, deep PR reviews, multi-agent orchestration, memory, and business integrations covering Google Workspace, GitHub, Salesforce, Slack, HubSpot, and more. Each plugin is a self-contained directory with a manifest, optional MCP server definitions, and agent skills that load automatically in Cursor sessions. It is trending as Cursor cements its position as a leading AI-native IDE and developers discover this central hub for extending it beyond the defaults. It is squarely for Cursor users who want to unlock third-party integrations or workflow automation without building from scratch.",
+      "llm_api": "required",
+      "llm_api_note": "Requires Cursor editor; many plugins also connect to external LLM-backed or third-party services",
+      "topics": ["Agent Skills & Plugins", "Developer Tools"]
+    }
+  ]
+}
